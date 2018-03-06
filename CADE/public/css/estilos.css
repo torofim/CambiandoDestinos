@@ -23,6 +23,9 @@ header {
   margin-left: 10%;
 
 }
+nav a{
+  font-size: 1.3em;
+}
 .content-wrapper{
     background-color: white;
     top: 98%;
@@ -66,7 +69,7 @@ section {
 p{
   margin-top: 0%;
   min-width: 40%;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .texto{
   margin-top: 5%;

@@ -14,7 +14,7 @@
 
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
-	  <a class="navbar-brand" href="#page-top">Fundación Cambiando Destinos</a>
+	  <a class="navbar-brand" href="#page-top" style="font-size:1.5em;">Fundación Cambiando Destinos</a>
 	  <div class="containerarriba">
 
 	      <div class="navbar-header page-scroll">
@@ -59,10 +59,7 @@
             <div class="col-lg-12">
                 <img class="img-responsive" src="./img/libreta1.jpg" alt="">
                 <div class="intro-text">
-                    <span class="name">Banksy</span>
-                    <hr class="star-light">
-                    <p class="skills">anonymous</p>
-                    <p class="skills">artist</p>
+
                 </div>
             </div>
         </div>
@@ -98,7 +95,7 @@
     </section>
     <section class="success1" id="about">
         <div class="container3">
-            <div class="col-lg-12 rows">
+            <div class="col-lg-12 rows" style="background:url(./img/folleto.jpg) no-repeat center center ; background-size:cover;">
                 <div class="col-lg-12 text-center">
                     <h2>Historias de aliento</h2>
                 </div>
@@ -187,7 +184,7 @@
       <li data-target="#myCarousel" data-slide-to="2"></li>
 			<li data-target="#myCarousel" data-slide-to="3"></li>
       <li data-target="#myCarousel" data-slide-to="4"></li>
-			<li data-target="#myCarousel" data-slide-to="5"></li>
+
     </ol>
 
     <!-- Wrapper for slides -->
@@ -308,7 +305,7 @@
 </div>
 </div>
 <div class="carouselGallery-col-1 carouselGallery-carousel" data-index="5" data-username="Aprendiendo a vivir en la 3ra edad" data-imagetext="
-" data-location="" data-likes="5358" data-imagepath="./img/folleto.jpg" data-posturl="https://instagram.com/p/9tuxNaQVUj/" style="background-image:url(./img/reunion.jpg);">
+" data-location="" data-likes="5358" data-imagepath="./img/folleto.jpg" data-posturl="https://instagram.com/p/9tuxNaQVUj/" style="background-image:url(./img/folleto.jpg);">
 <div class="carouselGallery-item">
 
 </div>
@@ -316,7 +313,7 @@
 </div>
 <div class="carouselGallery-col-40">
     <div class="carouselGallery-col-2 carouselGallery-carousel" data-index="6" data-username="Don Tencho Dentista" data-imagetext="
-    " data-location="" data-likes="" data-imagepath="./img/fondo.jpg" data-posturl="https://instagram.com/p/9slFueQVQz/" style="background-image:url(./img/apoyo.jpg);">
+    " data-location="" data-likes="" data-imagepath="./img/apoyo.jpg" data-posturl="https://instagram.com/p/9slFueQVQz/" style="background-image:url(./img/apoyo.jpg);">
     <div class="carouselGallery-item">
 
     </div>
