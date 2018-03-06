@@ -32,7 +32,7 @@
                     <div class="input=-group col-md-12">
                       <label for="nombre">Nivel</label><br>
                       {{Form::select('Nivel',
-                      array('admin'=>'Administrador','Normal','Normal')
+                      array('admin'=>'Administrador','Normal'=>'Normal'),
                       array('class'=>'form-Controller',
                       'placeholder'=>'imagen') )}}
                     </div>
