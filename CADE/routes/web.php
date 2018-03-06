@@ -17,3 +17,14 @@ Route::get('/', function () {
 Route::get('/paginaprincipal', function () {
     return view('paginaprincipal');
 });
+Route::get('/Login',function(){
+    return view('login');
+});
+Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
+  Route::get('/',function(){return "yeah";});
+  Route::get('/usuarios','usuarioscontroller@index')->name('usuarios');
+});
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
