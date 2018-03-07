@@ -26,6 +26,8 @@ Route::get('/usuarios',function(){
 Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::get('/',function(){return "yeah";});
   Route::get('/usuarios','usuarioscontroller@index')->name('usuarios');
+
+  Route::resource('usuarios','usuarioscontroller');
 });
 
 Auth::routes();
