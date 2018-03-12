@@ -9,6 +9,6 @@ class Archivo extends Model
   protected $primaryKey='Id';
   protected $table='archivos';
   protected $fillable=[
-    'Foto_infantil','Foto_cuerpo','Certificado_discapacidad','Copia_curp','Curp'
+    'Foto_infantil','Foto_cuerpo','Certificado_discapacida','Copia_curp','Curp'
   ];
 }

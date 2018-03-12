@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Validator;
-use App\User;
+use App\Archivo;
 
 class archivoscontroller extends Controller
 {
@@ -20,7 +20,7 @@ class archivoscontroller extends Controller
       $validator =Validator::make($req->all(),[
         'Foto_infantil'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         'Foto_cuerpo'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        'Certificado_discapacidad'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        'Certificado_discapacida'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         'Copia_curp'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         'Curp'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
 
@@ -31,19 +31,19 @@ class archivoscontroller extends Controller
           ->withInput()
           ->withErrors($validator);
       }else{
-        $nombreInfantil=time().'.'.$req->Imagen->getClientOriginalExtension();
+        $nombreInfantil=time().'.'.$req->Foto_infantil->getClientOriginalExtension();
         $req->Foto_infantil->move(public_path('/img/archivos'),$nombreInfantil);
 
-        $nombreCuerpo=time().'.'.$req->Imagen->getClientOriginalExtension();
+        $nombreCuerpo=time().'.'.$req->Foto_cuerpo->getClientOriginalExtension();
         $req->Foto_cuerpo->move(public_path('/img/archivos'),$nombreCuerpo);
 
-        $nombreCertificado=time().'.'.$req->Imagen->getClientOriginalExtension();
-        $req->Certificado_discapacidad->move(public_path('/img/archivos'),$nombreCertificado);
+        $nombreCertificado=time().'.'.$req->Certificado_discapacida->getClientOriginalExtension();
+        $req->Certificado_discapacida->move(public_path('/img/archivos'),$nombreCertificado);
 
-        $nombreCopia=time().'.'.$req->Imagen->getClientOriginalExtension();
+        $nombreCopia=time().'.'.$req->Copia_curp->getClientOriginalExtension();
         $req->Copia_curp->move(public_path('/img/archivos'),$nombreCopia);
 
-        $nombreCurp=time().'.'.$req->Imagen->getClientOriginalExtension();
+        $nombreCurp=time().'.'.$req->Curp->getClientOriginalExtension();
         $req->Curp->move(public_path('/img/archivos'),$nombreCurp);
 
         Archivo::create([

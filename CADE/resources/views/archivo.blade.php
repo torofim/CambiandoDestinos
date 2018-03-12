@@ -23,7 +23,7 @@
                       {{session()->get('mensaje')}}
                     </div>
                   @endif
-                  {{Form::open(array('url'=>'/admin/archivo','files'=>true))}}
+                  {{Form::open(array('url'=>'/admin/archivos','files'=>true))}}
                     <div class="input=-group col-md-12">
                       <label for="nombre">Foto infantil</label><br>
                         {{Form::file('Foto_infantil',array('class'=>'form-control','placeholder'=>'Imagen') )}}
