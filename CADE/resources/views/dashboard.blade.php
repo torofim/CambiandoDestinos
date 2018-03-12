@@ -34,7 +34,7 @@
 	                 </nav>
 	<div class="side">
 		<div class="list-group">
- 		 <a href="#" class="list-group-item active">Inicio</a>
+ 		 <button type="button" name="button">{{echo Form::button('Click Me!');}}</button>
  		 <a href="#" class="list-group-item">Usuarios</a>
   		<a href="#" class="list-group-item">Registros</a>
   		<a href="#" class="list-group-item ">Graficos</a>
