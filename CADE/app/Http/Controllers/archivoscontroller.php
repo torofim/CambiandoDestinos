@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Validator;
-use App\User;
+use App\Archivo;
 
 class archivoscontroller extends Controller
 {
@@ -38,7 +38,7 @@ class archivoscontroller extends Controller
         $req->Foto_cuerpo->move(public_path('/img/archivos'),$nombreCuerpo);
 
         $nombreCertificado=time().'.'.$req->Certificado_discapacida->getClientOriginalExtension();
-        $req->Certificado_discapacidad->move(public_path('/img/archivos'),$nombreCertificado);
+        $req->Certificado_discapacida->move(public_path('/img/archivos'),$nombreCertificado);
 
         $nombreCopia=time().'.'.$req->Copia_curp->getClientOriginalExtension();
         $req->Copia_curp->move(public_path('/img/archivos'),$nombreCopia);
