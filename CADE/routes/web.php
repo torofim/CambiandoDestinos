@@ -26,7 +26,7 @@ Route::get('/usuarios',function(){
 Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::get('/',function(){return "yeah";});
   Route::get('/usuarios','usuarioscontroller@index')->name('usuarios');
-  Route::get('/archivos','archivoscontroller@index')->name('archivos');
+  Route::get('/archivo','archivoscontroller@index')->name('archivo');
   Route::resource('usuarios','usuarioscontroller');
   Route::resource('archivos','archivoscontroller');
 });
