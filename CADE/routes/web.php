@@ -20,20 +20,22 @@ Route::get('/principal', function () {
 
 Route::get('/Login',function(){
     return view('login');
+
 Route::get('/usuarios',function(){
     return view('usuarios');
 });
 });
-Route::get('/dashboard',function(){
-  return view ('dashboard');
-});
+Route::get('/Inicio','dashcontroller@inicio')->name('dashboard.inicio');
+
 Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::get('/',function(){return "yeah";});
   Route::get('/usuarios','usuarioscontroller@index')->name('usuarios');
   Route::get('/archivos','archivoscontroller@index')->name('archivos');
+  Route::get('/dashboard','dashcontroller@index')->name('dashboard');
 
   Route::resource('usuarios','usuarioscontroller');
   Route::resource('archivos','archivoscontroller');
+  Route::resource('dashboard','dashcontroller');
 
 });
 
