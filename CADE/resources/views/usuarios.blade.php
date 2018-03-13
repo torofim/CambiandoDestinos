@@ -23,6 +23,42 @@
                       {{session()->get('mensaje')}}
                     </div>
                   @endif
+                  <div class="row">
+                    <h2>usuarios</h2>
+                    <table class="table table-condensed">
+                      <thead>
+                        <tr>
+                          <td>Id</td>
+                          <td>Nombre</td>
+                          <td>Apellido</td>
+                          <td>Email</td>
+                          <td>Editar</td>
+                          <td>Eliminar</td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          @forelse($perros as $usu)
+                          <td>{{$usu->id}}</td>
+                          <td>{{$usu->name}}</td>
+                          <td></td>
+                          <td></td>
+                          <td>
+                          {!! Form::open(
+                            array('route'=>['admin.usuarios.destroy',$usu->id],
+                          'method'=>'DELETE' )) !!}
+                          <button type="submit" >
+                            <i class="glyphicon glyphicon-trash"></i>
+                          </button>
+                          {!! Form::close() !!}
+                          </td>
+                          </tr>
+                        @empty
+                        <p>sin registro</p>
+                        @endforelse
+                      </tbody>
+                    </table>
+                  </div>
                   {{Form::open(array('url'=>'/admin/usuarios','files'=>true))}}
                     <div class="input=-group col-md-12">
                       <label for="nombre">Nombre</label><br>

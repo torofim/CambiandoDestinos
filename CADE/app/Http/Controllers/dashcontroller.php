@@ -19,11 +19,10 @@ class dashcontroller extends Controller
   /**
    * Show the application dashboard.
    *
-   * @return void
+   * @return \Illuminate\Http\Response
    */
   public function index()
   {
-     return view('dashboard');
+      return view('dashboard');
   }
-  public function inicio(){ return view('dashboard');}
 }

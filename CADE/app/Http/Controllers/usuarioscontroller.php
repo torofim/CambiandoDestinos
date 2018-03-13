@@ -13,7 +13,14 @@ class usuarioscontroller extends Controller
       $this->middleware('auth');
     }
     public function index(){
-      return view('usuarios');
+      $registros=\DB::table('users')
+      //->where('Id','=','1');
+      ->orderby('Id','desc')
+      //->take(10)
+      ->get();
+
+      return view('usuarios')
+      ->with('perros',$registros);
     }
     public function store(Request $req){
 
@@ -45,4 +52,12 @@ class usuarioscontroller extends Controller
       }
       dd($req->nombre);
     }
+    public function destroy($id){
+      $usuario=User::find($id);
+      if(file_exists(public_path('/img/usuarios/'.$usuario->imgperfil))){
+        unlink(public_path('/img/usuarios/'.$usuario->imgperfil));
+      }
+      $usuario->delete();
+      return redirect('/admin/usuarios');
+    }//function destroy
 }
