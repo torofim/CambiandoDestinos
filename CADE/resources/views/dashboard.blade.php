@@ -43,7 +43,7 @@
 	</div>
 		</ul>
 	</div>
-	<div class="lefted" style="background-image:url('./img/back.jpg');">
+	<div class="lefted" style="background-image:url({{url('img/atras.jpg')}})">
 		<div class="separador">
 			<label id="titulo">Dashboard</label>
 		</div>
@@ -111,8 +111,8 @@
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<script src="{{ URL::asset('js/bootstrap.js') }}"></script>
-	<script src="{{ URL::asset('js/jquery-3.1.1.js') }}"></script>
 	<script src="{{ URL::asset('js/Chart.bundle.min.js') }}"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -202,5 +202,4 @@
 			});
 		</script>
 </body>
-
 </html>

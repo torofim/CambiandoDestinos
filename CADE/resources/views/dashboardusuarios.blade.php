@@ -229,9 +229,9 @@
 		</div>
 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script type="text/javascript" src="{{ HTML::script('js/bootstrap.js'); }}"></script>
-		<script src="{{ HTML::script('js/jquery-3.1.1.js'); }}"></script>
-		<script src="{{ HTML::script('Chart.bundle.min.js'); }}"></script>
+		<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	  <script src="{{ URL::asset('js/bootstrap.js') }}"></script>
+	  <script src="{{ URL::asset('js/Chart.bundle.min.js') }}"></script>
 		<script type="text/javascript">
 			$(document).ready(function(){
 				Chart.defaults.global.defaultFontColor = 'black';
