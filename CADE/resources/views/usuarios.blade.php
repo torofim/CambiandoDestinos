@@ -30,7 +30,6 @@
                         <tr>
                           <td>Id</td>
                           <td>Nombre</td>
-                          <td>Apellido</td>
                           <td>Email</td>
                           <td>Editar</td>
                           <td>Eliminar</td>
@@ -42,13 +41,13 @@
                           <td>{{$usu->id}}</td>
                           <td>{{$usu->name}}</td>
                           <td></td>
-                          <td></td>
+                          <td>Editar</td>
                           <td>
                           {!! Form::open(
                             array('route'=>['admin.usuarios.destroy',$usu->id],
                           'method'=>'DELETE' )) !!}
                           <button type="submit" >
-                            <i class="glyphicon glyphicon-trash"></i>
+                            <i class="glyphicon glyphicon-remove"></i>
                           </button>
                           {!! Form::close() !!}
                           </td>
