@@ -41,7 +41,10 @@
                           <td>{{$usu->id}}</td>
                           <td>{{$usu->name}}</td>
                           <td></td>
-                          <td>Editar</td>
+                          <td><button type="button" class="btn btn-info btn-lg btnEdit"
+                            data-toggle="modal" data-target="#myModal"
+                            data-Nombre="{{$usu->name}}"
+                            data-email="{{$usu->email}}">Editar </button></td>
                           <td>
                           {!! Form::open(
                             array('route'=>['admin.usuarios.destroy',$usu->id],
@@ -96,4 +99,67 @@
         </div>
     </div>
 </div>
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Editar a: <b></b> </h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+      </div>
+      {!! Form::open(
+        array('route'=>['admin.usuarios.destroy',$usu->id],'method'=>'DELETE' )) !!}
+      <div class="modal-body">
+          <div class="input-group">
+            <label for="">Nombre</label>
+            <input type="text" name="nameEditar" id="nameEditar" value="" class="form-control">
+          </div>
+          <div class="input-group">
+            <label for="">Email</label>
+            <input type="email" name="emailEditar" id="emailEditar"value="" class="form-control">
+          </div>
+          <div class="input-group">
+            <label for="">Password</label>
+            <input type="password" name="p1Editar" id="P1Editar" value="" class="form-control">
+          </div>
+          <div class="input-group">
+            <label for="">Imagen</label>
+            <input type="file" name="imagenEditar" id="imagenEditar" value="" class="form-control">
+          </div>
+
+          <div class="inpnut-group">
+            <label for="">Nivel</label>
+            <select class="form-control" name="nivelEditar">
+              <option value="0">Admin</option>
+              <option value="1">Editor</option>
+              <option value="2">Chalan</option>
+            </select>
+          </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+        <button type="submit" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+      </div>
+      {{Form::close() }}
+    </div>
+
+  </div>
+</div>
+
+@endsection
+@section('scripts')
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".btnEdit").on('click',function(){
+      var n=$(this).data('nombre');
+      var e=$(this).data('email');
+      $("#nameEditar").val(n);
+      $('#emailEditar').val(e);
+    });
+  });
+</script>
 @endsection
