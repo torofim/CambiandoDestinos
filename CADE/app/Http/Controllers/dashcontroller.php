@@ -25,4 +25,13 @@ class dashcontroller extends Controller
   {
       return view('dashboard');
   }
+  public function benef()
+  {
+      return view('dashboardbeneficiarios');
+  }
+  public function regis()
+  {
+      return view('dashboardusuarios');
+  }
+
 }
