@@ -25,4 +25,8 @@ class regiscontroller extends Controller
  {
      return view('registrados');
  }
+ public function graficos()
+ {
+   return view('dashboardgraficos');
+ }
 }

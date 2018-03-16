@@ -34,10 +34,10 @@
 	                 </nav>
 	<div class="side">
 		<div class="list-group">
- 		 <a href="#" class="list-group-item">Inicio</a>
- 		 <a href="#" class="list-group-item ">Usuarios</a>
-  		<a href="#" class="list-group-item active">Registros</a>
-  		<a href="#" class="list-group-item ">Graficos</a>
+ 		 <a href="/admin/dash" class="list-group-item">Inicio</a>
+ 		 <a href="/admin/benef" class="list-group-item active">Usuarios</a>
+  		<a href="/admin/registrados" class="list-group-item ">Registros</a>
+  		<a href="/admin/graficos" class="list-group-item ">Graficos</a>
 
 	</div>
 	</div>

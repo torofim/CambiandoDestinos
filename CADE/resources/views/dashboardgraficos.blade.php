@@ -5,8 +5,8 @@
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-	<link rel="stylesheet" type="text/css" href="./css/newstyle.css">
+		<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap.css') }}">
+		<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/newstyle.css') }}">
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Hind" rel="stylesheet">
 
 </head>
@@ -31,13 +31,13 @@
 	              </ul>
 	               </div>
 	                </div>
-	                 </nav>
+								</nav>
 	<div class="side">
 		<div class="list-group">
- 		 <a href="#" class="list-group-item">Inicio</a>
- 		 <a href="#" class="list-group-item ">Usuarios</a>
-  		<a href="#" class="list-group-item">Registros</a>
-  		<a href="#" class="list-group-item active ">Graficos</a>
+ 		 <a href="/admin/dash" class="list-group-item">Inicio</a>
+ 		 <a href="/admin/benef" class="list-group-item ">Usuarios</a>
+  		<a href="/admin/registrados" class="list-group-item">Registros</a>
+  		<a href="/admin/graficos" class="list-group-item active ">Graficos</a>
 
 	</div>
 	</div>
@@ -60,9 +60,9 @@
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script type="text/javascript" src="./js/bootstrap.js"></script>
-<script src="./js/jquery-3.3.1.js"></script>
-<script src="./js/Chart.bundle.min.js"></script>
+<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="{{ URL::asset('js/bootstrap.js') }}"></script>
+<script src="{{ URL::asset('js/Chart.bundle.min.js') }}"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
 		Chart.defaults.global.defaultFontColor = 'black';

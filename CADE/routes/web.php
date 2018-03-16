@@ -37,9 +37,11 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::get('/dash','dashcontroller@index')->name('dash');
   Route::get('/benef','dashcontroller@benef')->name('benef');
   Route::get('/registrados','regiscontroller@index')->name('registrados');
+  Route::get('/graficos','regiscontroller@graficos')->name('graficos');
   Route::resource('dash','dashcontroller');
   Route::resource('beneficiarios','dashcontroller');
   Route::resource('registrados','regiscontroller');
+  Route::resource('Graficos','regiscontroller');
 
   Route::resource('usuarios','usuarioscontroller');
   Route::resource('archivos','archivoscontroller');

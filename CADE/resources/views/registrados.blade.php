@@ -11,7 +11,6 @@
 
 </head>
 <body>
-
 	<nav class="navbar navbar-inverse">
 	 <div class="container-fluid">
 	  <div class="navbar-header">
@@ -34,21 +33,21 @@
 	                 </nav>
 	<div class="side">
 		<div class="list-group">
- 		 <a href="#" class="list-group-item">Inicio</a>
- 		 <a href="#" class="list-group-item active">Usuarios</a>
-  		<a href="#" class="list-group-item ">Registros</a>
-  		<a href="#" class="list-group-item ">Graficos</a>
+ 		 <a href="/admin/dash" class="list-group-item">Inicio</a>
+ 		 <a href="/admin/benef" class="list-group-item">Usuarios</a>
+  		<a href="/admin/registrados" class="list-group-item active ">Registros</a>
+  		<a href="/admin/graficos" class="list-group-item ">Graficos</a>
 
 	</div>
 	</div>
 
 	<div class="lefted" style="background-image:url({{url('img/atras.jpg')}});">
 		<div class="separador">
-			<label id="titulo">Beneficiarios</label>
+			<label id="titulo">Registrados</label>
 		</div>
 		<div class="lws">
 			<div class="panel panel-default">
-			 <div class="panel-heading">Panel de Beneficiarios</div>
+			 <div class="panel-heading">Panel de usuarios registrados</div>
 			    <table class="table">
 			    	<thead>
 			        	<tr>
