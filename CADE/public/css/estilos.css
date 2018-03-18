@@ -185,6 +185,10 @@ footer{
 .container4{
   margin-top: 1%;
   margin-left: 8%;
+  max-height: 80vh;
+}
+.carousel-inner{
+  max-height: 80vh;
 }
 
 

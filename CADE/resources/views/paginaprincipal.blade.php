@@ -174,7 +174,7 @@
 			<div class="col-lg-12 text-center">
 					<h2 >Logros</h2>
 			</div>
-				<div class="col-lg-10 container4" >
+				<div class="col-lg-10 container4"  >
 
 					<div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
@@ -191,7 +191,7 @@
     <div class="carousel-inner" >
 
       <div class="item active">
-        <img src="./img/apoyo.jpg" alt="Los Angeles" style="width:100%;max-height:58em;">
+        <img src="./img/apoyo.jpg" alt="Los Angeles" style="width:100%;max-height:50em;">
         <div class="carousel-caption" style="top:20%;">
           <h3 style="font-size:5em;">GESTIONES </h3>
           <p>185 pacientes en consulta con especialistas,<br>
@@ -205,7 +205,7 @@
       </div>
 
       <div class="item">
-        <img src="./img/comida.jpg" alt="Chicago" style="width:100%;max-height:58em;">
+        <img src="./img/comida.jpg" alt="Chicago" style="width:100%;max-height:50em;">
         <div class="carousel-caption" style="top:30%;">
           <h3 style="font-size:5em;">COMIDA CALIENTE</h3>
           <p>De octubre del 2011 a finales del 2016
@@ -213,7 +213,7 @@
         </div>
       </div>
 			<div class="item">
-        <img src="./img/rehabilitation.jpg" alt="Chicago" style="width:100%;max-height:58em;">
+        <img src="./img/rehabilitation.jpg" alt="Chicago" style="width:100%;max-height:50em;">
         <div class="carousel-caption" style="top:25%;">
           <h3 style="font-size:5em;">REHABILITACION</h3>
           <p>8 terapias de rehabilitación física al día <br>
@@ -223,7 +223,7 @@
         </div>
       </div>
 			<div class="item">
-        <img src="./img/visita1.jpg" alt="Chicago" style="width:100%;max-height:58em;">
+        <img src="./img/visita1.jpg" alt="Chicago" style="width:100%;max-height:50em;">
         <div class="carousel-caption" style="top:40%;">
           <h3 style="font-size:5em;">VISITA DOMICILIARIA</h3>
           <p>De octubre del 2011 a finales del 2016
@@ -232,7 +232,7 @@
       </div>
 
       <div class="item">
-        <img src="./img/guitarra.jpg" alt="New York" style="width:100%;max-height:58em;">
+        <img src="./img/guitarra.jpg" alt="New York" style="width:100%;max-height:50em;">
         <div class="carousel-caption"style="top:20%;" >
           <h3 style="font-size:5em;">INSTITUTO CULTURAL CAMBIANDO DESTINOS </h3>
           <p>Otorga  gratuitamente talleres de pintura artística y música <br>
