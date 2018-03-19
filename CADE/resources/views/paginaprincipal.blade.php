@@ -69,11 +69,11 @@
     </div>
 </header>
 <div class="content-wrapper">
-    <section class="primary" id="sobre">
+    <section class="primary" >
         <div class="container1">
-            <div class="row">
+            <div class="row" id="sobre">
                 <div class="col-lg-12 text-center">
-                    <h2>Sobre Nosotros</h2>
+                    <h2 style="margin-top:3%;">Sobre Nosotros</h2>
                 </div>
             </div>
         <div class="container1">
@@ -96,11 +96,11 @@
 </div>
 
     </section>
-    <section class="success1" id="historia" >
+    <section class="success1"  >
         <div class="container3" >
-            <div class="col-md-12 rows" style=" margin-top:5%;">
-                <div class="col-md-12 text-center">
-                    <h2>Historias de aliento</h2>
+            <div class="col-md-12 rows" id="historia"style=" margin-top:5%;">
+                <div class="col-md-12 text-center" >
+                    <h2 style="margin-top:2%;">Historias de aliento</h2>
                 </div>
 								<div class="col-md-6 contenido" style="margin-left:1%; ">
 								<div class="col-md-6 dentro" >
@@ -127,11 +127,11 @@
             </div>
         </div>
     </section>
-		<section class="success1" id="nuestros" style="margin-top:5%;" >
+		<section class="success1"  style="margin-top:5%;" >
 				<div class="container3">
-						<div class="col-lg-12 rows"   >
+						<div class="col-lg-12 rows"  id="nuestros" >
 								<div class="col-lg-12 text-center">
-										<h2>Cambiando Destinos</h2>
+										<h2 style="margin-top:3%;">Cambiando Destinos</h2>
 								</div>
 								<div class="col-md-11 contenido">
 								<div class="col-md-3 dentro" >
@@ -191,8 +191,8 @@
 				</div>
 		</section>
 
-		<section class="success1 hidden-xs" id="logros" >
-			<div class="col-lg-12 text-center">
+		<section class="success1 hidden-xs"  >
+			<div class="col-lg-12 text-center" id="logros" >
 					<h2 >Logros</h2>
 			</div>
 				<div class="col-lg-10 container4"  >
@@ -284,8 +284,8 @@
 
 
 
-		<section class="success1" id="galeria"  >
-					<div class="col-lg-12 hidden-xs text-center" style="margin-top:5%;">
+		<section class="success1"   >
+					<div class="col-lg-12 hidden-xs text-center" id="galeria" style="margin-top:5%;" >
 							<h2>Galería</h2>
 						</div>
 
@@ -433,9 +433,9 @@
 
     </section>
 
-		<section class="success1" id="contacto" style="margin-top:5%;" >
+		<section class="success1"  style="margin-top:5%;" >
 
-    <footer class=" container" style=" background-color:	#000000;color:#fff;text-align:center;width:100%;height:40em;">
+    <footer class=" container"id="contacto" style=" background-color:	#000000;color:#fff;text-align:center;width:100%;height:40em;">
 			<div class="col-md-12 todo">
 				<div class="col-md-6 izq">
 
