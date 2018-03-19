@@ -98,7 +98,7 @@
     </section>
     <section class="success1" id="historia" >
         <div class="container3" >
-            <div class="col-md-12 rows" style="max-height:100vh;">
+            <div class="col-md-12 rows" style="max-height:100vh; margin-top:5%;">
                 <div class="col-md-12 text-center">
                     <h2>Historias de aliento</h2>
                 </div>
@@ -127,7 +127,7 @@
             </div>
         </div>
     </section>
-		<section class="success1" id="nuestros" >
+		<section class="success1" id="nuestros" style="margin-top:10%;" >
 				<div class="container3">
 						<div class="col-lg-12 rows"   >
 								<div class="col-lg-12 text-center">
@@ -432,7 +432,7 @@
 
 
     </section>
-		<section class="success1" id="contacto" >
+		<section class="success1" id="contacto" style="margin-top:10%;" >
 
     <footer class=" container" style=" background-color:	#000000;color:#fff;text-align:center;width:100%;height:40em;">
 			<div class="col-md-12 todo">
