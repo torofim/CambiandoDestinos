@@ -14,7 +14,7 @@
 
 <body>
 	<nav class="navbar navbar-default navbar-fixed-top">
-	  <a class="navbar-brand" href="#page-top" style="font-size:1.5em;">Fundación Cambiando Destinos</a>
+	  <a class="navbar-brand" href="#page-top" style="font-size:1.8em;">Fundación Cambiando Destinos</a>
 	  <div class="containerarriba">
 
 	      <div class="navbar-header page-scroll">
@@ -33,19 +33,22 @@
 	                  <a href="#page-top"></a>
 	              </li>
 	              <li class="page-scroll">
-	                  <a href="#historias">Sobre Nosotros </a>
+	                  <a href="#sobre">Sobre Nosotros <img src="./img/logonavi.png" alt=""></a>
 	              </li>
 	              <li class="page-scroll">
-	                  <a href="#sobrenosotros">Historias</a>
+	                  <a href="#historia">Historias <img src="./img/logonavi.png" alt=""></a>
 	              </li>
 	              <li class="page-scroll">
-	                  <a href="#nuestros">Cambiando Destinos</a>
+	                  <a href="#nuestros">Cambiando Destinos <img src="./img/logonavi.png" alt=""></a>
 	              </li>
 	              <li class="page-scroll">
-	                  <a href="#informes">Logros</a>
+	                  <a href="#logros">Logros <img src="./img/logonavi.png" alt=""></a>
+	              </li>
+								<li class="page-scroll">
+	                  <a href="#galeria">Galería<img src="./img/logonavi.png" alt=""></a>
 	              </li>
 	              <li class="page-scroll">
-	                  <a href="#contact">Contacto</a>
+	                  <a href="#contacto">Contacto<img src="./img/logonavi.png" alt=""></a>
 	              </li>
 	          </ul>
 	      </div>
@@ -66,7 +69,7 @@
     </div>
 </header>
 <div class="content-wrapper">
-    <section class="primary" id="portfolio">
+    <section class="primary" id="sobre">
         <div class="container1">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -93,7 +96,7 @@
 </div>
 
     </section>
-    <section class="success1" id="about">
+    <section class="success1" id="historia">
         <div class="container3">
             <div class="col-lg-12 rows" style="background:url(./img/folleto.jpg) no-repeat center center ; background-size:cover;">
                 <div class="col-lg-12 text-center">
@@ -102,7 +105,7 @@
 								<div class="col-lg-11 contenido">
 								<div class="col-md-3 dentro">
 									<div class="col-md-11 dentro1">
-										<img class="img-responsive img-rounded " src="./img/arbol.jpg" alt="responsive">
+										<img class="img-responsive img-rounded " src="./img/diamadre.jpg" alt="responsive">
 										<div class="overlay">
 											<div class="text"><a href="#">Conoce Mas</a></div>
 										</div>
@@ -111,7 +114,7 @@
 								</div>
 								<div class="col-md-3 dentro">
 									<div class="col-md-11 dentro1">
-										<img class="img-responsive" src="./img/arbol.jpg" alt="responsive" >
+										<img class="img-responsive" src="./img/doc.jpg" alt="responsive" >
 										<div class="overlay">
 											<div class="text"><a href="#">Conoce Mas</a></div>
 										</div>
@@ -122,7 +125,7 @@
             </div>
         </div>
     </section>
-		<section class="success1" id="about">
+		<section class="success1" id="nuestros" style="margin-top:50%;">
 				<div class="container3">
 						<div class="col-lg-12 rows"  style="background:url(./img/fondochido.jpg) no-repeat center center ; background-size:cover;" >
 								<div class="col-lg-12 text-center">
@@ -170,7 +173,7 @@
 				</div>
 		</section>
 
-		<section class="success1" id="about" >
+		<section class="success1 hidden-xs" id="logros" style="margin-top:50%;">
 			<div class="col-lg-12 text-center">
 					<h2 >Logros</h2>
 			</div>
@@ -191,7 +194,7 @@
     <div class="carousel-inner" >
 
       <div class="item active">
-        <img src="./img/apoyo.jpg" alt="Los Angeles" style="width:100%;max-height:50em;">
+        <img src="./img/apoyo.jpg" alt="Los Angeles" style="width:100%;max-height:45em;">
         <div class="carousel-caption" style="top:20%;">
           <h3 style="font-size:5em;">GESTIONES </h3>
           <p>185 pacientes en consulta con especialistas,<br>
@@ -205,7 +208,7 @@
       </div>
 
       <div class="item">
-        <img src="./img/comida.jpg" alt="Chicago" style="width:100%;max-height:50em;">
+        <img src="./img/comida.jpg" alt="Chicago" style="width:100%;max-height:45em;">
         <div class="carousel-caption" style="top:30%;">
           <h3 style="font-size:5em;">COMIDA CALIENTE</h3>
           <p>De octubre del 2011 a finales del 2016
@@ -213,7 +216,7 @@
         </div>
       </div>
 			<div class="item">
-        <img src="./img/rehabilitation.jpg" alt="Chicago" style="width:100%;max-height:50em;">
+        <img src="./img/rehabilitation.jpg" alt="Chicago" style="width:100%;max-height:45em;">
         <div class="carousel-caption" style="top:25%;">
           <h3 style="font-size:5em;">REHABILITACION</h3>
           <p>8 terapias de rehabilitación física al día <br>
@@ -223,7 +226,7 @@
         </div>
       </div>
 			<div class="item">
-        <img src="./img/visita1.jpg" alt="Chicago" style="width:100%;max-height:50em;">
+        <img src="./img/visita1.jpg" alt="Chicago" style="width:100%;max-height:45em;">
         <div class="carousel-caption" style="top:40%;">
           <h3 style="font-size:5em;">VISITA DOMICILIARIA</h3>
           <p>De octubre del 2011 a finales del 2016
@@ -232,7 +235,7 @@
       </div>
 
       <div class="item">
-        <img src="./img/guitarra.jpg" alt="New York" style="width:100%;max-height:50em;">
+        <img src="./img/guitarra.jpg" alt="New York" style="width:100%;max-height:45em;">
         <div class="carousel-caption"style="top:20%;" >
           <h3 style="font-size:5em;">INSTITUTO CULTURAL CAMBIANDO DESTINOS </h3>
           <p>Otorga  gratuitamente talleres de pintura artística y música <br>
@@ -263,64 +266,155 @@
 
 
 
-		<section class="success1" id="about">
-					<div class="col-lg-12 text-center" style="margin-top:8%;">
-							<h2>Galeria</h2>
+		<section class="success1" id="galeria" style="margin-top:45%;" >
+					<div class="col-lg-12 hidden-xs text-center" style="margin-top:0;">
+							<h2>Galería</h2>
 						</div>
 
 									<div class="carousel<a href="https://www.jqueryscript.net/gallery/">Gallery</a>-grid hidden-xs">
 
 		<div class="carouselGallery-grid hidden-xs">
-        <div class="row">
-            <div class="carouselGallery-col-60">
-                <div class="carouselGallery-col-1 carouselGallery-carousel" data-index="0" data-username="Taller de Pintura" data-imagetext="
+        <div class="row" >
+            <div class="carouselGallery-col-40" >
+                <div class="carouselGallery-col-1 carouselGallery-carousel" data-index="0" data-username="Fundación Cambiando Destinos" data-imagetext="
 
-                " data-location="" data-likes="3144" data-imagepath="./img/pintura.jpg" data-posturl="https://instagram.com/p/9_dViYwVWJ/" style="background-image:url(./img/pintura.jpg);">
+                " data-location="" data-likes="3144" data-imagepath="./img/fclogo1.png" data-posturl="" style="background-image:url(./img/fclogo1.png);">
                 <div class="carouselGallery-item">
 
                 </div>
             </div>
-            <div class="carouselGallery-col-1 carouselGallery-carousel" data-index="1" data-username="En una junta" data-imagetext="
-          " data-location="" data-likes="" data-imagepath="./img/junta.jpg" data-posturl="https://instagram.com/p/96UTFPwVaN/" style="background-image:url(./img/junta.jpg);">
+            <div class="carouselGallery-col-1 carouselGallery-carousel" data-index="1" data-username="De paseo en la feria" data-imagetext="
+          " data-location="" data-likes="" data-imagepath="./img/paseo.jpg" data-posturl="" style="background-image:url(./img/paseo.jpg);">
             <div class="carouselGallery-item">
 
             </div>
         </div>
-        <div class="carouselGallery-col-1 carouselGallery-carousel" data-index="2" data-username="Clases de Guitarra" data-imagetext=""
-         data-location="" data-likes="" data-imagepath="./img/guitarra.jpg" data-posturl="https://instagram.com/p/92tWKsQVUN/" style="background-image:url(./img/guitarra.jpg);">
+        <div class="carouselGallery-col-1 carouselGallery-carousel" data-index="2" data-username="De paseo en la feria" data-imagetext=""
+         data-location="" data-likes="" data-imagepath="./img/paseo1.jpg" data-posturl="" style="background-image:url(./img/paseo1.jpg);">
         <div class="carouselGallery-item">
 
         </div>
     </div>
-    <div class="carouselGallery-col-1 carouselGallery-carousel" data-index="3" data-username="Proteccion al Abuelo" data-imagetext="
-    " data-location="" data-likes="" data-imagepath="./img/proteccion.jpg" data-posturl="https://instagram.com/p/91p1nGwVVP/" style="background-image:url(./img/proteccion.jpg);">
+    <div class="carouselGallery-col-1 carouselGallery-carousel" data-index="3" data-username="Día del Abuelo" data-imagetext="
+    " data-location="" data-likes="" data-imagepath="./img/abuelo.jpg" data-posturl="" style="background-image:url(./img/abuelo.jpg);">
     <div class="carouselGallery-item">
 
     </div>
 </div>
-<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="4" data-username="Revisando a Juanito" data-imagetext="
-" data-location="" data-likes="3652" data-imagepath="./img/revision.jpg" data-posturl="https://instagram.com/p/9y6I2YwVb1/" style="background-image:url(./img/revision.jpg);">
+<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="4" data-username="Día del Abuelo" data-imagetext="
+" data-location="" data-likes="" data-imagepath="./img/abuela.jpg" data-posturl="" style="background-image:url(./img/abuela.jpg);">
 <div class="carouselGallery-item">
 
 </div>
 </div>
-<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="5" data-username="Aprendiendo a vivir en la 3ra edad" data-imagetext="
-" data-location="" data-likes="5358" data-imagepath="./img/folleto.jpg" data-posturl="https://instagram.com/p/9tuxNaQVUj/" style="background-image:url(./img/folleto.jpg);">
+<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="5" data-username="Día del Abuelo" data-imagetext="
+" data-location="" data-likes="" data-imagepath="./img/abuelo1.jpg" data-posturl="" style="background-image:url(./img/abuelo1.jpg);">
+<div class="carouselGallery-item">
+
+</div>
+</div>
+<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="6" data-username="Día de las Madres" data-imagetext="
+" data-location="" data-likes="" data-imagepath="./img/diamadre.jpg" data-posturl="" style="background-image:url(./img/diamadre.jpg);">
+<div class="carouselGallery-item">
+
+</div>
+</div>
+<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="7" data-username="Preparando el altar" data-imagetext="
+" data-location="" data-likes="" data-imagepath="./img/altar.jpg" data-posturl="" style="background-image:url(./img/altar.jpg);">
+<div class="carouselGallery-item">
+
+</div>
+</div>
+<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="8" data-username="Día de Muertos" data-imagetext="
+" data-location="" data-likes="" data-imagepath="./img/altar2.jpg" data-posturl="" style="background-image:url(./img/altar2.jpg);">
+<div class="carouselGallery-item">
+
+</div>
+</div>
+</div>
+<div class="carouselGallery-col-60" >
+<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="9" data-username="De Revolución" data-imagetext="
+" data-location="" data-likes="" data-imagepath="./img/revo.jpg" data-posturl="" style="background-image:url(./img/revo.jpg);">
+<div class="carouselGallery-item">
+
+</div>
+</div>
+<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="10" data-username="Folleto Informativo" data-imagetext="
+" data-location="" data-likes="" data-imagepath="./img/folleto.jpg" data-posturl="" style="background-image:url(./img/folleto.jpg);">
+<div class="carouselGallery-item">
+
+</div>
+</div>
+<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="11" data-username="Revisando a Juanito" data-imagetext="
+" data-location="" data-likes="" data-imagepath="./img/revision.jpg" data-posturl="" style="background-image:url(./img/revision.jpg);">
+<div class="carouselGallery-item">
+
+</div>
+</div>
+<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="11" data-username="Revisando a Juanito" data-imagetext="
+" data-location="" data-likes="" data-imagepath="./img/revision.jpg" data-posturl="" style="background-image:url(./img/revision.jpg);">
+<div class="carouselGallery-item">
+
+</div>
+</div>
+<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="11" data-username="Revisando a Juanito" data-imagetext="
+" data-location="" data-likes="" data-imagepath="./img/revision.jpg" data-posturl="" style="background-image:url(./img/revision.jpg);">
+<div class="carouselGallery-item">
+
+</div>
+</div>
+<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="11" data-username="Revisando a Juanito" data-imagetext="
+" data-location="" data-likes="" data-imagepath="./img/revision.jpg" data-posturl="" style="background-image:url(./img/revision.jpg);">
 <div class="carouselGallery-item">
 
 </div>
 </div>
 </div>
 <div class="carouselGallery-col-40">
-    <div class="carouselGallery-col-2 carouselGallery-carousel" data-index="6" data-username="Don Tencho Dentista" data-imagetext="
-    " data-location="" data-likes="" data-imagepath="./img/apoyo.jpg" data-posturl="https://instagram.com/p/9slFueQVQz/" style="background-image:url(./img/apoyo.jpg);">
+	<div class="carouselGallery-col-0 carouselGallery-carousel" data-index="11" data-username="Revisando a Juanito" data-imagetext="
+	" data-location="" data-likes="" data-imagepath="./img/revision.jpg" data-posturl="" style="background-image:url(./img/revision.jpg);">
+	<div class="carouselGallery-item">
+
+	</div>
+	</div>
+	<div class="carouselGallery-col-0 carouselGallery-carousel" data-index="12" data-username="Revisando a Juanito" data-imagetext="
+	" data-location="" data-likes="" data-imagepath="./img/revision.jpg" data-posturl="" style="background-image:url(./img/revision.jpg);">
+	<div class="carouselGallery-item">
+
+	</div>
+	</div>
+	<div class="carouselGallery-col-0 carouselGallery-carousel" data-index="13" data-username="Revisando a Juanito" data-imagetext="
+	" data-location="" data-likes="" data-imagepath="./img/revision.jpg" data-posturl="" style="background-image:url(./img/revision.jpg);">
+	<div class="carouselGallery-item">
+
+	</div>
+	</div>
+
+    <div class="carouselGallery-col-0 carouselGallery-carousel" data-index="14" data-username="Don Tencho Dentista" data-imagetext="
+    " data-location="" data-likes="" data-imagepath="./img/apoyo.jpg" data-posturl="" style="background-image:url(./img/apoyo.jpg);">
     <div class="carouselGallery-item">
 
     </div>
-</div>
-</div>
+		</div>
+		<div class="carouselGallery-col-0 carouselGallery-carousel" data-index="15" data-username="Don Tencho Dentista" data-imagetext="
+		" data-location="" data-likes="" data-imagepath="./img/apoyo.jpg" data-posturl="" style="background-image:url(./img/apoyo.jpg);">
+		<div class="carouselGallery-item">
+
+		</div>
+		</div>
+		<div class="carouselGallery-col-0 carouselGallery-carousel" data-index="16" data-username="Don Tencho Dentista" data-imagetext="
+		" data-location="" data-likes="" data-imagepath="./img/arbol.jpg" data-posturl="" style="background-image:url(./img/arbol.jpg);">
+		<div class="carouselGallery-item">
+
+		</div>
+		</div>
+
+		</div>
+
+
 
     </section>
+		<section class="success1" id="contacto" >
 
     <footer class=" container" style=" background-color:	#000000;color:#fff;text-align:center;width:100%;height:40em;">
 			<div class="col-md-12 todo">
@@ -335,6 +429,8 @@
 
 
     </footer>
+
+		  </section>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
