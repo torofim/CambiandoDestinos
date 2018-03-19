@@ -11,7 +11,7 @@
           </div>
            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
             <ul class="nav navbar-nav">
-             <li class="active">
+             <li class="">
                <a href="/admin/dash">Inicio</a>
              </li>
              <li>
@@ -27,7 +27,15 @@
 
               </div>
               <li>
-               <a href="#" id="cerrar">Cerrar sesion</a>
+                <a class="dropdown-item" href="{{ route('logout') }}"
+                   onclick="event.preventDefault();
+                                 document.getElementById('logout-form').submit();">
+                    Cerrar sesion
+                </a>
+
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                    @csrf
+                </form>
               </li>
               </ul>
                </div>
