@@ -11,40 +11,10 @@
 
 </head>
 <body>
+	@include('nav')
+	@include('sidebar')
 
-	<nav class="navbar navbar-inverse">
-	 <div class="container-fluid">
-	  <div class="navbar-header">
-	   <button type="button" class="collapsed navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-9" aria-expanded="false">
-	    <span class="sr-only">Toggle navigation</span>
-	     <span class="icon-bar"></span>
-	      <span class="icon-bar"></span>
-	       <span class="icon-bar"></span>
-	        </button>
-	         <a href="#" class="navbar-brand">Cambiando Destinos</a>
-	          </div>
-	           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
-	            <ul class="nav navbar-nav">
-	             <li class="active"><a href="#">Home</a>
-	             </li> <li>
-								 <div class="navspace"></div>
-								 <a href="#" id="cerrar">Cerrar sesion</a>
-	             <span></span></li>
-	              </ul>
-	               </div>
-	                </div>
-								</nav>
-	<div class="side">
-		<div class="list-group">
- 		 <a href="/admin/dash" class="list-group-item">Inicio</a>
- 		 <a href="/admin/benef" class="list-group-item ">Usuarios</a>
-  		<a href="/admin/registrados" class="list-group-item">Registros</a>
-  		<a href="/admin/graficos" class="list-group-item active ">Graficos</a>
-
-	</div>
-	</div>
-
-	<div class="lefted" style="background-image:url('./img/back.jpg');">
+	<div class="lefted" style="background-image:url({{url('img/atras.jpg')}});">
 
 		<div class="ws1">
 				<canvas id="line-chart" style="width:100%; height:100%"></canvas>
