@@ -25,7 +25,9 @@
 	           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
 	            <ul class="nav navbar-nav">
 	             <li class="active"><a href="#">Home</a>
-	             </li> <li><a href="#" style="margin-left:920px;">Cerrar sesion</a>
+	             </li> <li>
+								 <div class="navspace"></div>
+								 <a href="#" id="cerrar">Cerrar sesion</a>
 	             <span></span></li>
 	              </ul>
 	               </div>
