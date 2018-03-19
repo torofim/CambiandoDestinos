@@ -82,7 +82,7 @@
 				<div class=" col-md-4  imagen">
 					<img class="img-responsive" src="./img/fclogo1.png" >
 				</div>
-				<div class="col-md-4 texto">
+				<div class="col-md-3 texto">
 					<p>SOMOS UNA INSTITUCION DE INICIATIVA PRIVADA SIN FIN DE
 						LUCRO CON RESPONSABILIDADES CULTURALES Y SOCIALES ​
  						EN DONDE DISENAMOS Y ENCAUSAMOS PROYECTOS DE UNIDAD
@@ -96,73 +96,91 @@
 </div>
 
     </section>
-    <section class="success1" id="historia">
-        <div class="container3">
-            <div class="col-lg-12 rows" style="background:url(./img/folleto.jpg) no-repeat center center ; background-size:cover;">
-                <div class="col-lg-12 text-center">
+    <section class="success1" id="historia" >
+        <div class="container3" >
+            <div class="col-md-12 rows" style="max-height:100vh;">
+                <div class="col-md-12 text-center">
                     <h2>Historias de aliento</h2>
                 </div>
-								<div class="col-lg-11 contenido">
-								<div class="col-md-3 dentro">
-									<div class="col-md-11 dentro1">
-										<img class="img-responsive img-rounded " src="./img/diamadre.jpg" alt="responsive">
-										<div class="overlay">
-											<div class="text"><a href="#">Conoce Mas</a></div>
-										</div>
+								<div class="col-md-6 contenido" style="margin-left:1%; ">
+								<div class="col-md-6 dentro" >
+									<div class="col-md-12 dentro2" >
+										<img class="img-responsive img-rounded " src="./img/mario1.jpg" alt="responsive">
 									</div>
 
+									</div>
+									<div class="col-md-5"style="margin-left:3%;"><p style="text-align:center;margin-top:30%;color:black;">Mario</p> <br>
+										<p style="color:black;">Mario es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
+										cuando Fundación Cambiando Destinos abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
+										juega futbol con sus companeros de la escuela</p> </div>
 								</div>
-								<div class="col-md-3 dentro">
-									<div class="col-md-11 dentro1">
-										<img class="img-responsive" src="./img/doc.jpg" alt="responsive" >
-										<div class="overlay">
-											<div class="text"><a href="#">Conoce Mas</a></div>
-										</div>
+								<div class="col-md-6 contenido" style="margin-left:-1%; ">
+								<div class="col-md-6 dentro" >
+									<div class="col-md-12 dentro2">
+										<img class="img-responsive img-rounded" src="./img/chilito.jpg" alt="responsive" >
 									</div>
 								</div>
-
-
+									<div class="col-md-5" style="margin-left:3%;"><p style="text-align:center;margin-top:30%;color:black;">Chilito</p> <br><p style="color:black;">
+										Chilito es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
+										cuando Fundación Cambiando Destinos abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
+										juega futbol con sus companeros de la escuela</p> </div>
             </div>
         </div>
     </section>
-		<section class="success1" id="nuestros" style="margin-top:50%;">
+		<section class="success1" id="nuestros" >
 				<div class="container3">
-						<div class="col-lg-12 rows"  style="background:url(./img/fondochido.jpg) no-repeat center center ; background-size:cover;" >
+						<div class="col-lg-12 rows"   >
 								<div class="col-lg-12 text-center">
 										<h2>Cambiando Destinos</h2>
 								</div>
-								<div class="col-lg-11 contenido">
-								<div class="col-md-3 dentro">
+								<div class="col-md-11 contenido">
+								<div class="col-md-3 dentro" >
 									<div class="col-md-11 dentro1">
-										<img class="img-responsive " src="./img/arbol.jpg" >
+										<img class="img-responsive img-rounded " src="./img/comidacaliente.png" >
 										<div class="overlay">
-											<div class="text"><a href="#">Conoce Mas</a></div>
+											<div class="text">
+												<p>Proteccion al Abuelo</p>
+												<br>
+												<a href="#">Conoce Mas</a>
+											</div>
 										</div>
 									</div>
 
 								</div>
 								<div class="col-md-3 dentro">
 									<div class="col-md-11 dentro1">
-										<img class="img-responsive" src="./img/visita.jpg" >
+										<img class="img-responsive img-rounded" src="./img/visita.jpg" >
 										<div class="overlay">
-											<div class="text"><a href="#">Conoce Mas</a></div>
+											<div class="text">
+												<p>Proteccion al Abuelo</p>
+												<br>
+												<a href="#">Conoce Mas</a>
+											</div>
 										</div>
 									</div>
 								</div>
 								<div class="col-md-3 dentro">
 									<div class="col-md-11 dentro1">
-										<img class="img-responsive" src="./img/reunion.jpg" >
+										<img class="img-responsive img-rounded" src="./img/reunion.jpg" >
 										<div class="overlay">
-											<div class="text"><a href="#">Conoce Mas</a></div>
+											<div class="text">
+												<p>Proteccion al Abuelo</p>
+												<br>
+												<a href="#">Conoce Mas</a>
+											</div>
 										</div>
 									</div>
 								</div>
 								<div class="col-md-3 dentro">
 									<div class="col-md-11 dentro1">
 
-									 	<img class="img-responsive" src="./img/revision.jpg" >
+									 	<img class="img-responsive img-rounded" src="./img/revision.jpg" >
 										<div class="overlay">
-											<div class="text"><a href="#">Conoce Mas</a></div>
+											<div class="text">
+												<p>Proteccion al Abuelo</p>
+												<br>
+												<a href="#">Conoce Mas</a>
+											</div>
 										</div>
 
 									</div>
@@ -173,7 +191,7 @@
 				</div>
 		</section>
 
-		<section class="success1 hidden-xs" id="logros" style="margin-top:50%;">
+		<section class="success1 hidden-xs" id="logros" >
 			<div class="col-lg-12 text-center">
 					<h2 >Logros</h2>
 			</div>
@@ -266,7 +284,7 @@
 
 
 
-		<section class="success1" id="galeria" style="margin-top:45%;" >
+		<section class="success1" id="galeria"  >
 					<div class="col-lg-12 hidden-xs text-center" style="margin-top:0;">
 							<h2>Galería</h2>
 						</div>
