@@ -11,11 +11,10 @@
 
 </head>
 <body>
-<!--	@include('nav')-->
 			@include('nav')
 			@include('sidebar')
 
-	<div class="lefted" style="background-image:url({{url('img/atras.jpg')}});">
+	<div class="lefted" style="background-image:url();">
 		<div class="separador">
 			<label id="titulo">Beneficiarios</label>
 		</div>

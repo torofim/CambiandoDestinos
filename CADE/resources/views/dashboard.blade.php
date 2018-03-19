@@ -15,7 +15,7 @@
 	@include('sidebar')
 		</ul>
 	</div>
-	<div class="lefted" style="background-image:url({{url('img/atras.jpg')}})">
+	<div class="lefted" style="background-image:url()">
 		<div class="separador">
 			<label id="titulo">Dashboard</label>
 		</div>
