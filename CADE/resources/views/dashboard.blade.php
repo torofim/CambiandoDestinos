@@ -12,7 +12,7 @@
 </head>
 <body>
 	@include('nav')
-	@include('sidebar')
+
 		</ul>
 	</div>
 	<div class="lefted" style="background-image:url()">

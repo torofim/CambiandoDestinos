@@ -12,7 +12,7 @@
 </head>
 <body>
 	@include('nav')
-	@include('sidebar')
+
 
 	<div class="lefted" style="background-image:url();">
 		<div class="separador">

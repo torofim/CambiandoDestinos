@@ -8,7 +8,7 @@ html,body {
 body{
 width:100vw;
 height:100vh;
-
+  background-color:#868686;
 
 }
 .navbar-brand{
@@ -36,7 +36,8 @@ height:100vh;
 	height:100vh;
 	float:left;
 	z-index:1;
-	padding-left:15vw;
+  margin-left:8vw;
+
 }
 .ws1{
 	width:40vw;
@@ -45,6 +46,7 @@ height:100vh;
 	float:left;
 	margin-left:2vw;
 	margin-top:2vh;
+  border-radius:5px;
 }
 .ws2{
 	width:40vw;
@@ -53,6 +55,7 @@ height:100vh;
 	float:left;
 	margin-left:1vw;
 	margin-top:2vh;
+  border-radius:5px;
 }
 .sws1{
 	width:40vw;
@@ -93,6 +96,14 @@ height:100vh;
 	background-color:rgba(72,72,72,0.7);
 	margin-left:3.5vh;
 	margin-top:3vh;
+	float:left;
+}
+.separador2{
+	width:81vw;
+	height:6vh;
+	background-color:rgba(72,72,72,0.7);
+	margin-left:3.5vh;
+	margin-top:2vh;
 	float:left;
 }
 .caja1{
@@ -265,13 +276,20 @@ img{
 	color:white;
 	margin-left:40%;
 }
+#titulo2{
+	font-size:30px;
+	text-align:center;
+	display:inline-block;
+	color:white;
+	margin-left:40%;
+}
 .panel-default{
 	margin:0px;
 	overflow-y:scroll;
 	max-height:75vh;
 }
 .navspace{
-  width:70vw;
+  width:50vw;
   height:1vh;
   float:left;
 }

@@ -12,10 +12,12 @@
 </head>
 <body>
 	@include('nav')
-	@include('sidebar')
+
 
 	<div class="lefted" style="background-image:url();">
-
+		<div class="separador2">
+			<label id="titulo2">Graficos</label>
+		</div>
 		<div class="ws1">
 				<canvas id="line-chart" style="width:100%; height:100%"></canvas>
 		</div>
