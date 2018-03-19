@@ -24,7 +24,7 @@ header {
 
 }
 nav a{
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 .content-wrapper{
     background-color: white;
@@ -199,7 +199,8 @@ section.success1{
     margin-top: 3%;
     }
 footer{
-  margin-top: 10%;
+  margin-top: 45%;
+  max-height: 80vh;
 }
 .container4{
   margin-top: 1%;

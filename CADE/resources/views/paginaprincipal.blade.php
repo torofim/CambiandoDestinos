@@ -12,7 +12,7 @@
 
 </head>
 
-<body>
+<body id="page-top">
 	<nav class="navbar navbar-default navbar-fixed-top">
 	  <a class="navbar-brand" href="#page-top" style="font-size:1.8em;">Fundación Cambiando Destinos</a>
 	  <div class="containerarriba">
@@ -435,19 +435,19 @@
 
 		<section class="success1"  style="margin-top:5%;" >
 
-    <footer class=" container"id="contacto" style=" background-color:	#000000;color:#fff;text-align:center;width:100%;height:40em;">
-			<div class="col-md-12 todo">
-				<div class="col-md-6 izq">
 
+			<div class="col-md-12 todo"id="contacto" style="background-color:blue;margin-top:10%;">
+				<div class="col-md-6 izq" style="background-color:red;">
+					<img class="img-responsive"src="./img/edificio.jpg" alt="" style="margin-left:50%;margin-top:12%;">
 				</div>
 				<div class="col-md-6 der">
-						<h4 style="color:white;font-size:5em;">Contacto</h4>
+						<h4 style="color:black;font-size:5em;margin-top:12%;">Contacto</h4>
 				</div>
 
 			</div>
 
 
-    </footer>
+
 
 		  </section>
 </div>
