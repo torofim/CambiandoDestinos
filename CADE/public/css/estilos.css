@@ -141,15 +141,18 @@ height: 65%;
    left: 0;
  right: 0;
    background: rgb(0, 0, 0);
-   background: rgba(0, 0, 0, 0.5); /* Black see-through */
+   background: rgba(46, 87, 9, 0.9); /* Black see-through */
    color: #15600b;
    width: 100%;
+   height: 100%;
    transition: .5s ease;
    opacity:0;
    color: white;
    font-size: 20px;
    padding: 20px;
    text-align: center;
+   background-image: url(./img/loga1.png);
+
 
 }
 
@@ -185,10 +188,10 @@ footer{
 .container4{
   margin-top: 1%;
   margin-left: 8%;
-  max-height: 80vh;
+  max-height: 85vh;
 }
 .carousel-inner{
-  max-height: 80vh;
+  max-height: 85vh;
 }
 
 
