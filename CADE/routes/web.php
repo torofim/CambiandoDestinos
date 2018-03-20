@@ -20,12 +20,7 @@ Route::get('/principal', function () {
 
 Route::get('/Login',function(){
     return view('login');
-Route::get('/usuarios',function(){
-    return view('usuarios');
-});
-});
-Route::get('/dashboard',function(){
-  return view ('dashboard');
+
 });
 Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::get('/',function(){return "yeah";});
