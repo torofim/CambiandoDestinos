@@ -1,12 +1,14 @@
 
-
+<head>
+		<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/newstyle.css') }}">
+</head>
 
 @include('nav')
 @extends('layouts.app')
 
-<div class="container">
+<div class="container" style="margin-left:7.5%;">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
                 <div class="card-header">Login</div>
 
@@ -43,7 +45,7 @@
                           @forelse($perros as $usu)
                           <td>{{$usu->id}}</td>
                           <td>{{$usu->name}}</td>
-                          <td></td>
+                          <td>{{$usu->email}}</td>
                           <td><button type="button" class="btn btn-info btn-lg btnEdit"
                             data-toggle="modal" data-target="#myModal"
                             data-Nombre="{{$usu->name}}"
@@ -51,10 +53,10 @@
                             data-id="{{$usu->id}}">Editar </button></td>
                           <td>
                           {!! Form::open(
-                            array('route'=>['admin.usuarios.destroy',$usu->id],
+                            array('route'=>['admin.registrados.destroy',$usu->id],
                           'method'=>'DELETE' )) !!}
                           <button type="submit" >
-                            <i class="glyphicon glyphicon-remove"></i>
+                            <i style="color:red;">X</i>
                           </button>
                           {!! Form::close() !!}
                           </td>

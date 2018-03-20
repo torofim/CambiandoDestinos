@@ -7,7 +7,7 @@
       <span class="icon-bar"></span>
        <span class="icon-bar"></span>
         </button>
-         <a href="/principal" class="navbar-brand">Cambiando Destinos</a>
+         <a href="/principal" class="navbar-brand"> Fundación Cambiando Destinos</a>
           </div>
            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-9">
             <ul class="nav navbar-nav">
@@ -23,7 +23,9 @@
               <li>
                 <a href="/admin/graficos">Graficos</a>
               </li>
-  
+              <div class="navspace">
+
+              </div>
               <li>
                 <a class="dropdown-item" href="{{ route('logout') }}"
                    onclick="event.preventDefault();
