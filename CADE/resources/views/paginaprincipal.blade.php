@@ -398,7 +398,7 @@
 		<section   style="margin-top:6%;" >
 
 
-			<div class="col-md-12 todo"id="contacto" style="margin-top:7%;">
+			<div class="col-md-12 todo"id="contacto" style="margin-top:7%;height:90vh;">
 				<div class="col-md-4 izq" style="margin-left:30%;height:60vh;width:20%;">
 					<img class="img-responsive" src="./img/edificio.jpg" alt="" style="height:100%;">
 				</div>
