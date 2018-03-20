@@ -164,7 +164,7 @@
 										<img class="img-responsive img-rounded" src="./img/reunion.jpg" >
 										<div class="overlay">
 											<div class="text">
-												<h4>Taller Apprendiendo a Vivir en la 3ra Edad</h4>
+												<h4>Taller Aprendiendo a Vivir en la 3ra Edad</h4>
 												<br>
 												<a href="/taller">Conoce Mas</a>
 											</div>
@@ -399,13 +399,15 @@
 
 
 			<div class="col-md-12 todo"id="contacto" style="margin-top:7%;">
-				<div class="col-md-6 izq" style="">
-					<img class="img-responsive"src="./img/edificio.jpg" alt="" style="margin-left:50%;height:60vh;">
+				<div class="col-md-4 izq" style="margin-left:30%;height:60vh;width:20%;">
+					<img class="img-responsive" src="./img/edificio.jpg" alt="" style="height:100%;">
 				</div>
-				<div class="col-md-6 der">
-					<article  style="width:50%;margin-top:7%;">
-						<h4 style="color:black;font-size:3em;margin-top:2%;text-align:center;">Contacto</h4>
+				<div class="col-md-4 der" style="height:60vh;width:20%;">
+					<article  style="width:100%;margin-top:7%;">
+						<h4 style="color:black;font-size:2.5em;margin-top:2%;text-align:center;">Contacto</h4>
+						<br>
 						<p style="font-size:2.5em;color:black;">Fundacion Cambiando Destinos</p>
+						<br>
 						<p style="text-decoration:underline;">Dirección</p>
 						<p style="font-style:bold;">Francisco I. Madero #503</p>
 						<p style="font-style:bold;">Local #3</p>
