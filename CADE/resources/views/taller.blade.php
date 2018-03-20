@@ -73,15 +73,15 @@
             <div class=" row">
         <article class="acerca">
           <div class=" col-md-5  imagen">
-            <img class="img-responsive" style="margin-top:-5%;margin-left:2%;"src="./img/fclogo1.png" >
+            <img class="img-responsive" style="margin-top:0%;margin-left:2%;"src="./img/fclogo1.png" >
           </div>
-          <div class="col-md-6 texto" style="margin-left:3%;background-color:red;">
-            <p style="font-size:1.5em;">SOMOS UNA INSTITUCION DE INICIATIVA PRIVADA SIN FIN DE
-              LUCRO CON RESPONSABILIDADES CULTURALES Y SOCIALES ​
-              EN DONDE DISENAMOS Y ENCAUSAMOS PROYECTOS DE UNIDAD
-              QUE DESARROLLEN UN CAMBIO SUSTENTABLE EN LA INTEGRACION
-              Y FORMACION DE NINOS, JOVENES, ADULTOS Y ANCIANOS, EN CULTURA
-              EDUCACION Y SALUD.​</p>
+          <div class="col-md-6 texto" style="margin-left:3%;margin-top:2%;">
+            <p style="font-size:3em;">Taller Aprendiendo a Vivir en la 3ra Edad, es un espacio donde
+              se desarrollan temas de interes para nuestros asistentes de acuerdo a la etapa de vida
+              en la que se encuentran; los talleres son platicas de autocuidado, prevencion de enfermedades
+              problematicas sociales actuales y actividades recreativas, al termino se realiza un convivio
+              entre los asistentes. De octubre del 2011 a finales del 2016 se han impartido 239 talleres.
+              Logrando atencion personalizada a 136 adultos mayores.​</p>
           </div>
     			</article>
     </div>

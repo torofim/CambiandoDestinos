@@ -75,13 +75,12 @@
           <div class=" col-md-5  imagen">
             <img class="img-responsive" style="margin-top:-5%;margin-left:2%;"src="./img/fclogo1.png" >
           </div>
-          <div class="col-md-6 texto" style="margin-left:3%;background-color:red;">
-            <p style="font-size:1.5em;">SOMOS UNA INSTITUCION DE INICIATIVA PRIVADA SIN FIN DE
-              LUCRO CON RESPONSABILIDADES CULTURALES Y SOCIALES ​
-              EN DONDE DISENAMOS Y ENCAUSAMOS PROYECTOS DE UNIDAD
-              QUE DESARROLLEN UN CAMBIO SUSTENTABLE EN LA INTEGRACION
-              Y FORMACION DE NINOS, JOVENES, ADULTOS Y ANCIANOS, EN CULTURA
-              EDUCACION Y SALUD.​</p>
+          <div class="col-md-6 texto" style="margin-left:3%;">
+            <p style="font-size:3.2em;">Otorga gratiutamente talleres de pintura artistica y musica a
+               cargo de maestros y artistas de la comunidad. Nuestra institucion facilita tosos los materiales
+               para pintura artistica y los instrumentos para el taller. Estos son iompartidos en las instalaciones de
+               nuestra institucion. De octubre del 2011 a finales del 2015 se impartieron 1248 talleres de musica
+               y 832 talleres de pintura, beneficiando a un aproximado de 115 alumnos.​</p>
           </div>
     			</article>
     </div>

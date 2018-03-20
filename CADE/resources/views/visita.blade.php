@@ -75,13 +75,12 @@
     				<div class=" col-md-5  imagen">
     					<img class="img-responsive" style="margin-top:-5%;margin-left:2%;"src="./img/fclogo1.png" >
     				</div>
-    				<div class="col-md-6 texto" style="margin-left:3%;background-color:red;">
-    					<p style="font-size:1.5em;">SOMOS UNA INSTITUCION DE INICIATIVA PRIVADA SIN FIN DE
-    						LUCRO CON RESPONSABILIDADES CULTURALES Y SOCIALES ​
-     						EN DONDE DISENAMOS Y ENCAUSAMOS PROYECTOS DE UNIDAD
-    						QUE DESARROLLEN UN CAMBIO SUSTENTABLE EN LA INTEGRACION
-    						Y FORMACION DE NINOS, JOVENES, ADULTOS Y ANCIANOS, EN CULTURA
-    						EDUCACION Y SALUD.​</p>
+    				<div class="col-md-6 texto" style="margin-left:3%;">
+    					<p style="font-size:3.7em;">Fundacion Cambiando Destinos en sus visitas domiciliarias
+                es donde proporciona atencion personalizada en monitoreo cronico degenerativas mas comunes
+                (presion arterial, glucosa), en aspectos cofnitivos, emocinales, nutricionales e higiene.
+                De octrubre del 2011 a finales del 2016 se han logrado 9,112 visitas.
+    						​</p>
     				</div>
     			</article>
     </div>
