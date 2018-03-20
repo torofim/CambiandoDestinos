@@ -44,7 +44,8 @@
                           <td><button type="button" class="btn btn-info btn-lg btnEdit"
                             data-toggle="modal" data-target="#myModal"
                             data-Nombre="{{$usu->name}}"
-                            data-email="{{$usu->email}}">Editar </button></td>
+                            data-email="{{$usu->email}}"
+                            data-id="{{$usu->id}}">Editar </button></td>
                           <td>
                           {!! Form::open(
                             array('route'=>['admin.usuarios.destroy',$usu->id],
@@ -106,13 +107,14 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">Editar a: <b></b> </h4>
+        <h4 class="modal-title">Editar a: <b id="nomModal">Juan</b> </h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
 
       </div>
       {!! Form::open(
-        array('route'=>['admin.usuarios.destroy',$usu->id],'method'=>'DELETE' )) !!}
+        array('route'=>['admin.usuarios.edit',$usu->id],'method'=>'GET' )) !!}
       <div class="modal-body">
+        <input type="hidden" name="id" id="iEditar" value="">
           <div class="input-group">
             <label for="">Nombre</label>
             <input type="text" name="nameEditar" id="nameEditar" value="" class="form-control">
@@ -142,7 +144,8 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-        <button type="submit" class="btn btn-primary" data-dismiss="modal">Aceptar</button>
+        <button type="submit" class="btn btn-primary">Aceptar</button>
+        <!-- data-dismiss detiene el actualizado-->
       </div>
       {{Form::close() }}
     </div>
@@ -157,8 +160,11 @@
     $(".btnEdit").on('click',function(){
       var n=$(this).data('nombre');
       var e=$(this).data('email');
+      var i=$(this).data('id');
+      $("#iEditar").val(i);
       $("#nameEditar").val(n);
       $('#emailEditar').val(e);
+      $('#nomModal').text(n);
     });
   });
 </script>
