@@ -53,7 +53,7 @@
         <div class="container">
             <div class="rowheader">
                 <div class="col-md-12">
-                    <img class="img-responsive" src="./img/visita2.jpg" alt="">
+                    <img class="img-responsive" src="./img/musica2.jpg" alt="">
                     <div class="intro-text">
 
                     </div>
@@ -66,23 +66,23 @@
             <div class="container1">
                 <div class="row" id="sobre">
                     <div class="col-md-12 text-center">
-                        <h2 style="margin-top:3%;">Visita Domiciliaria</h2>
-                    </div>
-                </div>
-            <div class="container1">
-    					<div class=" row">
-    			<article class="acerca">
-    				<div class=" col-md-4  imagen">
-    					<img class="img-responsive" src="./img/fclogo1.png" >
-    				</div>
-    				<div class="col-md-3 texto">
-    					<p>SOMOS UNA INSTITUCION DE INICIATIVA PRIVADA SIN FIN DE
-    						LUCRO CON RESPONSABILIDADES CULTURALES Y SOCIALES ​
-     						EN DONDE DISENAMOS Y ENCAUSAMOS PROYECTOS DE UNIDAD
-    						QUE DESARROLLEN UN CAMBIO SUSTENTABLE EN LA INTEGRACION
-    						Y FORMACION DE NINOS, JOVENES, ADULTOS Y ANCIANOS, EN CULTURA
-    						EDUCACION Y SALUD.​</p>
-    				</div>
+                      <h2 style="margin-top:7%;font-size:4em;margin-left:38%;">Instituto Cultural Cambiando Destinos</h2>
+                  </div>
+              </div>
+          <div class="container1">
+            <div class=" row">
+        <article class="acerca">
+          <div class=" col-md-5  imagen">
+            <img class="img-responsive" style="margin-top:-5%;margin-left:2%;"src="./img/fclogo1.png" >
+          </div>
+          <div class="col-md-6 texto" style="margin-left:3%;background-color:red;">
+            <p style="font-size:1.5em;">SOMOS UNA INSTITUCION DE INICIATIVA PRIVADA SIN FIN DE
+              LUCRO CON RESPONSABILIDADES CULTURALES Y SOCIALES ​
+              EN DONDE DISENAMOS Y ENCAUSAMOS PROYECTOS DE UNIDAD
+              QUE DESARROLLEN UN CAMBIO SUSTENTABLE EN LA INTEGRACION
+              Y FORMACION DE NINOS, JOVENES, ADULTOS Y ANCIANOS, EN CULTURA
+              EDUCACION Y SALUD.​</p>
+          </div>
     			</article>
     </div>
     </div>
