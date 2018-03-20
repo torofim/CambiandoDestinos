@@ -18,6 +18,19 @@ Route::get('/principal', function () {
     return view('paginaprincipal');
 });
 
+Route::get('/taller', function () {
+    return view('taller');
+});
+Route::get('/visita', function () {
+    return view('visita');
+});
+Route::get('/cultura', function () {
+    return view('cultura');
+});
+Route::get('/comida', function () {
+    return view('comida');
+});
+
 Route::get('/Login',function(){
     return view('login');
 

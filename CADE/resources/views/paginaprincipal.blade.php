@@ -14,7 +14,7 @@
 
 <body id="page-top">
 	<nav class="navbar navbar-default navbar-fixed-top">
-	  <a class="navbar-brand" href="#page-top" style="font-size:1.8em;">Fundación Cambiando Destinos</a>
+	  <a class="navbar-brand" href="#page-top" style="font-size:2em;">Fundación Cambiando Destinos</a>
 	  <div class="containerarriba">
 
 	      <div class="navbar-header page-scroll">
@@ -136,12 +136,12 @@
 								<div class="col-md-11 contenido">
 								<div class="col-md-3 dentro" >
 									<div class="col-md-11 dentro1">
-										<img class="img-responsive img-rounded " src="./img/comidacaliente.png" >
+										<img class="img-responsive img-rounded " src="./img/visita.jpg" >
 										<div class="overlay">
 											<div class="text">
-												<p>Proteccion al Abuelo</p>
+												<h4>Visita Domiciliaria</h4>
 												<br>
-												<a href="#">Conoce Mas</a>
+												<a href="/visita">Conoce Mas</a>
 											</div>
 										</div>
 									</div>
@@ -149,12 +149,12 @@
 								</div>
 								<div class="col-md-3 dentro">
 									<div class="col-md-11 dentro1">
-										<img class="img-responsive img-rounded" src="./img/visita.jpg" >
+										<img class="img-responsive img-rounded" src="./img/comidacaliente.png" >
 										<div class="overlay">
 											<div class="text">
-												<p>Proteccion al Abuelo</p>
+												<h4>Comida Caliente</h4>
 												<br>
-												<a href="#">Conoce Mas</a>
+												<a href="/comida">Conoce Mas</a>
 											</div>
 										</div>
 									</div>
@@ -164,9 +164,9 @@
 										<img class="img-responsive img-rounded" src="./img/reunion.jpg" >
 										<div class="overlay">
 											<div class="text">
-												<p>Proteccion al Abuelo</p>
+												<h4>Taller Aprendiendo a Vivir en la 3ra Edad</h4>
 												<br>
-												<a href="#">Conoce Mas</a>
+												<a href="/taller">Conoce Mas</a>
 											</div>
 										</div>
 									</div>
@@ -174,12 +174,13 @@
 								<div class="col-md-3 dentro">
 									<div class="col-md-11 dentro1">
 
-									 	<img class="img-responsive img-rounded" src="./img/revision.jpg" >
+									 	<img class="img-responsive img-rounded" src="./img/musica2.jpg" >
 										<div class="overlay">
+
 											<div class="text">
-												<p>Proteccion al Abuelo</p>
+													<h4>Instituto Cultural Cambiando Destinos</h4>
 												<br>
-												<a href="#">Conoce Mas</a>
+												<a href="/cultura" >Conoce Mas</a>
 											</div>
 										</div>
 
@@ -370,78 +371,52 @@
 </div>
 </div>
 <div class="carouselGallery-col-1 carouselGallery-carousel" data-index="11" data-username="Revisando a Juanito" data-imagetext="
-" data-location="" data-likes="" data-imagepath="./img/revision.jpg" data-posturl="" style="background-image:url(./img/revision.jpg);">
+" data-location="" data-likes="" data-imagepath="./img/visita2.jpg" data-posturl="" style="background-image:url(./img/visita2.jpg);">
 <div class="carouselGallery-item">
 
 </div>
 </div>
 <div class="carouselGallery-col-1 carouselGallery-carousel" data-index="11" data-username="Revisando a Juanito" data-imagetext="
-" data-location="" data-likes="" data-imagepath="./img/revision.jpg" data-posturl="" style="background-image:url(./img/revision.jpg);">
+" data-location="" data-likes="" data-imagepath="./img/domi2.jpg" data-posturl="" style="background-image:url(./img/domi2.jpg);">
 <div class="carouselGallery-item">
 
 </div>
 </div>
 <div class="carouselGallery-col-1 carouselGallery-carousel" data-index="11" data-username="Revisando a Juanito" data-imagetext="
-" data-location="" data-likes="" data-imagepath="./img/revision.jpg" data-posturl="" style="background-image:url(./img/revision.jpg);">
+" data-location="" data-likes="" data-imagepath="./img/donaciones.jpg" data-posturl="" style="background-image:url(./img/donaciones.jpg);">
 <div class="carouselGallery-item">
 
 </div>
 </div>
 </div>
-<div class="carouselGallery-col-40">
-	<div class="carouselGallery-col-0 carouselGallery-carousel" data-index="11" data-username="Revisando a Juanito" data-imagetext="
-	" data-location="" data-likes="" data-imagepath="./img/revision.jpg" data-posturl="" style="background-image:url(./img/revision.jpg);">
-	<div class="carouselGallery-item">
 
-	</div>
-	</div>
-	<div class="carouselGallery-col-0 carouselGallery-carousel" data-index="12" data-username="Revisando a Juanito" data-imagetext="
-	" data-location="" data-likes="" data-imagepath="./img/revision.jpg" data-posturl="" style="background-image:url(./img/revision.jpg);">
-	<div class="carouselGallery-item">
-
-	</div>
-	</div>
-	<div class="carouselGallery-col-0 carouselGallery-carousel" data-index="13" data-username="Revisando a Juanito" data-imagetext="
-	" data-location="" data-likes="" data-imagepath="./img/revision.jpg" data-posturl="" style="background-image:url(./img/revision.jpg);">
-	<div class="carouselGallery-item">
-
-	</div>
-	</div>
-
-    <div class="carouselGallery-col-0 carouselGallery-carousel" data-index="14" data-username="Don Tencho Dentista" data-imagetext="
-    " data-location="" data-likes="" data-imagepath="./img/apoyo.jpg" data-posturl="" style="background-image:url(./img/apoyo.jpg);">
-    <div class="carouselGallery-item">
-
-    </div>
-		</div>
-		<div class="carouselGallery-col-0 carouselGallery-carousel" data-index="15" data-username="Don Tencho Dentista" data-imagetext="
-		" data-location="" data-likes="" data-imagepath="./img/apoyo.jpg" data-posturl="" style="background-image:url(./img/apoyo.jpg);">
-		<div class="carouselGallery-item">
-
-		</div>
-		</div>
-		<div class="carouselGallery-col-0 carouselGallery-carousel" data-index="16" data-username="Don Tencho Dentista" data-imagetext="
-		" data-location="" data-likes="" data-imagepath="./img/arbol.jpg" data-posturl="" style="background-image:url(./img/arbol.jpg);">
-		<div class="carouselGallery-item">
-
-		</div>
-		</div>
-
-		</div>
 
 
 
     </section>
 
-		<section class="success1"  style="margin-top:5%;" >
+		<section   style="margin-top:6%;" >
 
 
-			<div class="col-md-12 todo"id="contacto" style="background-color:blue;margin-top:10%;">
-				<div class="col-md-6 izq" style="background-color:red;">
-					<img class="img-responsive"src="./img/edificio.jpg" alt="" style="margin-left:50%;margin-top:12%;">
+			<div class="col-md-12 todo"id="contacto" style="margin-top:7%;height:80vh;">
+				<div class="col-md-4 izq" style="margin-left:30%;height:60vh;width:20%;">
+					<img class="img-responsive" src="./img/edificio.jpg" alt="" style="height:100%;">
 				</div>
-				<div class="col-md-6 der">
-						<h4 style="color:black;font-size:5em;margin-top:12%;">Contacto</h4>
+				<div class="col-md-4 der" style="height:60vh;width:30%;">
+					<article  style="width:100%;margin-top:7%;">
+						<h4 style="color:black;font-size:2em;margin-top:1%;">Contacto</h4>
+
+						<p style="font-size:2em;color:black;">Fundacion Cambiando Destinos</p>
+
+						<p style="">Dirección: Francisco I. Madero #503 Local #3</p>
+
+						<p style="">Telefono: +52-636-121-2491 </p>
+
+						<p style="">Correo Electronico: fundacioncambiandodestinos@hotmail.com</p>
+
+					</article>
+
+
 				</div>
 
 			</div>
