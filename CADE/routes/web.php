@@ -33,7 +33,6 @@ Route::get('/comida', function () {
 
 Route::get('/Login',function(){
     return view('login');
-
 });
 Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::get('/',function(){return "yeah";});
