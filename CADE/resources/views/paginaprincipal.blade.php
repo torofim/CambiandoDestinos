@@ -398,23 +398,22 @@
 		<section   style="margin-top:6%;" >
 
 
-			<div class="col-md-12 todo"id="contacto" style="margin-top:7%;height:90vh;">
+			<div class="col-md-12 todo"id="contacto" style="margin-top:7%;height:80vh;">
 				<div class="col-md-4 izq" style="margin-left:30%;height:60vh;width:20%;">
 					<img class="img-responsive" src="./img/edificio.jpg" alt="" style="height:100%;">
 				</div>
-				<div class="col-md-4 der" style="height:60vh;width:20%;">
+				<div class="col-md-4 der" style="height:60vh;width:30%;">
 					<article  style="width:100%;margin-top:7%;">
-						<h4 style="color:black;font-size:2.5em;margin-top:2%;text-align:center;">Contacto</h4>
-						<br>
-						<p style="font-size:2.5em;color:black;">Fundacion Cambiando Destinos</p>
-						<br>
-						<p style="text-decoration:underline;">Dirección</p>
-						<p style="font-style:bold;">Francisco I. Madero #503</p>
-						<p style="font-style:bold;">Local #3</p>
-						<p style="text-decoration:underline;">Telefono: </p>
-						<p style="font-style:bold;">	+52-636-121-2491 </p>
-						<p style="text-decoration:underline;">Correo Electronico</p>
-						<p style="font-style:bold;">gabytcambiandodestino@outlook.es</p>
+						<h4 style="color:black;font-size:2em;margin-top:1%;">Contacto</h4>
+
+						<p style="font-size:2em;color:black;">Fundacion Cambiando Destinos</p>
+
+						<p style="">Dirección: Francisco I. Madero #503 Local #3</p>
+
+						<p style="">Telefono: +52-636-121-2491 </p>
+
+						<p style="">Correo Electronico: fundacioncambiandodestinos@hotmail.com</p>
+
 					</article>
 
 
