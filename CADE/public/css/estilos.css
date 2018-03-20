@@ -58,6 +58,12 @@ header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
 }
+article p{
+  color:black;
+  text-align:center;
+  font-size:1.5em;
+
+}
 
 section {
     padding: 50px 0;
@@ -131,6 +137,7 @@ margin-left:6.5%;
 }
 .dentro1:hover{
   transform: scale(1.1);
+
 }
 .dentro1 img{
   min-height: 38em;
@@ -171,9 +178,21 @@ height: 65%;
 
 
 }
+h4{
+  font-size: 2.5em;
+  margin-top: -40%;
+}
+.text a{
+  text-decoration: overunderline;
+  color: black;
+  font-size: 1.5em;
+
+}
+
 
 .dentro1:hover .overlay {
   opacity: 1;
+  background-image: url(./img/logo.png);
 }
 
 .text {
