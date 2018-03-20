@@ -60,4 +60,14 @@ class usuarioscontroller extends Controller
       $usuario->delete();
       return redirect('/admin/usuarios');
     }//function destroy
+    public function edit(Request $req){
+      $usuario=User::find($req->id);
+      $usuario->name=$req->nameEditar;
+      $usuario->email=$req->emailEditar;
+      $usuario->privilegios=$req->nivelEditar;
+      $usuario->save();
+
+      return redirect()->to('/admin/usuarios')
+      ->with('mensaje','Usuario Modificado');
+    }//edit
 }
