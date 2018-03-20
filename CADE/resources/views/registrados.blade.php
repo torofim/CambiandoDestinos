@@ -61,8 +61,8 @@
 	                          {!! Form::open(
 	                            array('route'=>['admin.usuarios.destroy',$usu->id],
 	                          'method'=>'DELETE' )) !!}
-	                          <button type="submit" >
-	                            <i class="glyphicon glyphicon-remove"></i>
+	                          <button type="submit"style="width:30px; height:30px;" >
+															<span class="glyphicon glyphicon-remove" style="vertical-align: middle; color:red; font-size:30px; margin-left:-55%; margin-top:-30%;"></span>
 	                          </button>
 	                          {!! Form::close() !!}
 	                          </td>

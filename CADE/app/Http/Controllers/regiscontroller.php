@@ -34,6 +34,9 @@ class regiscontroller extends Controller
    ->with('perros',$registros);
 
  }
+ public function graficos(){
+   return view('dashboardgraficos');
+ }
  public function store(Request $req){
 
    $validator =Validator::make($req->all(),[
