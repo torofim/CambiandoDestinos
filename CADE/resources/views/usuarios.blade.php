@@ -1,11 +1,11 @@
-@extends('layouts.app')
+@extends('layouts.layout')
 
-@section('content')
+@section('principal')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header">Login</div>
+                <div class="card-header"></div>
 
                 <div class="card-body">
                   @if($errors->any())
@@ -24,7 +24,7 @@
                     </div>
                   @endif
                   <!-- ESTA ES LA TABLA ORIGINAL PARA POSTERIORES USOS-->
-                  <!--<div class="row">
+                  <div class="row">
                     <h2>usuarios</h2>
                     <table class="table table-condensed">
                       <thead>
@@ -62,7 +62,7 @@
                         @endforelse
                       </tbody>
                     </table>
-                  </div>-->
+                  </div>
                   {{Form::open(array('url'=>'/admin/usuarios','files'=>true))}}
                     <div class="input=-group col-md-12">
                       <label for="nombre">Nombre</label><br>

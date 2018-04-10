@@ -22,6 +22,7 @@ class usuarioscontroller extends Controller
       return view('usuarios')
       ->with('perros',$registros);
     }
+    //Insertar
     public function store(Request $req){
 
       $validator =Validator::make($req->all(),[
@@ -52,6 +53,7 @@ class usuarioscontroller extends Controller
       }
       dd($req->nombre);
     }
+    //Eliminar
     public function destroy($id){
       $usuario=User::find($id);
       if(file_exists(public_path('/img/usuarios/'.$usuario->imgperfil))){
@@ -60,6 +62,7 @@ class usuarioscontroller extends Controller
       $usuario->delete();
       return redirect('/admin/usuarios');
     }//function destroy
+    //Editar
     public function edit(Request $req){
       $usuario=User::find($req->id);
       $usuario->name=$req->nameEditar;
