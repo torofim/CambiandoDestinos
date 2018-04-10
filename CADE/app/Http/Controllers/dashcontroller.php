@@ -23,7 +23,7 @@ class dashcontroller extends Controller
    */
   public function index()
   {
-      return view('dashboard');
+      return view('principal');
   }
   public function benef()
   {
