@@ -251,4 +251,7 @@ section.success1{
   li a img{
     display: none;
   }
+  .container4{
+    display: none;
+  }
 }
