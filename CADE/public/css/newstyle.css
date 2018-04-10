@@ -230,7 +230,9 @@ img{
 	height:100%;
 	width:25%;
 	background-color:transparent;
+  padding-top:3%;
 	float:left;
+
 }
 .centertext{
 	height:100%;
@@ -255,8 +257,7 @@ img{
 .glyphicon{
 	font-size:80px;
 	align-content:center;
-	margin:auto;
-	margin-top:5%;
+	margin-top:15%;
 	margin-left:20%;
 	display:block;
 	color:white;
@@ -275,6 +276,7 @@ img{
 	display:inline-block;
 	color:white;
 	margin-left:40%;
+  margin-top:1%;
 }
 #titulo2{
 	font-size:30px;

@@ -67,6 +67,24 @@
 				<span class="glyphicon glyphicon-list-alt"></span>
 			</div>
 		</div>
+		<div id="target" style="display:none;">
+			<?php
+			//PHP DONDE ESTA SACAR LOS DATOS DE LA BDD
+				$servername="localhost";
+				$username="root";
+				$password="";
+				$dbname="Cambiando_Destinos";
+				$con= mysqli_connect($servername,$username,$password,$dbname);
+
+				$sql="SELECT count(id) AS total FROM users ";
+				$result= mysqli_query($con, $sql);
+				$values= mysqli_fetch_assoc($result);
+				$num_rows= $values['total'];
+			  $num_rows;
+				echo htmlspecialchars($num_rows);
+			 ?>
+		</div>
+
 
 
 
@@ -87,6 +105,14 @@
 	<script src="{{ URL::asset('js/bootstrap.js') }}"></script>
 	<script src="{{ URL::asset('js/Chart.bundle.min.js') }}"></script>
 	<script type="text/javascript">
+		$(function(){
+			$('')
+		});
+	</script>
+	<script type="text/javascript">
+		var div=document.getElementById("target");
+		var myData=div.textContent;
+
 		$(document).ready(function(){
 			Chart.defaults.global.defaultFontColor = 'black';
 
@@ -146,32 +172,46 @@
 					return Math.round(Math.random()*100);
 
 				}
-
-				new Chart(document.getElementById("doughnut-chart"), {
-	    type: 'doughnut',
-	    data: {
-	      datasets: [
-	        {
-	          backgroundColor: ["#3e95cd", "#8e5ea2"],
-	          data: [80,20]
-	        }
-	      ]
-	    },
-	});
-
-
-						new Chart(document.getElementById("doughnut-chart2"), {
-	    type: 'doughnut',
-	    data: {
-	      datasets: [
-	        {
-	          backgroundColor: ["#3e95cd", "#8e5ea2"],
-	          data: [65,35]
-	        }
-	      ]
-	    },
-	});
 			});
+		</script>
+
+		<!--ESTEEEEEEEEEEE ES EL SCRIPT DE LAS DONAAAAAAAAAAAAAAAAAAAAS-------------------------------->
+
+		<script type="text/javascript">
+	Chart.defaults.global.legend.display = false;
+
+		new Chart(document.getElementById("doughnut-chart"), {
+	type: 'doughnut',
+	data: {
+			 labels: ["Activos",""],
+		datasets: [
+			{
+				backgroundColor: ["#3e95cd", "black"],
+				//AQUI ES DONDE VOY A PONER LA VARIABLE
+				borderColor: [
+					 'rgba(255,255,255,1)',
+					 'rgba(54, 162, 235,0)'
+			 ],
+				data: [myData,10]
+			}]
+	},
+	options: {
+
+}
+});
+
+
+				new Chart(document.getElementById("doughnut-chart2"), {
+	type: 'doughnut',
+	data: {
+		datasets: [
+			{
+				backgroundColor: ["#3e95cd", "#8e5ea2"],
+				data: [65,35]
+			}
+		]
+	},
+});
 		</script>
 </body>
 </html>
