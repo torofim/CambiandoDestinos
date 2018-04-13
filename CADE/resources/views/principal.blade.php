@@ -1,5 +1,6 @@
 @extends('layouts.layout')
-@section('principal')
+
+@include('LEFTMENU')
 <div class="separador">
   <label id="titulo">Dashboard</label>
 </div>
@@ -12,9 +13,7 @@
   <div class="icon">
      <span class="glyphicon glyphicon-user"></span>
   </div>
-<div class="prtueba">
 
-</div>
 </div>
 <div class="sws2">
   <div class="chartspace">
@@ -67,7 +66,7 @@
 
 
 </div>
-@endsection
+
 @section('scripts')
 <script type="text/javascript">
   $(document).ready(function(){
