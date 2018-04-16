@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('paginaprincipal');
+    return view('pagina');
 });
 Route::get('/side', function(){
     return view('newfrontdash');

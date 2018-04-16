@@ -53,8 +53,8 @@
 	  </div>
 	  <!-- /.container-fluid -->
 	</nav>
-<header id="page-top">
-	<div class="col-lg-10 container4"  >
+
+	
 
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 <!-- Indicators -->
@@ -136,8 +136,8 @@
 <span class="sr-only" >Next</span>
 </a>
 </div>
-</div>
-</header>
+
+
 <div class="content-wrapper">
     <section class="primary" >
         <div class="container1">
