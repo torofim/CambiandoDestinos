@@ -55,15 +55,19 @@
           <div class="row">
             <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:green;">
               <p>Display numero</p>
+              <p style="font-size:3.5rem;">145</p>
             </div>
             <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:blue;">
               <p>Display numero</p>
+              <p style="font-size:3.5rem;">145</p>
             </div>
             <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:red;">
               <p>Display numero</p>
+              <p style="font-size:3.5rem;">145</p>
             </div>
             <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:green;">
               <p>Display numero</p>
+              <p style="font-size:3.5rem;">145</p>
             </div>
 		      </div>
 	     </div>
