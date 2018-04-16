@@ -28,9 +28,9 @@ nav.sidebar, .main{
 /* Add gap to nav and right windows.*/
 .main{
 padding: 0px 0px 0 0px;
-background-color:#C3C3C3;
+background-color:#D2D2D2;
 width:100vw;
-height:100vh;
+height:auto;
 }
 
 /* .....NavBar: Icon only with coloring/layout.....*/
@@ -96,7 +96,7 @@ nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
 
 /*colors dropdown box text */
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
-  color: #777;
+  color: #red;
 }
 
 /*gives sidebar width/height*/
@@ -122,7 +122,9 @@ nav.sidebar:hover{
 .forAnimate{
   opacity: 0;
 }
-}
+
+
+} /*AQUI TERMINA EL MEDIA QUERYyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy*/
 
 /* .....NavBar: Fully showing nav bar..... */
 
@@ -132,6 +134,7 @@ nav.sidebar:hover{
 .main{
   width: calc(100% - 200px); /*keeps 100% minus nav size*/
   margin-left: 200px;
+  background-color:#D2D2D2;
 }
 
 /*Show all nav*/
@@ -156,19 +159,49 @@ opacity: 1;
 section{
 padding-left: 15px;
 }
-.container{
-  width:auto;
-  height:100vh;
-  background-color:red;
-
-}
 .panel-body{
+  background-color:white;
+  height:50px;
+    font-size:1.5rem;
+}
+.panel-body2{
+  background-color:#d2d2d2;
   font-size:2.5rem;
+  color:gray;
+  margin-left:2%;
 }
-.btn-primary{
-  margin-left:1%;
-  margin-top:1.5%;
+.panel-default2{
+  height:150px;
+  float:left;
+  margin-top:20px;
 }
-.panel-body{
+.container{
+float:left;
+}
+/*DE AQUI ES EL CSS DE LOS COUNTERSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
+.coder-counter {background:#2d344d; color:#fff;}
+.coder-counter-box {border-right: 1px solid #444e70; padding:30px 0px 30px 0px;}
+.coder-counter-box h2 {}
+.coder-counter-box p{}
+  /*medias de las letras responsive de arriba de las graficas de barras*/
+  p {
+  font-size: 2rem;
   text-align:center;
 }
+  @include media-breakpoint-up(sm) {
+    p {
+      font-size: 1.2rem;
+    }
+  }
+
+  @include media-breakpoint-up(md) {
+    p {
+      font-size: 1.4rem;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    p {
+      font-size: 2rem;
+    }
+  }
