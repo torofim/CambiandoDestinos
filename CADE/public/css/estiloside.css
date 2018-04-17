@@ -178,6 +178,9 @@ padding-left: 15px;
 .container{
 float:left;
 }
+.span{
+  height:auto;
+}
 /*DE AQUI ES EL CSS DE LOS COUNTERSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
 .coder-counter {background:#2d344d; color:#fff;}
 .coder-counter-box {border-right: 1px solid #444e70; padding:30px 0px 30px 0px;}

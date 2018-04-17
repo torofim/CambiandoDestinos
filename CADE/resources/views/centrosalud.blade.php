@@ -26,11 +26,11 @@
                   {{Form::open(array('url'=>'/admin/Centrosalud','files'=>true))}}
                     <div class="input=-group col-md-12">
                       <label for="nombre">Edad</label><br>
-                      {{Form::text('edad','',array('class'=>'form-control','placeholder'=>'Edad') )}}
+                      {{Form::number('edad','',array('class'=>'form-control','placeholder'=>'Edad') )}}
                     </div>
                     <div class="input=-group col-md-12">
-                      <label for="nombre">Peso</label><br>
-                      {{Form::text('peso','',array('class'=>'form-control','placeholder'=>'Peso') )}}
+                      <label for="nombre">Peso (Kg)</label><br>
+                      {{Form::number('peso','',array('class'=>'form-control','placeholder'=>'Peso') )}}
                     </div>
                     <div class="input=-group col-md-12">
                       <label for="nombre">Presion Arterial</label><br>

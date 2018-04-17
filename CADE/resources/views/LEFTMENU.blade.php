@@ -39,7 +39,7 @@
   </nav>
   <div class="main">
     <div class="panel panel-default">
-        <div class="panel-body">
+        <div class="panel-body cold-md-2">
 
       </div>
     </div>
@@ -53,19 +53,20 @@
 
       <div class="container-fluid">
           <div class="row">
-            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:green;">
+            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:green; height:15vh;">
+              <span class="glyphicon glyphicon-heart col-xs-2"></span>
               <p>Display numero</p>
               <p style="font-size:3.5rem;">145</p>
             </div>
-            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:blue;">
+            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:blue; height:15vh;">
               <p>Display numero</p>
               <p style="font-size:3.5rem;">145</p>
             </div>
-            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:red;">
+            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:red; height:15vh;" >
               <p>Display numero</p>
               <p style="font-size:3.5rem;">145</p>
             </div>
-            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:green;">
+            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:green; height:15vh;">
               <p>Display numero</p>
               <p style="font-size:3.5rem;">145</p>
             </div>
