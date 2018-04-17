@@ -15,7 +15,7 @@
   <body id="page-top">
 
     <nav class="navbar navbar-default navbar-fixed-top ">
-      <a class="navbar-brand nombre" href="#page-top" >Fundación Cambiando Destinos</a>
+      <a class="navbar-brand nombre" href="#page-top" >Fundación Cambiando Destinos </a>
       <div class="containerarriba">
 
           <div class="navbar-header page-scroll">
@@ -181,11 +181,11 @@
   <div class="col-md-12 text-center"style="margin-top:3%;">
       <h2 >Cambiando Destinos</h2>
   </div>
-<div class="col-md-12" style="margin-top:5%;">
+<div class="col-md-12" style="margin-top:5%;margin-left:2%;">
 
 
   <div class="col-md-3 ">
-    <img class="img-responsive img-rounded " src="./img/visita.jpg" >
+    <img class="img-responsive img-rounded cuatro" src="./img/visita.jpg" style="height:450px;width:350px;">
     <div class="overlay">
       <div class="text">
         <h4>Visita Domiciliaria</h4>
@@ -195,7 +195,7 @@
     </div>
   </div>
   <div class="col-md-3 ">
-    <img class="img-responsive img-rounded" src="./img/comidacaliente.png" >
+    <img class="img-responsive img-rounded cuatro" src="./img/comidacaliente.png" style="height:450px; width:350px;">
     <div class="overlay">
       <div class="text">
         <h4>Comida Caliente</h4>
@@ -205,7 +205,7 @@
     </div>
   </div>
   <div class="col-md-3 ">
-    <img class="img-responsive img-rounded" src="./img/reunion.jpg" >
+    <img class="img-responsive img-rounded cuatro" src="./img/reunion.jpg" style="height:450px;width:350px;" >
     <div class="overlay">
       <div class="text">
         <h4>Taller Aprendiendo a Vivir en la 3ra Edad</h4>
@@ -215,7 +215,7 @@
     </div>
   </div>
   <div class="col-md-3 ">
-    <img class="img-responsive img-rounded" src="./img/musica2.jpg" >
+    <img class="img-responsive img-rounded cuatro" src="./img/musica2.jpg" style="height:450px;width:350px;">
     <div class="overlay">
       <div class="text">
           <h4>Instituto Cultural Cambiando Destinos</h4>
