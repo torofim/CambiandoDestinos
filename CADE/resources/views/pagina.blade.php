@@ -12,7 +12,7 @@
 	<link href="./css/main.css" type="text/css" rel="stylesheet">
 
   </head>
-  <body>
+  <body id="page-top">
 
     <nav class="navbar navbar-default navbar-fixed-top ">
       <a class="navbar-brand nombre" href="#page-top" >Fundación Cambiando Destinos</a>
@@ -72,8 +72,8 @@
 <div class="carousel-inner" >
 
 <div class="item active">
-<img src="./img/apoyo.jpg"  class="img-responsive" alt="Los Angeles" style="width:100%;max-height:40em;">
-<div class="carousel-caption" style="top:0%;"><h3 style="font-size:3em;">GESTIONES </h3>
+<img src="./img/apoyo.jpg"  class="img-responsive" alt="gestion" style="width:100%;max-height:40em;">
+<div class="carousel-caption" style="top:0%;"><h3 style="font-size:2.3em;margin-left:44%;margin-top:0.2%;">GESTIONES </h3>
 
   <p class="col-md-12">185 pacientes en consulta con especialistas,
       21 estudios de Tomografía,
@@ -86,11 +86,11 @@
 </div>
 
 <div class="item">
-<img src="./img/comida.jpg" class="img-responsive" alt="Chicago" style="width:100%;max-height:40em;">
+<img src="./img/comida.jpg" class="img-responsive" alt="comida" style="width:100%;max-height:40em;">
 <div class="carousel-caption" style="top:0%;">
-  <h3 style="font-size:2em;">COMIDA CALIENTE</h3>
+  <h3 style="font-size:2.3em;margin-left:41%;margin-top:0.2%;">COMIDA CALIENTE</h3>
   <div>
-    <p class="col-md-12">De octubre del 2011 a finales del 2016
+    <p class="col-md-12"  style="margin-left:35%;">De octubre del 2011 a finales del 2016
         se han otorgado 3,032 platillos</p>
   </div>
   </div>
@@ -99,29 +99,29 @@
 
 </div>
 <div class="item">
-<img src="./img/rehabilitation.jpg" alt="Chicago" style="width:100%;max-height:40em;">
-<div class="carousel-caption" style="top:25%;">
-  <h3 style="font-size:2em;">REHABILITACION</h3>
-  <p>8 terapias de rehabilitación física al día
+<img src="./img/rehabilitation.jpg" alt="reha" style="width:100%;max-height:40em;">
+<div class="carousel-caption" >
+  <h3 style="font-size:2.3em;margin-left:42%;margin-top:0.2%;">REHABILITACION</h3>
+  <p  style="margin-left:7%;">8 terapias de rehabilitación física al día
     3 años y 2 semanas un total de 2,564 terapias físicas rehabilitatorias
     70% fueron becas gratuitas
     Este programa implico un gasto aproximado de $ 384,600.00 pesos</p>
 </div>
 </div>
 <div class="item">
-<img src="./img/visita1.jpg" alt="Chicago" style="width:100%;max-height:40em;">
-<div class="carousel-caption" style="top:40%;">
-  <h3 style="font-size:2em;">VISITA DOMICILIARIA</h3>
-  <p>De octubre del 2011 a finales del 2016
+<img src="./img/visita1.jpg" alt="visita" style="width:100%;max-height:40em;">
+<div class="carousel-caption" >
+  <h3 style="font-size:2.3em;margin-left:41%;margin-top:0.2%;">VISITA DOMICILIARIA</h3>
+  <p style="margin-left:37%;">De octubre del 2011 a finales del 2016
       se han logrado 9,112 visitas</p>
 </div>
 </div>
 
 <div class="item">
-<img src="./img/guitarra.jpg" alt="New York" style="width:100%;max-height:40em;">
-<div class="carousel-caption"style="top:20%;" >
-  <h3 style="font-size:2em;">INSTITUTO CULTURAL CAMBIANDO DESTINOS </h3>
-  <p>Otorga  gratuitamente talleres de pintura artística y música
+<img src="./img/guitarra.jpg" alt="iccd" style="width:100%;max-height:40em;">
+<div class="carousel-caption" >
+  <h3 style="font-size:2.3em;margin-left:27%;margin-top:0.2%;">INSTITUTO CULTURAL CAMBIANDO DESTINOS </h3>
+  <p  style="margin-left:2%;">Otorga  gratuitamente talleres de pintura artística y música
      Nuestra institución facilita todos los materiales para pintura artística
      y los instrumentos para el taller
       Estos son impartidos en las instalaciones de nuestra institución
@@ -148,12 +148,13 @@
 </section>
 
 
-<section>
+<section class="primero">
+  <div class="" style="">
   <div class="col-md-12 text-center" style="margin-top:0%;">
       <h2>Historias de aliento</h2>
   </div>
 
-  <div class="col-md-12"style="margin-top:2%;" >
+  <div class="col-md-12"style="margin-top:2%;margin-left:7%;" >
   <div class="col-md-3" >
     <img class="img-responsive img-rounded " src="./img/mario1.jpg" alt="responsive">
   </div>
@@ -170,8 +171,11 @@
   cuando Fundación Cambiando Destinos abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
   juega futbol con sus companeros de la escuela</p> </div>
 </div>
-
+</div>
 </section>
+
+
+
 
 <section>
   <div class="col-md-12 text-center"style="margin-top:3%;">

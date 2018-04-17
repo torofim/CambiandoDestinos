@@ -19,20 +19,21 @@ nav .nombre{
 /*-----------------section ---------------------*/
 section{
   margin-top: 3% ;
-  background-color: blue;
+
 }
 
 
-/************************************************ */
+/******************carusel caption****************************** */
 
  .new-caption-area {
     width: 100%;
     margin: auto;
     height: 100px;
+    
   }
 
-  .carousel-caption {
-
+  .carousel-caption h3 {
+ text-align: center;
 }
 
 
@@ -63,5 +64,25 @@ section{
   }
   .carrusel{
     display: none;
+  }
+  .primero{
+    margin-top: 7%;
+  }
+}
+@media(max-width:630px){
+  nav a{
+    font-size: .8em;
+  }
+  nav .nombre{
+    font-size: 1em;
+  }
+  li a img{
+    display: none;
+  }
+  .carrusel{
+    display: none;
+  }
+  .primero{
+    margin-top: 15%;
   }
 }
