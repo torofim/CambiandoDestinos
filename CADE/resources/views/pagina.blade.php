@@ -15,7 +15,7 @@
   <body id="page-top">
 
     <nav class="navbar navbar-default navbar-fixed-top ">
-      <a class="navbar-brand nombre" href="#page-top" >Fundación Cambiando Destinos </a>
+      <a class="navbar-brand nombre" href="#page-top" >Fundación Cambiando Destino </a>
       <div class="containerarriba">
 
           <div class="navbar-header page-scroll">
