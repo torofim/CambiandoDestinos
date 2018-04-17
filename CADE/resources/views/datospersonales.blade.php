@@ -38,7 +38,7 @@
                     </div>
                     <div class="input=-group col-md-12">
                       <label for="nombre">Fecha nacimiento </label><br>
-                      {{Form::text('fecha_na','',array('class'=>'form-control','placeholder'=>'Fecha nacimiento') )}}
+                      {{Form::date('fecha_na','',array('class'=>'form-control','placeholder'=>'Fecha nacimiento') )}}
                     </div>
                     <div class="input=-group col-md-12">
                       <label for="nombre">Lugar nacimiento </label><br>
@@ -46,11 +46,11 @@
                     </div>
                     <div class="input=-group col-md-12">
                       <label for="nombre">Edad </label><br>
-                      {{Form::text('edad','',array('class'=>'form-control','placeholder'=>'Edad') )}}
+                      {{Form::number('edad','',array('class'=>'form-control','placeholder'=>'Edad') )}}
                     </div>
                     <div class="input=-group col-md-12">
                       <label for="nombre">Sexo </label><br>
-                      {{Form::text('sexo','',array('class'=>'form-control','placeholder'=>'Sexo') )}}
+                      {{Form::text('sexo','',array('class'=>'form-control','placeholder'=>'M o F') )}}
                     </div>
                     <div class="input=-group col-md-12">
                       <label for="nombre">Estado civil </label><br>
@@ -62,15 +62,15 @@
                     </div>
                     <div class="input=-group col-md-12">
                       <label for="nombre">Estatura </label><br>
-                      {{Form::text('estatura','',array('class'=>'form-control','placeholder'=>'Estatura') )}}
+                      {{Form::number('estatura','',array('class'=>'form-control','placeholder'=>'Ejemplo: 1.6') )}}
                     </div>
                     <div class="input=-group col-md-12">
                       <label for="nombre">Talla </label><br>
-                      {{Form::text('talla','',array('class'=>'form-control','placeholder'=>'Talla') )}}
+                      {{Form::number('talla','',array('class'=>'form-control','placeholder'=>'Talla') )}}
                     </div>
                     <div class="input=-group col-md-12">
                       <label for="nombre">Calzado </label><br>
-                      {{Form::text('clzado','',array('class'=>'form-control','placeholder'=>'Calzado') )}}
+                      {{Form::number('calzado','',array('class'=>'form-control','placeholder'=>'Calzado') )}}
                     </div>
                     <div class="input=-group col-md-12">
                       <label for="nombre">Domicilio </label><br>
@@ -78,7 +78,7 @@
                     </div>
                     <div class="input=-group col-md-12">
                       <label for="nombre">Codigo Postal </label><br>
-                      {{Form::text('cp','',array('class'=>'form-control','placeholder'=>'Cp') )}}
+                      {{Form::number('cp','',array('class'=>'form-control','placeholder'=>'Cp') )}}
                     </div>
                     <div class="input=-group col-md-12">
                       <label for="nombre">Localidad </label><br>
@@ -86,7 +86,7 @@
                     </div>
                     <div class="input=-group col-md-12">
                       <label for="nombre">Telefono </label><br>
-                      {{Form::text('tel','',array('class'=>'form-control','placeholder'=>'Telefono') )}}
+                      {{Form::number('tel','',array('class'=>'form-control','placeholder'=>'Telefono') )}}
                     </div>
                     <div class="input-group col-md-12">
                       {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
