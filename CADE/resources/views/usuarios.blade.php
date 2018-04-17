@@ -6,7 +6,8 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header"></div>
-
+usuarios
+<input type="search" name="" value="" id="txtBusqueda">
                 <div class="card-body">
                   @if($errors->any())
                     <div class="alert alert-warning alert-dismissable">
@@ -51,7 +52,7 @@
                           {!! Form::open(
                             array('route'=>['admin.usuarios.destroy',$usu->id],
                           'method'=>'DELETE' )) !!}
-                          <button type="submit" >
+                          <button type="submit" class="btnEliminar">
                             <i class="glyphicon glyphicon-remove"></i>
                           </button>
                           {!! Form::close() !!}
@@ -167,6 +168,26 @@
       $('#emailEditar').val(e);
       $('#nomModal').text(n);
     });
+    $('#txtBusqueda').on('keyup',function(){
+      $.ajax({
+        method:'POST',
+        url:'/admin/usuario/buscar',
+        data:{
+          nombre:$("#txtBusqueda").val()
+        },
+        beforeSend:function(){
+          console.log("Cargando");
+        }
+
+      }).done(function(){console.log("Terminado");})
+
+    });
+    $(".btnEliminar").on('click',function(event){
+      event.preventDefault();
+      $(this).parent('form').parent('td').parent('tr').fadeOut(1000);
+    });
+
+
   });
 </script>
 @endsection

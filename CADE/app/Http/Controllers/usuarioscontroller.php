@@ -73,4 +73,7 @@ class usuarioscontroller extends Controller
       return redirect()->to('/admin/usuarios')
       ->with('mensaje','Usuario Modificado');
     }//edit
+    public function  buscar(Request $req){
+      return "holi";
+    }
 }

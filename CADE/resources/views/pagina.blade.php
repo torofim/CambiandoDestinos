@@ -73,13 +73,13 @@
 
 <div class="item active">
 <img src="./img/apoyo.jpg"  class="img-responsive" alt="Los Angeles" style="width:100%;max-height:40em;">
-<div class="carousel-caption" style="top:20%;">
-  <h3 style="font-size:3em;">GESTIONES </h3>
-  <p>185 pacientes en consulta con especialistas,<br>
-      21 estudios de Tomografía,<br>
-      46 estudios de Laboratorio,<br>
-      7 Cirugías, (Labio leporino, discapacidad infantil)<br>
-      104 entrega de medicamentos,<br>
+<div class="carousel-caption" style="top:0%;"><h3 style="font-size:3em;">GESTIONES </h3>
+
+  <p class="col-md-12">185 pacientes en consulta con especialistas,
+      21 estudios de Tomografía,
+      46 estudios de Laboratorio,
+      7 Cirugías, (Labio leporino, discapacidad infantil)
+      104 entrega de medicamentos,
       28 préstamos  de aparatos de apoyo funcional (silla de rueda, muletas, bastón, andador, silla para baño, camas tipo hospital, colchones entre otros.)
       </p>
 </div>
@@ -87,26 +87,31 @@
 
 <div class="item">
 <img src="./img/comida.jpg" class="img-responsive" alt="Chicago" style="width:100%;max-height:40em;">
-<div class="carousel-caption" style="top:30%;">
-  <h3 style="font-size:3em;">COMIDA CALIENTE</h3>
-  <p>De octubre del 2011 a finales del 2016
-      se han otorgado 3,032 platillos</p>
-</div>
+<div class="carousel-caption" style="top:0%;">
+  <h3 style="font-size:2em;">COMIDA CALIENTE</h3>
+  <div>
+    <p class="col-md-12">De octubre del 2011 a finales del 2016
+        se han otorgado 3,032 platillos</p>
+  </div>
+  </div>
+
+
+
 </div>
 <div class="item">
 <img src="./img/rehabilitation.jpg" alt="Chicago" style="width:100%;max-height:40em;">
 <div class="carousel-caption" style="top:25%;">
-  <h3 style="font-size:3em;">REHABILITACION</h3>
-  <p>8 terapias de rehabilitación física al día <br>
-    3 años y 2 semanas un total de 2,564 terapias físicas rehabilitatorias <br>
-    70% fueron becas gratuitas <br>
+  <h3 style="font-size:2em;">REHABILITACION</h3>
+  <p>8 terapias de rehabilitación física al día
+    3 años y 2 semanas un total de 2,564 terapias físicas rehabilitatorias
+    70% fueron becas gratuitas
     Este programa implico un gasto aproximado de $ 384,600.00 pesos</p>
 </div>
 </div>
 <div class="item">
 <img src="./img/visita1.jpg" alt="Chicago" style="width:100%;max-height:40em;">
 <div class="carousel-caption" style="top:40%;">
-  <h3 style="font-size:3em;">VISITA DOMICILIARIA</h3>
+  <h3 style="font-size:2em;">VISITA DOMICILIARIA</h3>
   <p>De octubre del 2011 a finales del 2016
       se han logrado 9,112 visitas</p>
 </div>
@@ -115,11 +120,11 @@
 <div class="item">
 <img src="./img/guitarra.jpg" alt="New York" style="width:100%;max-height:40em;">
 <div class="carousel-caption"style="top:20%;" >
-  <h3 style="font-size:3em;">INSTITUTO CULTURAL CAMBIANDO DESTINOS </h3>
-  <p>Otorga  gratuitamente talleres de pintura artística y música <br>
+  <h3 style="font-size:2em;">INSTITUTO CULTURAL CAMBIANDO DESTINOS </h3>
+  <p>Otorga  gratuitamente talleres de pintura artística y música
      Nuestra institución facilita todos los materiales para pintura artística
-     y los instrumentos para el taller <br>
-      Estos son impartidos en las instalaciones de nuestra institución <br>
+     y los instrumentos para el taller
+      Estos son impartidos en las instalaciones de nuestra institución
       De octubre del 2011 al finales del  2015 se impartieron 1248 talleres de música
       y 832 talleres de pintura beneficiando a un aproximado de 115 alumnos</p>
 </div>
@@ -137,13 +142,18 @@
 <span class="sr-only" >Next</span>
 </a>
 </div>
+<div class="new-caption-area">
+
+</div>
 </section>
 
 
 <section>
-  <div class="col-md-12 text-center" >
-      <h2 style="margin-top:2%;">Historias de aliento</h2>
+  <div class="col-md-12 text-center" style="margin-top:0%;">
+      <h2>Historias de aliento</h2>
   </div>
+
+  <div class="col-md-12"style="margin-top:2%;" >
   <div class="col-md-3" >
     <img class="img-responsive img-rounded " src="./img/mario1.jpg" alt="responsive">
   </div>
@@ -151,7 +161,7 @@
     <p style="color:black;">Mario es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
     cuando Fundación Cambiando Destinos abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
     juega futbol con sus companeros de la escuela</p> </div>
-</div>
+
 <div class="col-md-3 ">
   <img class="img-responsive img-rounded" src="./img/chilito.jpg" alt="responsive" >
 </div>
@@ -160,13 +170,59 @@
   cuando Fundación Cambiando Destinos abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
   juega futbol con sus companeros de la escuela</p> </div>
 </div>
+
 </section>
 
 <section>
-  <div class="col-lg-12 text-center">
-      <h2 style="margin-top:3%;">Cambiando Destinos</h2>
+  <div class="col-md-12 text-center"style="margin-top:3%;">
+      <h2 >Cambiando Destinos</h2>
+  </div>
+<div class="col-md-12" style="margin-top:5%;">
+
+
+  <div class="col-md-3 ">
+    <img class="img-responsive img-rounded " src="./img/visita.jpg" >
+    <div class="overlay">
+      <div class="text">
+        <h4>Visita Domiciliaria</h4>
+        <br>
+        <a href="/visita">Conoce Mas</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 ">
+    <img class="img-responsive img-rounded" src="./img/comidacaliente.png" >
+    <div class="overlay">
+      <div class="text">
+        <h4>Comida Caliente</h4>
+        <br>
+        <a href="/comida">Conoce Mas</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 ">
+    <img class="img-responsive img-rounded" src="./img/reunion.jpg" >
+    <div class="overlay">
+      <div class="text">
+        <h4>Taller Aprendiendo a Vivir en la 3ra Edad</h4>
+        <br>
+        <a href="/taller">Conoce Mas</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 ">
+    <img class="img-responsive img-rounded" src="./img/musica2.jpg" >
+    <div class="overlay">
+      <div class="text">
+          <h4>Instituto Cultural Cambiando Destinos</h4>
+        <br>
+        <a href="/cultura" >Conoce Mas</a>
+      </div>
+    </div>
+  </div>
   </div>
 </section>
+
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
