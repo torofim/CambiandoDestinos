@@ -14,8 +14,8 @@
 
       </div>
     </div>
-    <div class="panel2 panel-default col-xs-6 ">
-      <div class="panel-body2">
+    <div class="panel2 panel-default col-xs-12 ">
+      <div class="panel-body2" style="border-bottom:groove;">
         Dashboard
       </div>
     </div>
@@ -24,20 +24,20 @@
 
       <div class="container-fluid">
           <div class="row">
-            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:green; height:15vh;">
-              <p>Display numero</p>
+            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:transparent; height:15vh;">
+              <p style="border-bottom:groove; border-bottom-width:.5px;">Beneficiarios activos</p>
               <p style="font-size:3.5rem;">145</p>
             </div>
-            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:blue; height:15vh;">
-              <p>Display numero</p>
+            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:transparent; height:15vh;">
+              <p style="border-bottom:groove; border-bottom-width:.5px;">Usuarios Activos</p>
               <p style="font-size:3.5rem;">145</p>
             </div>
-            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:red; height:15vh;" >
-              <p>Display numero</p>
+            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:transparent; height:15vh;" >
+              <p style="border-bottom:groove; border-bottom-width:.5px;">Visitantes</p>
               <p style="font-size:3.5rem;">145</p>
             </div>
-            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:green; height:15vh;">
-              <p>Display numero</p>
+            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:transparent; height:15vh;">
+              <p style="border-bottom:groove; border-bottom-width:.5px;">Beneficiarios de taller</p>
               <p style="font-size:3.5rem;">145</p>
             </div>
 		      </div>
