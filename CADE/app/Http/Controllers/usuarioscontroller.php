@@ -60,7 +60,7 @@ class usuarioscontroller extends Controller
         unlink(public_path('/img/usuarios/'.$usuario->imgperfil));
       }
       $usuario->delete();
-      return redirect('/admin/usuarios');
+      return "YEA";
     }//function destroy
     //Editar
     public function edit(Request $req){
@@ -74,6 +74,11 @@ class usuarioscontroller extends Controller
       ->with('mensaje','Usuario Modificado');
     }//edit
     public function  buscar(Request $req){
-      return "holi";
+      $registros=\DB::table('users')
+      ->select('name','email')
+      ->where('name','like','%'.$req->nombre.'%')
+      ->orWhere('email','like','%'.$req->nombre.'%')
+      ->get();
+      return json_encode($registros);
     }
 }

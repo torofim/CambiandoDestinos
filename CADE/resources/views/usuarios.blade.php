@@ -8,6 +8,7 @@
                 <div class="card-header"></div>
 usuarios
 <input type="search" name="" value="" id="txtBusqueda">
+<input type="hidden" name="" value="{{csrf_token()}}" id="token">
                 <div class="card-body">
                   @if($errors->any())
                     <div class="alert alert-warning alert-dismissable">
@@ -52,7 +53,7 @@ usuarios
                           {!! Form::open(
                             array('route'=>['admin.usuarios.destroy',$usu->id],
                           'method'=>'DELETE' )) !!}
-                          <button type="submit" class="btnEliminar">
+                          <button type="button" class="btnEliminar" data-toggle="modal" data-target="#myModal2">
                             <i class="glyphicon glyphicon-remove"></i>
                           </button>
                           {!! Form::close() !!}
@@ -155,9 +156,35 @@ usuarios
   </div>
 </div>
 
+
+<div id="myModal2" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Eliminar usuario </h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div class="modal-body">
+        <h3>Desea eliminar el usuario?</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+        <button type="button" class="btn btn-primary btnAjax" data-dismiss="modal">Eliminar</button>
+        <!-- data-dismiss detiene el actualizado-->
+      </div>
+
+    </div>
+
+  </div>
+</div>
+
 @endsection
 @section('scripts')
 <script type="text/javascript">
+var formulario;
+var tr;
   $(document).ready(function(){
     $(".btnEdit").on('click',function(){
       var n=$(this).data('nombre');
@@ -171,23 +198,58 @@ usuarios
     $('#txtBusqueda').on('keyup',function(){
       $.ajax({
         method:'POST',
-        url:'/admin/usuario/buscar',
+        url:'/admin/usuarios/buscar',
         data:{
-          nombre:$("#txtBusqueda").val()
+          nombre:$("#txtBusqueda").val(),
+          _token:$("#token").val()
         },
         beforeSend:function(){
           console.log("Cargando");
         }
 
-      }).done(function(){console.log("Terminado");})
+      }).done(function(respuesta){
+        var todo="<tr><td>";
+        todo+="id</td><td>nombre</td>";
+        todo+="<td>email</td><td>";
+        todo+='<button type="" data-nombre=""';
+        todo+='data-email="" data-id=""';
+        todo+='data-toggle="modal" data-target="#myModal"';
+        todo+='class="btn btn-primary btnEdit">';
+        todo+="EDITAR</button></td>";
+        todo+='td><form method="POST" action="/admin/usuarios">';
+        todo+='<input type="hidden" name ="_token" value="">';
+        todo+='<input type="hidden" name ="_method" value="delete">';
+        todo+='<button type="submit" data-toggle="modal"';
+        todo+='data-target="#myModal2" class="btnEliminar">';
+        todo+='<i class="fa fa-trash></i></button></form></td></tr>"';
+        console.log(respuesta);
+
+      });
 
     });
     $(".btnEliminar").on('click',function(event){
       event.preventDefault();
-      $(this).parent('form').parent('td').parent('tr').fadeOut(1000);
+      tr=$(this).parent('form').parent('td').parent('tr');
+      formulario=$(this).parent('form');
+
+    });
+    $('.btnAjax').on('click',function(){
+
+      $.ajax({
+        method:'DELETE',
+        url:formulario.attr('action'),
+        data:formulario.serialize()
+      }).done(function(respuesta){
+        alert(respuesta);
+        tr.fadeOut(1000);
+      });
     });
 
-
   });
+
+
+
+
+
 </script>
 @endsection

@@ -34,13 +34,13 @@
                       <a href="#page-top"></a>
                   </li>
                   <li class="page-scroll">
-                      <a href="#sobre">Sobre Nosotros <img src="./img/logonavi.png" alt=""></a>
+                      <a href="#primera">Sobre Nosotros <img src="./img/logonavi.png" alt=""></a>
                   </li>
                   <li class="page-scroll">
-                      <a href="#historia">Historias <img src="./img/logonavi.png" alt=""></a>
+                      <a href="#segundo">Historias <img src="./img/logonavi.png" alt=""></a>
                   </li>
                   <li class="page-scroll">
-                      <a href="#nuestros">Cambiando Destinos <img src="./img/logonavi.png" alt=""></a>
+                      <a href="#tercero">Cambiando Destinos <img src="./img/logonavi.png" alt=""></a>
                   </li>
                   <li class="page-scroll">
                       <a href="#galeria">Galería<img src="./img/logonavi.png" alt=""></a>
@@ -56,7 +56,7 @@
     </nav>
 
 
-<section class="carrusel">
+<section class="carrusel" style="background-color:red;margin-top:3%;width:100%;border-bottom-color:black;border-bottom-style:solid;">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
 <!-- Indicators -->
 <ol class="carousel-indicators">
@@ -148,13 +148,39 @@
 </section>
 
 
-<section class="primero">
+<section class="primera" id="primero" style="background-color:blue;height:800px;margin-top:0%;">
+
+<div class="">
+
+
+<div class="col-md-12 text-center" style="">
+    <h2 >Sobre Nosotros</h2>
+</div>
+<div class="col-md-12" style="margin-top:3%;">
+  <div class="col-md-4" style="margin-left:5%;width:40%;background-color:purple;">
+    <img class="img-responsive  " src="./img/fclogo0.jpg" >
+  </div>
+
+  <div class="col-md-5 jumbotron" style="margin-left:12%;margin-top:1%;width:40%;">
+  <h1>Hello, world!</h1>
+  <p>...</p>
+  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+</div>
+</div>
+</div>
+
+<section>
+
+</section>
+
+
+<section class="segundo" id="segundo" style="background-color:yellow;height:800px;margin-top:10%;">
   <div class="" style="">
-  <div class="col-md-12 text-center" style="margin-top:0%;">
+  <div class="col-md-12 text-center" style="margin-top:2%;">
       <h2>Historias de aliento</h2>
   </div>
 
-  <div class="col-md-12"style="margin-top:2%;margin-left:7%;" >
+  <div class="col-md-12"style="margin-top:5%;margin-left:7%;" >
   <div class="col-md-3" >
     <img class="img-responsive img-rounded " src="./img/mario1.jpg" alt="responsive">
   </div>
@@ -181,7 +207,7 @@
   <div class="col-md-12 text-center"style="margin-top:3%;">
       <h2 >Cambiando Destinos</h2>
   </div>
-<div class="col-md-12" style="margin-top:5%;margin-left:2%;">
+<div class="col-md-12" style="margin-top:5%;margin-left:0%;">
 
 
   <div class="col-md-3 ">
