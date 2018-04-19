@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use DB;
 class dashcontroller extends Controller
 {
   /**
@@ -22,15 +23,18 @@ class dashcontroller extends Controller
    * @return \Illuminate\Http\Response
    */
   public function datos(){
-    $beneficiarios = User::select('select COUNT(*) from Datos_personales', [1]);
-    dd($beneficiarios);
-    return View('LEFTMENU')->with('beneficiarios',$beneficiarios);
+
   }
   public function index()
   {
-    $beneficiarios = User::select('select COUNT(*) from Datos_personales', [1]);
-    dd($beneficiarios);
-      return view('principal');
+
+     $beneficiarios = DB::select(' select COUNT(Nombre) AS total from datos_personales');
+    #dd($sql);
+
+
+    #  return View('LEFTMENU')->with('beneficiarios',$beneficiarios);
+       return view('LEFTMENU')->with('benef',$beneficiarios);
+      #return view('principal');
   }
   public function benef()
   {

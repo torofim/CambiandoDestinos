@@ -2,8 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/estiloside.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="{{ asset('css/estiloside.css') }}" rel="stylesheet" type="text/css" >
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" >
     <title></title>
   </head>
   <body>
@@ -26,7 +26,12 @@
           <div class="row">
             <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:transparent; height:15vh;">
               <p style="border-bottom:groove; border-bottom-width:.5px;">Beneficiarios activos</p>
-              <p style="font-size:3.5rem;">145</p>
+              <p style="font-size:3.5rem;">
+                @forelse ($beneficiarios as $b)
+                  {{ $b->total }}
+                    @empty
+                      @endforelse
+              </p>
             </div>
             <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:transparent; height:15vh;">
               <p style="border-bottom:groove; border-bottom-width:.5px;">Usuarios Activos</p>
@@ -53,12 +58,12 @@
          </div>
        </div>
   </div>
+    <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/chart.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/graficabarras.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/side.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="js/chart.min.js"></script>
-    <script src="js/graficabarras.js"></script>
-    <script src="js/side.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 
   </body>
 </html>
