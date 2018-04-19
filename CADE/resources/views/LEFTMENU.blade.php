@@ -27,15 +27,20 @@
             <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:transparent; height:15vh;">
               <p style="border-bottom:groove; border-bottom-width:.5px;">Beneficiarios activos</p>
               <p style="font-size:3.5rem;">
-                @forelse ($beneficiarios as $b)
-                  {{ $b->total }}
-                    @empty
-                      @endforelse
+                @forelse ($benef as $b)
+                {{ $b->total }}
+                @empty
+                @endforelse
               </p>
             </div>
             <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:transparent; height:15vh;">
               <p style="border-bottom:groove; border-bottom-width:.5px;">Usuarios Activos</p>
-              <p style="font-size:3.5rem;">145</p>
+              <p style="font-size:3.5rem;">
+                @forelse ($usuarios as $u)
+                {{ $u->usu }}
+                @empty
+                @endforelse
+              </p>
             </div>
             <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:transparent; height:15vh;" >
               <p style="border-bottom:groove; border-bottom-width:.5px;">Visitantes</p>

@@ -22,18 +22,18 @@ class dashcontroller extends Controller
    *
    * @return \Illuminate\Http\Response
    */
-  public function datos(){
 
-  }
   public function index()
   {
+     $benef = DB::select('select COUNT(*) AS total from datos_personales');
+     $usuarios = DB::select('select COUNT(*) AS usu from users');
 
-     $beneficiarios = DB::select(' select COUNT(Nombre) AS total from datos_personales');
-    #dd($sql);
 
+    #dd($users);
 
-    #  return View('LEFTMENU')->with('beneficiarios',$beneficiarios);
-       return view('LEFTMENU')->with('benef',$beneficiarios);
+  # NO FUNCIONA CON LOS 2 JUNTOS NECESITO PREGUNTAR AL ING COMO SE ARREGLA
+       return view('LEFTMENU', ['benef' => $benef]);
+       return view('LEFTMENU',['usuarios' => $usuarios]);
       #return view('principal');
   }
   public function benef()
