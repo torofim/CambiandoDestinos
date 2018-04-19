@@ -10,7 +10,7 @@
   @include('layouts.nav')
   <div class="main">
     <div class="panel panel-default">
-        <div class="panel-body cold-md-2">
+        <div class="panel-body cold-md-2" id="sepa">
 
       </div>
     </div>
