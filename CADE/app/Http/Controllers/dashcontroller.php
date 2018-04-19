@@ -22,19 +22,14 @@ class dashcontroller extends Controller
    * @return \Illuminate\Http\Response
    */
   public function datos(){
-    $servername="localhost";
-    $username="root";
-    $password="";
-    $dbname="Cambiando_Destinos";
-    $con=mysqli_connect($servername,$username,$password,$dbname);
-    $sql="select count(id) as total From Datos_personales";
-    $result= mysqli_query($con,$sql);
-    $values=mysqli_fetch_assoc($result);
-    $nom_rows=$values['total']
-    echo $nom_rows;
+    $beneficiarios = User::select('select COUNT(*) from Datos_personales', [1]);
+    dd($beneficiarios);
+    return View('LEFTMENU')->with('beneficiarios',$beneficiarios);
   }
   public function index()
   {
+    $beneficiarios = User::select('select COUNT(*) from Datos_personales', [1]);
+    dd($beneficiarios);
       return view('principal');
   }
   public function benef()
