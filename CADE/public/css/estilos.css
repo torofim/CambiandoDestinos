@@ -91,6 +91,12 @@ float: left;
 .text a{
     margin-left: 34%;
   }
+  .jumbotron{
+    height: 300px;
+  }
+  .divima{
+    height: 200px;
+  }
 }
 @media(max-width:630px){
   nav a{
@@ -119,5 +125,11 @@ float: left;
   }
 .text a{
     margin-left: 34%;
+  }
+  .jumbotron{
+    height: 100px;
+  }
+  .divima{
+    height: 200px;
   }
 }

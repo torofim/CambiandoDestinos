@@ -34,7 +34,7 @@
                       <a href="#page-top"></a>
                   </li>
                   <li class="page-scroll">
-                      <a href="#primera">Sobre Nosotros <img src="./img/logonavi.png" alt=""></a>
+                      <a href="#primero">Sobre Nosotros <img src="./img/logonavi.png" alt=""></a>
                   </li>
                   <li class="page-scroll">
                       <a href="#segundo">Historias <img src="./img/logonavi.png" alt=""></a>
@@ -148,7 +148,7 @@
 </section>
 
 
-<section class="primera" id="primero" style="background-color:blue;height:800px;margin-top:0%;">
+<section class="primera" id="primero" style="background-color:blue;height:850px;margin-top:0%;">
 
 <div class="">
 
@@ -157,11 +157,11 @@
     <h2 >Sobre Nosotros</h2>
 </div>
 <div class="col-md-12" style="margin-top:3%;">
-  <div class="col-md-4" style="margin-left:5%;width:40%;background-color:purple;">
-    <img class="img-responsive  " src="./img/fclogo0.jpg" >
+  <div class="col-md-4 divima" style="margin-left:5%;width:40%;height:500px;background-color:purple;">
+    <img class="img-responsive" style="width:100%;height:100%" src="./img/fclogo0.jpg" >
   </div>
 
-  <div class="col-md-5 jumbotron" style="margin-left:12%;margin-top:1%;width:40%;">
+  <div class="col-md-5 jumbotron" style="margin-left:12%;margin-top:1%;width:40%;height:480px;">
   <h1>Hello, world!</h1>
   <p>...</p>
   <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
@@ -174,7 +174,7 @@
 </section>
 
 
-<section class="segundo" id="segundo" style="background-color:yellow;height:800px;margin-top:10%;">
+<section class="segundo" id="segundo" style="background-color:yellow;height:850px;margin-top:9%;">
   <div class="" style="">
   <div class="col-md-12 text-center" style="margin-top:2%;">
       <h2>Historias de aliento</h2>
@@ -203,7 +203,7 @@
 
 
 
-<section>
+<section style="background-color:pink;height:850px;margin-top:0%;" id="tercero">
   <div class="col-md-12 text-center"style="margin-top:3%;">
       <h2 >Cambiando Destinos</h2>
   </div>
