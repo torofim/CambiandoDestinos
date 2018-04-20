@@ -15,7 +15,7 @@
   <body id="page-top">
 
     <nav class="navbar navbar-default navbar-fixed-top ">
-      <a class="navbar-brand nombre" href="#page-top" >Fundación Cambiando Destino </a>
+      <a class="navbar-brand nombre" href="#page-top" >Fundación Cambiando Destinos </a>
       <div class="containerarriba">
 
           <div class="navbar-header page-scroll">
@@ -56,7 +56,7 @@
     </nav>
 
 
-<section class="carrusel" style="background-color:red;margin-top:3%;width:100%;border-bottom-color:black;border-bottom-style:solid;">
+<section class="carrusel" style="margin-top:3%;width:100%;border-bottom-color:black;border-bottom-style:solid;">
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
 <!-- Indicators -->
 <ol class="carousel-indicators">
@@ -72,7 +72,7 @@
 <div class="carousel-inner" >
 
 <div class="item active">
-<img src="./img/apoyo.jpg"  class="img-responsive" alt="gestion" style="width:100%;max-height:40em;">
+<img src="./img/apoyo.jpg"  class="img-responsive" alt="gestion" style="width:100%;max-height:42em;">
 <div class="carousel-caption" style="top:0%;"><h3 style="font-size:2.3em;margin-left:44%;margin-top:0.2%;">GESTIONES </h3>
 
   <p class="col-md-12">185 pacientes en consulta con especialistas,
@@ -86,7 +86,7 @@
 </div>
 
 <div class="item">
-<img src="./img/comida.jpg" class="img-responsive" alt="comida" style="width:100%;max-height:40em;">
+<img src="./img/comida.jpg" class="img-responsive" alt="comida" style="width:100%;max-height:42em;">
 <div class="carousel-caption" style="top:0%;">
   <h3 style="font-size:2.3em;margin-left:41%;margin-top:0.2%;">COMIDA CALIENTE</h3>
   <div>
@@ -99,7 +99,7 @@
 
 </div>
 <div class="item">
-<img src="./img/rehabilitation.jpg" alt="reha" style="width:100%;max-height:40em;">
+<img src="./img/rehabilitation.jpg" alt="reha" style="width:100%;max-height:42em;">
 <div class="carousel-caption" >
   <h3 style="font-size:2.3em;margin-left:42%;margin-top:0.2%;">REHABILITACION</h3>
   <p  style="margin-left:7%;">8 terapias de rehabilitación física al día
@@ -109,7 +109,7 @@
 </div>
 </div>
 <div class="item">
-<img src="./img/visita1.jpg" alt="visita" style="width:100%;max-height:40em;">
+<img src="./img/visita1.jpg" alt="visita" style="width:100%;max-height:42em;">
 <div class="carousel-caption" >
   <h3 style="font-size:2.3em;margin-left:41%;margin-top:0.2%;">VISITA DOMICILIARIA</h3>
   <p style="margin-left:37%;">De octubre del 2011 a finales del 2016
@@ -118,7 +118,7 @@
 </div>
 
 <div class="item">
-<img src="./img/guitarra.jpg" alt="iccd" style="width:100%;max-height:40em;">
+<img src="./img/guitarra.jpg" alt="iccd" style="width:100%;max-height:42em;">
 <div class="carousel-caption" >
   <h3 style="font-size:2.3em;margin-left:27%;margin-top:0.2%;">INSTITUTO CULTURAL CAMBIANDO DESTINOS </h3>
   <p  style="margin-left:2%;">Otorga  gratuitamente talleres de pintura artística y música
@@ -148,23 +148,29 @@
 </section>
 
 
-<section class="primera" id="primero" style="background-color:blue;height:850px;margin-top:0%;">
+<section class="primera" id="primero" style="height:850px;margin-top:0%;background-image:url(./img/folleto1.jpg);background-size: cover;">
 
-<div class="">
+<div class="" >
 
 
-<div class="col-md-12 text-center" style="">
+<div class="col-md-12 text-center" style="margin-top:2%;">
     <h2 >Sobre Nosotros</h2>
 </div>
-<div class="col-md-12" style="margin-top:3%;">
-  <div class="col-md-4 divima" style="margin-left:5%;width:40%;height:500px;background-color:purple;">
-    <img class="img-responsive" style="width:100%;height:100%" src="./img/fclogo0.jpg" >
+
+<div class="col-md-12" style="margin-top:3%;padding:0;">
+  <div class="col-md-4 divima" style="margin-left:12%;width:40%;height:480px;margin-top: 1%;padding:0;border-top-left-radius:25px;border-bottom-left-radius:25px;">
+    <img class="img-responsive" style="width:100%;height:100%;border-top-left-radius:25px;border-bottom-left-radius:25px;" src="./img/fclogo1.png" >
   </div>
 
-  <div class="col-md-5 jumbotron" style="margin-left:12%;margin-top:1%;width:40%;height:480px;">
-  <h1>Hello, world!</h1>
-  <p>...</p>
-  <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+  <div class="col-md-5 jumbotron" style="margin-top:1%;width:35%;height:480px;border-top-right-radius:25px;border-bottom-right-radius:25px;">
+  <h1 style="font-size:35px;margin-top:0;"></h1>
+  <p>SOMOS UNA INSTITUCION DE INICIATIVA PRIVADA SIN FIN DE
+    LUCRO CON RESPONSABILIDADES CULTURALES Y SOCIALES ​
+    EN DONDE DISENAMOS Y ENCAUSAMOS PROYECTOS DE UNIDAD
+    QUE DESARROLLEN UN CAMBIO SUSTENTABLE EN LA INTEGRACION
+    Y FORMACION DE NINOS, JOVENES, ADULTOS Y ANCIANOS, EN CULTURA
+    EDUCACION Y SALUD.</p>
+  <p style="margin-left:65%;margin-top:10%;"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
 </div>
 </div>
 </div>
@@ -174,28 +180,37 @@
 </section>
 
 
-<section class="segundo" id="segundo" style="background-color:yellow;height:850px;margin-top:9%;">
-  <div class="" style="">
-  <div class="col-md-12 text-center" style="margin-top:2%;">
+<section class="segundo" id="segundo" style="height:850px;margin-top:9%;background-image:url(./img/fondochido.jpg);">
+  <div class="col-md-12" >
+
+  <div class="col-md-12 text-center" style="margin-top:3%;">
       <h2>Historias de aliento</h2>
   </div>
+  <div class="col-md-12"style="margin-top:5%;margin-left:5%;" >
 
-  <div class="col-md-12"style="margin-top:5%;margin-left:7%;" >
-  <div class="col-md-3" >
-    <img class="img-responsive img-rounded " src="./img/mario1.jpg" alt="responsive">
+  <div  class="col-md-5" style="height:480px;padding:0;border-radius: 25px;box-shadow: 10px 10px 5px #aaaaaa;">
+  <div class="col-md-8" style="height:480px;padding:0;" >
+    <img class="img-responsive  " src="./img/mario1.jpg" alt="responsive" style="height:100%;width:100%;border-top-left-radius:25px;border-bottom-left-radius:25px;">
   </div>
-  <div class="col-md-2"><p>Mario</p> <br>
+  <div class="col-md-4" style="background-color:green;width:33.33%;height:100%;border-top-right-radius:25px;border-bottom-right-radius:25px;"><p style="margin-top:20%;color:black;">Mario</p> <br>
     <p style="color:black;">Mario es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
     cuando Fundación Cambiando Destinos abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
     juega futbol con sus companeros de la escuela</p> </div>
 
-<div class="col-md-3 ">
-  <img class="img-responsive img-rounded" src="./img/chilito.jpg" alt="responsive" >
 </div>
-<div class="col-md-2" ><p >Chilito</p> <br><p style="color:black;">
+
+
+<div class="col-md-5" style="margin-left:6%;height:480px;padding:0;border-radius: 25px;box-shadow: 10px 10px 5px #aaaaaa;">
+<div class="col-md-8 " style="height:480px;padding:0;">
+  <img class="img-responsive" src="./img/chilito2.jpg" alt="responsive" style="height:100%;width:100%;border-top-left-radius:25px;border-bottom-left-radius:25px;">
+</div>
+<div class="col-md-4"style="background-color:green;width:33.33%;height:100%;border-top-right-radius:25px;border-bottom-right-radius:25px;" ><p style="margin-top:20%;color:black;">Chilito</p> <br><p style="color:black;">
   Chilito es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
   cuando Fundación Cambiando Destinos abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
   juega futbol con sus companeros de la escuela</p> </div>
+</div>
+
+
 </div>
 </div>
 </section>
@@ -203,11 +218,13 @@
 
 
 
-<section style="background-color:pink;height:850px;margin-top:0%;" id="tercero">
-  <div class="col-md-12 text-center"style="margin-top:3%;">
+<section style="background-color:white;height:850px;margin-top:0%; "id="tercero">
+  <div class="col-md-12 text-center"style="margin-top:0%;">
       <h2 >Cambiando Destinos</h2>
   </div>
-<div class="col-md-12" style="margin-top:5%;margin-left:0%;">
+<div class="col-md-12" style="margin-top:3%;margin-left:0%;background-image:url(./img/logo.jpg);background-repeat: repeat;padding:0;height:700px;">
+
+<div class="col-md-12" style="margin-top:7%;">
 
 
   <div class="col-md-3 ">
@@ -249,6 +266,7 @@
         <a href="/cultura" >Conoce Mas</a>
       </div>
     </div>
+  </div>
   </div>
   </div>
 </section>
