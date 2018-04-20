@@ -1,210 +1,201 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title></title>
-	<meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap.css') }}">
-		<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/newstyle.css') }}">
-	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Hind" rel="stylesheet">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link href="{{ asset('css/estiloside.css') }}" rel="stylesheet" type="text/css" >
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" >
+    <title></title>
+  </head>
+  <body>
+  @include('layouts.nav')
+  <div class="main">
+    <div class="panel panel-default">
+        <div class="panel-body cold-md-2" id="sepa">
 
-</head>
-<body>
-			@include('nav')
+      </div>
+    </div>
+		<table class="table ">
+				 <thead>
+						 <tr>
+						 <th>#</th>
+						 <th>Nombre</th>
+							 <th>Apellido</th>
+							 <th>Username</th>
+						 </tr>
+				 </thead>
+			 <tbody>
+				 <tr>
+					 <th scope="row">1</th>
+					 <td>Mark</td>
+						 <td>Otto</td>
+						 <td>@mdo</td>
+						 <td><button>Eliminar</button></td>
+						 <td><button>Modificar</button></td>
+					 </tr>
+				 <tr>
+					 <th scope="row">2</th>
+					 <td>Jacob</td>
+					 <td>Thornton</td>
+						 <td>@fat</td>
+						 <td><button>Eliminar</button></td>
+						 <td><button>Modificar</button></td>
+				 </tr>
+					 <tr>
+							 <th scope="row">3</th>
+							 <td>Larry</td>
+							 <td>the Bird</td>
+							 <td>@twitter</td>
+							 <td><button>Eliminar</button></td>
+							 <td><button>Modificar</button></td>
+				 </tr>
+					<tr>
+							 <th scope="row">3</th>
+							 <td>Varela</td>
+							 <td>the hobbo</td>
+							 <td>@twitter</td>
+							 <td><button>Eliminar</button></td>
+							<td><button>Modificar</button></td>
+				 </tr>
+					<tr>
+							 <th scope="row">3</th>
+							 <td>Fercho</td>
+							 <td>the Bird</td>
+							 <td>@owl</td>
+							 <td><button>Eliminar</button></td>
+							<td><button>Modificar</button></td>
+				 </tr>
+
+				 <tr>
+					 <th scope="row">1</th>
+					 <td>Mark</td>
+						 <td>Otto</td>
+						 <td>@mdo</td>
+						 <td><button>Eliminar</button></td>
+						 <td><button>Modificar</button></td>
+					 </tr>
+				 <tr>
+					 <th scope="row">2</th>
+					 <td>Jacob</td>
+					 <td>Thornton</td>
+						 <td>@fat</td>
+						 <td><button>Eliminar</button></td>
+						 <td><button>Modificar</button></td>
+				 </tr>
+					 <tr>
+							 <th scope="row">3</th>
+							 <td>Larry</td>
+							 <td>the Bird</td>
+							 <td>@twitter</td>
+							 <td><button>Eliminar</button></td>
+							<td><button>Modificar</button></td>
+				 </tr>
+					<tr>
+							 <th scope="row">3</th>
+							 <td>Varela</td>
+							 <td>the hobbo</td>
+							 <td>@twitter</td>
+							 <td><button>Eliminar</button></td>
+							 <td><button>Modificar</button></td>
+				 </tr>
+					<tr>
+							 <th scope="row">3</th>
+							 <td>Fercho</td>
+							 <td>the Bird</td>
+							 <td>@owl</td>
+							 <td><button>Eliminar</button></td>
+							 <td><button>Modificar</button></td>
+				 </tr>
+
+				 <tr>
+					 <th scope="row">1</th>
+					 <td>Mark</td>
+						 <td>Otto</td>
+						 <td>@mdo</td>
+						 <td><button>Eliminar</button></td>
+						 <td><button>Modificar</button></td>
+					 </tr>
+				 <tr>
+					 <th scope="row">2</th>
+					 <td>Jacob</td>
+					 <td>Thornton</td>
+						 <td>@fat</td>
+						 <td><button>Eliminar</button></td>
+						<td><button>Modificar</button></td>
+				 </tr>
+					 <tr>
+							 <th scope="row">3</th>
+							 <td>Larry</td>
+							 <td>the Bird</td>
+							 <td>@twitter</td>
+							 <td><button>Eliminar</button></td>
+							<td><button>Modificar</button></td>
+				 </tr>
+					<tr>
+							 <th scope="row">3</th>
+							 <td>Varela</td>
+							 <td>the hobbo</td>
+							 <td>@twitter</td>
+							 <td><button>Eliminar</button></td>
+							<td><button>Modificar</button></td>
+				 </tr>
+					<tr>
+							 <th scope="row">3</th>
+							 <td>Fercho</td>
+							 <td>the Bird</td>
+							 <td>@owl</td>
+							 <td><button>Eliminar</button></td>
+							 <td><button>Modificar</button></td>
+				 </tr>
+				 <tr>
+					 <th scope="row">1</th>
+					 <td>Mark</td>
+						 <td>Otto</td>
+						 <td>@mdo</td>
+						 <td><button>Eliminar</button></td>
+						 <td><button>Modificar</button></td>
+					 </tr>
+				 <tr>
+					 <th scope="row">2</th>
+					 <td>Jacob</td>
+					 <td>Thornton</td>
+						 <td>@fat</td>
+						 <td><button>Eliminar</button></td>
+						<td><button>Modificar</button></td>
+				 </tr>
+					 <tr>
+							 <th scope="row">3</th>
+							 <td>Larry</td>
+							 <td>the Bird</td>
+							 <td>@twitter</td>
+							 <td><button>Eliminar</button></td>
+							 <td><button>Modificar</button></td>
+				 </tr>
+					<tr>
+							 <th scope="row">3</th>
+							 <td>Varela</td>
+							 <td>the hobbo</td>
+							 <td>@twitter</td>
+							 <td><button>Eliminar</button></td>
+							 <td><button>Modificar</button></td>
+				 </tr>
+					<tr>
+							 <th scope="row">3</th>
+							 <td>Fercho</td>
+							 <td>the Bird</td>
+							 <td>@owl</td>
+							 <td><button>Eliminar</button></td>
+							 <td><button>Modificar</button></td>
+				 </tr>
+
+			 </tbody>
+			 </table>
+  </div>
+    <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/chart.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/graficabarras.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/side.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 
 
-	<div class="lefted" style="background-image:url();">
-		<div class="separador">
-			<label id="titulo">Beneficiarios</label>
-		</div>
-		<div class="lws">
-			<div class="panel panel-default">
-			 <div class="panel-heading">Panel de Beneficiarios</div>
-			    <table class="table">
-			    	<thead>
-			        	<tr>
-			   				<th>#</th>
-			   	 			<th>Nombre</th>
-			   	   			<th>Apellido</th>
-			   	   			<th>Username</th>
-			   	    	</tr>
-			    	</thead>
-			    <tbody>
-			    	<tr>
-			    		<th scope="row">1</th>
-			     		<td>Mark</td>
-			      		<td>Otto</td>
-			       		<td>@mdo</td>
-			       		<td><button>Eliminar</button></td>
-			       		<td><button>Modificar</button></td>
-			        </tr>
-			   		<tr>
-			    		<th scope="row">2</th>
-			    	 	<td>Jacob</td>
-			    	 	<td>Thornton</td>
-			    	    <td>@fat</td>
-			    	    <td><button>Eliminar</button></td>
-			    	    <td><button>Modificar</button></td>
-			    	</tr>
-			        <tr>
-			    	      <th scope="row">3</th>
-			    	      <td>Larry</td>
-			    	      <td>the Bird</td>
-			    	      <td>@twitter</td>
-			    	      <td><button>Eliminar</button></td>
-			    	      <td><button>Modificar</button></td>
-			    	</tr>
-			    	 <tr>
-			    	      <th scope="row">3</th>
-			    	      <td>Varela</td>
-			    	      <td>the hobbo</td>
-			    	      <td>@twitter</td>
-			    	      <td><button>Eliminar</button></td>
-			    	     <td><button>Modificar</button></td>
-			    	</tr>
-			    	 <tr>
-			    	      <th scope="row">3</th>
-			    	      <td>Fercho</td>
-			    	      <td>the Bird</td>
-			    	      <td>@owl</td>
-			    	      <td><button>Eliminar</button></td>
-			    	     <td><button>Modificar</button></td>
-			    	</tr>
-
-			    	<tr>
-			    		<th scope="row">1</th>
-			     		<td>Mark</td>
-			      		<td>Otto</td>
-			       		<td>@mdo</td>
-			       		<td><button>Eliminar</button></td>
-			       		<td><button>Modificar</button></td>
-			        </tr>
-			   		<tr>
-			    		<th scope="row">2</th>
-			    	 	<td>Jacob</td>
-			    	 	<td>Thornton</td>
-			    	    <td>@fat</td>
-			    	    <td><button>Eliminar</button></td>
-			    	    <td><button>Modificar</button></td>
-			    	</tr>
-			        <tr>
-			    	      <th scope="row">3</th>
-			    	      <td>Larry</td>
-			    	      <td>the Bird</td>
-			    	      <td>@twitter</td>
-			    	      <td><button>Eliminar</button></td>
-			    	     <td><button>Modificar</button></td>
-			    	</tr>
-			    	 <tr>
-			    	      <th scope="row">3</th>
-			    	      <td>Varela</td>
-			    	      <td>the hobbo</td>
-			    	      <td>@twitter</td>
-			    	      <td><button>Eliminar</button></td>
-			    	      <td><button>Modificar</button></td>
-			    	</tr>
-			    	 <tr>
-			    	      <th scope="row">3</th>
-			    	      <td>Fercho</td>
-			    	      <td>the Bird</td>
-			    	      <td>@owl</td>
-			    	      <td><button>Eliminar</button></td>
-			    	      <td><button>Modificar</button></td>
-			    	</tr>
-
-			    	<tr>
-			    		<th scope="row">1</th>
-			     		<td>Mark</td>
-			      		<td>Otto</td>
-			       		<td>@mdo</td>
-			       		<td><button>Eliminar</button></td>
-			       		<td><button>Modificar</button></td>
-			        </tr>
-			   		<tr>
-			    		<th scope="row">2</th>
-			    	 	<td>Jacob</td>
-			    	 	<td>Thornton</td>
-			    	    <td>@fat</td>
-			    	    <td><button>Eliminar</button></td>
-			    	   <td><button>Modificar</button></td>
-			    	</tr>
-			        <tr>
-			    	      <th scope="row">3</th>
-			    	      <td>Larry</td>
-			    	      <td>the Bird</td>
-			    	      <td>@twitter</td>
-			    	      <td><button>Eliminar</button></td>
-			    	     <td><button>Modificar</button></td>
-			    	</tr>
-			    	 <tr>
-			    	      <th scope="row">3</th>
-			    	      <td>Varela</td>
-			    	      <td>the hobbo</td>
-			    	      <td>@twitter</td>
-			    	      <td><button>Eliminar</button></td>
-			    	     <td><button>Modificar</button></td>
-			    	</tr>
-			    	 <tr>
-			    	      <th scope="row">3</th>
-			    	      <td>Fercho</td>
-			    	      <td>the Bird</td>
-			    	      <td>@owl</td>
-			    	      <td><button>Eliminar</button></td>
-			    	      <td><button>Modificar</button></td>
-			    	</tr>
-			    	<tr>
-			    		<th scope="row">1</th>
-			     		<td>Mark</td>
-			      		<td>Otto</td>
-			       		<td>@mdo</td>
-			       		<td><button>Eliminar</button></td>
-			       		<td><button>Modificar</button></td>
-			        </tr>
-			   		<tr>
-			    		<th scope="row">2</th>
-			    	 	<td>Jacob</td>
-			    	 	<td>Thornton</td>
-			    	    <td>@fat</td>
-			    	    <td><button>Eliminar</button></td>
-			    	   <td><button>Modificar</button></td>
-			    	</tr>
-			        <tr>
-			    	      <th scope="row">3</th>
-			    	      <td>Larry</td>
-			    	      <td>the Bird</td>
-			    	      <td>@twitter</td>
-			    	      <td><button>Eliminar</button></td>
-			    	    	<td><button>Modificar</button></td>
-			    	</tr>
-			    	 <tr>
-			    	      <th scope="row">3</th>
-			    	      <td>Varela</td>
-			    	      <td>the hobbo</td>
-			    	      <td>@twitter</td>
-			    	      <td><button>Eliminar</button></td>
-			    	      <td><button>Modificar</button></td>
-			    	</tr>
-			    	 <tr>
-			    	      <th scope="row">3</th>
-			    	      <td>Fercho</td>
-			    	      <td>the Bird</td>
-			    	      <td>@owl</td>
-			    	      <td><button>Eliminar</button></td>
-			    	      <td><button>Modificar</button></td>
-			    	</tr>
-
-			    </tbody>
-			    </table>
-			   </div>
-		</div>
-		</div>
-
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		 <script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-		<script src="{{ URL::asset('js/bootstrap.js') }}"></script>
-		<script src="{{ URL::asset('js/Chart.bundle.min.js') }}"></script>
-
-</body>
-
+  </body>
 </html>
