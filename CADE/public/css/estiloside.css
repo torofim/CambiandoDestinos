@@ -181,6 +181,9 @@ float:left;
 .span{
   height:auto;
 }
+#sepa{
+  background-color:#3C3C3C;
+}
 /*DE AQUI ES EL CSS DE LOS COUNTERSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
 .coder-counter {background:#2d344d; color:#fff;}
 .coder-counter-box {border-right: 1px solid #444e70; padding:30px 0px 30px 0px;}

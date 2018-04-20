@@ -75,7 +75,7 @@ class usuarioscontroller extends Controller
     }//edit
     public function  buscar(Request $req){
       $registros=\DB::table('users')
-      ->select('name','email')
+      ->select('name','email',"id")
       ->where('name','like','%'.$req->nombre.'%')
       ->orWhere('email','like','%'.$req->nombre.'%')
       ->get();

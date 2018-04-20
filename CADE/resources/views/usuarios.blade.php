@@ -38,7 +38,7 @@ usuarios
                           <td>Eliminar</td>
                         </tr>
                       </thead>
-                      <tbody>
+                      <tbody id="tbody">
                         <tr>
                           @forelse($perros as $usu)
                           <td>{{$usu->id}}</td>
@@ -209,21 +209,26 @@ var tr;
         }
 
       }).done(function(respuesta){
-        var todo="<tr><td>";
-        todo+="id</td><td>nombre</td>";
-        todo+="<td>email</td><td>";
-        todo+='<button type="" data-nombre=""';
-        todo+='data-email="" data-id=""';
+        var arreglo =JSON.parse(respuesta);
+        $("#tbody").find('tr').remove();
+        for(var x=0;x<arreglo.length;x++){
+        var todo="<tr><td>"+arreglo[x].id;
+        todo+="</td><td>"+arreglo[x].name+"</td>";
+        todo+="<td>"+arreglo[x].email+"</td><td>";
+        todo+='<button type="" data-nombre="'+arreglo[x].name+'"';
+        todo+='data-email="'+arreglo[x].email+'" data-id="'+arreglo[x].id+'"';
         todo+='data-toggle="modal" data-target="#myModal"';
         todo+='class="btn btn-primary btnEdit">';
         todo+="EDITAR</button></td>";
-        todo+='td><form method="POST" action="/admin/usuarios">';
-        todo+='<input type="hidden" name ="_token" value="">';
+        todo+='td><form method="POST" action="/admin/usuarios/'+arreglo[x].id+'">';
+        todo+='<input type="hidden" name ="_token" value="{{csrf_token()}}">';
         todo+='<input type="hidden" name ="_method" value="delete">';
-        todo+='<button type="submit" data-toggle="modal"';
+        todo+='<button type="button" data-toggle="modal"';
         todo+='data-target="#myModal2" class="btnEliminar">';
         todo+='<i class="fa fa-trash></i></button></form></td></tr>"';
-        console.log(respuesta);
+        $("#tbody").append(todo);
+        }
+        console.log(arreglo);
 
       });
 

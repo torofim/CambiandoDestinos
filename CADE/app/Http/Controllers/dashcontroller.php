@@ -3,7 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\User;
+use DB;
 class dashcontroller extends Controller
 {
   /**
@@ -21,9 +22,19 @@ class dashcontroller extends Controller
    *
    * @return \Illuminate\Http\Response
    */
+
   public function index()
   {
-      return view('principal');
+     $benef = DB::select('select COUNT(*) AS total from datos_personales');
+     $usuarios = DB::select('select COUNT(*) AS usu from users');
+
+
+    #dd($users);
+
+  # NO FUNCIONA CON LOS 2 JUNTOS NECESITO PREGUNTAR AL ING COMO SE ARREGLA
+       return view('LEFTMENU', ['benef' => $benef]);
+       return view('LEFTMENU',['usuarios' => $usuarios]);
+      #return view('principal');
   }
   public function benef()
   {

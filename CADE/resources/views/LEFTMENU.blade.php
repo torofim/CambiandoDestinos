@@ -2,20 +2,20 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/estiloside.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="{{ asset('css/estiloside.css') }}" rel="stylesheet" type="text/css" >
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" >
     <title></title>
   </head>
   <body>
   @include('layouts.nav')
   <div class="main">
     <div class="panel panel-default">
-        <div class="panel-body cold-md-2">
+        <div class="panel-body cold-md-2" id="sepa">
 
       </div>
     </div>
-    <div class="panel2 panel-default col-xs-6 ">
-      <div class="panel-body2">
+    <div class="panel2 panel-default col-xs-12 ">
+      <div class="panel-body2" style="border-bottom:groove;">
         Dashboard
       </div>
     </div>
@@ -24,20 +24,30 @@
 
       <div class="container-fluid">
           <div class="row">
-            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:green; height:15vh;">
-              <p>Display numero</p>
+            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:transparent; height:15vh;">
+              <p style="border-bottom:groove; border-bottom-width:.5px;">Beneficiarios activos</p>
+              <p style="font-size:3.5rem;">
+                @forelse ($benef as $b)
+                {{ $b->total }}
+                @empty
+                @endforelse
+              </p>
+            </div>
+            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:transparent; height:15vh;">
+              <p style="border-bottom:groove; border-bottom-width:.5px;">Usuarios Activos</p>
+              <p style="font-size:3.5rem;">
+                @forelse ($usuarios as $u)
+                {{ $u->usu }}
+                @empty
+                @endforelse
+              </p>
+            </div>
+            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:transparent; height:15vh;" >
+              <p style="border-bottom:groove; border-bottom-width:.5px;">Visitantes</p>
               <p style="font-size:3.5rem;">145</p>
             </div>
-            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:blue; height:15vh;">
-              <p>Display numero</p>
-              <p style="font-size:3.5rem;">145</p>
-            </div>
-            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:red; height:15vh;" >
-              <p>Display numero</p>
-              <p style="font-size:3.5rem;">145</p>
-            </div>
-            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:green; height:15vh;">
-              <p>Display numero</p>
+            <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:transparent; height:15vh;">
+              <p style="border-bottom:groove; border-bottom-width:.5px;">Beneficiarios de taller</p>
               <p style="font-size:3.5rem;">145</p>
             </div>
 		      </div>
@@ -53,12 +63,12 @@
          </div>
        </div>
   </div>
+    <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/chart.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/graficabarras.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/side.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 
-    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-    <script src="js/chart.min.js"></script>
-    <script src="js/graficabarras.js"></script>
-    <script src="js/side.js"></script>
-    <script src="js/bootstrap.min.js"></script>
 
   </body>
 </html>

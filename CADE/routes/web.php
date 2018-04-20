@@ -42,9 +42,9 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::post('/usuarios/buscar','usuarioscontroller@buscar');
 
 
-  
+
   // Estos son los Routes de los DASH
-  Route::get('/dash','dashcontroller@index')->name('dash');
+  Route::get('/dash','dashcontroller@index')->name('LEFTMENU');
   Route::get('/benef','dashcontroller@benef')->name('benef');
   Route::get('/registrados','regiscontroller@index')->name('registrados');
   Route::get('/graficos','regiscontroller@graficos')->name('graficos');

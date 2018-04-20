@@ -15,7 +15,7 @@ new Chart(document.getElementById("bar-chart"), {
       legend: { display: false },
       title: {
         display: true,
-        text: 'Poblacion de beneficiarios por municipio'
+        text: 'Población de beneficiarios por municipio'
       }
     }
 });
