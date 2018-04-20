@@ -55,6 +55,7 @@ usuarios
                           'method'=>'DELETE' )) !!}
                           <button type="button" class="btnEliminar" data-toggle="modal" data-target="#myModal2">
                             <i class="glyphicon glyphicon-remove"></i>
+.
                           </button>
                           {!! Form::close() !!}
                           </td>

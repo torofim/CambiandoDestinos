@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@include('LEFTMENU')
+@section('principal')
 <div class="separador">
   <label id="titulo">Dashboard</label>
 </div>
