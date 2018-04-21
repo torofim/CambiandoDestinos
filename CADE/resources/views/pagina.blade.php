@@ -170,7 +170,7 @@
     QUE DESARROLLEN UN CAMBIO SUSTENTABLE EN LA INTEGRACION
     Y FORMACION DE NINOS, JOVENES, ADULTOS Y ANCIANOS, EN CULTURA
     EDUCACION Y SALUD.</p>
-  <p style="margin-left:65%;margin-top:10%;"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a></p>
+  <p style="margin-left:65%;margin-top:10%;"><a class="btn btn-primary btn-lg boton" href="#" role="button"  style="background-color:green;">Conoce Mas</a></p>
 </div>
 </div>
 </div>
@@ -227,48 +227,62 @@
 <div class="col-md-12" style="margin-top:7%;">
 
 
-  <div class="col-md-3 ">
-    <img class="img-responsive img-rounded cuatro" src="./img/visita.jpg" style="height:450px;width:350px;">
+  <div class="col-md-3 divs" style="margin-left:3%;">
+    <img class="img-responsive cuatro" src="./img/visita.jpg" style="height:100%; width:100%;">
     <div class="overlay">
       <div class="text">
         <h4>Visita Domiciliaria</h4>
         <br>
-        <a href="/visita">Conoce Mas</a>
+        <div class="textoconoce">
+        <a class="conoce"href="/visita">Conoce Mas</a>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-md-3 ">
-    <img class="img-responsive img-rounded cuatro" src="./img/comidacaliente.png" style="height:450px; width:350px;">
+  <div class="col-md-3 divs">
+    <img class="img-responsive  cuatro" src="./img/comidacaliente.png" style="height:100%; width:100%;">
     <div class="overlay">
       <div class="text">
         <h4>Comida Caliente</h4>
         <br>
-        <a href="/comida">Conoce Mas</a>
+        <div class="textoconoce">
+        <a class="conoce" href="/comida">Conoce Mas</a>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-md-3 ">
-    <img class="img-responsive img-rounded cuatro" src="./img/reunion.jpg" style="height:450px;width:350px;" >
+  <div class="col-md-3 divs">
+    <img class="img-responsive cuatro" src="./img/reunion.jpg" style="height:100%; width:100%;" >
     <div class="overlay">
       <div class="text">
         <h4>Taller Aprendiendo a Vivir en la 3ra Edad</h4>
         <br>
-        <a href="/taller">Conoce Mas</a>
+        <div class="textoconoce">
+        <a class="conoce" href="/taller">Conoce Mas</a>
+        </div>
       </div>
     </div>
   </div>
-  <div class="col-md-3 ">
-    <img class="img-responsive img-rounded cuatro" src="./img/musica2.jpg" style="height:450px;width:350px;">
+  <div class="col-md-3 divs">
+    <img class="img-responsive  cuatro" src="./img/musica2.jpg" style="height:100%; width:100%;">
     <div class="overlay">
       <div class="text">
           <h4>Instituto Cultural Cambiando Destinos</h4>
         <br>
-        <a href="/cultura" >Conoce Mas</a>
+        <div class="textoconoce">
+            <a  class="conoce" href="/cultura" >Conoce Mas</a>
+        </div>
+
       </div>
     </div>
   </div>
   </div>
   </div>
+</section>
+
+<section style="background-color:white;height:850px;margin-top:0%;width: 100%;background-image: url(./img/fondochido.jpg);" id="cuarto">
+<h3>hola</h3>
+
 </section>
 
 
