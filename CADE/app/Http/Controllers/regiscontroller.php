@@ -19,7 +19,7 @@ class regiscontroller extends Controller
       //->take(10)
       ->get();
 
-      return view('registrados')
+      return view('registradosf')
       ->with('perros',$registros);
     }
     public function graficos(){

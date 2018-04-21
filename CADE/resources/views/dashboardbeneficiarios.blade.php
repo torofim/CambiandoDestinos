@@ -11,184 +11,186 @@
   <div class="main">
     <div class="panel panel-default">
         <div class="panel-body cold-md-2" id="sepa">
-
-      </div>
+        </div>
     </div>
-		<table class="table ">
-				 <thead>
-						 <tr>
-						 <th>#</th>
-						 <th>Nombre</th>
-							 <th>Apellido</th>
-							 <th>Username</th>
-						 </tr>
-				 </thead>
-			 <tbody>
-				 <tr>
-					 <th scope="row">1</th>
-					 <td>Mark</td>
-						 <td>Otto</td>
-						 <td>@mdo</td>
-						 <td><button>Eliminar</button></td>
-						 <td><button>Modificar</button></td>
-					 </tr>
-				 <tr>
-					 <th scope="row">2</th>
-					 <td>Jacob</td>
-					 <td>Thornton</td>
-						 <td>@fat</td>
-						 <td><button>Eliminar</button></td>
-						 <td><button>Modificar</button></td>
-				 </tr>
-					 <tr>
-							 <th scope="row">3</th>
-							 <td>Larry</td>
-							 <td>the Bird</td>
-							 <td>@twitter</td>
-							 <td><button>Eliminar</button></td>
-							 <td><button>Modificar</button></td>
-				 </tr>
-					<tr>
-							 <th scope="row">3</th>
-							 <td>Varela</td>
-							 <td>the hobbo</td>
-							 <td>@twitter</td>
-							 <td><button>Eliminar</button></td>
-							<td><button>Modificar</button></td>
-				 </tr>
-					<tr>
-							 <th scope="row">3</th>
-							 <td>Fercho</td>
-							 <td>the Bird</td>
-							 <td>@owl</td>
-							 <td><button>Eliminar</button></td>
-							<td><button>Modificar</button></td>
-				 </tr>
+    <div class="contenedor">
+      <table class="table">
+  				 <thead>
+  						 <tr>
+  						 <th>#</th>
+  						 <th>Nombre</th>
+  							 <th>Apellido</th>
+  							 <th>Username</th>
+  						 </tr>
+  				 </thead>
+  			 <tbody>
+  				 <tr>
+  					 <th scope="row">1</th>
+  					 <td>Mark</td>
+  						 <td>Otto</td>
+  						 <td>@mdo</td>
+  						 <td><button>Eliminar</button></td>
+  						 <td><button>Modificar</button></td>
+  					 </tr>
+  				 <tr>
+  					 <th scope="row">2</th>
+  					 <td>Jacob</td>
+  					 <td>Thornton</td>
+  						 <td>@fat</td>
+  						 <td><button>Eliminar</button></td>
+  						 <td><button>Modificar</button></td>
+  				 </tr>
+  					 <tr>
+  							 <th scope="row">3</th>
+  							 <td>Larry</td>
+  							 <td>the Bird</td>
+  							 <td>@twitter</td>
+  							 <td><button>Eliminar</button></td>
+  							 <td><button>Modificar</button></td>
+  				 </tr>
+  					<tr>
+  							 <th scope="row">3</th>
+  							 <td>Varela</td>
+  							 <td>the hobbo</td>
+  							 <td>@twitter</td>
+  							 <td><button>Eliminar</button></td>
+  							<td><button>Modificar</button></td>
+  				 </tr>
+  					<tr>
+  							 <th scope="row">3</th>
+  							 <td>Fercho</td>
+  							 <td>the Bird</td>
+  							 <td>@owl</td>
+  							 <td><button>Eliminar</button></td>
+  							<td><button>Modificar</button></td>
+  				 </tr>
 
-				 <tr>
-					 <th scope="row">1</th>
-					 <td>Mark</td>
-						 <td>Otto</td>
-						 <td>@mdo</td>
-						 <td><button>Eliminar</button></td>
-						 <td><button>Modificar</button></td>
-					 </tr>
-				 <tr>
-					 <th scope="row">2</th>
-					 <td>Jacob</td>
-					 <td>Thornton</td>
-						 <td>@fat</td>
-						 <td><button>Eliminar</button></td>
-						 <td><button>Modificar</button></td>
-				 </tr>
-					 <tr>
-							 <th scope="row">3</th>
-							 <td>Larry</td>
-							 <td>the Bird</td>
-							 <td>@twitter</td>
-							 <td><button>Eliminar</button></td>
-							<td><button>Modificar</button></td>
-				 </tr>
-					<tr>
-							 <th scope="row">3</th>
-							 <td>Varela</td>
-							 <td>the hobbo</td>
-							 <td>@twitter</td>
-							 <td><button>Eliminar</button></td>
-							 <td><button>Modificar</button></td>
-				 </tr>
-					<tr>
-							 <th scope="row">3</th>
-							 <td>Fercho</td>
-							 <td>the Bird</td>
-							 <td>@owl</td>
-							 <td><button>Eliminar</button></td>
-							 <td><button>Modificar</button></td>
-				 </tr>
+  				 <tr>
+  					 <th scope="row">1</th>
+  					 <td>Mark</td>
+  						 <td>Otto</td>
+  						 <td>@mdo</td>
+  						 <td><button>Eliminar</button></td>
+  						 <td><button>Modificar</button></td>
+  					 </tr>
+  				 <tr>
+  					 <th scope="row">2</th>
+  					 <td>Jacob</td>
+  					 <td>Thornton</td>
+  						 <td>@fat</td>
+  						 <td><button>Eliminar</button></td>
+  						 <td><button>Modificar</button></td>
+  				 </tr>
+  					 <tr>
+  							 <th scope="row">3</th>
+  							 <td>Larry</td>
+  							 <td>the Bird</td>
+  							 <td>@twitter</td>
+  							 <td><button>Eliminar</button></td>
+  							<td><button>Modificar</button></td>
+  				 </tr>
+  					<tr>
+  							 <th scope="row">3</th>
+  							 <td>Varela</td>
+  							 <td>the hobbo</td>
+  							 <td>@twitter</td>
+  							 <td><button>Eliminar</button></td>
+  							 <td><button>Modificar</button></td>
+  				 </tr>
+  					<tr>
+  							 <th scope="row">3</th>
+  							 <td>Fercho</td>
+  							 <td>the Bird</td>
+  							 <td>@owl</td>
+  							 <td><button>Eliminar</button></td>
+  							 <td><button>Modificar</button></td>
+  				 </tr>
 
-				 <tr>
-					 <th scope="row">1</th>
-					 <td>Mark</td>
-						 <td>Otto</td>
-						 <td>@mdo</td>
-						 <td><button>Eliminar</button></td>
-						 <td><button>Modificar</button></td>
-					 </tr>
-				 <tr>
-					 <th scope="row">2</th>
-					 <td>Jacob</td>
-					 <td>Thornton</td>
-						 <td>@fat</td>
-						 <td><button>Eliminar</button></td>
-						<td><button>Modificar</button></td>
-				 </tr>
-					 <tr>
-							 <th scope="row">3</th>
-							 <td>Larry</td>
-							 <td>the Bird</td>
-							 <td>@twitter</td>
-							 <td><button>Eliminar</button></td>
-							<td><button>Modificar</button></td>
-				 </tr>
-					<tr>
-							 <th scope="row">3</th>
-							 <td>Varela</td>
-							 <td>the hobbo</td>
-							 <td>@twitter</td>
-							 <td><button>Eliminar</button></td>
-							<td><button>Modificar</button></td>
-				 </tr>
-					<tr>
-							 <th scope="row">3</th>
-							 <td>Fercho</td>
-							 <td>the Bird</td>
-							 <td>@owl</td>
-							 <td><button>Eliminar</button></td>
-							 <td><button>Modificar</button></td>
-				 </tr>
-				 <tr>
-					 <th scope="row">1</th>
-					 <td>Mark</td>
-						 <td>Otto</td>
-						 <td>@mdo</td>
-						 <td><button>Eliminar</button></td>
-						 <td><button>Modificar</button></td>
-					 </tr>
-				 <tr>
-					 <th scope="row">2</th>
-					 <td>Jacob</td>
-					 <td>Thornton</td>
-						 <td>@fat</td>
-						 <td><button>Eliminar</button></td>
-						<td><button>Modificar</button></td>
-				 </tr>
-					 <tr>
-							 <th scope="row">3</th>
-							 <td>Larry</td>
-							 <td>the Bird</td>
-							 <td>@twitter</td>
-							 <td><button>Eliminar</button></td>
-							 <td><button>Modificar</button></td>
-				 </tr>
-					<tr>
-							 <th scope="row">3</th>
-							 <td>Varela</td>
-							 <td>the hobbo</td>
-							 <td>@twitter</td>
-							 <td><button>Eliminar</button></td>
-							 <td><button>Modificar</button></td>
-				 </tr>
-					<tr>
-							 <th scope="row">3</th>
-							 <td>Fercho</td>
-							 <td>the Bird</td>
-							 <td>@owl</td>
-							 <td><button>Eliminar</button></td>
-							 <td><button>Modificar</button></td>
-				 </tr>
+  				 <tr>
+  					 <th scope="row">1</th>
+  					 <td>Mark</td>
+  						 <td>Otto</td>
+  						 <td>@mdo</td>
+  						 <td><button>Eliminar</button></td>
+  						 <td><button>Modificar</button></td>
+  					 </tr>
+  				 <tr>
+  					 <th scope="row">2</th>
+  					 <td>Jacob</td>
+  					 <td>Thornton</td>
+  						 <td>@fat</td>
+  						 <td><button>Eliminar</button></td>
+  						<td><button>Modificar</button></td>
+  				 </tr>
+  					 <tr>
+  							 <th scope="row">3</th>
+  							 <td>Larry</td>
+  							 <td>the Bird</td>
+  							 <td>@twitter</td>
+  							 <td><button>Eliminar</button></td>
+  							<td><button>Modificar</button></td>
+  				 </tr>
+  					<tr>
+  							 <th scope="row">3</th>
+  							 <td>Varela</td>
+  							 <td>the hobbo</td>
+  							 <td>@twitter</td>
+  							 <td><button>Eliminar</button></td>
+  							<td><button>Modificar</button></td>
+  				 </tr>
+  					<tr>
+  							 <th scope="row">3</th>
+  							 <td>Fercho</td>
+  							 <td>the Bird</td>
+  							 <td>@owl</td>
+  							 <td><button>Eliminar</button></td>
+  							 <td><button>Modificar</button></td>
+  				 </tr>
+  				 <tr>
+  					 <th scope="row">1</th>
+  					 <td>Mark</td>
+  						 <td>Otto</td>
+  						 <td>@mdo</td>
+  						 <td><button>Eliminar</button></td>
+  						 <td><button>Modificar</button></td>
+  					 </tr>
+  				 <tr>
+  					 <th scope="row">2</th>
+  					 <td>Jacob</td>
+  					 <td>Thornton</td>
+  						 <td>@fat</td>
+  						 <td><button>Eliminar</button></td>
+  						<td><button>Modificar</button></td>
+  				 </tr>
+  					 <tr>
+  							 <th scope="row">3</th>
+  							 <td>Larry</td>
+  							 <td>the Bird</td>
+  							 <td>@twitter</td>
+  							 <td><button>Eliminar</button></td>
+  							 <td><button>Modificar</button></td>
+  				 </tr>
+  					<tr>
+  							 <th scope="row">3</th>
+  							 <td>Varela</td>
+  							 <td>the hobbo</td>
+  							 <td>@twitter</td>
+  							 <td><button>Eliminar</button></td>
+  							 <td><button>Modificar</button></td>
+  				 </tr>
+  					<tr>
+  							 <th scope="row">3</th>
+  							 <td>Fercho</td>
+  							 <td>the Bird</td>
+  							 <td>@owl</td>
+  							 <td><button>Eliminar</button></td>
+  							 <td><button>Modificar</button></td>
+  				 </tr>
 
-			 </tbody>
-			 </table>
+  			 </tbody>
+  			 </table>
+    </div>
+
   </div>
     <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/chart.min.js') }}"></script>
