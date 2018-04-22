@@ -43,10 +43,10 @@
                       <a href="#tercero">Cambiando Destinos <img src="./img/logonavi.png" alt=""></a>
                   </li>
                   <li class="page-scroll">
-                      <a href="#galeria">Galería<img src="./img/logonavi.png" alt=""></a>
+                      <a href="#cuarto">Galería<img src="./img/logonavi.png" alt=""></a>
                   </li>
                   <li class="page-scroll">
-                      <a href="#contacto">Contacto<img src="./img/logonavi.png" alt=""></a>
+                      <a href="#quinto">Contacto<img src="./img/logonavi.png" alt=""></a>
                   </li>
               </ul>
           </div>
@@ -158,11 +158,11 @@
 </div>
 
 <div class="col-md-12" style="margin-top:3%;padding:0;">
-  <div class="col-md-4 divima" style="margin-left:12%;width:40%;height:480px;margin-top: 1%;padding:0;border-top-left-radius:25px;border-bottom-left-radius:25px;">
-    <img class="img-responsive" style="width:100%;height:100%;border-top-left-radius:25px;border-bottom-left-radius:25px;" src="./img/fclogo1.png" >
+  <div class="col-md-4 divima">
+    <img class="img-responsive"  src="./img/fclogo1.png" >
   </div>
 
-  <div class="col-md-5 jumbotron" style="margin-top:1%;width:35%;height:480px;border-top-right-radius:25px;border-bottom-right-radius:25px;">
+  <div class="col-md-5 jumbotron" >
   <h1 style="font-size:35px;margin-top:0;"></h1>
   <p>SOMOS UNA INSTITUCION DE INICIATIVA PRIVADA SIN FIN DE
     LUCRO CON RESPONSABILIDADES CULTURALES Y SOCIALES ​
@@ -188,11 +188,11 @@
   </div>
   <div class="col-md-12"style="margin-top:5%;margin-left:5%;" >
 
-  <div  class="col-md-5" style="height:480px;padding:0;border-radius: 25px;box-shadow: 10px 10px 5px #aaaaaa;">
-  <div class="col-md-8" style="height:480px;padding:0;" >
-    <img class="img-responsive  " src="./img/mario1.jpg" alt="responsive" style="height:100%;width:100%;border-top-left-radius:25px;border-bottom-left-radius:25px;">
+  <div  class="col-md-5 divhis" >
+  <div class="col-md-8 divhim"  >
+    <img class="img-responsive  " src="./img/mario1.jpg" alt="responsive" >
   </div>
-  <div class="col-md-4" style="background-color:green;width:33.33%;height:100%;border-top-right-radius:25px;border-bottom-right-radius:25px;"><p style="margin-top:20%;color:black;">Mario</p> <br>
+  <div class="col-md-4 divhtex" ><p style="margin-top:20%;color:black;">Mario</p> <br>
     <p style="color:black;">Mario es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
     cuando Fundación Cambiando Destinos abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
     juega futbol con sus companeros de la escuela</p> </div>
@@ -200,11 +200,11 @@
 </div>
 
 
-<div class="col-md-5" style="margin-left:6%;height:480px;padding:0;border-radius: 25px;box-shadow: 10px 10px 5px #aaaaaa;">
-<div class="col-md-8 " style="height:480px;padding:0;">
-  <img class="img-responsive" src="./img/chilito2.jpg" alt="responsive" style="height:100%;width:100%;border-top-left-radius:25px;border-bottom-left-radius:25px;">
+<div class="col-md-5 divhis" style="margin-left:6%;">
+<div class="col-md-8 divhim" >
+  <img class="img-responsive" src="./img/chilito2.jpg" alt="responsive" >
 </div>
-<div class="col-md-4"style="background-color:green;width:33.33%;height:100%;border-top-right-radius:25px;border-bottom-right-radius:25px;" ><p style="margin-top:20%;color:black;">Chilito</p> <br><p style="color:black;">
+<div class="col-md-4 divhtex" ><p style="margin-top:20%;color:black;">Chilito</p> <br><p style="color:black;">
   Chilito es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
   cuando Fundación Cambiando Destinos abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
   juega futbol con sus companeros de la escuela</p> </div>
@@ -219,7 +219,7 @@
 
 
 <section style="background-color:white;height:850px;margin-top:0%; "id="tercero">
-  <div class="col-md-12 text-center"style="margin-top:0%;">
+  <div class="col-md-12 text-center"style="margin-top:3%;">
       <h2 >Cambiando Destinos</h2>
   </div>
 <div class="col-md-12" style="margin-top:3%;margin-left:0%;background-image:url(./img/logo.jpg);background-repeat: repeat;padding:0;height:700px;">
@@ -282,6 +282,10 @@
 
 <section style="background-color:white;height:850px;margin-top:0%;width: 100%;background-image: url(./img/fondochido.jpg);" id="cuarto">
 <h3>hola</h3>
+
+</section>
+
+<section style="background-color:white;height:850px;margin-top:0%;width: 100%;background-image:url(./img/logo.jpg);background-repeat: repeat;padding:0;"id="quinto">
 
 </section>
 
