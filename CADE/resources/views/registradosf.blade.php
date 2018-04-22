@@ -19,7 +19,6 @@
           <div class="row justify-content-center">
               <div class="col-md-12">
                   <div class="card">
-                      <div class="card-header">Login</div>
 
                       <div class="card-body">
                         @if($errors->any())
@@ -38,8 +37,8 @@
                           </div>
                         @endif
                         <div class="row">
-                          <h2>usuarios</h2>
-                          <table class="table table-condensed">
+                          <h2 style="margin-left:1.5%;">Usuarios</h2>
+                          <table class="table table-condensed" style="margin-left:1.5%;">
                             <thead>
                               <tr>
                                 <td>Id</td>
@@ -105,7 +104,8 @@
                             array('class'=>'form-control',
                             'placeholder'=>'imagen') )}}
                           </div>
-                          <div class="input-group col-md-12">
+
+                          <div class="input-group col-md-12" style="margin-left:1.5%; padding-top:1%;">
                             {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
                           </div>
                         {{Form::close()}}
