@@ -134,7 +134,7 @@ nav.sidebar:hover{
 .main{
   width: calc(100% - 200px); /*keeps 100% minus nav size*/
   margin-left: 200px;
-  background-color:#D2D2D2;
+  background-color:white;
 }
 
 /*Show all nav*/
@@ -183,6 +183,20 @@ float:left;
 }
 #sepa{
   background-color:#3C3C3C;
+}
+.contenedor{
+  width:auto;
+  height:500px;
+  overflow-y: scroll;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.table{
+  background-color:gray;
+  font-size:1.8rem;
+  border-radius:10px;
+
+
 }
 /*DE AQUI ES EL CSS DE LOS COUNTERSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
 .coder-counter {background:#2d344d; color:#fff;}

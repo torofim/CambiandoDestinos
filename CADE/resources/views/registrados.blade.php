@@ -1,9 +1,12 @@
-
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
 <head>
 		<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/newstyle.css') }}">
+		<link href="{{ asset('css/estiloside.css') }}" rel="stylesheet" type="text/css" >
+		<link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" >
 </head>
 
-@include('nav')
+@include('layouts.nav')
 @extends('layouts.app')
 
 <div class="container" style="margin-left:7.5%;">
@@ -114,7 +117,6 @@
       <div class="modal-header">
         <h4 class="modal-title">Editar a: <b id="nomModal">Juan</b> </h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
-
       </div>
       {!! Form::open(
         array('route'=>['admin.usuarios.edit',$usu->id],'method'=>'GET' )) !!}
@@ -173,5 +175,9 @@
     });
   });
 </script>
-
+<script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/side.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 @endsection
+
+</html>

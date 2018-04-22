@@ -46,7 +46,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   // Estos son los Routes de los DASH
   Route::get('/dash','dashcontroller@index')->name('LEFTMENU');
   Route::get('/benef','dashcontroller@benef')->name('benef');
-  Route::get('/registrados','regiscontroller@index')->name('registrados');
+  Route::get('/registrados','regiscontroller@index')->name('registradosf');
   Route::get('/graficos','regiscontroller@graficos')->name('graficos');
   Route::resource('dash','dashcontroller');
   Route::resource('beneficiarios','dashcontroller');
