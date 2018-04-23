@@ -9,6 +9,7 @@
 		<link href="./css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="./css/estilos.css">
+  <link rel="stylesheet" type="text/css" href="/css/style.css">
 	<link href="./css/main.css" type="text/css" rel="stylesheet">
 
   </head>
@@ -154,7 +155,7 @@
 
 
 <div class="col-md-12 text-center" style="margin-top:2%;">
-    <h2 >Sobre Nosotros</h2>
+    <h2 style="color:black;">Sobre Nosotros</h2>
 </div>
 
 <div class="col-md-12" style="margin-top:3%;padding:0;">
@@ -180,11 +181,60 @@
 </section>
 
 
-<section class="segundo" id="segundo" style="height:850px;margin-top:9%;background-image:url(./img/fondochido.jpg);">
+<section style="background-color:#6fc675;height:950px;margin-top:9%;background-image:url(./img/logo.jpg); background-blend-mode:darken;"id="segundo">
+  <div class="col-md-12 text-center"style="margin-top:3%;margin-bottom: 3%;">
+      <h2 >Cambiando Destinos</h2>
+  </div>
+
+  <div class="accordion" >
+  <ul>
+    <li>
+      <div> <a href="#">
+        <h2>Visita Domiciliaria</h2>
+        <p>Conoce Mas</p>
+        </a> </div>
+    </li>
+    <li>
+      <div> <a href="#">
+        <h2>Aprendiendo a Vivir en la 3ra Edad</h2>
+        <p>Conoce Mas</p>
+        </a> </div>
+    </li>
+    <li>
+      <div> <a href="#">
+        <h2>Taller de Musica</h2>
+        <p>Conoce Mas</p>
+        </a> </div>
+    </li>
+    <li>
+      <div> <a href="#">
+        <h2>Comida Caliente</h2>
+        <p>Conoce Mas</p>
+        </a> </div>
+    </li>
+    <li>
+      <div> <a href="#">
+        <h2>Gestiones Hoy Por Ti</h2>
+        <p>Conoce Mas</p>
+        </a> </div>
+    </li>
+
+  </ul>
+  </div>
+
+
+</section>
+
+<section class="segundo" id="tercero" style="height:950px;margin-top:0%;background-image:url(./img/fondochido.jpg);">
   <div class="col-md-12" >
 
   <div class="col-md-12 text-center" style="margin-top:3%;">
-      <h2>Historias de aliento</h2>
+      <h2 style="color:black;">Historias de aliento</h2>
+  </div>
+  <div class="cold-md-12 info" >
+    <h4 >Durante los años 2011 a 2015, la ciudad de Buenaventura no contaba con un centro de rehabilitación por lo que Fundacion
+    Cambiando Destinos presento el programa de centro de fisioterapia buenaventura (CEFIB). Una vez establecido un centro de rehabilitación por parte
+  del municipio de Buenaventura, CEFIB cerro sus puertas.</h4>
   </div>
   <div class="col-md-12"style="margin-top:5%;margin-left:5%;" >
 
@@ -218,74 +268,20 @@
 
 
 
-<section style="background-color:white;height:850px;margin-top:0%; "id="tercero">
-  <div class="col-md-12 text-center"style="margin-top:3%;">
-      <h2 >Cambiando Destinos</h2>
-  </div>
-<div class="col-md-12" style="margin-top:3%;margin-left:0%;background-image:url(./img/logo.jpg);background-repeat: repeat;padding:0;height:700px;">
-
-<div class="col-md-12" style="margin-top:7%;">
 
 
-  <div class="col-md-3 divs" style="margin-left:3%;">
-    <img class="img-responsive cuatro" src="./img/visita.jpg" style="height:100%; width:100%;">
-    <div class="overlay">
-      <div class="text">
-        <h4>Visita Domiciliaria</h4>
-        <br>
-        <div class="textoconoce">
-        <a class="conoce"href="/visita">Conoce Mas</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3 divs">
-    <img class="img-responsive  cuatro" src="./img/comidacaliente.png" style="height:100%; width:100%;">
-    <div class="overlay">
-      <div class="text">
-        <h4>Comida Caliente</h4>
-        <br>
-        <div class="textoconoce">
-        <a class="conoce" href="/comida">Conoce Mas</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3 divs">
-    <img class="img-responsive cuatro" src="./img/reunion.jpg" style="height:100%; width:100%;" >
-    <div class="overlay">
-      <div class="text">
-        <h4>Taller Aprendiendo a Vivir en la 3ra Edad</h4>
-        <br>
-        <div class="textoconoce">
-        <a class="conoce" href="/taller">Conoce Mas</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="col-md-3 divs">
-    <img class="img-responsive  cuatro" src="./img/musica2.jpg" style="height:100%; width:100%;">
-    <div class="overlay">
-      <div class="text">
-          <h4>Instituto Cultural Cambiando Destinos</h4>
-        <br>
-        <div class="textoconoce">
-            <a  class="conoce" href="/cultura" >Conoce Mas</a>
-        </div>
-
-      </div>
-    </div>
-  </div>
-  </div>
-  </div>
-</section>
-
-<section style="background-color:white;height:850px;margin-top:0%;width: 100%;background-image: url(./img/fondochido.jpg);" id="cuarto">
+<section style="background-color:white;height:850px;margin-top:0%;width: 100%;background-image: url(./img/elderly_friend.jpg);background-size:cover;" id="cuarto">
 <h3>hola</h3>
 
 </section>
 
-<section style="background-color:white;height:850px;margin-top:0%;width: 100%;background-image:url(./img/logo.jpg);background-repeat: repeat;padding:0;"id="quinto">
+<section style="background-color:white;height:750px;margin-top:0%;width: 100%;background-image:url(./img/libreta1.jpg);background-size:cover;padding:0;"id="quinto">
+
+
+
+
+
+
 
 </section>
 
@@ -299,6 +295,7 @@
 
 <script src="js/bootstrap.min.js"></script>
 <script src="js/javascript.js"></script>
+<script src="js/modernizr.custom.79639.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </body>
 </html>
