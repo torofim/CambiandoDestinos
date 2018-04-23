@@ -12,12 +12,16 @@
 
 </head>
 <body>
-	@include('layouts.nav')
+@include('layouts.nav')
 
 		</ul>
 	</div>
 	<div class="main">
+		<div class="panel panel-default">
+				<div class="panel-body cold-md-2" id="sepa">
 
+			</div>
+		</div>
 
 	<div class="lefted" style="background-image:url()">
 		@yield('principal')

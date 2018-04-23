@@ -6,10 +6,10 @@
         <div class="col-md-8">
             <div class="card">
                 <div class="card-header"></div>
-usuarios
-<input type="search" name="" value="" id="txtBusqueda">
+                <h3 style="margin-left:2%;">Usuarios</h3>
+<input type="search" name="" value="" id="txtBusqueda" style="margin-left:2%;">
 <input type="hidden" name="" value="{{csrf_token()}}" id="token">
-                <div class="card-body">
+                <div class="card-body" >
                   @if($errors->any())
                     <div class="alert alert-warning alert-dismissable">
                       <ul>
@@ -27,8 +27,8 @@ usuarios
                   @endif
                   <!-- ESTA ES LA TABLA ORIGINAL PARA POSTERIORES USOS-->
                   <div class="row">
-                    <h2>usuarios</h2>
-                    <table class="table table-condensed">
+                    <h2 style="margin-left:1.5%;">usuarios</h2>
+                    <table class="table table-condensed" style="margin-left:1.5%;">
                       <thead>
                         <tr>
                           <td>Id</td>
@@ -53,9 +53,9 @@ usuarios
                           {!! Form::open(
                             array('route'=>['admin.usuarios.destroy',$usu->id],
                           'method'=>'DELETE' )) !!}
-                          <button type="button" class="btnEliminar" data-toggle="modal" data-target="#myModal2">
-                            <i class="glyphicon glyphicon-remove"></i>
-.
+                          <button type="button" class="btnEliminar" data-toggle="modal" data-target="#myModal2" style="margin-top:5px;">
+                            <i class="glyphicon glyphicon-remove" style="padding-top:50%;"></i>
+
                           </button>
                           {!! Form::close() !!}
                           </td>
@@ -95,7 +95,7 @@ usuarios
                       array('class'=>'form-control',
                       'placeholder'=>'imagen') )}}
                     </div>
-                    <div class="input-group col-md-12">
+                    <div class="input-group col-md-12" style="padding-top:2%; margin-left:2%; padding-bottom:9vh;">
                       {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
                     </div>
                   {{Form::close()}}
