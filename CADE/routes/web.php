@@ -14,9 +14,7 @@
 Route::get('/', function () {
     return view('pagina');
 });
-Route::get('/side', function(){
-    return view('newfrontdash');
-});
+
 Route::get('/taller', function () {
     return view('taller');
 });
