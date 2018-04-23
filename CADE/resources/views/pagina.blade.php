@@ -87,7 +87,7 @@
 </div>
 
 <div class="item">
-<img src="./img/comida.jpg" class="img-responsive" alt="comida" style="width:100%;max-height:42em;">
+<img src="./img/comidacaliente1.jpg" class="img-responsive" alt="comida" style="width:100%;max-height:42em;">
 <div class="carousel-caption" style="top:0%;">
   <h3 style="font-size:2.3em;margin-left:41%;margin-top:0.2%;">COMIDA CALIENTE</h3>
   <div>
@@ -275,38 +275,63 @@
 
 <div class="row">
   <div class="column">
-    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor " id="galim">
+    <img src="./img/abuela.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor " id="galim">
   </div>
   <div class="column">
-    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor " id="galim">
+    <img src="./img/abuelo.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor " id="galim">
   </div>
   <div class="column">
-    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" id="galim">
+    <img src="./img/actividad.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" id="galim">
   </div>
   <div class="column">
-    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
+    <img src="./img/actividad1.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
   </div>
   <div class="column">
-    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" id="galim">
+    <img src="./img/altar.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" id="galim">
   </div>
   <div class="column">
-    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" id="galim">
+    <img src="./img/altar2.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" id="galim">
   </div>
   <div class="column">
-    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" id="galim">
+    <img src="./img/apoyo.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" id="galim">
   </div>
   <div class="column">
-    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor" id="galim">
+    <img src="./img/aprendiendo.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor" id="galim">
   </div>
   <div class="column">
-    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor" id="galim">
+    <img src="./img/cefib2.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor" id="galim">
   </div>
   <div class="column">
-    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" id="galim">
+    <img src="./img/concursos.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" id="galim">
   </div>
   <div class="column">
-    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
+    <img src="./img/cultura.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
   </div>
+  <div class="column">
+    <img src="./img/aprendiendo.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/cefib2.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/concursos.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/cultura.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/aprendiendo.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/cefib2.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/concursos.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/cultura.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
+  </div>
+  
 </div>
 
 <div id="myModal" class="modal">
@@ -315,46 +340,46 @@
 
     <div class="mySlides">
       <div class="numbertext">1 / 10</div>
-      <img src="./img/mario1.jpg" style="width:100%">
+      <img src="./img/abuela.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">2 / 10</div>
-      <img src="./img/mario1.jpg" style="width:100%">
+      <img src="./img/abuelo.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">3 / 10</div>
-      <img src="./img/mario1.jpg" style="width:100%">
+      <img src="./img/actividad.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
       <div class="numbertext">4 / 10</div>
-      <img src="./img/mario1.jpg" style="width:100%">
+      <img src="./img/actividad1.jpg" style="width:100%">
     </div>
     <div class="mySlides">
       <div class="numbertext">5 / 10</div>
-      <img src="./img/mario1.jpg" style="width:100%">
+      <img src="./img/altar.jpg" style="width:100%">
     </div>
     <div class="mySlides">
       <div class="numbertext">6 / 10</div>
-      <img src="./img/mario1.jpg" style="width:100%">
+      <img src="./img/apoyo.jpg" style="width:100%">
     </div>
     <div class="mySlides">
       <div class="numbertext">7 / 10</div>
-      <img src="./img/mario1.jpg" style="width:100%">
+      <img src="./img/aprendiendo.jpg" style="width:100%">
     </div>
     <div class="mySlides">
       <div class="numbertext">8 / 10</div>
-      <img src="./img/mario1.jpg" style="width:100%">
+      <img src="./img/cefib2.jpg" style="width:100%">
     </div>
     <div class="mySlides">
       <div class="numbertext">9 / 10</div>
-      <img src="./img/mario1.jpg" style="width:100%">
+      <img src="./img/concursos.jpg" style="width:100%">
     </div>
     <div class="mySlides">
       <div class="numbertext">10 / 10</div>
-      <img src="./img/mario1.jpg" style="width:100%">
+      <img src="./img/cultura.jpg" style="width:100%">
     </div>
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
