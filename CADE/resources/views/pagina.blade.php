@@ -270,10 +270,109 @@
 
 
 
-<section style="background-color:white;height:850px;margin-top:0%;width: 100%;background-image: url(./img/elderly_friend.jpg);background-size:cover;" id="cuarto">
-<h3>hola</h3>
+<section style="background-color:white;height:850px;margin-top:0%;width: 100%;" id="cuarto">
+<h3>Galería</h3>
+
+<div class="row">
+  <div class="column">
+    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor " id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor " id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/mario1.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
+  </div>
+</div>
+
+<div id="myModal" class="modal">
+  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <div class="modal-content">
+
+    <div class="mySlides">
+      <div class="numbertext">1 / 10</div>
+      <img src="./img/mario1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">2 / 10</div>
+      <img src="./img/mario1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">3 / 10</div>
+      <img src="./img/mario1.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">4 / 10</div>
+      <img src="./img/mario1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">5 / 10</div>
+      <img src="./img/mario1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">6 / 10</div>
+      <img src="./img/mario1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">7 / 10</div>
+      <img src="./img/mario1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">8 / 10</div>
+      <img src="./img/mario1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">9 / 10</div>
+      <img src="./img/mario1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">10 / 10</div>
+      <img src="./img/mario1.jpg" style="width:100%">
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+
+
+  </div>
+</div>
+
 
 </section>
+
+
 
 <section style="background-color:white;height:750px;margin-top:0%;width: 100%;background-image:url(./img/libreta1.jpg);background-size:cover;padding:0;"id="quinto">
 
