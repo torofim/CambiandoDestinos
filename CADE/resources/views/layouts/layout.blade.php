@@ -11,7 +11,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Hind" rel="stylesheet">
 
 </head>
-<body>
+<body >
 @include('layouts.nav')
 
 		</ul>

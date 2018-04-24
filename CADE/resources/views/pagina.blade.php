@@ -73,7 +73,7 @@
 <div class="carousel-inner" >
 
 <div class="item active">
-<img src="./img/apoyo.jpg"  class="img-responsive" alt="gestion" style="width:100%;max-height:42em;">
+<img src="./img/apoyo.jpg"  class="img-responsive2" alt="gestion" >
 <div class="carousel-caption" style="top:0%;"><h3 style="font-size:2.3em;margin-left:44%;margin-top:0.2%;">GESTIONES </h3>
 
   <p class="col-md-12">185 pacientes en consulta con especialistas,
@@ -87,7 +87,7 @@
 </div>
 
 <div class="item">
-<img src="./img/comidacaliente1.jpg" class="img-responsive" alt="comida" style="width:100%;max-height:42em;">
+<img src="./img/comidacaliente1.jpg" class="img-responsive2" alt="comida" >
 <div class="carousel-caption" style="top:0%;">
   <h3 style="font-size:2.3em;margin-left:41%;margin-top:0.2%;">COMIDA CALIENTE</h3>
   <div>
@@ -100,7 +100,7 @@
 
 </div>
 <div class="item">
-<img src="./img/rehabilitation.jpg" alt="reha" style="width:100%;max-height:42em;">
+<img src="./img/rehabilitation.jpg" alt="reha" >
 <div class="carousel-caption" >
   <h3 style="font-size:2.3em;margin-left:42%;margin-top:0.2%;">REHABILITACION</h3>
   <p  style="margin-left:7%;">8 terapias de rehabilitación física al día
@@ -110,7 +110,7 @@
 </div>
 </div>
 <div class="item">
-<img src="./img/visita1.jpg" alt="visita" style="width:100%;max-height:42em;">
+<img src="./img/visita1.jpg" alt="visita" >
 <div class="carousel-caption" >
   <h3 style="font-size:2.3em;margin-left:41%;margin-top:0.2%;">VISITA DOMICILIARIA</h3>
   <p style="margin-left:37%;">De octubre del 2011 a finales del 2016
@@ -119,7 +119,7 @@
 </div>
 
 <div class="item">
-<img src="./img/guitarra.jpg" alt="iccd" style="width:100%;max-height:42em;">
+<img src="./img/guitarra.jpg" alt="iccd" >
 <div class="carousel-caption" >
   <h3 style="font-size:2.3em;margin-left:27%;margin-top:0.2%;">INSTITUTO CULTURAL CAMBIANDO DESTINOS </h3>
   <p  style="margin-left:2%;">Otorga  gratuitamente talleres de pintura artística y música
@@ -160,7 +160,7 @@
 
 <div class="col-md-12" style="margin-top:3%;padding:0;">
   <div class="col-md-4 divima">
-    <img class="img-responsive"  src="./img/fclogo1.png" >
+    <img class="img-responsive2"  src="./img/fclogo1.png" >
   </div>
 
   <div class="col-md-5 jumbotron" >
@@ -240,7 +240,7 @@
 
   <div  class="col-md-5 divhis" >
   <div class="col-md-8 divhim"  >
-    <img class="img-responsive  " src="./img/mario1.jpg" alt="responsive" >
+    <img class="img-responsive2  " src="./img/mario1.jpg" alt="responsive" >
   </div>
   <div class="col-md-4 divhtex" ><p style="margin-top:20%;color:black;">Mario</p> <br>
     <p style="color:black;">Mario es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
@@ -252,7 +252,7 @@
 
 <div class="col-md-5 divhis" style="margin-left:6%;">
 <div class="col-md-8 divhim" >
-  <img class="img-responsive" src="./img/chilito2.jpg" alt="responsive" >
+  <img class="img-responsive2" src="./img/chilito2.jpg" alt="responsive" >
 </div>
 <div class="col-md-4 divhtex" ><p style="margin-top:20%;color:black;">Chilito</p> <br><p style="color:black;">
   Chilito es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
@@ -270,8 +270,11 @@
 
 
 
-<section style="background-color:white;height:850px;margin-top:0%;width: 100%;" id="cuarto">
-<h3>Galería</h3>
+<section style="background-color:#111e70;height:950px;margin-top:0%;width: 100%;" id="cuarto">
+   <div class="col-md-12 titula">
+     <h3 >Galería</h3>
+   </div>
+
 
 <div class="row">
   <div class="column">
@@ -331,7 +334,59 @@
   <div class="column">
     <img src="./img/cultura.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
   </div>
-  
+  <div class="column">
+    <img src="./img/concursos.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/cultura.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/concursos.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/cultura.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/concursos.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/cultura.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/concursos.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/cultura.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/cultura.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/concursos.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/cultura.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/cultura.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/concursos.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/cultura.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/cultura.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/concursos.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor" id="galim">
+  </div>
+  <div class="column">
+    <img src="./img/cultura.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor" id="galim">
+  </div>
+
+
 </div>
 
 <div id="myModal" class="modal">
@@ -339,48 +394,156 @@
   <div class="modal-content">
 
     <div class="mySlides">
-      <div class="numbertext">1 / 10</div>
+      <div class="numbertext">1 / 36</div>
       <img src="./img/abuela.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">2 / 10</div>
+      <div class="numbertext">2 / 36</div>
       <img src="./img/abuelo.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">3 / 10</div>
+      <div class="numbertext">3 / 36</div>
       <img src="./img/actividad.jpg" style="width:100%">
     </div>
 
     <div class="mySlides">
-      <div class="numbertext">4 / 10</div>
+      <div class="numbertext">4 / 36</div>
       <img src="./img/actividad1.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-      <div class="numbertext">5 / 10</div>
+      <div class="numbertext">5 / 36</div>
       <img src="./img/altar.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-      <div class="numbertext">6 / 10</div>
+      <div class="numbertext">6 / 36</div>
       <img src="./img/apoyo.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-      <div class="numbertext">7 / 10</div>
+      <div class="numbertext">7 / 36</div>
       <img src="./img/aprendiendo.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-      <div class="numbertext">8 / 10</div>
+      <div class="numbertext">8 / 36</div>
       <img src="./img/cefib2.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-      <div class="numbertext">9 / 10</div>
+      <div class="numbertext">9 / 36</div>
       <img src="./img/concursos.jpg" style="width:100%">
     </div>
     <div class="mySlides">
-      <div class="numbertext">10 / 10</div>
+      <div class="numbertext">10 / 36</div>
       <img src="./img/cultura.jpg" style="width:100%">
     </div>
+    <div class="mySlides">
+      <div class="numbertext">11 / 36</div>
+      <img src="./img/abuela.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">12 / 36</div>
+      <img src="./img/abuelo.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">13 / 36</div>
+      <img src="./img/actividad.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">14 / 36</div>
+      <img src="./img/actividad1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">15 / 36</div>
+      <img src="./img/altar.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">16 / 36</div>
+      <img src="./img/apoyo.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">17 / 36</div>
+      <img src="./img/aprendiendo.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">18 / 36</div>
+      <img src="./img/cefib2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">19 / 36</div>
+      <img src="./img/concursos.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">20 / 36</div>
+      <img src="./img/cultura.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">21 / 36</div>
+      <img src="./img/abuela.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">22 / 36</div>
+      <img src="./img/abuelo.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">23 / 36</div>
+      <img src="./img/actividad.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">24 / 36</div>
+      <img src="./img/actividad1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">25 / 36</div>
+      <img src="./img/altar.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">26 / 36</div>
+      <img src="./img/apoyo.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">27 / 36</div>
+      <img src="./img/aprendiendo.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">28 / 36</div>
+      <img src="./img/cefib2.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">29 / 36</div>
+      <img src="./img/concursos.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">30 / 36</div>
+      <img src="./img/cultura.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">31 / 36</div>
+      <img src="./img/abuela.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">32 / 36</div>
+      <img src="./img/abuelo.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">33 / 36</div>
+      <img src="./img/actividad.jpg" style="width:100%">
+    </div>
+
+    <div class="mySlides">
+      <div class="numbertext">34 / 36</div>
+      <img src="./img/actividad1.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">35 / 36</div>
+      <img src="./img/altar.jpg" style="width:100%">
+    </div>
+    <div class="mySlides">
+      <div class="numbertext">36 / 36</div>
+      <img src="./img/apoyo.jpg" style="width:100%">
+    </div>
+
 
     <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -402,11 +565,19 @@
 <section style="background-color:white;height:750px;margin-top:0%;width: 100%;background-image:url(./img/libreta1.jpg);background-size:cover;padding:0;"id="quinto">
 
 
+<div class="col-md-6 jumbotron jumbotronsito" >
+<h3 style="margin-left:35%;">Contacto</h3>
+<div class="col-md-6 divcon">
+  <p>Direccion</p>
+  <p>Telefono</p>
+  <p>Correo Electronico</p>
+
+</div>
 
 
 
-
-<a href="/home">Iniciar Sesion</a>
+<a class="col-md-12"href="/home">Iniciar Sesion</a>
+</div>
 </section>
 
 
