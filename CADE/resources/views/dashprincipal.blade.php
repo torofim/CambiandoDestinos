@@ -16,7 +16,7 @@
       </div>
     </div>
     <div class="panel2 panel-default col-xs-12 ">
-      <div class="panel-body2" style="border-bottom:groove;">
+      <div class="panel-body2" style="border-bottom:groove; background-color:transparent;">
         Dashboard
       </div>
     </div>
@@ -49,7 +49,11 @@
             </div>
             <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:transparent; height:15vh;">
               <p style="border-bottom:groove; border-bottom-width:.5px;">Beneficiarios de taller</p>
-              <p style="font-size:3.5rem;">145</p>
+              <p style="font-size:3.5rem;">
+                @forelse ($taller as $t)
+                {{ $t->btaller }}
+                @empty
+                @endforelse</p>
             </div>
 		      </div>
 	     </div>

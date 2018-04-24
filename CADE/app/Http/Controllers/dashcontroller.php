@@ -27,13 +27,13 @@ class dashcontroller extends Controller
   {
      $benef = DB::select('select COUNT(*) AS total from datos_personales');
      $usuarios = DB::select('select COUNT(*) AS usu from users');
-
+     $taller=DB::select('select COUNT(*) AS btaller from taller');
 
     #dd($benef);
 
   # NO FUNCIONA CON LOS 2 JUNTOS NECESITO PREGUNTAR AL ING COMO SE ARREGLA
        return view('dashprincipal', ['benef' => $benef])
-       ->with('usuarios',$usuarios);
+       ->with('usuarios',$usuarios)->with('taller',$taller);
        #return view('LEFTMENU',['usuarios' => $usuarios]);
        #->width('nombre','EQUIPOS DE FUTBOL');
        #si se hace esto y el js esta en el blade solo se imprime como php {{$nombre}}

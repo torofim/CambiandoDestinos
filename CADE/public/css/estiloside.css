@@ -108,9 +108,8 @@ nav.sidebar{
   float: left;
   z-index: 8000;
   margin-bottom: 0px;
-  background-color:#b3d3b3;
+  background-color:white;
 }
-
 /*give sidebar 100% width;*/
 nav.sidebar li {
   width: 100%;
@@ -136,7 +135,8 @@ nav.sidebar:hover{
 .main{
   width: calc(100% - 200px); /*keeps 100% minus nav size*/
   margin-left: 200px;
-  background-color:white;
+
+  background-image:url("/img/fondochido.jpg");
 }
 
 /*Show all nav*/
