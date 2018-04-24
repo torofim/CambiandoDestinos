@@ -172,23 +172,36 @@ float: left;
 
 /*************** -------------  footer -------------    ********************************* */
 .jumbotronsito{
-  margin-left:10%;
+  margin-left:35%;
   border-radius:25px;
-  width: 80%;
-  margin-top: 6%;
-  height: 80%;
-  opacity:0.4;
+  width: 30%;
+  margin-top: 4%;
+  height: 15%;
+  opacity:0.5;
   padding: 0;
-}
-.divcon{
-  margin-top: 5%;
-  margin-left: 45%;
+  background-color: white;
 
+}
+.jumbotronsito h3{
+margin-left: 18%;
+}
+
+.divcon{
+  margin-top: 22%;
+  margin-left:5%;
+  z-index: 3;
+  opacity: .8;
+  border-radius: 25px;
   box-shadow: 10px 10px 5px #65686d;
+  width: 90%;
+  background-color: white;
+  height: 200px;
+
 }
 .divcon p{
   color:black;
-  
+  font-size: 25px;
+
 }
 
 
