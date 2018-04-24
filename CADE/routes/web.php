@@ -40,9 +40,8 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::post('/usuarios/buscar','usuarioscontroller@buscar');
 
 
-
   // Estos son los Routes de los DASH
-  Route::get('/dash','dashcontroller@index')->name('LEFTMENU');
+  Route::get('/dash','dashcontroller@index')->name('dashprincipal');
   Route::get('/benef','dashcontroller@benef')->name('benef');
   Route::get('/registrados','regiscontroller@index')->name('registradosf');
   Route::get('/graficos','regiscontroller@graficos')->name('graficos');
@@ -53,8 +52,8 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
 
   Route::resource('usuarios','usuarioscontroller');
   Route::resource('archivos','archivoscontroller');
-  Route::resource('centrosalud','Centro_Saludcontroller');
-  Route::resource('datospersonales','datospersonalescontroller');
+  Route::resource('centrosalud','Centro_Saludcontroller'); //Este tambien ya esta
+  Route::resource('datospersonales','datospersonalescontroller'); //ESTE YA ESTA
 
 });
 

@@ -24,28 +24,28 @@
                     </div>
                   @endif
                   {{Form::open(array('url'=>'/admin/archivos','files'=>true))}}
-                    <div class="input=-group col-md-12">
+                    <div class="input=-group col-md-6">
                       <label for="nombre">Foto infantil</label><br>
                         {{Form::file('Foto_infantil',array('class'=>'form-control','placeholder'=>'Imagen') )}}
                     </div>
-                    <div class="input=-group col-md-12">
+                    <div class="input=-group col-md-6">
                       <label for="nombre">Cuerpo completo</label><br>
                       {{Form::file('Foto_cuerpo',array('class'=>'form-control','placeholder'=>'Imagen') )}}
                     </div>
-                    <div class="input=-group col-md-12">
+                    <div class="input=-group col-md-6">
                       <label for="nombre">Certificado</label><br>
                       {{Form::file('Certificado_discapacidad',array('class'=>'form-control','placeholder'=>'Imagen') )}}
                     </div>
-                    <div class="input=-group col-md-12">
+                    <div class="input=-group col-md-6">
                       <label for="nombre"> Copia Curp</label><br>
                         {{Form::file('Copia_curp',array('class'=>'form-control','placeholder'=>'Imagen') )}}
                     </div>
 
-                    <div class="input=-group col-md-12">
+                    <div class="input=-group col-md-6">
                       <label for="nombre">Curp</label><br>
                       {{Form::file('Curp',array('class'=>'form-control','placeholder'=>'Imagen') )}}
                     </div>
-                    <div class="input-group col-md-12">
+                    <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
                       {{Form::submit('Subir',array('class'=>'btn btn-primary'))}}
                     </div>
                   {{Form::close()}}
