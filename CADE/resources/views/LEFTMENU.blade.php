@@ -2,9 +2,8 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" >
     <link href="{{ asset('css/estiloside.css') }}" rel="stylesheet" type="text/css" >
-
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" >
     <title></title>
   </head>
   <body>
@@ -37,10 +36,7 @@
             <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:transparent; height:15vh;">
               <p style="border-bottom:groove; border-bottom-width:.5px;">Usuarios Activos</p>
               <p style="font-size:3.5rem;">
-                @forelse ($usuarios as $u)
-                {{ $u->usu }}
-                @empty
-                @endforelse
+              4
               </p>
             </div>
             <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:transparent; height:15vh;" >
