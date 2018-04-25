@@ -231,7 +231,10 @@
 
 
 
-<section style="background-color:#111e70;height:950px;margin-top:0%;width: 100%;" id="cuarto">
+<section style="background-color:#dbd2a8;height:950px;margin-top:0%;width: 100%;background-image:url(./img/loga1.png);background-size:contain;background-repeat:no-repeat;background-position:center;" id="cuarto">
+
+
+</div>
    <div class="col-md-12 titula">
      <h3 >Galería</h3>
    </div>
