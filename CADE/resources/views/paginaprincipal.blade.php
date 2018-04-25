@@ -56,89 +56,7 @@
 
 
 
-		<div id="myCarousel" class="carousel slide" data-ride="carousel">
-<!-- Indicators -->
-<ol class="carousel-indicators">
-<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-<li data-target="#myCarousel" data-slide-to="1"></li>
-<li data-target="#myCarousel" data-slide-to="2"></li>
-<li data-target="#myCarousel" data-slide-to="3"></li>
-<li data-target="#myCarousel" data-slide-to="4"></li>
 
-</ol>
-
-<!-- Wrapper for slides -->
-<div class="carousel-inner" >
-
-<div class="item active">
-	<img src="./img/apoyo.jpg" alt="Los Angeles" style="width:100%;max-height:45em;">
-	<div class="carousel-caption" style="top:20%;">
-		<h3 style="font-size:3em;">GESTIONES </h3>
-		<p>185 pacientes en consulta con especialistas,<br>
-				21 estudios de Tomografía,<br>
-				46 estudios de Laboratorio,<br>
-				7 Cirugías, (Labio leporino, discapacidad infantil)<br>
-				104 entrega de medicamentos,<br>
-				28 préstamos  de aparatos de apoyo funcional (silla de rueda, muletas, bastón, andador, silla para baño, camas tipo hospital, colchones entre otros.)
-				</p>
-	</div>
-</div>
-
-<div class="item">
-	<img src="./img/comida.jpg" alt="Chicago" style="width:100%;max-height:45em;">
-	<div class="carousel-caption" style="top:30%;">
-		<h3 style="font-size:3em;">COMIDA CALIENTE</h3>
-		<p>De octubre del 2011 a finales del 2016
-				se han otorgado 3,032 platillos</p>
-	</div>
-</div>
-<div class="item">
-	<img src="./img/rehabilitation.jpg" alt="Chicago" style="width:100%;max-height:45em;">
-	<div class="carousel-caption" style="top:25%;">
-		<h3 style="font-size:3em;">REHABILITACION</h3>
-		<p>8 terapias de rehabilitación física al día <br>
-			3 años y 2 semanas un total de 2,564 terapias físicas rehabilitatorias <br>
-			70% fueron becas gratuitas <br>
-			Este programa implico un gasto aproximado de $ 384,600.00 pesos</p>
-	</div>
-</div>
-<div class="item">
-	<img src="./img/visita1.jpg" alt="Chicago" style="width:100%;max-height:45em;">
-	<div class="carousel-caption" style="top:40%;">
-		<h3 style="font-size:3em;">VISITA DOMICILIARIA</h3>
-		<p>De octubre del 2011 a finales del 2016
-				se han logrado 9,112 visitas</p>
-	</div>
-</div>
-
-<div class="item">
-	<img src="./img/guitarra.jpg" alt="New York" style="width:100%;max-height:45em;">
-	<div class="carousel-caption"style="top:20%;" >
-		<h3 style="font-size:3em;">INSTITUTO CULTURAL CAMBIANDO DESTINOS </h3>
-		<p>Otorga  gratuitamente talleres de pintura artística y música <br>
-			 Nuestra institución facilita todos los materiales para pintura artística
-			 y los instrumentos para el taller <br>
-				Estos son impartidos en las instalaciones de nuestra institución <br>
-				De octubre del 2011 al finales del  2015 se impartieron 1248 talleres de música
-				y 832 talleres de pintura beneficiando a un aproximado de 115 alumnos</p>
-	</div>
-</div>
-
-</div>
-
-<!-- Left and right controls -->
-<a class="left carousel-control" href="#myCarousel" data-slide="prev">
-<span class="glyphicon glyphicon-chevron-left"></span>
-<span class="sr-only">Previous</span>
-</a>
-<a class="right carousel-control" href="#myCarousel" data-slide="next" >
-<span class="glyphicon glyphicon-chevron-right" ></span>
-<span class="sr-only" >Next</span>
-</a>
-</div>
-
-
-<div class="content-wrapper">
     <section class="primary" >
         <div class="container1">
             <div class="row" id="sobre">
@@ -272,107 +190,15 @@
 					<div class="col-lg-12 hidden-xs text-center" id="galeria" style="margin-top:5%;" >
 							<h2>Galería</h2>
 						</div>
-
-									<div class="carousel<a href="https://www.jqueryscript.net/gallery/">Gallery</a>-grid hidden-xs">
-
-		<div class="carouselGallery-grid hidden-xs">
-        <div class="row" >
-            <div class="carouselGallery-col-40" >
-                <div class="carouselGallery-col-1 carouselGallery-carousel" data-index="0" data-username="Fundación Cambiando Destinos" data-imagetext="
-
-                " data-location="" data-likes="3144" data-imagepath="./img/fclogo1.png" data-posturl="" style="background-image:url(./img/fclogo1.png);">
-                <div class="carouselGallery-item">
-
-                </div>
-            </div>
-            <div class="carouselGallery-col-1 carouselGallery-carousel" data-index="1" data-username="De paseo en la feria" data-imagetext="
-          " data-location="" data-likes="" data-imagepath="./img/paseo.jpg" data-posturl="" style="background-image:url(./img/paseo.jpg);">
-            <div class="carouselGallery-item">
-
-            </div>
-        </div>
-        <div class="carouselGallery-col-1 carouselGallery-carousel" data-index="2" data-username="De paseo en la feria" data-imagetext=""
-         data-location="" data-likes="" data-imagepath="./img/paseo1.jpg" data-posturl="" style="background-image:url(./img/paseo1.jpg);">
-        <div class="carouselGallery-item">
-
-        </div>
-    </div>
-    <div class="carouselGallery-col-1 carouselGallery-carousel" data-index="3" data-username="Día del Abuelo" data-imagetext="
-    " data-location="" data-likes="" data-imagepath="./img/abuelo.jpg" data-posturl="" style="background-image:url(./img/abuelo.jpg);">
-    <div class="carouselGallery-item">
-
-    </div>
-</div>
-<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="4" data-username="Día del Abuelo" data-imagetext="
-" data-location="" data-likes="" data-imagepath="./img/abuela.jpg" data-posturl="" style="background-image:url(./img/abuela.jpg);">
-<div class="carouselGallery-item">
-
-</div>
-</div>
-<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="5" data-username="Día del Abuelo" data-imagetext="
-" data-location="" data-likes="" data-imagepath="./img/abuelo1.jpg" data-posturl="" style="background-image:url(./img/abuelo1.jpg);">
-<div class="carouselGallery-item">
-
-</div>
-</div>
-<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="6" data-username="Día de las Madres" data-imagetext="
-" data-location="" data-likes="" data-imagepath="./img/diamadre.jpg" data-posturl="" style="background-image:url(./img/diamadre.jpg);">
-<div class="carouselGallery-item">
-
-</div>
-</div>
-<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="7" data-username="Preparando el altar" data-imagetext="
-" data-location="" data-likes="" data-imagepath="./img/altar.jpg" data-posturl="" style="background-image:url(./img/altar.jpg);">
-<div class="carouselGallery-item">
-
-</div>
-</div>
-<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="8" data-username="Día de Muertos" data-imagetext="
-" data-location="" data-likes="" data-imagepath="./img/altar2.jpg" data-posturl="" style="background-image:url(./img/altar2.jpg);">
-<div class="carouselGallery-item">
-
-</div>
-</div>
-</div>
-<div class="carouselGallery-col-60" >
-<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="9" data-username="De Revolución" data-imagetext="
-" data-location="" data-likes="" data-imagepath="./img/revo.jpg" data-posturl="" style="background-image:url(./img/revo.jpg);">
-<div class="carouselGallery-item">
-
-</div>
-</div>
-<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="10" data-username="Folleto Informativo" data-imagetext="
-" data-location="" data-likes="" data-imagepath="./img/folleto.jpg" data-posturl="" style="background-image:url(./img/folleto.jpg);">
-<div class="carouselGallery-item">
-
-</div>
-</div>
-<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="11" data-username="Revisando a Juanito" data-imagetext="
-" data-location="" data-likes="" data-imagepath="./img/revision.jpg" data-posturl="" style="background-image:url(./img/revision.jpg);">
-<div class="carouselGallery-item">
-
-</div>
-</div>
-<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="11" data-username="Revisando a Juanito" data-imagetext="
-" data-location="" data-likes="" data-imagepath="./img/visita2.jpg" data-posturl="" style="background-image:url(./img/visita2.jpg);">
-<div class="carouselGallery-item">
-
-</div>
-</div>
-<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="11" data-username="Revisando a Juanito" data-imagetext="
-" data-location="" data-likes="" data-imagepath="./img/domi2.jpg" data-posturl="" style="background-image:url(./img/domi2.jpg);">
-<div class="carouselGallery-item">
-
-</div>
-</div>
-<div class="carouselGallery-col-1 carouselGallery-carousel" data-index="11" data-username="Revisando a Juanito" data-imagetext="
-" data-location="" data-likes="" data-imagepath="./img/donaciones.jpg" data-posturl="" style="background-image:url(./img/donaciones.jpg);">
-<div class="carouselGallery-item">
-
-</div>
-</div>
-</div>
-
+						{{Form::open(array('url'=>'/galeria','files'=>true))}}
+						<div class="column">
+							<img src="./img/abuela.jpg" style="width:100%" onclick="">
+							<div class="input=-group col-md-12">
+								<label for="nombre"></label><br>
+								{{Form::file('Imagen',array('class'=>'form-control','placeholder'=>'Imagen') )}}
+							</div>"
+						</div>
+						{{Form::close()}}
 
 
 

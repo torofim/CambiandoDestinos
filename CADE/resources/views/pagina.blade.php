@@ -246,22 +246,22 @@
 <section style="background-color:white;height:750px;margin-top:0%;width: 100%;background-image:url(./img/libreta1.jpg);background-size:cover;padding:0;"id="quinto">
 
 
-<div class="col-md-6 jumbotron jumbotronsito" >
-<h3 >Contacto</h3>
-</div>
-<div class="col-md-6 divcon">
-  <div class="col-md-3" style="margin-left:50%; padding:0;margin-top:2%;background-color:blue;width:20%;">
+
+<h3 style="margin-left:40%;margin-top:5%;">Contacto</h3>
+<div class="col-md-4 divcon">
+  <div class="col-md-3" style="margin-left:9%; padding:0;margin-top:3%;width:30%;">
     <p><img src="./img/logonavi.png" alt="">Direccion:</p>
     <p><img src="./img/logonavi.png" alt="">Telefono:</p>
     <p><img src="./img/logonavi.png" alt="">Correo Electronico:</p>
   </div>
-  <div class="col-md-3" style="padding:0;margin-top:2%;background-color:red;">
-    <p>calle soriana </p>
-    <p>calle soriana </p>
-    <p>calle soriana </p>
+  <div class="col-md-3" style="padding:0;margin-top:3%;width:55%; ">
+    <p>Francisco I. Madero #503 Local #3 <img src="./img/logonavi.png" alt=""></p>
+    <p>+52-636-121-2491 <img src="./img/logonavi.png" alt=""> </p>
+    <p>fundacioncambiandodestinos@hotmail.com <img src="./img/logonavi.png" alt=""></p>
+    <a class="col-md-12"href="/home">Iniciar Sesion</a>
   </div>
 
-<a class="col-md-12"href="/home">Iniciar Sesion</a>
+
 </div>
 
 
