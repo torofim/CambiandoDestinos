@@ -16,7 +16,7 @@
     </div>
     <div class="panel2 panel-default col-xs-12 ">
       <div class="panel-body2" style="border-bottom:groove; background-color:transparent;">
-        Dashboard
+        Fundacion Cambiando Destinos
       </div>
     </div>
     <br>
