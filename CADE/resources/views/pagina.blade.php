@@ -152,31 +152,31 @@
     <li>
       <div> <a href="#">
         <h2>Visita Domiciliaria</h2>
-        <p>Conoce Mas</p>
+        <p id="conoce">Conoce Mas</p>
         </a> </div>
     </li>
     <li>
       <div> <a href="#">
         <h2>Aprendiendo a Vivir en la 3ra Edad</h2>
-        <p>Conoce Mas</p>
+        <p id="conoce">Conoce Mas</p>
         </a> </div>
     </li>
     <li>
       <div> <a href="#">
         <h2>Taller de Musica</h2>
-        <p>Conoce Mas</p>
+        <p id="conoce">Conoce Mas</p>
         </a> </div>
     </li>
     <li>
       <div> <a href="#">
         <h2>Comida Caliente</h2>
-        <p>Conoce Mas</p>
+        <p id="conoce">Conoce Mas</p>
         </a> </div>
     </li>
     <li>
       <div> <a href="#">
         <h2>Gestiones Hoy Por Ti</h2>
-        <p>Conoce Mas</p>
+        <p id="conoce">Conoce Mas</p>
         </a> </div>
     </li>
 

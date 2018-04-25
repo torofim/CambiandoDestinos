@@ -33,7 +33,7 @@
         @endif
         <!-- ESTA ES LA TABLA ORIGINAL PARA POSTERIORES USOS-->
         <div class="row">
-          <h2 style="margin-left:1.5%;">usuarios</h2>
+          <h2 style="margin-left:1.5%;">beneficiarios</h2>
           <table class="table table-condensed" style="margin-left:1.5%;">
             <thead>
               <tr>
@@ -47,14 +47,14 @@
             <tbody id="tbody">
               <tr>
                 @forelse($perros as $usu)
-                <td>{{$usu->id}}</td>
-                <td>{{$usu->nombre}}</td>
-                <td>{{$usu-ap_p}}</td>
+                <td>{{$usu->Id}}</td>
+                <td>{{$usu->Nombre}}</td>
+                <td>{{$usu->Apellido_p}}</td>
                 <td><button type="button" class="btn btn-info btn-lg btnEdit"
                   data-toggle="modal" data-target="#myModal"
-                  data-Nombre="{{$usu->nombre}}"
-                  data-Apellido="{{$usu->ap_p}}"
-                  data-id="{{$usu->id}}">Editar </button></td>
+                  data-Nombre="{{$usu->Nombre}}"
+                  data-Apellido="{{$usu->Apellido_p}}"
+                  data-id="{{$usu->Id}}">Editar </button></td>
                 <td>
                 </td>
                 </tr>

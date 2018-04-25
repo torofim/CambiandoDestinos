@@ -190,51 +190,13 @@
 					<div class="col-lg-12 hidden-xs text-center" id="galeria" style="margin-top:5%;" >
 							<h2>Galería</h2>
 						</div>
-						{{Form::open(array('url'=>'/galeria','files'=>true))}}
-						<div class="column">
-							<img src="./img/abuela.jpg" style="width:100%" onclick="">
-							<div class="input=-group col-md-12">
-								<label for="nombre"></label><br>
-								{{Form::file('Imagen',array('class'=>'form-control','placeholder'=>'Imagen') )}}
-							</div>"
-						</div>
-						{{Form::close()}}
+					
 
 
 
     </section>
 
-		<section   style="margin-top:6%;" >
 
-
-			<div class="col-md-12 todo"id="contacto" style="margin-top:7%;height:80vh;">
-				<div class="col-md-4 izq" style="margin-left:30%;height:60vh;width:20%;">
-					<img class="img-responsive" src="./img/edificio.jpg" alt="" style="height:100%;">
-				</div>
-				<div class="col-md-4 der" style="height:60vh;width:30%;">
-					<article  style="width:100%;margin-top:7%;">
-						<h4 style="color:black;font-size:2em;margin-top:1%;">Contácto</h4>
-
-						<p style="font-size:2em;color:black;">Fundacion Cambiando Destinos</p>
-
-						<p style="">Dirección: Francisco I. Madero #503 Local #3</p>
-
-						<p style="">Telefono: +52-636-121-2491 </p>
-
-						<p style="">Correo Electronico: fundacioncambiandodestinos@hotmail.com</p>
-
-					</article>
-
-
-				</div>
-
-			</div>
-
-
-
-
-		  </section>
-</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 <script src="js/main.js"></script>
