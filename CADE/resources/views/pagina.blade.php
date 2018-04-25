@@ -250,9 +250,17 @@
 <h3 >Contacto</h3>
 </div>
 <div class="col-md-6 divcon">
-  <p><img src="./img/logonavi.png" alt="">Direccion:</p>
-  <p><img src="./img/logonavi.png" alt="">Telefono:</p>
-  <p><img src="./img/logonavi.png" alt="">Correo Electronico:</p>
+  <div class="col-md-3" style="margin-left:50%; padding:0;margin-top:2%;background-color:blue;width:20%;">
+    <p><img src="./img/logonavi.png" alt="">Direccion:</p>
+    <p><img src="./img/logonavi.png" alt="">Telefono:</p>
+    <p><img src="./img/logonavi.png" alt="">Correo Electronico:</p>
+  </div>
+  <div class="col-md-3" style="padding:0;margin-top:2%;background-color:red;">
+    <p>calle soriana </p>
+    <p>calle soriana </p>
+    <p>calle soriana </p>
+  </div>
+
 <a class="col-md-12"href="/home">Iniciar Sesion</a>
 </div>
 

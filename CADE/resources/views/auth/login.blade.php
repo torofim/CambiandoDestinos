@@ -5,14 +5,14 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header" style="font-size:55px;margin-left:25%;margin-bottom:15%;">Iniciar Sesion</div>
+                <div class="card-header" style="font-size:55px;margin-left:25%;margin-bottom:10%;">Iniciar Sesión</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
 
                         <div class="form-group row">
-                            <label for="email" class="col-sm-4 col-form-label text-md-right"  style="font-size:25px;">Correo Electronico</label>
+                            <label for="email" class="col-sm-4 col-form-label text-md-right"  style="font-size:25px;">Correo Electrónico</label>
 
                             <div class="col-md-6">
                                 <input id="email" type="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" name="email" value="{{ old('email') }}" required autofocus>
@@ -51,8 +51,8 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    Inicar Sesion
+                                <button type="submit" class="btn btn-primary" style="background-color:green;">
+                                    Inicar Sesión
                                 </button>
 
                                 <a class="btn btn-link" href="{{ route('password.request') }}">

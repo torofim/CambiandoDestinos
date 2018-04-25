@@ -8,7 +8,7 @@
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>Inicio de Sesión</title>
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
@@ -17,7 +17,7 @@
     <div id="app">
         <nav class="navbar navbar-expand-md navbar-light navbar-laravel">
             <div class="container">
-              <h1 style="font-size:50px;margin-left:18%;"><a href="/" style="text-decoration:none;color:gray;">Fundacion Cambiando Destinos</a></h1>
+              <h1 style="font-size:50px;margin-left:18%;"><a href="/" style="text-decoration:none;color:gray;">Fundación Cambiando Destinos</a></h1>
 
 
 

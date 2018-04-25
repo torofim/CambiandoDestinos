@@ -54,7 +54,7 @@
 	  <!-- /.container-fluid -->
 	</nav>
 
-	
+
 
 		<div id="myCarousel" class="carousel slide" data-ride="carousel">
 <!-- Indicators -->
@@ -387,7 +387,7 @@
 				</div>
 				<div class="col-md-4 der" style="height:60vh;width:30%;">
 					<article  style="width:100%;margin-top:7%;">
-						<h4 style="color:black;font-size:2em;margin-top:1%;">Contacto</h4>
+						<h4 style="color:black;font-size:2em;margin-top:1%;">Contácto</h4>
 
 						<p style="font-size:2em;color:black;">Fundacion Cambiando Destinos</p>
 
