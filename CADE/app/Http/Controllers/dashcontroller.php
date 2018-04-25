@@ -30,6 +30,7 @@ class dashcontroller extends Controller
      $taller=DB::select('select COUNT(*) AS btaller from taller');
      $disc=DB::select('select Count(*) AS disca from discapacidad');
     #dd($benef);
+    zdvzsdvz
   # NO FUNCIONA CON LOS 2 JUNTOS NECESITO PREGUNTAR AL ING COMO SE ARREGLA
      return view('dashprincipal', ['benef' => $benef])
      ->with('usuarios',$usuarios)->with('taller',$taller)->with('disc',$disc);
