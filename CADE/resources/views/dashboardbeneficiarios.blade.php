@@ -13,7 +13,7 @@
         <div class="panel-body cold-md-2" id="sepa">
         </div>
     </div>
-    <div class="contenedor">
+    <div class="contenedor col-md-12" style="overflow-x:hidden; overflow-y:hidden;">
     <!-- Viene de Usuarios.blade-->
       <div class="card-body" >
         @if($errors->any())
@@ -34,7 +34,7 @@
         <!-- ESTA ES LA TABLA ORIGINAL PARA POSTERIORES USOS-->
         <div class="row">
           <h2 style="margin-left:1.5%;">beneficiarios</h2>
-          <table class="table table-condensed" style="margin-left:1.5%;">
+          <table class="table table-condensed col-md-12" style="margin-left:1.5%;">
             <thead>
               <tr>
                 <td>Id</td>

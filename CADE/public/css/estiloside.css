@@ -169,7 +169,7 @@ padding-left: 15px;
 .panel-body2{
   background-color:white;
   font-size:2.5rem;
-  color:gray;
+  color:black;
   margin-left:2%;
 }
 .panel-default2{
@@ -177,8 +177,6 @@ padding-left: 15px;
   float:left;
   margin-top:20px;
 }
-
-
 .container{
 float:left;
 }
@@ -206,8 +204,24 @@ float:left;
 .navbar-inverse .navbar-nav > li > a{
   color:black;
 }
+.navbar-inverse .navbar-nav > li > a:hover{
+  color:green;
+}
 .navbar-inverse .navbar-brand{
   color:black;
+}
+.navbar-inverse .navbar-brand:hover{
+  color:green;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover{
+  background-color:transparent;
+  color:green;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a{
+  color:black;
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focused{
+  color:green;
 }
 /*DE AQUI ES EL CSS DE LOS COUNTERSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
 .coder-counter {background:#2d344d; color:#fff;}
