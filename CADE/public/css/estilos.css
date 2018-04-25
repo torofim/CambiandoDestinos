@@ -182,20 +182,20 @@ margin-left: 18%;
 }
 
 .divcon{
-  margin-top: 22%;
-  margin-left:5%;
+  margin-top: 26%;
+  margin-left:22%;
   z-index: 3;
   opacity: .8;
   border-radius: 25px;
   box-shadow: 10px 10px 5px #65686d;
-  width: 90%;
+  width: 55%;
   background-color: white;
-  height: 200px;
+  height: 160px;
 
 }
 .divcon p{
   color:black;
-  font-size: 25px;
+  font-size: 20px;
 
 }
 
