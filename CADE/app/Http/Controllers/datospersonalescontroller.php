@@ -19,7 +19,7 @@ class datospersonalescontroller extends Controller
       //->take(10)
       ->get();
 
-      return view('/admin/benef')
+      return view('dashboardbeneficiarios')
       ->with('perros',$registros);
     }
     public function store(Request $req){
