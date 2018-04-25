@@ -29,7 +29,7 @@ nav.sidebar, .main{
 /* Add gap to nav and right windows.*/
 .main{
 padding: 0px 0px 0 0px;
-background-color:#D2D2D2;
+background-image:url("/img/fondochido.jpg");
 width:100vw;
 height:auto;
 }
@@ -173,10 +173,12 @@ padding-left: 15px;
   margin-left:2%;
 }
 .panel-default2{
-  height:150px;
+  height:auto;
   float:left;
   margin-top:20px;
 }
+
+
 .container{
 float:left;
 }
@@ -184,7 +186,7 @@ float:left;
   height:auto;
 }
 #sepa{
-  background-color:#dddddd;
+  background-color:transparent;
 }
 .contenedor{
   width:auto;
