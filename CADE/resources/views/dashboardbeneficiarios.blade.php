@@ -9,10 +9,10 @@
   <body>
   @include('layouts.nav')
   <div class="main">
-    <div class="panel panel-default">
+  <!--<div class="panel panel-default">
         <div class="panel-body cold-md-2" id="sepa">
         </div>
-    </div>
+    </div>-->
     <div class="contenedor col-md-12" style="overflow-x:hidden; overflow-y:hidden;">
     <!-- Viene de Usuarios.blade-->
       <div class="card-body" >

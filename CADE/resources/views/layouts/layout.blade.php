@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="{{ URL::asset('css/bootstrap.css') }}">
-
 		<link rel="stylesheet" href="{{URL::asset('css/estiloside.css')}}">
 	<link href="https://fonts.googleapis.com/css?family=Fjalla+One|Hind" rel="stylesheet">
 
@@ -17,11 +16,11 @@
 		</ul>
 	</div>
 	<div class="main">
-		<div class="panel panel-default">
+		<!--<div class="panel panel-default">
 				<div class="panel-body cold-md-2" id="sepa">
 
 			</div>
-		</div>
+		</div>-->
 
 	<div class="lefted" style="background-image:url()">
 		@yield('principal')

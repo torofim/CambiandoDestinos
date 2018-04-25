@@ -1,5 +1,4 @@
 @extends('layouts.layout')
-
 @section('principal')
 <div class="container">
     <div class="row justify-content-center">
@@ -13,7 +12,6 @@
                   @if($errors->any())
                     <div class="alert alert-warning alert-dismissable">
                       <ul>
-
                       @foreach($errors->all() as $error)
                         <li>{{$error}}</li>
                       @endforeach
