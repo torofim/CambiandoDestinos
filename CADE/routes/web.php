@@ -32,11 +32,19 @@ Route::get('/Login',function(){
     return view('login');
 });
 Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
-  Route::get('/',function(){return "yeah";});
+  //Route::get('/',function(){return "yeah";});
   Route::get('/usuarios','usuarioscontroller@index')->name('usuarios');
   Route::get('/archivos','archivoscontroller@index')->name('archivos');
+  Route::get('/booleano','Booleanoscontroller@index')->name('booleano');
   Route::get('/centrosalud','Centro_saludcontroller@index')->name('centrosalud');
   Route::get('/datospersonales','datospersonalescontroller@index')->name('datospersonales');
+  Route::get('/evaluacion','evaluacioncontroller@index')->name('evaluacion');
+  Route::get('/inventario_e','inventario_econtroller@index')->name('inventario_e');
+  Route::get('/inventario_m','inventario_mcontroller@index')->name('inventario_m');
+  Route::get('/comida','comidacaontroller@index')->name('comida');
+  Route::get('/taller','tallercontroller@index')->name('taller');
+  Route::get('/tutor','tutorcontroller@index')->name('tutor');
+  Route::get('/visitas','visitascontroller@index')->name('visitas');
   Route::post('/usuarios/buscar','usuarioscontroller@buscar');
 
 

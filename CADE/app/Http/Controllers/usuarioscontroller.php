@@ -30,7 +30,7 @@ class usuarioscontroller extends Controller
         'correo'=>'required|email',
         'p1'=>'required|max:255',
         'p2'=>'required|max:255',
-        'Imagen'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        'Imagen'=>'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         'Nivel'=>'required'
       ]);
       if($validator->fails()){
@@ -60,7 +60,7 @@ class usuarioscontroller extends Controller
         unlink(public_path('/img/usuarios/'.$usuario->imgperfil));
       }
       $usuario->delete();
-      return "YEA";
+
     }//function destroy
     //Editar
     public function edit(Request $req){

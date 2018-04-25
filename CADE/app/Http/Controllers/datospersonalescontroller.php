@@ -13,7 +13,14 @@ class datospersonalescontroller extends Controller
       $this->middleware('auth');
     }
     public function index(){
-      return view('datospersonales');
+      $registros=\DB::table('datos_personales')
+      //->where('Id','=','1');
+      ->orderby('Id','desc')
+      //->take(10)
+      ->get();
+
+      return view('/admin/benef')
+      ->with('perros',$registros);
     }
     public function store(Request $req){
 
@@ -37,7 +44,7 @@ class datospersonalescontroller extends Controller
       ]);
       if($validator->fails()){
         //quiere decir que no estan correctos
-        return redirect('/admin/datospersonales')
+        return redirect('/admin/benef')
           ->withInput()
           ->withErrors($validator);
       }else{
@@ -60,7 +67,7 @@ class datospersonalescontroller extends Controller
           'tel'=>$req->Tel
 
         ]);
-        return redirect()->to('/admin/datospersonales')
+        return redirect()->to('/admin/benef')
         ->with('mensaje','datos agregados');
       }
       dd($req->nombre);

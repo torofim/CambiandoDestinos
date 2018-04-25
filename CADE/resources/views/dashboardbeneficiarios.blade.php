@@ -14,181 +14,54 @@
         </div>
     </div>
     <div class="contenedor">
-      <table class="table">
-  				 <thead>
-  						 <tr>
-  						 <th>#</th>
-  						 <th>Nombre</th>
-  							 <th>Apellido</th>
-  							 <th>Username</th>
-  						 </tr>
-  				 </thead>
-  			 <tbody>
-  				 <tr>
-  					 <th scope="row">1</th>
-  					 <td>Mark</td>
-  						 <td>Otto</td>
-  						 <td>@mdo</td>
-  						 <td><button>Eliminar</button></td>
-  						 <td><button>Modificar</button></td>
-  					 </tr>
-  				 <tr>
-  					 <th scope="row">2</th>
-  					 <td>Jacob</td>
-  					 <td>Thornton</td>
-  						 <td>@fat</td>
-  						 <td><button>Eliminar</button></td>
-  						 <td><button>Modificar</button></td>
-  				 </tr>
-  					 <tr>
-  							 <th scope="row">3</th>
-  							 <td>Larry</td>
-  							 <td>the Bird</td>
-  							 <td>@twitter</td>
-  							 <td><button>Eliminar</button></td>
-  							 <td><button>Modificar</button></td>
-  				 </tr>
-  					<tr>
-  							 <th scope="row">3</th>
-  							 <td>Varela</td>
-  							 <td>the hobbo</td>
-  							 <td>@twitter</td>
-  							 <td><button>Eliminar</button></td>
-  							<td><button>Modificar</button></td>
-  				 </tr>
-  					<tr>
-  							 <th scope="row">3</th>
-  							 <td>Fercho</td>
-  							 <td>the Bird</td>
-  							 <td>@owl</td>
-  							 <td><button>Eliminar</button></td>
-  							<td><button>Modificar</button></td>
-  				 </tr>
+      <div class="card-body" >
+        @if($errors->any())
+          <div class="alert alert-warning alert-dismissable">
+            <ul>
 
-  				 <tr>
-  					 <th scope="row">1</th>
-  					 <td>Mark</td>
-  						 <td>Otto</td>
-  						 <td>@mdo</td>
-  						 <td><button>Eliminar</button></td>
-  						 <td><button>Modificar</button></td>
-  					 </tr>
-  				 <tr>
-  					 <th scope="row">2</th>
-  					 <td>Jacob</td>
-  					 <td>Thornton</td>
-  						 <td>@fat</td>
-  						 <td><button>Eliminar</button></td>
-  						 <td><button>Modificar</button></td>
-  				 </tr>
-  					 <tr>
-  							 <th scope="row">3</th>
-  							 <td>Larry</td>
-  							 <td>the Bird</td>
-  							 <td>@twitter</td>
-  							 <td><button>Eliminar</button></td>
-  							<td><button>Modificar</button></td>
-  				 </tr>
-  					<tr>
-  							 <th scope="row">3</th>
-  							 <td>Varela</td>
-  							 <td>the hobbo</td>
-  							 <td>@twitter</td>
-  							 <td><button>Eliminar</button></td>
-  							 <td><button>Modificar</button></td>
-  				 </tr>
-  					<tr>
-  							 <th scope="row">3</th>
-  							 <td>Fercho</td>
-  							 <td>the Bird</td>
-  							 <td>@owl</td>
-  							 <td><button>Eliminar</button></td>
-  							 <td><button>Modificar</button></td>
-  				 </tr>
-
-  				 <tr>
-  					 <th scope="row">1</th>
-  					 <td>Mark</td>
-  						 <td>Otto</td>
-  						 <td>@mdo</td>
-  						 <td><button>Eliminar</button></td>
-  						 <td><button>Modificar</button></td>
-  					 </tr>
-  				 <tr>
-  					 <th scope="row">2</th>
-  					 <td>Jacob</td>
-  					 <td>Thornton</td>
-  						 <td>@fat</td>
-  						 <td><button>Eliminar</button></td>
-  						<td><button>Modificar</button></td>
-  				 </tr>
-  					 <tr>
-  							 <th scope="row">3</th>
-  							 <td>Larry</td>
-  							 <td>the Bird</td>
-  							 <td>@twitter</td>
-  							 <td><button>Eliminar</button></td>
-  							<td><button>Modificar</button></td>
-  				 </tr>
-  					<tr>
-  							 <th scope="row">3</th>
-  							 <td>Varela</td>
-  							 <td>the hobbo</td>
-  							 <td>@twitter</td>
-  							 <td><button>Eliminar</button></td>
-  							<td><button>Modificar</button></td>
-  				 </tr>
-  					<tr>
-  							 <th scope="row">3</th>
-  							 <td>Fercho</td>
-  							 <td>the Bird</td>
-  							 <td>@owl</td>
-  							 <td><button>Eliminar</button></td>
-  							 <td><button>Modificar</button></td>
-  				 </tr>
-  				 <tr>
-  					 <th scope="row">1</th>
-  					 <td>Mark</td>
-  						 <td>Otto</td>
-  						 <td>@mdo</td>
-  						 <td><button>Eliminar</button></td>
-  						 <td><button>Modificar</button></td>
-  					 </tr>
-  				 <tr>
-  					 <th scope="row">2</th>
-  					 <td>Jacob</td>
-  					 <td>Thornton</td>
-  						 <td>@fat</td>
-  						 <td><button>Eliminar</button></td>
-  						<td><button>Modificar</button></td>
-  				 </tr>
-  					 <tr>
-  							 <th scope="row">3</th>
-  							 <td>Larry</td>
-  							 <td>the Bird</td>
-  							 <td>@twitter</td>
-  							 <td><button>Eliminar</button></td>
-  							 <td><button>Modificar</button></td>
-  				 </tr>
-  					<tr>
-  							 <th scope="row">3</th>
-  							 <td>Varela</td>
-  							 <td>the hobbo</td>
-  							 <td>@twitter</td>
-  							 <td><button>Eliminar</button></td>
-  							 <td><button>Modificar</button></td>
-  				 </tr>
-  					<tr>
-  							 <th scope="row">3</th>
-  							 <td>Fercho</td>
-  							 <td>the Bird</td>
-  							 <td>@owl</td>
-  							 <td><button>Eliminar</button></td>
-  							 <td><button>Modificar</button></td>
-  				 </tr>
-
-  			 </tbody>
-  			 </table>
+            @foreach($errors->all() as $error)
+              <li>{{$error}}</li>
+            @endforeach
+            </ul>
+          </div>
+        @endif
+        @if(session()->has('mensaje'))
+          <div class="alert alert-success">
+            {{session()->get('mensaje')}}
+          </div>
+        @endif
+        <!-- ESTA ES LA TABLA ORIGINAL PARA POSTERIORES USOS-->
+        <div class="row">
+          <h2 style="margin-left:1.5%;">usuarios</h2>
+          <table class="table table-condensed" style="margin-left:1.5%;">
+            <thead>
+              <tr>
+                <td>Id</td>
+                <td>Nombre</td>
+                <td>Email</td>
+                <td>Editar</td>
+                <td>Eliminar</td>
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <tr>
+                @forelse($perros as $usu)
+                <td>{{$usu->id}}</td>
+                <td>{{$usu->nombre}}</td>
+                <td>{{$usu-ap_p}}</td>
+                <td><button type="button" class="btn btn-info btn-lg btnEdit"
+                  data-toggle="modal" data-target="#myModal"
+                  data-Nombre="{{$usu->nombre}}"
+                  data-Apellido="{{$usu->ap_p}}"
+                  data-id="{{$usu->id}}">Editar </button></td>
+                <td>
+                </td>
+                </tr>
+              @empty
+              <p>sin registro</p>
+              @endforelse
+            </tbody>
+          </table>
     </div>
 
   </div>

@@ -9,6 +9,6 @@ class booleano extends Model
       protected $primaryKey='Id';
       protected $table='booleanos';
       protected $fillable=[
-      'Jubilado','Servicio_medico','Bano_diario','Convivencia-animal'
+      'Jubilado','Servicio_medico','Bano_diario','Convivencia_animal'
       ];
 }
