@@ -23,12 +23,7 @@ h2{
   color: white;
 
 }
-.titula{
-  float: left;
-  margin-left: 40%;
-  margin-bottom: 1%;
-  margin-top: 2%;
-}
+
 h3{
   font-size: 70px;
   color: black;
@@ -210,12 +205,18 @@ margin-left: 18%;
 
 
 /****************GALERIA****************** */
+.titula{
+  float: left;
+  margin-left: 40%;
+  margin-bottom: 4%;
+  margin-top: 2%;
+}
 
 .row > .column {
   padding: 0 6px;
 }
 .row{
-  margin-left: 6%;
+  margin-left: 8%;
 }
 .row:after {
   content: "";
@@ -229,7 +230,7 @@ margin-left: 18%;
   padding: 0;
   max-height: 120px;
   max-width: 100%;
-  background-color: red;
+
 
 }
 #galim{
