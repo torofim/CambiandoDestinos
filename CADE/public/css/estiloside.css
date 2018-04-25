@@ -123,7 +123,27 @@ nav.sidebar:hover{
 .forAnimate{
   opacity: 0;
 }
-
+.botonsin{
+  height:50px;
+  background-color:#37ba4b;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  border:none;
+    margin-top:2.5%;
+    margin-left: 3%;
+}
+.botonsin:hover{
+  background-color:#298437;
+  color:white;
+}
+.inputin{
+  margin-top:.5%;
+  margin-left: 3%;
+}
+#lab{
+  margin-left:3%;
+  margin-top:2%;
+}
 
 } /*AQUI TERMINA EL MEDIA QUERYyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy*/
 

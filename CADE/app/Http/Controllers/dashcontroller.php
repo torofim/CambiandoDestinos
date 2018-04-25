@@ -46,5 +46,8 @@ class dashcontroller extends Controller
   {
       return view('dashboardusuarios');
   }
-
+  public function form()
+  {
+    return view('formularios');
+  }
 }

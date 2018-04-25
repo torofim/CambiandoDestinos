@@ -75,7 +75,7 @@
          </div>
        </div>
   </div>
-    <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/chart.min.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/graficabarras.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/side.js') }}"></script>
