@@ -14,6 +14,7 @@
         </div>
     </div>
     <div class="contenedor">
+    <!-- Viene de Usuarios.blade-->
       <div class="card-body" >
         @if($errors->any())
           <div class="alert alert-warning alert-dismissable">
@@ -38,7 +39,7 @@
               <tr>
                 <td>Id</td>
                 <td>Nombre</td>
-                <td>Email</td>
+                <td>Apellido</td>
                 <td>Editar</td>
                 <td>Eliminar</td>
               </tr>
