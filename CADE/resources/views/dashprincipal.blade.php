@@ -75,6 +75,11 @@
          </div>
        </div>
   </div>
+  <script>
+    var nombres=[{!!$nombres!!}];
+    var valores=[{!!$valores!!}];
+  </script>
+
   <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/chart.min.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/graficabarras.js') }}"></script>

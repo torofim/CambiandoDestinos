@@ -2,12 +2,12 @@
 new Chart(document.getElementById("bar-chart"), {
     type: 'bar',
     data: {
-      labels: ["N.C.G", "Asencion", "Buenaventura", "Benito", "Flores Magón"],
+      labels: nombres,
       datasets: [
         {
           label: "Población",
           backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-          data: [25,30,20,7,4]
+          data: valores,
         }
       ]
     },
