@@ -60,6 +60,14 @@
             </div>
 		      </div>
 	     </div>
+
+       <form class="forma" action="Route{dashstore}" method="post">
+           <input type='radio' name='qty' value='1' />Enero
+           <input type='radio' name='qty' value='2' />Febrero
+           <input type='radio' name='qty' value='3' />Marzo
+           <input type='radio' name='qty' value='4' />Abril
+         <input type="submit" name="" value="Send.">
+       </form>
        <div class="container-fluid">
          <div class="row">
            <div class="panel panel-default2 col-md-6  col-sm-8 col-xs-12 " style="background-color:white; height:auto;">
@@ -78,6 +86,8 @@
   <script>
     var nombres=[{!!$nombres!!}];
     var valores=[{!!$valores!!}];
+    console.log($messeleccionado,$data);
+
   </script>
 
   <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
