@@ -9,6 +9,6 @@ class formubeneficontroller extends Controller
 {
     //
     public function index(){
-      return view('/admin/Formubenefi');
+      return view('/Formubenefi');
     }
 }
