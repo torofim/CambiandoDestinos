@@ -50,11 +50,8 @@
                 <td>{{$usu->Id}}</td>
                 <td>{{$usu->Nombre}}</td>
                 <td>{{$usu->Apellido_p}}</td>
-                <td><button type="button" class="btn btn-info btn-lg btnEdit"
-                  data-toggle="modal" data-target="#myModal"
-                  data-Nombre="{{$usu->Nombre}}"
-                  data-Apellido="{{$usu->Apellido_p}}"
-                  data-id="{{$usu->Id}}">Editar </button></td>
+                <td><button type="button" class="btn btn-info btn-lg " onclick="location.href='/admin/Formubenefi'"
+                  >Editar </button></td>
                 <td>
                 </td>
                 </tr>
