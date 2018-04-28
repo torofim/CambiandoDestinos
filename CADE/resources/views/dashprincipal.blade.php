@@ -61,13 +61,33 @@
 		      </div>
 	     </div>
 
-       <form class="forma" action="Route{dashstore}" method="post">
-           <input type='radio' name='qty' value='1' />Enero
-           <input type='radio' name='qty' value='2' />Febrero
-           <input type='radio' name='qty' value='3' />Marzo
-           <input type='radio' name='qty' value='4' />Abril
-         <input type="submit" name="" value="Send.">
-       </form>
+
+
+
+       {!!  Form::open(['url' => 'admin/dash', 'method' => 'GET']) !!}
+        <div class="row center-block">
+            <div class="col-md-6 center-block">
+                <div class="input-group">
+                  <input type="radio" name="mes" value="1" checked="checked"/>Enero
+                  <input type='radio' name='mes' value='2' />Febrero
+                  <input type='radio' name='mes' value='3' />Marzo
+                  <input type='radio' name='mes' value='4' />Abril
+                  <input type='radio' name='mes' value='5' />Mayo
+                  <input type='radio' name='mes' value='6' />Junio
+                  <input type='radio' name='mes' value='7' />Julio
+                  <input type='radio' name='mes' value='8' />Agosto
+                  <input type='radio' name='mes' value='9' />Septiembre
+                  <input type='radio' name='mes' value='10' />Octubre
+                  <input type='radio' name='mes' value='11' />Noviembre
+                  <input type='radio' name='mes' value='12' />Diciembre
+
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="submit">submit</button>
+                    </span>
+                </div>
+            </div>
+     </div>
+        {!! Form::close() !!}
        <div class="container-fluid">
          <div class="row">
            <div class="panel panel-default2 col-md-6  col-sm-8 col-xs-12 " style="background-color:white; height:auto;">
@@ -86,7 +106,7 @@
   <script>
     var nombres=[{!!$nombres!!}];
     var valores=[{!!$valores!!}];
-    console.log($messeleccionado,$data);
+
 
   </script>
 

@@ -51,7 +51,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
 
   // Estos son los Routes de los DASH
   Route::get('/dash','dashcontroller@index')->name('dashprincipal');
-  Route::post('/dash','dashcontroller@mes')->name('dashstore');
+
 
 
   Route::get('/benef','datospersonalescontroller@index')->name('benef');
