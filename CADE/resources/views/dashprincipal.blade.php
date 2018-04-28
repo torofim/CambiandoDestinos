@@ -61,33 +61,20 @@
 		      </div>
 	     </div>
 
+      
+          <div id="formulario">
+            <label for="r1" class="col-lg-2"> <input class="radio" type="radio" name="x" id="r1" data-mes="01">ENERO</label>           
+            <label for="r2" class="col-lg-2"> <input class="radio" type="radio" name="x" id="r2" data-mes="02">FEBRERO</label>           
+            <label for="r3" class="col-lg-2"> <input class="radio" type="radio" name="x" id="r3" data-mes="03">Marzo</label>           
+            <label for="r4" class="col-lg-2"> <input class="radio" type="radio" name="x" id="r4" data-mes="04">Abril</label>           
+            <label for="r5" class="col-lg-2"> <input class="radio" type="radio" name="x" id="r5" data-mes="05">Mayo</label>
+            <br>
+            <label for="r6" class="col-lg-2"> <input class="radio" type="radio" name="x" id="r6" data-mes="anual">Anual</label>
+            <br>
 
-
-
-       {!!  Form::open(['url' => 'admin/dash', 'method' => 'GET']) !!}
-        <div class="row center-block">
-            <div class="col-md-6 center-block">
-                <div class="input-group">
-                  <input type="radio" name="mes" value="1" checked="checked"/>Enero
-                  <input type='radio' name='mes' value='2' />Febrero
-                  <input type='radio' name='mes' value='3' />Marzo
-                  <input type='radio' name='mes' value='4' />Abril
-                  <input type='radio' name='mes' value='5' />Mayo
-                  <input type='radio' name='mes' value='6' />Junio
-                  <input type='radio' name='mes' value='7' />Julio
-                  <input type='radio' name='mes' value='8' />Agosto
-                  <input type='radio' name='mes' value='9' />Septiembre
-                  <input type='radio' name='mes' value='10' />Octubre
-                  <input type='radio' name='mes' value='11' />Noviembre
-                  <input type='radio' name='mes' value='12' />Diciembre
-
-                    <span class="input-group-btn">
-                      <button class="btn btn-default" type="submit">submit</button>
-                    </span>
-                </div>
-            </div>
-     </div>
-        {!! Form::close() !!}
+            <button class="btn btn-primary" id="miLink">ENVIAR</button>           
+          </div>
+      
        <div class="container-fluid">
          <div class="row">
            <div class="panel panel-default2 col-md-6  col-sm-8 col-xs-12 " style="background-color:white; height:auto;">
@@ -106,7 +93,8 @@
   <script>
     var nombres=[{!!$nombres!!}];
     var valores=[{!!$valores!!}];
-
+    var semanas=[{!!$semanas!!}];
+    var valoresMes=[{!!$valoresMes!!}];
 
   </script>
 
@@ -115,7 +103,21 @@
   <script type="text/javascript" src="{{ asset('js/graficabarras.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/side.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+  <script>
+    var link='';
+    $(document).ready(function(){
+      $('.radio').on('click',function(){
+        link=$(this).data('mes');
+        console.log(link);
+      });
+      $('#miLink').on('click',function(){
+        if(link==''){alert('selecccione un mes');}else{
+          location.href='/admin/dash/'+link;
+        }
+      });
 
+    });
+  </script>
 
   </body>
 </html>

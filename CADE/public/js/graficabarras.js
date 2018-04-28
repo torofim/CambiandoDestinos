@@ -23,12 +23,12 @@ new Chart(document.getElementById("bar-chart"), {
 new Chart(document.getElementById("bar-chart2"), {
     type: 'bar',
     data: {
-      labels: ["Requieren", "Cuenta", "No necesita"],
+      labels: semanas,
       datasets: [
         {
           label: "Cantidad",
           backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f"],
-          data: [28,16,4]
+          data: valoresMes
         }
       ]
     },
