@@ -14,7 +14,7 @@ class dashcontroller extends Controller
    */
   public function __construct()
   {
-      //$this->middleware('auth');
+      $this->middleware('auth');
   }
 
   /**
@@ -23,11 +23,8 @@ class dashcontroller extends Controller
    * @return \Illuminate\Http\Response
    */
 
-  public function index($mes='')
+  public function index($mes="")
   {
-    // si no mandan ningun mes por defecto agarrara el mes actual
-    if($mes==''){$mes=date('m');}
-    
      $benef = DB::select('select COUNT(*) AS total from datos_personales');
      $usuarios = DB::select('select COUNT(*) AS usu from users');
      $taller=DB::select('select COUNT(*) AS btaller from taller');
@@ -35,74 +32,20 @@ class dashcontroller extends Controller
      $localidades=DB::select('select Localidad, COUNT(*) as cantidad from datos_personales group by Localidad');
      $categorias='';
      $valores='';
-     
-     //las semanas van fijas 
-     $semanas='"1 al 7","8 al 14","15 al 21","21 al 30"';
-     //aqui esta lo feo que es contar los usuarios que esten en el rango del dia
-     $valoresMes='';
-     if($mes!='anual'){
-        $i=1;$j=7;
-        for($x=0;$x<4;$x++){
-            $datosmes=DB::select('
-            select Count(*) AS cuantos from datos_personales where 
-            month(Created_at) = '.$mes.' 
-            and day(Created_at)>='.$i.' and day(Created_at)<='.$j.' 
-            group by Nombre');
-          if(count($datosmes)>0){
-            $valoresMes=$valoresMes.$datosmes{0}->cuantos.',';
-          }else{
-            $valoresMes=$valoresMes.'0,';
-          }
-          $i=$i+7;
-          $j=$j+7;
-        }
 
-     }else{
-      //SI ES ANUAL
-      
-      $semanas='"Enero","Febrero","Marzo","Abril","Mayo",
-      "Junio","Agosto","Septiembre","Ocubre","Noviembre","Diciembre"';
-     
-         for($x=1;$x<13;$x++){
-            $datosmes=DB::select('
-            select Count(*) AS cuantos from datos_personales where 
-            month(Created_at) = '.$x.' 
-            group by Nombre');
-              if(count($datosmes)>0){
-                $valoresMes=$valoresMes.$datosmes{0}->cuantos.',';
-              }else{
-                $valoresMes=$valoresMes.'0,';
-              }
-         }
-         
 
-     }
-     
+     $mese=DB::select('select * from datos_personales where month(Created_at) = '.$mes.' group by Nombre');
+
      for($i=0;$i<count($localidades);$i++){
        $categorias=$categorias.'"'.$localidades{$i}->Localidad.'",';
        $valores=$valores.$localidades{$i}->cantidad.',';
      }
-     
-     #dd($myval);
-    #dd($benef);
-    
-  # NO FUNCIONA CON LOS 2 JUNTOS NECESITO PREGUNTAR AL ING COMO SE ARREGLA
      return view('dashprincipal', ['benef' => $benef])
      ->with('usuarios',$usuarios)
      ->with('taller',$taller)
      ->with('disc',$disc)
      ->with('nombres',$categorias)
-     ->with('valores',$valores)
-     ->with('valoresMes',$valoresMes)
-     ->with('semanas',$semanas);
-       #return view('LEFTMENU',['usuarios' => $usuarios]);
-       #->width('nombre','EQUIPOS DE FUTBOL');
-       #si se hace esto y el js esta en el blade solo se imprime como php {{$nombre}}
-      #return view('principal');
-  }
-  public function mes(Request $request){
-    $messeleccionado = $request->qty;
-    return view('dashprincipal')->with('mes',$messeleccionado);
+     ->with('valores',$valores);
   }
   public function benef()
   {
