@@ -20,7 +20,7 @@ class datospersonalescontroller extends Controller
       ->get();
 
       return view('dashboardbeneficiarios')
-      ->with('perras',$registros);
+      ->with('perros',$registros);
     }
     public function store(Request $req){
 

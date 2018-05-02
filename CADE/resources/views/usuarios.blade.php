@@ -41,7 +41,7 @@
                           @forelse($perros as $usu)
                           <td>{{$usu->id}}</td>
                           <td>{{$usu->name}}</td>
-                          <td></td>
+                          <td>{{$usu->email}}</td>
                           <td><button type="button" class="btn btn-info btn-lg btnEdit"
                             data-toggle="modal" data-target="#myModal"
                             data-Nombre="{{$usu->name}}"

@@ -47,16 +47,18 @@
                 <td>Id</td>
                 <td>Nombre</td>
                 <td>Apellido</td>
+                <td>Apellido</td>
                 <td>Editar</td>
                 <td>Eliminar</td>
               </tr>
             </thead>
             <tbody id="tbody">
               <tr>
-                @forelse($perras as $usu)
+                @forelse($perros as $usu)
                 <td>{{$usu->Id}}</td>
                 <td>{{$usu->Nombre}}</td>
                 <td>{{$usu->Apellido_p}}</td>
+                <td>{{$usu->Apellido_m}}</td>
                 <td><button type="button" class="btn btn-info btn-lg " onclick="location.href='/admin/Formubenefi'"
                   >Editar </button></td>
                 <td>
