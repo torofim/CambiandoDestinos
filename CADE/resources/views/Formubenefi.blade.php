@@ -20,6 +20,7 @@
             Fundacion Cambiando Destinos
           </div>
         </div>
+
         <div class="col-md-12 contenida" >
           <div class="acordiona" style="height:inherit;">
 
@@ -44,7 +45,8 @@
           {{session()->get('mensaje')}}
         </div>
       @endif
-      {{Form::open(array('url'=>'/admin/datospersonales','files'=>true))}}
+
+
         <div class="input=-group col-md-4">
           <label for="nombre">Nombre</label><br>
           {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
@@ -117,6 +119,7 @@
           {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
         </div>
       {{Form::close()}}
+      
     </div>
       </div>
 
