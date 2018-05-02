@@ -61,6 +61,10 @@
                       {{Form::text('tipo_sangre','',array('class'=>'form-control','placeholder'=>'Tipo sangre') )}}
                     </div>
                     <div class="input=-group col-md-4">
+                      <label for="nombre">Peso </label><br>
+                      {{Form::text('peso','',array('class'=>'form-control','placeholder'=>'Tipo peso') )}}
+                    </div>
+                    <div class="input=-group col-md-4">
                       <label for="nombre">Estatura </label><br>
                       {{Form::number('estatura','',array('class'=>'form-control','placeholder'=>'Ejemplo: 1.6') )}}
                     </div>

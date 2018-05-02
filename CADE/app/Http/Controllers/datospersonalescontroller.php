@@ -20,7 +20,7 @@ class datospersonalescontroller extends Controller
       ->get();
 
       return view('dashboardbeneficiarios')
-      ->with('perros',$registros);
+      ->with('perras',$registros);
     }
     public function store(Request $req){
 
@@ -34,6 +34,7 @@ class datospersonalescontroller extends Controller
         'sexo'=>'required|max:255',
         'edo_civil'=>'required|max:255',
         'tipo_sangre'=>'required|max:255',
+        'peso'=>'required|max:255',
         'estatura'=>'required|max:255',
         'talla'=>'required|max:255',
         'calzado'=>'required|max:255',
@@ -41,6 +42,8 @@ class datospersonalescontroller extends Controller
         'cp'=>'required|max:255',
         'localidad'=>'required|max:255',
         'tel'=>'required|max:255',
+
+
       ]);
       if($validator->fails()){
         //quiere decir que no estan correctos
@@ -58,13 +61,17 @@ class datospersonalescontroller extends Controller
           'sexo'=>$req->Sexo,
           'edo_civil'=>$req->Edo_civil,
           'tipo_sangre'=>$req->Tipo_sangre,
+          'peso'=>$req->Peso,
           'estatura'=>$req->Estatura,
           'talla'=>$req->Talla,
           'calzado'=>$req->Calzado,
           'domicilio'=>$req->Domicilio,
           'cp'=>$req->Cp,
           'localidad'=>$req->Localidad,
-          'tel'=>$req->Tel
+          'tel'=>$req->Tel,
+
+
+
 
         ]);
         return redirect()->to('/admin/benef')
