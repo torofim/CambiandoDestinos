@@ -27,7 +27,7 @@ new Chart(document.getElementById("bar-chart2"), {
       datasets: [
         {
           label: "Cantidad",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f"],
+          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#252525"],
           data: valoresMes
         }
       ]

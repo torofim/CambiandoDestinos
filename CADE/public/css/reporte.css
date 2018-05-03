@@ -1,0 +1,63 @@
+*{
+  margin:0;
+  padding:0;
+}
+.titulo{
+  text-align: center;
+  margin-top:5vh;
+  font-size:2.2rem;
+}
+.requisitos{
+
+
+}
+.foto{
+  width:150px;
+  height:150px;
+  background-color: gray;
+}
+.segundalinea{
+  margin-top:3vh;
+}
+.terceralinea{
+  margin-top:1vh;
+}
+.titulosterceralinea{
+    margin-top:3vh;
+}
+.titulocuartalinea{
+  margin-top:3vh;
+}
+.cuartalinea{
+  margin-top:1vh;
+}
+.titulosquintalinea{
+  margin-top:3vh;
+}
+.quintalinea{
+  margin-top:1vh;
+}
+.titulosextalinea{
+  margin-top:3vh;
+}
+.sextalinea{
+  margin-top:1vh;
+}
+.tituloseptimalinea{
+  margin-top:3vh;
+}
+.septimalinea{
+  margin-top:1vh;
+}
+.titulodebajoseptima{
+  margin-top:1vh;
+}
+.debajoseptima{
+  margin-top:1vh;
+}
+.titulooctavalinea{
+  margin-top:3vh;
+}
+.octavalinea{
+  margin-top:1vh;
+}

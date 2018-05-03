@@ -3,26 +3,12 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use App\User;
 use DB;
-class dashcontroller extends Controller
+
+class graficoscontroller extends Controller
 {
-  /**
-   * Create a new controller instance.
-   *
-   * @return void
-   */
-  public function __construct()
-  {
-      //$this->middleware('auth');
-  }
-
-  /**
-   * Show the application dashboard.
-   *
-   * @return \Illuminate\Http\Response
-   */
-
   public function index($mes='')
   {
     // si no mandan ningun mes por defecto agarrara el mes actual
@@ -31,7 +17,7 @@ class dashcontroller extends Controller
      $benef = DB::select('select COUNT(*) AS total from datos_personales');
      $usuarios = DB::select('select COUNT(*) AS usu from users');
      $taller=DB::select('select COUNT(*) AS btaller from taller');
-     $disc=DB::select('select Count(*) AS disca from tabla_comida');
+     $disc=DB::select('select Count(*) AS disca from discapacidad');
      $localidades=DB::select('select Localidad, COUNT(*) as cantidad from datos_personales group by Localidad');
      $categorias='';
      $valores='';
@@ -83,14 +69,8 @@ class dashcontroller extends Controller
        $valores=$valores.$localidades{$i}->cantidad.',';
      }
 
-     //dd($valoresMes);
-    #dd($benef);
 
-
-     return view('dashprincipal', ['benef' => $benef])
-     ->with('usuarios',$usuarios)
-     ->with('taller',$taller)
-     ->with('disc',$disc)
+     return view('dashgraficos', ['benef' => $benef])
      ->with('nombres',$categorias)
      ->with('valores',$valores)
      ->with('valoresMes',$valoresMes)
@@ -99,21 +79,5 @@ class dashcontroller extends Controller
        #->width('nombre','EQUIPOS DE FUTBOL');
        #si se hace esto y el js esta en el blade solo se imprime como php {{$nombre}}
       #return view('principal');
-  }
-#  public function mes(Request $request){
-#    $messeleccionado = $request->qty;
-#    return view('dashprincipal')->with('mes',$messeleccionado);
-#  }
-  public function benef()
-  {
-      return view('dashboardbeneficiarios');
-  }
-  public function regis()
-  {
-      return view('dashboardusuarios');
-  }
-  public function form()
-  {
-    return view('formularios');
   }
 }
