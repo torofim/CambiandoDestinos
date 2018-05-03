@@ -61,62 +61,62 @@
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Fecha nacimiento </label><br>
-          {{Form::date('fecha_na','',array('class'=>'form-control','placeholder'=>'Fecha nacimiento') )}}
+          {{Form::date('fecha_na',$perros[0]->Fecha_nacimiento,array('class'=>'form-control','placeholder'=>'Fecha nacimiento') )}}
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Lugar nacimiento </label><br>
-          {{Form::text('lugar_na','',array('class'=>'form-control','placeholder'=>'Lugar nacimiento') )}}
+          {{Form::text('lugar_na',$perros[0]->Lugar_nacimiento,array('class'=>'form-control','placeholder'=>'Lugar nacimiento') )}}
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Edad </label><br>
-          {{Form::number('edad','',array('class'=>'form-control','placeholder'=>'Edad') )}}
+          {{Form::number('edad',$perros[0]->Edad,array('class'=>'form-control','placeholder'=>'Edad') )}}
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Sexo </label><br>
-          {{Form::text('sexo','',array('class'=>'form-control','placeholder'=>'M o F') )}}
+          {{Form::text('sexo',$perros[0]->Sexo,array('class'=>'form-control','placeholder'=>'M o F') )}}
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Estado civil </label><br>
-          {{Form::text('edo_civil','',array('class'=>'form-control','placeholder'=>'Estado civil') )}}
+          {{Form::text('edo_civil',$perros[0]->Edo_civil,array('class'=>'form-control','placeholder'=>'Estado civil') )}}
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Tipo sanguineo </label><br>
-          {{Form::text('tipo_sangre','',array('class'=>'form-control','placeholder'=>'Tipo sangre') )}}
+          {{Form::text('tipo_sangre',$perros[0]->Tipo_sangre,array('class'=>'form-control','placeholder'=>'Tipo sangre') )}}
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Peso </label><br>
-          {{Form::text('peso','',array('class'=>'form-control','placeholder'=>'Tipo peso') )}}
+          {{Form::text('peso',$perros[0]->Peso,array('class'=>'form-control','placeholder'=>'Tipo peso') )}}
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Estatura </label><br>
-          {{Form::number('estatura','',array('class'=>'form-control','placeholder'=>'Ejemplo: 1.6') )}}
+          {{Form::number('estatura',$perros[0]->Estatura,array('class'=>'form-control','placeholder'=>'Ejemplo: 1.6') )}}
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Talla </label><br>
-          {{Form::number('talla','',array('class'=>'form-control','placeholder'=>'Talla') )}}
+          {{Form::number('talla',$perros[0]->Talla,array('class'=>'form-control','placeholder'=>'Talla') )}}
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Calzado </label><br>
-          {{Form::number('calzado','',array('class'=>'form-control','placeholder'=>'Calzado') )}}
+          {{Form::number('calzado',$perros[0]->Calzado,array('class'=>'form-control','placeholder'=>'Calzado') )}}
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Domicilio </label><br>
-          {{Form::text('domicilio','',array('class'=>'form-control','placeholder'=>'Domicilio') )}}
+          {{Form::text('domicilio',$perros[0]->Domicilio,array('class'=>'form-control','placeholder'=>'Domicilio') )}}
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Codigo Postal </label><br>
-          {{Form::number('cp','',array('class'=>'form-control','placeholder'=>'Cp') )}}
+          {{Form::number('cp',$perros[0]->Cp,array('class'=>'form-control','placeholder'=>'Cp') )}}
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Localidad </label><br>
-          {{Form::text('localidad','',array('class'=>'form-control','placeholder'=>'Localidad') )}}
+          {{Form::text('localidad',$perros[0]->Localidad,array('class'=>'form-control','placeholder'=>'Localidad') )}}
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Telefono </label><br>
-          {{Form::number('tel','',array('class'=>'form-control','placeholder'=>'Telefono') )}}
+          {{Form::number('tel',$perros[0]->Tel,array('class'=>'form-control','placeholder'=>'Telefono') )}}
         </div>
         <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
-          {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
+          {{Form::submit('Actualizar',array('class'=>'btn btn-primary'))}}
         </div>
       {{Form::close()}}
 

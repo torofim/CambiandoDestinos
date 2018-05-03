@@ -54,21 +54,21 @@ class datospersonalescontroller extends Controller
         Datos_personales::create([
           'Nombre'=>$req->nombre,
           'Apellido_p'=>$req->ap_p,
-          'Apellido_m '=>$req->ap_m,
-          'fecha_na'=>$req->Fecha_nacimiento,
-          'lugar_na'=>$req->Lugar_nacimiento,
-          'edad'=>$req->Edad,
-          'sexo'=>$req->Sexo,
-          'edo_civil'=>$req->Edo_civil,
-          'tipo_sangre'=>$req->Tipo_sangre,
-          'peso'=>$req->Peso,
-          'estatura'=>$req->Estatura,
-          'talla'=>$req->Talla,
-          'calzado'=>$req->Calzado,
-          'domicilio'=>$req->Domicilio,
-          'cp'=>$req->Cp,
-          'localidad'=>$req->Localidad,
-          'tel'=>$req->Tel
+          'Apellido_m'=>$req->ap_m,
+          'Fecha_nacimiento'=>$req->fecha_na,
+          'Lugar_nacimiento'=>$req->lugar_na,
+          'Edad'=>$req->edad,
+          'Sexo'=>$req->sexo,
+          'Edo_civil'=>$req->edo_civil,
+          'Tipo_sangre'=>$req->tipo_sangre,
+          'Peso'=>$req->peso,
+          'Estatura'=>$req->estatura,
+          'Talla'=>$req->talla,
+          'Calzado'=>$req->calzado,
+          'Domicilio'=>$req->domicilio,
+          'Cp'=>$req->cp,
+          'Localidad'=>$req->localidad,
+          'Tel'=>$req->tel
 
 
 
