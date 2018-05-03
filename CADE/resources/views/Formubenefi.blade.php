@@ -53,11 +53,11 @@
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Apellido Paterno</label><br>
-          {{Form::text('ap_p','',array('class'=>'form-control','placeholder'=>'Apellido paterno') )}}
+          {{Form::text('ap_p',$perros[0]->Apellido_p,array('class'=>'form-control','placeholder'=>'Apellido paterno') )}}
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Apellido materno</label><br>
-          {{Form::text('ap_m','',array('class'=>'form-control','placeholder'=>'Apellido materno') )}}
+          {{Form::text('ap_m',$perros[0]->Apellido_m,array('class'=>'form-control','placeholder'=>'Apellido materno') )}}
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Fecha nacimiento </label><br>

@@ -8,4 +8,7 @@ use App\Http\Controllers\Controller;
 class reportecontroller extends Controller
 {
     //
+    public function index(){
+      return View('reporte');
+    }
 }
