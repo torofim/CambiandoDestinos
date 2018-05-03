@@ -17,8 +17,18 @@ class formubeneficontroller extends Controller
       //->take(10)
       ->get();
     //  dd($registros);
+    $registros2=\DB::table('discapacidad')
+    ->where('Id','=',$Id)
+    ->orderby('Id','desc')
+    //->take(10)
+    ->get();
+  //  dd($registros);
+
+
+
       return view('/Formubenefi')
-      ->with('perros',$registros);
+      ->with('perros',$registros)
+        ->with('perros2',$registros2);
 
     }
 }

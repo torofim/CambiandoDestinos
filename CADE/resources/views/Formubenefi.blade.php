@@ -131,8 +131,7 @@
 </div>
   <button class="accordion">Discapacidad</button>
   <div class="panel1">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, aboris nisi ut aliquip ex ea commodo consequat.</p>
-    <button type="button" name="button" id="btnformas"></button>
+    @include('formularios.discapacidad')
   </div>
   <button class="accordion">Tutor</button>
   <div class="panel1">
