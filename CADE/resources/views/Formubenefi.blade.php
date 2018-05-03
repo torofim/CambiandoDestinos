@@ -6,7 +6,7 @@
     <link href="{{ asset('css/estiloside.css') }}" rel="stylesheet" type="text/css" >
     <title>Beneficiarios</title>
   </head>
-  <body>
+  <body >
       @include('layouts.nav')
       <div class="main">
         <div class="panel panel-default" style="background-color:transparent;">
@@ -127,42 +127,8 @@
 
   <button class="accordion">Centro de Salud</button>
   <div class="panel1">
-    <div class="card-body">
-      @if($errors->any())
-        <div class="alert alert-warning alert-dismissable">
-          <ul>
-
-          @foreach($errors->all() as $error)
-            <li>{{$error}}</li>
-          @endforeach
-          </ul>
-        </div>
-      @endif
-      @if(session()->has('mensaje'))
-        <div class="alert alert-success">
-          {{session()->get('mensaje')}}
-        </div>
-      @endif
-      {{Form::open(array('url'=>'/admin/Centrosalud','files'=>true))}}
-        <div class="input=-group col-md-4">
-          <label for="nombre">Edad</label><br>
-          {{Form::number('edad','',array('class'=>'form-control','placeholder'=>'Edad') )}}
-        </div>
-        <div class="input=-group col-md-4">
-          <label for="nombre">Peso (Kg)</label><br>
-          {{Form::number('peso','',array('class'=>'form-control','placeholder'=>'Peso') )}}
-        </div>
-        <div class="input=-group col-md-4">
-          <label for="nombre">Presion Arterial</label><br>
-          {{Form::text('presion','',array('class'=>'form-control','placeholder'=>'Presion') )}}
-        </div>
-        <div class="input-group col-md-4" style="margin-left:2%; padding-top:2.5%;">
-          {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
-        </div>
-      {{Form::close()}}
-    </div>
-  </div>
-
+    @include('centrosalud')
+</div>
   <button class="accordion">Discapacidad</button>
   <div class="panel1">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, aboris nisi ut aliquip ex ea commodo consequat.</p>
@@ -180,8 +146,8 @@
   </div>
   <button class="accordion">Archivos en Imagen</button>
   <div class="panel1">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, o laboris nisi ut aliquip ex ea commodo consequat.</p>
-    <button type="button" name="button"id="btnformas"></button>
+    @include('archivo')
+
   </div>
 
 </div>
