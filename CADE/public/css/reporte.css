@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
   margin:0;
   padding:0;
@@ -60,4 +61,15 @@
 }
 .octavalinea{
   margin-top:1vh;
+=======
+body{
+  overflow-x: hidden;
+}
+table{
+  width: 40%;
+}
+
+.container{
+  margin-top: 40%;
+>>>>>>> 93d855cd364c63621a9d7177c773e6431c056f7c
 }

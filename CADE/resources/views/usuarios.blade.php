@@ -41,7 +41,7 @@
                           @forelse($perros as $usu)
                           <td>{{$usu->id}}</td>
                           <td>{{$usu->name}}</td>
-                          <td></td>
+                          <td>{{$usu->email}}</td>
                           <td><button type="button" class="btn btn-info btn-lg btnEdit"
                             data-toggle="modal" data-target="#myModal"
                             data-Nombre="{{$usu->name}}"
@@ -65,8 +65,8 @@
                     </table>
                   </div>
                   {{Form::open(array('url'=>'/admin/usuarios','files'=>true))}}
-                    <div class="input=-group col-md-12">
-                      <label for="nombre">Nombre</label><br>
+                    <div class="input=-group col-md-12" >
+                      <label for="nombre" >Nombre</label><br>
                       {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
                     </div>
                     <div class="input=-group col-md-12">

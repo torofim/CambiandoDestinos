@@ -3,6 +3,7 @@ body {
   overflow-y: scroll;
   min-height: 100%;
 }
+
 /*****************navbar *************************/
 .navbar-header{
   margin-left: 10%;
