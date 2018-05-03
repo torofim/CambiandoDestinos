@@ -31,6 +31,11 @@ Route::get('/comida', function () {
 Route::get('/Login',function(){
     return view('login');
 });
+
+
+Route::get('/reporte', function () {
+    return view('reporte');
+});
 Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   //Route::get('/',function(){return "yeah";});
   Route::get('/usuarios','usuarioscontroller@index')->name('usuarios');
@@ -47,7 +52,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::get('/visitas','visitascontroller@index')->name('visitas');
   Route::post('/usuarios/buscar','usuarioscontroller@buscar');
   Route::get('/formularios','dashcontroller@form');
-  Route::get('/Formubenefi','formubeneficontroller@index')->name('Formubenefi');
+  Route::get('/Formubenefi/{Id}','formubeneficontroller@index')->name('Formubenefi');
 
   // Estos son los Routes de los DASH
   Route::get('/dash/{mes}','dashcontroller@index');

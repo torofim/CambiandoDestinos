@@ -46,10 +46,10 @@
         </div>
       @endif
 
-
+        {{Form::open(array('url'=>'/admin/benefi','files'=>true))}}
         <div class="input=-group col-md-4">
           <label for="nombre">Nombre</label><br>
-          {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+          {{Form::text('nombre',$perros[0]->Nombre,array('class'=>'form-control','placeholder'=>'Nombre') )}}
         </div>
         <div class="input=-group col-md-4">
           <label for="nombre">Apellido Paterno</label><br>
@@ -119,7 +119,7 @@
           {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
         </div>
       {{Form::close()}}
-      
+
     </div>
       </div>
 

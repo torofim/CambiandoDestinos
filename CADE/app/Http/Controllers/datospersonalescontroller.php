@@ -52,9 +52,9 @@ class datospersonalescontroller extends Controller
           ->withErrors($validator);
       }else{
         Datos_personales::create([
-          'nombre'=>$req->Nombre,
-          'ap_p'=>$req->Apellido_p,
-          'ap_m'=>$req->Apellido_m,
+          'Nombre'=>$req->nombre,
+          'Apellido_p'=>$req->ap_p,
+          'Apellido_m '=>$req->ap_m,
           'fecha_na'=>$req->Fecha_nacimiento,
           'lugar_na'=>$req->Lugar_nacimiento,
           'edad'=>$req->Edad,
@@ -68,7 +68,7 @@ class datospersonalescontroller extends Controller
           'domicilio'=>$req->Domicilio,
           'cp'=>$req->Cp,
           'localidad'=>$req->Localidad,
-          'tel'=>$req->Tel,
+          'tel'=>$req->Tel
 
 
 
