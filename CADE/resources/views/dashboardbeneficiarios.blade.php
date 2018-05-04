@@ -8,17 +8,17 @@
   </head>
   <body>
   @include('layouts.nav')
-  <div class="main" style="height:950px;overflow-y:hidden;">
+  <div class="main" style="height:750px;overflow-y:hidden;">
   <!--<div class="panel panel-default">
         <div class="panel-body cold-md-2" id="sepa">
         </div>
     </div>-->
-    <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:700px;">
+    <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:600px;">
     <!-- Viene de Usuarios.blade-->
 
 
-    <button class="tablink" onclick="openPage('benefi', this, 'red')">Beneficiario</button>
-    <button class="tablink" onclick="openPage('agregar', this, 'green')" id="defaultOpen">Agregar Beneficiario</button>
+    <button class="tablink" onclick="openPage('benefi', this, '')">Beneficiario</button>
+    <button class="tablink" onclick="openPage('agregar', this, '')" id="defaultOpen">Agregar Beneficiario</button>
 
 
     <div id="benefi" class="tabcontent">
