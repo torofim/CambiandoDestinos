@@ -44,6 +44,9 @@
       <label for="nombre">Sexo </label><br>
       {{Form::text('requiere',$perros2[0]->Requiere_apoyo_funcional,array('class'=>'form-control','placeholder'=>'M o F') )}}
     </div>
+    <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
+      {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
+    </div>
 
   {{Form::close()}}
 

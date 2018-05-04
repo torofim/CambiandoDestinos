@@ -12,32 +12,25 @@ class Booleanocontroller extends Controller
     public function __construct(){
       $this->middleware('auth');
     }
-    public function index(){
-      return view('booleano');
+    public function index($Id){
+      $registros5=\DB::table('estatus')
+      ->where('Id','=',$Id)
+      ->orderby('Id','desc')
+      //->take(10)
+      ->get();
+      
+      dd($registros5);
+      return view('formularios.estatus')
+      ->with('perros5',$registros5);
+
     }
     public function store(Request $req){
 
       $validator =Validator::make($req->all(),[
-        'Jubilado'=>'required|max:255',
-        'Servicio_medico'=>'required|max:255',
-        'Bano_diario'=>'required|max:255',
-        'Convivencia_animal'=>'required|max:255',
+        'Jubilado'=>'max:255',
+        'Servicio_medico'=>'max:255',
+        'Bano_diario'=>'max:255',
+        'Convivencia_animal'=>'max:255',
       ]);
-      if($validator->fails()){
-        //quiere decir que no estan correctos
-        return redirect('/admin/booleano')
-          ->withInput()
-          ->withErrors($validator);
-      }else{
-        Centro_salud::create([
-          'Jubilado'=>$req->Jubilado,
-          'Servicio_medico'=>$req->Servicio_medico,
-          'Bano_diario'=>$req->Bano_diario,
-          'Convivencia_animal'=>$req->Convivencia_animal,
-        ]);
-        return redirect()->to('/admin/booleano')
-        ->with('mensaje','datos agregados');
-      }
-      dd($req->nombre);
-    }
+
 }

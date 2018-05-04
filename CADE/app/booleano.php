@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class booleano extends Model
 {
       protected $primaryKey='Id';
-      protected $table='booleanos';
+      protected $table='estatus';
       protected $fillable=[
       'Jubilado','Servicio_medico','Bano_diario','Convivencia_animal'
       ];

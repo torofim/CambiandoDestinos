@@ -13,14 +13,14 @@ class discapacidadController extends Controller
     }
 
     public function index($Id){
-      $registros=\DB::table('discapacidad')
+      $registros2=\DB::table('discapacidad')
       ->where('Id','=',$Id)
       ->orderby('Id','desc')
       //->take(10)
       ->get();
     //  dd($registros);
       return view('formularios.discapacidad')
-      ->with('perros2',$registros);
+      ->with('perros2',$registros2);
     }
     public function store(Request $req){
 

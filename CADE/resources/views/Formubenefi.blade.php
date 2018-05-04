@@ -133,15 +133,17 @@
   <div class="panel1">
     @include('formularios.discapacidad')
   </div>
+  <button class="accordion">Estatus</button>
+  <div class="panel1">
+    @include('formularios.estatus')
+  </div>
   <button class="accordion">Tutor</button>
   <div class="panel1">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, aboris nisi ut aliquip ex ea commodo consequat.</p>
-    <button type="button" name="button"id="btnformas"></button>
+    @include('formularios.tutor')
   </div>
   <button class="accordion">Evaluacion</button>
   <div class="panel1">
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit,nisi ut aliquip ex ea commodo consequat.</p>
-    <button type="button" name="button"id="btnformas"></button>
+    @include('formularios.evaluacion')
   </div>
   <button class="accordion">Archivos en Imagen</button>
   <div class="panel1">
