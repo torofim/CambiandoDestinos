@@ -27,7 +27,7 @@
 
           <button class="accordion">Datos Personales</button>
   <div class="panel1">
-    <div class="card-header" style="margin-bottom:5%; font-size:3rem; margin-left:1.5%;">Datos Personales</div>
+    <div class="card-header" style="margin-bottom:2%; font-size:3rem; margin-left:1.5%;">Datos Personales</div>
 
     <div class="card-body">
       @if($errors->any())
@@ -115,7 +115,7 @@
           <label for="nombre">Telefono </label><br>
           {{Form::number('tel',$perros[0]->Tel,array('class'=>'form-control','placeholder'=>'Telefono') )}}
         </div>
-        <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
+        <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;margin-bottom:2%;">
           {{Form::submit('Actualizar',array('class'=>'btn btn-primary'))}}
         </div>
       {{Form::close()}}

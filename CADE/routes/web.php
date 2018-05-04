@@ -33,7 +33,9 @@ Route::get('/reporte',function(){
 Route::get('/Login',function(){
     return view('login');
 });
-
+/*Route::get('/inventario',function(){
+  return view('inventario');
+});*/
 
 Route::get('/reporte', function () {
     return view('reporte');
@@ -54,6 +56,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::get('/visitas','visitascontroller@index')->name('visitas');
   Route::post('/usuarios/buscar','usuarioscontroller@buscar');
   Route::get('/formularios','dashcontroller@form');
+  Route::get('/inventario','inventarioController@index')->name('inventario');
   Route::get('/Formubenefi/{Id}','formubeneficontroller@index')->name('Formubenefi');
   Route::get('/discapacidad/{Id}','discapacidadController@index')->name('discapacidad');
 
