@@ -47,18 +47,24 @@ class dashcontroller extends Controller
             $datosmes=DB::select('
             select Count(*) AS cuantos from datos_personales where
             month(Created_at) = '.$mes.'
-            and day(Created_at)>='.$i.' and day(Created_at)<='.$j.'
-            group by Nombre');
+            and day(Created_at)>='.$i.' and day(Created_at)<='.$j.'');
+
           if(count($datosmes)>0){
             $valoresMes=$valoresMes.$datosmes{0}->cuantos.',';
           }else{
             $valoresMes=$valoresMes.'0,';
           }
+
           $i=$i+7;
           $j=$j+7;
+          if($x==2){
+            $j=$j+3;
+          }
         }
+      
      }else{
       //SI ES ANUAL
+
 
       $semanas='"Enero","Febrero","Marzo","Abril","Mayo",
       "Junio","Agosto","Septiembre","Ocubre","Noviembre","Diciembre"';
@@ -84,7 +90,7 @@ class dashcontroller extends Controller
      }
 
      //dd($valoresMes);
-    #dd($benef);
+
 
 
      return view('dashprincipal', ['benef' => $benef])
