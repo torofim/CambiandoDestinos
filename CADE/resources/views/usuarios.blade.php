@@ -194,6 +194,7 @@ var tr;
       $('#emailEditar').val(e);
       $('#nomModal').text(n);
     });
+    
     $('#txtBusqueda').on('keyup',function(){
       $.ajax({
         method:'POST',

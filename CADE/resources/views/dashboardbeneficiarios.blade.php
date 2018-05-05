@@ -17,8 +17,8 @@
     <!-- Viene de Usuarios.blade-->
 
 
-    <button class="tablink" onclick="openPage('benefi', this, '')">Beneficiario</button>
-    <button class="tablink" onclick="openPage('agregar', this, '')" id="defaultOpen">Agregar Beneficiario</button>
+    <button class="tablink" style="width:50%;" onclick="openPage('benefi', this, '')" id="defaultOpen">Beneficiario</button>
+    <button class="tablink" style="width:50%;" onclick="openPage('agregar', this, '')" >Agregar Beneficiario</button>
 
 
     <div id="benefi" class="tabcontent">

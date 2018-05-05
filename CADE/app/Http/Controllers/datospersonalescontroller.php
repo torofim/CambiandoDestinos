@@ -57,7 +57,7 @@ class datospersonalescontroller extends Controller
           'Apellido_m'=>$req->ap_m,
           'Fecha_nacimiento'=>$req->fecha_na,
           'Lugar_nacimiento'=>$req->lugar_na,
-          'Edad'=>$req->edad,
+          'Edad'=>'',
           'Sexo'=>$req->sexo,
           'Edo_civil'=>$req->edo_civil,
           'Tipo_sangre'=>$req->tipo_sangre,
