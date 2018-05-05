@@ -33,7 +33,9 @@ Route::get('/reporte',function(){
 Route::get('/Login',function(){
     return view('login');
 });
-
+/*Route::get('/inventario',function(){
+  return view('inventario');
+});*/
 
 Route::get('/reporte', function () {
     return view('reporte');
@@ -42,19 +44,21 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   //Route::get('/',function(){return "yeah";});
   Route::get('/usuarios','usuarioscontroller@index')->name('usuarios');
   Route::get('/archivos','archivoscontroller@index')->name('archivos');
-  Route::get('/booleano','Booleanoscontroller@index')->name('booleano');
+  Route::get('/estatus/{Id}','Booleanoscontroller@index')->name('estatus');
   Route::get('/centrosalud','Centro_saludcontroller@index')->name('centrosalud');
   Route::get('/datospersonales','datospersonalescontroller@index')->name('datospersonales');
-  Route::get('/evaluacion','evaluacioncontroller@index')->name('evaluacion');
+  Route::get('/evaluacion/{Id}','evaluacioncontroller@index')->name('evaluacion');
   Route::get('/inventario_e','inventario_econtroller@index')->name('inventario_e');
   Route::get('/inventario_m','inventario_mcontroller@index')->name('inventario_m');
   Route::get('/comida','comidacaontroller@index')->name('comida');
   Route::get('/taller','tallercontroller@index')->name('taller');
-  Route::get('/tutor','tutorcontroller@index')->name('tutor');
+  Route::get('/tutor/{Id}','tutorcontroller@index')->name('tutor');
   Route::get('/visitas','visitascontroller@index')->name('visitas');
   Route::post('/usuarios/buscar','usuarioscontroller@buscar');
   Route::get('/formularios','dashcontroller@form');
+  Route::get('/inventario','inventarioController@index')->name('inventario');
   Route::get('/Formubenefi/{Id}','formubeneficontroller@index')->name('Formubenefi');
+  Route::get('/discapacidad/{Id}','discapacidadController@index')->name('discapacidad');
 
   // Estos son los Routes de los DASH
   Route::get('/dash/{mes}','dashcontroller@index');
@@ -68,6 +72,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::resource('beneficiarios','dashcontroller');
   Route::resource('registrados','regiscontroller');
   Route::resource('Graficos','regiscontroller');
+  Route::resource('discapacidad','discapacidadController');
 
   Route::resource('usuarios','usuarioscontroller');
   Route::resource('archivos','archivoscontroller');

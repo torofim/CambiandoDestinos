@@ -2,6 +2,10 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+<<<<<<< HEAD
+=======
+
+>>>>>>> aadf5d503a9e8c1a26df08d5760b45f1026d59f9
         <link href="{{ asset('css/reporte.css') }}" rel="stylesheet" type="text/css" >
         <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" >
     <title></title>
@@ -110,6 +114,7 @@
         </div>
       </div>
 
+<<<<<<< HEAD
       <div class="titulosquintalinea col-md-12">
         <div class="col-md-6">
           Discapacidad
@@ -174,6 +179,85 @@
           <input type="text" name="" value="" placeholder="7">
         </div>
       </div>
+=======
+    <div class="tituloseptimalinea col-md-12">
+      <div class="col-md-4">
+        Recibe Rehabilitacion
+      </div>
+      <div class="col-md-4">
+        Cuenta con apoyo funcional
+      </div>
+      <div class="col-md-4">
+        Requiere apoyo funcional
+      </div>
+    </div>
+    <div class="septimalinea col-md-12">
+      <div class="col-md-4">
+        <label class="col-md-2">Si<input type="radio" name="rehab" value="1"></label>
+        <label class="col-md-2">No<input type="radio" name="rehab" value="2"></label>
+        <input class="col-md-4" type="text" name="donde" placeholder="Donde recibe">
+        <input class="col-md-4" type="text" name="donde" placeholder="Que rehabilitacion">
+      </div>
+      <div class="col-md-4">
+        <label class="col-md-2">Si<input type="radio" name="apoyo" value="1"></label>
+        <label class="col-md-2">No<input type="radio" name="apoyo" value="2"></label>
+        <input class="col-md-8" type="text" name="" value="" placeholder="Cual">
+      </div>
+      <div class="col-md-4">
+        <label class="col-md-2">Si<input type="radio" name="requiere" value="1"></label>
+        <label class="col-md-2">No<input type="radio" name="requiere" value="2"></label>
+      </div>
+    </div>
+    <div class="titulodebajoseptima col-md-12">
+      <div class="col-md-12">
+        Tipo de apoyo funcional
+      </div>
+    </div>
+    <div class="debajoseptima col-md-12">
+      <div class="col-md-12">
+        <label class="col-md-2">Andador<input type="radio" name="tipo" value="1"></label>
+        <label class="col-md-2">Aparato auditivo<input type="radio" name="tipo" value="2"></label>
+        <label class="col-md-1">Baston<input type="radio" name="tipo" value="1"></label>
+        <label class="col-md-2">Baston invidente<input type="radio" name="tipo" value="2"></label>
+        <label class="col-md-1">Muletas<input type="radio" name="tipo" value="1"></label>
+        <label class="col-md-2">Protesis<input type="radio" name="tipo" value="2"></label>
+        <label class="col-md-2">Silla electrica<input type="radio" name="tipo" value="1"></label>
+        <label class="col-md-2">Silla infantil<input type="radio" name="tipo" value="2"></label>
+        <label class="col-md-2">Silla PCI<input type="radio" name="tipo" value="1"></label>
+        <label class="col-md-2">Silla de ruedas<input type="radio" name="tipo" value="2"></label>
+        <label class="col-md-2">Silla de soporte<input type="radio" name="tipo" value="1"></label>
+        <label class="col-md-2">Silla de baño<input type="radio" name="tipo" value="2"></label>
+        <input class="col-md-2" type="text" name="" value="" placeholder="Otro">
+      </div>
+    </div>
+    <div class="titulooctavalinea col-md-12">
+      <div class="col-md-4">
+        Domicilio
+      </div>
+      <div class="col-md-2">
+        Cp
+      </div>
+      <div class="col-md-4">
+        Localidad
+      </div>
+    </div>
+    <div class="octavalinea col-md-12">
+      <div class="col-md-4">
+          <input class="col-md-12" type="text" name="" value="" placeholder="Calle, colonia  y numero">
+      </div>
+      <div class="col-md-2">
+        <input class="col-md-4" type="text" name="" value="" placeholder="Cp">
+      </div>
+      <div class="col-md-2">
+        <input type="text" name="" value="" placeholder="Localidad">
+      </div>
+    </div>
+
+
+    </form>
+
+  
+>>>>>>> aadf5d503a9e8c1a26df08d5760b45f1026d59f9
 
       <div class="tituloseptimalinea col-md-12">
         <div class="col-md-4">
