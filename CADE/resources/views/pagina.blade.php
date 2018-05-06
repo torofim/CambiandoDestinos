@@ -142,9 +142,10 @@
 </section>
 
 
-<section style="background-color:#6fc675;height:950px;margin-top:9%;background-image:url(./img/logo.jpg); background-blend-mode:darken;"id="segundo">
+<section style="background-color:#eee;height:950px;margin-top:9%; background-blend-mode:darken;"id="segundo">
+  <!-- background-image:url(./img/logo.jpg); !-->
   <div class="col-md-12 text-center"style="margin-top:3%;margin-bottom: 3%;">
-      <h2 >Cambiando Destinos</h2>
+      <h3 id="titulo1">Cambiando Destinos</h3>
   </div>
 
   <div class="accordion" >

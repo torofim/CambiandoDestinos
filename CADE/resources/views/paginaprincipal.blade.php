@@ -190,7 +190,6 @@
 					<div class="col-lg-12 hidden-xs text-center" id="galeria" style="margin-top:5%;" >
 							<h2>Galería</h2>
 						</div>
-					
 
 
 
