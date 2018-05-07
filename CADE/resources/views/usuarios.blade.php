@@ -1,13 +1,19 @@
 @extends('layouts.layout')
 @section('principal')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header"></div>
-                <h3 style="margin-left:2%;">Usuarios</h3>
-<input type="search" name="" value="" id="txtBusqueda" style="margin-left:2%;">
+<div class=" col-md-12 container"style="height:950px;">
+
+  <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:750px;">
+  <button class="tablink" style="width:50%;" onclick="openPage('benefi', this, '')" id="defaultOpen">Usuarios</button>
+  <button class="tablink" style="width:50%;" onclick="openPage('agregar', this, '')" >Agregar Usuario</button>
+
+
+  <div id="benefi" class="tabcontent">
+
+                <h3 style="margin-left:2%;">Buscar Usuario</h3>
+<input type="search" name="" value="" id="txtBusqueda" style="margin-left:2%;margin-bottom:5%;width:20%;">
 <input type="hidden" name="" value="{{csrf_token()}}" id="token">
+
+
                 <div class="card-body" >
                   @if($errors->any())
                     <div class="alert alert-warning alert-dismissable">
@@ -25,8 +31,8 @@
                   @endif
                   <!-- ESTA ES LA TABLA ORIGINAL PARA POSTERIORES USOS-->
                   <div class="row">
-                    <h2 style="margin-left:1.5%;">usuarios</h2>
-                    <table class="table table-condensed" style="margin-left:1.5%;">
+
+                    <table class="table table-condensed" style="margin-left:.5%;">
                       <thead>
                         <tr>
                           <td>Id</td>
@@ -64,6 +70,14 @@
                       </tbody>
                     </table>
                   </div>
+                </div>
+                </div><!--tab content-->
+
+                <div id="agregar" class="tabcontent">
+                  <div class="card-header" style="margin-bottom:5%; font-size:3rem; margin-left:1.5%;">Datos Personales</div>
+
+                  <div class="card-body">
+
                   {{Form::open(array('url'=>'/admin/usuarios','files'=>true))}}
                     <div class="input=-group col-md-12" >
                       <label for="nombre" >Nombre</label><br>
@@ -97,11 +111,18 @@
                       {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
                     </div>
                   {{Form::close()}}
+
+
                 </div>
             </div>
         </div>
-    </div>
 </div>
+
+
+
+
+
+
 <!-- Modal -->
 <div id="myModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
@@ -194,7 +215,7 @@ var tr;
       $('#emailEditar').val(e);
       $('#nomModal').text(n);
     });
-    
+
     $('#txtBusqueda').on('keyup',function(){
       $.ajax({
         method:'POST',
@@ -252,9 +273,25 @@ var tr;
 
   });
 
+  function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
 
+  }
+  // Get the element with id="defaultOpen" and click on it
+  document.getElementById("defaultOpen").click();
 
 
 
 </script>
+
 @endsection

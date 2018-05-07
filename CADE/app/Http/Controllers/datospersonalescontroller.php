@@ -56,19 +56,19 @@ class datospersonalescontroller extends Controller
           'Apellido_p'=>$req->ap_p,
           'Apellido_m'=>$req->ap_m,
           'Fecha_nacimiento'=>$req->fecha_na,
-          'Lugar_nacimiento'=>$req->lugar_na,
-          'Edad'=>'',
-          'Sexo'=>$req->sexo,
-          'Edo_civil'=>$req->edo_civil,
-          'Tipo_sangre'=>$req->tipo_sangre,
-          'Peso'=>$req->peso,
-          'Estatura'=>$req->estatura,
-          'Talla'=>$req->talla,
-          'Calzado'=>$req->calzado,
+          'Lugar_nacimiento'=>'',
+          'Edad'=>$req->edad,
+          'Sexo'=>'',
+          'Edo_civil'=>'',
+          'Tipo_sangre'=>'',
+          'Peso'=>'',
+          'Estatura'=>'',
+          'Talla'=>'',
+          'Calzado'=>'',
           'Domicilio'=>$req->domicilio,
-          'Cp'=>$req->cp,
-          'Localidad'=>$req->localidad,
-          'Tel'=>$req->tel
+          'Cp'=>'',
+          'Localidad'=>'',
+          'Tel'=>''
 
 
 
@@ -79,4 +79,29 @@ class datospersonalescontroller extends Controller
       }
       dd($req->nombre);
     }
+    //Editar
+    public function edit(Request $req){
+      $usuario=Datos_personales::find($req->id);
+      $usuario->Nombre=$req->nameEditar;
+      $usuario->Apellido_p=$req->appEditar;
+      $usuario->Apellido_m=$req->apmEditar;
+      $usuario->Fecha_nacimiento=$req->fEditar;
+      $usuario->Lugar_nacimiento=$req->lEditar;
+      $usuario->Edad=$req->eEditar;
+      $usuario->Sexo=$req->sEditar;
+      $usuario->Edo_civil=$req->edoEditar;
+      $usuario->Tipo_sangre=$req->tiEditar;
+      $usuario->Peso=$req->peEditar;
+      $usuario->Estatura=$req->esEditar;
+      $usuario->Talla=$req->taEditar;
+      $usuario->Calzado=$req->caEditar;
+      $usuario->Domicilio=$req->doEditar;
+      $usuario->Cp=$req->cpEditar;
+      $usuario->Localidad=$req->locEditar;
+      $usuario->Tel=$req->telEditar;
+      $usuario->save();
+
+      return redirect()->to('/admin/benef')
+      ->with('mensaje','Usuario Modificado');
+    }//edit
 }

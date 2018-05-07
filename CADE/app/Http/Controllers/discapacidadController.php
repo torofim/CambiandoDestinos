@@ -18,7 +18,7 @@ class discapacidadController extends Controller
       ->orderby('Id','desc')
       //->take(10)
       ->get();
-    //  dd($registros);
+    // dd($registros);
       return view('formularios.discapacidad')
       ->with('perros2',$registros2);
     }
