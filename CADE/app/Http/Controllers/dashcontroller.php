@@ -36,6 +36,8 @@ class dashcontroller extends Controller
      $categorias='';
      $valores='';
 
+     // Query para saber cuantos hay registrados en casa mes
+    //SELECT month(created_at), count(*) as cuantos from datos_personales group by month(Created_at)
      //las semanas van fijas
      $semanas='"1 al 7","8 al 14","15 al 21","21 al 30"';
      //aqui esta lo feo que es contar los usuarios que esten en el rango del dia
@@ -61,7 +63,7 @@ class dashcontroller extends Controller
             $j=$j+3;
           }
         }
-      
+
      }else{
       //SI ES ANUAL
 

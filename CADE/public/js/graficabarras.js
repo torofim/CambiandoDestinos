@@ -15,8 +15,18 @@ new Chart(document.getElementById("bar-chart"), {
       legend: { display: false },
       title: {
         display: true,
-        text: 'Población de beneficiarios por municipio'
-      }
+        text: 'Población de beneficiarios por municipio',
+        fontSize: 20,
+        fontColor: '#000000'
+
+      },
+      scales: {
+       yAxes: [{
+           ticks: {
+               beginAtZero: true
+           }
+       }]
+   }
     }
 });
 //CHART DE PASTELLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
@@ -36,7 +46,17 @@ new Chart(document.getElementById("bar-chart2"), {
       legend: { display: false },
       title: {
         display: true,
-        text: 'Poblacion de beneficiarios | Apoyo funcional'
-      }
+        text: 'Poblacion de beneficiarios | Apoyo funcional',
+        fontSize: 20,
+        fontColor: '#000000'
+
+      },
+      scales: {
+       yAxes: [{
+           ticks: {
+               beginAtZero: true
+           }
+       }]
+   }
     }
 });

@@ -54,7 +54,8 @@
     <script type="text/javascript">
       var valoresMes=[{!!$valoresMes!!}];
       var semanas=[{!!$semanas!!}];
-
+      var cateva=[{!!$cateva!!}];
+      var valoreseva=[{!!$valoreseva!!}];
     </script>
     <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/chart.min.js') }}"></script>
