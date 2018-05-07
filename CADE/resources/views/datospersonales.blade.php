@@ -23,7 +23,8 @@
                       {{session()->get('mensaje')}}
                     </div>
                   @endif
-                  {{Form::open(array('url'=>'/admin/datospersonales','files'=>true))}}
+
+                  {{Form::open(array('url'=>'admin.datospersonales.edit',$usu->id))}}
                     <div class="input=-group col-md-4">
                       <label for="nombre">Nombre</label><br>
                       {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
@@ -93,7 +94,7 @@
                       {{Form::number('tel','',array('class'=>'form-control','placeholder'=>'Telefono') )}}
                     </div>
                     <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
-                      {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
+                      {{Form::submit('Actualizar',array('class'=>'btn btn-primary'))}}
                     </div>
                   {{Form::close()}}
                 </div>
@@ -101,4 +102,49 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".btn").on('click',function(){
+    var a=$(this).data('Nombre');
+    var b=$(this).data('Apellido_p');
+    var c=$(this).data('Apellido_m');
+    var d=$(this).data('Fecha_nacimiento');
+    var e=$(this).data('Lugar_nacimiento');
+    var f=$(this).data('Edad');
+    var g=$(this).data('Sexo');
+    var h=$(this).data('Edo_civil');
+    var i=$(this).data('Tipo_sangre');
+    var j=$(this).data('Peso');
+    var k=$(this).data('Estatura');
+    var l=$(this).data('Talla');
+    var m=$(this).data('Calzado');
+    var n=$(this).data('Domicilio');
+    var o=$(this).data('Cp');
+    var p=$(this).data('Localidad');
+    var q=$(this).data('Tel');
+
+    $("#nameEditar").val(a);
+    $("#appEditar").val(b);
+    $('#apmEditar').val(c);
+    $("#fEditar").val(d);
+    $("#lEditar").val(e);
+    $('#eEditar').val(f);
+    $("#sEditar").val(g);
+    $("#edoEditar").val(h);
+    $('#tiEditar').val(i);
+    $("#peEditar").val(j);
+    $("#esEditar").val(k);
+    $('#taEditar').val(l);
+    $("#caEditar").val(m);
+    $("#doEditar").val(n);
+    $('#cpEditar').val(o);
+    $("#locEditar").val(p);
+    $("#telEditar").val(q);
+
+  });
+});
+</script>
+
+
+
 @endsection

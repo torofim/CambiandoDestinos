@@ -13,8 +13,9 @@
     <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:600px;">
 
 
-    <button class="tablink" onclick="openPage('benefi', this, '')">Inventario</button>
-    <button class="tablink" onclick="openPage('agregar', this, '')" id="defaultOpen">Agregar Articulo</button>
+    <button class="tablink" style="width:33.33%;" onclick="openPage('benefi', this, '')" id="defaultOpen">Inventario</button>
+    <button class="tablink" style="width:33.33%;" onclick="openPage('agregar', this, '')" >Agregar Articulo</button>
+    <button class="tablink" style="width:33.33%;" onclick="openPage('entrega', this, '')" >Entregas</button>
 
 
     <div id="benefi" class="tabcontent">
@@ -56,7 +57,7 @@
               <td>{{$usu->Nombre_producto}}</td>
               <td>{{$usu->Cantidad}}</td>
               <td>{{$usu->Funcionalidad}}</td>
-              <td><button type="button" class="btn btn-info btn-lg " onclick="location.href='/admin/Formubenefi/{{$usu->Id}}'"
+              <td><button type="button" class="btn btn-info btn-lg "
                  >Editar </button></td>
               <td>
               </td>
@@ -71,10 +72,49 @@
 </div>
 
   <div id="agregar" class="tabcontent">
-    <div class="card-header" style="margin-bottom:5%; font-size:3rem; margin-left:1.5%;">Agregar Articulo</div>
+    <div class="card-header" style="margin-bottom:2%; font-size:3rem; margin-left:1.5%;">Agregar Articulo</div>
+        <div class="card-body">
+          @if($errors->any())
+            <div class="alert alert-warning alert-dismissable">
+              <ul>
+
+              @foreach($errors->all() as $error)
+                <li>{{$error}}</li>
+              @endforeach
+              </ul>
+            </div>
+          @endif
+          @if(session()->has('mensaje'))
+            <div class="alert alert-success">
+              {{session()->get('mensaje')}}
+            </div>
+          @endif
+          {{Form::open(array('url'=>'/admin/inventario','files'=>true))}}
+            <div class="input=-group col-md-4">
+              <label for="nombre">Articulo</label><br>
+              {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+            </div>
+            <div class="input=-group col-md-4">
+              <label for="nombre">Cantidad</label><br>
+              {{Form::number('cant','',array('class'=>'form-control','placeholder'=>'Cantidad') )}}
+            </div>
+            <div class="input=-group col-md-4">
+              <label for="nombre">Funcionalidad</label><br>
+              {{Form::text('fun','',array('class'=>'form-control','placeholder'=>'Funcionalidad') )}}
+            </div>
+            <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
+              {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
+            </div>
+          {{Form::close()}}
 
 </div>
 </div>
+<div id="benefi" class="tabcontent">
+
+</div>
+</div>
+
+
 </div>
 
 
