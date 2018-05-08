@@ -29,7 +29,10 @@
           <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r9" data-mes="10">Octubre</label>
           <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r10" data-mes="11">Noviembre</label>
           <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r11" data-mes="12">Diciembre</label>
+          <label for="r6" class="col-md-2"> <input class="radio" type="radio" name="x" id="r6" data-mes="anual">Anual</label>
+
           <input class="col-md-1 " type="number" name="year" value="" min="2018" max="2050" id="year">
+
           <button class="btn btn-primary col-md-1 col-md-offset-1" id="miLink">ENVIAR</button>
 
         </div>
@@ -61,7 +64,6 @@
       var semanas=[{!!$semanas!!}];
       var cateva=[{!!$cateva!!}];
       var valoreseva=[{!!$valoreseva!!}];
-
     </script>
     <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/chart.min.js') }}"></script>

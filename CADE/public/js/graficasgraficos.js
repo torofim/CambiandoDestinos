@@ -33,7 +33,7 @@ new Chart(document.getElementById("bar-chart"), {
 new Chart(document.getElementById("bar-chart2"), {
     type: 'bar',
     data: {
-      labels: cateva,
+      labels: semanas,
       datasets: [
         {
           label: "Cantidad",
