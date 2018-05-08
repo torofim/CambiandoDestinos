@@ -232,9 +232,8 @@
 
 
 
-<section style="background-color:#dbd2a8;height:950px;margin-top:0%;width: 100%;background-image:url(./img/loga1.png);background-size:contain;background-repeat:no-repeat;background-position:center;" id="cuarto">
-
-
+<section style="background-color:white;height:950px;margin-top:0%;width: 100%;background-size:contain;background-repeat:no-repeat;background-position:center;" id="cuarto">
+    <!--background-image:url(./img/loga1.png);!-->
 </div>
    <div class="col-md-12 titula">
      <h3 >Galería</h3>
@@ -247,18 +246,18 @@
 
 
 
-<section style="background-color:white;height:750px;margin-top:0%;width: 100%;background-image:url(./img/libreta1.jpg);background-size:cover;padding:0;"id="quinto">
+<section style="background-color:white;height:315px;margin-top:0%;width: 100%;background-image:url(./img/libreta1.jpg);background-size:cover;padding:0;"id="quinto">
 
 
 
-<h3 style="margin-left:40%;margin-top:5%;">Contacto</h3>
+<h3 style="margin-left:40%;margin-top:1%;">Contacto</h3>
 <div class="col-md-4 divcon">
-  <div class="col-md-3" style="margin-left:9%; padding:0;margin-top:3%;width:30%;">
+  <div class="col-md-3" style="margin-left:10%; padding:0;margin-top:1%;width:27%;">
     <p><img src="./img/logonavi.png" alt="">Direccion:</p>
     <p><img src="./img/logonavi.png" alt="">Telefono:</p>
     <p><img src="./img/logonavi.png" alt="">Correo Electronico:</p>
   </div>
-  <div class="col-md-3" style="padding:0;margin-top:3%;width:55%; ">
+  <div class="col-md-3" style="padding:0;margin-top:2%;width:60%; ">
     <p>Francisco I. Madero #503 Local #3 <img src="./img/logonavi.png" alt=""></p>
     <p>+52-636-121-2491 <img src="./img/logonavi.png" alt=""> </p>
     <p>fundacioncambiandodestinos@hotmail.com <img src="./img/logonavi.png" alt=""></p>
