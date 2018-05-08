@@ -30,6 +30,7 @@
           <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r10" data-mes="11">Noviembre</label>
           <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r11" data-mes="12">Diciembre</label>
           <label for="r6" class="col-lg-2"> <input class="radio" type="radio" name="x" id="r6" data-mes="anual">Anual</label>
+          <input type="number" name="year" value="" min="2018" max="2050" id="year">
           <button class="btn btn-primary" id="miLink">ENVIAR</button>
 
         </div>
@@ -41,6 +42,9 @@
             <div class="panel panel-default2 col-md-6  col-sm-8 col-xs-12 " style="background-color:white;height:auto;">
               <canvas id="bar-chart2" width="800" height="450"></canvas>
             </div>
+
+          </div>
+          <div class="row col-md-12">
             <div class="panel panel-default2 col-md-6  col-sm-8 col-xs-12 " style="background-color:white;height:auto;">
               <canvas id="bar-chart3" width="800" height="450"></canvas>
             </div>
@@ -71,7 +75,11 @@
         });
         $('#miLink').on('click',function(){
           if(link==''){alert('selecccione un mes');}else{
-            location.href='/admin/graficos/'+link;
+            var year=$('#year').val();
+            if(year==''){alert('seleccione el año');}else{
+              location.href='/admin/graficos/'+link+'/'+year;
+            }
+
           }
         });
 

@@ -9,11 +9,11 @@ use DB;
 
 class graficoscontroller extends Controller
 {
-  public function index($mes='')
+  public function index($mes='',$year='')
   {
     // si no mandan ningun mes por defecto agarrara el mes actual
     if($mes==''){$mes=date('m');}
-
+    if($year==''){$year=date('Y');}
      $benef = DB::select('select COUNT(*) AS total from datos_personales');
      $usuarios = DB::select('select COUNT(*) AS usu from users');
      $taller=DB::select('select COUNT(*) AS btaller from taller');
@@ -93,21 +93,22 @@ class graficoscontroller extends Controller
      }else{
       //SI ES ANUAL
       $semanas='"Enero","Febrero","Marzo","Abril","Mayo",
-      "Junio","Agosto","Septiembre","Ocubre","Noviembre","Diciembre"';
+      "Junio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"';
 
          for($x=1;$x<13;$x++){
             $datoseva=DB::select('
-            select Count(*) AS cuantos from evaluaciones where
+            select Count(*) AS cuantos from evaluacion where
             month(Created_at) = '.$x.'
+            and year(created_at)= '.$year.'
             group by tipo_examen');
-              if(count($datosmes)>0){
-                $valoresMes=$valoresMes.$datoseva{0}->cuantos.',';
+              if(count($datoseva)>0){
+                $valoreseva=$valoreseva.$datoseva{0}->cuantos.',';
               }else{
-                $valoresMes=$valoresMes.'0,';
+                $valoreseva=$valoreseva.'0,';
               }
          }
      }
-     
+
      ///////////////////////////////////////////////////////////////////////////
      for($i=0;$i<count($localidades);$i++){
        $categorias=$categorias.'"'.$localidades{$i}->Localidad.'",';
