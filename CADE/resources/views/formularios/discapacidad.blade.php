@@ -15,13 +15,13 @@
     </div>
   @endif
 
-      {!!Form::open(array('route'=>['admin.discapacidad.edit','0'],'method'=>'GET'))!!}
+      {!!Form::open(array('route'=>['admin.discapacidad.store','0'],'method'=>'POST'))!!}
     <div class="input=-group col-md-4">
       <label for="nombre">Discapacidad</label><br>
       @if(count($perros2)==0)
-        {{Form::text('discapacidad','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+        {{Form::text('discapacidad','',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}
         @else
-        {{Form::text('discapacidad',$perros2[0]->Discapacidad,array('class'=>'form-control','placeholder'=>'Nombre') )}}
+        {{Form::text('discapacidad',$perros2[0]->Discapacidad,array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}
         @endif
     </div>
     <div class="input=-group col-md-4">
@@ -75,7 +75,9 @@
     <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
       {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
     </div>
-    <input type="hidden" name="id" value="{{$perros2[0]->Id}}" >
+
+      <input type="hidden" name="idbene" value="{{$Id}}">
+
 
   {!!Form::close()!!}
 

@@ -51,9 +51,10 @@ class formubeneficontroller extends Controller
           'Bano_diario'=>'',
           'Convivencia_animal'=>'');
         }*/
-        
+
 
       return view('/Formubenefi')
+        ->with('Id',$Id)
         ->with('perros',$registros)
         ->with('perros2',$registros2)
         ->with('perros3',$registros3)
