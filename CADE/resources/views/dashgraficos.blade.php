@@ -29,9 +29,8 @@
           <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r9" data-mes="10">Octubre</label>
           <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r10" data-mes="11">Noviembre</label>
           <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r11" data-mes="12">Diciembre</label>
-          <label for="r6" class="col-lg-2"> <input class="radio" type="radio" name="x" id="r6" data-mes="anual">Anual</label>
-          <input type="number" name="year" value="" min="2018" max="2050" id="year">
-          <button class="btn btn-primary" id="miLink">ENVIAR</button>
+          <input class="col-md-1 " type="number" name="year" value="" min="2018" max="2050" id="year">
+          <button class="btn btn-primary col-md-1 col-md-offset-1" id="miLink">ENVIAR</button>
 
         </div>
         <div class="container-fluid">
@@ -56,19 +55,28 @@
 
     </div><!--CIERRE DEL MAIN-->
     <script type="text/javascript">
+      var nombres=[{!!$nombres!!}];
+      var valores=[{!!$valores!!}];
       var valoresMes=[{!!$valoresMes!!}];
       var semanas=[{!!$semanas!!}];
       var cateva=[{!!$cateva!!}];
       var valoreseva=[{!!$valoreseva!!}];
+
     </script>
     <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/chart.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/graficasgraficos.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/graficabarras.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/side.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
     <script>
       var link='';
+      var actual = (new Date()).getFullYear();
+
+      document.getElementById('year').value=actual;
       $(document).ready(function(){
+
+
         $('.radio').on('click',function(){
           link=$(this).data('mes');
           console.log(link);

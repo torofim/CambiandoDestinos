@@ -1,5 +1,5 @@
 // Bar chart
-new Chart(document.getElementById("bar-chart"), {
+new Chart(document.getElementById("bar-chart3"), {
     type: 'bar',
     data: {
       labels: nombres,
@@ -30,7 +30,7 @@ new Chart(document.getElementById("bar-chart"), {
     }
 });
 //CHART DE PASTELLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL
-new Chart(document.getElementById("bar-chart2"), {
+new Chart(document.getElementById("bar-chart4"), {
     type: 'bar',
     data: {
       labels: semanas,

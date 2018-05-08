@@ -33,7 +33,7 @@ new Chart(document.getElementById("bar-chart"), {
 new Chart(document.getElementById("bar-chart2"), {
     type: 'bar',
     data: {
-      labels: semanas,
+      labels: cateva,
       datasets: [
         {
           label: "Cantidad",
@@ -62,7 +62,7 @@ new Chart(document.getElementById("bar-chart2"), {
 });
 
 /////////////////////
-new Chart(document.getElementById("bar-chart3"), {
+new Chart(document.getElementById("bar-chart5"), {
     type: 'bar',
     data: {
       labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
@@ -93,7 +93,7 @@ new Chart(document.getElementById("bar-chart3"), {
     }
 });
 /////////////////////
-new Chart(document.getElementById("bar-chart4"), {
+new Chart(document.getElementById("bar-chart6"), {
     type: 'bar',
     data: {
       labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
