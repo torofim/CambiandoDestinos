@@ -1,6 +1,4 @@
-@extends('layouts.layout')
 
-@section('principal')
 <div class="container">
     <div class="row justify-content-center">
         <div class="col-md-8">
@@ -24,79 +22,148 @@
                     </div>
                   @endif
 
-                  {{Form::open(array('url'=>'admin.datospersonales.edit',$usu->id))}}
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Nombre</label><br>
-                      {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
-                    </div>
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Apellido Paterno</label><br>
-                      {{Form::text('ap_p','',array('class'=>'form-control','placeholder'=>'Apellido paterno') )}}
-                    </div>
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Apellido materno</label><br>
-                      {{Form::text('ap_m','',array('class'=>'form-control','placeholder'=>'Apellido materno') )}}
-                    </div>
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Fecha nacimiento </label><br>
-                      {{Form::date('fecha_na','',array('class'=>'form-control','placeholder'=>'Fecha nacimiento') )}}
-                    </div>
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Lugar nacimiento </label><br>
-                      {{Form::text('lugar_na','',array('class'=>'form-control','placeholder'=>'Lugar nacimiento') )}}
-                    </div>
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Edad </label><br>
-                      {{Form::number('edad','',array('class'=>'form-control','placeholder'=>'Edad') )}}
-                    </div>
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Sexo </label><br>
-                      {{Form::text('sexo','',array('class'=>'form-control','placeholder'=>'M o F') )}}
-                    </div>
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Estado civil </label><br>
-                      {{Form::text('edo_civil','',array('class'=>'form-control','placeholder'=>'Estado civil') )}}
-                    </div>
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Tipo sanguineo </label><br>
-                      {{Form::text('tipo_sangre','',array('class'=>'form-control','placeholder'=>'Tipo sangre') )}}
-                    </div>
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Peso </label><br>
-                      {{Form::text('peso','',array('class'=>'form-control','placeholder'=>'Tipo peso') )}}
-                    </div>
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Estatura </label><br>
-                      {{Form::number('estatura','',array('class'=>'form-control','placeholder'=>'Ejemplo: 1.6') )}}
-                    </div>
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Talla </label><br>
-                      {{Form::number('talla','',array('class'=>'form-control','placeholder'=>'Talla') )}}
-                    </div>
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Calzado </label><br>
-                      {{Form::number('calzado','',array('class'=>'form-control','placeholder'=>'Calzado') )}}
-                    </div>
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Domicilio </label><br>
-                      {{Form::text('domicilio','',array('class'=>'form-control','placeholder'=>'Domicilio') )}}
-                    </div>
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Codigo Postal </label><br>
-                      {{Form::number('cp','',array('class'=>'form-control','placeholder'=>'Cp') )}}
-                    </div>
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Localidad </label><br>
-                      {{Form::text('localidad','',array('class'=>'form-control','placeholder'=>'Localidad') )}}
-                    </div>
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Telefono </label><br>
-                      {{Form::number('tel','',array('class'=>'form-control','placeholder'=>'Telefono') )}}
-                    </div>
-                    <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
-                      {{Form::submit('Actualizar',array('class'=>'btn btn-primary'))}}
-                    </div>
-                  {{Form::close()}}
+                  {!!Form::open(array('route'=>['admin.datospersonales.edit','0'],'method'=>'GET'))!!}
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Nombre</label><br>
+                    @if(count($perros)==0)
+                      {{Form::text('nameEditar','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+                      @else
+                      {{Form::text('nameEditar',$perros[0]->Nombre,array('class'=>'form-control','placeholder'=>'Nombre') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Apellido Paterno</label><br>
+                    @if(count($perros)==0)
+                      {{Form::text('appEditar','',array('class'=>'form-control','placeholder'=>'Apellido paterno') )}}
+                      @else
+                      {{Form::text('appEditar',$perros[0]->Apellido_p,array('class'=>'form-control','placeholder'=>'Apellido paterno') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Apellido materno</label><br>
+                    @if(count($perros)==0)
+                      {{Form::text('apmEditar','',array('class'=>'form-control','placeholder'=>'Apellido materno') )}}
+                      @else
+                      {{Form::text('apmEditar',$perros[0]->Apellido_m,array('class'=>'form-control','placeholder'=>'Apellido materno') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Fecha nacimiento </label><br>
+                    @if(count($perros)==0)
+                      {{Form::date('fEditar','',array('class'=>'form-control','placeholder'=>'Fecha nacimiento') )}}
+                      @else
+                      {{Form::date('fEditar',$perros[0]->Fecha_nacimiento,array('class'=>'form-control','placeholder'=>'Fecha nacimiento') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Lugar nacimiento </label><br>
+                    @if(count($perros)==0)
+                      {{Form::text('lEditar','',array('class'=>'form-control','placeholder'=>'Lugar nacimiento') )}}
+                      @else
+                      {{Form::text('lEditar',$perros[0]->Lugar_nacimiento,array('class'=>'form-control','placeholder'=>'Lugar nacimiento') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Edad </label><br>
+                    @if(count($perros)==0)
+                      {{Form::number('eEditar','',array('class'=>'form-control','placeholder'=>'Edad') )}}
+                      @else
+                      {{Form::number('eEditar',$perros[0]->Edad,array('class'=>'form-control','placeholder'=>'Edad') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Sexo </label><br>
+                    @if(count($perros)==0)
+                      {{Form::text('sEditar','',array('class'=>'form-control','placeholder'=>'M o F') )}}
+                      @else
+                      {{Form::text('sEditar',$perros[0]->Sexo,array('class'=>'form-control','placeholder'=>'M o F') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Estado civil </label><br>
+                    @if(count($perros)==0)
+                      {{Form::text('edoEditar','',array('class'=>'form-control','placeholder'=>'Estado civil') )}}
+                      @else
+                      {{Form::text('edoEditar',$perros[0]->Edo_civil,array('class'=>'form-control','placeholder'=>'Estado civil') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Tipo sanguineo </label><br>
+                    @if(count($perros)==0)
+                      {{Form::text('tiEditar','',array('class'=>'form-control','placeholder'=>'Tipo sangre') )}}
+                      @else
+                      {{Form::text('tiEditar',$perros[0]->Tipo_sangre,array('class'=>'form-control','placeholder'=>'Tipo sangre') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Peso </label><br>
+                    @if(count($perros)==0)
+                      {{Form::text('peEditar','',array('class'=>'form-control','placeholder'=>'Tipo peso') )}}
+                      @else
+                      {{Form::text('peEditar',$perros[0]->Peso,array('class'=>'form-control','placeholder'=>'Tipo peso') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Estatura </label><br>
+                    @if(count($perros)==0)
+                      {{Form::number('esEditar','',array('class'=>'form-control','placeholder'=>'Ejemplo: 1.6') )}}
+                      @else
+                      {{Form::number('esEditar',$perros[0]->Estatura,array('class'=>'form-control','placeholder'=>'Ejemplo: 1.6') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Talla </label><br>
+                    @if(count($perros)==0)
+                      {{Form::number('taEditar','',array('class'=>'form-control','placeholder'=>'Talla') )}}
+                      @else
+                      {{Form::number('taEditar',$perros[0]->Talla,array('class'=>'form-control','placeholder'=>'Talla') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Calzado </label><br>
+                    @if(count($perros)==0)
+                      {{Form::number('caEditar','',array('class'=>'form-control','placeholder'=>'Calzado') )}}
+                      @else
+                      {{Form::number('caEditar',$perros[0]->Calzado,array('class'=>'form-control','placeholder'=>'Calzado') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Domicilio </label><br>
+                    @if(count($perros)==0)
+                      {{Form::text('doEditar','',array('class'=>'form-control','placeholder'=>'Domicilio') )}}
+                      @else
+                      {{Form::text('doEditar',$perros[0]->Domicilio,array('class'=>'form-control','placeholder'=>'Domicilio') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Codigo Postal </label><br>
+                    @if(count($perros)==0)
+                      {{Form::number('cpEditar','',array('class'=>'form-control','placeholder'=>'Cp') )}}
+                      @else
+                      {{Form::number('cpEditar',$perros[0]->Cp,array('class'=>'form-control','placeholder'=>'Cp') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Localidad </label><br>
+                    @if(count($perros)==0)
+                      {{Form::text('locEditar','',array('class'=>'form-control','placeholder'=>'Localidad') )}}
+                      @else
+                        {{Form::text('locEditar',$perros[0]->Localidad,array('class'=>'form-control','placeholder'=>'Localidad') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Telefono </label><br>
+                    @if(count($perros)==0)
+                      {{Form::number('telEditar','',array('class'=>'form-control','placeholder'=>'Telefono') )}}
+                      @else
+                      {{Form::number('telEditar',$perros[0]->Tel,array('class'=>'form-control','placeholder'=>'Telefono') )}}
+                      @endif
+                  </div>
+                  <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;margin-bottom:2%;">
+                    {{Form::submit('Actualizar',array('class'=>'btn btn-primary'))}}
+                  </div>
+                  <input type="hidden" name="id" value="{{$perros[0]->Id}}" >
+                  {!!Form::close()!!}
                 </div>
             </div>
         </div>
@@ -144,7 +211,3 @@ $(document).ready(function(){
   });
 });
 </script>
-
-
-
-@endsection

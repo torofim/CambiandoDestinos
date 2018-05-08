@@ -100,8 +100,8 @@ class datospersonalescontroller extends Controller
       $usuario->Localidad=$req->locEditar;
       $usuario->Tel=$req->telEditar;
       $usuario->save();
-
-      return redirect()->to('/admin/benef')
+      //dd($usuario);
+      return redirect()->to('/admin/Formubenefi/'.$req->id)
       ->with('mensaje','Usuario Modificado');
     }//edit
 }
