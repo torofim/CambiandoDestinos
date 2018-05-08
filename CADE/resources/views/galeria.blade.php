@@ -112,7 +112,7 @@
 </div>
 
 <div id="myModal" class="modal">
-  <span class="close cursor" onclick="closeModal()">&times;</span>
+  <span class="close cursor" onclick="closeModal()" style="color:white;">&times;</span>
   <div class="modal-content">
 
     <div class="mySlides">
