@@ -29,7 +29,8 @@ class inventarioController extends Controller
       $validator =Validator::make($req->all(),[
         'Nombre_articulo'=>'max:255',
         'Cantidad'=>'max:255',
-        'Funcionalidad'=>'max:255'
+        'Funcionalidad'=>'max:255',
+        'Tipo'=>'max:255'
       ]);
       if($validator->fails()){
         //quiere decir que no estan correctos
@@ -40,7 +41,8 @@ class inventarioController extends Controller
         Inventario::create([
           'Nombre_producto'=>$req->nombre,
           'Cantidad'=>$req->cant,
-          'Funcionalidad'=>$req->fun
+          'Funcionalidad'=>$req->fun,
+          'Tipo'=>$req->tipo
         ]);
         return redirect()->to('/admin/inventario')
         ->with('mensaje','datos agregados');

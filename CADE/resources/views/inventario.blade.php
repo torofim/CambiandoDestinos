@@ -43,11 +43,11 @@
           <thead>
             <tr>
               <td>Id</td>
-              <td>Nombre</td>
-              <td>Apellido</td>
-              <td>Apellido</td>
+              <td>Articulo</td>
+              <td>Cantidad</td>
+              <td>Funcionalidad</td>
+              <td>Tipo</td>
               <td>Editar</td>
-              <td>Eliminar</td>
             </tr>
           </thead>
           <tbody id="tbody">
@@ -57,8 +57,8 @@
               <td>{{$usu->Nombre_producto}}</td>
               <td>{{$usu->Cantidad}}</td>
               <td>{{$usu->Funcionalidad}}</td>
-              <td><button type="button" class="btn btn-info btn-lg "
-                 >Editar </button></td>
+              <td>{{$usu->Tipo}}</td>
+              <td><button type="button" class="btn btn-info btn-lg ">Editar </button></td>
               <td>
               </td>
               </tr>
@@ -101,6 +101,10 @@
             <div class="input=-group col-md-4">
               <label for="nombre">Funcionalidad</label><br>
               {{Form::text('fun','',array('class'=>'form-control','placeholder'=>'Funcionalidad') )}}
+            </div>
+            <div class="input=-group col-md-4">
+              <label for="nombre">Tipo</label><br>
+              {{Form::text('tipo','',array('class'=>'form-control','placeholder'=>'Funcionalidad') )}}
             </div>
             <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
               {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
