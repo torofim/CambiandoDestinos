@@ -42,7 +42,7 @@ class graficoscontroller extends Controller
         $i=1;$j=7;
         for($x=0;$x<4;$x++){
             $datosmes=DB::select('
-            select Count(*) AS cuantos from datos_personales where
+            select Count(*) AS cuantos from tabla_comida where
             month(Created_at) = '.$mes.'
             and day(Created_at)>='.$i.' and day(Created_at)<='.$j.'');
 
@@ -51,8 +51,38 @@ class graficoscontroller extends Controller
           }else{
             $valoresMes=$valoresMes.'0,';
           }
-          #/////////////////////////////////////////////////////////////////////////////
-          $datoseva=DB::select('
+
+          $i=$i+7;
+          $j=$j+7;
+          if($x==2){
+            $j=$j+3;
+          }
+        }
+     }else{
+      //SI ES ANUAL
+      $semanas='"Enero","Febrero","Marzo","Abril","Mayo",
+      "Junio","Agosto","Septiembre","Ocubre","Noviembre","Diciembre"';
+
+         for($x=1;$x<13;$x++){
+            $datosmes=DB::select('
+            select Count(*) AS cuantos from datos_personales where
+            month(Created_at) = '.$x.'
+            and year(created_at)='.$year.'
+            group by Nombre');
+              if(count($datosmes)>0){
+                $valoresMes=$valoresMes.$datosmes{0}->cuantos.',';
+              }else{
+                $valoresMes=$valoresMes.'0,';
+              }
+
+         }
+     }
+     ///////////////////////////////////////////////////////////////////////////
+
+     if($mes!='anual'){
+        $i=1;$j=7;
+        for($x=0;$x<4;$x++){
+            $datoseva=DB::select('
             select Count(*) AS cuantos from evaluacion where
             month(Created_at) = '.$mes.'
             and year(Created_at)= '.$year.'
@@ -63,9 +93,8 @@ class graficoscontroller extends Controller
             }else{
               $valoreseva=$valoreseva.'0,';
             }
-            #/////////////////////////////////////////////////////////////////////////////
+
             $datosplatos=DB::select('
-<<<<<<< HEAD
               select Count(*) as cuantos from tabla_comida where
               month(Created_at) = '.$mes.'
               and year(Created_at)= '.$year.'
@@ -76,20 +105,10 @@ class graficoscontroller extends Controller
             #    and year(Created_at)= '.$year.'
             #    and day(Created_at)>='.$i.' and day(Created_at)<='.$j.'<br>');
             if(count($datosplatos)>0){
-=======
-             select Count(*) as cuantos from tabla_comida where
-             month(Created_at) = '.$mes.'
-             and year(Created_at)= '.$year.'
-             and day(Created_at)>='.$i.' and day(Created_at)<='.$j.'');
-
-             if(count($datosplatos)>0){
->>>>>>> 0ed71be7445c6831f9242a2cd50577f22c8f5de3
               $valoresplatos=$valoresplatos.$datosplatos{0}->cuantos.',';
             }else{
               $valoresplatos=$valoresplatos.'0,';
             }
-            #//////////////////////////////////////////////////////////////////////////////
-
 
           $i=$i+7;
           $j=$j+7;
@@ -97,63 +116,43 @@ class graficoscontroller extends Controller
             $j=$j+3;
           }
         }
-<<<<<<< HEAD
 
       
-=======
->>>>>>> 0ed71be7445c6831f9242a2cd50577f22c8f5de3
      }else{
       //SI ES ANUAL
       $semanas='"Enero","Febrero","Marzo","Abril","Mayo",
-      "Junio","Agosto","Septiembre","Ocubre","Noviembre","Diciembre"';
+      "Junio","Agosto","Septiembre","Octubre","Noviembre","Diciembre"';
 
-         for($x=1;$x<13;$x++){
-            $datosmes=DB::select('
-            select Count(*) AS cuantos from datos_personales where
-            month(Created_at) = '.$x.'
-            and year(created_at)='.$year.'');
+      for($x=1;$x<13;$x++){
+         $datoseva=DB::select('
+         select Count(*) AS cuantos from evaluacion where
+         month(Created_at) = '.$x.'
+         and year(created_at)='.$year.'
+         group by tipo_examen');
 
-            if(count($datosmes)>0){
-              $valoresMes=$valoresMes.$datosmes{0}->cuantos.',';
-            }else{
-              $valoresMes=$valoresMes.'0,';
-            }
-            #///////////////////////////////////////////////////////////////////
-            $datoseva=DB::select('
-              select Count(*) AS cuantos from evaluacion where
-              month(Created_at) = '.$x.'
-              and year(created_at)='.$year.'
-              group by tipo_examen');
-
-            if(count($datoseva)>0){
-               $valoreseva=$valoreseva.$datoseva{0}->cuantos.',';
-
-             }else{
-               $valoreseva=$valoreseva.'0,';
-             }
-             #///////////////////////////////////////////////////////////////////
-             $datosplatos=DB::select('
-             select Count(*) as cuantos from tabla_comida where
-             month(Created_at) = '.$x.'
-             and year(Created_at)= '.$year.'
-             group by Nombre');
+         $datosplatos=DB::select('
+         select Count(*) as cuantos from tabla_comida where
+         month(Created_at) = '.$x.'
+         and year(Created_at)= '.$year.'
+         group by Nombre');
 
 
-             echo('select Count(*) AS cuantos from evaluacion where
-             month(Created_at) = '.$x.'
-             and year(created_at)='.$year.'
-             group by tipo_examen <br>');
+              if(count($datoseva)>0){
+                $valoreseva=$valoreseva.$datoseva{0}->cuantos.',';
 
+              }else{
+                $valoreseva=$valoreseva.'0,';
+              }
 
-             if(count($datosplatos)>0){
-               $valoresplatos=$valoresplatos.$datosplatos{0}->cuantos.',';
-             }else{
-               $valoresplatos=$valoresplatos.'0,';
-             }
+              if(count($datosplatos)>0){
+                $valoresplatos=$valoresplatos.$datosplatos{0}->cuantos.',';
+              }else{
+                $valoresplatos=$valoresplatos.'0,';
+              }
+
          }
 
      }
-     ///////////////////////////////////////////////////////////////////////////
 
      ///////////////////////////////////////////////////////////////////////////
 
@@ -179,6 +178,8 @@ class graficoscontroller extends Controller
 
 
 
+
+
      return view('dashgraficos', ['benef' => $benef])
      ->with('nombres',$categorias)
      ->with('valores',$valores)
@@ -192,10 +193,5 @@ class graficoscontroller extends Controller
        #->width('nombre','EQUIPOS DE FUTBOL');
        #si se hace esto y el js esta en el blade solo se imprime como php {{$nombre}}
       #return view('principal');
-      #  echo('
-            #    select Count(*) as cuantos from tabla_comida where
-            #    month(Created_at) = '.$mes.'
-            #    and year(Created_at)= '.$year.'
-            #    and day(Created_at)>='.$i.' and day(Created_at)<='.$j.'<br>');
   }
 }
