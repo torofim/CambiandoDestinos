@@ -99,11 +99,11 @@ class graficoscontroller extends Controller
               month(Created_at) = '.$mes.'
               and year(Created_at)= '.$year.'
               and day(Created_at)>='.$i.' and day(Created_at)<='.$j.'');
-              echo('
-                select Count(*) as cuantos from tabla_comida where
-                month(Created_at) = '.$mes.'
-                and year(Created_at)= '.$year.'
-                and day(Created_at)>='.$i.' and day(Created_at)<='.$j.'<br>');
+            #  echo('
+            #    select Count(*) as cuantos from tabla_comida where
+            #    month(Created_at) = '.$mes.'
+            #    and year(Created_at)= '.$year.'
+            #    and day(Created_at)>='.$i.' and day(Created_at)<='.$j.'<br>');
             if(count($datosplatos)>0){
               $valoresplatos=$valoresplatos.$datosplatos{0}->cuantos.',';
             }else{
@@ -117,7 +117,7 @@ class graficoscontroller extends Controller
           }
         }
 
-        dd($valoresplatos);
+      
      }else{
       //SI ES ANUAL
       $semanas='"Enero","Febrero","Marzo","Abril","Mayo",
