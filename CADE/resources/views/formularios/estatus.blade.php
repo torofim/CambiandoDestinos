@@ -15,7 +15,7 @@
     </div>
   @endif
 
-    {{Form::open(array('url'=>'formularios.estatus','files'=>true))}}
+    {!!Form::open(array('route'=>['admin.estatus.store','0'],'method'=>'POST'))!!}
     <div class="input=-group col-md-4">
       <label for="nombre">Jubilado</label><br>
       @if(count($perros5)==0)
@@ -53,6 +53,8 @@
       {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
     </div>
 
-  {{Form::close()}}
+    <input type="hidden" name="idbo" value="{{$Id}}">
+
+  {!!Form::close()!!}
 
 </div>

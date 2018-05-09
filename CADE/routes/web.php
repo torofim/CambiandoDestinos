@@ -44,15 +44,15 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   //Route::get('/',function(){return "yeah";});
   Route::get('/usuarios','usuarioscontroller@index')->name('usuarios');
   Route::get('/archivos','archivoscontroller@index')->name('archivos');
-  Route::get('/estatus/{Id}','Booleanoscontroller@index')->name('estatus');
-  Route::get('/centrosalud','Centro_saludcontroller@index')->name('centrosalud');
+  Route::get('/estatus/{Id}','BooleanosController@index')->name('estatus');
+  Route::get('/centrosalud/{Id}','Centro_saludcontroller@index')->name('centrosalud');
   Route::get('/datospersonales','datospersonalescontroller@index')->name('datospersonales');
-  Route::get('/evaluacion/{Id}','evaluacioncontroller@index')->name('evaluacion');
+  Route::get('/evaluacion/{Id}','EvaluacionController@index')->name('evaluacion');
   Route::get('/inventario_e','inventario_econtroller@index')->name('inventario_e');
   Route::get('/inventario_m','inventario_mcontroller@index')->name('inventario_m');
   Route::get('/comida','comidacaontroller@index')->name('comida');
   Route::get('/taller','tallercontroller@index')->name('taller');
-  Route::get('/tutor/{Id}','tutorcontroller@index')->name('tutor');
+  Route::get('/tutor/{Id}','tutorController@index')->name('tutor');
   Route::get('/visitas','visitascontroller@index')->name('visitas');
   Route::post('/usuarios/buscar','usuarioscontroller@buscar');
   Route::get('/formularios','dashcontroller@form');
@@ -77,7 +77,10 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::resource('usuarios','usuarioscontroller');
   Route::resource('archivos','archivoscontroller');
   Route::resource('centrosalud','Centro_Saludcontroller'); //Este tambien ya esta
-  Route::resource('datospersonales','datospersonalescontroller'); //ESTE YA ESTA
+  Route::resource('datospersonales','datospersonalescontroller');
+  Route::resource('estatus','BooleanosController');
+  Route::resource('tutor','tutorController');
+  Route::resource('evaluacion','EvaluacionController'); //ESTE YA ESTA
 
 });
 

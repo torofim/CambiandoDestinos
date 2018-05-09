@@ -7,8 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Centro_salud extends Model
 {
 
-  protected $table='archivos';
+  protected $table='datos_centro_salud';
+  protected $primaryKey='Id';
   protected $fillable=[
-    'Edad','Peso','Presion_arterial'
+    'Id','Edad','Peso','Presion_arterial','Fecha_centrosalud'
   ];
 }

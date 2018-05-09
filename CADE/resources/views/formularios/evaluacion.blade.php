@@ -15,7 +15,7 @@
     </div>
   @endif
 
-    {{Form::open(array('url'=>'formularios.evaluacion','files'=>true))}}
+    {!!Form::open(array('route'=>['admin.evaluacion.store','0'],'method'=>'POST'))!!}
     <div class="input=-group col-md-4">
       <label for="nombre">Examen</label><br>
       @if(count($perros3)==0)
@@ -27,16 +27,17 @@
     <div class="input=-group col-md-4">
       <label for="nombre">Puntuacion</label><br>
       @if(count($perros3)==0)
-        {{Form::text('puntu','',array('class'=>'form-control','placeholder'=>'Apellido paterno') )}}
+        {{Form::text('puntuacion','',array('class'=>'form-control','placeholder'=>'Apellido paterno') )}}
         @else
-        {{Form::text('puntu',$perros3[0]->puntuacion,array('class'=>'form-control','placeholder'=>'Apellido paterno') )}}
+        {{Form::text('puntuacion',$perros3[0]->puntuacion,array('class'=>'form-control','placeholder'=>'Apellido paterno') )}}
         @endif
     </div>
     <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
       {{Form::submit('Actualizar',array('class'=>'btn btn-primary'))}}
     </div>
 
+      <input type="hidden" name="idev" value="{{$Id}}">
 
-  {{Form::close()}}
+  {!!Form::close()!!}
 
 </div>
