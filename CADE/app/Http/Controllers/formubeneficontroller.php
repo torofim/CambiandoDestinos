@@ -42,6 +42,12 @@ class formubeneficontroller extends Controller
         ->orderby('Id','desc')
         //->take(10)
         ->get();
+        $registros6=\DB::table('datos_centro_salud')
+
+        ->where('Id','=',$Id)
+        ->orderby('Id','desc')
+        //->take(10)
+        ->get();
         //dd($registros5);
       /*  if(count($registros5)==0){
           $registros5[]=array(
@@ -59,7 +65,8 @@ class formubeneficontroller extends Controller
         ->with('perros2',$registros2)
         ->with('perros3',$registros3)
         ->with('perros4',$registros4)
-        ->with('perros5',$registros5);
+        ->with('perros5',$registros5)
+        ->with('perros6',$registros6);
 
     }
 

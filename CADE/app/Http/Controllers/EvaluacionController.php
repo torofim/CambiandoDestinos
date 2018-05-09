@@ -3,10 +3,11 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Http\Controllers\Controller;
 use Validator;
 use App\Evaluacion;
 
-class Evaluacioncontroller extends Controller
+class EvaluacionController extends Controller
 {
     //
     public function __construct(){
@@ -19,37 +20,45 @@ class Evaluacioncontroller extends Controller
       ->orderby('Id','desc')
       //->take(10)
       ->get();
+
       return view('formularios.evaluacion')
       ->with('perros3',$registros3);
+
     }
     public function store(Request $req){
 
       $validator =Validator::make($req->all(),[
-        'tipo_examen'=>'required|max:255',
+        'examen'=>'required|max:255',
         'puntuacion'=>'required|max:255',
       ]);
       if($validator->fails()){
         //quiere decir que no estan correctos
-        return redirect('formularios.evaluacion')
+        //dd($registros3);
+        return redirect('admin.Formubenefi')
           ->withInput()
           ->withErrors($validator);
       }else{
-        Centro_salud::create([
-          'tipo_examen'=>$req->tipo_examen,
+        $usuario=evaluacion::find($req->idev);
+
+        if(($usuario)==null){
+        evaluacion::create([
+          'Id'=>$req->idev,
+          'tipo_examen'=>$req->examen,
           'puntuacion'=>$req->puntuacion,
         ]);
-        return redirect()->to('formularios.evaluacion')
+        return redirect()->to('/admin/Formubenefi/'.$req->idev)
         ->with('mensaje','datos agregados');
-      }
-      dd($req->nombre);
-    }
-    public function edit(Request $req){
-      $usuario=User::find($req->id);
-      $usuario->tipo_examen=$req->exaEditar;
-      $usuario->puntuacion=$req->puntEditar;
+      }else{
+
+      $usuario->tipo_examen=$req->examen;
+      $usuario->puntuacion=$req->puntuacion;
       $usuario->save();
 
-      return redirect()->to('Formubenefi')
+      return redirect()->to('/admin/Formubenefi/'.$req->idev)
       ->with('mensaje','Usuario Modificado');
     }
+
+  }
+    dd($req->nombre);
+}
 }

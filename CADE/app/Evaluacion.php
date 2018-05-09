@@ -7,9 +7,10 @@ use Illuminate\Database\Eloquent\Model;
 class Evaluacion extends Model
 {
     //
+    protected $primaryKey='Id';
     protected $table='evaluacion';
-    protected $fillable[
-      'tipo_examen','puntuacion'
+    protected $fillable=[
+    'Id','tipo_examen','puntuacion'
     ];
 
 }
