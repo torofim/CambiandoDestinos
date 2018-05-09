@@ -96,6 +96,7 @@
                <td></td>
                <td>Discapacidad</td>
                <td>Causa</td>
+               <td>Requiere apoyo</td>
              </thead>
              <tbody>
                <tr>
@@ -105,6 +106,7 @@
                  <td>{{$x->apellido_m}}</td>
                  <td>{{$x->discapacidad}}</td>
                  <td>{{$x->Causa_discapacidad}}</td>
+                 <td>{{$x->Requiere_apoyo_funcional}}</td>
                  <tr>
 
                  </tr>
