@@ -64,6 +64,8 @@
       var semanas=[{!!$semanas!!}];
       var cateva=[{!!$cateva!!}];
       var valoreseva=[{!!$valoreseva!!}];
+      var catplatos=[{!!$catplatos!!}];
+      var valoresplatos=[{!!$valoresplatos!!}];
     </script>
     <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/chart.min.js') }}"></script>

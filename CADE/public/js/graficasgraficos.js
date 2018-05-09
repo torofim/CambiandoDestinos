@@ -14,7 +14,7 @@ new Chart(document.getElementById("bar-chart"), {
       legend: { display: false },
       title: {
         display: true,
-        text: 'Comida caliente',
+        text: 'Beneficiarios agregados',
         fontSize: 20,
         fontColor: '#000000'
 

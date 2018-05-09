@@ -38,7 +38,7 @@ new Chart(document.getElementById("bar-chart4"), {
         {
           label: "Cantidad",
           backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#252525"],
-          data: valoresMes
+          data: valoresplatos
         }
       ]
     },
@@ -46,7 +46,7 @@ new Chart(document.getElementById("bar-chart4"), {
       legend: { display: false },
       title: {
         display: true,
-        text: 'Poblacion de beneficiarios | Apoyo funcional',
+        text: 'Platos comida caliente',
         fontSize: 20,
         fontColor: '#000000'
 

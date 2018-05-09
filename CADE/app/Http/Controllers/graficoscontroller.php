@@ -26,6 +26,10 @@ class graficoscontroller extends Controller
      $cateva='';
      $valoreseva='';
      $val='';
+     $platos=DB::select('select Nombre, count(*) as cantidad from tabla_comida group by Nombre');
+     $catplatos='';
+     $valoresp='';
+     $valoresplatos='';
      // Query para saber cuantos hay registrados en casa mes
     //SELECT month(created_at), count(*) as cuantos from datos_personales group by month(Created_at)
      //las semanas van fijas
@@ -84,17 +88,36 @@ class graficoscontroller extends Controller
             and year(Created_at)= '.$year.'
             and day(Created_at)>='.$i.' and day(Created_at)<='.$j.'');
 
-          if(count($datoseva)>0){
-            $valoreseva=$valoreseva.$datoseva{0}->cuantos.',';
-          }else{
-            $valoreseva=$valoreseva.'0,';
-          }
+            if(count($datoseva)>0){
+              $valoreseva=$valoreseva.$datoseva{0}->cuantos.',';
+            }else{
+              $valoreseva=$valoreseva.'0,';
+            }
+
+            $datosplatos=DB::select('
+              select Count(*) as cuantos from tabla_comida where
+              month(Created_at) = '.$mes.'
+              and year(Created_at)= '.$year.'
+              and day(Created_at)>='.$i.' and day(Created_at)<='.$j.'');
+              echo('
+                select Count(*) as cuantos from tabla_comida where
+                month(Created_at) = '.$mes.'
+                and year(Created_at)= '.$year.'
+                and day(Created_at)>='.$i.' and day(Created_at)<='.$j.'<br>');
+            if(count($datosplatos)>0){
+              $valoresplatos=$valoresplatos.$datosplatos{0}->cuantos.',';
+            }else{
+              $valoresplatos=$valoresplatos.'0,';
+            }
+
           $i=$i+7;
           $j=$j+7;
           if($x==2){
             $j=$j+3;
           }
         }
+
+        dd($valoresplatos);
      }else{
       //SI ES ANUAL
       $semanas='"Enero","Febrero","Marzo","Abril","Mayo",
@@ -106,8 +129,13 @@ class graficoscontroller extends Controller
          month(Created_at) = '.$x.'
          and year(created_at)='.$year.'
          group by tipo_examen');
-            //ESTE QUERY ME DA [] VACIO HAY QUE VER PORQUE
-            //no esta tomando el mes
+
+         $datosplatos=DB::select('
+         select Count(*) as cuantos from tabla_comida where
+         month(Created_at) = '.$x.'
+         and year(Created_at)= '.$year.'
+         group by Nombre');
+
 
               if(count($datoseva)>0){
                 $valoreseva=$valoreseva.$datoseva{0}->cuantos.',';
@@ -116,7 +144,14 @@ class graficoscontroller extends Controller
                 $valoreseva=$valoreseva.'0,';
               }
 
+              if(count($datosplatos)>0){
+                $valoresplatos=$valoresplatos.$datosplatos{0}->cuantos.',';
+              }else{
+                $valoresplatos=$valoresplatos.'0,';
+              }
+
          }
+
      }
 
      ///////////////////////////////////////////////////////////////////////////
@@ -132,6 +167,14 @@ class graficoscontroller extends Controller
        $val=$val.$eval{$i}->cantidad.',';
      }
 
+     for($i=0;$i<count($datosplatos);$i++){
+       $catplatos=$catplatos.'"'.$datosplatos {$i}->cuantos.'",';
+       $valoresp=$valoresp.$platos{$i}->cantidad.',';
+     }
+
+
+
+
 
 
 
@@ -143,7 +186,9 @@ class graficoscontroller extends Controller
      ->with('valoresMes',$valoresMes)
      ->with('semanas',$semanas)
      ->with('cateva',$cateva)
-     ->with('valoreseva',$valoreseva);
+     ->with('valoreseva',$valoreseva)
+     ->with('catplatos',$catplatos)
+     ->with('valoresplatos',$valoresplatos);
        #return view('LEFTMENU',['usuarios' => $usuarios]);
        #->width('nombre','EQUIPOS DE FUTBOL');
        #si se hace esto y el js esta en el blade solo se imprime como php {{$nombre}}
