@@ -3,7 +3,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header" style="margin-bottom:5%; font-size:3rem; margin-left:1.5%;">Datos Del Centro de Salud</div>
+                <div class="card-header" style="margin-bottom:5%; font-size:3rem; margin-left:1.5%;"></div>
 
                 <div class="card-body">
                   @if($errors->any())
@@ -52,10 +52,10 @@
                         {{Form::date('fecha','',array('class'=>'form-control','placeholder'=>'Fecha') )}}
 
                     </div>
-                    <div class="input-group col-md-4" style="margin-left:2%; padding-top:2.5%;">
+                    <div class="input-group col-md-4" style="margin-left:4%; padding-top:2.5%;top:10%;">
                       {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
                     </div>
-                    <input type="text" name="idis" value="{{$Id_bene}}">
+                    <input type="hidden" name="idis" value="{{$Id_bene}}">
                   {!!Form::close()!!}
                 </div>
 

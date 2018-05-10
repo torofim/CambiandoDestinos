@@ -17,7 +17,7 @@ class inventarioController extends Controller
       $registros=\DB::table('inventario')
       //
       //->where('Id','=','1');
-      ->orderby('Id_bene','desc')
+      ->orderby('Id','desc')
       //->take(10)
       ->get();
 
@@ -39,7 +39,7 @@ class inventarioController extends Controller
           ->withErrors($validator);
       }else{
         Inventario::create([
-          'Id_bene'=>$req->idin,
+          'Id'=>$req->idin,
           'Nombre_producto'=>$req->nombre,
           'Cantidad'=>$req->cant,
           'Funcionalidad'=>$req->fun,
