@@ -97,6 +97,7 @@ margin: 0px;
 
 nav.sidebar.navbar {
 border-radius: 0px;
+position: fixed;
 }
 
 nav.sidebar, .main{

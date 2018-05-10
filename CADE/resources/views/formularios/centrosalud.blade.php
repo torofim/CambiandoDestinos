@@ -47,7 +47,7 @@
 
                     </div>
                     <div class="input=-group col-md-4">
-                      <label for="nombre">Presion Arterial</label><br>
+                      <label for="nombre">Fecha</label><br>
 
                         {{Form::date('fecha','',array('class'=>'form-control','placeholder'=>'Fecha') )}}
 
