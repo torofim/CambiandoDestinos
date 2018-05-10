@@ -4,12 +4,12 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class visitas extends Model
+class comida extends Model
 {
     //
     protected $PrimaryKey='Id';
-    protected $table='visitas';
+    protected $table='tabla_comida';
     protected $fillable[
-    'Id_bene','Nombre','Domicilio','Fecha','Tipo_de_visita','Notas'
+      'Id_bene','Nombre','Domicilio','Fecha','Nota'
     ];
 }

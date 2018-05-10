@@ -57,226 +57,35 @@
   <div class="panel1">
     @include('formularios.evaluacion')
   </div>
+  <button class="accordion">Comida Caliente</button>
+  <div class="panel1">
+    @include('formularios.comidaca')
+
+  </div>
+  <button class="accordion">Visita Domiciliaria</button>
+  <div class="panel1">
+    @include('formularios.visitadom')
+
+  </div>
   <button class="accordion">Archivos en Imagen</button>
   <div class="panel1">
     @include('archivo')
 
   </div>
+
 </div>
 
         </div>
 
 
         <div id="agregar" class="tabcontent">
-          <div class="card-body" >
-            @if($errors->any())
-              <div class="alert alert-warning alert-dismissable">
-                <ul>
-
-                @foreach($errors->all() as $error)
-                  <li>{{$error}}</li>
-                @endforeach
-                </ul>
-              </div>
-            @endif
-            @if(session()->has('mensaje'))
-              <div class="alert alert-success">
-                {{session()->get('mensaje')}}
-              </div>
-            @endif
-            <!-- ESTA ES LA TABLA ORIGINAL PARA POSTERIORES USOS-->
-            <div class="row">
-              <h2 style="margin-left:1%;"></h2>
-              <table class="table table-condensed col-md-12" style="margin-left:0%;">
-                <thead>
-                  <tr>
-                    <td>Id</td>
-                    <td>Nombre</td>
-                    <td>Apellido</td>
-                    <td>Apellido</td>
-                    <td>Fecha Nacimiento</td>
-                    <td>Lugar Nacimiento</td>
-                    <td>Edad</td>
-                    <td>Sexo</td>
-
-                  </tr>
-                </thead>
-                <tbody id="tbody">
-                  <tr>
-                    @forelse($perros as $usu)
-                    <td>{{$usu->Id_bene}}</td>
-                    <td>{{$usu->Nombre}}</td>
-                    <td>{{$usu->Apellido_p}}</td>
-                    <td>{{$usu->Apellido_m}}</td>
-                    <td>{{$usu->Fecha_nacimiento}}</td>
-                    <td>{{$usu->Lugar_nacimiento}}</td>
-                    <td>{{$usu->Edad}}</td>
-                    <td>{{$usu->Sexo}}</td>
-
-                    <td></td>
-                    <td>
-                    </td>
-                    </tr>
-                  @empty
-                  <p>sin registro</p>
-                  @endforelse
-                </tbody>
-              </table>
-              <table class="table table-condensed col-md-12" style="margin-left:0%;">
-                <thead>
-                  <tr>
-
-                    <td>Estado Civil</td>
-                    <td>Tipo de Sangre</td>
-                    <td>Editar</td>
-                    <td>Eliminar</td>
-                    <td>Id</td>
-                    <td>Nombre</td>
-                    <td>Apellido</td>
-                    <td>Apellido</td>
-                    <td>Editar</td>
-                    <td>Eliminar</td>
-
-                  </tr>
-                </thead>
-                <tbody id="tbody">
-                  <tr>
-                    @forelse($perros as $usu)
-
-                    <td>{{$usu->Edo_civil}}</td>
-                    <td>{{$usu->Tipo_sangre}}</td>
-                    <td>{{$usu->Peso}}</td>
-                    <td>{{$usu->Estatura}}</td>
-                    <td>{{$usu->Talla}}</td>
-                    <td>{{$usu->Calzado}}</td>
-                    <td>{{$usu->Domicilio}}</td>
-                    <td>{{$usu->Cp}}</td>
-                    <td>{{$usu->Localidad}}</td>
-                    <td>{{$usu->Tel}}</td>
-                    <td></td>
-                    <td>
-                    </td>
-                    </tr>
-                  @empty
-                  <p>sin registro</p>
-                  @endforelse
-                </tbody>
-              </table>
-
-              <table class="table table-condensed col-md-12" style="margin-left:0%;">
-                <thead>
-                  <tr>
-
-                    <td>Edad </td>
-                    <td>Peso</td>
-                    <td>Pas</td>
-                    <td>Pad</td>
-                    <td>Fecha</td>
-
-
-                  </tr>
-                </thead>
-                <tbody id="tbody">
-                  <tr>
-                    @forelse($perros6 as $usu)
-
-                    <td>{{$usu->Edad}}</td>
-                    <td>{{$usu->Peso}}</td>
-                    <td>{{$usu->Pas}}</td>
-                    <td>{{$usu->Pad}}</td>
-                    <td>{{$usu->Fecha_centrosalud}}</td>
-
-                    <td></td>
-                    <td>
-                    </td>
-                    </tr>
-                  @empty
-                  <p>sin registro</p>
-                  @endforelse
-                </tbody>
-              </table>
-              <table class="table table-condensed col-md-12" style="margin-left:0%;">
-                <thead>
-                  <tr>
-
-                    <td>Discapacidad </td>
-                    <td>Causa Discapacidad</td>
-                    <td>Rehabilitacion</td>
-                    <td>Lugar de la Rehabilitacion</td>
-                    <td>Tipo de Rehabilitacion</td>
-                    <td>Apoyo Funcional</td>
-                    <td>Requiere Apoyo Funcional</td>
-
-
-                  </tr>
-                </thead>
-                <tbody id="tbody">
-                  <tr>
-                    @forelse($perros2 as $usu)
-
-                    <td>{{$usu->Discapacidad}}</td>
-                    <td>{{$usu->Rehabilitacion}}</td>
-                    <td>{{$usu->Lugar_de_rehabilitacion}}</td>
-                    <td>{{$usu->Lugar_de_rehabilitacion}}</td>
-                    <td>{{$usu->Tipo_rehabilitacion}}</td>
-                    <td>{{$usu->Apoyo_funcional}}</td>
-                    <td>{{$usu->Requiere_apoyo_funcional}}</td>
-
-                    <td></td>
-                    <td>
-                    </td>
-                    </tr>
-                  @empty
-                  <p>sin registro</p>
-                  @endforelse
-                </tbody>
-              </table>
-              <table class="table table-condensed col-md-12" style="margin-left:0%;">
-                <thead>
-                  <tr>
-
-                    <td>Discapacidad </td>
-                    <td>Causa Discapacidad</td>
-                    <td>Rehabilitacion</td>
-                    <td>Lugar de la Rehabilitacion</td>
-                    <td>Tipo de Rehabilitacion</td>
-                    <td>Apoyo Funcional</td>
-                    <td>Requiere Apoyo Funcional</td>
-
-
-                  </tr>
-                </thead>
-                <tbody id="tbody">
-                  <tr>
-                    @forelse($perros2 as $usu)
-
-                    <td>{{$usu->Discapacidad}}</td>
-                    <td>{{$usu->Rehabilitacion}}</td>
-                    <td>{{$usu->Lugar_de_rehabilitacion}}</td>
-                    <td>{{$usu->Lugar_de_rehabilitacion}}</td>
-                    <td>{{$usu->Tipo_rehabilitacion}}</td>
-                    <td>{{$usu->Apoyo_funcional}}</td>
-                    <td>{{$usu->Requiere_apoyo_funcional}}</td>
-
-                    <td></td>
-                    <td>
-                    </td>
-                    </tr>
-                  @empty
-                  <p>sin registro</p>
-                  @endforelse
-                </tbody>
-              </table>
-
-
-        </div>
-        </div>
-            </div>
+          @include('tablabenefitodo')
               </div>
 
 <style media="screen">
   td{
-    width: 15%;
+    width: 20%;
+
   }
 </style>
 

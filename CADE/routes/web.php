@@ -50,10 +50,10 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::get('/evaluacion/{Id}','EvaluacionController@index')->name('evaluacion');
   Route::get('/inventario_e','inventario_econtroller@index')->name('inventario_e');
   Route::get('/inventario_m','inventario_mcontroller@index')->name('inventario_m');
-  Route::get('/comida','comidacaontroller@index')->name('comida');
+  Route::get('/comidaca/{Id}','comidacalienteController@index')->name('comidaca');
   Route::get('/taller','tallercontroller@index')->name('taller');
   Route::get('/tutor/{Id}','tutorController@index')->name('tutor');
-  Route::get('/visitas','visitascontroller@index')->name('visitas');
+  Route::get('/visitadom/{Id}','visitasController@index')->name('visitadom');
   Route::post('/usuarios/buscar','usuarioscontroller@buscar');
   Route::get('/formularios','dashcontroller@form');
   Route::get('/inventario','inventarioController@index')->name('inventario');
@@ -81,7 +81,9 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::resource('datospersonales','datospersonalescontroller');
   Route::resource('estatus','BooleanosController');
   Route::resource('tutor','tutorController');
-  Route::resource('evaluacion','EvaluacionController'); //ESTE YA ESTA
+  Route::resource('evaluacion','EvaluacionController');
+  Route::resource('visitadom','visitasController');
+  Route::resource('comidaca','comidacalienteController');//ESTE YA ESTA
 
 });
 
