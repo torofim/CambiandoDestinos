@@ -6,7 +6,7 @@ new Chart(document.getElementById("bar-chart3"), {
       datasets: [
         {
           label: "Población",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          backgroundColor: ["#AC4545", "#BA3B3B","#CA2727","#D71B1B","#E90B0B","#FA0000","#E90B0B","#D71B1B","#CA2727","#BA3B3B","#AC4545","#BA3B3B","#CA2727"],
           data: valores,
         }
       ]
@@ -37,7 +37,7 @@ new Chart(document.getElementById("bar-chart4"), {
       datasets: [
         {
           label: "Cantidad",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#252525"],
+          backgroundColor: ["#AC4545", "#BA3B3B","#CA2727","#D71B1B","#E90B0B","#FA0000","#E90B0B","#D71B1B","#CA2727","#BA3B3B","#AC4545","#BA3B3B","#CA2727"],
           data: valoresplatos
         }
       ]

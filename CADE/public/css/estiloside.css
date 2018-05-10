@@ -65,7 +65,7 @@ body{
     cursor: pointer;
     padding: 14px 16px;
     font-size: 17px;
-    
+
 }
 
 .tablink:hover {
@@ -224,6 +224,22 @@ nav.sidebar:hover{
   margin-left:3%;
   margin-top:2%;
 }
+#collapseExample{
+
+}
+.card{
+
+}
+.btn{
+background-color:#2ca337;
+
+}
+.btn:active{
+
+  background-color:purple;
+}
+
+
 
 } /*AQUI TERMINA EL MEDIA QUERYyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy*/
 

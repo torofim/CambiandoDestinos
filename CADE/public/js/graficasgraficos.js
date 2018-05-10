@@ -5,8 +5,8 @@ new Chart(document.getElementById("bar-chart"), {
       datasets: [
         {
           label: "Cantidad",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
-          data: valoresMes
+          backgroundColor: ["#AC4545", "#BA3B3B","#CA2727","#D71B1B","#E90B0B","#FA0000","#E90B0B","#D71B1B","#CA2727","#BA3B3B","#AC4545","#BA3B3B","#CA2727"],
+          data: valoresMes,
         }
       ]
     },
@@ -37,7 +37,7 @@ new Chart(document.getElementById("bar-chart2"), {
       datasets: [
         {
           label: "Cantidad",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          backgroundColor: ["#AC4545", "#BA3B3B","#CA2727","#D71B1B","#E90B0B","#FA0000","#E90B0B","#D71B1B","#CA2727","#BA3B3B","#AC4545","#BA3B3B","#CA2727"],
           data: valoreseva,
         }
       ]
