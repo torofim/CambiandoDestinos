@@ -48,15 +48,18 @@ class formubeneficontroller extends Controller
         ->orderby('Id_bene','desc')
         //->take(10)
         ->get();
-        //dd($registros5);
-      /*  if(count($registros5)==0){
-          $registros5[]=array(
-          'Id'=>'',
-          'Jubilado'=>'',
-          'Servicio_medico'=>'',
-          'Bano_diario'=>'',
-          'Convivencia_animal'=>'');
-        }*/
+        $registros7=\DB::table('visitas')
+
+        ->where('Id_bene','=',$Id)
+        ->orderby('Id_bene','desc')
+        //->take(10)
+        ->get();
+        $registros8=\DB::table('tabla_comida')
+
+        ->where('Id_bene','=',$Id)
+        ->orderby('Id_bene','desc')
+        //->take(10)
+        ->get();
 
 
       return view('/Formubenefi')
@@ -66,7 +69,9 @@ class formubeneficontroller extends Controller
         ->with('perros3',$registros3)
         ->with('perros4',$registros4)
         ->with('perros5',$registros5)
-        ->with('perros6',$registros6);
+        ->with('perros6',$registros6)
+        ->with('perros7',$registros7)
+        ->with('perros8',$registros8);
 
     }
 

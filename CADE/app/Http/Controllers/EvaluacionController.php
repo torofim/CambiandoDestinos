@@ -29,6 +29,7 @@ class EvaluacionController extends Controller
 
       $validator =Validator::make($req->all(),[
         'examen'=>'required|max:255',
+        
         'puntuacion'=>'required|max:255',
       ]);
       if($validator->fails()){
@@ -40,7 +41,7 @@ class EvaluacionController extends Controller
       }else{
 
 
-    
+
         evaluacion::create([
           'Id_bene'=>$req->idev,
           'tipo_examen'=>$req->examen,

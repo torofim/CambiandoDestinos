@@ -27,33 +27,33 @@
     <div class="input=-group col-md-4">
       <label for="nombre">Causa de la Discapacidad</label><br>
       @if(count($perros2)==0)
-        {{Form::text('causa','',array('class'=>'form-control','placeholder'=>'Apellido paterno') )}}
+        {{Form::text('causa','',array('class'=>'form-control','placeholder'=>'Causa de la Discapacidad') )}}
         @else
-        {{Form::text('causa',$perros2[0]->Causa_discapacidad,array('class'=>'form-control','placeholder'=>'Apellido paterno') )}}
+        {{Form::text('causa',$perros2[0]->Causa_discapacidad,array('class'=>'form-control','placeholder'=>'Causa de la Discapacidad') )}}
         @endif
     </div>
     <div class="input=-group col-md-4">
       <label for="nombre">Rehabilitacion</label><br>
       @if(count($perros2)==0)
-        {{Form::text('rehab','',array('class'=>'form-control','placeholder'=>'Apellido materno') )}}
+        {{Form::text('rehab','',array('class'=>'form-control','placeholder'=>'Rehabilitacion') )}}
         @else
-        {{Form::text('rehab',$perros2[0]->Rehabilitacion,array('class'=>'form-control','placeholder'=>'Apellido materno') )}}
+        {{Form::text('rehab',$perros2[0]->Rehabilitacion,array('class'=>'form-control','placeholder'=>'Rehabilitacion') )}}
         @endif
     </div>
     <div class="input=-group col-md-4">
       <label for="nombre">Lugar de Rehabilitacion </label><br>
       @if(count($perros2)==0)
-        {{Form::text('lugarehab','',array('class'=>'form-control','placeholder'=>'Fecha nacimiento') )}}
+        {{Form::text('lugarehab','',array('class'=>'form-control','placeholder'=>'Lugar de Rehabilitacion') )}}
         @else
-        {{Form::text('lugarehab',$perros2[0]->Lugar_de_rehabilitacion,array('class'=>'form-control','placeholder'=>'Fecha nacimiento') )}}
+        {{Form::text('lugarehab',$perros2[0]->Lugar_de_rehabilitacion,array('class'=>'form-control','placeholder'=>'Lugar de Rehabilitacion') )}}
         @endif
     </div>
     <div class="input=-group col-md-4">
       <label for="nombre">Tipo de Rehabilitacion </label><br>
       @if(count($perros2)==0)
-        {{Form::text('tiporehab','',array('class'=>'form-control','placeholder'=>'Lugar nacimiento') )}}
+        {{Form::text('tiporehab','',array('class'=>'form-control','placeholder'=>'Tipo de Rehabilitacion') )}}
         @else
-        {{Form::text('tiporehab',$perros2[0]->Tipo_rehabilitacion,array('class'=>'form-control','placeholder'=>'Lugar nacimiento') )}}
+        {{Form::text('tiporehab',$perros2[0]->Tipo_rehabilitacion,array('class'=>'form-control','placeholder'=>'Tipo de Rehabilitacion') )}}
         @endif
     </div>
     <div class="input=-group col-md-4">
