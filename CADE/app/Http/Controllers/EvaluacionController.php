@@ -16,8 +16,8 @@ class EvaluacionController extends Controller
     public function index($Id){
       $registros3=\DB::table('evaluacion')
 
-      ->where('Id','=',$Id)
-      ->orderby('Id','desc')
+      ->where('Id_bene','=',$Id)
+      ->orderby('Id_bene','desc')
       //->take(10)
       ->get();
 
@@ -38,25 +38,17 @@ class EvaluacionController extends Controller
           ->withInput()
           ->withErrors($validator);
       }else{
-        $usuario=evaluacion::find($req->idev);
 
-        if(($usuario)==null){
+
+    
         evaluacion::create([
-          'Id'=>$req->idev,
+          'Id_bene'=>$req->idev,
           'tipo_examen'=>$req->examen,
           'puntuacion'=>$req->puntuacion,
         ]);
         return redirect()->to('/admin/Formubenefi/'.$req->idev)
         ->with('mensaje','datos agregados');
-      }else{
 
-      $usuario->tipo_examen=$req->examen;
-      $usuario->puntuacion=$req->puntuacion;
-      $usuario->save();
-
-      return redirect()->to('/admin/Formubenefi/'.$req->idev)
-      ->with('mensaje','Usuario Modificado');
-    }
 
   }
     dd($req->nombre);

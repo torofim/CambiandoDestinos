@@ -16,8 +16,8 @@ class discapacidadController extends Controller
 
     public function index($Id){
       $registros2=\DB::table('discapacidad')
-      ->where('Id','=',$Id)
-      ->orderby('Id','desc')
+      ->where('Id_bene','=',$Id)
+      ->orderby('Id_bene','desc')
       //->take(10)
       ->get();
     // dd($registros);
@@ -45,7 +45,7 @@ class discapacidadController extends Controller
               if(($usuario)==null){
 
                 Discapacidad::create([
-                  'Id'=>$req->idbene,
+                  'Id_bene'=>$req->idbene,
                   'Discapacidad'=>$req->discapacidad,
                   'Causa_discapacidad'=>$req->causa,
                   'Rehabilitacion'=>$req->rehab,

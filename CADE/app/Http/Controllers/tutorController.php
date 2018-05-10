@@ -15,8 +15,8 @@ class tutorController extends Controller
 
     public function index($Id){
       $registros4=\DB::table('tutor')
-      ->where('Id','=',$Id)
-      ->orderby('Id','desc')
+      ->where('Id_bene','=',$Id)
+      ->orderby('Id_bene','desc')
       //->take(10)
       ->get();
     // dd($registros);
@@ -46,7 +46,7 @@ class tutorController extends Controller
         if(($usuario)==null){
 
           Tutor::create([
-            'Id'=>$req->idtu,
+            'Id_bene'=>$req->idtu,
             'Nombre_tutor'=>$req->nombre,
             'Apellido_tutor'=>$req->app,
             'Encargado'=>$req->encargado,

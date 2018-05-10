@@ -77,7 +77,7 @@
       {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
     </div>
 
-    <input type="hidden" name="idtu" value="{{$Id}}">
+    <input type="hidden" name="idtu" value="{{$Id_bene}}">
 
   {!!Form::close()!!}
 

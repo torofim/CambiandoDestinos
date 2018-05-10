@@ -8,12 +8,12 @@
   </head>
   <body>
   @include('layouts.nav')
-  <div class="main" style="height:750px;overflow-y:hidden;">
+  <div class="main" style="height:100%;overflow-y:hidden;">
   <!--<div class="panel panel-default">
         <div class="panel-body cold-md-2" id="sepa">
         </div>
     </div>-->
-    <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:600px;">
+    <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:100%;">
     <!-- Viene de Usuarios.blade-->
 
 
@@ -55,11 +55,11 @@
             <tbody id="tbody">
               <tr>
                 @forelse($perros as $usu)
-                <td>{{$usu->Id}}</td>
+                <td>{{$usu->Id_bene}}</td>
                 <td>{{$usu->Nombre}}</td>
                 <td>{{$usu->Apellido_p}}</td>
                 <td>{{$usu->Apellido_m}}</td>
-                <td><button type="button" class="btn btn-info btn-lg " onclick="location.href='/admin/Formubenefi/{{$usu->Id}}'"
+                <td><button type="button" class="btn btn-info btn-lg " onclick="location.href='/admin/Formubenefi/{{$usu->Id_bene}}'"
                    >Editar </button></td>
                 <td>
                 </td>
@@ -156,6 +156,9 @@
 }
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+
+$('.divfade').fadeOut(2000);
   </script>
     <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/chart.min.js') }}"></script>

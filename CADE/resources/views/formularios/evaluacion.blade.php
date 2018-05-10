@@ -36,7 +36,7 @@
       {{Form::submit('Actualizar',array('class'=>'btn btn-primary'))}}
     </div>
 
-      <input type="hidden" name="idev" value="{{$Id}}">
+      <input type="hidden" name="idev" value="{{$Id_bene}}">
 
   {!!Form::close()!!}
 

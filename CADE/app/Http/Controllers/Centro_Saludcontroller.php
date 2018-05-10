@@ -13,8 +13,8 @@ class Centro_Saludcontroller extends Controller
     }
     public function index($Id){
       $registros6=\DB::table('datos_centro_salud')
-      ->where('Id','=',$Id)
-      ->orderby('Id','desc')
+      ->where('Id_bene','=',$Id)
+      ->orderby('Id_bene','desc')
       //dd($registros6);
       ->get();
     //  dd($registros6);
@@ -27,7 +27,8 @@ class Centro_Saludcontroller extends Controller
       $validator =Validator::make($req->all(),[
         'edad'=>'required|max:255',
         'peso'=>'required|max:255',
-        'presion'=>'required|max:255',
+        'pas'=>'required|max:255',
+        'pad'=>'required|max:255',
         'fecha'=>'required|max:255'
       ]);
       if($validator->fails()){
@@ -37,32 +38,23 @@ class Centro_Saludcontroller extends Controller
           ->withErrors($validator);
       }else{
 
-        $usua=Centro_salud::find($req->idis);
 
-        if(($usua)==null){
+      //dd($req->presion);
+    //  dd($req->fecha);
 
         Centro_salud::create([
-          'Id'=>$req->idis,
+          'Id_bene'=>$req->idis,
           'Edad'=>$req->edad,
           'Peso'=>$req->peso,
-          'presion_arterial'=>$req->presion,
+          'Pas'=>$req->pas,
+          'Pad'=>$req->pad,
           'Fecha'=>$req->fecha
+
         ]);
         return redirect()->to('/admin/Formubenefi/'.$req->idis)
         ->with('mensaje','datos agregados');
 
-      }else{
 
-        $usua->Edad=$req->edad;
-        $usua->Peso=$req->peso;
-        $usua->presion_arterial=$req->presion;
-        $usua->Fecha_centrosalud=$req->fecha;
-
-        $usua->save();
-        //dd($usuario);
-        return redirect()->to('/admin/Formubenefi/'.$req->idis)
-        ->with('mensaje','Usuario Modificado');
-      }
       dd($req->nombre);
     }
 }

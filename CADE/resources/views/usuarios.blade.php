@@ -1,8 +1,8 @@
 @extends('layouts.layout')
 @section('principal')
-<div class=" col-md-12 container"style="height:950px;">
+<div class=" col-md-12 container"style="height:100%;">
 
-  <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:750px;">
+  <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:100%;">
   <button class="tablink" style="width:50%;" onclick="openPage('benefi', this, '')" id="defaultOpen">Usuarios</button>
   <button class="tablink" style="width:50%;" onclick="openPage('agregar', this, '')" >Agregar Usuario</button>
 
@@ -16,7 +16,7 @@
 
                 <div class="card-body" >
                   @if($errors->any())
-                    <div class="alert alert-warning alert-dismissable">
+                    <div class="alert alert-warning alert-dismissable divfade" style="position:absolute;top:10%;left:40%;">
                       <ul>
                       @foreach($errors->all() as $error)
                         <li>{{$error}}</li>
@@ -99,7 +99,7 @@
                       <label for="nombre">Imagen</label><br>
                       {{Form::file('Imagen',array('class'=>'form-control','placeholder'=>'Imagen') )}}
                     </div>
-                    <div class="input=-group col-md-12">
+                    <div class="input=-group col-md-12" >
                       <label for="">Nivel</label><br>
                       {{Form::select('Nivel',
                       array('admin'=>'Administrador',

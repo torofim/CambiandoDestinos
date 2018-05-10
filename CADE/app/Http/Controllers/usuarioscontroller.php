@@ -49,7 +49,7 @@ class usuarioscontroller extends Controller
           'privilegios'=>$req->Nivel
         ]);
         return redirect()->to('/admin/usuarios')
-        ->with('mensaje','usuario agregado');
+        ->with('mensaje','Usuario Agregado');
       }
       dd($req->nombre);
     }
