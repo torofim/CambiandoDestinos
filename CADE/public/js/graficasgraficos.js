@@ -65,12 +65,12 @@ new Chart(document.getElementById("bar-chart2"), {
 new Chart(document.getElementById("bar-chart5"), {
     type: 'bar',
     data: {
-      labels: ["Africa", "Asia", "Europe", "Latin America", "North America"],
+      labels: semanas,
       datasets: [
         {
-          label: "Population (millions)",
+          label: "Cantidad de talleres",
           backgroundColor: ["#99ffbb","#66ff99","#33ff77","#00ff55","#00cc44","#009933","#006622","#004d1a","#003311","#004d1a","#006622","#009933"],
-          data: [2478,5267,734,784,433]
+          data: valorestaller
         }
       ]
     },
@@ -78,7 +78,7 @@ new Chart(document.getElementById("bar-chart5"), {
       legend: { display: false },
       title: {
         display: true,
-        text: 'Predicted world population (millions) in 2050',
+        text: 'Talleres impartidos',
         fontSize: 20,
         fontColor: '#000000'
 

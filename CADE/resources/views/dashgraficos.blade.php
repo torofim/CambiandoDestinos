@@ -24,19 +24,62 @@
 <div class="collapse" id="collapseExample">
  <div class="card card-body">
    <div id="formulario">
-     <label for="r1" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r1" data-mes="01">Enero</label>
-     <label for="r2" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r2" data-mes="02">Febrero</label>
-     <label for="r3" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r3" data-mes="03">Marzo</label>
-     <label for="r4" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r4" data-mes="04">Abril</label>
-     <label for="r5" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r5" data-mes="05">Mayo</label>
-     <label for="r5" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r6" data-mes="06">Junio</label>
-     <label for="r5" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r7" data-mes="07">Julio</label>
-     <label for="r5" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r12" data-mes="18">Agosto</label>
-     <label for="r5" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r8" data-mes="09">Septiembre</label>
-     <label for="r5" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r9" data-mes="10">Octubre</label>
-     <label for="r5" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r10" data-mes="11">Noviembre</label>
-     <label for="r5" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r11" data-mes="12">Diciembre</label>
-     <label for="r6" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r6" data-mes="anual">Anual</label>
+
+
+     <label class="container" for="r1" class="col-md-2">
+        <input class="radio col-md-1" type="radio" name="x" id="r1" data-mes="01">Enero
+        <span class="checkmark"></span>
+      </label>
+     <label class="container" for="r2" class="col-md-2">
+        <input class="radio col-md-1" type="radio" name="x" id="r2" data-mes="02">Febrero
+        <span class="checkmark"></span>
+      </label>
+     <label class="container" for="r3" class="col-md-2">
+       <input class="radio col-md-1" type="radio" name="x" id="r3" data-mes="03">Marzo
+       <span class="checkmark"></span>
+     </label>
+     <label class="container" for="r4" class="col-md-2">
+        <input class="radio col-md-1" type="radio" name="x" id="r4" data-mes="04">Abril
+        <span class="checkmark"></span>
+      </label>
+     <label class="container" for="r5" class="col-md-2">
+        <input class="radio col-md-1" type="radio" name="x" id="r5" data-mes="05">Mayo
+        <span class="checkmark"></span>
+      </label>
+     <label class="container" for="r6" class="col-md-2">
+        <input class="radio col-md-1" type="radio" name="x" id="r6" data-mes="06">Junio
+        <span class="checkmark"></span>
+      </label>
+     <label class="container" for="r7" class="col-md-2">
+       <input class="radio col-md-1" type="radio" name="x" id="r7" data-mes="07">Julio
+       <span class="checkmark"></span>
+     </label>
+     <label class="container" for="r8" class="col-md-2">
+        <input class="radio col-md-1" type="radio" name="x" id="r8" data-mes="08">Agosto
+        <span class="checkmark"></span>
+      </label>
+     <label class="container" for="r9" class="col-md-2">
+        <input class="radio col-md-1" type="radio" name="x" id="r9" data-mes="09">Septiembre
+        <span class="checkmark"></span>
+      </label>
+     <label class="container" for="r10" class="col-md-2">
+        <input class="radio col-md-1" type="radio" name="x" id="r10" data-mes="10">Octubre
+        <span class="checkmark"></span>
+      </label>
+     <label class="container" for="r11" class="col-md-2">
+        <input class="radio col-md-1" type="radio" name="x" id="r11" data-mes="11">Noviembre
+        <span class="checkmark"></span>
+      </label>
+     <label class="container" for="r12" class="col-md-2">
+        <input class="radio col-md-1" type="radio" name="x" id="r12" data-mes="12">Diciembre
+        <span class="checkmark"></span>
+      </label>
+     <label class="container" for="r13" class="col-md-2">
+        <input class="radio col-md-1" type="radio" name="x" id="r13" data-mes="anual">Anual
+        <span class="checkmark"></span>
+      </label>
+
+
 
      <input class="col-md-1 " type="number" name="year" value="" min="2018" max="2050" id="year">
 
@@ -64,6 +107,9 @@
               <canvas id="bar-chart4" width="800" height="450"></canvas>
             </div>
           </div>
+          <div class="panel panel-default2 col-md-6  col-sm-8 col-xs-12 " style="background-color:white;height:auto;">
+            <canvas id="bar-chart5" width="800" height="450"></canvas>
+          </div>
         </div>
 
     </div><!--CIERRE DEL MAIN-->
@@ -76,6 +122,8 @@
       var valoreseva=[{!!$valoreseva!!}];
       var catplatos=[{!!$catplatos!!}];
       var valoresplatos=[{!!$valoresplatos!!}];
+      var cattaller=[{!!$cattaller!!}];
+      var valorestaller=[{!!$valorestaller!!}];
     </script>
     <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
     <script type="text/javascript" src="{{ asset('js/chart.min.js') }}"></script>
