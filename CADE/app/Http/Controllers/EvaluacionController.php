@@ -16,8 +16,8 @@ class EvaluacionController extends Controller
     public function index($Id){
       $registros3=\DB::table('evaluacion')
 
-      ->where('Id','=',$Id)
-      ->orderby('Id','desc')
+      ->where('Id_bene','=',$Id)
+      ->orderby('Id_bene','desc')
       //->take(10)
       ->get();
 

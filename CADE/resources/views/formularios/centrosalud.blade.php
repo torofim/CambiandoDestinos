@@ -17,47 +17,45 @@
                     </div>
                   @endif
                   @if(session()->has('mensaje'))
-                    <div class="alert alert-success">
+                    <div class="alert alert-success divfade" style="position:absolute;top:10%;left:40%;">
                       {{session()->get('mensaje')}}
                     </div>
                   @endif
                   {!!Form::open(array('route'=>['admin.centrosalud.store','0'],'method'=>'POST'))!!}
                     <div class="input=-group col-md-4">
                       <label for="nombre">Edad</label><br>
-                      @if(count($perros6)==0)
+
                         {{Form::number('edad','',array('class'=>'form-control','placeholder'=>'Edad') )}}
-                        @else
-                        {{Form::number('edad',$perros6[0]->Edad,array('class'=>'form-control','placeholder'=>'Edad') )}}
-                        @endif
+
                     </div>
                     <div class="input=-group col-md-4">
                       <label for="nombre">Peso (Kg)</label><br>
-                      @if(count($perros6)==0)
+
                         {{Form::number('peso','',array('class'=>'form-control','placeholder'=>'Peso') )}}
-                        @else
-                        {{Form::number('peso',$perros6[0]->Peso,array('class'=>'form-control','placeholder'=>'Peso') )}}
-                        @endif
+
+                    </div>
+                    <div class="input=-group col-md-4">
+                      <label for="nombre">PAS</label><br>
+
+                        {{Form::number('pas','',array('class'=>'form-control','placeholder'=>'Presion Arterial') )}}
+
+                    </div>
+                    <div class="input=-group col-md-4">
+                      <label for="nombre">PAD</label><br>
+
+                        {{Form::number('pad','',array('class'=>'form-control','placeholder'=>'Presion Arterial') )}}
+
                     </div>
                     <div class="input=-group col-md-4">
                       <label for="nombre">Presion Arterial</label><br>
-                      @if(count($perros6)==0)
-                        {{Form::number('presion','',array('class'=>'form-control','placeholder'=>'Presion Arterial') )}}
-                        @else
-                        {{Form::number('presion',$perros6[0]->presion_arterial,array('class'=>'form-control','placeholder'=>'Presion Arterial') )}}
-                        @endif
-                    </div>
-                    <div class="input=-group col-md-4">
-                      <label for="nombre">Presion Arterial</label><br>
-                      @if(count($perros6)==0)
+
                         {{Form::date('fecha','',array('class'=>'form-control','placeholder'=>'Fecha') )}}
-                        @else
-                        {{Form::date('fecha',$perros6[0]->Fecha_centrosalud,array('class'=>'form-control','placeholder'=>'Fecha') )}}
-                        @endif
+
                     </div>
                     <div class="input-group col-md-4" style="margin-left:2%; padding-top:2.5%;">
                       {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
                     </div>
-                    <input type="hidden" name="idis" value="{{$Id}}">
+                    <input type="text" name="idis" value="{{$Id_bene}}">
                   {!!Form::close()!!}
                 </div>
 
@@ -65,3 +63,8 @@
         </div>
     </div>
 </div>
+<script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+<script type="text/javascript">
+$('.divfade').fadeOut(2000);
+
+</script>

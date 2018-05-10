@@ -16,26 +16,36 @@
         <div class="panel2 panel-default col-xs-12 ">
           <div class="panel-body2" style="border-bottom:groove; background-color:transparent;">Fundacion Cambiando Destinos</div>
         </div>
-        <div id="formulario" style="margin-top:10%;">
-          <label for="r1" class="col-md-1"> <input class="radio" type="radio" name="x" id="r1" data-mes="01">ENERO</label>
-          <label for="r2" class="col-md-1"> <input class="radio" type="radio" name="x" id="r2" data-mes="02">FEBRERO</label>
-          <label for="r3" class="col-md-1"> <input class="radio" type="radio" name="x" id="r3" data-mes="03">Marzo</label>
-          <label for="r4" class="col-md-1"> <input class="radio" type="radio" name="x" id="r4" data-mes="04">Abril</label>
-          <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r5" data-mes="05">Mayo</label>
-          <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r6" data-mes="06">Junio</label>
-          <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r7" data-mes="07">Julio</label>
-          <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r12" data-mes="18">Agosto</label>
-          <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r8" data-mes="09">Septiembre</label>
-          <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r9" data-mes="10">Octubre</label>
-          <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r10" data-mes="11">Noviembre</label>
-          <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r11" data-mes="12">Diciembre</label>
-          <label for="r6" class="col-md-2"> <input class="radio" type="radio" name="x" id="r6" data-mes="anual">Anual</label>
+<p>
+ <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+   Seleccionar periodo
+ </button>
+</p>
+<div class="collapse" id="collapseExample">
+ <div class="card card-body">
+   <div id="formulario">
+     <label for="r1" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r1" data-mes="01">Enero</label>
+     <label for="r2" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r2" data-mes="02">Febrero</label>
+     <label for="r3" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r3" data-mes="03">Marzo</label>
+     <label for="r4" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r4" data-mes="04">Abril</label>
+     <label for="r5" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r5" data-mes="05">Mayo</label>
+     <label for="r5" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r6" data-mes="06">Junio</label>
+     <label for="r5" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r7" data-mes="07">Julio</label>
+     <label for="r5" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r12" data-mes="18">Agosto</label>
+     <label for="r5" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r8" data-mes="09">Septiembre</label>
+     <label for="r5" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r9" data-mes="10">Octubre</label>
+     <label for="r5" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r10" data-mes="11">Noviembre</label>
+     <label for="r5" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r11" data-mes="12">Diciembre</label>
+     <label for="r6" class="col-md-2"> <input class="radio col-md-1" type="radio" name="x" id="r6" data-mes="anual">Anual</label>
 
-          <input class="col-md-1 " type="number" name="year" value="" min="2018" max="2050" id="year">
+     <input class="col-md-1 " type="number" name="year" value="" min="2018" max="2050" id="year">
 
-          <button class="btn btn-primary col-md-1 col-md-offset-1" id="miLink">ENVIAR</button>
+     <button class="btn btn-primary col-md-1 col-md-offset-1" id="miLink">ENVIAR</button>
 
-        </div>
+   </div>
+ </div>
+</div>
+
         <div class="container-fluid">
           <div class="row col-md-12">
             <div class="panel panel-default2 col-md-6 col-sm-8 col-xs-12 " style="background-color:white; height:auto;">

@@ -10,6 +10,6 @@ class Centro_salud extends Model
   protected $table='datos_centro_salud';
   protected $primaryKey='Id';
   protected $fillable=[
-    'Id','Edad','Peso','Presion_arterial','Fecha_centrosalud'
+    'Id_bene','Edad','Peso','Pas','Pad','Fecha_centrosalud'
   ];
 }

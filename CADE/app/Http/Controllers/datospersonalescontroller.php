@@ -15,7 +15,8 @@ class datospersonalescontroller extends Controller
     public function index(){
       $registros=\DB::table('datos_personales')
       //->where('Id','=','1');
-      ->orderby('Id','desc')
+      
+      ->orderby('Id_bene','desc')
       //->take(10)
       ->get();
 

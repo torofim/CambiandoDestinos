@@ -15,8 +15,8 @@ class BooleanosController extends Controller
     }
     public function index($Id){
       $registros5=\DB::table('estatus')
-      ->where('Id','=',$Id)
-      ->orderby('Id','desc')
+      ->where('Id_bene','=',$Id)
+      ->orderby('Id_bene','desc')
       //->take(10)
       ->get();
 
@@ -45,7 +45,7 @@ class BooleanosController extends Controller
         if(($usuario)==null){
 
           booleano::create([
-            'Id'=>$req->idbo,
+            'Id_bene'=>$req->idbo,
             'Jubilado'=>$req->jubilado,
             'Servicio_medico'=>$req->servicio,
             'Bano_diario'=>$req->bano,

@@ -12,40 +12,40 @@ class formubeneficontroller extends Controller
 
       $registros=\DB::table('datos_personales')
 
-      ->where('Id','=',$Id)
-      ->orderby('Id','desc')
+      ->where('Id_bene','=',$Id)
+      ->orderby('Id_bene','desc')
       //->take(10)
       ->get();
     //  dd($registros);
       $registros2=\DB::table('discapacidad')
-      ->where('Id','=',$Id)
-      ->orderby('Id','desc')
+      ->where('Id_bene','=',$Id)
+      ->orderby('Id_bene','desc')
     //->take(10)
       ->get();
   //  dd($registros);
       $registros3=\DB::table('evaluacion')
 
-      ->where('Id','=',$Id)
-      ->orderby('Id','desc')
+      ->where('Id_bene','=',$Id)
+      ->orderby('Id_bene','desc')
   //->take(10)
       ->get();
         //dd($registros3);
         $registros4=\DB::table('tutor')
 
-        ->where('Id','=',$Id)
-        ->orderby('Id','desc')
+        ->where('Id_bene','=',$Id)
+        ->orderby('Id_bene','desc')
         //->take(10)
         ->get();
         $registros5=\DB::table('estatus')
 
-        ->where('Id','=',$Id)
-        ->orderby('Id','desc')
+        ->where('Id_bene','=',$Id)
+        ->orderby('Id_bene','desc')
         //->take(10)
         ->get();
         $registros6=\DB::table('datos_centro_salud')
 
-        ->where('Id','=',$Id)
-        ->orderby('Id','desc')
+        ->where('Id_bene','=',$Id)
+        ->orderby('Id_bene','desc')
         //->take(10)
         ->get();
         //dd($registros5);
@@ -60,7 +60,7 @@ class formubeneficontroller extends Controller
 
 
       return view('/Formubenefi')
-        ->with('Id',$Id)
+        ->with('Id_bene',$Id)
         ->with('perros',$registros)
         ->with('perros2',$registros2)
         ->with('perros3',$registros3)

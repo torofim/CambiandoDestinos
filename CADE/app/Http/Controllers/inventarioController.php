@@ -17,7 +17,7 @@ class inventarioController extends Controller
       $registros=\DB::table('inventario')
       //
       //->where('Id','=','1');
-      ->orderby('Id','desc')
+      ->orderby('Id_bene','desc')
       //->take(10)
       ->get();
 
@@ -27,7 +27,7 @@ class inventarioController extends Controller
     public function store(Request $req){
 
       $validator =Validator::make($req->all(),[
-        'Nombre_articulo'=>'max:255',
+        'Nombre_producto'=>'max:255',
         'Cantidad'=>'max:255',
         'Funcionalidad'=>'max:255',
         'Tipo'=>'max:255'
@@ -39,24 +39,26 @@ class inventarioController extends Controller
           ->withErrors($validator);
       }else{
         Inventario::create([
+          'Id_bene'=>$req->idin,
           'Nombre_producto'=>$req->nombre,
           'Cantidad'=>$req->cant,
           'Funcionalidad'=>$req->fun,
           'Tipo'=>$req->tipo
         ]);
         return redirect()->to('/admin/inventario')
-        ->with('mensaje','datos agregados');
+        ->with('mensaje','Datos Agregados');
     }
     dd($req->nombre);
   }
   public function edit(Request $req){
-    $usuario=Inventario::find($req->id);
-    $usuario->name=$req->nameEditar;
-    $usuario->email=$req->emailEditar;
-    $usuario->privilegios=$req->nivelEditar;
+    $usuario=Inventario::find($req->idin);
+    $usuario->Nombre_producto=$req->nombreedit;
+    $usuario->Cantidad=$req->cantedit;
+    $usuario->Funcionalidad=$req->funedit;
+    $usuario->Tipo=$req->tipoedit;
     $usuario->save();
 
-    return redirect()->to('/admin/usuarios')
-    ->with('mensaje','Usuario Modificado');
+    return redirect()->to('/admin/inventario')
+    ->with('mensaje','Datos Modificados');
   }//edit
 }

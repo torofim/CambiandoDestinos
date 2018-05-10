@@ -75,6 +75,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::resource('discapacidad','discapacidadController');
   Route::resource('inventario','inventarioController');
   Route::resource('usuarios','usuarioscontroller');
+  Route::resource('inventario','inventarioController');
   Route::resource('archivos','archivoscontroller');
   Route::resource('centrosalud','Centro_Saludcontroller'); //Este tambien ya esta
   Route::resource('datospersonales','datospersonalescontroller');

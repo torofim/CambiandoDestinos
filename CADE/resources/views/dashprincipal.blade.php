@@ -115,6 +115,33 @@
              </tbody>
            </table>
            </div>
+           <div class="row">
+             <table class="table table-condensed col-md-6 col-sm-8 col-xs-12" >
+               <thead>
+                 <td>Nombre</td>
+                 <td>Apellidos</td>
+                 <td></td>
+                 <td>Discapacidad</td>
+                 <td>Causa</td>
+                 <td>Requiere apoyo</td>
+               </thead>
+               <tbody>
+                 <tr>
+                      @foreach($discap as $x)
+                   <td>{{$x->nombre}}</td>
+                   <td>{{$x->apellido_p}}</td>
+                   <td>{{$x->apellido_m}}</td>
+                   <td>{{$x->discapacidad}}</td>
+                   <td>{{$x->Causa_discapacidad}}</td>
+                   <td>{{$x->Requiere_apoyo_funcional}}</td>
+                   <tr>
+
+                   </tr>
+                   @endforeach
+                 </tr>
+               </tbody>
+             </table>
+             </div>
 
        </div>
        <div class="panel panel-default" style="background-color:transparent;">

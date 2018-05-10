@@ -7,7 +7,7 @@
 
                 <div class="card-body">
                   @if($errors->any())
-                    <div class="alert alert-warning alert-dismissable">
+                    <div class="alert alert-warning alert-dismissable divfade" style="position:absolute;top:10%;left:40%;">
                       <ul>
 
                       @foreach($errors->all() as $error)
@@ -17,7 +17,7 @@
                     </div>
                   @endif
                   @if(session()->has('mensaje'))
-                    <div class="alert alert-success">
+                    <div class="alert alert-success divfade" style="position:absolute;top:10%;left:40%;">
                       {{session()->get('mensaje')}}
                     </div>
                   @endif
@@ -106,9 +106,9 @@
                   <div class="input=-group col-md-4">
                     <label for="nombre">Estatura </label><br>
                     @if(count($perros)==0)
-                      {{Form::number('esEditar','',array('class'=>'form-control','placeholder'=>'Ejemplo: 1.6') )}}
+                      {{Form::number('esEditar','',array('class'=>'form-control','step'=>'any','placeholder'=>'Ejemplo: 1.6') )}}
                       @else
-                      {{Form::number('esEditar',$perros[0]->Estatura,array('class'=>'form-control','placeholder'=>'Ejemplo: 1.6') )}}
+                      {{Form::number('esEditar',$perros[0]->Estatura,array('class'=>'form-control','step'=>'any','placeholder'=>'Ejemplo: 1.6') )}}
                       @endif
                   </div>
                   <div class="input=-group col-md-4">
@@ -162,7 +162,7 @@
                   <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;margin-bottom:2%;">
                     {{Form::submit('Actualizar',array('class'=>'btn btn-primary'))}}
                   </div>
-                  <input type="hidden" name="id" value="{{$perros[0]->Id}}" >
+                  <input type="hidden" name="id" value="{{$perros[0]->Id_bene}}" >
                   {!!Form::close()!!}
                 </div>
             </div>
