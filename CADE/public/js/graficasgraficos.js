@@ -5,7 +5,7 @@ new Chart(document.getElementById("bar-chart"), {
       datasets: [
         {
           label: "Cantidad",
-          backgroundColor: ["#AC4545", "#BA3B3B","#CA2727","#D71B1B","#E90B0B","#FA0000","#E90B0B","#D71B1B","#CA2727","#BA3B3B","#AC4545","#BA3B3B","#CA2727"],
+          backgroundColor:["#99ffbb","#66ff99","#33ff77","#00ff55","#00cc44","#009933","#006622","#004d1a","#003311","#004d1a","#006622","#009933"],
           data: valoresMes,
         }
       ]
@@ -37,7 +37,7 @@ new Chart(document.getElementById("bar-chart2"), {
       datasets: [
         {
           label: "Cantidad",
-          backgroundColor: ["#AC4545", "#BA3B3B","#CA2727","#D71B1B","#E90B0B","#FA0000","#E90B0B","#D71B1B","#CA2727","#BA3B3B","#AC4545","#BA3B3B","#CA2727"],
+          backgroundColor: ["#99ffbb","#66ff99","#33ff77","#00ff55","#00cc44","#009933","#006622","#004d1a","#003311","#004d1a","#006622","#009933"],
           data: valoreseva,
         }
       ]
@@ -69,7 +69,7 @@ new Chart(document.getElementById("bar-chart5"), {
       datasets: [
         {
           label: "Population (millions)",
-          backgroundColor: ["#3e95cd", "#8e5ea2","#3cba9f","#e8c3b9","#c45850"],
+          backgroundColor: ["#99ffbb","#66ff99","#33ff77","#00ff55","#00cc44","#009933","#006622","#004d1a","#003311","#004d1a","#006622","#009933"],
           data: [2478,5267,734,784,433]
         }
       ]
