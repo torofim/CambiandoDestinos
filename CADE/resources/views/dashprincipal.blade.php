@@ -90,6 +90,7 @@
          </div>
          <div class="row">
            <table class="table table-condensed col-md-6 col-sm-8 col-xs-12" >
+             <p>Discapacidad (motriz)</p>
              <thead>
                <td>Nombre</td>
                <td>Apellidos</td>
@@ -117,25 +118,25 @@
            </div>
            <div class="row">
              <table class="table table-condensed col-md-6 col-sm-8 col-xs-12" >
+               <p style="card-body">Presión arterial(Hipertensión)</p>
                <thead>
                  <td>Nombre</td>
                  <td>Apellidos</td>
                  <td></td>
-                 <td>Discapacidad</td>
-                 <td>Causa</td>
-                 <td>Requiere apoyo</td>
+                 <td>Pas</td>
+                 <td>/</td>
+                 <td>Pad</td>
                </thead>
                <tbody>
                  <tr>
-                      @foreach($discap as $x)
-                   <td>{{$x->nombre}}</td>
-                   <td>{{$x->apellido_p}}</td>
-                   <td>{{$x->apellido_m}}</td>
-                   <td>{{$x->discapacidad}}</td>
-                   <td>{{$x->Causa_discapacidad}}</td>
-                   <td>{{$x->Requiere_apoyo_funcional}}</td>
+                      @foreach($hipert as $y)
+                   <td>{{$y->nombre}}</td>
+                   <td>{{$y->apellido_p}}</td>
+                   <td>{{$y->apellido_m}}</td>
+                   <td>{{$y->Pas}}</td>
+                   <td>/</td>
+                   <td>{{$y->Pad}}</td>
                    <tr>
-
                    </tr>
                    @endforeach
                  </tr>

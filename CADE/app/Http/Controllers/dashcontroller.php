@@ -14,7 +14,7 @@ class dashcontroller extends Controller
    */
   public function __construct()
   {
-      $this->middleware('auth');
+      //$this->middleware('auth');
   }
 
   /**
@@ -92,11 +92,12 @@ class dashcontroller extends Controller
      }
 
      //dd($valoresMes);
-     $discap=DB::select('select nombre, apellido_p, apellido_m, Discapacidad,
+     $discap=DB::select('select nombre, apellido_p, apellido_m, discapacidad,
      Causa_discapacidad, Requiere_apoyo_funcional from datos_personales INNER join discapacidad
-      on datos_personales.Id = discapacidad.Id_bene where Discapacidad="si"');
+      on datos_personales.Id_bene = discapacidad.Id_bene where Discapacidad="si"');
 
-
+      $hipert=DB::select('select nombre, apellido_p, apellido_m, Pas, Pad from datos_personales
+      INNER join datos_centro_salud on datos_personales.Id_bene = datos_centro_salud.Id_bene where PAS >=130 and PAD <=90');
 
      return view('dashprincipal', ['benef' => $benef])
      ->with('usuarios',$usuarios)
@@ -106,7 +107,8 @@ class dashcontroller extends Controller
      ->with('valores',$valores)
      ->with('valoresMes',$valoresMes)
      ->with('semanas',$semanas)
-     ->with('discap',$discap);
+     ->with('discap',$discap)
+     ->with('hipert',$hipert);
        #return view('LEFTMENU',['usuarios' => $usuarios]);
        #->width('nombre','EQUIPOS DE FUTBOL');
        #si se hace esto y el js esta en el blade solo se imprime como php {{$nombre}}
