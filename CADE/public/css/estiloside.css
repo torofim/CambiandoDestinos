@@ -340,72 +340,7 @@ float:left;
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a:focused{
   color:green;
 }
-/*CODIGO CSSS PARA LOS CHECKBOX*/
-/* Customize the label (the container) */
-.container {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: 14px;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
 
-/* Hide the browser's default radio button */
-.container{
-  width:200px;
-}
-.container input {
-  position: absolute;
-  opacity: 0;
-}
-
-/* Create a custom radio button */
-.checkmark {
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 15px;
-  width: 15px;
-  background-color: #eee;
-  border-radius: 50%;
-}
-
-/* On mouse-over, add a grey background color */
-.container:hover input ~ .checkmark {
-  background-color: #ccc;
-}
-
-/* When the radio button is checked, add a blue background */
-.container input:checked ~ .checkmark {
-  background-color: #1db45d;
-}
-
-/* Create the indicator (the dot/circle - hidden when not checked) */
-.checkmark:after {
-  content: "";
-  position: absolute;
-  display: none;
-}
-
-/* Show the indicator (dot/circle) when checked */
-.container input:checked ~ .checkmark:after {
-  display: block;
-}
-
-/* Style the indicator (dot/circle) */
-.container .checkmark:after {
-  top: 5px;
-  left: 5px;
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: white;
-}
 /*DE AQUI ES EL CSS DE LOS COUNTERSSSSSSSSSSSSSSSSSSSSSSSSSSS*/
 .coder-counter {background:#2d344d; color:#fff;}
 .coder-counter-box {border-right: 1px solid #444e70; padding:30px 0px 30px 0px;}
