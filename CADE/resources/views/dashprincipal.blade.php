@@ -80,17 +80,10 @@
           </div>
 
        <div class="container-fluid">
-         <div class="row col-md-12">
-           <div class="panel panel-default2 col-md-6 col-sm-8 col-xs-12 " style="background-color:white; height:auto;">
-             <canvas id="bar-chart" width="800" height="450"></canvas>
-           </div>
-           <div class="panel panel-default2 col-md-6  col-sm-8 col-xs-12 " style="background-color:white;height:auto;">
-             <canvas id="bar-chart2" width="800" height="450"></canvas>
-           </div>
-         </div>
+        
          <div class="row">
            <table class="table table-condensed col-md-6 col-sm-8 col-xs-12" >
-             <p>Discapacidad (motriz)</p>
+             <p style="font-size:3rem;">Discapacidad (motriz)</p>
              <thead>
                <td>Nombre</td>
                <td>Apellidos</td>
@@ -118,7 +111,7 @@
            </div>
            <div class="row">
              <table class="table table-condensed col-md-6 col-sm-8 col-xs-12" >
-               <p style="card-body">Presión arterial(Hipertensión)</p>
+               <p style="font-size:3rem;">Presión arterial(Hipertensión)</p>
                <thead>
                  <td>Nombre</td>
                  <td>Apellidos</td>
