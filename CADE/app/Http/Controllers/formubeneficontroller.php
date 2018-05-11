@@ -55,7 +55,6 @@ class formubeneficontroller extends Controller
         //->take(10)
         ->get();
         $registros8=\DB::table('tabla_comida')
-
         ->where('Id_bene','=',$Id)
         ->orderby('Id_bene','desc')
         //->take(10)

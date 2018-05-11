@@ -27,6 +27,9 @@ body{
     transition: 0.4s;
 
 }
+label{
+  color:black;
+}
 
 .active, .accordion:hover {
     background-color: #ccc;

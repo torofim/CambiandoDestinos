@@ -33,7 +33,7 @@
 
           <button class="accordion">Datos Personales</button>
   <div class="panel1">
-    @include('datospersonales')
+    @include('formularios.datospersonales')
 
   </div>
 
