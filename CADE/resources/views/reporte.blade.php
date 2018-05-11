@@ -2,10 +2,6 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-<<<<<<< HEAD
-=======
-
->>>>>>> aadf5d503a9e8c1a26df08d5760b45f1026d59f9
         <link href="{{ asset('css/reporte.css') }}" rel="stylesheet" type="text/css" >
         <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" >
     <title></title>
@@ -13,81 +9,65 @@
   <body>
     <div id="Todo">
       <form class="" action="index.html" method="post">
-        <div class="titulo col-md-12">Expediente</div>
-      <div class="col-md-2 col-md-offset-10">
+        <div class="titulo">Expediente Beneficiario</div>
+      <div class="folio">
         Folio No. <label>0001</label>
       </div>
-
-      <div class="row col-md-12">
-        <div class="foto col-md-1 col-md-offset-1">
-
-        </div>
-        <div class="requisitos col-md-4">
-            Requisitos
-          <br>
-          <label for="">
-            <input type="radio" name="" value="">Foto infantil y cuerpo entero
-          </label>
-          <br>
-          <label for="">
-            <input type="radio" name="" value="">Certificado y/0 credencial de discapacidad
-          </label>
-          <br>
-          <label for="">
-            <input type="radio" name="" value="">CURP y comprobante de domicilio
-          </label>
-        </div>
-        <div class="col-md-4 col-md-offset-2">
-          <label> Día
-            <input class"col-md-1" type="number" name="" value="">
-          </label>
-          <label> Mes
-            <input class"col-md-1" type="number" name="" value="">
-          </label>
-          <label> Año
-            <input class"col-md-1" type="number" name="" value="">
-          </label>
-        </div>
-
+      <div class="fecha">
+        Fecha:<label>dd/mm/yy</label>
       </div>
-      <div class="segundalinea row col-md-12">
-        <div class="col-md-4">
-          <input class="col-md-12" type="text" name="" value="" placeholder="Nombre">
-        </div>
-        <div class="col-md-4">
-          <input class="col-md-12" type="text" name="" value="" placeholder="Apellido Paterno">
-        </div>
-        <div class="col-md-4">
-          <input class="col-md-12" type="text" name="" value="" placeholder="Apellido Materno">
-        </div>
-      </div>
-      <div class="titulosterceralinea col-md-12">
-        <div class="primera col-md-4">
-        Fecha de nacimiento
-        </div>
-        <div class="segunda col-md-2">
-        Lugar de nacimiento
-        </div>
-        <div class="tercero col-md-6">
-        CURP
-        </div>
-      </div>
-      <div class="terceralinea row col-md-12">
+            <div class="requisitos">
+              Requisitos
+            </div>
+            <div class="uno">
+              <br>
+              <input class="inp1" type="radio" name="" value="">Foto cuerpo e infantil
+            </div>
+            <br>
+            <div class="dos">
+              <input class="inp1" type="radio" name="" value="">Certificado/Credencial Discapacidad
+            </div>
 
-        <div class="col-md-4">
+            <div class="tres">
+              <input class="inp1" type="radio" name="" value="">CURP/Comprobante Domicilio
+            </div>
+              <label class="tnom">Nombres</label>
+            <div class="nombre">
 
-          <input class="col-md-4" type="number" name="" value="" placeholder="Dia">
-          <input class="col-md-4" type="number" name="" value="" placeholder="Mes">
-          <input class="col-md-4" type="number" name="" value="" placeholder="Año">
-        </div>
-        <div class="col-md-2">
-          <input type="text" name="" value="">
-        </div>
-        <div class="col-md-6">
-          <input class="col-md-4" type="text" name="" value="" placeholder="AAAA000000AAAAAA00">
-        </div>
-      </div>
-      <div class="titulocuartalinea col-md-12">
+              <input class="col-md-12" type="text" name="" value="" placeholder="Nombres">
+            </div>
+            <label class="tapp">Apellido Paterno</label>
+            <div class="app">
+              <input class="col-md-12" type="text" name="" value="" placeholder="Apellido Paterno">
+            </div>
+            <label class="tapm">Apellido Materno</label>
+            <div class="apm">
+              <input class="col-md-12" type="text" name="" value="" placeholder="Apellido Materno">
+            </div>
+
+            <div class="primera">
+              Fecha de nacimiento
+            </div>
+            <div class="segunda">
+              Lugar de nacimiento
+            </div>
+            <div class="tercera">
+              CURP
+            </div>
+
+            <div class="">
+              <input class="fechadatos" type="number" name="" value="" placeholder="dd/mm/yy">
+            </div>
+            <div class="">
+              <input class="lugarna" type="text" name="" value="" placeholder="Lugar de nacimiento">
+            </div>
+            <div class="">
+              <input class="curp" class="col-md-4" type="text" name="" value="" placeholder="AAAA000000AAAAAA00">
+            </div>
+
+
+            <!--SIN DAR ESTILOS AUN-->
+            <div class="titulocuartalinea col-md-12">
         <div class="col-md-2">
           Edad
         </div>
@@ -114,7 +94,7 @@
         </div>
       </div>
 
-<<<<<<< HEAD
+
       <div class="titulosquintalinea col-md-12">
         <div class="col-md-6">
           Discapacidad
@@ -179,7 +159,7 @@
           <input type="text" name="" value="" placeholder="7">
         </div>
       </div>
-=======
+
     <div class="tituloseptimalinea col-md-12">
       <div class="col-md-4">
         Recibe Rehabilitacion
@@ -252,13 +232,7 @@
         <input type="text" name="" value="" placeholder="Localidad">
       </div>
     </div>
-
-
     </form>
-
-  
->>>>>>> aadf5d503a9e8c1a26df08d5760b45f1026d59f9
-
       <div class="tituloseptimalinea col-md-12">
         <div class="col-md-4">
           Recibe Rehabilitacion
