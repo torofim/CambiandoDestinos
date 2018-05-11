@@ -15,38 +15,29 @@
     </div>
   @endif
 
-    {!!Form::open(array('route'=>['admin.estatus.store','0'],'method'=>'POST'))!!}
+    {!!Form::open(array('route'=>['admin.comidaca.store','0'],'method'=>'POST'))!!}
     <div class="input=-group col-md-4">
-      <label for="nombre">Jubilado</label><br>
-      @if(count($perros5)==0)
-        {{Form::text('jubilado','',array('class'=>'form-control','placeholder'=>'Jubilado') )}}
-        @else
-        {{Form::text('jubilado',$perros5[0]->Jubilado,array('class'=>'form-control','placeholder'=>'Jubilado') )}}
-        @endif
+      <label for="nombre">Nombre</label><br>
+      {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+
     </div>
     <div class="input=-group col-md-4">
-      <label for="nombre">Servicio Medico</label><br>
-      @if(count($perros5)==0)
-        {{Form::text('servicio','',array('class'=>'form-control','placeholder'=>'Servicio Medico') )}}
-        @else
-        {{Form::text('servicio',$perros5[0]->Servicio_medico,array('class'=>'form-control','placeholder'=>'Servicio Medico') )}}
-        @endif
+      <label for="nombre">Domicilio</label><br>
+
+        {{Form::text('domicilio','',array('class'=>'form-control','placeholder'=>'Domicilio') )}}
+
     </div>
     <div class="input=-group col-md-4">
-      <label for="nombre">Baño Diario</label><br>
-      @if(count($perros5)==0)
-        {{Form::text('bano','',array('class'=>'form-control','placeholder'=>'Baño Diario') )}}
-        @else
-        {{Form::text('bano',$perros5[0]->Bano_diario,array('class'=>'form-control','placeholder'=>'Baño Diario') )}}
-        @endif
+      <label for="nombre">Fecha</label><br>
+
+        {{Form::date('fecha','',array('class'=>'form-control','placeholder'=>'Fecha') )}}
+
     </div>
     <div class="input=-group col-md-4">
-      <label for="nombre">Convivencia Animal </label><br>
-      @if(count($perros5)==0)
-        {{Form::text('convivencia','',array('class'=>'form-control','placeholder'=>'Convivencia Animal') )}}
-        @else
-        {{Form::text('convivencia',$perros5[0]->Convivencia_animal,array('class'=>'form-control','placeholder'=>'Convivencia Animal') )}}
-        @endif
+      <label for="nombre">Nota</label><br>
+
+        {{Form::text('nota','',array('class'=>'form-control','placeholder'=>'Nota') )}}
+
     </div>
 
     <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">

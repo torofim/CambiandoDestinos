@@ -9,7 +9,7 @@ class visitas extends Model
     //
     protected $PrimaryKey='Id';
     protected $table='visitas';
-    protected $fillable[
+    protected $fillable=[
     'Id_bene','Nombre','Domicilio','Fecha','Tipo_de_visita','Notas'
     ];
 }

@@ -1,13 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Validator;
 use Illuminate\Http\Request;
-use App\Http\Controllers\Controller;
+use App\visitas;
 
 class visitasController extends Controller
 {
-    //public function __construct(){
+    public function __construct(){
       $this->middleware('auth');
     }
 
@@ -42,7 +42,8 @@ class visitasController extends Controller
           ->withErrors($validator);
       }else{
 
-          Discapacidad::create([
+          visitas::create([
+            'Id_bene'=>$req->idbene,
             'Nombre'=>$req->nombre,
             'Domicilio'=>$req->domicilio,
             'Fecha'=>$req->fecha,
@@ -52,4 +53,6 @@ class visitasController extends Controller
           ]);
           return redirect()->to('/admin/Formubenefi/'.$req->idbene)
           ->with('mensaje','datos agregados');
+}
+}
 }

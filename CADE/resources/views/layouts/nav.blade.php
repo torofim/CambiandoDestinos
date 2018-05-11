@@ -17,11 +17,14 @@
     <ul class="nav navbar-nav">
       </li>
       <li><a href="/admin/dash">Inicio<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-home"></span></a></li>
+      @if(Auth::user()->privilegios=='admin')
       <li ><a href="/admin/usuarios">Usuarios<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-user"></span></a></li>
+      @endif
       <li ><a href="/admin/benef">Beneficiarios<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-leaf"></span></a></li>
-        <li ><a href="/admin/graficos">Graficos<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span></a></li>
-        <li><a href="/admin/formularios">Formularios y reportes<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span></a></li>
-        <li ><a href="/admin/inventario">Inventario<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span></a></li>
+      <li ><a href="/admin/visitacomida">Visita y Comida<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span></a></li>
+      <li ><a href="/admin/graficos">Graficos<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span></a></li>
+      <li><a href="/admin/formularios">Formularios y reportes<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span></a></li>
+      <li ><a href="/admin/inventario">Inventario<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span></a></li>
       <li class="dropdown">
         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Ajustes <span class="caret"></span><span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-cog"></span></a>
         <ul class="dropdown-menu forAnimate" role="menu">
