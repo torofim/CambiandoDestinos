@@ -1,9 +1,9 @@
 
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-8">
+        <div class="col-md-12">
             <div class="card">
-                <div class="card-header" style="margin-bottom:5%; font-size:3rem; margin-left:1.5%;">Datos Personales</div>
+                <div class="card-header" style="margin-bottom:5%; font-size:3rem; margin-left:1.5%;"></div>
 
                 <div class="card-body">
                   @if($errors->any())
@@ -136,7 +136,7 @@
                       @endif
                   </div>
                   <div class="input=-group col-md-4">
-                    <label for="nombre">Codigo Postal </label><br>
+                    <label for="nombre" >Codigo Postal </label><br>
                     @if(count($perros)==0)
                       {{Form::number('cpEditar','',array('class'=>'form-control','placeholder'=>'Cp') )}}
                       @else
@@ -159,7 +159,7 @@
                       {{Form::number('telEditar',$perros[0]->Tel,array('class'=>'form-control','placeholder'=>'Telefono') )}}
                       @endif
                   </div>
-                  <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;margin-bottom:2%;">
+                  <div class="input-group col-md-12" style="margin-left:1.5%; padding-top:2%;margin-bottom:2%;">
                     {{Form::submit('Actualizar',array('class'=>'btn btn-primary'))}}
                   </div>
                   <input type="hidden" name="id" value="{{$perros[0]->Id_bene}}" >

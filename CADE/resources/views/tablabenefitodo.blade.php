@@ -334,7 +334,49 @@
         @endforelse
       </tbody>
     </table>
+    <tbody id="tbody">
+      <tr>
+        @forelse($perros4 as $usu)
+        <td>{{$usu->Antecedentes}}</td>
+        <td>{{$usu->Telefono}}</td>
+        <td></td>
+        <td></td>
+        <td></td>
 
+
+        </tr>
+      @empty
+      <p>sin registro</p>
+      @endforelse
+    </tbody>
+  </table>
+  <table class="table table-condensed col-md-12" style="margin-left:0%;">
+    <p>Comida Caliente</p>
+    <thead>
+      <tr style="border:white solid;background-color:#4c4f54;">
+        <td style="border-right: white solid;">Nombre Beneficiario</td>
+        <td style="border-right:white solid;">Domicilio</td>
+        <td style="border-right:white solid;">Fecha</td>
+        <td style="border-right:white solid;">Notas</td>
+        <td style="border-right:white solid;"></td>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+      <tr>
+        @forelse($perros8 as $usu)
+        <td>{{$usu->Nombre}}</td>
+        <td>{{$usu->Domicilio}}</td>
+        <td>{{$usu->Fecha}}</td>
+        <td>{{$usu->Nota}}</td>
+        <td></td>
+
+
+        </tr>
+      @empty
+      <p>sin registro</p>
+      @endforelse
+    </tbody>
+  </table>
 
 </div>
 </div>

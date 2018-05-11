@@ -1,3 +1,8 @@
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="card">
+<div class="card-header" style="margin-bottom:5%; font-size:3rem; margin-left:1.5%;"></div>
 <div class="card-body">
   @if($errors->any())
     <div class="alert alert-warning alert-dismissable">
@@ -73,7 +78,7 @@
         {{Form::number('tel',$perros4[0]->Telefono,array('class'=>'form-control','placeholder'=>'Telefono') )}}
         @endif
     </div>
-    <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
+    <div class="input-group col-md-12" style="margin-left:1.5%; padding-top:2%;margin-bottom:3%;">
       {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
     </div>
 
@@ -81,4 +86,8 @@
 
   {!!Form::close()!!}
 
+</div>
+</div>
+</div>
+</div>
 </div>

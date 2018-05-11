@@ -30,13 +30,14 @@ class comidacalienteController extends Controller{
             'nombre'=>'max:255',
             'domicilio'=>'max:255',
             'fecha'=>'max:255',
-            'notas'=>'max:255',
+            'nota'=>'max:255',
 
 
           ]);
+
           if($validator->fails()){
             //quiere decir que no estan correctos
-            return redirect('formularios.Formubenefi/'.$req->idbo)
+            return redirect('formularios.Formubenefi')
               ->withInput()
               ->withErrors($validator);
           }else{
@@ -46,7 +47,8 @@ class comidacalienteController extends Controller{
                 'Nombre'=>$req->nombre,
                 'Domicilio'=>$req->domicilio,
                 'Fecha'=>$req->fecha,
-                'Notas'=>$req->notas
+                'Nota'=>$req->nota
+
 
               ]);
               return redirect()->to('/admin/Formubenefi/'.$req->idbo)
