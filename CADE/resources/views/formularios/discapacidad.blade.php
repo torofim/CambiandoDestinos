@@ -38,6 +38,14 @@
         @endif
     </div>
     <div class="input=-group col-md-4">
+      <label for="nombre">Tiene Hipertension</label><br>
+      @if(count($perros2)==0)
+        {{Form::text('hiper','',array('class'=>'form-control','placeholder'=>'Sufre Hipertension') )}}
+        @else
+        {{Form::text('hiper',$perros2[0]->Causa_discapacidad,array('class'=>'form-control','placeholder'=>'Sufre Hipertension') )}}
+        @endif
+    </div>
+    <div class="input=-group col-md-4">
       <label for="nombre">Rehabilitacion</label><br>
       @if(count($perros2)==0)
         {{Form::text('rehab','',array('class'=>'form-control','placeholder'=>'Rehabilitacion') )}}

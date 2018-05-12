@@ -41,6 +41,12 @@
   <div class="panel1">
     @include('formularios.centrosalud')
 </div>
+
+<button class="accordion">Tipo Discapacidad</button>
+<div class="panel1">
+@include('formularios.tipodiscapacidad')
+
+</div>
   <button class="accordion">Discapacidad</button>
   <div class="panel1">
     @include('formularios.discapacidad')

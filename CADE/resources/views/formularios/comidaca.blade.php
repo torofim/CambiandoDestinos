@@ -41,7 +41,7 @@
     <div class="input=-group col-md-4">
       <label for="nombre">Nota</label><br>
 
-        {{Form::text('notas','',array('class'=>'form-control','placeholder'=>'Nota') )}}
+        {{Form::text('nota','',array('class'=>'form-control','placeholder'=>'Nota') )}}
 
     </div>
 

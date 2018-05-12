@@ -59,6 +59,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::get('/inventario','inventarioController@index')->name('inventario');
   Route::get('/Formubenefi/{Id}','formubeneficontroller@index')->name('Formubenefi');
   Route::get('/discapacidad/{Id}','discapacidadController@index')->name('discapacidad');
+  Route::get('/tipodiscapacidad/{Id}','tipodiscapacidadController@index')->name('tipodiscapacidad');
   Route::get('/visitacomida','visitacomidaController@index');
 
   // Estos son los Routes de los DASH
@@ -85,6 +86,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::resource('evaluacion','EvaluacionController');
   Route::resource('visitadom','visitasController');
   Route::resource('comidaca','comidacalienteController');//ESTE YA ESTA
+  Route::resource('tipodiscapacidad','tipodiscapacidadController');//ESTE YA ESTA
 
 });
 

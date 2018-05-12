@@ -11,7 +11,6 @@ class formubeneficontroller extends Controller
     public function index($Id){
 
       $registros=\DB::table('datos_personales')
-
       ->where('Id_bene','=',$Id)
       ->orderby('Id_bene','desc')
       //->take(10)
@@ -24,32 +23,27 @@ class formubeneficontroller extends Controller
       ->get();
   //  dd($registros);
       $registros3=\DB::table('evaluacion')
-
       ->where('Id_bene','=',$Id)
       ->orderby('Id_bene','desc')
   //->take(10)
       ->get();
         //dd($registros3);
         $registros4=\DB::table('tutor')
-
         ->where('Id_bene','=',$Id)
         ->orderby('Id_bene','desc')
         //->take(10)
         ->get();
         $registros5=\DB::table('estatus')
-
         ->where('Id_bene','=',$Id)
         ->orderby('Id_bene','desc')
         //->take(10)
         ->get();
         $registros6=\DB::table('datos_centro_salud')
-
         ->where('Id_bene','=',$Id)
         ->orderby('Id_bene','desc')
         //->take(10)
         ->get();
         $registros7=\DB::table('visitas')
-
         ->where('Id_bene','=',$Id)
         ->orderby('Id_bene','desc')
         //->take(10)
@@ -59,7 +53,12 @@ class formubeneficontroller extends Controller
         ->orderby('Id_bene','desc')
         //->take(10)
         ->get();
-
+        $registros9=\DB::table('tipo_discapacidad')
+        ->where('Id_bene','=',$Id)
+        ->orderby('Id_bene','desc')
+        //->take(10)
+        ->get();
+        
 
       return view('/Formubenefi')
         ->with('Id_bene',$Id)
@@ -70,7 +69,8 @@ class formubeneficontroller extends Controller
         ->with('perros5',$registros5)
         ->with('perros6',$registros6)
         ->with('perros7',$registros7)
-        ->with('perros8',$registros8);
+        ->with('perros8',$registros8)
+        ->with('perros9',$registros9);
 
     }
 

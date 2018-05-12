@@ -174,7 +174,7 @@
           <td style="border-right:white solid;">Causa Discapacidad</td>
           <td style="border-right:white solid;">Rehabilitacion</td>
           <td style="border-right:white solid;">Lugar de la Rehabilitacion</td>
-          <td style="border-right:white solid;"></td>
+          <td style="border-right:white solid;">Sufre Hipertension</td>
 
 
 
@@ -189,10 +189,9 @@
           <td>{{$usu->Causa_discapacidad}}</td>
           <td>{{$usu->Rehabilitacion}}</td>
           <td>{{$usu->Lugar_de_rehabilitacion}}</td>
+          <td>{{$usu->hipertension}}</td>
 
 
-          <td>
-          </td>
           </tr>
         @empty
         <p>sin registro</p>
@@ -377,7 +376,33 @@
       @endforelse
     </tbody>
   </table>
+  <table class="table table-condensed col-md-12" style="margin-left:0%;">
+    <p>Visita Domiciliaria</p>
+    <thead>
+      <tr style="border:white solid;background-color:#4c4f54;">
+        <td style="border-right: white solid;">Nombre Beneficiario</td>
+        <td style="border-right:white solid;">Domicilio</td>
+        <td style="border-right:white solid;">Fecha</td>
+        <td style="border-right:white solid;">Tipo de Visita</td>
+        <td style="border-right:white solid;">Notas</td>
+      </tr>
+    </thead>
+    <tbody id="tbody">
+      <tr>
+        @forelse($perros7 as $usu)
+        <td>{{$usu->Nombre}}</td>
+        <td>{{$usu->Domicilio}}</td>
+        <td>{{$usu->Fecha}}</td>
+        <td>{{$usu->Tipo_de_visita}}</td>
+        <td>{{$usu->Notas}}</td>
 
+
+        </tr>
+      @empty
+      <p>sin registro</p>
+      @endforelse
+    </tbody>
+  </table>
 </div>
 </div>
   </div>
