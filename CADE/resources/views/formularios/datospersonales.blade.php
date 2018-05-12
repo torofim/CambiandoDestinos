@@ -1,5 +1,5 @@
 
-<div class="container">
+<div class="container col-md-12">
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
@@ -74,9 +74,19 @@
                   <div class="input=-group col-md-4">
                     <label for="nombre">Sexo </label><br>
                     @if(count($perros)==0)
-                      {{Form::text('sEditar','',array('class'=>'form-control','placeholder'=>'M o F') )}}
+                      <label >{{Form::radio('sEditar','M',array('class'=>'form-control','required'=>'true') )}} M</label>
+                      <label>{{Form::radio('sEditar','F',array('class'=>'form-control','required'=>'true') )}}F</label>
                       @else
-                      {{Form::text('sEditar',$perros[0]->Sexo,array('class'=>'form-control','placeholder'=>'M o F') )}}
+                        @if($perros[0]->Sexo=='Si')
+                        <label for=""><input type="radio" name="sEditar" value="M" checked> M</label>
+                        <label for=""><input type="radio" name="sEditar" value="F"> F</label>
+
+                      @else
+                      <label for=""><input type="radio" name="sEditar" value="M"> M</label>
+                      <label for=""><input type="radio" name="sEditar" value="F" checked> F</label>
+
+                       @endif
+
                       @endif
                   </div>
                   <div class="input=-group col-md-4">

@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container col-md-12">
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
@@ -24,13 +24,19 @@
     <div class="input=-group col-md-4">
       <label for="nombre">Auditiva</label><br>
       @if(count($perros9)==0)
-        {{Form::checkbox('auditiva','Si',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}
+        <label >{{Form::radio('auditiva','Si',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}} Si</label>
+        <label>{{Form::radio('auditiva','No',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}No</label>
         @else
-        @if($perros9[0]->Auditiva=='Si')
-        {{Form::checkbox('auditiva','Si',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true','checked'=>'true') )}}
+          @if($perros9[0]->Auditiva=='Si')
+          <label for=""><input type="radio" name="auditiva" value="Si" checked> Si</label>
+          <label for=""><input type="radio" name="auditiva" value="No"> No</label>
+
         @else
-        {{Form::checkbox('auditiva','Si',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true','checked'=>'false') )}}
-        @endif
+        <label for=""><input type="radio" name="auditiva" value="Si"> Si</label>
+        <label for=""><input type="radio" name="auditiva" value="No" checked> No</label>
+
+         @endif
+
         @endif
     </div>
     <div class="input=-group col-md-4">
@@ -54,25 +60,55 @@
     <div class="input=-group col-md-4">
       <label for="nombre">Intelectual</label><br>
       @if(count($perros9)==0)
-        {{Form::checkbox('intelectual','Si',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}
+        <label >{{Form::radio('intelectual','Si',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}} Si</label>
+        <label>{{Form::radio('intelectual','No',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}No</label>
         @else
-        {{Form::checkbox('intelectual',$perros9[0]->Intelectual,array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}
+          @if($perros9[0]->Intelectual=='Si')
+          <label for=""><input type="radio" name="intelectual" value="Si" checked> Si</label>
+          <label for=""><input type="radio" name="intelectual" value="No"> No</label>
+
+        @else
+        <label for=""><input type="radio" name="intelectual" value="Si"> Si</label>
+        <label for=""><input type="radio" name="intelectual" value="No" checked> No</label>
+
+         @endif
+
         @endif
     </div>
     <div class="input=-group col-md-4">
       <label for="nombre">Musculo Esqueletica</label><br>
       @if(count($perros9)==0)
-        {{Form::checkbox('musculo','Si',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}
+        <label >{{Form::radio('musculo','Si',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}} Si</label>
+        <label>{{Form::radio('musculo','No',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}No</label>
         @else
-        {{Form::checkbox('musculo',$perros9[0]->MusculoEsqueletica,array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}
+          @if($perros9[0]->MusculoEsqueletica=='Si')
+          <label for=""><input type="radio" name="musculo" value="Si" checked> Si</label>
+          <label for=""><input type="radio" name="musculo" value="No"> No</label>
+
+        @else
+        <label for=""><input type="radio" name="musculo" value="Si"> Si</label>
+        <label for=""><input type="radio" name="musculo" value="No" checked> No</label>
+
+         @endif
+
         @endif
     </div>
     <div class="input=-group col-md-4">
       <label for="nombre">Neuromotora</label><br>
       @if(count($perros9)==0)
-        {{Form::checkbox('neuro','Si',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}
+        <label >{{Form::radio('neuro','Si',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}} Si</label>
+        <label>{{Form::radio('neuro','No',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}No</label>
         @else
-        {{Form::checkbox('neuro',$perros9[0]->Neuromotora,array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}
+          @if($perros9[0]->Neuromotora=='Si')
+          <label for=""><input type="radio" name="neuro" value="Si" checked> Si</label>
+          <label for=""><input type="radio" name="neuro" value="No"> No</label>
+
+        @else
+        <label for=""><input type="radio" name="neuro" value="Si"> Si</label>
+        <label for=""><input type="radio" name="neuro" value="No" checked> No</label>
+
+         @endif
+
         @endif
     </div>
     <div class="input=-group col-md-4">

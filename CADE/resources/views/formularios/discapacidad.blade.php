@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container col-md-12">
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
@@ -22,12 +22,23 @@
 
       {!!Form::open(array('route'=>['admin.discapacidad.store','0'],'method'=>'POST'))!!}
     <div class="input=-group col-md-4">
-      <label for="nombre">Discapacidad</label><br>
+      <label for="nombre">Tiene Discapacidad</label><br>
       @if(count($perros2)==0)
-        {{Form::text('discapacidad','',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}
+        <label >{{Form::radio('discapacidad','Si',array('class'=>'form-control','required'=>'true') )}} Si</label>
+        <label>{{Form::radio('discapacidad','No',array('class'=>'form-control','required'=>'true') )}}No</label>
         @else
-        {{Form::text('discapacidad',$perros2[0]->Discapacidad,array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}
+          @if($perros2[0]->Discapacidad=='Si')
+          <label for=""><input type="radio" name="discapacidad" value="Si" checked> Si</label>
+          <label for=""><input type="radio" name="discapacidad" value="No"> No</label>
+
+        @else
+        <label for=""><input type="radio" name="discapacidad" value="Si"> Si</label>
+        <label for=""><input type="radio" name="discapacidad" value="No" checked> No</label>
+
+         @endif
+
         @endif
+
     </div>
     <div class="input=-group col-md-4">
       <label for="nombre">Causa de la Discapacidad</label><br>
@@ -40,9 +51,19 @@
     <div class="input=-group col-md-4">
       <label for="nombre">Tiene Hipertension</label><br>
       @if(count($perros2)==0)
-        {{Form::text('hiper','',array('class'=>'form-control','placeholder'=>'Sufre Hipertension') )}}
+        <label >{{Form::radio('hiper','Si',array('class'=>'form-control','required'=>'true') )}} Si</label>
+        <label>{{Form::radio('hiper','No',array('class'=>'form-control','required'=>'true') )}}No</label>
         @else
-        {{Form::text('hiper',$perros2[0]->Causa_discapacidad,array('class'=>'form-control','placeholder'=>'Sufre Hipertension') )}}
+          @if($perros2[0]->hipertension=='Si')
+          <label for=""><input type="radio" name="hiper" value="Si" checked> Si</label>
+          <label for=""><input type="radio" name="hiper" value="No"> No</label>
+
+        @else
+        <label for=""><input type="radio" name="hiper" value="Si"> Si</label>
+        <label for=""><input type="radio" name="hiper" value="No" checked> No</label>
+
+         @endif
+
         @endif
     </div>
     <div class="input=-group col-md-4">
