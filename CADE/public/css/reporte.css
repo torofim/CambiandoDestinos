@@ -103,3 +103,73 @@
     margin-top:28%;
     margin-left:30%;
 }
+.ed{
+    position:absolute;
+    margin-top:33%;
+
+}
+.sex{
+    position:absolute;
+    margin-top:33%;
+      margin-left:60%;
+
+}
+.estciv{
+    position:absolute;
+    margin-top:33%;
+    margin-left:30%;
+}
+.edad{
+    position:absolute;
+    margin-top:37%;
+
+}
+.sexo{
+    position:absolute;
+    margin-top:37%;
+    margin-left:60%;
+}
+.estadocivil{
+    position:absolute;
+    margin-top:37%;
+    margin-left:30%;
+}
+/*DISCAPACIDADES////////////////////////////////*/
+.tdisc{
+  position:absolute;
+  margin-top:42%;
+  margin-left:0%;
+}
+.audvis{
+  position:absolute;
+  margin-top:46%;
+  margin-left:0%;
+}
+.intmus{
+  position:absolute;
+  margin-top:46%;
+  margin-left:30%;
+}
+.df{
+  position:absolute;
+  margin-top:46%;
+  margin-left:60%;
+}
+.causa{
+  position:absolute;
+  margin-top:53%;
+}
+.naen{
+  position:absolute;
+  margin-top:57%;
+}
+.viac{
+  position:absolute;
+  margin-top:57%;
+  margin-left:30%;
+}
+.veot{
+  position:absolute;
+  margin-top:57%;
+  margin-left:60%;
+}

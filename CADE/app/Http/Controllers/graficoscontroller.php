@@ -184,7 +184,7 @@ class graficoscontroller extends Controller
      }//LLAVE ELSE ARRIBA FOR
 
      ///////////////////////////////////////////////////////////////////////////
-
+     
      ///////////////////////////////////////////////////////////////////////////
      for($i=0;$i<count($localidades);$i++){
        $categorias=$categorias.'"'.$localidades{$i}->Localidad.'",';
