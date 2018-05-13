@@ -4,7 +4,7 @@
     <meta charset="utf-8">
       <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" >
     <link href="{{ asset('css/estiloside.css') }}" rel="stylesheet" type="text/css" >
-    <title></title>
+    <title>Formularios</title>
   </head>
   <body>
     @include('layouts.nav')
@@ -14,7 +14,7 @@
         </div>
       </div>
       <div class="panel2 panel-default col-xs-12 ">
-        <div class="panel-body2" style="border-bottom:groove; background-color:transparent;">
+        <div class="panel-body2 titula" style="border-bottom:groove; background-color:transparent;">
           Dashboard
         </div>
       </div>
@@ -27,7 +27,7 @@
         <button type="button" name="button" class="botonsin col-md-2">Generar Reporte</button>
       </div>
       <div class="relleno col-md-12" style="height:520px">
-        
+
       </div>
     </div>
 

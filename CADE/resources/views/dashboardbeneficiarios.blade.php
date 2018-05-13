@@ -4,7 +4,7 @@
     <meta charset="utf-8">
       <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" >
     <link href="{{ asset('css/estiloside.css') }}" rel="stylesheet" type="text/css" >
-    <title></title>
+    <title>Beneficiarios</title>
   </head>
   <body>
   @include('layouts.nav')
@@ -19,7 +19,7 @@
     <br>
     <br>
     <div class="panel2 panel-default col-xs-12 ">
-      <div class="panel-body2" style="border-bottom:groove; background-color:transparent;">
+      <div class="panel-body2 titula" style="border-bottom:groove; background-color:transparent;">
         Fundacion Cambiando Destinos
       </div>
     </div>
@@ -31,7 +31,7 @@
     <button class="tablink" style="width:50%;" onclick="openPage('agregar', this, '')" >Agregar Beneficiario</button>
 
 
-    <div id="benefi" class="tabcontent">
+    <div id="benefi" class="tabcontent" >
       <div class="card-body" >
         @if($errors->any())
           <div class="alert alert-warning alert-dismissable">
@@ -51,14 +51,16 @@
         <!-- ESTA ES LA TABLA ORIGINAL PARA POSTERIORES USOS-->
         <div class="row">
           <h2 style="margin-left:1%;"></h2>
-          <table class="table table-condensed col-md-12" style="margin-left:0%;">
+          <table class="table table-condensed col-md-12" style="margin-left:0%; background-color:red;">
             <thead>
               <tr>
-                <td>Id</td>
+                <td>No. Folio</td>
                 <td>Nombre</td>
                 <td>Apellido</td>
                 <td>Apellido</td>
                 <td>Editar</td>
+                <td>Entrega Medicamento</td>
+                <td>Entrega Aparatos</td>
                 <td>Eliminar</td>
               </tr>
             </thead>
@@ -71,8 +73,13 @@
                 <td>{{$usu->Apellido_m}}</td>
                 <td><button type="button" class="btn btn-info btn-lg " onclick="location.href='/admin/Formubenefi/{{$usu->Id_bene}}'"
                    >Editar </button></td>
-                <td>
-                </td>
+                <td><button type="button" class="btn btn-info btn-lg btne"
+                     data-toggle="modal" data-target="#myModal"
+                     >Entrega </button></td>
+                     <td><button type="button" class="btn btn-info btn-lg btne"
+                          data-toggle="modal" data-target="#myModal2"
+                          >Entrega </button></td>
+
                 </tr>
               @empty
               <p>sin registro</p>
@@ -148,7 +155,11 @@
 
 
   </div>
-
+  <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/chart.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/graficabarras.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/side.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
   <script type="text/javascript">
   function openPage(pageName,elmnt,color) {
   var i, tabcontent, tablinks;
@@ -170,11 +181,7 @@ document.getElementById("defaultOpen").click();
 
 $('.divfade').fadeOut(2000);
   </script>
-    <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/chart.min.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/graficabarras.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/side.js') }}"></script>
-  <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+
 
 
   </body>

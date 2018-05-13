@@ -4,7 +4,7 @@
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" >
     <link href="{{ asset('css/estiloside.css') }}" rel="stylesheet" type="text/css" >
     <meta charset="utf-8">
-    <title></title>
+    <title>Comida y Visitas</title>
   </head>
   <body>
     @include('layouts.nav')

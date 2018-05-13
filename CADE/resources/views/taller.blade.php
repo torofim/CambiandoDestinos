@@ -4,7 +4,7 @@
     <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" >
   <link href="{{ asset('css/estiloside.css') }}" rel="stylesheet" type="text/css" >
     <meta charset="utf-8">
-    <title>talleres</title>
+    <title>Talleres</title>
   </head>
   <body>
       @include('layouts.nav')
@@ -13,7 +13,7 @@
         <br>
         <br>
         <div class="panel2 panel-default col-xs-12 ">
-          <div class="panel-body2" style="border-bottom:groove; background-color:transparent;">
+          <div class="panel-body2 titula" style="border-bottom:groove; background-color:transparent;">
             Fundacion Cambiando Destinos
           </div>
         </div>
@@ -24,7 +24,7 @@
         <button class="tablink" style="width:50%;" onclick="openPage('agregar', this, '')" >Agregar Taller</button>
 
 
-        <div id="taller" class="tabcontent">
+        <div id="taller" class="tabcontent" style="background-color:gray ;">
 
         <div class="card-body" >
           @if($errors->any())
@@ -65,8 +65,7 @@
                   <td>{{$usu->Fecha}}</td>
                   <td>{{$usu->Lugar}}</td>
                   <td>{{$usu->Notas}}</td>
-                  <td><button type="button" class="btn btn-info btn-lg btne"
-                  >Editar </button></td>
+
                   <td>
                   </td>
                   </tr>
@@ -76,6 +75,7 @@
               </tbody>
             </table>
         </div>
+
         </div>
         </div>
 

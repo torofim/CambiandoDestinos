@@ -13,8 +13,8 @@
       <br>
       <br>
       <div class="panel2 panel-default col-xs-12 ">
-        <div class="panel-body2" style="border-bottom:groove; background-color:transparent;">
-          Fundacion Cambiando Destinos
+        <div class="panel-body2 col-xs-12" style="border-bottom:groove; background-color:transparent;">
+          <label class="titula col-xs-12">Fundacion Cambiando Destinos</label>
         </div>
       </div>
 
@@ -56,6 +56,7 @@
               <td>Funcionalidad</td>
               <td>Tipo</td>
               <td>Editar</td>
+
             </tr>
           </thead>
           <tbody id="tbody">
@@ -73,9 +74,9 @@
                 data-funedit="{{$usu->Funcionalidad}}"
                 data-tipoedit="{{$usu->Tipo}}"
                 data-idin="{{$usu->Id}}">Editar </button></td>
-              <td>
-              </td>
-              </tr>
+
+
+
             @empty
             <p>sin registro</p>
             @endforelse

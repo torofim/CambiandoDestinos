@@ -3,7 +3,7 @@
 <br>
 <br>
 <div class="panel2 panel-default col-xs-12 ">
-  <div class="panel-body2" style="border-bottom:groove; background-color:transparent;">
+  <div class="panel-body2 titula" style="border-bottom:groove; background-color:transparent;">
     Fundacion Cambiando Destinos
   </div>
 </div>
@@ -45,7 +45,7 @@
                       <thead>
                         <tr>
                           <td>Id</td>
-                          <td>Nombre</td>
+                          <td>Nombre y Apellido</td>
                           <td>Email</td>
                           <td>Editar</td>
                           <td>Eliminar</td>
@@ -89,7 +89,7 @@
 
                   {{Form::open(array('url'=>'/admin/usuarios','files'=>true))}}
                     <div class="input=-group col-md-12" >
-                      <label for="nombre" >Nombre</label><br>
+                      <label for="nombre" >Nombre y Apellido</label><br>
                       {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
                     </div>
                     <div class="input=-group col-md-12">
