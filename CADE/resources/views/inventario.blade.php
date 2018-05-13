@@ -10,7 +10,15 @@
     @include('layouts.nav')
     <div class="main" style="height:750px;overflow-y:hidden;">
 
-    <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:600px;">
+      <br>
+      <br>
+      <div class="panel2 panel-default col-xs-12 ">
+        <div class="panel-body2" style="border-bottom:groove; background-color:transparent;">
+          Fundacion Cambiando Destinos
+        </div>
+      </div>
+
+    <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:auto;">
 
 
     <button class="tablink" style="width:33.33%;" onclick="openPage('benefi', this, '')" id="defaultOpen">Inventario</button>

@@ -8,12 +8,22 @@
   </head>
   <body>
   @include('layouts.nav')
+
   <div class="main" style="height:100%;overflow-y:hidden;">
   <!--<div class="panel panel-default">
         <div class="panel-body cold-md-2" id="sepa">
         </div>
+
     </div>-->
-    <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:100%;">
+
+    <br>
+    <br>
+    <div class="panel2 panel-default col-xs-12 ">
+      <div class="panel-body2" style="border-bottom:groove; background-color:transparent;">
+        Fundacion Cambiando Destinos
+      </div>
+    </div>
+    <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:auto;">
     <!-- Viene de Usuarios.blade-->
 
 

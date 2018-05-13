@@ -1,10 +1,19 @@
 @extends('layouts.layout')
 @section('principal')
+<br>
+<br>
+<div class="panel2 panel-default col-xs-12 ">
+  <div class="panel-body2" style="border-bottom:groove; background-color:transparent;">
+    Fundacion Cambiando Destinos
+  </div>
+</div>
+
 <div class=" col-md-12 container"style="height:100%;">
 
   <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:100%;">
   <button class="tablink" style="width:50%;" onclick="openPage('benefi', this, '')" id="defaultOpen">Usuarios</button>
   <button class="tablink" style="width:50%;" onclick="openPage('agregar', this, '')" >Agregar Usuario</button>
+
 
 
   <div id="benefi" class="tabcontent">
@@ -158,9 +167,9 @@
           <div class="inpnut-group">
             <label for="">Nivel</label>
             <select class="form-control" name="nivelEditar">
-              <option value="0">Admin</option>
-              <option value="1">Editor</option>
-              <option value="2">Chalan</option>
+              <option value="0">Administrador</option>
+              <option value="1">Trabajador</option>
+
             </select>
           </div>
 

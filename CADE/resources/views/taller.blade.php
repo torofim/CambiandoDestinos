@@ -1,94 +1,168 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet" type="text/css" >
+  <link href="{{ asset('css/estiloside.css') }}" rel="stylesheet" type="text/css" >
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-		<link href="./css/bootstrap.min.css" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="./css/paginas.css">
-    <title>Cambiando Destinos</title>
+    <title>talleres</title>
   </head>
   <body>
-    <nav class="navbar navbar-default navbar-fixed-top">
-  	  <a class="navbar-brand" href="/principal" style="font-size:2.5em;">Fundación Cambiando Destinos</a>
-  	  <div class="containerarriba">
+      @include('layouts.nav')
+      <div class="main" style="height:750px;overflow-y:hidden;">
 
-  	      <div class="navbar-header page-scroll">
-  	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-  	              <span class="sr-only">Toggle navigation</span>
-  	              <span class="icon-bar"></span>
-  	              <span class="icon-bar"></span>
-  	              <span class="icon-bar"></span>
-  	          </button>
-
-  	      </div>
-  	      <!-- Collect the nav links, forms, and other content for toggling -->
-  	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-  	          <ul class="nav navbar-nav navbar-right">
-  	              <li class="hidden">
-  	                  <a href="#page-top"></a>
-  	              </li>
-  	              <li class="page-scroll">
-  	                  <a href="/visita" >Visita Domiciliaria <img src="./img/logonavi.png" alt=""></a>
-  	              </li>
-                  <li class="page-scroll">
-  	                  <a href="/comida" >Comida Caliente <img src="./img/logonavi.png" alt=""></a>
-  	              </li>
-                  <li class="page-scroll">
-  	                  <a href="/taller" >Tercera Edad <img src="./img/logonavi.png" alt=""></a>
-  	              </li>
-                  <li class="page-scroll">
-  	                  <a href="/cultura" >Cultura <img src="./img/logonavi.png" alt=""></a>
-  	              </li>
-
-
-  	          </ul>
-  	      </div>
-  	      <!-- /.navbar-collapse -->
-  	  </div>
-  	  <!-- /.container-fluid -->
-  	</nav>
-    <header id="page-top">
-        <div class="container">
-            <div class="rowheader">
-                <div class="col-md-12">
-                    <img class="img-responsive" style="margin-top:-10%;" src="./img/paseo1.jpg" alt="">
-                    <div class="intro-text">
-
-                    </div>
-                </div>
-            </div>
+        <br>
+        <br>
+        <div class="panel2 panel-default col-xs-12 ">
+          <div class="panel-body2" style="border-bottom:groove; background-color:transparent;">
+            Fundacion Cambiando Destinos
+          </div>
         </div>
-    </header>
-    <div class="content-wrapper">
-        <section class="primary" >
-            <div class="container1">
-                <div class="row" id="sobre">
-                    <div class="col-md-12 text-center">
-                      <h2 style="margin-top:7%;font-size:4em;margin-left:38%;">Taller Aprendiendo a Vivir en la 3ra Edad</h2>
-                  </div>
-              </div>
-          <div class="container1">
-            <div class=" row">
-        <article class="acerca">
-          <div class=" col-md-5  imagen">
-            <img class="img-responsive" style="margin-top:0%;margin-left:2%;"src="./img/fclogo1.png" >
-          </div>
-          <div class="col-md-6 texto" style="margin-left:3%;margin-top:2%;">
-            <p style="font-size:3em;">Taller Aprendiendo a Vivir en la 3ra Edad, es un espacio donde
-              se desarrollan temas de interes para nuestros asistentes de acuerdo a la etapa de vida
-              en la que se encuentran; los talleres son platicas de autocuidado, prevencion de enfermedades
-              problematicas sociales actuales y actividades recreativas, al termino se realiza un convivio
-              entre los asistentes. De octubre del 2011 a finales del 2016 se han impartido 239 talleres.
-              Logrando atencion personalizada a 136 adultos mayores.​</p>
-          </div>
-    			</article>
-    </div>
-    </div>
+
+      <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:auto;">
+
+        <button class="tablink" style="width:50%;" onclick="openPage('taller', this, '')" id="defaultOpen">Talleres Impartidos</button>
+        <button class="tablink" style="width:50%;" onclick="openPage('agregar', this, '')" >Agregar Taller</button>
+
+
+        <div id="taller" class="tabcontent">
+
+        <div class="card-body" >
+          @if($errors->any())
+            <div class="alert alert-warning alert-dismissable">
+              <ul>
+
+              @foreach($errors->all() as $error)
+                <li>{{$error}}</li>
+              @endforeach
+              </ul>
+            </div>
+          @endif
+          @if(session()->has('mensaje'))
+            <div class="alert alert-success divfade" style="position:absolute;top:10%;left:40%;">
+              {{session()->get('mensaje')}}
+            </div>
+          @endif
+          <!-- ESTA ES LA TABLA ORIGINAL PARA POSTERIORES USOS-->
+          <div class="row">
+            <h2 style="margin-left:1%;"></h2>
+            <table class="table table-condensed col-md-12" style="margin-left:0%;">
+              <thead>
+                <tr>
+                  <td>Nombre del Taller</td>
+                  <td>Tipo de Taller</td>
+                  <td>Numero de Asistentes</td>
+                  <td>Fecha Impartido</td>
+                  <td>Lugar del Taller</td>
+                  <td>Observaciones del Taller</td>
+                </tr>
+              </thead>
+              <tbody id="tbody">
+                <tr>
+                  @forelse($perros10 as $usu)
+                  <td>{{$usu->Nombretaller}}</td>
+                  <td>{{$usu->Tipo}}</td>
+                  <td>{{$usu->Cantidad}}</td>
+                  <td>{{$usu->Fecha}}</td>
+                  <td>{{$usu->Lugar}}</td>
+                  <td>{{$usu->Notas}}</td>
+                  <td><button type="button" class="btn btn-info btn-lg btne"
+                  >Editar </button></td>
+                  <td>
+                  </td>
+                  </tr>
+                @empty
+                <p>sin registro</p>
+                @endforelse
+              </tbody>
+            </table>
+        </div>
+        </div>
+        </div>
+
+        <div id="agregar" class="tabcontent">
+        <div class="card-header" style="margin-bottom:2%; font-size:3rem; margin-left:1.5%;">Agregar Articulo</div>
+            <div class="card-body">
+              @if($errors->any())
+                <div class="alert alert-warning alert-dismissable">
+                  <ul>
+
+                  @foreach($errors->all() as $error)
+                    <li>{{$error}}</li>
+                  @endforeach
+                  </ul>
+                </div>
+              @endif
+              @if(session()->has('mensaje'))
+                <div class="alert alert-success divfade"  style="position:absolute;top:10%;left:40%;">
+                  {{session()->get('mensaje')}}
+                </div>
+              @endif
+              {{Form::open(array('url'=>'/admin/taller','files'=>true))}}
+                <div class="input=-group col-md-4">
+                  <label for="nombre">Nombre del Taller</label><br>
+                  {{Form::text('nombretaller','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+                </div>
+                <div class="input=-group col-md-4">
+                  <label for="nombre">Tipo de Taller</label><br>
+                  {{Form::text('tipo','',array('class'=>'form-control','placeholder'=>'Cantidad') )}}
+                </div>
+                <div class="input=-group col-md-4">
+                  <label for="nombre">Numero de Asistentes</label><br>
+                  {{Form::number('cantidad','',array('class'=>'form-control','placeholder'=>'Funcionalidad') )}}
+                </div>
+                <div class="input=-group col-md-4">
+                  <label for="nombre">Fecha Impartido</label><br>
+                  {{Form::date('fecha','',array('class'=>'form-control','placeholder'=>'Tipo') )}}
+                </div>
+                <div class="input=-group col-md-4">
+                  <label for="nombre">Lugar del Taller</label><br>
+                  {{Form::text('lugar','',array('class'=>'form-control','placeholder'=>'Tipo') )}}
+                </div>
+                <div class="input=-group col-md-4">
+                  <label for="nombre">Observaciones del Taller</label><br>
+                  {{Form::text('notas','',array('class'=>'form-control','placeholder'=>'Tipo') )}}
+                </div>
+                <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
+                  {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
+                </div>
+              {{Form::close()}}
+
+        </div>
+        </div>
+
+
+
+
+      </div>
     </div>
 
 
 
+
+
+
+    <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/chart.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/graficabarras.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/side.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript">
+    function openPage(pageName,elmnt,color) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablink");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+    }
+    document.getElementById(pageName).style.display = "block";
+    elmnt.style.backgroundColor = color;
+
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+    </script>
   </body>
 </html>

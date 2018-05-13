@@ -51,7 +51,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::get('/inventario_e','inventario_econtroller@index')->name('inventario_e');
   Route::get('/inventario_m','inventario_mcontroller@index')->name('inventario_m');
   Route::get('/comidaca/{Id}','comidacalienteController@index')->name('comidaca');
-  Route::get('/taller','tallercontroller@index')->name('taller');
+  Route::get('/taller/{Id}','tallerController@index')->name('taller');
   Route::get('/tutor/{Id}','tutorController@index')->name('tutor');
   Route::get('/visitadom/{Id}','visitasController@index')->name('visitadom');
   Route::post('/usuarios/buscar','usuarioscontroller@buscar');
@@ -86,7 +86,9 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::resource('evaluacion','EvaluacionController');
   Route::resource('visitadom','visitasController');
   Route::resource('comidaca','comidacalienteController');//ESTE YA ESTA
-  Route::resource('tipodiscapacidad','tipodiscapacidadController');//ESTE YA ESTA
+  Route::resource('tipodiscapacidad','tipodiscapacidadController');
+  Route::resource('taller','tallerController');
+  //ESTE YA ESTA
 
 });
 
