@@ -53,12 +53,10 @@ class archivoscontroller extends Controller
           'Copia_curp'=>$nombreCopia,
           'Curp'=>$nombreCurp
         ]);
-        $PasPad=DB::select('select nombre, apellido_p, apellido_m, Pas, Pad from datos_personales
-        INNER join datos_centro_salud on datos_personales.Id_bene = datos_centro_salud.Id_bene where PAS >=130 and PAD <=90');
-        return redirect()->to('/admin/archivos');
+
 
         ->with('mensaje','Archivo agregado')
-        ->with('PasPad',$PasPad);
+
       }
       dd($req->nombre);
     }
