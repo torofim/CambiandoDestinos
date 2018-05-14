@@ -7,11 +7,32 @@
     <title></title>
   </head>
   <body>
+
     <div id="Todo">
+      @if($errors->any())
+        <div class="alert alert-warning alert-dismissable">
+          <ul>
+
+          @foreach($errors->all() as $error)
+            <li>{{$error}}</li>
+          @endforeach
+          </ul>
+        </div>
+      @endif
+      @if(session()->has('mensaje'))
+        <div class="alert alert-success">
+          {{session()->get('mensaje')}}
+        </div>
+      @endif
       <form class="" action="index.html" method="post">
         <div class="titulo">Expediente Beneficiario</div>
-      <div class="folio">
-        Folio No. <label>0001</label>
+      <div class="folio">@forelse($datosper1 as $usua)
+        Folio No. <label>
+        {{$usua->Id_bene}}
+      </label>
+      @empty
+      
+      @endforelse
       </div>
       <div class="fecha">
         Fecha:<label>dd/mm/yy</label>
@@ -34,11 +55,7 @@
             <div class="tres">
               <input class="inp1" type="radio" name="" value="">CURP/Comprobante Domicilio
             </div>
-              <label class="tnom">@if(count($perros)==0)
-                {{Form::text('nameEditar','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
-                @else
-                {{Form::text('nameEditar',$perros[0]->Nombre,array('class'=>'form-control','placeholder'=>'Nombre') )}}
-                @endif</label>
+              <label class="tnom">Nombre</label>
             <div class="nombre">
               <input class="col-md-12" type="text" name="" value="" >
             </div>

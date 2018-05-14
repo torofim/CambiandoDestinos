@@ -18,7 +18,7 @@ Route::get('/', function () {
 Route::get('/taller', function () {
     return view('taller');
 });
-Route::get('/visita', function () {
+Route::get('/informacion', function () {
     return view('visita');
 });
 Route::get('/cultura', function () {
@@ -26,9 +26,6 @@ Route::get('/cultura', function () {
 });
 Route::get('/comida', function () {
     return view('comida');
-});
-Route::get('/reporte',function(){
-  return view('reporte');
 });
 Route::get('/Login',function(){
     return view('login');
@@ -60,7 +57,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::get('/discapacidad/{Id}','discapacidadController@index')->name('discapacidad');
   Route::get('/tipodiscapacidad/{Id}','tipodiscapacidadController@index')->name('tipodiscapacidad');
   Route::get('/visitacomida','visitacomidaController@index');
-
+  Route::get('/reporte','reportecontroller@index');
   // Estos son los Routes de los DASH
   Route::get('/dash/{mes}','dashcontroller@index');
   Route::get('/graficos/{mes}/{year}','graficoscontroller@index');
@@ -68,6 +65,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
 
   Route::get('/benef','datospersonalescontroller@index')->name('benef');
   Route::get('/registrados','regiscontroller@index')->name('registradosf');
+  Route::resource('reporte','reportecontroller');
   Route::resource('/graficos','graficoscontroller');
   Route::resource('dash','dashcontroller');
   Route::resource('beneficiarios','dashcontroller');
