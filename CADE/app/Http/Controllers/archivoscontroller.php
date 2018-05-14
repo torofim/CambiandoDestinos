@@ -53,8 +53,10 @@ class archivoscontroller extends Controller
           'Copia_curp'=>$nombreCopia,
           'Curp'=>$nombreCurp
         ]);
-        return redirect()->to('/admin/archivos')
-        ->with('mensaje','Archivo agregado');
+
+
+        ->with('mensaje','Archivo agregado')
+
       }
       dd($req->nombre);
     }

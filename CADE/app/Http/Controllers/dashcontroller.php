@@ -94,11 +94,15 @@ class dashcontroller extends Controller
      //dd($valoresMes);
      $discap=DB::select('select nombre, apellido_p, apellido_m, discapacidad,
      Causa_discapacidad, Requiere_apoyo_funcional from datos_personales INNER join discapacidad
-      on datos_personales.Id_bene = discapacidad.Id_bene where Discapacidad="si"');
+      on datos_personales.Id_bene = discapacidad.Id_bene where Discapacidad="si" and Requiere_apoyo_funcional="si" ');
 
-      $hipert=DB::select('select nombre, apellido_p, apellido_m, Pas, Pad from datos_personales
-      INNER join datos_centro_salud on datos_personales.Id_bene = datos_centro_salud.Id_bene where PAS >=130 and PAD <=90');
 
+      $hipert=DB::select('select nombre, apellido_p, apellido_m, hipertension from datos_personales
+      INNER JOIN discapacidad on datos_personales.Id_bene = discapacidad.Id_bene
+      where hipertension="si"');
+      $Palta=DB::select('select nombre, apellido_p, apellido_m, Pas, Pad from datos_personales
+      INNER JOIN datos_centro_salud on datos_personales.Id_bene = datos_centro_salud.Id_bene
+      where Pas>=130 and Pad<=85');
      return view('dashprincipal', ['benef' => $benef])
      ->with('usuarios',$usuarios)
      ->with('taller',$taller)
@@ -108,7 +112,8 @@ class dashcontroller extends Controller
      ->with('valoresMes',$valoresMes)
      ->with('semanas',$semanas)
      ->with('discap',$discap)
-     ->with('hipert',$hipert);
+     ->with('hipert',$hipert)
+     ->with('Palta',$Palta);
        #return view('LEFTMENU',['usuarios' => $usuarios]);
        #->width('nombre','EQUIPOS DE FUTBOL');
        #si se hace esto y el js esta en el blade solo se imprime como php {{$nombre}}

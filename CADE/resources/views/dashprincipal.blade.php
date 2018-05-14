@@ -60,34 +60,15 @@
 		      </div>
 	     </div>
 
-
-          <div id="formulario">
-            <label for="r1" class="col-md-1"> <input class="radio" type="radio" name="x" id="r1" data-mes="01">ENERO</label>
-            <label for="r2" class="col-md-1"> <input class="radio" type="radio" name="x" id="r2" data-mes="02">FEBRERO</label>
-            <label for="r3" class="col-md-1"> <input class="radio" type="radio" name="x" id="r3" data-mes="03">Marzo</label>
-            <label for="r4" class="col-md-1"> <input class="radio" type="radio" name="x" id="r4" data-mes="04">Abril</label>
-            <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r5" data-mes="05">Mayo</label>
-            <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r6" data-mes="06">Junio</label>
-            <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r7" data-mes="07">Julio</label>
-            <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r12" data-mes="18">Agosto</label>
-            <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r8" data-mes="09">Septiembre</label>
-            <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r9" data-mes="10">Octubre</label>
-            <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r10" data-mes="11">Noviembre</label>
-            <label for="r5" class="col-md-1"> <input class="radio" type="radio" name="x" id="r11" data-mes="12">Diciembre</label>
-            <label for="r6" class="col-lg-2"> <input class="radio" type="radio" name="x" id="r6" data-mes="anual">Anual</label>
-            <button class="btn btn-primary" id="miLink">ENVIAR</button>
-
-          </div>
-
        <div class="container-fluid">
 
          <div class="row">
            <table class="table table-condensed col-md-6 col-sm-8 col-xs-12" >
-             <p style="font-size:3rem;">Discapacidad (motriz)</p>
+             <p style="font-size:3rem;">Discapacidad</p>
              <thead>
                <td>Nombre</td>
-               <td>Apellidos</td>
-               <td></td>
+               <td>Apellido</td>
+               <td>Apellido</td>
                <td>Discapacidad</td>
                <td>Causa</td>
                <td>Requiere apoyo</td>
@@ -114,11 +95,9 @@
                <p style="font-size:3rem;">Presión arterial(Hipertensión)</p>
                <thead>
                  <td>Nombre</td>
-                 <td>Apellidos</td>
-                 <td></td>
-                 <td>Pas</td>
-                 <td>/</td>
-                 <td>Pad</td>
+                 <td>Apellido</td>
+                 <td>Apellido</td>
+                 <td>Hipertensión</td>
                </thead>
                <tbody>
                  <tr>
@@ -126,9 +105,48 @@
                    <td>{{$y->nombre}}</td>
                    <td>{{$y->apellido_p}}</td>
                    <td>{{$y->apellido_m}}</td>
-                   <td>{{$y->Pas}}</td>
-                   <td>/</td>
-                   <td>{{$y->Pad}}</td>
+                   <td>{{$y->hipertension}}</td>
+                   <td><a data-toggle="modal" href="#myModal" class="btn btn-primary btn-s">Historial</a>
+                     <div class="modal fade" id="myModal">
+                       <div class="modal-dialog">
+                         <div class="modal-content">
+                           <div class="modal-header">
+                             <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                             <h4 class="modal-title " style="color: #fff; padding: 9px 15px; border-bottom: 1px solid #eee;background-color: #428bca; " >Historial hipertensión</h4>
+                           </div>
+                           <div class="modal-body">
+                             <table class="table table-hover table-sm">
+                               <thead>
+                                 <td>Nombre </td>
+                                 <td>Apellido </td>
+                                 <td>Apellido </td>
+                                 <td>Pas</td>
+                                 <td>/</td>
+                                 <td>Pad</td>
+                               </thead>
+                               <tbody class="table">
+                                 <tr>
+                                      @foreach($Palta as $w)
+                                   <td>{{$w->nombre}} </td>
+                                   <td>{{$w->apellido_p}} </td>
+                                   <td>{{$w->apellido_m}} </td>
+                                   <td>{{$w->Pas}}</td>
+                                   <td>/</td>
+                                   <td>{{$w->Pad}}</td>
+                                   <tr>
+                                   </tr>
+                                   @endforeach
+                                 </tr>
+                               </tbody>
+                             </table>
+                           </div>
+                           <div class="modal-footer">
+                             <button type="button" class="btn btn-outline-danger btn-sm"  style="color:#dc3545;  background-color:transparent; border-color:#dc3545;" data-dismiss="modal">Cerrar</button>
+                           </div>
+                         </div>
+                       </div>
+                     </div><!-- modal -->
+                  </td>
                    <tr>
                    </tr>
                    @endforeach
