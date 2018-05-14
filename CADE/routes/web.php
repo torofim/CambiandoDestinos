@@ -48,8 +48,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::get('/centrosalud/{Id}','Centro_saludcontroller@index')->name('centrosalud');
   Route::get('/datospersonales','datospersonalescontroller@index')->name('datospersonales');
   Route::get('/evaluacion/{Id}','EvaluacionController@index')->name('evaluacion');
-  Route::get('/inventario_e','inventario_econtroller@index')->name('inventario_e');
-  Route::get('/inventario_m','inventario_mcontroller@index')->name('inventario_m');
+  Route::get('/inventarioentrega','entregasinvController@index');
   Route::get('/comidaca/{Id}','comidacalienteController@index')->name('comidaca');
   Route::get('/taller/{Id}','tallerController@index')->name('taller');
   Route::get('/tutor/{Id}','tutorController@index')->name('tutor');
@@ -88,7 +87,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::resource('comidaca','comidacalienteController');//ESTE YA ESTA
   Route::resource('tipodiscapacidad','tipodiscapacidadController');
   Route::resource('taller','tallerController');
-  //ESTE YA ESTA
+  Route::resource('inventarioentrega','entregasinvController');
 
 });
 

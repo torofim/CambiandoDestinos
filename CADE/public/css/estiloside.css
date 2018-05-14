@@ -58,6 +58,9 @@ label{
     transition: max-height 0.2s ease-out;
     width: 100%;
 }
+.panel2{
+  margin-left: -2%;
+}
 
 
 /***************************************Panel beneficiarios*****************************************************/
@@ -117,7 +120,7 @@ nav.sidebar, .main{
 .main{
 padding: 0px 0px 0 0px;
 background-image:url("/img/fondochido.jpg");
-width:100vw;
+width:100%;
 height:auto;
 }
 

@@ -16,14 +16,14 @@
 
         </div>
         <div class="panel2 panel-default col-xs-12 ">
-          <div class="panel-body2 titula" style="border-bottom:groove; background-color:transparent;">
-            Fundacion Cambiando Destinos
+          <div class="panel-body2 col-xs-12" style="border-bottom:groove; background-color:transparent;">
+            <label class="titula col-xs-12">Fundacion Cambiando Destinos</label>
           </div>
         </div>
 
         <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:5%;height:100%;">
-        <button class="tablink" style="width:50%;" onclick="openPage('benefi', this, '')" id="defaultOpen">Editar Informacion del Beneficiario</button>
-        <button class="tablink" style="width:50%;" onclick="openPage('agregar', this, '')" >Informacion Completa Beneficiario</button>
+        <button class="tablink" style="width:50%;" onclick="openPage('benefi', this, '')" id="defaultOpen">Editar Informacion de {{$datosper[0]->Nombre}} {{$datosper[0]->Apellido_p}} {{$datosper[0]->Apellido_m}}</button>
+        <button class="tablink" style="width:50%;" onclick="openPage('agregar', this, '')">Informacion Completa {{$datosper[0]->Nombre}} {{$datosper[0]->Apellido_p}} {{$datosper[0]->Apellido_m}}</button>
 
 
 <div id="benefi" class="tabcontent">

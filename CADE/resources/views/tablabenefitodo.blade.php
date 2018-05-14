@@ -32,7 +32,7 @@
       </thead>
       <tbody id="tbody">
         <tr>
-          @forelse($perros as $usu)
+          @forelse($datosper as $usu)
           <td>{{$usu->Id_bene}}</td>
           <td>{{$usu->Nombre}}</td>
           <td>{{$usu->Apellido_p}}</td>
@@ -60,7 +60,7 @@
     </thead>
     <tbody id="tbody">
       <tr>
-        @forelse($perros as $usu)
+        @forelse($datosper as $usu)
         <td>{{$usu->Lugar_nacimiento}}</td>
         <td>{{$usu->Edad}}</td>
         <td>{{$usu->Sexo}}</td>
@@ -91,7 +91,7 @@
       </thead>
       <tbody id="tbody">
         <tr >
-          @forelse($perros as $usu)
+          @forelse($datosper as $usu)
 
 
           <td>{{$usu->Peso}}</td>
@@ -122,7 +122,7 @@
       </thead>
       <tbody id="tbody">
         <tr>
-          @forelse($perros as $usu)
+          @forelse($datosper as $usu)
           <td>{{$usu->Cp}}</td>
           <td>{{$usu->Localidad}}</td>
           <td>{{$usu->Tel}}</td>

@@ -12,8 +12,8 @@
       <br>
       <br>
       <div class="panel2 panel-default col-xs-12 ">
-        <div class="panel-body2" style="border-bottom:groove; background-color:transparent;">
-          Fundacion Cambiando Destinos
+        <div class="panel-body2 col-xs-12" style="border-bottom:groove; background-color:transparent;">
+          <label class="titula col-xs-12">Fundacion Cambiando Destinos</label>
         </div>
       </div>
       <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:100%;">
@@ -43,7 +43,7 @@
                 <td style="border-right:white solid;">Domicilio</td>
                 <td style="border-right:white solid;">Fecha</td>
                 <td style="border-right:white solid;">Notas</td>
-                <td style="border-right:white solid;"></td>
+
               </tr>
             </thead>
             <tbody id="tbody">
@@ -53,7 +53,7 @@
                 <td>{{$usu->Domicilio}}</td>
                 <td>{{$usu->Fecha}}</td>
                 <td>{{$usu->Nota}}</td>
-                <td></td>
+
 
 
                 </tr>
@@ -66,11 +66,11 @@
     <p>Visita Domiciliaria</p>
     <thead>
       <tr style="border:white solid;background-color:#4c4f54;">
-        <td style="border-right: white solid;">Tipo de Examen</td>
-        <td style="border-right:white solid;">Puntuacion</td>
-        <td style="border-right:white solid;"></td>
-        <td style="border-right:white solid;"></td>
-        <td style="border-right:white solid;"></td>
+        <td style="border-right: white solid;">Nombre</td>
+        <td style="border-right:white solid;">Domicilio</td>
+        <td style="border-right:white solid;">Fecha</td>
+        <td style="border-right:white solid;">Tipo de Visita</td>
+        <td style="border-right:white solid;">Notas u Observaciones</td>
       </tr>
     </thead>
     <tbody id="tbody">
@@ -79,8 +79,8 @@
         <td>{{$usu->Nombre}}</td>
         <td>{{$usu->Domicilio}}</td>
         <td>{{$usu->Fecha}}</td>
-        <td></td>
-        <td></td>
+        <td>{{$usu->Tipo_de_visita}}</td>
+        <td>{{$usu->Notas}}</td>
 
 
         </tr>

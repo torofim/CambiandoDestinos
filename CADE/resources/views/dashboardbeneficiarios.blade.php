@@ -19,8 +19,8 @@
     <br>
     <br>
     <div class="panel2 panel-default col-xs-12 ">
-      <div class="panel-body2 titula" style="border-bottom:groove; background-color:transparent;">
-        Fundacion Cambiando Destinos
+      <div class="panel-body2 col-xs-12" style="border-bottom:groove; background-color:transparent;">
+        <label class="titula col-xs-12">Fundacion Cambiando Destinos</label>
       </div>
     </div>
     <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:auto;">
@@ -66,33 +66,43 @@
             </thead>
             <tbody id="tbody">
               <tr>
-                @forelse($perros as $usu)
+                @forelse($datosper as $usu )
+
                 <td>{{$usu->Id_bene}}</td>
                 <td>{{$usu->Nombre}}</td>
                 <td>{{$usu->Apellido_p}}</td>
                 <td>{{$usu->Apellido_m}}</td>
                 <td><button type="button" class="btn btn-info btn-lg " onclick="location.href='/admin/Formubenefi/{{$usu->Id_bene}}'"
                    >Editar </button></td>
+
+
                 <td><button type="button" class="btn btn-info btn-lg btne"
                      data-toggle="modal" data-target="#myModal"
+
                      >Entrega </button></td>
                      <td><button type="button" class="btn btn-info btn-lg btne"
                           data-toggle="modal" data-target="#myModal2"
+
                           >Entrega </button></td>
 
+
                 </tr>
-              @empty
-              <p>sin registro</p>
-              @endforelse
+
+                @empty
+                <p>sin registro</p>
+
+                @endforelse
+
             </tbody>
           </table>
+
     </div>
     </div>
 
     </div>
 
     <div id="agregar" class="tabcontent">
-      <div class="card-header" style="margin-bottom:5%; font-size:3rem; margin-left:1.5%;">Datos Personales</div>
+      <div class="card-header" style="margin-bottom:5%; font-size:3rem; margin-left:1.5%;" >Datos Personales</div>
 
       <div class="card-body">
         @if($errors->any())
@@ -145,16 +155,127 @@
 
 
     </div>
-
-
-
-
-
-
-
-
-
   </div>
+
+
+
+
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Esta editando al articulo: <b id="nomModal"></b> </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+        {{Form::open(array('url'=>'/admin/inventario','files'=>true))}}
+        <div class="modal-body">
+          <input type="text" name="idin" id="idini" value="">
+            <div class="input-group">
+              <label for="">Nombre</label>
+              <input type="text" name="nombrebene" id="nombre" value="" class="form-control">
+            </div>
+            <div class="input-group">
+              <label for="">Articulo</label>
+              <input type="text" name="articulo" id="nombre" value="" class="form-control">
+            </div>
+            <div class="input-group">
+              <label for="">Cantidad</label>
+              <input type="text" name="cantidad" id="cant"value="" class="form-control">
+            </div>
+            <div class="input-group">
+              <label for="">Tipo</label>
+              <input type="text" name="tipo" id="fun" value="" class="form-control">
+            </div>
+            <div class="input-group">
+              <label for="">Fecha</label>
+              <input type="text" name="fecha" id="tipo" value="" class="form-control">
+            </div>
+            <div class="input-group">
+              <label for="">Notas</label>
+              <input type="text" name="notas" id="tipo" value="" class="form-control">
+            </div>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Aceptar</button>
+          <!-- data-dismiss detiene el actualizado-->
+        </div>
+        {{Form::close() }}
+      </div>
+
+    </div>
+  </div>
+
+  <div id="myModal2" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Esta editando al articulo: <b id="nomModal"></b> </h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+        </div>
+        {{Form::open(array('url'=>'/admin/inventario','files'=>true))}}
+        <div class="modal-body">
+          <input type="text" name="idin" id="idini" value="">
+            <div class="input-group">
+              <label for="">Nombre</label>
+              <input type="text" name="nombrebene" id="nombre" value="" class="form-control">
+            </div>
+            <div class="input-group">
+              <label for="">Articulo</label>
+              <input type="text" name="articulo" id="nombre" value="" class="form-control">
+            </div>
+            <div class="input-group">
+              <label for="">Cantidad</label>
+              <input type="text" name="cantidad" id="cant"value="" class="form-control">
+            </div>
+            <div class="input-group">
+              <label for="">Tipo</label>
+              <input type="text" name="tipo" id="fun" value="" class="form-control">
+            </div>
+            <div class="input-group">
+              <label for="">Fecha</label>
+              <input type="text" name="fecha" id="tipo" value="" class="form-control">
+            </div>
+            <div class="input-group">
+              <label for="">Notas</label>
+              <input type="text" name="notas" id="tipo" value="" class="form-control">
+            </div>
+
+
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+          <button type="submit" class="btn btn-primary">Aceptar</button>
+          <!-- data-dismiss detiene el actualizado-->
+        </div>
+        {{Form::close() }}
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
   <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/chart.min.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/graficabarras.js') }}"></script>

@@ -15,13 +15,13 @@ class datospersonalescontroller extends Controller
     public function index(){
       $registros=\DB::table('datos_personales')
       //->where('Id','=','1');
-      
+
       ->orderby('Id_bene','desc')
       //->take(10)
       ->get();
 
       return view('dashboardbeneficiarios')
-      ->with('perros',$registros);
+      ->with('datosper',$registros);
     }
     public function store(Request $req){
 
