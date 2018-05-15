@@ -31,16 +31,12 @@
         {{$usua->Id_bene}}
       </label>
       @empty
-      
+      <p>sin registro</p>
       @endforelse
       </div>
-<<<<<<< HEAD
-      <div class="fecha" >
-        Fecha:<label id="fesha"></label>
-=======
       <div class="fecha">
-        Fecha:<label>dd/mm/yy</label>
->>>>>>> 80ae8599fff095a7fcaea530c413a29e98276901
+        Fecha:<label id="fesha">
+        </label>
       </div>
       <div class="foto">
 
@@ -62,15 +58,33 @@
             </div>
               <label class="tnom">Nombre</label>
             <div class="nombre">
-              <input class="col-md-12" type="text" name="" value="" >
+              @forelse($datosper1 as $usua)
+              <input value="  {{$usua->Nombre}}">
+
+              </input>
+              @empty
+
+              @endforelse
             </div>
             <label class="tapp">Apellido Paterno</label>
             <div class="app">
-              <input class="col-md-12" type="text" name="" value="" >
+              @forelse($datosper1 as $usua)
+              <input value="  {{$usua->Apellido_p}}">
+
+              </input>
+              @empty
+
+              @endforelse
             </div>
             <label class="tapm">Apellido Materno</label>
             <div class="apm">
-              <input class="col-md-12" type="text" name="" value="" >
+              @forelse($datosper1 as $usua)
+              <input value="  {{$usua->Apellido_m}}">
+
+              </input>
+              @empty
+
+              @endforelse
             </div>
 
             <div class="primera">
@@ -83,11 +97,23 @@
               CURP
             </div>
 
-            <div class="">
-              <input class="fechadatos" type="number" name="" value="" placeholder="dd/mm/yy">
+            <div class="fechadatos">
+              @forelse($datosper1 as $usua)
+              <input value="  {{$usua->Fecha_nacimiento}}">
+
+              </input>
+              @empty
+              <p>sin registro</p>
+              @endforelse
             </div>
-            <div class="">
-              <input class="lugarna" type="text" name="" value="" placeholder="Lugar de nacimiento">
+            <div class="lugarna">
+              @forelse($datosper1 as $usua)
+              <input value="">
+
+              </input>
+              @empty
+              <p>sin registro</p>
+              @endforelse
             </div>
             <div class="">
               <input class="curp" class="col-md-4" type="text" name="" value="" placeholder="AAAA000000AAAAAA00">
@@ -107,14 +133,33 @@
         </div>
 
 
-      <div class="">
-        <input class="edad" name="" value="">
+      <div class="edad">
+        @forelse($datosper1 as $usua)
+        <input value="  {{$usua->Edad}}">
+
+        </input>
+        @empty
+        <p>sin registro</p>
+        @endforelse
+
       </div>
-      <div class="">
-        <input class="sexo" name="" value="" type="">
+      <div class="sexo">
+        @forelse($datosper1 as $usua)
+        <input value="  {{$usua->Sexo}}">
+
+        </input>
+        @empty
+        <p>sin registro</p>
+        @endforelse
       </div>
       <div class="estadocivil">
-        <input name="" value="">
+        @forelse($datosper1 as $usua)
+        <input value="  {{$usua->Edo_civil}}">
+
+        </input>
+        @empty
+        <p>sin registro</p>
+        @endforelse
       </div>
 
       <div class="tdisc">
@@ -160,13 +205,25 @@
         Tipo de Sangre
       </div>
       <div class="sangre">
-        <input type="text" name="" value="">
+        @forelse($datosper1 as $usua)
+        <input value="  {{$usua->Tipo_sangre}}">
+
+        </input>
+        @empty
+        <p>sin registro</p>
+        @endforelse
       </div>
       <div class="tpeso">
         Peso
       </div>
       <div class="peso">
-        <input type="text" name="" value="">
+        @forelse($datosper1 as $usua)
+        <input value="  {{$usua->Peso}}">
+
+        </input>
+        @empty
+        <p>sin registro</p>
+        @endforelse
       </div>
       <div class="testatura">
         Estatura
@@ -387,7 +444,6 @@
 
 <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
 <script type="text/javascript">
-<<<<<<< HEAD
 var today = new Date();
 var dd = today.getDate();
 var mm = today.getMonth()+1; //January is 0!
@@ -402,9 +458,11 @@ if(mm<10) {
 }
 
 today = dd + '/' + mm + '/' + yyyy;
-//document.getElementById('fesha').value=today;
-=======
->>>>>>> 80ae8599fff095a7fcaea530c413a29e98276901
+    document.getElementById('fesha').innerHTML=today;
+
+
+
+
 function imprimir(elemento){
   var  respaldo=$('body').html();
   var div=$("#"+elemento).clone();
