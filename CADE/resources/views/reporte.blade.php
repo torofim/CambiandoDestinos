@@ -7,25 +7,10 @@
     <title></title>
   </head>
   <body>
-
     <div id="Todo">
-      @if($errors->any())
-        <div class="alert alert-warning alert-dismissable">
-          <ul>
-
-          @foreach($errors->all() as $error)
-            <li>{{$error}}</li>
-          @endforeach
-          </ul>
-        </div>
-      @endif
-      @if(session()->has('mensaje'))
-        <div class="alert alert-success">
-          {{session()->get('mensaje')}}
-        </div>
-      @endif
       <form class="" action="index.html" method="post">
         <div class="titulo">Expediente Beneficiario</div>
+<<<<<<< HEAD
       <div class="folio">@forelse($datosper1 as $usua)
         Folio No. <label>
         {{$usua->Id_bene}}
@@ -33,6 +18,10 @@
       @empty
       <p>sin registro</p>
       @endforelse
+=======
+      <div class="folio">
+        Folio No. <label>0001</label>
+>>>>>>> parent of ee9bdcd... asda
       </div>
       <div class="fecha">
         Fecha:<label id="fesha" class="fecha">
@@ -57,7 +46,11 @@
             <div class="tres">
               <input class="inp1" type="radio" name="" value="">CURP/Comprobante Domicilio
             </div>
-              <label class="tnom">Nombre</label>
+              <label class="tnom">@if(count($perros)==0)
+                {{Form::text('nameEditar','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+                @else
+                {{Form::text('nameEditar',$perros[0]->Nombre,array('class'=>'form-control','placeholder'=>'Nombre') )}}
+                @endif</label>
             <div class="nombre">
               @forelse($datosper1 as $usua)
               <input value="  {{$usua->Nombre}}">

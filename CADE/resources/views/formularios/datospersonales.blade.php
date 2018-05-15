@@ -178,7 +178,6 @@
             </div>
         </div>
     </div>
-    A VER SI SALE
 </div>
 <script type="text/javascript">
 $(document).ready(function(){

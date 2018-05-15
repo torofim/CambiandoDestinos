@@ -77,7 +77,6 @@ class datospersonalescontroller extends Controller
         ]);
         return redirect()->to('/admin/benef')
         ->with('mensaje','datos agregados');
-
       }
       dd($req->nombre);
     }

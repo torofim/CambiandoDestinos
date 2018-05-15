@@ -24,7 +24,7 @@
         <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:5%;height:100%;">
         <button class="tablink" style="width:50%;" onclick="openPage('benefi', this, '')" id="defaultOpen">Editar Informacion de {{$datosper[0]->Nombre}} {{$datosper[0]->Apellido_p}} {{$datosper[0]->Apellido_m}}</button>
         <button class="tablink" style="width:50%;" onclick="openPage('agregar', this, '')">Informacion Completa {{$datosper[0]->Nombre}} {{$datosper[0]->Apellido_p}} {{$datosper[0]->Apellido_m}}</button>
-        <!--Aqui esta el de info completa-->
+
 
 <div id="benefi" class="tabcontent">
 
@@ -86,9 +86,7 @@
 
         <div id="agregar" class="tabcontent">
           @include('tablabenefitodo')
-          
               </div>
-
 
 <style media="screen">
   td{
