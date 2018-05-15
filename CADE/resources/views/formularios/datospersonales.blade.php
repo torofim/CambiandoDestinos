@@ -40,7 +40,7 @@
                       @endif
                   </div>
                   <div class="input=-group col-md-4">
-                    <label for="nombre">Apellido materno</label><br>
+                    <label for="nombre">Apellido Materno</label><br>
                     @if(count($datosper)==0)
                       {{Form::text('apmEditar','',array('class'=>'form-control','placeholder'=>'Apellido materno') )}}
                       @else
@@ -56,7 +56,7 @@
                       @endif
                   </div>
                   <div class="input=-group col-md-4">
-                    <label for="nombre">Lugar nacimiento </label><br>
+                    <label for="nombre">Lugar Nacimiento </label><br>
                     @if(count($datosper)==0)
                       {{Form::text('lEditar','',array('class'=>'form-control','placeholder'=>'Lugar nacimiento') )}}
                       @else
@@ -98,19 +98,19 @@
                       @endif
                   </div>
                   <div class="input=-group col-md-4">
-                    <label for="nombre">Estado civil </label><br>
+                    <label for="nombre">Estado Civil </label><br>
                     @if(count($datosper)==0)
-                      {{Form::text('edoEditar','',array('class'=>'form-control','placeholder'=>'Estado civil') )}}
+                      {{Form::text('edoEditar','',array('class'=>'form-control','placeholder'=>'Estado Civil') )}}
                       @else
-                      {{Form::text('edoEditar',$datosper[0]->Edo_civil,array('class'=>'form-control','placeholder'=>'Estado civil') )}}
+                      {{Form::text('edoEditar',$datosper[0]->Edo_civil,array('class'=>'form-control','placeholder'=>'Estado Civil') )}}
                       @endif
                   </div>
                   <div class="input=-group col-md-4">
-                    <label for="nombre">Tipo sanguineo </label><br>
+                    <label for="nombre">Tipo Sanguíneo </label><br>
                     @if(count($datosper)==0)
-                      {{Form::text('tiEditar','',array('class'=>'form-control','placeholder'=>'Tipo sangre') )}}
+                      {{Form::text('tiEditar','',array('class'=>'form-control','placeholder'=>'Tipo Sanguíneo') )}}
                       @else
-                      {{Form::text('tiEditar',$datosper[0]->Tipo_sangre,array('class'=>'form-control','placeholder'=>'Tipo sangre') )}}
+                      {{Form::text('tiEditar',$datosper[0]->Tipo_sangre,array('class'=>'form-control','placeholder'=>'Tipo Sanguíneo') )}}
                       @endif
                   </div>
                   <div class="input=-group col-md-4">
@@ -154,11 +154,11 @@
                       @endif
                   </div>
                   <div class="input=-group col-md-4">
-                    <label for="nombre" >Codigo Postal </label><br>
+                    <label for="nombre" >Código Postal </label><br>
                     @if(count($datosper)==0)
-                      {{Form::number('cpEditar','',array('class'=>'form-control','placeholder'=>'Cp') )}}
+                      {{Form::number('cpEditar','',array('class'=>'form-control','placeholder'=>'Código') )}}
                       @else
-                      {{Form::number('cpEditar',$datosper[0]->Cp,array('class'=>'form-control','placeholder'=>'Cp') )}}
+                      {{Form::number('cpEditar',$datosper[0]->Cp,array('class'=>'form-control','placeholder'=>'Código') )}}
                       @endif
                   </div>
                   <div class="input=-group col-md-4">
@@ -178,11 +178,11 @@
                       @endif
                   </div>
                   <div class="input=-group col-md-4">
-                    <label for="nombre">Telefono </label><br>
+                    <label for="nombre">Teléfono </label><br>
                     @if(count($datosper)==0)
-                      {{Form::number('telEditar','',array('class'=>'form-control','placeholder'=>'Telefono') )}}
+                      {{Form::number('telEditar','',array('class'=>'form-control','placeholder'=>'Teléfono') )}}
                       @else
-                      {{Form::number('telEditar',$datosper[0]->Tel,array('class'=>'form-control','placeholder'=>'Telefono') )}}
+                      {{Form::number('telEditar',$datosper[0]->Tel,array('class'=>'form-control','placeholder'=>'Teléfono') )}}
                       @endif
                   </div>
                   <div class="input-group col-md-12" style="margin-left:1.5%; padding-top:2%;margin-bottom:2%;">
@@ -194,7 +194,7 @@
             </div>
         </div>
     </div>
-    A VER SI SALE
+    
 </div>
 <script type="text/javascript">
 $(document).ready(function(){

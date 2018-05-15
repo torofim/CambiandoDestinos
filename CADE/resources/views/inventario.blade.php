@@ -109,20 +109,20 @@
           @endif
           {{Form::open(array('url'=>'/admin/inventario','files'=>true))}}
             <div class="input=-group col-md-4">
-              <label for="nombre">Articulo</label><br>
-              {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+              <label for="nombre">Artículo</label><br>
+              {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Artículo','required'=>'true') )}}
             </div>
             <div class="input=-group col-md-4">
               <label for="nombre">Cantidad</label><br>
-              {{Form::number('cant','',array('class'=>'form-control','placeholder'=>'Cantidad') )}}
+              {{Form::number('cant','',array('class'=>'form-control','placeholder'=>'Cantidad','required'=>'true') )}}
             </div>
             <div class="input=-group col-md-4">
-              <label for="nombre">Funcionalidad</label><br>
-              {{Form::text('fun','',array('class'=>'form-control','placeholder'=>'Funcionalidad') )}}
+              <label for="nombre">Función del Artículo</label><br>
+              {{Form::text('fun','',array('class'=>'form-control','placeholder'=>'Funcionalidad','required'=>'true') )}}
             </div>
             <div class="input=-group col-md-4">
-              <label for="nombre">Tipo</label><br>
-              {{Form::text('tipo','',array('class'=>'form-control','placeholder'=>'Tipo') )}}
+              <label for="nombre">Tipo (Medicamento o Apoyo)</label><br>
+              {{Form::text('tipo','',array('class'=>'form-control','placeholder'=>'Tipo','required'=>'true') )}}
             </div>
             <div class="input-group col-md-12" style="margin-left:1%; padding-top:2%;">
               {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}

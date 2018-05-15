@@ -24,7 +24,7 @@ class discapacidadController extends Controller
     //dd($Id);
       return view('formularios.discapacidad')
 
-      ->with('perros2',$registros2);
+      ->with('discap',$registros2);
     }
 
 
@@ -48,6 +48,7 @@ class discapacidadController extends Controller
                   'Id_bene'=>$req->idbene,
                   'Discapacidad'=>$req->discapacidad,
                   'Causa_discapacidad'=>$req->causa,
+                  'Tipo_disca'=>$req->tipodis,
                   'hipertension'=>$req->hiper,
                   'Rehabilitacion'=>$req->rehab,
                   'Lugar_de_rehabilitacion'=>$req->lugarehab,
@@ -61,8 +62,9 @@ class discapacidadController extends Controller
 
                 $usuario->Discapacidad=$req->discapacidad;
                 $usuario->Causa_discapacidad=$req->causa;
+                $usuario->Tipo_disca=$req->tipodis;
                 $usuario->hipertension=$req->hiper;
-                $usuario->Rehabilitacion=$req->rehab;                
+                $usuario->Rehabilitacion=$req->rehab;
                 $usuario->Lugar_de_rehabilitacion=$req->lugarehab;
                 $usuario->Tipo_rehabilitacion=$req->tiporehab;
                 $usuario->Apoyo_funcional=$req->apoyofun;

@@ -42,8 +42,8 @@
     <div class="input=-group col-md-4">
       <label for="nombre">Visual</label><br>
       @if(count($perros9)==0)
-        <label >{{Form::radio('visual','Si',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}} Si</label>
-        <label>{{Form::radio('visual','No',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}No</label>
+        <label >{{Form::radio('visual','Si',array('class'=>'form-control','required'=>'true') )}} Si</label>
+        <label>{{Form::radio('visual','No',array('class'=>'form-control','required'=>'true') )}}No</label>
         @else
           @if($perros9[0]->Visual=='Si')
           <label for=""><input type="radio" name="visual" value="Si" checked> Si</label>
@@ -76,10 +76,10 @@
         @endif
     </div>
     <div class="input=-group col-md-4">
-      <label for="nombre">Musculo Esqueletica</label><br>
+      <label for="nombre">Musculo Esquelética</label><br>
       @if(count($perros9)==0)
-        <label >{{Form::radio('musculo','Si',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}} Si</label>
-        <label>{{Form::radio('musculo','No',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}No</label>
+        <label >{{Form::radio('musculo','Si',array('class'=>'form-control','required'=>'true') )}} Si</label>
+        <label>{{Form::radio('musculo','No',array('class'=>'form-control','required'=>'true') )}}No</label>
         @else
           @if($perros9[0]->MusculoEsqueletica=='Si')
           <label for=""><input type="radio" name="musculo" value="Si" checked> Si</label>
@@ -114,9 +114,9 @@
     <div class="input=-group col-md-4">
       <label for="nombre">Otra</label><br>
       @if(count($perros9)==0)
-        {{Form::text('otra','',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}
+        {{Form::text('otra','',array('class'=>'form-control','placeholder'=>'Otra','required'=>'true') )}}
         @else
-        {{Form::text('otra',$perros9[0]->Otra,array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}
+        {{Form::text('otra',$perros9[0]->Otra,array('class'=>'form-control','placeholder'=>'Otra','required'=>'true') )}}
         @endif
     </div>
 

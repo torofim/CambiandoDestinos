@@ -24,12 +24,12 @@
           <td>No. Folio</td>
           <td>Id</td>
           <td>Nombre Beneficiario</td>
-          <td>Articulo</td>
+          <td>Artículo</td>
           <td>Cantidad</td>
           <td>Tipo</td>
           <td>Fecha</td>
           <td>Notas</td>
-          
+
 
 
         </tr>

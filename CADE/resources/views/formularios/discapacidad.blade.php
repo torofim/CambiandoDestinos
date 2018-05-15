@@ -23,11 +23,11 @@
       {!!Form::open(array('route'=>['admin.discapacidad.store','0'],'method'=>'POST'))!!}
     <div class="input=-group col-md-4">
       <label for="nombre">Tiene Discapacidad</label><br>
-      @if(count($perros2)==0)
+      @if(count($discap)==0)
         <label >{{Form::radio('discapacidad','Si',array('class'=>'form-control','required'=>'true') )}} Si</label>
         <label>{{Form::radio('discapacidad','No',array('class'=>'form-control','required'=>'true') )}}No</label>
         @else
-          @if($perros2[0]->Discapacidad=='Si')
+          @if($discap[0]->Discapacidad=='Si')
           <label for=""><input type="radio" name="discapacidad" value="Si" checked> Si</label>
           <label for=""><input type="radio" name="discapacidad" value="No"> No</label>
 
@@ -41,20 +41,28 @@
 
     </div>
     <div class="input=-group col-md-4">
-      <label for="nombre">Causa de la Discapacidad</label><br>
-      @if(count($perros2)==0)
-        {{Form::text('causa','',array('class'=>'form-control','placeholder'=>'Causa de la Discapacidad') )}}
+      <label for="nombre">Tipo de Discapacidad</label><br>
+      @if(count($discap)==0)
+        {{Form::text('tipodis','',array('class'=>'form-control','placeholder'=>'Causa de la Discapacidad','required'=>'true') )}}
         @else
-        {{Form::text('causa',$perros2[0]->Causa_discapacidad,array('class'=>'form-control','placeholder'=>'Causa de la Discapacidad') )}}
+        {{Form::text('tipodis',$discap[0]->Tipo_disca,array('class'=>'form-control','placeholder'=>'Tipo de Discapacidad','required'=>'true') )}}
+        @endif
+    </div>
+    <div class="input=-group col-md-4">
+      <label for="nombre">Causa de la Discapacidad</label><br>
+      @if(count($discap)==0)
+        {{Form::text('causa','',array('class'=>'form-control','placeholder'=>'Causa de la Discapacidad','required'=>'true') )}}
+        @else
+        {{Form::text('causa',$discap[0]->Causa_discapacidad,array('class'=>'form-control','placeholder'=>'Causa de la Discapacidad','required'=>'true') )}}
         @endif
     </div>
     <div class="input=-group col-md-4">
       <label for="nombre">Tiene Hipertension</label><br>
-      @if(count($perros2)==0)
+      @if(count($discap)==0)
         <label >{{Form::radio('hiper','Si',array('class'=>'form-control','required'=>'true') )}} Si</label>
         <label>{{Form::radio('hiper','No',array('class'=>'form-control','required'=>'true') )}}No</label>
         @else
-          @if($perros2[0]->hipertension=='Si')
+          @if($discap[0]->hipertension=='Si')
           <label for=""><input type="radio" name="hiper" value="Si" checked> Si</label>
           <label for=""><input type="radio" name="hiper" value="No"> No</label>
 
@@ -67,43 +75,43 @@
         @endif
     </div>
     <div class="input=-group col-md-4">
-      <label for="nombre">Rehabilitacion</label><br>
-      @if(count($perros2)==0)
-        {{Form::text('rehab','',array('class'=>'form-control','placeholder'=>'Rehabilitacion') )}}
+      <label for="nombre">Rehabilitación</label><br>
+      @if(count($discap)==0)
+        {{Form::text('rehab','',array('class'=>'form-control','placeholder'=>'Rehabilitación','required'=>'true') )}}
         @else
-        {{Form::text('rehab',$perros2[0]->Rehabilitacion,array('class'=>'form-control','placeholder'=>'Rehabilitacion') )}}
+        {{Form::text('rehab',$discap[0]->Rehabilitacion,array('class'=>'form-control','placeholder'=>'Rehabilitación','required'=>'true') )}}
         @endif
     </div>
     <div class="input=-group col-md-4">
-      <label for="nombre">Lugar de Rehabilitacion </label><br>
-      @if(count($perros2)==0)
-        {{Form::text('lugarehab','',array('class'=>'form-control','placeholder'=>'Lugar de Rehabilitacion') )}}
+      <label for="nombre">Lugar de Rehabilitación </label><br>
+      @if(count($discap)==0)
+        {{Form::text('lugarehab','',array('class'=>'form-control','placeholder'=>'Lugar de Rehabilitación','required'=>'true') )}}
         @else
-        {{Form::text('lugarehab',$perros2[0]->Lugar_de_rehabilitacion,array('class'=>'form-control','placeholder'=>'Lugar de Rehabilitacion') )}}
+        {{Form::text('lugarehab',$discap[0]->Lugar_de_rehabilitacion,array('class'=>'form-control','placeholder'=>'Lugar de Rehabilitación','required'=>'true') )}}
         @endif
     </div>
     <div class="input=-group col-md-4">
-      <label for="nombre">Tipo de Rehabilitacion </label><br>
-      @if(count($perros2)==0)
-        {{Form::text('tiporehab','',array('class'=>'form-control','placeholder'=>'Tipo de Rehabilitacion') )}}
+      <label for="nombre">Tipo de Rehabilitación </label><br>
+      @if(count($discap)==0)
+        {{Form::text('tiporehab','',array('class'=>'form-control','placeholder'=>'Tipo de Rehabilitación','required'=>'true') )}}
         @else
-        {{Form::text('tiporehab',$perros2[0]->Tipo_rehabilitacion,array('class'=>'form-control','placeholder'=>'Tipo de Rehabilitacion') )}}
+        {{Form::text('tiporehab',$discap[0]->Tipo_rehabilitacion,array('class'=>'form-control','placeholder'=>'Tipo de Rehabilitación','required'=>'true') )}}
         @endif
     </div>
     <div class="input=-group col-md-4">
-      <label for="nombre">Apoyo Funcionalidad </label><br>
-      @if(count($perros2)==0)
-        {{Form::text('apoyofun','',array('class'=>'form-control','placeholder'=>'Apoyo Funcionalidad') )}}
+      <label for="nombre">Apoyo Funcional</label><br>
+      @if(count($discap)==0)
+        {{Form::text('apoyofun','',array('class'=>'form-control','placeholder'=>'Apoyo Funcional','required'=>'true') )}}
         @else
-        {{Form::text('apoyofun',$perros2[0]->Apoyo_funcional,array('class'=>'form-control','placeholder'=>'Apoyo Funcionalidad') )}}
+        {{Form::text('apoyofun',$discap[0]->Apoyo_funcional,array('class'=>'form-control','placeholder'=>'Apoyo Funcional','required'=>'true') )}}
         @endif
     </div>
     <div class="input=-group col-md-4">
-      <label for="nombre">Requiere Apoyo Funcional </label><br>
-      @if(count($perros2)==0)
-        {{Form::text('requiere','',array('class'=>'form-control','placeholder'=>'Requiere Apoyo Funcional') )}}
+      <label for="nombre">Requiere Apoyo Funcional</label><br>
+      @if(count($discap)==0)
+        {{Form::text('requiere','',array('class'=>'form-control','placeholder'=>'Requiere Apoyo Funcional','required'=>'true') )}}
         @else
-        {{Form::text('requiere',$perros2[0]->Requiere_apoyo_funcional,array('class'=>'form-control','placeholder'=>'Requiere Apoyo Funcional') )}}
+        {{Form::text('requiere',$discap[0]->Requiere_apoyo_funcional,array('class'=>'form-control','placeholder'=>'Requiere Apoyo Funcional','required'=>'true') )}}
         @endif
     </div>
     <div class="input-group col-md-12" style="margin-left:1.5%; padding-top:2%;margin-bottom:3%;">

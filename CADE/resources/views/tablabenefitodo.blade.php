@@ -119,7 +119,7 @@
           <td style="border-right:white solid;">Codigo Postal</td>
           <td style="border-right:white solid;">Localidad</td>
           <td style="border-right:white solid;">Municipio</td>
-          <td style="border-right:white solid;">Telefono</td>
+          <td style="border-right:white solid;">Teléfono</td>
 
 
         </tr>
@@ -149,7 +149,7 @@
           <td style="border-right:white solid;">Peso</td>
           <td style="border-right:white solid;">Pas</td>
           <td style="border-right:white solid;">Pad</td>
-          <td style="border-right:white solid;">Fecha de Examen</td>
+          <td style="border-right:white solid;">Fecha de Exámen</td>
 
 
         </tr>
@@ -177,9 +177,9 @@
 
           <td style="border-right:white solid;">Discapacidad </td>
           <td style="border-right:white solid;">Causa Discapacidad</td>
-          <td style="border-right:white solid;">Rehabilitacion</td>
+          <td style="border-right:white solid;">Rehabilitación</td>
           <td style="border-right:white solid;">Lugar de la Rehabilitacion</td>
-          <td style="border-right:white solid;">Sufre Hipertension</td>
+          <td style="border-right:white solid;">Sufre Hipertensión</td>
 
 
 
@@ -188,7 +188,7 @@
       </thead>
       <tbody id="tbody">
         <tr>
-          @forelse($perros2 as $usu)
+          @forelse($discap as $usu)
 
           <td >{{$usu->Discapacidad}}</td>
           <td>{{$usu->Causa_discapacidad}}</td>
@@ -207,7 +207,7 @@
 
       <thead>
         <tr style="border:white solid;background-color:#4c4f54;">
-          <td style="border-right: white solid;">Tipo de Rehabilitacion</td>
+          <td style="border-right: white solid;">Tipo de Rehabilitación</td>
           <td style="border-right:white solid;">Apoyo Funcional</td>
           <td style="border-right:white solid;">Requiere Apoyo Funcional</td>
           <td style="border-right:white solid;"></td>
@@ -216,7 +216,7 @@
       </thead>
       <tbody id="tbody">
         <tr>
-          @forelse($perros2 as $usu)
+          @forelse($discap as $usu)
           <td>{{$usu->Tipo_rehabilitacion}}</td>
           <td>{{$usu->Apoyo_funcional}}</td>
           <td>{{$usu->Requiere_apoyo_funcional}}</td>
@@ -289,7 +289,7 @@
       <thead>
         <tr style="border:white solid;background-color:#4c4f54;">
           <td style="border-right: white solid;">Antecedentes</td>
-          <td style="border-right:white solid;">Telefono</td>
+          <td style="border-right:white solid;">Teléfono</td>
           <td style="border-right:white solid;"></td>
           <td style="border-right:white solid;"></td>
           <td style="border-right:white solid;"></td>
@@ -315,8 +315,8 @@
       <p>Examenes</p>
       <thead>
         <tr style="border:white solid;background-color:#4c4f54;">
-          <td style="border-right: white solid;">Tipo de Examen</td>
-          <td style="border-right:white solid;">Puntuacion</td>
+          <td style="border-right: white solid;">Tipo de Exámen</td>
+          <td style="border-right:white solid;">Puntuación</td>
           <td style="border-right:white solid;"></td>
           <td style="border-right:white solid;"></td>
           <td style="border-right:white solid;"></td>

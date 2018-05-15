@@ -25,31 +25,31 @@
                     <div class="input=-group col-md-4">
                       <label for="nombre">Edad</label><br>
 
-                        {{Form::number('edad','',array('class'=>'form-control','placeholder'=>'Edad') )}}
+                        {{Form::number('edad','',array('class'=>'form-control','placeholder'=>'Edad','required'=>'true') )}}
 
                     </div>
                     <div class="input=-group col-md-4">
                       <label for="nombre">Peso (Kg)</label><br>
 
-                        {{Form::number('peso','',array('class'=>'form-control','placeholder'=>'Peso') )}}
+                        {{Form::number('peso','',array('class'=>'form-control','placeholder'=>'Peso','required'=>'true') )}}
 
                     </div>
                     <div class="input=-group col-md-4">
                       <label for="nombre">PAS</label><br>
 
-                        {{Form::number('pas','',array('class'=>'form-control','placeholder'=>'Presion Arterial') )}}
+                        {{Form::number('pas','',array('class'=>'form-control','placeholder'=>'Presion Arterial','required'=>'true') )}}
 
                     </div>
                     <div class="input=-group col-md-4">
                       <label for="nombre">PAD</label><br>
 
-                        {{Form::number('pad','',array('class'=>'form-control','placeholder'=>'Presion Arterial') )}}
+                        {{Form::number('pad','',array('class'=>'form-control','placeholder'=>'Presion Arterial','required'=>'true') )}}
 
                     </div>
                     <div class="input=-group col-md-4">
                       <label for="nombre">Fecha</label><br>
 
-                        {{Form::date('fecha','',array('class'=>'form-control','placeholder'=>'Fecha') )}}
+                        {{Form::date('fecha','',array('class'=>'form-control','placeholder'=>'Fecha','required'=>'true') )}}
 
                     </div>
                     <div class="input-group col-md-12" style="margin-left:1.5%; padding-top:2.5%;margin-bottom:3%;">

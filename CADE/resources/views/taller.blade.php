@@ -100,27 +100,27 @@
               {{Form::open(array('url'=>'/admin/taller','files'=>true))}}
                 <div class="input=-group col-md-4">
                   <label for="nombre">Nombre del Taller</label><br>
-                  {{Form::text('nombretaller','',array('class'=>'form-control','placeholder'=>'Nombre del Taller') )}}
+                  {{Form::text('nombretaller','',array('class'=>'form-control','placeholder'=>'Nombre del Taller','required'=>'true') )}}
                 </div>
                 <div class="input=-group col-md-4">
                   <label for="nombre">Tipo de Taller</label><br>
-                  {{Form::text('tipo','',array('class'=>'form-control','placeholder'=>'Tipo de Taller') )}}
+                  {{Form::text('tipo','',array('class'=>'form-control','placeholder'=>'Tipo de Taller','required'=>'true') )}}
                 </div>
                 <div class="input=-group col-md-4">
-                  <label for="nombre">Numero de Asistentes</label><br>
-                  {{Form::number('cantidad','',array('class'=>'form-control','placeholder'=>'Numero de Asistentes') )}}
+                  <label for="nombre">Número de Asistentes</label><br>
+                  {{Form::number('cantidad','',array('class'=>'form-control','placeholder'=>'Número de Asistentes','required'=>'true') )}}
                 </div>
                 <div class="input=-group col-md-4">
                   <label for="nombre">Fecha Impartido</label><br>
-                  {{Form::date('fecha','',array('class'=>'form-control','placeholder'=>'Fecha Impartido') )}}
+                  {{Form::date('fecha','',array('class'=>'form-control','placeholder'=>'Fecha Impartido','required'=>'true') )}}
                 </div>
                 <div class="input=-group col-md-4">
                   <label for="nombre">Lugar del Taller</label><br>
-                  {{Form::text('lugar','',array('class'=>'form-control','placeholder'=>'Lugar del Taller') )}}
+                  {{Form::text('lugar','',array('class'=>'form-control','placeholder'=>'Lugar del Taller','required'=>'true') )}}
                 </div>
                 <div class="input=-group col-md-4">
                   <label for="nombre">Observaciones del Taller</label><br>
-                  {{Form::text('notas','',array('class'=>'form-control','placeholder'=>'Observaciones') )}}
+                  {{Form::text('notas','',array('class'=>'form-control','placeholder'=>'Observaciones','required'=>'true') )}}
                 </div>
                 <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
                   {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}

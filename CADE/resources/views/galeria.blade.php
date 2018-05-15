@@ -1,11 +1,10 @@
 
-    {!! Form::open(
-      array('route'=>['admin.galeria.edit',0],'method'=>'GET' )) !!}
+
     <div class="row">
       <div class="column">
         <div class="input=-group col-md-12">
           <label for="nombre">Imagen</label><br>
-          {{Form::file('imagen','',array('class'=>'form-control','placeholder'=>'Imagen') )}}
+          
         </div>
       </div>
       <div class="column">
@@ -284,4 +283,3 @@
 
       </div>
     </div>
-      {{Form::close() }}

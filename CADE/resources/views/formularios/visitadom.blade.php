@@ -24,31 +24,31 @@
     <div class="input=-group col-md-4">
       <label for="nombre">Nombre</label><br>
 
-        {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+        {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}
 
     </div>
     <div class="input=-group col-md-4">
       <label for="nombre">Domicilio</label><br>
 
-        {{Form::text('domicilio','',array('class'=>'form-control','placeholder'=>'Domicilio') )}}
+        {{Form::text('domicilio','',array('class'=>'form-control','placeholder'=>'Domicilio','required'=>'true') )}}
 
     </div>
     <div class="input=-group col-md-4">
       <label for="nombre">Fecha</label><br>
 
-        {{Form::date('fecha','',array('class'=>'form-control','placeholder'=>'Fecha') )}}
+        {{Form::date('fecha','',array('class'=>'form-control','placeholder'=>'Fecha','required'=>'true') )}}
 
     </div>
     <div class="input=-group col-md-4">
       <label for="nombre">Tipo de Visita</label><br>
 
-        {{Form::text('tipo','',array('class'=>'form-control','placeholder'=>'Tipo de Visita') )}}
+        {{Form::text('tipo','',array('class'=>'form-control','placeholder'=>'Tipo de Visita','required'=>'true') )}}
 
     </div>
     <div class="input=-group col-md-4">
       <label for="nombre">Notas</label><br>
 
-        {{Form::text('notas','',array('class'=>'form-control','placeholder'=>'Notas') )}}
+        {{Form::text('notas','',array('class'=>'form-control','placeholder'=>'Notas','required'=>'true') )}}
 
     </div>
 

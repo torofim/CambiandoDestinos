@@ -22,19 +22,19 @@
 
     {!!Form::open(array('route'=>['admin.evaluacion.store','0'],'method'=>'POST'))!!}
     <div class="input=-group col-md-4">
-      <label for="nombre">Examen</label><br>
+      <label for="nombre">Exámen</label><br>
       @if(count($perros3)==0)
-        {{Form::text('examen','',array('class'=>'form-control','placeholder'=>'Examen') )}}
+        {{Form::text('examen','',array('class'=>'form-control','placeholder'=>'Exámen','required'=>'true') )}}
         @else
-        {{Form::text('examen',$perros3[0]->tipo_examen,array('class'=>'form-control','placeholder'=>'Examen') )}}
+        {{Form::text('examen',$perros3[0]->tipo_examen,array('class'=>'form-control','placeholder'=>'Exámen','required'=>'true') )}}
         @endif
     </div>
     <div class="input=-group col-md-4">
-      <label for="nombre">Puntuacion</label><br>
+      <label for="nombre">Puntuación</label><br>
       @if(count($perros3)==0)
-        {{Form::text('puntuacion','',array('class'=>'form-control','placeholder'=>'Apellido paterno') )}}
+        {{Form::text('puntuacion','',array('class'=>'form-control','placeholder'=>'Puntuación','required'=>'true') )}}
         @else
-        {{Form::text('puntuacion',$perros3[0]->puntuacion,array('class'=>'form-control','placeholder'=>'Apellido paterno') )}}
+        {{Form::text('puntuacion',$perros3[0]->puntuacion,array('class'=>'form-control','placeholder'=>'Puntuación','required'=>'true') )}}
         @endif
     </div>
     <div class="input-group col-md-12" style="margin-left:1.5%; padding-top:2%;margin-bottom:3%;">
