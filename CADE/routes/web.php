@@ -88,4 +88,3 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
 });
 
 Auth::routes();
-Route::get('/home', 'HomeController@index')->name('home');

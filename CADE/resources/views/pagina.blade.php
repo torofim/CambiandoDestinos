@@ -261,7 +261,7 @@
     <p>Francisco I. Madero #503 Local #3 <img src="./img/logonavi.png" alt=""></p>
     <p>+52-636-121-2491 <img src="./img/logonavi.png" alt=""> </p>
     <p>fundacioncambiandodestinos@hotmail.com <img src="./img/logonavi.png" alt=""></p>
-    <a class="col-md-12"href="/home">Iniciar Sesion</a>
+    <a class="col-md-12"href="/login">Iniciar Sesion</a>
   </div>
 
 
