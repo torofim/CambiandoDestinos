@@ -54,8 +54,9 @@
         <td style="border-right:white solid;">Lugar Nacimiento</td>
         <td style="border-right:white solid;">Edad</td>
         <td style="border-right:white solid;">Sexo</td>
+        <td style="border-right:white solid;">Curp</td>
         <td style="border-right:white solid;">Estado Civil</td>
-        <td style="border-right:white solid;">Tipo de Sangre</td>
+
       </tr>
     </thead>
     <tbody id="tbody">
@@ -64,8 +65,9 @@
         <td>{{$usu->Lugar_nacimiento}}</td>
         <td>{{$usu->Edad}}</td>
         <td>{{$usu->Sexo}}</td>
+        <td>{{$usu->Curp}}</td>
         <td>{{$usu->Edo_civil}}</td>
-        <td>{{$usu->Tipo_sangre}}</td>
+
 
 
         </tr>
@@ -79,12 +81,12 @@
       <thead>
         <tr style="border:white solid;background-color:#4c4f54;">
 
-
+          <td style="border-right:white solid;">Tipo de Sangre</td>
           <td style="border-right:white solid;">Peso</td>
           <td style="border-right:white solid;">Estatura</td>
           <td style="border-right:white solid;">Talla</td>
           <td style="border-right:white solid;">Calzado</td>
-          <td style="border-right:white solid;">Domicilio</td>
+
 
 
         </tr>
@@ -93,12 +95,12 @@
         <tr >
           @forelse($datosper as $usu)
 
-
+          <td>{{$usu->Tipo_sangre}}</td>
           <td>{{$usu->Peso}}</td>
           <td>{{$usu->Estatura}}</td>
           <td>{{$usu->Talla}}</td>
           <td>{{$usu->Calzado}}</td>
-          <td>{{$usu->Domicilio}}</td>
+
 
 
 
@@ -113,23 +115,24 @@
     <table class="table table-condensed col-md-12" style="margin-left:0%;">
       <thead>
         <tr style="border:white solid;background-color:#4c4f54;">
+          <td style="border-right:white solid;">Domicilio</td>
           <td style="border-right:white solid;">Codigo Postal</td>
           <td style="border-right:white solid;">Localidad</td>
-          <td style="border-right:white solid;">Tel</td>
+          <td style="border-right:white solid;">Telefono</td>
           <td style="border-right:white solid;"></td>
-          <td style="border-right:white solid;"></td>
+
         </tr>
       </thead>
       <tbody id="tbody">
         <tr>
           @forelse($datosper as $usu)
+          <td>{{$usu->Domicilio}}</td>
           <td>{{$usu->Cp}}</td>
           <td>{{$usu->Localidad}}</td>
           <td>{{$usu->Tel}}</td>
           <td></td>
-          <td>
-          </td>
-          </tr>
+
+
         @empty
         <p>sin registro</p>
         @endforelse

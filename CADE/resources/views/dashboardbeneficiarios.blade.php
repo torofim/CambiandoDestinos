@@ -76,31 +76,10 @@
                 <td>{{$usu->Apellido_m}}</td>
                 <td><button type="button" class="btn btn-info btn-lg " onclick="location.href='/admin/Formubenefi/{{$usu->Id_bene}}'"
                    >Editar </button></td>
-
-
-                     @foreach($resultado3 as $usua)
                 <td><button type="button" class="btn btn-info btn-lg btne"
-                     data-toggle="modal" data-target="#myModal3"
-                     data-nombrebene="{{$usua->Nombre_bene}}"
-                     data-cant="{{$usua->Cantidad}}"
-                     data-articulo="{{$usua->Articulo_entregado}}"
-                     data-tipo="{{$usua->Tipo}}"
-                     data-fecha="{{$usua->Fecha_entrega}}"
-                     data-notas="{{$usua->Notas}}"
-                     data-id="{{$usu->Id_bene}}"
-                     >Entrega </button></td>
-
+                     data-toggle="modal" data-target="#myModal3">Entrega </button></td>
                      <td><button type="button" class="btn btn-info btn-lg btne"
-                          data-toggle="modal" data-target="#myModal4"
-                          data-nombrebene="{{$usua->Nombre_bene}}"
-                          data-articulo="{{$usua->Cantidad}}"
-                          data-cant="{{$usua->Articulo_entregado}}"
-                          data-tipo="{{$usua->Tipo}}"
-                          data-fecha="{{$usua->Fecha_entrega}}"
-                          data-notas="{{$usua->Notas}}"
-                          data-id="{{$usu->Id_bene}}"
-                          >Entrega </button></td>
-                          @endforeach
+                          data-toggle="modal" data-target="#myModal4"  >Entrega </button></td>
 
                 </tr>
 
@@ -191,27 +170,27 @@
 
             <div class="input-group">
               <label for="">Nombre Beneficiario</label>
-              <input type="text" name="nombrebene" id="nombre" value="" class="form-control">
+              {{Form::text('nombrebene','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
             </div>
             <div class="input-group">
               <label for="">Articulo</label>
-              <input type="text" name="articulo" id="articulo" value="" class="form-control">
+              {{Form::text('articulo','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
             </div>
             <div class="input-group">
               <label for="">Cantidad</label>
-              <input type="number" name="cant" id="cant"value="" class="form-control">
+              {{Form::number('cant','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
             </div>
             <div class="input-group">
               <label for="">Tipo</label>
-              <input type="text" name="tipo" id="tipo" value="" class="form-control">
+              {{Form::text('tipo','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
             </div>
             <div class="input-group">
               <label for="">Fecha</label>
-              <input type="date" name="fecha" id="fecha" value="" class="form-control">
+              {{Form::date('fecha','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
             </div>
             <div class="input-group">
               <label for="">Notas</label>
-              <input type="text" name="notas" id="notas" value="" class="form-control">
+              {{Form::text('notas','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
             </div>
             <div class="input-group">
               <label for="">Folio</label>
@@ -245,34 +224,34 @@
         {{Form::open(array('url'=>'/admin/inventarioentrega','files'=>true))}}
         <div class="modal-body">
 
-            <div class="input-group">
-              <label for="">Nombre</label>
-              <input type="text" name="nombrebene" id="nombre" value="" class="form-control">
-            </div>
-            <div class="input-group">
-              <label for="">Articulo</label>
-              <input type="text" name="articulo" id="nombre" value="" class="form-control">
-            </div>
-            <div class="input-group">
-              <label for="">Cantidad</label>
-              <input type="number" name="cant" id="cant"value="" class="form-control">
-            </div>
-            <div class="input-group">
-              <label for="">Tipo</label>
-              <input type="text" name="tipo" id="fun" value="" class="form-control">
-            </div>
-            <div class="input-group">
-              <label for="">Fecha</label>
-              <input type="date" name="fecha" id="tipo" value="" class="form-control">
-            </div>
-            <div class="input-group">
-              <label for="">Notas</label>
-              <input type="text" name="notas" id="tipo" value="" class="form-control">
-            </div>
-            <div class="input-group">
-              <label for="">Folio</label>
-            <input type="text" name="idin" id="idin"value="{{$datosper[0]->Id_bene}}" class="form-control">
-            </div>
+          <div class="input-group">
+            <label for="">Nombre Beneficiario</label>
+            {{Form::text('nombrebene','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+          </div>
+          <div class="input-group">
+            <label for="">Articulo</label>
+            {{Form::text('articulo','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+          </div>
+          <div class="input-group">
+            <label for="">Cantidad</label>
+            {{Form::number('cant','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+          </div>
+          <div class="input-group">
+            <label for="">Tipo</label>
+            {{Form::text('tipo','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+          </div>
+          <div class="input-group">
+            <label for="">Fecha</label>
+            {{Form::date('fecha','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+          </div>
+          <div class="input-group">
+            <label for="">Notas</label>
+            {{Form::text('notas','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+          </div>
+          <div class="input-group">
+            <label for="">Folio</label>
+            <input type="text" name="idin" id="idin" value="{{$datosper[0]->Id_bene}}" class="form-control">
+          </div>
 
 
 

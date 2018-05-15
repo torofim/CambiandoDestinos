@@ -90,6 +90,14 @@
                       @endif
                   </div>
                   <div class="input=-group col-md-4">
+                    <label for="nombre">Curp </label><br>
+                    @if(count($datosper)==0)
+                      {{Form::number('curpEditar','',array('class'=>'form-control','placeholder'=>'Curp') )}}
+                      @else
+                      {{Form::number('curpEditar',$datosper[0]->Curp,array('class'=>'form-control','placeholder'=>'Curp') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
                     <label for="nombre">Estado civil </label><br>
                     @if(count($datosper)==0)
                       {{Form::text('edoEditar','',array('class'=>'form-control','placeholder'=>'Estado civil') )}}
