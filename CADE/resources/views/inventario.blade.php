@@ -14,7 +14,7 @@
       <br>
       <div class="panel2 panel-default col-xs-12 ">
         <div class="panel-body2 col-xs-12" style="border-bottom:groove; background-color:transparent;">
-          <label class="titula col-xs-12">Fundacion Cambiando Destinos</label>
+          <label class="titula col-xs-12">Fundación Cambiando Destinos</label>
         </div>
       </div>
 
@@ -22,8 +22,8 @@
 
 
     <button class="tablink" style="width:33.33%;" onclick="openPage('benefi', this, '')" id="defaultOpen">Inventario</button>
-    <button class="tablink" style="width:33.33%;" onclick="openPage('agregar', this, '')" >Agregar Articulo</button>
-    <button class="tablink" style="width:33.33%;" onclick="openPage('entrega', this, '')" >Entregas</button>
+    <button class="tablink" style="width:33.33%;" onclick="openPage('agregar', this, '')" >Agregar Nuevo Medicamento/Dispositivo y Entregas</button>
+    <button class="tablink" style="width:33.33%;" onclick="openPage('entrega', this, '')" >Informacion de Entregas de Medicamentos/Dispositivos</button>
 
 
     <div id="benefi" class="tabcontent">
@@ -47,6 +47,7 @@
         <!-- ESTA ES LA TABLA ORIGINAL PARA POSTERIORES USOS-->
         <div class="row" >
           <h2 style="margin-left:1%;"></h2>
+
           <table class="table table-condensed col-md-12" style="margin-left:0%;">
             <thead>
               <tr>
@@ -73,11 +74,7 @@
                   data-funedit="{{$usu->Funcionalidad}}"
                   data-tipoedit="{{$usu->Tipo}}"
                   data-idin="{{$usu->Id_inv}}">Editar </button></td>
-                  <td><button type="button" class="btn btn-info btn-lg btnent"
-                       data-toggle="modal" data-target="#myModal3"
 
-
-                       >Entrega </button></td>
 
 
                 </tr>
@@ -93,7 +90,7 @@
 </div>
 
   <div id="agregar" class="tabcontent">
-    <div class="card-header" style="margin-bottom:2%; font-size:3rem; margin-left:1.5%;">Agregar Articulo</div>
+    <div class="card-header" style="margin-bottom:2%; font-size:3rem; margin-left:1.5%;">Agregar Nuevo Medicamento/Dispositivo</div>
         <div class="card-body" >
           @if($errors->any())
             <div class="alert alert-warning alert-dismissable">
@@ -127,10 +124,16 @@
               <label for="nombre">Tipo</label><br>
               {{Form::text('tipo','',array('class'=>'form-control','placeholder'=>'Tipo') )}}
             </div>
-            <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
+            <div class="input-group col-md-12" style="margin-left:1%; padding-top:2%;">
               {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
             </div>
+
           {{Form::close()}}
+          <div class="card-header" style=" margin-top: 2%;font-size:3rem; margin-left:1.5%;">Entrega de Articulo a Beneficiario</div>
+          <div class="input-group col-md-6" style="margin-left:1%; padding-top:2%;">
+          <button type="button" class="btn btn-info btn-md " data-toggle="modal" data-target="#myModal3" >Entrega </button>
+          </div>
+
 
 </div>
 </div>

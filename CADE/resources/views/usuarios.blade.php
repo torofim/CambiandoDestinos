@@ -3,8 +3,8 @@
 <br>
 <br>
 <div class="panel2 panel-default col-xs-12 ">
-  <div class="panel-body2 titula" style="border-bottom:groove; background-color:transparent;">
-    Fundacion Cambiando Destinos
+  <div class="panel-body2 col-xs-12" style="border-bottom:groove; background-color:transparent;">
+    <label class="titula col-xs-12">Fundación Cambiando Destinos</label>
   </div>
 </div>
 
@@ -19,7 +19,7 @@
   <div id="benefi" class="tabcontent">
 
                 <h3 style="margin-left:2%;">Buscar Usuario</h3>
-<input type="search" name="" value="" id="txtBusqueda" style="margin-left:2%;margin-bottom:5%;width:20%;">
+<input type="search" name="" value="" id="txtBusqueda" style="margin-left:2%;margin-bottom:5%;width:20%;color:black;">
 <input type="hidden" name="" value="{{csrf_token()}}" id="token">
 
 
@@ -138,7 +138,7 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">Editar a: <b id="nomModal">Juan</b> </h4>
+        <h4 class="modal-title">Editar a: <b id="nomModal"></b> </h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
 
       </div>
@@ -274,7 +274,7 @@ var tr;
         url:formulario.attr('action'),
         data:formulario.serialize()
       }).done(function(respuesta){
-        
+
         tr.fadeOut(1000);
       });
     });

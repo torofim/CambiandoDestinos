@@ -21,7 +21,7 @@
         <p>Datos Personales del Beneficiario</p>
       <thead>
         <tr style="border:white solid;background-color:#4c4f54;">
-          <td style="border-right:white solid;">Id</td>
+          <td style="border-right:white solid;">No. Folio</td>
           <td style="border-right:white solid;">Nombre</td>
           <td style="border-right:white solid;">Apellido</td>
           <td style="border-right:white solid;">Apellido</td>
@@ -120,7 +120,7 @@
           <td style="border-right:white solid;">Localidad</td>
           <td style="border-right:white solid;">Municipio</td>
           <td style="border-right:white solid;">Telefono</td>
-          
+
 
         </tr>
       </thead>

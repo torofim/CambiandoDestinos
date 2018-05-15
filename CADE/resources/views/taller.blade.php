@@ -13,8 +13,8 @@
         <br>
         <br>
         <div class="panel2 panel-default col-xs-12 ">
-          <div class="panel-body2 titula" style="border-bottom:groove; background-color:transparent;">
-            Fundacion Cambiando Destinos
+          <div class="panel-body2 col-xs-12" style="border-bottom:groove; background-color:transparent;">
+          <label class="titula col-xs-12">Fundación Cambiando Destinos</label>
           </div>
         </div>
 
@@ -100,27 +100,27 @@
               {{Form::open(array('url'=>'/admin/taller','files'=>true))}}
                 <div class="input=-group col-md-4">
                   <label for="nombre">Nombre del Taller</label><br>
-                  {{Form::text('nombretaller','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+                  {{Form::text('nombretaller','',array('class'=>'form-control','placeholder'=>'Nombre del Taller') )}}
                 </div>
                 <div class="input=-group col-md-4">
                   <label for="nombre">Tipo de Taller</label><br>
-                  {{Form::text('tipo','',array('class'=>'form-control','placeholder'=>'Cantidad') )}}
+                  {{Form::text('tipo','',array('class'=>'form-control','placeholder'=>'Tipo de Taller') )}}
                 </div>
                 <div class="input=-group col-md-4">
                   <label for="nombre">Numero de Asistentes</label><br>
-                  {{Form::number('cantidad','',array('class'=>'form-control','placeholder'=>'Funcionalidad') )}}
+                  {{Form::number('cantidad','',array('class'=>'form-control','placeholder'=>'Numero de Asistentes') )}}
                 </div>
                 <div class="input=-group col-md-4">
                   <label for="nombre">Fecha Impartido</label><br>
-                  {{Form::date('fecha','',array('class'=>'form-control','placeholder'=>'Tipo') )}}
+                  {{Form::date('fecha','',array('class'=>'form-control','placeholder'=>'Fecha Impartido') )}}
                 </div>
                 <div class="input=-group col-md-4">
                   <label for="nombre">Lugar del Taller</label><br>
-                  {{Form::text('lugar','',array('class'=>'form-control','placeholder'=>'Tipo') )}}
+                  {{Form::text('lugar','',array('class'=>'form-control','placeholder'=>'Lugar del Taller') )}}
                 </div>
                 <div class="input=-group col-md-4">
                   <label for="nombre">Observaciones del Taller</label><br>
-                  {{Form::text('notas','',array('class'=>'form-control','placeholder'=>'Tipo') )}}
+                  {{Form::text('notas','',array('class'=>'form-control','placeholder'=>'Observaciones') )}}
                 </div>
                 <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
                   {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
