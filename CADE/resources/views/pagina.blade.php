@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-      <title>Cambiando Destinos</title>
+      <title>Fundación Cambiando Destinos, A.C.</title>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -132,7 +132,7 @@
     QUE DESARROLLEN UN CAMBIO SUSTENTABLE EN LA INTEGRACION
     Y FORMACION DE NINOS, JOVENES, ADULTOS Y ANCIANOS, EN CULTURA
     EDUCACION Y SALUD.</p>
-  <p style="margin-left:65%;margin-top:10%;"><a class="btn btn-primary btn-lg boton" href="#" role="button"  style="background-color:green;">Conoce Mas</a></p>
+  <p style="margin-left:65%;margin-top:10%;"><a class="btn btn-primary btn-lg boton" href="/informacion" role="button"  style="background-color:green;">Conoce Mas</a></p>
 </div>
 </div>
 </div>

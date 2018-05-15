@@ -32,7 +32,7 @@ header {
 }
 .content-wrapper{
     background-color: white;
-    top: 98%;
+    top: 10%;
     min-height: 100%;
     position:absolute;
     z-index: 2;
@@ -62,4 +62,7 @@ header .intro-text .name {
 header .intro-text .skills {
     font-size: 1.25em;
     font-weight: 300;
+}
+p{
+  text-align: justify;
 }
