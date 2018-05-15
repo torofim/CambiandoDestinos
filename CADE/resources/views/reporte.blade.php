@@ -34,9 +34,9 @@
       <p>sin registro</p>
       @endforelse
       </div>
-      <div class="fecha">
-        Fecha:<label id="fesha" class="fecha">
-
+      <div class="fecha" id="fesha">
+        Fecha:<label>
+          
         </label>
       </div>
       <div class="foto">

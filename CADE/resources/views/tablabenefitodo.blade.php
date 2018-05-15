@@ -413,6 +413,6 @@
     <button type="submit" >Imprimir Reporte</button>
 </form>
 @empty
-<p>caca rosa</p>
+<p>empty</p>
 @endforelse
   </div>
