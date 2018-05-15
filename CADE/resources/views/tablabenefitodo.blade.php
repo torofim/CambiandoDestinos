@@ -405,7 +405,6 @@
   </table>
 </div>
 </div>
-<<<<<<< HEAD
 <script type="text/javascript">
 
 </script>
@@ -416,6 +415,4 @@
 @empty
 <p>caca rosa</p>
 @endforelse
-=======
->>>>>>> parent of ee9bdcd... asda
   </div>

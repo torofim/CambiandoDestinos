@@ -59,8 +59,6 @@ class formubeneficontroller extends Controller
         //->take(10)
         ->get();
 
-
-
       return view('/Formubenefi')
         ->with('Id_bene',$Id)
         ->with('datosper',$registros)
@@ -71,8 +69,7 @@ class formubeneficontroller extends Controller
         ->with('perros6',$registros6)
         ->with('perros7',$registros7)
         ->with('perros8',$registros8)
-        ->with('perros9',$registros9)
-        ;
+        ->with('perros9',$registros9);
 
     }
 
