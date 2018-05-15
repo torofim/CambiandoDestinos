@@ -31,11 +31,13 @@
         {{$usua->Id_bene}}
       </label>
       @empty
-      
+      <p>sin registro</p>
       @endforelse
       </div>
       <div class="fecha">
-        Fecha:<label>dd/mm/yy</label>
+        Fecha:<label id="fesha" class="fecha">
+
+        </label>
       </div>
       <div class="foto">
 
@@ -57,7 +59,13 @@
             </div>
               <label class="tnom">Nombre</label>
             <div class="nombre">
-              <input class="col-md-12" type="text" name="" value="" >
+              @forelse($datosper1 as $usua)
+              <input value="  {{$usua->Nombre}}">
+
+              </input>
+              @empty
+
+              @endforelse
             </div>
             <label class="tapp">Apellido Paterno</label>
             <div class="app">
@@ -382,6 +390,22 @@
 
 <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
 <script type="text/javascript">
+var today = new Date();
+var dd = today.getDate();
+var mm = today.getMonth()+1; //January is 0!
+var yyyy = today.getFullYear();
+
+if(dd<10) {
+    dd = '0'+dd
+}
+
+if(mm<10) {
+    mm = '0'+mm
+}
+today = dd + '/' + mm + '/' + yyyy;
+document.getElementById('fesha').value=today;
+
+document.write(today);
 function imprimir(elemento){
   var  respaldo=$('body').html();
   var div=$("#"+elemento).clone();

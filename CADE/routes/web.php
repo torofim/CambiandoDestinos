@@ -34,9 +34,7 @@ Route::get('/Login',function(){
   return view('inventario');
 });*/
 
-Route::get('/reporte', function () {
-    return view('reporte');
-});
+
 Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   //Route::get('/',function(){return "yeah";});
   Route::get('/usuarios','usuarioscontroller@index')->name('usuarios');
@@ -57,7 +55,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::get('/discapacidad/{Id}','discapacidadController@index')->name('discapacidad');
   Route::get('/tipodiscapacidad/{Id}','tipodiscapacidadController@index')->name('tipodiscapacidad');
   Route::get('/visitacomida','visitacomidaController@index');
-  Route::get('/reporte','reportecontroller@index');
+  Route::get('/reporte/{Id}','reportecontroller@index');
   // Estos son los Routes de los DASH
   Route::get('/dash/{mes}','dashcontroller@index');
   Route::get('/graficos/{mes}/{year}','graficoscontroller@index');

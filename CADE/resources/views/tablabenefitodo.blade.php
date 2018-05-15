@@ -405,7 +405,14 @@
   </table>
 </div>
 </div>
-<form action="/reporte">
-    <button type="submit">Imprimir Reporte</button>
+<script type="text/javascript">
+
+</script>
+@forelse($perros2 as $usu)
+<form action="/admin/reporte/{{$usu->Id_bene}}">
+    <button type="submit" >Imprimir Reporte</button>
 </form>
+@empty
+<p>caca rosa</p>
+@endforelse
   </div>
