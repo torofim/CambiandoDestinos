@@ -34,10 +34,8 @@
       <p>sin registro</p>
       @endforelse
       </div>
-      <div class="fecha" id="fesha">
-        Fecha:<label>
-          
-        </label>
+      <div class="fecha" >
+        Fecha:<label id="fesha"></label>
       </div>
       <div class="foto">
 
@@ -402,10 +400,9 @@ if(dd<10) {
 if(mm<10) {
     mm = '0'+mm
 }
-today = dd + '/' + mm + '/' + yyyy;
-document.getElementById('fesha').value=today;
 
-document.write(today);
+today = dd + '/' + mm + '/' + yyyy;
+//document.getElementById('fesha').value=today;
 function imprimir(elemento){
   var  respaldo=$('body').html();
   var div=$("#"+elemento).clone();
