@@ -59,8 +59,6 @@
                 <td>Apellido</td>
                 <td>Apellido</td>
                 <td>Editar</td>
-                <td>Entrega Medicamento</td>
-                <td>Entrega Aparatos</td>
                 <td>Eliminar</td>
               </tr>
             </thead>
@@ -76,10 +74,12 @@
                 <td>{{$usu->Apellido_m}}</td>
                 <td><button type="button" class="btn btn-info btn-lg " onclick="location.href='/admin/Formubenefi/{{$usu->Id_bene}}'"
                    >Editar </button></td>
-                <td><button type="button" class="btn btn-info btn-lg btne"
-                     data-toggle="modal" data-target="#myModal3">Entrega </button></td>
-                     <td><button type="button" class="btn btn-info btn-lg btne"
-                          data-toggle="modal" data-target="#myModal4"  >Entrega </button></td>
+                  <td>{!! Form::open(
+                    array('route'=>['admin.datospersonales.destroy',$usu->Id_bene],
+                  'method'=>'DELETE' )) !!}
+                    <button type="button" class="btnEliminar" data-toggle="modal" data-target="#myModal2" style="margin-top:5px;">
+                     <i class="glyphicon glyphicon-remove" style="padding-top:50%;"></i></button>
+                   {!! Form::close() !!}</td>
 
                 </tr>
 
@@ -155,133 +155,30 @@
 
 
 
-  <div id="myModal3" class="modal fade" role="dialog">
+  <div id="myModal2" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
-          <h4 class="modal-title">Esta editando al articulo: <b id="nomModal"></b> </h4>
+          <h4 class="modal-title">Eliminar Beneficiario  </h4>
           <button type="button" class="close" data-dismiss="modal">&times;</button>
-
         </div>
-        {{Form::open(array('url'=>'/admin/inventarioentrega','files'=>true))}}
-
         <div class="modal-body">
-
-            <div class="input-group">
-              <label for="">Nombre Beneficiario</label>
-              {{Form::text('nombrebene','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
-            </div>
-            <div class="input-group">
-              <label for="">Articulo</label>
-              {{Form::text('articulo','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
-            </div>
-            <div class="input-group">
-              <label for="">Cantidad</label>
-              {{Form::number('cant','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
-            </div>
-            <div class="input-group">
-              <label for="">Tipo</label>
-              {{Form::text('tipo','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
-            </div>
-            <div class="input-group">
-              <label for="">Fecha</label>
-              {{Form::date('fecha','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
-            </div>
-            <div class="input-group">
-              <label for="">Notas</label>
-              {{Form::text('notas','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
-            </div>
-            <div class="input-group">
-
-              <label for="">Folio</label>
-              @forelse($datosper as $idbene)
-              <input type="text" name="idin" id="idin" value="{{$idbene->Id_bene}}" class="form-control">
-              @empty
-              @endforelse
-            </div>
-            <div class="input-group">
-
-              <label for="">Folio inventario</label>
-              @foreach($inv as $idinv)
-              <input type="text" name="id" id="id" value="{{$idinv->Id_inv}}" class="form-control">
-              @endforeach
-            </div>
-
-
-
+          <h3>Desea eliminar el beneficiario?</h3>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-          <button type="submit" class="btn btn-primary">Aceptar</button>
+          <button type="button" class="btn btn-primary btnAjax" data-dismiss="modal">Eliminar</button>
           <!-- data-dismiss detiene el actualizado-->
         </div>
-        {{Form::close() }}
+
       </div>
 
     </div>
   </div>
 
-  <div id="myModal4" class="modal fade" role="dialog">
-    <div class="modal-dialog">
 
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Esta editando al articulo: <b id="nomModal"></b> </h4>
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-        </div>
-        {{Form::open(array('url'=>'/admin/inventarioentrega','files'=>true))}}
-        <div class="modal-body">
-
-          <div class="input-group">
-            <label for="">Nombre Beneficiario</label>
-            {{Form::text('nombrebene','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
-          </div>
-          <div class="input-group">
-            <label for="">Articulo</label>
-            {{Form::text('articulo','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
-          </div>
-          <div class="input-group">
-            <label for="">Cantidad</label>
-            {{Form::number('cant','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
-          </div>
-          <div class="input-group">
-            <label for="">Tipo</label>
-            {{Form::text('tipo','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
-          </div>
-          <div class="input-group">
-            <label for="">Fecha</label>
-            {{Form::date('fecha','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
-          </div>
-          <div class="input-group">
-            <label for="">Notas</label>
-            {{Form::text('notas','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
-          </div>
-          <div class="input-group">
-            <label for="">Folio</label>
-            <input type="text" name="idin" id="idin" value="{{$datosper[0]->Id_bene}}" class="form-control">
-          </div>
-          <div class="input-group">
-            <label for="">Folio inventario</label>
-            <input type="text" name="id" id="id" value="{{$inv[0]->Id_inv}}" class="form-control">
-          </div>
-
-
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
-          <button type="submit" class="btn btn-primary">Aceptar</button>
-          <!-- data-dismiss detiene el actualizado-->
-        </div>
-        {{Form::close() }}
-      </div>
-
-    </div>
-  </div>
 
 
 
@@ -301,6 +198,28 @@
   <script type="text/javascript" src="{{ asset('js/side.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
   <script type="text/javascript">
+  var formulario;
+  var tr;
+$(document).ready(function(){
+  $(".btnEliminar").on('click',function(event){
+    event.preventDefault();
+    tr=$(this).parent('form').parent('td').parent('tr');
+    formulario=$(this).parent('form');
+
+  });
+  $('.btnAjax').on('click',function(){
+
+    $.ajax({
+      method:'DELETE',
+      url:formulario.attr('action'),
+      data:formulario.serialize()
+    }).done(function(respuesta){
+      
+      tr.fadeOut(1000);
+    });
+  });
+  });
+
   function openPage(pageName,elmnt,color) {
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");

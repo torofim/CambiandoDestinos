@@ -73,8 +73,13 @@
                   data-funedit="{{$usu->Funcionalidad}}"
                   data-tipoedit="{{$usu->Tipo}}"
                   data-idin="{{$usu->Id_inv}}">Editar </button></td>
-                <td>
-                </td>
+                  <td><button type="button" class="btn btn-info btn-lg btnent"
+                       data-toggle="modal" data-target="#myModal3"
+
+
+                       >Entrega </button></td>
+
+
                 </tr>
               @empty
               <p>sin registro</p>
@@ -208,7 +213,65 @@
 
   </div>
 </div>
+<div id="myModal3" class="modal fade" role="dialog">
+  <div class="modal-dialog">
 
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Esta editando al articulo: <b id="nomModal"></b> </h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+      </div>
+      {{Form::open(array('url'=>'/admin/inventarioentrega','files'=>true))}}
+
+      <div class="modal-body">
+
+        <div class="input-group">
+          <label for="">No. Folio</label>
+          <input type="number" name="idin" id="Id_bene" value="" class="form-control">
+        </div>
+        <div class="input-group">
+          <label for="">Nombre Beneficiario</label>
+          <input type="text" name="nombrebene" id="Nombre_bene" value="" class="form-control">
+        </div>
+          <div class="input-group">
+            <label for="">Nombre Articulo</label>
+            <input type="text" name="articulo" id="nombre" value="" class="form-control">
+          </div>
+          <div class="input-group">
+            <label for="">Cantidad</label>
+            <input type="number" name="cant" id="cantidad"value="" class="form-control">
+          </div>
+          <div class="input-group">
+            <label for="">Tipo</label>
+            <input type="text" name="tipo" id="tipo" value="" class="form-control">
+          </div>
+          <div class="input-group">
+            <label for="">Fecha</label>
+            <input type="date" name="fecha" id="Fecha" value="" class="form-control">
+          </div>
+          <div class="input-group">
+            <label for="">Notas</label>
+            <input type="text" name="notas" id="Notas" value="" class="form-control">
+          </div>
+          <div class="input-group">
+            <label for="">Folio inventario</label>
+            <input type="number" name="idinv" id="id" class="form-control">
+
+          </div>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
+        <button type="submit" class="btn btn-primary">Aceptar</button>
+        <!-- data-dismiss detiene el actualizado-->
+      </div>
+      {{Form::close() }}
+    </div>
+
+  </div>
+</div>
 
 
 
@@ -240,6 +303,7 @@ $(document).ready(function(){
 
 
   });
+
 $('.divfade').fadeOut(2000);
 
     $(".btnEliminar").on('click',function(event){

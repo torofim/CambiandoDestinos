@@ -118,8 +118,9 @@
           <td style="border-right:white solid;">Domicilio</td>
           <td style="border-right:white solid;">Codigo Postal</td>
           <td style="border-right:white solid;">Localidad</td>
+          <td style="border-right:white solid;">Municipio</td>
           <td style="border-right:white solid;">Telefono</td>
-          <td style="border-right:white solid;"></td>
+          
 
         </tr>
       </thead>
@@ -129,8 +130,9 @@
           <td>{{$usu->Domicilio}}</td>
           <td>{{$usu->Cp}}</td>
           <td>{{$usu->Localidad}}</td>
+          <td>{{$usu->Municipio}}</td>
           <td>{{$usu->Tel}}</td>
-          <td></td>
+
 
 
         @empty

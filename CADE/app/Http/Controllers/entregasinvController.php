@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Validator;
 use App\Entrega_inventario;
+use App\Inventario;
 
 class entregasinvController extends Controller
 {
@@ -16,20 +17,27 @@ class entregasinvController extends Controller
 
 
     public function index(){
-      $registros=\DB::table('entregas_inventario')
+      $registros2=\DB::table('entregas_inventario')
     //  ->where('','=',$Id)
       ->orderby('Id','desc')
       //->take(10)
       ->get();
     // dd($registros);
     //dd($Id);
-      return view('dashboardbeneficiarios')
-
-      ->with('resultado2',$registros);
+    $registros=\DB::table('inventario')
+    //
+    //->where('Id','=','1');
+    ->orderby('Id_inv','desc')
+    //->take(10)
+    ->get();
+      return view('admin/inventario')
+      ->with('inv',$registros)
+      ->with('resultado',$registros2);
     }
     public function store(Request $req){
 
       $validator =Validator::make($req->all(),[
+        'Id_inv'=>'max:255',
         'Id_bene'=>'max:255',
         'Nombre_bene'=>'max:255',
         'Articulo_entregado'=>'max:255',
@@ -42,11 +50,12 @@ class entregasinvController extends Controller
       ]);
       if($validator->fails()){
         //quiere decir que no estan correctos
-        return redirect('/admin/benef')
+        return redirect('admin/inventario')
           ->withInput()
           ->withErrors($validator);
       }else{
         Entrega_inventario::create([
+          'Id_inv'=>$req->idinv,
           'Id_bene'=>$req->idin,
           'Nombre_bene'=>$req->nombrebene,
           'Articulo_entregado'=>$req->articulo,
@@ -55,7 +64,7 @@ class entregasinvController extends Controller
           'Fecha_entrega'=>$req->fecha,
           'Notas'=>$req->notas
         ]);
-        return redirect()->to('/admin/benef')
+        return redirect()->to('admin/inventario')
         ->with('mensaje','Datos Agregados');
     }
     dd($req->nombre);

@@ -170,6 +170,14 @@
                       @endif
                   </div>
                   <div class="input=-group col-md-4">
+                    <label for="nombre">Municipio </label><br>
+                    @if(count($datosper)==0)
+                      {{Form::text('munEditar','',array('class'=>'form-control','placeholder'=>'Municipio') )}}
+                      @else
+                        {{Form::text('munEditar',$datosper[0]->Localidad,array('class'=>'form-control','placeholder'=>'Municipio') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
                     <label for="nombre">Telefono </label><br>
                     @if(count($datosper)==0)
                       {{Form::number('telEditar','',array('class'=>'form-control','placeholder'=>'Telefono') )}}
