@@ -11,7 +11,7 @@
       <span class="icon-bar"></span>
     </button>
     <a class="navbar-brand"   >{{Auth::user()->name}}</a>
-    <img class="navbar-brand" src="{{Auth::user()->imgperfil}}" style="width:100px;height:100px;" >
+    <img class="navbar-brand img-responsive" src="{{asset('/img/usuarios/'.Auth::user()->imgperfil)}}" style="margin-left:25%; width:80px;height:80px;" >
 
   </div>
   <!-- Collect the nav links, forms, and other content for toggling -->

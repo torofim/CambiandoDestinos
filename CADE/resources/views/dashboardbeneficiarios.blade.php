@@ -51,7 +51,7 @@
         <!-- ESTA ES LA TABLA ORIGINAL PARA POSTERIORES USOS-->
         <div class="row">
           <h2 style="margin-left:1%;"></h2>
-          <table class="table table-condensed col-md-12" style="margin-left:0%; background-color:red;">
+          <table class="table table-condensed col-md-12" style="margin-left:0%; ">
             <thead>
               <tr>
                 <td>No. Folio</td>
@@ -65,6 +65,8 @@
               </tr>
             </thead>
             <tbody id="tbody">
+
+
               <tr>
                 @forelse($datosper as $usu )
 
@@ -76,15 +78,29 @@
                    >Editar </button></td>
 
 
+                     @foreach($resultado3 as $usua)
                 <td><button type="button" class="btn btn-info btn-lg btne"
-                     data-toggle="modal" data-target="#myModal"
-
+                     data-toggle="modal" data-target="#myModal3"
+                     data-nombrebene="{{$usua->Nombre_bene}}"
+                     data-cant="{{$usua->Cantidad}}"
+                     data-articulo="{{$usua->Articulo_entregado}}"
+                     data-tipo="{{$usua->Tipo}}"
+                     data-fecha="{{$usua->Fecha_entrega}}"
+                     data-notas="{{$usua->Notas}}"
+                     data-id="{{$usu->Id_bene}}"
                      >Entrega </button></td>
+
                      <td><button type="button" class="btn btn-info btn-lg btne"
-                          data-toggle="modal" data-target="#myModal2"
-
+                          data-toggle="modal" data-target="#myModal4"
+                          data-nombrebene="{{$usua->Nombre_bene}}"
+                          data-articulo="{{$usua->Cantidad}}"
+                          data-cant="{{$usua->Articulo_entregado}}"
+                          data-tipo="{{$usua->Tipo}}"
+                          data-fecha="{{$usua->Fecha_entrega}}"
+                          data-notas="{{$usua->Notas}}"
+                          data-id="{{$usu->Id_bene}}"
                           >Entrega </button></td>
-
+                          @endforeach
 
                 </tr>
 
@@ -160,7 +176,7 @@
 
 
 
-  <div id="myModal" class="modal fade" role="dialog">
+  <div id="myModal3" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
       <!-- Modal content-->
@@ -170,32 +186,36 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
         </div>
-        {{Form::open(array('url'=>'/admin/inventario','files'=>true))}}
+        {{Form::open(array('url'=>'/admin/inventarioentrega','files'=>true))}}
         <div class="modal-body">
-          <input type="text" name="idin" id="idini" value="">
+
             <div class="input-group">
-              <label for="">Nombre</label>
+              <label for="">Nombre Beneficiario</label>
               <input type="text" name="nombrebene" id="nombre" value="" class="form-control">
             </div>
             <div class="input-group">
               <label for="">Articulo</label>
-              <input type="text" name="articulo" id="nombre" value="" class="form-control">
+              <input type="text" name="articulo" id="articulo" value="" class="form-control">
             </div>
             <div class="input-group">
               <label for="">Cantidad</label>
-              <input type="text" name="cantidad" id="cant"value="" class="form-control">
+              <input type="number" name="cant" id="cant"value="" class="form-control">
             </div>
             <div class="input-group">
               <label for="">Tipo</label>
-              <input type="text" name="tipo" id="fun" value="" class="form-control">
+              <input type="text" name="tipo" id="tipo" value="" class="form-control">
             </div>
             <div class="input-group">
               <label for="">Fecha</label>
-              <input type="text" name="fecha" id="tipo" value="" class="form-control">
+              <input type="date" name="fecha" id="fecha" value="" class="form-control">
             </div>
             <div class="input-group">
               <label for="">Notas</label>
-              <input type="text" name="notas" id="tipo" value="" class="form-control">
+              <input type="text" name="notas" id="notas" value="" class="form-control">
+            </div>
+            <div class="input-group">
+              <label for="">Folio</label>
+              <input type="text" name="idin" id="idin" value="{{$datosper[0]->Id_bene}}" class="form-control">
             </div>
 
 
@@ -212,7 +232,7 @@
     </div>
   </div>
 
-  <div id="myModal2" class="modal fade" role="dialog">
+  <div id="myModal4" class="modal fade" role="dialog">
     <div class="modal-dialog">
 
       <!-- Modal content-->
@@ -222,9 +242,9 @@
           <button type="button" class="close" data-dismiss="modal">&times;</button>
 
         </div>
-        {{Form::open(array('url'=>'/admin/inventario','files'=>true))}}
+        {{Form::open(array('url'=>'/admin/inventarioentrega','files'=>true))}}
         <div class="modal-body">
-          <input type="text" name="idin" id="idini" value="">
+
             <div class="input-group">
               <label for="">Nombre</label>
               <input type="text" name="nombrebene" id="nombre" value="" class="form-control">
@@ -235,7 +255,7 @@
             </div>
             <div class="input-group">
               <label for="">Cantidad</label>
-              <input type="text" name="cantidad" id="cant"value="" class="form-control">
+              <input type="number" name="cant" id="cant"value="" class="form-control">
             </div>
             <div class="input-group">
               <label for="">Tipo</label>
@@ -243,11 +263,15 @@
             </div>
             <div class="input-group">
               <label for="">Fecha</label>
-              <input type="text" name="fecha" id="tipo" value="" class="form-control">
+              <input type="date" name="fecha" id="tipo" value="" class="form-control">
             </div>
             <div class="input-group">
               <label for="">Notas</label>
               <input type="text" name="notas" id="tipo" value="" class="form-control">
+            </div>
+            <div class="input-group">
+              <label for="">Folio</label>
+            <input type="text" name="idin" id="idin"value="{{$datosper[0]->Id_bene}}" class="form-control">
             </div>
 
 

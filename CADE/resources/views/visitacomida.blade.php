@@ -8,7 +8,7 @@
   </head>
   <body>
     @include('layouts.nav')
-    <div class="main" style="height:100%;overflow-y:hidden;">
+    <div class="main" style="height:auto;">
       <br>
       <br>
       <div class="panel2 panel-default col-xs-12 ">
