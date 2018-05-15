@@ -34,7 +34,7 @@ class graficoscontroller extends Controller
      $catplatos='';
      $valoresp='';
      $valoresplatos='';
-     $talleres=DB::select('select Nombre, count(*) as cantidad from taller group by Nombre');
+     $talleres=DB::select('select Nombretaller, count(*) as cantidad from taller group by Nombretaller');
      $cattaller='';
      $valorest='';
      $valorestaller='';
@@ -184,7 +184,7 @@ class graficoscontroller extends Controller
      }//LLAVE ELSE ARRIBA FOR
 
      ///////////////////////////////////////////////////////////////////////////
-     
+
      ///////////////////////////////////////////////////////////////////////////
      for($i=0;$i<count($localidades);$i++){
        $categorias=$categorias.'"'.$localidades{$i}->Localidad.'",';
