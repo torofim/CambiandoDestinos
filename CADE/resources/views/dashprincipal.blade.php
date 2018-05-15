@@ -15,7 +15,7 @@
     </div>
     <div class="panel2 panel-default col-xs-12 ">
       <div class="panel-body2 titula" style="border-bottom:groove; background-color:transparent;">
-        Fundacion Cambiando Destinos
+      Fundación Cambiando Destinos, A.C.
       </div>
     </div>
     <br>
@@ -115,24 +115,24 @@
                              <h4 class="modal-title " style="color: #fff; padding: 9px 15px; border-bottom: 1px solid #eee;background-color: #428bca; " >Historial hipertensión</h4>
                            </div>
                            <div class="modal-body">
-                             <table class="table table-hover table-sm">
+                             <table class="table table-hover table-sm ">
                                <thead>
-                                 <td>Nombre </td>
-                                 <td>Apellido </td>
-                                 <td>Apellido </td>
-                                 <td>Pas</td>
-                                 <td>/</td>
-                                 <td>Pad</td>
+                                 <td style="color:black;">Nombre </td>
+                                 <td style="color:black;">Apellido </td>
+                                 <td style="color:black;">Apellido </td>
+                                 <td style="color:black;">Pas</td>
+                                 <td style="color:black;">/</td>
+                                 <td style="color:black;">Pad</td>
                                </thead>
-                               <tbody class="table">
+                               <tbody class="table" >
                                  <tr>
                                       @foreach($Palta as $w)
-                                   <td>{{$w->nombre}} </td>
-                                   <td>{{$w->apellido_p}} </td>
-                                   <td>{{$w->apellido_m}} </td>
-                                   <td>{{$w->Pas}}</td>
-                                   <td>/</td>
-                                   <td>{{$w->Pad}}</td>
+                                   <td style="color:black;">{{$w->nombre}} </td>
+                                   <td style="color:black;">{{$w->apellido_p}} </td>
+                                   <td style="color:black;">{{$w->apellido_m}} </td>
+                                   <td style="color:black;">{{$w->Pas}}</td>
+                                   <td style="color:black;">/</td>
+                                   <td style="color:black;">{{$w->Pad}}</td>
                                    <tr>
                                    </tr>
                                    @endforeach

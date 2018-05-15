@@ -11,7 +11,7 @@
   </head>
   <body>
     <nav class="navbar navbar-default navbar-fixed-top">
-  	  <a class="navbar-brand" href="/principal" style="font-size:2.5em;">Fundación Cambiando Destinos</a>
+  	  <a class="navbar-brand" href="/" style="font-size:2rem;">Fundación Cambiando Destinos, A.C.</a>
   	  <div class="containerarriba">
 
   	      <div class="navbar-header page-scroll">
@@ -26,68 +26,109 @@
   	      <!-- Collect the nav links, forms, and other content for toggling -->
   	      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
   	          <ul class="nav navbar-nav navbar-right">
-  	              <li class="hidden">
-  	                  <a href="#page-top"></a>
-  	              </li>
   	              <li class="page-scroll">
-  	                  <a href="/visita" >Visita Domiciliaria <img src="./img/logonavi.png" alt=""></a>
+  	                  <a href="#inicio" >Cambiando Destinos<img src="./img/logonavi.png" alt=""></a>
   	              </li>
                   <li class="page-scroll">
-  	                  <a href="/comida" >Comida Caliente <img src="./img/logonavi.png" alt=""></a>
+  	                  <a href="#visitas" >Visitas<img src="./img/logonavi.png" alt=""></a>
   	              </li>
                   <li class="page-scroll">
-  	                  <a href="/taller" >Tercera Edad <img src="./img/logonavi.png" alt=""></a>
+  	                  <a href="#comida" >Comida caliente <img src="./img/logonavi.png" alt=""></a>
   	              </li>
                   <li class="page-scroll">
-  	                  <a href="/cultura" >Cultura <img src="./img/logonavi.png" alt=""></a>
+  	                  <a href="#taller" >taller <img src="./img/logonavi.png" alt=""></a>
   	              </li>
-
-
+                  <li class="page-scroll">
+                      <a href="#cultural" >Cultura <img src="./img/logonavi.png" alt=""></a>
+                  </li>
   	          </ul>
   	      </div>
   	      <!-- /.navbar-collapse -->
   	  </div>
   	  <!-- /.container-fluid -->
   	</nav>
-    <header id="page-top">
-        <div class="container">
-            <div class="rowheader">
-                <div class="col-md-12">
-                    <img class="img-responsive" src="./img/visita2.jpg" alt="">
-                    <div class="intro-text">
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
     <div class="content-wrapper">
-        <section class="primary" >
             <div class="container1">
                 <div class="row" id="sobre">
                     <div class="col-md-12 text-center">
-                        <h2 style="margin-top:7%;font-size:5em;margin-left:38%;">Visita Domiciliaria</h2>
+                        <h2 style="font-size:5rem;">Visita Domiciliaria</h2>
                     </div>
                 </div>
             <div class="container1">
     					<div class=" row">
-    			<article class="acerca">
-    				<div class=" col-md-5  imagen">
-    					<img class="img-responsive" style="margin-top:-5%;margin-left:2%;"src="./img/fclogo1.png" >
-    				</div>
-    				<div class="col-md-6 texto" style="margin-left:3%;">
-    					<p style="font-size:3.7em;">Fundacion Cambiando Destinos en sus visitas domiciliarias
-                es donde proporciona atencion personalizada en monitoreo cronico degenerativas mas comunes
-                (presion arterial, glucosa), en aspectos cofnitivos, emocinales, nutricionales e higiene.
-                De octrubre del 2011 a finales del 2016 se han logrado 9,112 visitas.
-    						​</p>
-    				</div>
-    			</article>
-    </div>
-    </div>
-    </div>
+
+              <div class="col-md-6 texto" style="margin-left:3%;margin-top:100px;">
+                <section id="inicio" style="">
+      					<p style="font-size:2rem;">Fundacion Cambiando Destinos en sus visitas domiciliarias
+                  es donde proporciona atencion personalizada en monitoreo cronico degenerativas mas comunes
+                  (presion arterial, glucosa), en aspectos cofnitivos, emocinales, nutricionales e higiene.
+                  De octrubre del 2011 a finales del 2016 se han logrado 9,112 visitas.
+      						​</p>
+                  </section>
+      				</div>
 
 
+
+                <div class="col-md-6 texto" style="margin-left:3%;margin-top:100px;">
+                  <section id="visitas" class="">
+        					<p style="font-size:2rem;">Fundacion Cambiando Destinos en sus visitas domiciliarias
+                    es donde proporciona atencion personalizada en monitoreo cronico degenerativas mas comunes
+                    (presion arterial, glucosa), en aspectos cofnitivos, emocinales, nutricionales e higiene.
+                    De octrubre del 2011 a finales del 2016 se han logrado 9,112 visitas.
+        						​</p>
+                    </section>
+        				</div>
+
+
+
+                <div class="col-md-6 texto" style="margin-left:3%;margin-top:100px;">
+                  <section id="comida" class="">
+                  <p style="font-size:2rem;">Fundacion Cambiando Destinos brinda el apoyo de Comida Caliente al hogar del
+                    beneficiario un dia a la semana. Los alimentos son preparados adecuadamente y enfocado al beneficiario.
+                    De octubre del 2011 a finales del 2016 se han otrogado 3,032 platillos y se realiza en las instalaciones
+                    de la institución.
+                    ​</p>
+                    </section>
+                </div>
+
+
+
+                  <div class="col-md-6 texto" style="margin-left:3%;margin-top:100px;">
+                    <section id="taller" class="">
+                    <p style="font-size:2rem;">Otorga gratiutamente talleres de pintura artistica y musica a
+                       cargo de maestros y artistas de la comunidad. Nuestra institucion facilita tosos los materiales
+                       para pintura artistica y los instrumentos para el taller. Estos son iompartidos en las instalaciones de
+                       nuestra institucion. De octubre del 2011 a finales del 2015 se impartieron 1248 talleres de musica
+                       y 832 talleres de pintura, beneficiando a un aproximado de 115 alumnos.​</p>
+                       </section>
+                  </div>
+
+
+
+                  <div class="col-md-6 texto" style="margin-left:3%;margin-top:100px;">
+                    <section id="cultural" class="">
+                    <p style="font-size:2rem;">Otorga gratiutamente talleres de pintura artistica y musica a
+                       cargo de maestros y artistas de la comunidad. Nuestra institucion facilita tosos los materiales
+                       para pintura artistica y los instrumentos para el taller. Estos son iompartidos en las instalaciones de
+                       nuestra institucion. De octubre del 2011 a finales del 2015 se impartieron 1248 talleres de musica
+                       y 832 talleres de pintura, beneficiando a un aproximado de 115 alumnos.​</p>
+                       </section>
+                  </div>
+
+
+    </div>
+    </div>
+    </div>
+  </div>
 
   </body>
 </html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.scrollme.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/javascript.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+
+</script>

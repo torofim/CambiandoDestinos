@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html >
 <head>
-	<title>Cambiando Destinos</title>
+	<title>Fundación Cambiando Destinos, A.C.</title>
 	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
 
 <body id="page-top">
 	<nav class="navbar navbar-default navbar-fixed-top ">
-	  <a class="navbar-brand nombre" href="#page-top" >Fundación Cambiando Destinos</a>
+	  <a class="navbar-brand nombre" href="#page-top" >Fundación Cambiando Destinos, A.C.</a>
 	  <div class="containerarriba">
 
 	      <div class="navbar-header page-scroll">
@@ -197,11 +197,9 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-
 <script src="js/main.js"></script>
 <script src="js/jquery.scrollme.js"></script>
 <script src="js/jquery.scrollme.min.js"></script>
-
 <script src="js/bootstrap.min.js"></script>
 <script src="js/javascript.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>

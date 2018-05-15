@@ -75,13 +75,7 @@
           <div class=" col-md-5  imagen">
             <img class="img-responsive" style="margin-top:-5%;margin-left:2%;"src="./img/fclogo1.png" >
           </div>
-          <div class="col-md-6 texto" style="margin-left:3%;">
-            <p style="font-size:3.7em;">Fundacion Cambiando Destinos brinda el apoyo de Comida Caliente al hogar del
-              beneficiario un dia a la semana. Los alimentos son preparados adecuadamente y enfocado al beneficiario.
-              De octubre del 2011 a finales del 2016 se han otrogado 3,032 platillos y se realiza en las instalaciones
-              de la institución.
-              ​</p>
-          </div>
+
     			</article>
     </div>
     </div>
