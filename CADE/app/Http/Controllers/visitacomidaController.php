@@ -21,7 +21,7 @@ class visitacomidaController extends Controller
       //->take(10)
       ->get();
       return view('/visitacomida')
-      ->with('perros7',$registros7)
-      ->with('perros8',$registros8);
+      ->with('regvisita',$registros7)
+      ->with('cocal',$registros8);
 }
 }

@@ -10,6 +10,6 @@ class comida extends Model
     protected $PrimaryKey='Id';
     protected $table='tabla_comida';
     protected $fillable=[
-      'Id_bene','Nombre','Domicilio','Fecha','Nota'
+      'Id_bene','Nombre_b','Nombre','Domicilio','Fecha','Nota'
     ];
 }

@@ -114,7 +114,7 @@
                       @endif
                   </div>
                   <div class="input=-group col-md-4">
-                    <label for="nombre">Peso </label><br>
+                    <label for="nombre">Peso (Kg)</label><br>
                     @if(count($datosper)==0)
                       {{Form::text('peEditar','',array('class'=>'form-control','placeholder'=>'Tipo peso') )}}
                       @else
@@ -122,7 +122,7 @@
                       @endif
                   </div>
                   <div class="input=-group col-md-4">
-                    <label for="nombre">Estatura </label><br>
+                    <label for="nombre">Estatura (Cm)</label><br>
                     @if(count($datosper)==0)
                       {{Form::number('esEditar','',array('class'=>'form-control','step'=>'any','placeholder'=>'Ejemplo: 1.6') )}}
                       @else
@@ -194,7 +194,7 @@
             </div>
         </div>
     </div>
-    
+
 </div>
 <script type="text/javascript">
 $(document).ready(function(){

@@ -72,6 +72,12 @@ class inventarioController extends Controller
     return redirect()->to('/admin/inventario')
     ->with('mensaje','Datos Modificados');
   }//edit
+  public function destroy($id){
+    $usuario=Inventario::find($id);
+
+    $usuario->delete();
+
+  }//fu
 
 
 }

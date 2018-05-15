@@ -45,7 +45,9 @@
             <p>Comida Caliente</p>
             <thead>
                 <tr style="border:white solid;background-color:#4c4f54;">
+                  <td style="border-right: white solid;">No. Folio</td>
                 <td style="border-right: white solid;">Nombre Beneficiario</td>
+                <td style="border-right: white solid;">Nombre de Quién Entregó</td>
                 <td style="border-right:white solid;">Domicilio</td>
                 <td style="border-right:white solid;">Fecha</td>
                 <td style="border-right:white solid;">Notas</td>
@@ -54,7 +56,9 @@
             </thead>
             <tbody id="tbody">
               <tr>
-                @forelse($perros8 as $usu)
+                @forelse($cocal as $usu)
+                <td>{{$usu->Id_bene}}</td>
+                <td>{{$usu->Nombre_b}}</td>
                 <td>{{$usu->Nombre}}</td>
                 <td>{{$usu->Domicilio}}</td>
                 <td>{{$usu->Fecha}}</td>
@@ -95,7 +99,9 @@
     <p>Visita Domiciliaria</p>
     <thead>
       <tr style="border:white solid;background-color:#4c4f54;">
-        <td style="border-right: white solid;">Nombre</td>
+        <td style="border-right: white solid;">No. Folio</td>
+        <td style="border-right: white solid;">Nombre del Beneficiario</td>
+        <td style="border-right: white solid;">Nombre de Quién Entregó</td>
         <td style="border-right:white solid;">Domicilio</td>
         <td style="border-right:white solid;">Fecha</td>
         <td style="border-right:white solid;">Tipo de Visita</td>
@@ -104,7 +110,9 @@
     </thead>
     <tbody id="tbody">
       <tr>
-        @forelse($perros7 as $usu)
+        @forelse($regvisita as $usu)
+        <td>{{$usu->Id_bene}}</td>
+        <td>{{$usu->Nombre_b}}</td>
         <td>{{$usu->Nombre}}</td>
         <td>{{$usu->Domicilio}}</td>
         <td>{{$usu->Fecha}}</td>

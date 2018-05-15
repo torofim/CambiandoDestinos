@@ -67,8 +67,8 @@ class formubeneficontroller extends Controller
         ->with('perros4',$registros4)
         ->with('perros5',$registros5)
         ->with('perros6',$registros6)
-        ->with('perros7',$registros7)
-        ->with('perros8',$registros8)
+        ->with('regvisita',$registros7)
+        ->with('cocal',$registros8)
         ->with('perros9',$registros9);
 
     }

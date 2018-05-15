@@ -37,7 +37,7 @@ class entregasinvController extends Controller
     public function store(Request $req){
 
       $validator =Validator::make($req->all(),[
-        'Id_inv'=>'max:255',
+
         'Id_bene'=>'max:255',
         'Nombre_bene'=>'max:255',
         'Articulo_entregado'=>'max:255',
@@ -55,7 +55,7 @@ class entregasinvController extends Controller
           ->withErrors($validator);
       }else{
         Entrega_inventario::create([
-          'Id_inv'=>$req->idinv,
+          
           'Id_bene'=>$req->idin,
           'Nombre_bene'=>$req->nombrebene,
           'Articulo_entregado'=>$req->articulo,

@@ -82,8 +82,8 @@
         <tr style="border:white solid;background-color:#4c4f54;">
 
           <td style="border-right:white solid;">Tipo de Sangre</td>
-          <td style="border-right:white solid;">Peso</td>
-          <td style="border-right:white solid;">Estatura</td>
+          <td style="border-right:white solid;">Peso (Kg)</td>
+          <td style="border-right:white solid;">Estatura (Cm)</td>
           <td style="border-right:white solid;">Talla</td>
           <td style="border-right:white solid;">Calzado</td>
 
@@ -146,7 +146,7 @@
         <tr style="border:white solid;background-color:#4c4f54;">
 
           <td style="border-right:white solid;">Edad </td>
-          <td style="border-right:white solid;">Peso</td>
+          <td style="border-right:white solid;">Peso (Kg)</td>
           <td style="border-right:white solid;">Pas</td>
           <td style="border-right:white solid;">Pad</td>
           <td style="border-right:white solid;">Fecha de Exámen</td>
@@ -367,7 +367,7 @@
     </thead>
     <tbody id="tbody">
       <tr>
-        @forelse($perros8 as $usu)
+        @forelse($cocal as $usu)
         <td>{{$usu->Nombre}}</td>
         <td>{{$usu->Domicilio}}</td>
         <td>{{$usu->Fecha}}</td>
@@ -394,7 +394,7 @@
     </thead>
     <tbody id="tbody">
       <tr>
-        @forelse($perros7 as $usu)
+        @forelse($regvisita as $usu)
         <td>{{$usu->Nombre}}</td>
         <td>{{$usu->Domicilio}}</td>
         <td>{{$usu->Fecha}}</td>

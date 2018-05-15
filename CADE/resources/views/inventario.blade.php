@@ -74,7 +74,15 @@
                   data-funedit="{{$usu->Funcionalidad}}"
                   data-tipoedit="{{$usu->Tipo}}"
                   data-idin="{{$usu->Id_inv}}">Editar </button></td>
+                  <td>
+                  {!! Form::open(
+                    array('route'=>['admin.inventario.destroy',$usu->Id_inv],
+                  'method'=>'DELETE' )) !!}
+                  <button type="button" class="btnEliminar" data-toggle="modal" data-target="#myModal2" style="margin-top:5px;">
+                    <i class="glyphicon glyphicon-remove" style="padding-top:50%;"></i>
 
+                  </button>
+                  {!! Form::close() !!}
 
 
                 </tr>
@@ -200,11 +208,11 @@
     <!-- Modal content-->
     <div class="modal-content">
       <div class="modal-header">
-        <h4 class="modal-title">Eliminar usuario </h4>
+        <h4 class="modal-title">Eliminar Articulo </h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
       <div class="modal-body">
-        <h3>Desea eliminar el usuario?</h3>
+        <h3>Desea eliminar el Articulo?</h3>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Cancelar</button>
@@ -258,11 +266,7 @@
             <label for="">Notas</label>
             <input type="text" name="notas" id="Notas" value="" class="form-control">
           </div>
-          <div class="input-group">
-            <label for="">Folio inventario</label>
-            <input type="number" name="idinv" id="id" class="form-control">
 
-          </div>
 
       </div>
       <div class="modal-footer">
@@ -322,7 +326,7 @@ $('.divfade').fadeOut(2000);
         url:formulario.attr('action'),
         data:formulario.serialize()
       }).done(function(respuesta){
-        alert(respuesta);
+
         tr.fadeOut(1000);
       });
     });

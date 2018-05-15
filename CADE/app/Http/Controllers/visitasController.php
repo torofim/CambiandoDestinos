@@ -22,11 +22,12 @@ class visitasController extends Controller
     //dd($Id);
       return view('formularios.visitadom')
 
-      ->with('perros7',$registros7);
+      ->with('regvisita',$registros7);
     }
     public function store(Request $req){
 
       $validator =Validator::make($req->all(),[
+        'nombreb'=>'max:255',
         'nombre'=>'max:255',
         'domicilio'=>'max:255',
         'fecha'=>'max:255',
@@ -44,6 +45,7 @@ class visitasController extends Controller
 
           visitas::create([
             'Id_bene'=>$req->idbene,
+            'Nombre_b'=>$req->nombreb,
             'Nombre'=>$req->nombre,
             'Domicilio'=>$req->domicilio,
             'Fecha'=>$req->fecha,

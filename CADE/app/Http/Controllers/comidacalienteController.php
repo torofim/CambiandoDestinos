@@ -22,11 +22,12 @@ class comidacalienteController extends Controller{
         //dd($Id);
           return view('formularios.comidaca')
 
-          ->with('perros8',$registros8);
+          ->with('cocal',$registros8);
         }
         public function store(Request $req){
 
           $validator =Validator::make($req->all(),[
+            'nombreb'=>'max:255',
             'nombre'=>'max:255',
             'domicilio'=>'max:255',
             'fecha'=>'max:255',
@@ -44,6 +45,7 @@ class comidacalienteController extends Controller{
 
               comida::create([
                 'Id_bene'=>$req->idbo,
+                'Nombre_b'=>$req->nombreb,
                 'Nombre'=>$req->nombre,
                 'Domicilio'=>$req->domicilio,
                 'Fecha'=>$req->fecha,

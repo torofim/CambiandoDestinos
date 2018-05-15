@@ -22,7 +22,12 @@
 
     {!!Form::open(array('route'=>['admin.comidaca.store','0'],'method'=>'POST'))!!}
     <div class="input=-group col-md-4">
-      <label for="nombre">Nombre</label><br>
+      <label for="nombre">Nombre del Beneficiario</label><br>
+      {{Form::text('nombreb','',array('class'=>'form-control','placeholder'=>'Nombre del Beneficiario','required'=>'true') )}}
+
+    </div>
+    <div class="input=-group col-md-4">
+      <label for="nombre">Nombre de Quien Entregó</label><br>
       {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}
 
     </div>

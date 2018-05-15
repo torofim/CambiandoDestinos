@@ -22,7 +22,6 @@
       <thead>
         <tr>
           <td>No. Folio</td>
-          <td>Id</td>
           <td>Nombre Beneficiario</td>
           <td>Artículo</td>
           <td>Cantidad</td>
@@ -37,7 +36,6 @@
       <tbody id="tbody">
         <tr>
           @forelse($resultado as $usu)
-          <td>{{$usu->Id_inv}}</td>
           <td>{{$usu->Id_bene}}</td>
           <td>{{$usu->Nombre_bene}}</td>
           <td>{{$usu->Articulo_entregado}}</td>
