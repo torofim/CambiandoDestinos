@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Validator;
 use App\Datos_personales;
-
+use App\Entrega_inventario;
 class datospersonalescontroller extends Controller
 {
     //
@@ -20,8 +20,15 @@ class datospersonalescontroller extends Controller
       //->take(10)
       ->get();
 
+        $registros3=\DB::table('entregas_inventario')
+      //  ->where('','=',$Id)
+        ->orderby('Id','desc')
+        //->take(10)
+        ->get();
+
       return view('dashboardbeneficiarios')
-      ->with('datosper',$registros);
+      ->with('datosper',$registros)
+        ->with('resultado3',$registros3);
     }
     public function store(Request $req){
 
@@ -46,6 +53,17 @@ class datospersonalescontroller extends Controller
 
 
       ]);
+      $validator1 =Validator::make($req->all(),[
+        'Id_bene'=>'max:255',
+        'Nombre_bene'=>'max:255',
+        'Articulo_entregado'=>'max:255',
+        'Cantidad'=>'max:255',
+        'Tipo'=>'max:255',
+        'Fecha_entrega'=>'max:255',
+        'Notas'=>'max:255'
+
+
+      ]);
       if($validator->fails()){
         //quiere decir que no estan correctos
         return redirect('/admin/benef')
@@ -60,6 +78,7 @@ class datospersonalescontroller extends Controller
           'Lugar_nacimiento'=>'',
           'Edad'=>$req->edad,
           'Sexo'=>'',
+          'Curp'=>'',
           'Edo_civil'=>'',
           'Tipo_sangre'=>'',
           'Peso'=>'',
@@ -70,10 +89,15 @@ class datospersonalescontroller extends Controller
           'Cp'=>'',
           'Localidad'=>'',
           'Tel'=>''
-
-
-
-
+        ]);
+        Entrega_inventario::create([
+          'Id_bene'=>$req->idin,
+          'Nombre_bene'=>$req->nombrebene,
+          'Articulo_entregado'=>$req->articulo,
+          'Cantidad'=>$req->cant,
+          'Tipo'=>$req->tipo,
+          'Fecha_entrega'=>$req->fecha,
+          'Notas'=>$req->notas
         ]);
         return redirect()->to('/admin/benef')
         ->with('mensaje','datos agregados');
@@ -91,6 +115,7 @@ class datospersonalescontroller extends Controller
       $usuario->Lugar_nacimiento=$req->lEditar;
       $usuario->Edad=$req->eEditar;
       $usuario->Sexo=$req->sEditar;
+      $usuario->Curp=$req->curpEditar;
       $usuario->Edo_civil=$req->edoEditar;
       $usuario->Tipo_sangre=$req->tiEditar;
       $usuario->Peso=$req->peEditar;
