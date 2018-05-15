@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Validator;
 use App\Datos_personales;
 use App\Entrega_inventario;
+use App\Inventario;
 class datospersonalescontroller extends Controller
 {
     //
@@ -25,9 +26,19 @@ class datospersonalescontroller extends Controller
         ->orderby('Id','desc')
         //->take(10)
         ->get();
+        $registros2=\DB::table('inventario')
+        //
+        //->where('Id','=','1');
+        ->orderby('Id_inv','desc')
+        //->take(10)
+        ->get();
+
+
+
 
       return view('dashboardbeneficiarios')
       ->with('datosper',$registros)
+      ->with('inv',$registros2)
         ->with('resultado3',$registros3);
     }
     public function store(Request $req){

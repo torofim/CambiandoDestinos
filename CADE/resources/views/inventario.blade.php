@@ -60,7 +60,7 @@
             </thead>
             <tbody id="tbody">
               <tr>
-                @forelse($perros as $usu)
+                @forelse($inv as $usu)
                 <td >{{$usu->Id_inv}}</td>
                 <td>{{$usu->Nombre_producto}}</td>
                 <td>{{$usu->Cantidad}}</td>

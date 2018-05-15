@@ -28,7 +28,7 @@ class inventarioController extends Controller
       ->get();
 
       return view('inventario')
-      ->with('perros',$registros)
+      ->with('inv',$registros)
       ->with('resultado',$registros2);
 
     }

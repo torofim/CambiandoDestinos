@@ -166,6 +166,7 @@
 
         </div>
         {{Form::open(array('url'=>'/admin/inventarioentrega','files'=>true))}}
+
         <div class="modal-body">
 
             <div class="input-group">
@@ -193,8 +194,19 @@
               {{Form::text('notas','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
             </div>
             <div class="input-group">
+
               <label for="">Folio</label>
-              <input type="text" name="idin" id="idin" value="{{$datosper[0]->Id_bene}}" class="form-control">
+              @forelse($datosper as $idbene)
+              <input type="text" name="idin" id="idin" value="{{$idbene->Id_bene}}" class="form-control">
+              @empty
+              @endforelse
+            </div>
+            <div class="input-group">
+
+              <label for="">Folio inventario</label>
+              @foreach($inv as $idinv)
+              <input type="text" name="id" id="id" value="{{$idinv->Id_inv}}" class="form-control">
+              @endforeach
             </div>
 
 
@@ -251,6 +263,10 @@
           <div class="input-group">
             <label for="">Folio</label>
             <input type="text" name="idin" id="idin" value="{{$datosper[0]->Id_bene}}" class="form-control">
+          </div>
+          <div class="input-group">
+            <label for="">Folio inventario</label>
+            <input type="text" name="id" id="id" value="{{$inv[0]->Id_inv}}" class="form-control">
           </div>
 
 
