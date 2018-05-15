@@ -405,4 +405,7 @@
   </table>
 </div>
 </div>
+<form action="/reporte">
+    <button type="submit">Imprimir Reporte</button>
+</form>
   </div>

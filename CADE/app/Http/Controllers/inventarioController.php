@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Validator;
 use App\Inventario;
+use App\Entrega_inventario;
 
 class inventarioController extends Controller
 {
@@ -14,15 +15,22 @@ class inventarioController extends Controller
       $this->middleware('auth');
     }
     public function index(){
+      $registros2=\DB::table('entregas_inventario')
+    //  ->where('','=',$Id)
+      ->orderby('Id','desc')
+      //->take(10)
+      ->get();
       $registros=\DB::table('inventario')
       //
       //->where('Id','=','1');
-      ->orderby('Id','desc')
+      ->orderby('Id_inv','desc')
       //->take(10)
       ->get();
 
       return view('inventario')
-      ->with('perros',$registros);
+      ->with('perros',$registros)
+      ->with('resultado',$registros2);
+
     }
     public function store(Request $req){
 
@@ -32,19 +40,22 @@ class inventarioController extends Controller
         'Funcionalidad'=>'max:255',
         'Tipo'=>'max:255'
       ]);
+
       if($validator->fails()){
         //quiere decir que no estan correctos
         return redirect('/admin/inventario')
           ->withInput()
-          ->withErrors($validator);
+          ->withErrors($validator)
+          ->withErrors($validator1);
       }else{
         Inventario::create([
-          'Id'=>$req->idin,
+          'Id_inv'=>$req->idin,
           'Nombre_producto'=>$req->nombre,
           'Cantidad'=>$req->cant,
           'Funcionalidad'=>$req->fun,
           'Tipo'=>$req->tipo
         ]);
+
         return redirect()->to('/admin/inventario')
         ->with('mensaje','Datos Agregados');
     }
@@ -61,4 +72,6 @@ class inventarioController extends Controller
     return redirect()->to('/admin/inventario')
     ->with('mensaje','Datos Modificados');
   }//edit
+
+
 }

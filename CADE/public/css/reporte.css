@@ -3,7 +3,7 @@
   text-align: center;
   position:absolute;
   margin-left: 36%;
-
+  font-weight:bold;
 }
 .folio{
   text-align: right;
@@ -15,13 +15,16 @@
   font-size:1.5rem;
   position:absolute;
   margin-top:5%;
+  font-weight:bold;
+    margin-left: 36%;
 }
 .foto{
-  width:100px;
-  height:100px;
+  width:140px;
+  height:110px;
   background-color: gray;
   position:absolute;
-  margin-top:6%;
+  margin-top:4%;
+  border:.5px solid black;
 }
 .fecha{
   margin-top:8%;
@@ -31,14 +34,17 @@
 .uno{
   position:absolute;
   margin-top:6%;
+    margin-left: 36%;
 }
 .dos{
   position:absolute;
   margin-top:9%;
+    margin-left: 36%;
 }
 .tres{
   position:absolute;
   margin-top:12%;
+    margin-left: 36%;
 }
 .nombre{
   position:absolute;
@@ -67,27 +73,32 @@
   margin-top:16%;
   margin-left:60%;
   width:33%;
+  font-weight:bold;
 }
 .tapm{
   position:absolute;
   margin-top:16%;
   margin-left:30%;
   width:33%;
+  font-weight:bold;
 }
 .primera{
   position:absolute;
   margin-top:24%;
+  font-weight:bold;
 }
 .segunda{
   position:absolute;
   margin-top:24%;
   margin-left:60%;
+  font-weight:bold;
 
 }
 .tercera{
   position:absolute;
   margin-top:24%;
   margin-left:30%;
+  font-weight:bold;
 }
 .fechadatos{
   position:absolute;
@@ -106,18 +117,19 @@
 .ed{
     position:absolute;
     margin-top:33%;
-
+    font-weight:bold;
 }
 .sex{
     position:absolute;
     margin-top:33%;
       margin-left:60%;
-
+      font-weight:bold;
 }
 .estciv{
     position:absolute;
     margin-top:33%;
     margin-left:30%;
+    font-weight:bold;
 }
 .edad{
     position:absolute;
@@ -139,6 +151,7 @@
   position:absolute;
   margin-top:42%;
   margin-left:0%;
+  font-weight:bold;
 }
 .audvis{
   position:absolute;
@@ -158,6 +171,7 @@
 .causa{
   position:absolute;
   margin-top:53%;
+  font-weight:bold;
 }
 .naen{
   position:absolute;
@@ -173,3 +187,341 @@
   margin-top:57%;
   margin-left:60%;
 }
+.tiposangre{
+  position:absolute;
+  margin-top:64%;
+  margin-left:0%;
+  font-weight:bold;
+}
+.sangre{
+  position:absolute;
+  margin-top:67%;
+  width:200px;
+}
+.tpeso{
+  position:absolute;
+  margin-top:64%;
+  margin-left:30%;
+  font-weight:bold;
+}
+.peso{
+    position:absolute;
+  margin-top:67%;
+    margin-left:30%;
+}
+.ttalla{
+  position:absolute;
+    margin-top:72%;
+    font-weight:bold;
+}
+.talla{
+  position:absolute;
+margin-top:75%;
+}
+.testatura{
+    position:absolute;
+    margin-top:64%;
+      margin-left:60%;
+      font-weight:bold;
+}
+.estatura{
+    position:absolute;
+      margin-top:67%;
+      margin-left:60%;
+}
+.tcalzado{
+  position:absolute;
+    margin-top:72%;
+    margin-left:30%;
+    font-weight:bold;
+}
+.calzado{
+  position:absolute;
+    margin-top:75%;
+    margin-left:30%;
+}
+.trehab{
+  position:absolute;
+    margin-top:80%;
+    margin-left:0%;
+    font-weight:bold;
+}
+.rehabradios{
+  position:absolute;
+    margin-top:83%;
+    margin-left:0%;
+}
+.tdonde{
+  position:absolute;
+    margin-top:80%;
+    margin-left:22%;
+    font-weight:bold;
+}
+.donde{
+  position:absolute;
+  margin-top:84%;
+  margin-left:22%;
+}
+.tcual{
+  position:absolute;
+    margin-top:80%;
+    margin-left:49%;
+    font-weight:bold;
+}
+.cual{
+  position:absolute;
+    margin-top:84%;
+    margin-left:49%;
+}
+.tapoyo{
+  position:absolute;
+    margin-top:90%;
+    font-weight:bold;
+}
+.apoyofun{
+  position:absolute;
+    margin-top:93%;
+    margin-left:0%;
+}
+.tcualapo{
+  position:absolute;
+    margin-top:96%;
+    margin-left:10%;
+    font-weight:bold;
+}
+.apoyocual{
+  position:absolute;
+    margin-top:95%;
+    margin-left:15%;
+}
+.treq{
+  position:absolute;
+    margin-top:90%;
+    margin-left:40%;
+    font-weight:bold;
+}
+.req{
+  position:absolute;
+    margin-top:93%;
+    margin-left:40%;
+}
+.tcualapoyo{
+  position:absolute;
+    margin-top:96%;
+    margin-left:46%;
+    font-weight:bold;
+}
+.reqcual{
+  position:absolute;
+    margin-top:95%;
+    margin-left:51%;
+}
+.titulocual{
+  position:absolute;
+    margin-top:101%;
+    margin-left:0%;
+    font-weight:bold;
+}
+.tres1{
+  position:absolute;
+    margin-top:104%;
+    margin-left:0%;
+}
+.tres2{
+  position:absolute;
+    margin-top:104%;
+    margin-left:30%;
+}
+.tres3{
+  position:absolute;
+    margin-top:104%;
+    margin-left:60%;
+}
+.tdireccion{
+  position:absolute;
+    margin-top:135%;
+    margin-left:0%;
+  }
+  .direccion{
+    position:absolute;
+      margin-top:138%;
+      margin-left:0%;
+  }
+
+.tcolonia{
+  position:absolute;
+    margin-top:135%;
+    margin-left:30%;
+}
+  .colonia{
+    position:absolute;
+      margin-top:138%;
+      margin-left:30%;
+  }
+
+.tmunicipio{
+  position:absolute;
+    margin-top:135%;
+    margin-left:60%;
+}
+  .municipio{
+    position:absolute;
+      margin-top:138%;
+      margin-left:60%;
+  }
+
+.tcp{
+  position:absolute;
+    margin-top:143%;
+    margin-left:0%;
+}
+  .cp{
+    position:absolute;
+      margin-top:146%;
+      margin-left:00%;
+  }
+
+.tlocal{
+  position:absolute;
+    margin-top:143%;
+    margin-left:30%;
+}
+  .localidad{
+    position:absolute;
+      margin-top:146%;
+      margin-left:30%;
+  }
+
+.ttel{
+  position:absolute;
+    margin-top:143%;
+    margin-left:60%;
+}
+  .telefono{
+    position:absolute;
+      margin-top:146%;
+      margin-left:60%;
+  }
+
+  .tcel{
+    position:absolute;
+      margin-top:150%;
+      margin-left:0%;
+  }
+  .cel{
+    position:absolute;
+      margin-top:153%;
+      margin-left:0%;
+  }
+
+.tjubilado{
+  position:absolute;
+    margin-top:150%;
+    margin-left:30%;
+}
+.jubilado{
+  position:absolute;
+    margin-top:153%;
+    margin-left:30%;
+}
+.tsm{
+  position:absolute;
+    margin-top:158%;
+    margin-left:0%;
+}
+.sm{
+  position:absolute;
+    margin-top:160%;
+    margin-left:0%;
+}
+.sm2{
+  position:absolute;
+    margin-top:160%;
+    margin-left:20%;
+}
+.sm3{
+  position:absolute;
+    margin-top:160%;
+    margin-left:40%;
+}
+.sm4{
+  position:absolute;
+    margin-top:160%;
+    margin-left:70%;
+}
+.tdtutor{
+  font-size:2Rem;
+  position:absolute;
+  margin-left: 41%;
+  font-weight:bold;
+  margin-top:170%;
+}
+.tnombret{
+  position:absolute;
+  margin-left: 0%;
+  margin-top:174%;
+}
+.nombret{
+  position:absolute;
+  margin-left: 0%;
+  margin-top:177%;
+}
+.tapellidos{
+  position:absolute;
+  margin-left: 30%;
+  margin-top:174%;
+}
+.apellidost{
+  position:absolute;
+  margin-left: 30%;
+  margin-top:177%;
+}
+.apellidost2{
+  position:absolute;
+  margin-left: 60%;
+  margin-top:177%;
+}
+.ttutor{
+  position:absolute;
+  margin-left:0%;
+  margin-top:182%;
+}
+.radiotutor{
+  position:absolute;
+  margin-left:0%;
+  margin-top:185%;
+}
+.texttutor{
+  position:absolute;
+  margin-left:0%;
+  margin-top:188%;
+  margin-left:15%;
+}
+.tcurp{
+  position:absolute;
+  margin-left:0%;
+  margin-top:193%;
+}
+.curptutor{
+  position:absolute;
+  margin-left:0%;
+  margin-top:196%;
+}
+.trfc{
+  position:absolute;
+  margin-left:30%;
+  margin-top:193%;
+}
+.rfctutor{
+  position:absolute;
+  margin-left:30%;
+  margin-top:196%;
+}
+
+
+
+
+
+
+
+.

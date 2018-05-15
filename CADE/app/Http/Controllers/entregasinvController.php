@@ -23,9 +23,9 @@ class entregasinvController extends Controller
       ->get();
     // dd($registros);
     //dd($Id);
-      return view('formularios.inventarioentrega')
+      return view('dashboardbeneficiarios')
 
-      ->with('resultado',$registros);
+      ->with('resultado2',$registros);
     }
     public function store(Request $req){
 
@@ -42,7 +42,7 @@ class entregasinvController extends Controller
       ]);
       if($validator->fails()){
         //quiere decir que no estan correctos
-        return redirect('/admin/inventarioentrega')
+        return redirect('/admin/benef')
           ->withInput()
           ->withErrors($validator);
       }else{
@@ -55,7 +55,7 @@ class entregasinvController extends Controller
           'Fecha_entrega'=>$req->fecha,
           'Notas'=>$req->notas
         ]);
-        return redirect()->to('/admin/inventario')
+        return redirect()->to('/admin/benef')
         ->with('mensaje','Datos Agregados');
     }
     dd($req->nombre);

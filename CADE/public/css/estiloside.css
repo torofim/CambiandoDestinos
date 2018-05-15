@@ -64,7 +64,9 @@ label{
 
 
 /***************************************Panel beneficiarios*****************************************************/
-
+td{
+  color:white;
+}
 .tablink {
     background-color: #555;
     color: white;

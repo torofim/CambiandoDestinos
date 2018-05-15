@@ -45,7 +45,7 @@
           </div>
         @endif
         <!-- ESTA ES LA TABLA ORIGINAL PARA POSTERIORES USOS-->
-        <div class="row">
+        <div class="row" >
           <h2 style="margin-left:1%;"></h2>
           <table class="table table-condensed col-md-12" style="margin-left:0%;">
             <thead>
@@ -56,43 +56,40 @@
                 <td>Funcionalidad</td>
                 <td>Tipo</td>
                 <td>Editar</td>
-                <td>Editar</td>
-                <td>Editar</td>
-
               </tr>
             </thead>
             <tbody id="tbody">
               <tr>
-                @forelse($resultado as $usu)
-
-                <td>{{$usu->Id_bene}}</td>
-                <td>{{$usu->Nombre_bene}}</td>
-                <td>{{$usu->Articulo_entregado}}</td>
+                @forelse($perros as $usu)
+                <td >{{$usu->Id_inv}}</td>
+                <td>{{$usu->Nombre_producto}}</td>
                 <td>{{$usu->Cantidad}}</td>
+                <td>{{$usu->Funcionalidad}}</td>
                 <td>{{$usu->Tipo}}</td>
-                <td>{{$usu->Fecha_entrega}}</td>
-                <td>{{$usu->Notas}}</td>
                 <td><button type="button" class="btn btn-info btn-lg btne"
                   data-toggle="modal" data-target="#myModal"
-                >Editar </button></td>
-
-
-
+                  data-nombreedit="{{$usu->Nombre_producto}}"
+                  data-cantedit="{{$usu->Cantidad}}"
+                  data-funedit="{{$usu->Funcionalidad}}"
+                  data-tipoedit="{{$usu->Tipo}}"
+                  data-idin="{{$usu->Id_inv}}">Editar </button></td>
+                <td>
+                </td>
+                </tr>
               @empty
               <p>sin registro</p>
               @endforelse
             </tbody>
           </table>
       </div>
-      </div>
-
+</div>
 
 
 </div>
 
   <div id="agregar" class="tabcontent">
     <div class="card-header" style="margin-bottom:2%; font-size:3rem; margin-left:1.5%;">Agregar Articulo</div>
-        <div class="card-body">
+        <div class="card-body" >
           @if($errors->any())
             <div class="alert alert-warning alert-dismissable">
               <ul>
@@ -134,61 +131,7 @@
 </div>
 <div id="entrega" class="tabcontent">
 
-  <div class="card-body"style="color:gray;" >
-    @if($errors->any())
-      <div class="alert alert-warning alert-dismissable">
-        <ul>
-
-        @foreach($errors->all() as $error)
-          <li>{{$error}}</li>
-        @endforeach
-        </ul>
-      </div>
-    @endif
-    @if(session()->has('mensaje'))
-      <div class="alert alert-success divfade" style="position:absolute;top:10%;left:40%;">
-        {{session()->get('mensaje')}}
-      </div>
-    @endif
-    <!-- ESTA ES LA TABLA ORIGINAL PARA POSTERIORES USOS-->
-    <div class="row">
-      <h2 style="margin-left:1%;"></h2>
-      <table class="table table-condensed col-md-12" style="margin-left:0%;">
-        <thead>
-          <tr>
-            <td>Id</td>
-            <td>Articulo</td>
-            <td>Cantidad</td>
-            <td>Funcionalidad</td>
-            <td>Tipo</td>
-            <td>Editar</td>
-          </tr>
-        </thead>
-        <tbody id="tbody">
-          <tr>
-            @forelse($perros as $usu)
-            <td>{{$usu->Id}}</td>
-            <td>{{$usu->Nombre_producto}}</td>
-            <td>{{$usu->Cantidad}}</td>
-            <td>{{$usu->Funcionalidad}}</td>
-            <td>{{$usu->Tipo}}</td>
-            <td><button type="button" class="btn btn-info btn-lg btne"
-              data-toggle="modal" data-target="#myModal"
-              data-nombreedit="{{$usu->Nombre_producto}}"
-              data-cantedit="{{$usu->Cantidad}}"
-              data-funedit="{{$usu->Funcionalidad}}"
-              data-tipoedit="{{$usu->Tipo}}"
-              data-idin="{{$usu->Id}}">Editar </button></td>
-            <td>
-            </td>
-            </tr>
-          @empty
-          <p>sin registro</p>
-          @endforelse
-        </tbody>
-      </table>
-  </div>
-  </div>
+  @include('formularios.inventarioentrega')
   </div>
 
 
@@ -208,7 +151,7 @@
 
       </div>
       {!! Form::open(
-        array('route'=>['admin.inventario.edit',$usu->Id],'method'=>'GET' )) !!}
+        array('route'=>['admin.inventario.edit',$usu->Id_inv],'method'=>'GET' )) !!}
       <div class="modal-body">
         <input type="hidden" name="idin" id="idini" value="">
           <div class="input-group">
