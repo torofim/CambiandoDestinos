@@ -108,15 +108,21 @@
             </div>
             <div class="lugarna">
               @forelse($datosper1 as $usua)
-              <input value="">
+              <input value="  {{$usua->Lugar_nacimiento}}">
 
               </input>
               @empty
               <p>sin registro</p>
               @endforelse
             </div>
-            <div class="">
-              <input class="curp" class="col-md-4" type="text" name="" value="" placeholder="AAAA000000AAAAAA00">
+            <div class="curp">
+              @forelse($datosper1 as $usua)
+              <input value="  {{$usua->Curp}}">
+
+              </input>
+              @empty
+              <p>sin registro</p>
+              @endforelse
             </div>
 
 
@@ -218,7 +224,7 @@
       </div>
       <div class="peso">
         @forelse($datosper1 as $usua)
-        <input value="  {{$usua->Peso}}">
+        <input value="  {{$usua->Peso}}Kg">
 
         </input>
         @empty
@@ -229,19 +235,37 @@
         Estatura
       </div>
       <div class="estatura">
-        <input type="text" name="" value="">
+        @forelse($datosper1 as $usua)
+        <input value="  {{$usua->Estatura}}M">
+
+        </input>
+        @empty
+        <p>sin registro</p>
+        @endforelse
       </div>
       <div class="ttalla">
         Talla
       </div>
       <div class="talla">
-        <input type="text" name="" value="">
+        @forelse($datosper1 as $usua)
+        <input value="  {{$usua->Talla}}Kg">
+
+        </input>
+        @empty
+        <p>sin registro</p>
+        @endforelse
       </div>
       <div class="tcalzado">
         Calzado
       </div>
       <div class="calzado">
-        <input type="text" name="" value="">
+        @forelse($datosper1 as $usua)
+        <input value="  {{$usua->Calzado}}">
+
+        </input>
+        @empty
+        <p>sin registro</p>
+        @endforelse
       </div>
       <div class="trehab">
       Recibe rehabilitacion
@@ -255,13 +279,23 @@
         Donde
       </div>
       <div class="donde">
-        <input type="text" name="" value="">
+        @forelse($perros2 as $disca)
+        <input value="  {{$disca->Lugar_de_rehabilitacion}}">
+        </input>
+        @empty
+        <p>sin registro</p>
+        @endforelse
       </div>
       <div class="tcual">
         Cual
       </div>
       <div class="cual">
-        <input type="text" name="" value="">
+        @forelse($perros2 as $disca)
+        <input value="  {{$disca->Tipo_rehabilitacion}}">
+        </input>
+        @empty
+        <p>sin registro</p>
+        @endforelse
       </div>
 
       <div class="tapoyo">
@@ -328,25 +362,45 @@
         Dirección
       </div>
       <div class="direccion">
-        <input type="text" name="" value="" placeholder="">
+        @forelse($datosper1 as $usua)
+        <input value="  {{$usua->Domicilio}}">
+        </input>
+        @empty
+        <p>sin registro</p>
+        @endforelse
       </div>
       <div class="tcolonia">
         Colonia
       </div>
       <div class="colonia">
-        <input type="text" name="" value="" placeholder="">
+        @forelse($datosper1 as $usua)
+        <input value="  {{$usua->Colonia}}">
+        </input>
+        @empty
+        <p>sin registro</p>
+        @endforelse
       </div>
       <div class="tmunicipio">
         Municipio
       </div>
       <div class="municipio">
-        <input type="text" name="" value="" placeholder="">
+        @forelse($datosper1 as $usua)
+        <input value="  {{$usua->Municipio}}">
+        </input>
+        @empty
+        <p>sin registro</p>
+        @endforelse
       </div>
       <div class="tcp">
         Codigo postal
       </div>
       <div class="cp">
-        <input type="text" name="" value="" placeholder="">
+        @forelse($datosper1 as $usua)
+        <input value="  {{$usua->Cp}}">
+        </input>
+        @empty
+        <p>sin registro</p>
+        @endforelse
       </div>
       <div class="tlocal">
         Localidad
