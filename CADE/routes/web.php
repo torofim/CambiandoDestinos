@@ -56,6 +56,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::get('/tipodiscapacidad/{Id}','tipodiscapacidadController@index')->name('tipodiscapacidad');
   Route::get('/visitacomida','visitacomidaController@index');
   Route::get('/reporte/{Id}','reportecontroller@index');
+  Route::get('/galeria','galeriacontroller@index')->name('galeria');
   // Estos son los Routes de los DASH
   Route::get('/dash/{mes}','dashcontroller@index');
   Route::get('/graficos/{mes}/{year}','graficoscontroller@index');
