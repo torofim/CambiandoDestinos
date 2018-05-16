@@ -54,7 +54,7 @@ class archivoscontroller extends Controller
           'Curp'=>$nombreCurp
         ]);
 
-
+        return view('archivo');
         ->with('mensaje','Archivo agregado')
 
       }

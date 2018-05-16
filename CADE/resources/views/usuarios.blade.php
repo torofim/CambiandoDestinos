@@ -214,7 +214,7 @@
 var formulario;
 var tr;
   $(document).ready(function(){
-    $(".btnEdit").on('click',function(){
+    $(document).on('click',".btnEdit",function(){
       var n=$(this).data('nombre');
       var e=$(this).data('email');
       var i=$(this).data('id');

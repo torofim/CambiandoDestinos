@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Validator;
 use App\User;
+use Illuminate\Support\Facades\Auth;
 
 class usuarioscontroller extends Controller
 {
@@ -12,7 +13,9 @@ class usuarioscontroller extends Controller
     public function __construct(){
       $this->middleware('auth');
     }
+
     public function index(){
+      if(Auth::user()->privilegios=='admin'){
       $registros=\DB::table('users')
       //->where('Id','=','1');
       ->orderby('Id','desc')
@@ -21,6 +24,9 @@ class usuarioscontroller extends Controller
 
       return view('usuarios')
       ->with('perros',$registros);
+    }else{
+      return redirect('/admin/dash');
+    }
     }
     //Insertar
     public function store(Request $req){

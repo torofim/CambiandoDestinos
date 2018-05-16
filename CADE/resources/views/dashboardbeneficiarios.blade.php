@@ -32,7 +32,9 @@
 
 
     <div id="benefi" class="tabcontent" >
+
       <div class="card-body" >
+        @if(Auth::user()->privilegios=='admin')
         @if($errors->any())
           <div class="alert alert-warning alert-dismissable">
             <ul>
@@ -96,10 +98,67 @@
 
     </div>
 
+
+
+    @else
+
+      @if($errors->any())
+        <div class="alert alert-warning alert-dismissable">
+          <ul>
+
+          @foreach($errors->all() as $error)
+            <li>{{$error}}</li>
+          @endforeach
+          </ul>
+        </div>
+      @endif
+      @if(session()->has('mensaje'))
+        <div class="alert alert-success">
+          {{session()->get('mensaje')}}
+        </div>
+      @endif
+      <div class="card-body" >
+        <!-- ESTA ES LA TABLA ORIGINAL PARA POSTERIORES USOS-->
+        <button type="button" name="button" id="btnbuscar"></button>
+    <input type="search" name="" value="" id="txtBusqueda" style="margin-left:2%;margin-bottom:5%;width:20%;color:black;">
+    <input type="hidden" name="" value="{{csrf_token()}}" id="token">
+
+    <div class="row">
+
+
+  <table class="table table-condensed col-md-12" style="margin-left:0%; ">
+      <thead>
+        <tr>
+          <td>No. Folio</td>
+          <td>Nombre</td>
+          <td>Apellido Paterno</td>
+          <td>Apellido Materno</td>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+
+      </tbody>
+    </table>
+
+
+    </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    @endif
+
     <div id="agregar" class="tabcontent">
       <div class="card-header" style="margin-bottom:5%; font-size:3rem; margin-left:1.5%;" >Datos Personales</div>
 
-      <div class="card-body">
+      <div class="card-body ">
         @if($errors->any())
           <div class="alert alert-warning alert-dismissable">
             <ul>
@@ -200,6 +259,7 @@
   <script type="text/javascript">
   var formulario;
   var tr;
+
 $(document).ready(function(){
   $(".btnEliminar").on('click',function(event){
     event.preventDefault();
@@ -214,10 +274,42 @@ $(document).ready(function(){
       url:formulario.attr('action'),
       data:formulario.serialize()
     }).done(function(respuesta){
-      
+
       tr.fadeOut(1000);
     });
   });
+  });
+  $('#btnbuscar').on('click',function(){
+    $.ajax({
+
+      method:'POST',
+      url:'/admin/dashboardbeneficiarios/buscar',
+      data:{
+        id:$("#txtBusqueda").val(),
+        _token:$("#token").val()
+      },
+      beforeSend:function(){
+        console.log("Cargando");
+      }
+
+    }).done(function(respuesta){
+      var arreglo =JSON.parse(respuesta);
+      $("#tbody").find('tr').remove();
+
+    var todo="<tr><td>"+arreglo[0].Id_bene;
+    todo+="</td><td>"+arreglo[0].Nombre+"</td>";
+    todo+="<td>"+arreglo[0].Apellido_p+"</td>";
+    todo+="<td>"+arreglo[0].Apellido_m+"</td><td>";
+    todo+='<button type="button" class="btn btn-info btn-lg" onclick="location.href='"/admin/Formubenefi/" + arreglo[0].Id_bene+ ' ">Editar </button></td>';
+    todo+='<td><form method="POST" action="/admin/datospersonales/'+arreglo[0].Id_bene+'">';
+    todo+='<input type="hidden" name ="_token" value="{{csrf_token()}}">';
+    todo+='<input type="hidden" name ="_method" value="delete">';
+    todo+='<i class="fa fa-trash></i></button></form></td></tr>"';
+    $("#tbody").append(todo);
+    //  console.log(arreglo[0].Id_bene);
+
+    });
+
   });
 
   function openPage(pageName,elmnt,color) {

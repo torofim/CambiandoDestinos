@@ -20,12 +20,6 @@ class datospersonalescontroller extends Controller
       ->orderby('Id_bene','desc')
       //->take(10)
       ->get();
-
-
-
-
-
-
       return view('dashboardbeneficiarios')
       ->with('datosper',$registros);
     }
@@ -121,4 +115,11 @@ class datospersonalescontroller extends Controller
       $usuario->delete();
 
     }//function destro
+    public function  buscar(Request $req){
+      $registros=\DB::table('datos_personales')
+      ->select('Id_bene','Nombre','Apellido_p',"Apellido_m")
+      ->where('Id_bene','=',$req->id)
+            ->get();
+      return json_encode($registros);
+    }
 }

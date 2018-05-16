@@ -49,6 +49,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   Route::get('/tutor/{Id}','tutorController@index')->name('tutor');
   Route::get('/visitadom/{Id}','visitasController@index')->name('visitadom');
   Route::post('/usuarios/buscar','usuarioscontroller@buscar');
+  Route::post('/dashboardbeneficiarios/buscar','datospersonalescontroller@buscar');
   Route::get('/formularios','dashcontroller@form');
   Route::get('/inventario','inventarioController@index')->name('inventario');
   Route::get('/Formubenefi/{Id}','formubeneficontroller@index')->name('Formubenefi');
