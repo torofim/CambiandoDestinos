@@ -1,7 +1,8 @@
 <!DOCTYPE html SYSTEM "about:legacy-compat">
-<html xml:lang="" lang=""><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[f.now()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,t){s[t]=o(d+t,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),t.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(l+"tracer",[f.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return t.apply(this,arguments)}catch(e){throw c.emit("fn-err",[arguments,this,e],n),e}finally{c.emit("fn-end",[f.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){m[t]=o(l+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,f.now()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],4:[function(e,t,n){t.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o,i){if(!d.aborted||i){e&&e(n,r,o);for(var a=t(o),u=m(n),c=u.length,f=0;f<c;f++)u[f].apply(a,r);var p=s[y[n]];return p&&p.push([b,n,r,a]),a}}function l(e,t){v[e]=m(e).concat(t)}function m(e){return v[e]||[]}function w(e){return p[e]=p[e]||o(n)}function g(e,t){f(e,function(e,n){t=t||"feature",y[n]=t,t in s||(s[t]=[])})}var v={},y={},b={on:l,emit:n,get:w,listeners:m,context:t,buffer:g,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},p={},d=t.exports=o();d.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!x++){var e=h.info=NREUM.info,t=d.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return s.abort();f(y,function(t,n){e[t]||(e[t]=n)}),c("mark",["onload",a()+h.offset],null,"api");var n=d.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===d.readyState&&i()}function i(){c("mark",["domContent",a()+h.offset],null,"api")}function a(){return E.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-h.offset}var u=(new Date).getTime(),c=e("handle"),f=e(2),s=e("ee"),p=window,d=p.document,l="addEventListener",m="attachEvent",w=p.XMLHttpRequest,g=w&&w.prototype;NREUM.o={ST:setTimeout,SI:p.setImmediate,CT:clearTimeout,XHR:w,REQ:p.Request,EV:p.Event,PR:p.Promise,MO:p.MutationObserver};var v=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1071.min.js"},b=w&&g&&g[l]&&!/CriOS/.test(navigator.userAgent),h=t.exports={offset:u,now:a,origin:v,features:{},xhrWrappable:b};e(1),d[l]?(d[l]("DOMContentLoaded",i,!1),p[l]("load",r,!1)):(d[m]("onreadystatechange",o),p[m]("onload",r)),c("mark",["firstbyte",u],null,"api");var x=0,E=e(4)},{}]},{},["loader"]);
-  </script>
+<html xml:lang="eng" dir="ltr">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
   <title>Fundación Cambiando Destinos</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
@@ -9,24 +10,14 @@
   <link href="./css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="./css/paginas.css">
-  <link rel="apple-touch-icon" sizes="57x57" href="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/favicon-194x194.png" sizes="194x194">
-  <link rel="icon" type="image/png" href="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/android-chrome-192x192.png" sizes="192x192"><link rel="icon" type="image/png" href="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/favicon-16x16.png" sizes="16x16"><link rel="manifest" href="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/manifest.json"><link rel="shortcut icon" href="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/favicon.ico">
   <meta name="msapplication-TileColor" content="#ff0000">
-  <meta name="msapplication-TileImage" content="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/mstile-144x144.png"><meta name="msapplication-config" content="https://us-as.gr-cdn.com/images/squeeze-page/_external/various/favicons/browserconfig.xml"><meta name="theme-color" content="#ffffff"><link rel="stylesheet" href="https://turntostone1996_81e2.gr8.com/images/lps/css/reset.css?timestamp=20092017"><link rel="stylesheet" href="https://turntostone1996_81e2.gr8.com/images/lps/css/core.css?timestamp=20092017">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="stylesheet" href="https://turntostone1996_81e2.gr8.com/images/lps/css/reset.css?timestamp=20092017">
+  <link rel="stylesheet" href="https://turntostone1996_81e2.gr8.com/images/lps/css/core.css?timestamp=20092017">
   <link rel="stylesheet" href="https://turntostone1996_81e2.gr8.com/images/lps/css/webform.css?timestamp=20092017">
   <link rel="stylesheet" href="https://turntostone1996_81e2.gr8.com/images/common/templates/landing/254/1/css/style.css">
-<style id="def-mark" type="text/css">div#edi-jtmtt .text-content { font-size: 36px; font-weight: normal; font-style: normal; font-family: "Source Sans Pro", sans-serif; color: rgb(0, 0, 0); text-shadow: rgb(49, 49, 49) 0px 3px 2px; }
+<style id="def-mark" type="text/css">
+div#edi-jtmtt .text-content { font-size: 36px; font-weight: normal; font-style: normal; font-family: "Source Sans Pro", sans-serif; color: rgb(0, 0, 0); text-shadow: rgb(49, 49, 49) 0px 3px 2px; }
 section#section-jjssm [data-section="wrap"] { width: 980px; }
 section#section-jjssm { z-index: 2; }
 section#section-hmkej [data-section="wrap"] { width: 980px; }
@@ -305,7 +296,8 @@ section#section-7i1hi [data-section="wrap"] { width: 400px; }
 section#section-ibd57 [data-section="wrap"] { width: 400px; }
 section#section-cc7cj [data-section="wrap"] { width: 400px; }
 [data-editable="text"] { text-align: center; }
-[hidden-on-phone="true"] { display: none; }</style>
+[hidden-on-phone="true"] { display: none; }
+</style>
 <!-- End Getresponse Analytics -->
 </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
@@ -352,7 +344,8 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
                 </select>
             </div>
         </form>
-    </div><section data-section="section" id="section-ibd57" data-uid="section-ibd57" class="" data-draggable="true">
+    </div>
+    <section data-section="section" id="section-ibd57" data-uid="section-ibd57" class="" data-draggable="true">
         <div data-section="wrap" data-reverse="true">
             <div data-editable="text" id="edi-575bh" data-uid="edi-575bh" class="" data-draggable="true">
                 <div style="font-family: 'Source Sans Pro', sans-serif;font-size:54px; font-weight:300; color:#fff;line-height:1.2;text-align: center;" class="text-content">
@@ -390,7 +383,8 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
             <div class="component-marker">
             </div>
         </div>
-    </section><section data-section="section" id="section-75jj6" data-uid="section-75jj6" class="" data-draggable="true">
+    </section>
+    <section data-section="section" id="section-75jj6" data-uid="section-75jj6" class="" data-draggable="true">
         <div data-section="wrap" data-reverse="true">
             <div class="component-backdrop"></div>
             <div class="component-marker">
@@ -455,7 +449,8 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
                 </span></div>
             </div>
         </div>
-    </section><section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-be77e" data-draggable="true" data-uid="section-be77e" class="">
+    </section>
+    <section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-be77e" data-draggable="true" data-uid="section-be77e" class="">
         <div data-section="wrap" data-reverse="true">
             <div data-editable="box" data-reverse="true" id="edi-77bgg" data-draggable="true" data-uid="edi-77bgg" class="">
                 <div data-editable="text" id="edi-b7gdg" data-draggable="true" data-uid="edi-b7gdg" class="">
@@ -481,7 +476,8 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
             <div class="component-marker">
             </div>
         </div>
-    </section><section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-bhjbt" data-draggable="true" data-uid="section-bhjbt" class="">
+    </section>
+    <section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-bhjbt" data-draggable="true" data-uid="section-bhjbt" class="">
         <div data-section="wrap" data-reverse="true">
             <div class="component-backdrop">
             </div>
@@ -506,7 +502,8 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
                 </div>
             </div>
         </div>
-    </section><section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-j0ccj" data-draggable="true" data-uid="section-j0ccj" class="">
+    </section>
+    <section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-j0ccj" data-draggable="true" data-uid="section-j0ccj" class="">
         <div data-section="wrap" data-reverse="true">
             <div data-editable="box" data-reverse="true" id="edi-jehzj" data-draggable="true" data-uid="edi-jehzj" class="">
                 <div data-editable="text" id="edi-ejje0" data-draggable="true" data-uid="edi-ejje0" class="">
@@ -533,7 +530,8 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
             <div class="component-marker">
             </div>
         </div>
-    </section><section data-section="section" id="section-hjjjj" data-uid="section-hjjjj" class="" data-draggable="true">
+    </section>
+    <section data-section="section" id="section-hjjjj" data-uid="section-hjjjj" class="" data-draggable="true">
         <div data-section="wrap" data-reverse="true">
             <div class="component-backdrop"></div>
             <div class="component-marker">
@@ -567,7 +565,8 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
                 <img src="https://multimedia.getresponse.com/getresponse-h87Rp/photos/666708104.jpg?_ga=2.97683679.1367688246.1526356372-335864284.1526356372" alt="/" width="463" height="261" /></div>
             </div>
         </div>
-    </section><section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-sssi7" data-draggable="true" data-uid="section-sssi7" class="">
+    </section>
+    <section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-sssi7" data-draggable="true" data-uid="section-sssi7" class="">
         <div data-section="wrap" data-reverse="true">
             <div data-editable="box" data-reverse="true" id="edi-iiu9u" data-draggable="true" data-uid="edi-iiu9u" class="">
                 <div data-editable="text" id="edi-v7v2v" data-draggable="true" data-uid="edi-v7v2v" class="">
@@ -597,7 +596,8 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
             <div class="component-marker">
             </div>
         </div>
-    </section><section data-section="section" id="section-jxjbj" data-uid="section-jxjbj" class="" data-draggable="true">
+    </section>
+    <section data-section="section" id="section-jxjbj" data-uid="section-jxjbj" class="" data-draggable="true">
         <div data-section="wrap" data-reverse="true">
             <div class="component-backdrop">
             </div>
@@ -613,4 +613,13 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
             </div>
         </div>
     </section>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ee0b9c04dc","applicationID":"57569376","transactionName":"NQQGNhBXV0BZVkJdDgxOJxcRQlZeF3hZUDITFAEHGFNpUl9QDA4yCg4TQk8IGVpWUVNMTwoVCQ4=","queueTime":0,"applicationTime":178,"atts":"GUMFQFhNRE4=","errorBeacon":"bam.nr-data.net","agent":""}</script></body><script src="https://us-as.gr-cdn.com/javascripts/core/lps/dist/manifest.9d4672b52ac1513b67cc.js"></script><script src="https://us-as.gr-cdn.com/javascripts/core/lps/dist/vendor.c0a92e2fb8d5ae074033.js"></script><script src="https://us-as.gr-cdn.com/javascripts/core/lps/dist/show.c1c6de56a5e47e9cf1a3.js"></script></html>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ee0b9c04dc","applicationID":"57569376","transactionName":"NQQGNhBXV0BZVkJdDgxOJxcRQlZeF3hZUDITFAEHGFNpUl9QDA4yCg4TQk8IGVpWUVNMTwoVCQ4=","queueTime":0,"applicationTime":178,"atts":"GUMFQFhNRE4=","errorBeacon":"bam.nr-data.net","agent":""}
+</script>
+</body>
+<script src="https://us-as.gr-cdn.com/javascripts/core/lps/dist/manifest.9d4672b52ac1513b67cc.js">
+</script>
+<script src="https://us-as.gr-cdn.com/javascripts/core/lps/dist/vendor.c0a92e2fb8d5ae074033.js">
+</script>
+<script src="https://us-as.gr-cdn.com/javascripts/core/lps/dist/show.c1c6de56a5e47e9cf1a3.js">
+</script>
+</html>

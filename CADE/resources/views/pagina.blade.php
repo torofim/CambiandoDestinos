@@ -151,31 +151,31 @@
   <div class="accordion" >
   <ul>
     <li>
-      <div> <a href="#">
+      <div> <a href="/informacion#">
         <h2>Visita Domiciliaria</h2>
         <p id="conoce">Conoce Mas</p>
         </a> </div>
     </li>
     <li>
-      <div> <a href="#">
+      <div> <a href="/informacion#">
         <h2>Aprendiendo a Vivir en la 3ra Edad</h2>
         <p id="conoce">Conoce Mas</p>
         </a> </div>
     </li>
     <li>
-      <div> <a href="#">
+      <div> <a href="/informacion#">
         <h2>Taller de Musica</h2>
         <p id="conoce">Conoce Mas</p>
         </a> </div>
     </li>
     <li>
-      <div> <a href="#">
+      <div> <a href="/informacion#">
         <h2>Comida Caliente</h2>
         <p id="conoce">Conoce Mas</p>
         </a> </div>
     </li>
     <li>
-      <div> <a href="#">
+      <div> <a href="/informacion#">
         <h2>Gestiones Hoy Por Ti</h2>
         <p id="conoce">Conoce Mas</p>
         </a> </div>
