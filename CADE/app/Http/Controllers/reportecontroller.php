@@ -6,10 +6,14 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
 
+
+
+
 class reportecontroller extends Controller
 {
-  public function index($Id){
 
+  public function index($Id){
+      $this->middleware('auth');
     $registrosr1=\DB::table('datos_personales')
     ->where('Id_bene','=',$Id)
     ->orderby('Id_bene','desc')

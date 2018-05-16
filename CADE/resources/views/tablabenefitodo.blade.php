@@ -400,7 +400,7 @@
         <td>{{$usu->Fecha}}</td>
         <td>{{$usu->Tipo_de_visita}}</td>
         <td>{{$usu->Notas}}</td>
-
+        <td> </td>
 
         </tr>
       @empty
@@ -410,7 +410,6 @@
   </table>
 </div>
 </div>
-<form action="/reporte">
-    <button type="submit">Imprimir Reporte</button>
-</form>
+ <button type="submit" onclick="location.href='/admin/reporte/{{$usu->Id_bene}}'" >Imprimir Reporte rosa</button>
+
   </div>
