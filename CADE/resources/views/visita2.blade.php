@@ -129,7 +129,7 @@
 											<div class="text">
 												<h4>Visita Domiciliaria</h4>
 												<br>
-												<a href="/informacion#section-7i1hi">Conoce Mas</a>
+												<a href="/visita">Conoce Mas</a>
 											</div>
 										</div>
 									</div>
@@ -142,7 +142,7 @@
 											<div class="text">
 												<h4>Comida Caliente</h4>
 												<br>
-												<a href="/informacion#section-be77e">Conoce Mas</a>
+												<a href="/comida">Conoce Mas</a>
 											</div>
 										</div>
 									</div>
@@ -154,7 +154,7 @@
 											<div class="text">
 												<h4>Taller Aprendiendo a Vivir en la 3ra Edad</h4>
 												<br>
-												<a href="/informacion#section-bhjbt">Conoce Mas</a>
+												<a href="/taller">Conoce Mas</a>
 											</div>
 										</div>
 									</div>
@@ -168,7 +168,7 @@
 											<div class="text">
 													<h4>Instituto Cultural Cambiando Destinos</h4>
 												<br>
-												<a href="/informacion#section-sssi7" >Conoce Mas</a>
+												<a href="/cultura" >Conoce Mas</a>
 											</div>
 										</div>
 

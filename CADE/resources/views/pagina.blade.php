@@ -35,15 +35,15 @@
 
 <div class="item active">
 <img src="./img/apoyo.jpg"  class="img-responsive2" alt="gestion" >
-<div class="carousel-caption" style="top:0%;"><h3 style="font-size:2.3em;margin-left:44%;margin-top:0.2%;">GESTIONES </h3>
-
+<div class="carousel-caption d-none d-dm-block" style="top:0% ;">
+  <h3 style="font-size:2.3em;margin-left:44%;margin-top:0.2%;">GESTIONES </h3>
   <p class="col-md-12">185 pacientes en consulta con especialistas,
       21 estudios de Tomografía,
       46 estudios de Laboratorio,
       7 Cirugías, (Labio leporino, discapacidad infantil)
       104 entrega de medicamentos,
       28 préstamos  de aparatos de apoyo funcional (silla de rueda, muletas, bastón, andador, silla para baño, camas tipo hospital, colchones entre otros.)
-      </p>
+  </p>
 </div>
 </div>
 
