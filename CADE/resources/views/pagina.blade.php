@@ -250,7 +250,7 @@
 
 
 
-<h3 style="margin-left:40%;margin-top:1%;">Contacto</h3>
+<h3 style="margin-left:20%;margin-top:1%;Color:white;">Contacto</h3>
 <div class="col-md-4 divcon">
   <div class="col-md-3" style="margin-left:10%; padding:0;margin-top:1%;width:27%;">
     <p><img src="./img/logonavi.png" alt="">Direccion:</p>

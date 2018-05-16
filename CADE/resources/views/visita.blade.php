@@ -15,6 +15,8 @@
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="http://example.com/favicon.png">
+  <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
   <link href="./css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="./css/paginas.css">
