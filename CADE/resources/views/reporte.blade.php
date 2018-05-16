@@ -258,7 +258,7 @@
     <br>
     <input class="" type="text" name="6" value="">
   </div>
-  @else
+  @elseif($perros9[0]->Discapacidad=='')
   <div class="audvis">
   <label for=""><input class="" type="radio" name="1" value="Auditiva" >Auditiva</label>
   <br>
@@ -272,7 +272,7 @@
 <div class="df">
   <input class="" type="radio" name="5" value="Neuromotora">Neuromotora
   <br>
-  <input class="" type="text" name="6" value="{{$perros2[0]->Rehabilitacion}}">
+  <input class="" type="text" name="6" value="">
 </div>
 
            @endif
