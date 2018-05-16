@@ -9,7 +9,7 @@
   <body>
   @include('layouts.nav')
 
-  <div class="main" style="height:100%;overflow-y:hidden;">
+  <div class="main" style="height:auto;">
   <!--<div class="panel panel-default">
         <div class="panel-body cold-md-2" id="sepa">
         </div>
@@ -99,52 +99,7 @@
     </div>
 
 
-@if(Auth::user()->privilegios=='admin')
-    @else
 
-      @if($errors->any())
-        <div class="alert alert-warning alert-dismissable">
-          <ul>
-
-          @foreach($errors->all() as $error)
-            <li>{{$error}}</li>
-          @endforeach
-          </ul>
-        </div>
-      @endif
-      @if(session()->has('mensaje'))
-        <div class="alert alert-success">
-          {{session()->get('mensaje')}}
-        </div>
-      @endif
-      <div class="card-body" >
-        <!-- ESTA ES LA TABLA ORIGINAL PARA POSTERIORES USOS-->
-        <button type="button" name="button" id="btnbuscar"></button>
-    <input type="search" name="" value="" id="txtBusqueda" style="margin-left:2%;margin-bottom:5%;width:20%;color:black;">
-    <input type="hidden" name="" value="{{csrf_token()}}" id="token">
-
-    <div class="row">
-
-
-  <table class="table table-condensed col-md-12" style="margin-left:0%; ">
-      <thead>
-        <tr>
-          <td>No. Folio</td>
-          <td>Nombre</td>
-          <td>Apellido Paterno</td>
-          <td>Apellido Materno</td>
-        </tr>
-      </thead>
-      <tbody id="tbody">
-
-      </tbody>
-    </table>
-
-
-    </div>
-    </div>
-
-    @endif
 
     <div id="agregar" class="tabcontent">
       <div class="card-header" style="margin-bottom:5%; font-size:3rem; margin-left:1.5%;" >Datos Personales</div>

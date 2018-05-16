@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Validator;
 use App\Archivo;
+use Illuminate\Support\Facades\Auth;
 
 class archivoscontroller extends Controller
 {
@@ -37,6 +38,10 @@ class archivoscontroller extends Controller
           ->withInput()
           ->withErrors($validator);
       }else{
+        $archivo=Archivo::find($req->idbene);
+        //dd($archivo);
+        if(($archivo)==null){
+
         $nombreInfantil=time().'.'.$req->Foto_infantil->getClientOriginalExtension();
         $req->Foto_infantil->move(public_path('/img/archivos'),$nombreInfantil);
 
@@ -62,6 +67,30 @@ class archivoscontroller extends Controller
         ]);
 
         return redirect()->to('/admin/Formubenefi/'.$req->idbene);
+      }else{
+
+        $nombreInfantil=time().'.'.$req->Foto_infantil->getClientOriginalExtension();
+        $req->Foto_infantil->move(public_path('/img/archivos'),$nombreInfantil);
+
+        $nombreCuerpo=time().'.'.$req->Foto_cuerpo->getClientOriginalExtension();
+        $req->Foto_cuerpo->move(public_path('/img/archivos'),$nombreCuerpo);
+
+        $nombreCertificado=time().'.'.$req->Certificado_discapacida->getClientOriginalExtension();
+        $req->Certificado_discapacida->move(public_path('/img/archivos'),$nombreCertificado);
+
+        $nombreCopia=time().'.'.$req->Copia_curp->getClientOriginalExtension();
+        $req->Copia_curp->move(public_path('/img/archivos'),$nombreCopia);
+
+        $nombreCurp=time().'.'.$req->Curp->getClientOriginalExtension();
+        $req->Curp->move(public_path('/img/archivos'),$nombreCurp);
+
+        $archivo->Foto_infantil=$req->$nombreInfantil;
+        $archivo->Foto_cuerpo=$req->$nombreCuerpo;
+        $archivo->Certificado_discapacida=$req->$nombreCertificado;
+        $archivo->Copia_curp=$req->$nombreCopia;
+        $archivo->Curp=$req->$nombreCurp;
+        return redirect()->to('/admin/Formubenefi/'.$req->idbene);
+      }
 
 
       }

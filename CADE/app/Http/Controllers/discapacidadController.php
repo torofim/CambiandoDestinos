@@ -41,7 +41,7 @@ class discapacidadController extends Controller
                 ->withErrors($validator);
             }else{
               $usuario=Discapacidad::find($req->idbene);
-
+              //dd($usuario);
               if(($usuario)==null){
 
                 Discapacidad::create([
@@ -54,7 +54,7 @@ class discapacidadController extends Controller
                   'Lugar_de_rehabilitacion'=>$req->lugarehab,
                   'Tipo_rehabilitacion'=>$req->tiporehab,
                   'Apoyo_funcional'=>$req->apoyofun,
-                  'Requiere_apoyo_funcional'=>$req->requiere
+                  'Requiere_apoyo_funcional'=>$req->requiere,
                   'Tipo_apoyo'=>$req->tipoapoyo
                 ]);
                 return redirect()->to('/admin/Formubenefi/'.$req->idbene)
