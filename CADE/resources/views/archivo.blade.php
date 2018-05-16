@@ -32,7 +32,7 @@
                     </div>
                     <div class="input=-group col-md-6">
                       <label for="nombre">Certificado</label><br>
-                      {{Form::file('Certificado_discapacidad',array('class'=>'form-control','placeholder'=>'Imagen') )}}
+                      {{Form::file('Certificado_discapacida',array('class'=>'form-control','placeholder'=>'Imagen') )}}
                     </div>
                     <div class="input=-group col-md-6">
                       <label for="nombre"> Copia Curp</label><br>

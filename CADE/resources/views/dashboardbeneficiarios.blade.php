@@ -34,7 +34,7 @@
     <div id="benefi" class="tabcontent" >
 
       <div class="card-body" >
-        @if(Auth::user()->privilegios=='admin')
+
         @if($errors->any())
           <div class="alert alert-warning alert-dismissable">
             <ul>
@@ -99,7 +99,7 @@
     </div>
 
 
-
+@if(Auth::user()->privilegios=='admin')
     @else
 
       @if($errors->any())
@@ -143,15 +143,6 @@
 
     </div>
     </div>
-
-
-
-
-
-
-
-
-
 
     @endif
 
@@ -300,7 +291,7 @@ $(document).ready(function(){
     todo+="</td><td>"+arreglo[0].Nombre+"</td>";
     todo+="<td>"+arreglo[0].Apellido_p+"</td>";
     todo+="<td>"+arreglo[0].Apellido_m+"</td><td>";
-    todo+='<button type="button" class="btn btn-info btn-lg" onclick="location.href='"/admin/Formubenefi/" + arreglo[0].Id_bene+ ' ">Editar </button></td>';
+    //todo+='<button type="button" class="btn btn-info btn-lg" onclick="location.href='"/admin/Formubenefi/" + arreglo[0].Id_bene+ ' ">Editar </button></td>';
     todo+='<td><form method="POST" action="/admin/datospersonales/'+arreglo[0].Id_bene+'">';
     todo+='<input type="hidden" name ="_token" value="{{csrf_token()}}">';
     todo+='<input type="hidden" name ="_method" value="delete">';

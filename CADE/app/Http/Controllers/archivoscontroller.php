@@ -49,13 +49,13 @@ class archivoscontroller extends Controller
         Archivo::create([
           'Foto_infantil'=>$nombreInfantil,
           'Foto_cuerpo'=>$nombreCuerpo,
-          'Certificado_discapacidad'=>$nombreCertificado,
+          'Certificado_discapacida'=>$nombreCertificado,
           'Copia_curp'=>$nombreCopia,
           'Curp'=>$nombreCurp
         ]);
 
-        return view('archivo');
-        ->with('mensaje','Archivo agregado')
+        return redirect()->to('/admin/Formubenefi'.$req->id);
+        
 
       }
       dd($req->nombre);
