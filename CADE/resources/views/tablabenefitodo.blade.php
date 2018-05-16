@@ -210,7 +210,7 @@
           <td style="border-right: white solid;">Tipo de Rehabilitación</td>
           <td style="border-right:white solid;">Apoyo Funcional</td>
           <td style="border-right:white solid;">Requiere Apoyo Funcional</td>
-          <td style="border-right:white solid;"></td>
+          <td style="border-right:white solid;">Tipo de Apoyo Requerido</td>
           <td style="border-right:white solid;"></td>
         </tr>
       </thead>
@@ -220,6 +220,7 @@
           <td>{{$usu->Tipo_rehabilitacion}}</td>
           <td>{{$usu->Apoyo_funcional}}</td>
           <td>{{$usu->Requiere_apoyo_funcional}}</td>
+          <td>{{$usu->Tipo_apoyo}}</td>
           <td></td>
           <td></td>
 

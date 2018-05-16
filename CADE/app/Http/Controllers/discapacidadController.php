@@ -55,6 +55,7 @@ class discapacidadController extends Controller
                   'Tipo_rehabilitacion'=>$req->tiporehab,
                   'Apoyo_funcional'=>$req->apoyofun,
                   'Requiere_apoyo_funcional'=>$req->requiere
+                  'Tipo_apoyo'=>$req->tipoapoyo
                 ]);
                 return redirect()->to('/admin/Formubenefi/'.$req->idbene)
                 ->with('mensaje','datos agregados');
@@ -69,6 +70,7 @@ class discapacidadController extends Controller
                 $usuario->Tipo_rehabilitacion=$req->tiporehab;
                 $usuario->Apoyo_funcional=$req->apoyofun;
                 $usuario->Requiere_apoyo_funcional=$req->requiere;
+                $usuario->Tipo_apoyo=$req->tipoapoyo;
                 $usuario->save();
                 //dd($usuario);
                 return redirect()->to('/admin/Formubenefi/'.$req->idbene)

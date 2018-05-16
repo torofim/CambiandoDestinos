@@ -46,6 +46,7 @@
                     <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
                       {{Form::submit('Subir',array('class'=>'btn btn-primary'))}}
                     </div>
+                    <input type="text" name="idbene" value="{{$Id_bene}}">
                   {{Form::close()}}
                 </div>
             </div>

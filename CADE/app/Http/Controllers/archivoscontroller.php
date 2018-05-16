@@ -12,8 +12,14 @@ class archivoscontroller extends Controller
     public function __construct(){
       $this->middleware('auth');
     }
-    public function index(){
-      return view('archivo');
+    public function index($Id){
+      $registros=\DB::table('archivos')
+      ->where('Id_bene','=',$Id)
+      ->orderby('Id_bene','desc')
+      //->take(10)
+      ->get();
+      return view('archivo')
+      ->with('archivos',$registros);
     }
     public function store(Request $req){
 
@@ -47,6 +53,7 @@ class archivoscontroller extends Controller
         $req->Curp->move(public_path('/img/archivos'),$nombreCurp);
 
         Archivo::create([
+          'Id_bene'=>$req->idbene,
           'Foto_infantil'=>$nombreInfantil,
           'Foto_cuerpo'=>$nombreCuerpo,
           'Certificado_discapacida'=>$nombreCertificado,
@@ -54,8 +61,8 @@ class archivoscontroller extends Controller
           'Curp'=>$nombreCurp
         ]);
 
-        return redirect()->to('/admin/Formubenefi'.$req->id);
-        
+        return redirect()->to('/admin/Formubenefi/'.$req->idbene);
+
 
       }
       dd($req->nombre);

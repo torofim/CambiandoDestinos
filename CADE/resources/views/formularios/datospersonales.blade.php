@@ -92,9 +92,9 @@
                   <div class="input=-group col-md-4">
                     <label for="nombre">Curp </label><br>
                     @if(count($datosper)==0)
-                      {{Form::number('curpEditar','',array('class'=>'form-control','placeholder'=>'Curp') )}}
+                      {{Form::text('curpEditar','',array('class'=>'form-control','placeholder'=>'Curp') )}}
                       @else
-                      {{Form::number('curpEditar',$datosper[0]->Curp,array('class'=>'form-control','placeholder'=>'Curp') )}}
+                      {{Form::text('curpEditar',$datosper[0]->Curp,array('class'=>'form-control','placeholder'=>'Curp') )}}
                       @endif
                   </div>
                   <div class="input=-group col-md-4">
@@ -116,9 +116,9 @@
                   <div class="input=-group col-md-4">
                     <label for="nombre">Peso (Kg)</label><br>
                     @if(count($datosper)==0)
-                      {{Form::text('peEditar','',array('class'=>'form-control','placeholder'=>'Tipo peso') )}}
+                      {{Form::number('peEditar','',array('class'=>'form-control','placeholder'=>'Tipo peso') )}}
                       @else
-                      {{Form::text('peEditar',$datosper[0]->Peso,array('class'=>'form-control','placeholder'=>'Tipo peso') )}}
+                      {{Form::number('peEditar',$datosper[0]->Peso,array('class'=>'form-control','placeholder'=>'Tipo peso') )}}
                       @endif
                   </div>
                   <div class="input=-group col-md-4">

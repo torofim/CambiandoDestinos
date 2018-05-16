@@ -38,7 +38,7 @@ Route::get('/Login',function(){
 Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
   //Route::get('/',function(){return "yeah";});
   Route::get('/usuarios','usuarioscontroller@index')->name('usuarios');
-  Route::get('/archivos','archivoscontroller@index')->name('archivos');
+  Route::get('/archivos/{Id}','archivoscontroller@index')->name('archivos');
   Route::get('/estatus/{Id}','BooleanosController@index')->name('estatus');
   Route::get('/centrosalud/{Id}','Centro_saludcontroller@index')->name('centrosalud');
   Route::get('/datospersonales','datospersonalescontroller@index')->name('datospersonales');
