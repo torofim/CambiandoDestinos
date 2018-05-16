@@ -332,7 +332,7 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
             <a href="#section-hjjjj" style="font-size:1.5rem;">Comida caliente <img src="./img/logonavi.png" alt=""></a>
         </li>
         <li class="page-scroll">
-            <a href="#section-bhjbt" style="font-size:1.5rem;">taller <img src="./img/logonavi.png" alt=""></a>
+            <a href="#section-bhjbt" style="font-size:1.5rem;">Taller <img src="./img/logonavi.png" alt=""></a>
         </li>
         <li class="page-scroll">
             <a href="#section-sssi7" style="font-size:1.5rem;">Cultura <img src="./img/logonavi.png" alt=""></a>
