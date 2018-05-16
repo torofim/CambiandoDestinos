@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Validator;
 use App\Taller;
+use Illuminate\Support\Facades\Auth;
 class tallerController extends Controller
 {
     //

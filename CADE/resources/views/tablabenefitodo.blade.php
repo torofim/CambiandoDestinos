@@ -409,7 +409,7 @@
       @endforelse
     </tbody>
   </table>
-  <img class="navbar-brand img-responsive " src="{{asset('/img/archivos/'.Auth::user()->Foto_infantil)}}" style="margin-left:25%; width:80px;height:80px;margin-bottom:-2%;" >
+
 </div>
 </div>
  <button type="submit" onclick="location.href='/admin/reporte/{{$usu->Id_bene}}'" >Imprimir Reporte rosa</button>

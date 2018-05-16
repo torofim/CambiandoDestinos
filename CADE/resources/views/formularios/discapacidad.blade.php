@@ -117,9 +117,9 @@
     <div class="input=-group col-md-4">
       <label for="nombre">Tipo de Apoyo Requerido</label><br>
       @if(count($discap)==0)
-        {{Form::text('requiere','',array('class'=>'form-control','placeholder'=>' Apoyo ','required'=>'true') )}}
+        {{Form::text('tipoapoyo','',array('class'=>'form-control','placeholder'=>' Apoyo ','required'=>'true') )}}
         @else
-        {{Form::text('requiere',$discap[0]->Tipo_apoyo,array('class'=>'form-control','placeholder'=>' Apoyo ','required'=>'true') )}}
+        {{Form::text('tipoapoyo',$discap[0]->Tipo_apoyo,array('class'=>'form-control','placeholder'=>' Apoyo ','required'=>'true') )}}
         @endif
     </div>
     <div class="input-group col-md-12" style="margin-left:1.5%; padding-top:2%;margin-bottom:3%;">

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use Validator;
 use Illuminate\Http\Request;
 use App\comida;
+use Illuminate\Support\Facades\Auth;
 
 class comidacalienteController extends Controller{
     //class visitasController extends Controller

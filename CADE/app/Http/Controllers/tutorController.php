@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Validator;
 use App\Tutor;
+use Illuminate\Support\Facades\Auth;
 class tutorController extends Controller
 {
     //

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Validator;
 use App\booleano;
+use Illuminate\Support\Facades\Auth;
 
 class BooleanosController extends Controller
 {
