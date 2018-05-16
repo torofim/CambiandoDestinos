@@ -195,7 +195,7 @@
   </div>
   <div class="cold-md-12 info" >
     <h4 >Durante los años 2011 a 2015, la ciudad de Buenaventura no contaba con un centro de rehabilitación por lo que Fundacion
-    Cambiando Destinos presento el programa de centro de fisioterapia buenaventura (CEFIB). Una vez establecido un centro de rehabilitación por parte
+    Cambiando Destinos, A.C. presento el programa de centro de fisioterapia buenaventura (CEFIB). Una vez establecido un centro de rehabilitación por parte
   del municipio de Buenaventura, CEFIB cerro sus puertas.</h4>
   </div>
   <div class="col-md-12"style="margin-top:5%;margin-left:5%;" >
@@ -206,7 +206,7 @@
   </div>
   <div class="col-md-4 divhtex" ><p style="margin-top:20%;color:black;">Mario</p> <br>
     <p style="color:black;">Mario es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
-    cuando Fundación Cambiando Destinos abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
+    cuando Fundación Cambiando Destinos, A.C. abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
     juega futbol con sus companeros de la escuela</p> </div>
 
 </div>
@@ -218,7 +218,7 @@
 </div>
 <div class="col-md-4 divhtex" ><p style="margin-top:20%;color:black;">Chilito</p> <br><p style="color:black;">
   Chilito es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
-  cuando Fundación Cambiando Destinos abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
+  cuando Fundación Cambiando Destinos, A.C. abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
   juega futbol con sus companeros de la escuela</p> </div>
 </div>
 

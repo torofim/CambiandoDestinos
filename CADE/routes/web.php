@@ -65,7 +65,7 @@ Route::group(['prefix'=>'admin', 'as'=>'admin.'],function(){
 
   Route::get('/benef','datospersonalescontroller@index')->name('benef');
   Route::get('/registrados','regiscontroller@index')->name('registradosf');
-  Route::resource('reporte','reportecontroller');
+  Route::resource('reporte','reportecontroller@index');
   Route::resource('/graficos','graficoscontroller');
   Route::resource('dash','dashcontroller');
   Route::resource('beneficiarios','dashcontroller');

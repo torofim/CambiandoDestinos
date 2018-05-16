@@ -15,7 +15,7 @@
     </div>
     <div class="panel2 panel-default col-xs-12 ">
       <div class="panel-body2 col-xs-12" style="border-bottom:groove; background-color:transparent;">
-      <label class="titula col-xs-12">Fundación Cambiando Destinos</label>
+      <label class="titula col-xs-12">Fundación Cambiando Destinos, A.C.</label>
       </div>
     </div>
     <br>
@@ -24,7 +24,7 @@
       <div class="container-fluid">
           <div class="row">
             <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:transparent; height:15vh;">
-              <p style="border-bottom:groove; border-bottom-width:.5px;">Beneficiarios activos</p>
+              <p style="border-bottom:groove; border-bottom-width:.5px; font-size:2rem;">Beneficiarios activos</p>
               <p style="font-size:3.5rem;">
                 @forelse ($benef as $b)
                 {{ $b->total }}
@@ -33,7 +33,7 @@
               </p>
             </div>
             <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:transparent; height:15vh;">
-              <p style="border-bottom:groove; border-bottom-width:.5px;">Usuarios Activos</p>
+              <p style="border-bottom:groove; border-bottom-width:.5px; font-size:2rem;">Usuarios Activos</p>
               <p style="font-size:3.5rem;">
                 @forelse ($usuarios as $u)
                 {{ $u->usu }}
@@ -42,7 +42,7 @@
               </p>
             </div>
             <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6  " style="background-color:transparent; height:15vh;" >
-              <p style="border-bottom:groove; border-bottom-width:.5px;">Platos comida caliente</p>
+              <p style="border-bottom:groove; border-bottom-width:.5px; font-size:2rem;">Platos comida caliente</p>
               <p style="font-size:3.5rem;">
                 @forelse ($disc as $d)
                 {{ $d->disca }}
@@ -50,7 +50,7 @@
                 @endforelse</p>
             </div>
             <div class="panel panel-default2 col-md-3  col-sm-4 col-xs-6 " style="background-color:transparent; height:15vh;">
-              <p style="border-bottom:groove; border-bottom-width:.5px;">Talleres impartidos</p>
+              <p style="border-bottom:groove; border-bottom-width:.5px; font-size:2rem;">Talleres impartidos</p>
               <p style="font-size:3.5rem;">
                 @forelse ($taller as $t)
                 {{ $t->btaller }}
@@ -92,7 +92,7 @@
            </div>
            <div class="row">
              <table class="table table-condensed col-md-6 col-sm-8 col-xs-12" >
-               <p style="font-size:3rem;">Presión arterial(Hipertensión)</p>
+               <p style="font-size:3rem;">Presión arterial (Hipertensión)</p>
                <thead>
                  <td>Nombre</td>
                  <td>Apellido</td>

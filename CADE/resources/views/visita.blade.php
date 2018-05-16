@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Fundación Cambiando Destinos</title>
+  <title>Fundación Cambiando Destinos, A.C.</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -454,7 +454,7 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
         <div data-section="wrap" data-reverse="true">
             <div data-editable="box" data-reverse="true" id="edi-77bgg" data-draggable="true" data-uid="edi-77bgg" class="">
                 <div data-editable="text" id="edi-b7gdg" data-draggable="true" data-uid="edi-b7gdg" class="">
-                    <div style="font-family: Open Sans, sans-serif;  font-weight: 700; color:#313131;" class="text-content">Fundación Cambiando Destinos en sus visitas domiciliarias es donde proporciona atención personalizada en monitoreo crónico degenerativas mas comunes (presión arterial, glucosa), en aspectos cognitivos, emocinales, nutricionales e higiene. De octubre del 2011 a finales del 2016 se han logrado 9,112 visitas. ​
+                    <div style="font-family: Open Sans, sans-serif;  font-weight: 700; color:#313131;" class="text-content">Fundación Cambiando Destinos, A.C. en sus visitas domiciliarias es donde proporciona atención personalizada en monitoreo crónico degenerativas mas comunes (presión arterial, glucosa), en aspectos cognitivos, emocinales, nutricionales e higiene. De octubre del 2011 a finales del 2016 se han logrado 9,112 visitas. ​
                     </div>
                 </div>
                 <div data-editable="shapes:line" data-type="hline" id="edi-bdbdb" data-draggable="true" data-uid="edi-bdbdb" class="" style="height: auto;">
@@ -539,7 +539,7 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
             <div data-editable="box" data-reverse="true" id="edi-qzh7z" data-draggable="true" data-uid="edi-qzh7z" class="">
                 <div data-editable="text" id="edi-19f1q" data-draggable="true" data-uid="edi-19f1q" class="">
                     <div style="font-family: &quot;Open Sans&quot;, sans-serif; font-weight: 700;" class="text-content">
-                        <span style="">Fundación Cambiando Destinos brinda el apoyo de Comida Caliente al hogar del<span style="font-size: 16px;"> beneficiario un día a la semana. Los alimentos son preparados adecuadamente y enfocado al beneficiario.</span></span>
+                        <span style="">Fundación Cambiando Destinos, A.C. brinda el apoyo de Comida Caliente al hogar del<span style="font-size: 16px;"> beneficiario un día a la semana. Los alimentos son preparados adecuadamente y enfocado al beneficiario.</span></span>
                         <div>
                             <span style=""><br /></span>
                             <div>

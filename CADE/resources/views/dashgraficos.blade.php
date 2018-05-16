@@ -16,7 +16,7 @@
 
         </div>
         <div class="panel2 panel-default col-xs-12 ">
-          <div class="panel-body2 titula" style="border-bottom:groove; background-color:transparent;">Fundacion Cambiando Destinos</div>
+          <div class="panel-body2 titula" style="border-bottom:groove; background-color:transparent;">Fundacion Cambiando Destinos, A.C.</div>
         </div>
 <p>
  <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">

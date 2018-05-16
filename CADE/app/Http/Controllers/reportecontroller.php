@@ -19,19 +19,21 @@ class reportecontroller extends Controller
     ->orderby('Id_bene','desc')
     //->take(10)
     ->get();
+
   //  dd($registrosr1);
     $registros2=\DB::table('discapacidad')
     ->where('Id_bene','=',$Id)
     ->orderby('Id_bene','desc')
   //->take(10)
     ->get();
+
 //  dd($registros);
     $registros3=\DB::table('evaluacion')
     ->where('Id_bene','=',$Id)
     ->orderby('Id_bene','desc')
 //->take(10)
     ->get();
-      //dd($registros3);
+
       $registros4=\DB::table('tutor')
       ->where('Id_bene','=',$Id)
       ->orderby('Id_bene','desc')
@@ -62,7 +64,12 @@ class reportecontroller extends Controller
       ->orderby('Id_bene','desc')
       //->take(10)
       ->get();
-
+    //  dd($registros9);
+    $registros10=\DB::table('estatus')
+    ->where('Id_bene','=',$Id)
+    ->orderby('Id_bene','desc')
+    //->take(10)
+    ->get();
     return view('/reporte')
       ->with('Id_bene',$Id)
       ->with('datosper1',$registrosr1)
@@ -73,7 +80,10 @@ class reportecontroller extends Controller
       ->with('perros6',$registros6)
       ->with('perros7',$registros7)
       ->with('perros8',$registros8)
-      ->with('perros9',$registros9);
+      ->with('perros9',$registros9)
+      ->with('perros10',$registros10);
+
+
 
   }
 }

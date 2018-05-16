@@ -99,7 +99,7 @@
 									</div>
 									<div class="col-md-5"style="margin-left:3%;"><p style="text-align:center;margin-top:30%;color:black;">Mario</p> <br>
 										<p style="color:black;">Mario es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
-										cuando Fundación Cambiando Destinos abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
+										cuando Fundación Cambiando Destinos, A.C. abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
 										juega futbol con sus companeros de la escuela</p> </div>
 								</div>
 								<div class="col-md-6 contenido" style="margin-left:-1%; ">
@@ -110,7 +110,7 @@
 								</div>
 									<div class="col-md-5" style="margin-left:3%;"><p style="text-align:center;margin-top:30%;color:black;">Chilito</p> <br><p style="color:black;">
 										Chilito es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
-										cuando Fundación Cambiando Destinos abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
+										cuando Fundación Cambiando Destinos, A.C. abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
 										juega futbol con sus companeros de la escuela</p> </div>
             </div>
         </div>

@@ -13,7 +13,7 @@
       <br>
       <div class="panel2 panel-default col-xs-12 ">
         <div class="panel-body2 col-xs-12" style="border-bottom:groove; background-color:transparent;">
-          <label class="titula col-xs-12">Fundación Cambiando Destinos</label>
+          <label class="titula col-xs-12">Fundación Cambiando Destinos, A.C.</label>
         </div>
       </div>
       <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:100%;">

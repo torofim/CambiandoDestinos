@@ -24,12 +24,11 @@
       @endif
       <li ><a href="/admin/benef">Beneficiarios<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-leaf"></span></a></li>
       <li ><a href="/admin/visitacomida">Visita y Comida<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span></a></li>
-      <li ><a href="/admin/graficos">Graficos<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span></a></li>
-      <li><a href="/admin/formularios">Formularios y reportes<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span></a></li>
+      <li ><a href="/admin/graficos">Gráficos<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span></a></li>
       <li ><a href="/admin/inventario">Inventario<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span></a></li>
       <li ><a href="/admin/taller">Talleres<span style="font-size:16px;" class="pull-right hidden-xs showopacity glyphicon glyphicon-list-alt"></span></a></li>
       <li><a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" >
-                  Cerrar sesion
+                  Cerrar sesión
               </a>
 
               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

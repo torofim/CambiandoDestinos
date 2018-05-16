@@ -454,7 +454,7 @@ margin-top:75%;
 .tdtutor{
   font-size:2Rem;
   position:absolute;
-  margin-left: 41%;
+  margin-left: 40%;
   font-weight:bold;
   margin-top:170%;
 }
@@ -481,41 +481,78 @@ margin-top:75%;
 .apellidost2{
   position:absolute;
   margin-left: 60%;
-  margin-top:177%;
+  margin-top:174%;
 }
 .ttutor{
   position:absolute;
-  margin-left:0%;
-  margin-top:182%;
+  margin-left:55%;
+  margin-top:174%;
 }
 .radiotutor{
   position:absolute;
-  margin-left:0%;
-  margin-top:185%;
+  margin-left:55%;
+  margin-top:177%;
 }
 .texttutor{
   position:absolute;
   margin-left:0%;
-  margin-top:188%;
-  margin-left:15%;
+  margin-top:179%;
+  margin-left:65%;
 }
 .tcurp{
   position:absolute;
   margin-left:0%;
-  margin-top:193%;
+  margin-top:182%;
 }
 .curptutor{
   position:absolute;
   margin-left:0%;
-  margin-top:196%;
+  margin-top:186%;
 }
 .trfc{
   position:absolute;
   margin-left:30%;
-  margin-top:193%;
+  margin-top:182%;
 }
 .rfctutor{
   position:absolute;
   margin-left:30%;
-  margin-top:196%;
+  margin-top:186%;
+}
+.thabitos{
+  position:absolute;
+  margin-left:37%;
+  margin-top:194%;
+  font-weight:bold;
+  font-size:2Rem;
+}
+.tdiario{
+  position:absolute;
+  margin-left:0%;
+  margin-top:200%;
+}
+.diario{
+  position:absolute;
+  margin-left:0%;
+  margin-top:204%;
+}
+.tconvive{
+  position:absolute;
+  margin-left:30%;
+  margin-top:200%;
+}
+.convive{
+  position:absolute;
+  margin-left:30%;
+  margin-top:204%;
+}
+.tantecedentes{
+  position:absolute;
+  margin-left:57%;
+  margin-top:184%;
+}
+.antecedentes{
+  position:absolute;
+  margin-left:57%;
+  margin-top:187%;
 }
