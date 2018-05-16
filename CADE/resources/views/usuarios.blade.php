@@ -109,7 +109,7 @@
                       {{Form::file('Imagen',array('class'=>'form-control','placeholder'=>'Imagen') )}}
                     </div>
                     <div class="input=-group col-md-12" >
-                      <label for="">Nivel</label><br>
+                      <label for="" >Nivel</label><br>
                       {{Form::select('Nivel',
                       array('admin'=>'Administrador','Trabajador'),
                       array('class'=>'form-control',

@@ -7,6 +7,7 @@ use App\Http\Controllers\Controller;
 use Validator;
 use App\Entrega_inventario;
 use App\Inventario;
+use Illuminate\Support\Facades\Auth;
 
 class entregasinvController extends Controller
 {
@@ -55,7 +56,7 @@ class entregasinvController extends Controller
           ->withErrors($validator);
       }else{
         Entrega_inventario::create([
-          
+
           'Id_bene'=>$req->idin,
           'Nombre_bene'=>$req->nombrebene,
           'Articulo_entregado'=>$req->articulo,

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use Validator;
 use App\Evaluacion;
+use Illuminate\Support\Facades\Auth;
 
 class EvaluacionController extends Controller
 {
@@ -29,7 +30,7 @@ class EvaluacionController extends Controller
 
       $validator =Validator::make($req->all(),[
         'examen'=>'required|max:255',
-        
+
         'puntuacion'=>'required|max:255',
       ]);
       if($validator->fails()){

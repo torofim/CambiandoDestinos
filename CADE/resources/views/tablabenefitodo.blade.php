@@ -43,7 +43,7 @@
 
           </tr>
         @empty
-        <p>sin registro</p>
+        <p>Sin Registros</p>
         @endforelse
       </tbody>
 
@@ -72,7 +72,7 @@
 
         </tr>
       @empty
-      <p>sin registro</p>
+      <p>Sin Registros</p>
       @endforelse
     </tbody>
   </table>
@@ -106,7 +106,7 @@
 
           </tr>
         @empty
-        <p>sin registro</p>
+      <p>Sin Registros</p>
         @endforelse
       </tbody>
     </table>
@@ -136,7 +136,7 @@
 
 
         @empty
-        <p>sin registro</p>
+        <p>Sin Registros</p>
         @endforelse
       </tbody>
     </table>
@@ -166,7 +166,7 @@
 
           </tr>
         @empty
-        <p>sin registro</p>
+        <p>Sin Registros</p>
         @endforelse
       </tbody>
     </table>
@@ -199,7 +199,7 @@
 
           </tr>
         @empty
-        <p>sin registro</p>
+        <p>Sin Registros</p>
         @endforelse
       </tbody>
     </table>
@@ -222,12 +222,11 @@
           <td>{{$usu->Requiere_apoyo_funcional}}</td>
           <td>{{$usu->Tipo_apoyo}}</td>
           <td></td>
-          <td></td>
 
 
           </tr>
         @empty
-        <p>sin registro</p>
+        <p>Sin Registros</p>
         @endforelse
       </tbody>
     </table>
@@ -254,7 +253,7 @@
 
           </tr>
         @empty
-        <p>sin registro</p>
+        <p>Sin Registros</p>
         @endforelse
       </tbody>
     </table>
@@ -281,7 +280,7 @@
 
           </tr>
         @empty
-        <p>sin registro</p>
+        <p>Sin Registros</p>
         @endforelse
       </tbody>
     </table>
@@ -308,7 +307,7 @@
 
           </tr>
         @empty
-        <p>sin registro</p>
+        <p>Sin Registros</p>
         @endforelse
       </tbody>
     </table>
@@ -335,26 +334,11 @@
 
           </tr>
         @empty
-        <p>sin registro</p>
+        <p>Sin Registros</p>
         @endforelse
       </tbody>
     </table>
-    <tbody id="tbody">
-      <tr>
-        @forelse($perros4 as $usu)
-        <td>{{$usu->Antecedentes}}</td>
-        <td>{{$usu->Telefono}}</td>
-        <td></td>
-        <td></td>
-        <td></td>
 
-
-        </tr>
-      @empty
-      <p>sin registro</p>
-      @endforelse
-    </tbody>
-  </table>
   <table class="table table-condensed col-md-12" style="margin-left:0%;">
     <p>Comida Caliente</p>
     <thead>
@@ -378,7 +362,7 @@
 
         </tr>
       @empty
-      <p>sin registro</p>
+      <p>Sin Registros</p>
       @endforelse
     </tbody>
   </table>
@@ -401,17 +385,24 @@
         <td>{{$usu->Fecha}}</td>
         <td>{{$usu->Tipo_de_visita}}</td>
         <td>{{$usu->Notas}}</td>
-        <td> </td>
+
 
         </tr>
       @empty
-      <p>sin registro</p>
+      <p>Sin Registros</p>
       @endforelse
     </tbody>
   </table>
-  <img class="navbar-brand img-responsive " src="{{asset('/img/archivos/'.Auth::user()->Foto_infantil)}}" style="margin-left:25%; width:80px;height:80px;margin-bottom:-2%;" >
+
 </div>
 </div>
- <button type="submit" onclick="location.href='/admin/reporte/{{$usu->Id_bene}}'" >Imprimir Reporte rosa</button>
+ <button type="submit" onclick="location.href='/admin/reporte/{{$usu->Id_bene}}'"
+    style="height:60px;width:180px;background-color:green;margin-top:10%;margin-left:85%;">Imprimir Reporte </button>
 
   </div>
+
+  <style media="screen">
+    p{
+      font-size: 30px;
+    }
+  </style>

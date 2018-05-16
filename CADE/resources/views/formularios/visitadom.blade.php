@@ -22,7 +22,13 @@
 
     {!!Form::open(array('route'=>['admin.visitadom.store','0'],'method'=>'POST'))!!}
     <div class="input=-group col-md-4">
-      <label for="nombre">Nombre</label><br>
+      <label for="nombre">Nombre Beneficiario</label><br>
+
+        {{Form::text('nombreb','',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}
+
+    </div>
+    <div class="input=-group col-md-4">
+      <label for="nombre">Nombre Trabajador</label><br>
 
         {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Nombre','required'=>'true') )}}
 

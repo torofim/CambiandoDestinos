@@ -106,7 +106,7 @@
                    <td>{{$y->apellido_p}}</td>
                    <td>{{$y->apellido_m}}</td>
                    <td>{{$y->hipertension}}</td>
-                   <td><a data-toggle="modal" href="#myModal" class="btn btn-primary btn-s">Historial</a>
+                   <td><a data-toggle="modal" href="#myModal"  class="btn btn-primary btn-s">Historial</a>
                      <div class="modal fade" id="myModal">
                        <div class="modal-dialog">
                          <div class="modal-content">
