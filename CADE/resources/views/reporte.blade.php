@@ -186,7 +186,7 @@
           </div>
 
 
-            @if(count($perros2)=='')
+            @if(count($perros9)=='')
             <div class="audvis">
               <label for=""><input class="" type="radio" name="1" value="Auditiva">Auditiva</label>
               <br>
@@ -882,6 +882,7 @@
 
 <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
 <script type="text/javascript">
+
 var today = new Date();
 var dd = today.getDate();
 var mm = today.getMonth()+1; //January is 0!
@@ -905,8 +906,10 @@ function imprimir(elemento){
   var  respaldo=$('body').html();
   var div=$("#"+elemento).clone();
   $('body').empty().html(div);
+
   window.print();
   $('body').html(respaldo);
+
 }
 $(document).ready(function(){
   imprimir('Todo');
