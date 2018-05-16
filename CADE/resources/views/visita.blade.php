@@ -1,22 +1,25 @@
-<!DOCTYPE html SYSTEM "about:legacy-compat">
-<html xml:lang="eng" dir="ltr">
-<head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
-  <title>Fundación Cambiando Destinos</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-  <link rel="stylesheet" type="text/css" href="./css/paginas.css">
-  <meta name="msapplication-TileColor" content="#ff0000">
-  <meta name="theme-color" content="#ffffff">
-  <link rel="stylesheet" href="https://turntostone1996_81e2.gr8.com/images/lps/css/reset.css?timestamp=20092017">
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html xml:lang="" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="./css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="./css/estilos.css">
+	<link href="./css/main.css" type="text/css" rel="stylesheet">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>FundaciónCambiandoDestinos</title>
   <link rel="stylesheet" href="https://turntostone1996_81e2.gr8.com/images/lps/css/core.css?timestamp=20092017">
   <link rel="stylesheet" href="https://turntostone1996_81e2.gr8.com/images/lps/css/webform.css?timestamp=20092017">
   <link rel="stylesheet" href="https://turntostone1996_81e2.gr8.com/images/common/templates/landing/254/1/css/style.css">
-<style id="def-mark" type="text/css">
+  <style id="def-mark" type="text/css">
+  section#section-8ha8r [data-section="wrap"] { width: 980px; }
+section#section-8ha8r { z-index: 2; }
+section#section-pqpph [data-section="wrap"] { width: 980px; }
+section#section-pqpph { z-index: 2; }
+section#section-8585o [data-section="wrap"] { width: 980px; }
+section#section-8585o { z-index: 2; }
 div#edi-jtmtt .text-content { font-size: 36px; font-weight: normal; font-style: normal; font-family: "Source Sans Pro", sans-serif; color: rgb(0, 0, 0); text-shadow: rgb(49, 49, 49) 0px 3px 2px; }
 section#section-jjssm [data-section="wrap"] { width: 980px; }
 section#section-jjssm { z-index: 2; }
@@ -41,7 +44,7 @@ div#edi-ii927 { height: auto; width: 853.949px; top: 430.034px; left: 15.3267px;
 div#edi-19f1q { top: 329px; left: 28px; width: 861px; height: auto; z-index: 2; transform-origin: 0px 0px 0px; }
 div#edi-qzh7z { top: 19.0342px; left: 30.8182px; width: 917px; height: 560px; box-shadow: rgba(0, 0, 0, 0.07) 0px 15px 30px 0px; z-index: 2; transform-origin: 0px 0px 0px; }
 div#edi-jtmtt { top: 32.0085px; width: 460px; height: auto; z-index: 2; left: 259.818px; transform-origin: 0px 0px 0px; }
-div#edi-l39jb { top: 11.0227px; width: 492px; height: auto; z-index: 2; left: 243.818px; transform-origin: 0px 0px 0px; }
+div#edi-l39jb { top: 203.009px; width: 613px; height: auto; z-index: 2; left: 48.0028px; transform-origin: 0px 0px 0px; }
 section#section-599w7 [data-section="wrap"] { width: 980px; }
 section#section-599w7 { z-index: 2; }
 section#section-h7q9j [data-section="wrap"] { width: 980px; }
@@ -50,7 +53,7 @@ section#section-iij7i [data-section="wrap"] { width: 980px; }
 section#section-iij7i { z-index: 2; }
 section#section-8ddhd [data-section="wrap"] { width: 980px; }
 section#section-8ddhd { z-index: 2; }
-div#edi-mzzz0 { top: 267.011px; left: -75.9972px; width: 861px; height: auto; z-index: 2; transform-origin: 0px 0px 0px; }
+div#edi-mzzz0 { top: 333.02px; left: 45px; width: 863px; height: auto; z-index: 2; transform-origin: 0px 0px 0px; text-align: left; }
 div#edi-7mhmm img { width: 97px; height: 85px; left: 0px; top: 0px; }
 div#edi-7mhmm { visibility: visible; width: 96.8892px; height: 72.1733px; background: url("https://multimedia.getresponse.com/getresponse-h87Rp/photos/666714604.jpg?_ga=2.95077468.1367688246.1526356372-335864284.1526356372") 0px 0px / 97px no-repeat; top: 15.04px; left: 866.818px; transform-origin: 0px 0px 0px; z-index: 2; }
 div#edi-7yh7c { visibility: visible; width: 275px; height: auto; top: 66.04px; left: 580.818px; transform-origin: 0px 0px 0px; z-index: 2; }
@@ -63,9 +66,9 @@ div#edi-hoiju { height: auto; width: 865.98px; top: 422px; left: 19px; z-index: 
 section#section-jh1jj [data-section="wrap"] { width: 980px; }
 section#section-jh1jj { z-index: 2; }
 div#edi-hr8j8 img { width: 315px; height: 245px; top: 0px; left: 3px; }
-div#edi-hr8j8 { background: url("https://multimedia.getresponse.com/getresponse-h87Rp/photos/666716104.jpg?_ga=2.65597422.1367688246.1526356372-335864284.1526356372") 3px 0px / 315px no-repeat; top: 16.0029px; left: 192.003px; width: 325px; height: 219.148px; z-index: 2; transform-origin: 0px 0px 0px; }
+div#edi-hr8j8 { background: url("https://multimedia.getresponse.com/getresponse-h87Rp/photos/666716104.jpg?_ga=2.65597422.1367688246.1526356372-335864284.1526356372") 3px 0px / 315px no-repeat; top: -45.9915px; left: 192.003px; width: 325px; height: 219.148px; z-index: 2; transform-origin: 0px 0px 0px; }
 div#edi-5j5jj { top: 172.009px; left: 200px; width: 328px; height: auto; z-index: 2; text-align: center; transform-origin: 0px 0px 0px; }
-div#edi-5jjj5 { top: 73.0227px; left: 134.818px; width: 710px; height: 321px; z-index: 2; transform-origin: 0px 0px 0px; }
+div#edi-5jjj5 { top: 73.02px; left: 134.818px; width: 710px; height: 321px; z-index: 2; transform-origin: 0px 0px 0px; }
 section#section-bhjbt [data-section="wrap"] { width: 980px; }
 section#section-bhjbt { background-color: rgb(240, 240, 240); height: 512px; visibility: visible; top: auto; left: auto; position: relative; z-index: 2; }
 div#edi-m7m7d { top: 368.006px; width: 460px; height: auto; z-index: 2; left: 236.009px; transform-origin: 0px 0px 0px; }
@@ -194,8 +197,8 @@ div#edi-b2l55 img { width: 81px; height: 67px; }
 div#edi-b2l55 { top: 42px; left: 122px; width: 81px; height: 67px; background: url("https://app.getresponse.com/images/common/templates/landing/254/1/img/254_08.png") 0px 0px / 81px no-repeat; }
 div#edi-70bbh { top: 140px; left: 45px; width: 222px; height: auto; }
 div#edi-1oyob img { width: 457px; height: 343px; top: 0px; left: 0px; }
-div#edi-1oyob { width: 459.972px; height: 259.986px; background: url("https://multimedia.getresponse.com/getresponse-h87Rp/photos/667120104.jpg?_ga=2.69962960.1367688246.1526356372-335864284.1526356372") 0px 0px / 457px no-repeat; z-index: 2; top: 40.0057px; left: 218.009px; transform-origin: 0px 0px 0px; }
-div#edi-7y7yj { top: 327.006px; width: 460px; height: auto; z-index: 2; left: 225.009px; transform-origin: 0px 0px 0px; }
+div#edi-1oyob { width: 459.972px; height: 259.986px; background: url("https://multimedia.getresponse.com/getresponse-h87Rp/photos/667120104.jpg?_ga=2.69962960.1367688246.1526356372-335864284.1526356372") 0px 0px / 457px no-repeat; z-index: 2; top: 18.0057px; left: 225.009px; transform-origin: 0px 0px 0px; }
+div#edi-7y7yj { top: 293.006px; width: 460px; height: auto; z-index: 2; left: 225.009px; transform-origin: 0px 0px 0px; }
 div#edi-x71jx .inner-line { height: auto; }
 div#edi-x71jx { width: 864.972px; height: auto; top: 389.006px; left: 11.0085px; z-index: 2; transform-origin: 0px 0px 0px; }
 div#edi-b1j7x .inner-line { height: auto; }
@@ -209,7 +212,7 @@ div#edi-7uc1b { top: 342px; width: 460px; height: auto; }
 div#edi-u1u5u .inner-line { height: auto; }
 div#edi-u1u5u { width: 421px; height: auto; top: 388px; left: 15px; }
 div#edi-h7tt5 { top: 409px; left: 40px; width: 370px; height: auto; }
-div#edi-575bh { top: 166px; left: 100.818px; width: 806px; height: auto; z-index: 2; transform-origin: 0px 0px 0px; }
+div#edi-575bh { top: 166px; left: 1px; width: 978px; height: auto; z-index: 2; transform-origin: 0px 0px 0px; }
 section#section-jxjbj [data-section="wrap"] { width: 980px; }
 section#section-jxjbj { height: 97px; background-color: rgb(195, 193, 193); z-index: 2; background-image: none; }
 section#section-hjjjj [data-section="wrap"] { width: 980px; }
@@ -224,7 +227,12 @@ section#section-hthj7 [data-section="wrap"] { width: 980px; }
 section#section-hthj7 { z-index: 2; }
 div#edi-575bh .text-content { text-shadow: rgb(106, 96, 96) 0px 3px 2px; }
 div#edi-19f1q .text-content { color: rgb(255, 255, 255); }
-div#edi-h6jj9 .text-content { text-shadow: rgb(174, 157, 157) 0px 3px 2px; }</style><style id="def-mark-hover" type="text/css" disabled="true"></style><style id="def-mark-phone" type="text/css" media="only screen and (max-width: 600px)">section#section-jjssm [data-section="wrap"] { width: 400px; }
+div#edi-h6jj9 .text-content { text-shadow: rgb(174, 157, 157) 0px 3px 2px; }
+</style>
+<style id="def-mark-hover" type="text/css" disabled="true">
+</style>
+<style id="def-mark-phone" type="text/css" media="only screen and (max-width: 600px)">
+section#section-jjssm [data-section="wrap"] { width: 400px; }
 section#section-jxjbj { height: 137px; }
 div#edi-7yh7c { top: 102px; left: 62.5px; width: 275px; text-align: center; }
 div#edi-7mhmm { -webkit-transform: scale(1);-moz-transform: scale(1);-ms-transform: scale(1);transform: scale(1); transform-origin: 0px 0px 0px; top: 15px; left: 151.5px; }
@@ -299,41 +307,46 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
 [hidden-on-phone="true"] { display: none; }
 </style>
 <!-- End Getresponse Analytics -->
-</div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <nav class="navbar navbar-default navbar-fixed-top">
-  	  <a class="navbar-brand" href="/" style="font-size:1rem;">Fundación Cambiando Destinos, A.C.</a>
-  	  <div class="containerarriba">
-  	      <div class="navbar-header page-scroll">
-  	          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-  	              <span class="sr-only">Toggle navigation</span>
-  	              <span class="icon-bar"></span>
-  	              <span class="icon-bar"></span>
-  	              <span class="icon-bar"></span>
-  	          </button>
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav navbar-right">
-                <li class="page-scroll">
-                    <a href="#section-7i1hi" style="font-size:1rem;">Cambiando Destinos<img src="./img/logonavi.png" alt=""></a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#section-be77e" style="font-size:1rem;">Visitas<img src="./img/logonavi.png" alt=""></a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#section-hjjjj" style="font-size:1rem;">Comida caliente <img src="./img/logonavi.png" alt=""></a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#section-bhjbt" style="font-size:1rem;">taller <img src="./img/logonavi.png" alt=""></a>
-                </li>
-                <li class="page-scroll">
-                    <a href="#section-sssi7" style="font-size:1rem;">Cultura <img src="./img/logonavi.png" alt=""></a>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </div>
-    <!-- /.container-fluid -->
-  </nav>
+<nav class="navbar navbar-default navbar-fixed-top ">
+  <a class="navbar-brand nombre" href="/" >Fundación Cambiando Destinos, A.C.</a>
+  <div class="containerarriba">
+      <div class="navbar-header page-scroll">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+
+      </div>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+        <li class="page-scroll">
+            <a href="#section-7i1hi" style="font-size:1.5rem;">Cambiando Destinos<img src="./img/logonavi.png" alt=""></a>
+        </li>
+        <li class="page-scroll">
+            <a href="#section-be77e" style="font-size:1.5rem;">Visitas<img src="./img/logonavi.png" alt=""></a>
+        </li>
+        <li class="page-scroll">
+            <a href="#section-hjjjj" style="font-size:1.5rem;">Comida caliente <img src="./img/logonavi.png" alt=""></a>
+        </li>
+        <li class="page-scroll">
+            <a href="#section-bhjbt" style="font-size:1.5rem;">taller <img src="./img/logonavi.png" alt=""></a>
+        </li>
+        <li class="page-scroll">
+            <a href="#section-sssi7" style="font-size:1.5rem;">Cultura <img src="./img/logonavi.png" alt=""></a>
+        </li>
+        <li class="page-scroll">
+            <a href="#section-j0ccj" style="font-size:1.5rem;">Gestiones <img src="./img/logonavi.png" alt=""></a>
+        </li>
+    </ul>
+
+      </div>
+      <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container-fluid -->
+</nav>
 </head>
 <body xmlns="http://www.w3.org/1999/xhtml" marginwidth="0" marginheight="0" data-widget="arena" data-variant-id="0" id="body-ebjeb" data-uid="body-ebjeb" data-draggable="false" class="" data-viewing-mode="desktop" data-workspace-phone-width="400" data-optimize-phone="true" data-workspace-desktop-width="980"><div hidden="true" id="OPT">
         <form action="#" method="post">
@@ -344,8 +357,7 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
                 </select>
             </div>
         </form>
-    </div>
-    <section data-section="section" id="section-ibd57" data-uid="section-ibd57" class="" data-draggable="true">
+    </div><section data-section="section" id="section-ibd57" data-uid="section-ibd57" class="" data-draggable="true">
         <div data-section="wrap" data-reverse="true">
             <div data-editable="text" id="edi-575bh" data-uid="edi-575bh" class="" data-draggable="true">
                 <div style="font-family: 'Source Sans Pro', sans-serif;font-size:54px; font-weight:300; color:#fff;line-height:1.2;text-align: center;" class="text-content">
@@ -362,7 +374,7 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
         <div data-section="wrap" data-reverse="true">
             <div data-editable="box" data-reverse="true" id="edi-5wjww" data-uid="edi-5wjww" data-draggable="true" class="">
                 <div data-editable="text" id="edi-w1wbh" data-uid="edi-w1wbh" data-draggable="true" class="">
-                    <div style="font-family: Open Sans, sans-serif;  font-weight: 700; color:#313131;" class="text-content"><div><span style="font-weight: normal;">Somos una institución de iniciativa privada sin fin de lucro con responsabilidades culturales y sociales</span></div><div><span style="font-weight: normal;">en donde diseñamos y encausamos proyectos de unidad que desarrollen un cambio sustentable en integración y formación de niños, jóvenes, adultos y ancianos, en cultura educación y salud. </span></div></div>
+                    <div style="font-family: Open Sans, sans-serif;  font-weight: 700; color:#313131;" class="text-content"><span style="font-weight: 400;">Fundación cambiando destinos, A. C. nace el 4 de noviembre del 2010, la organización se dio a conocer en un evento en la ciudad de el paso, Texas, bajo el nombre de fundación pro-buenaventura donde tambien se presentó el programa centro de fisioterapia buenaventura (CEFIB). En noviembre del 2010 se logra rentar un inmueble y se comienza a amueblar, y el 16 de diciembre el CEFIB abre sus puertas.</span></div>
                 </div>
                 <div data-editable="shapes:line" data-type="hline" id="edi-b1j7x" data-uid="edi-b1j7x" data-draggable="true" class="" style="height: auto;">
                     <div style="border-top: 1px solid rgba(236,236,236,1.00); height: 0px;"></div>
@@ -383,8 +395,7 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
             <div class="component-marker">
             </div>
         </div>
-    </section>
-    <section data-section="section" id="section-75jj6" data-uid="section-75jj6" class="" data-draggable="true">
+    </section><section data-section="section" id="section-75jj6" data-uid="section-75jj6" class="" data-draggable="true">
         <div data-section="wrap" data-reverse="true">
             <div class="component-backdrop"></div>
             <div class="component-marker">
@@ -449,18 +460,17 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
                 </span></div>
             </div>
         </div>
-    </section>
-    <section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-be77e" data-draggable="true" data-uid="section-be77e" class="">
+    </section><section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-be77e" data-draggable="true" data-uid="section-be77e" class="">
         <div data-section="wrap" data-reverse="true">
             <div data-editable="box" data-reverse="true" id="edi-77bgg" data-draggable="true" data-uid="edi-77bgg" class="">
                 <div data-editable="text" id="edi-b7gdg" data-draggable="true" data-uid="edi-b7gdg" class="">
                     <div style="font-family: Open Sans, sans-serif;  font-weight: 700; color:#313131;" class="text-content">Fundación Cambiando Destinos en sus visitas domiciliarias es donde proporciona atención personalizada en monitoreo crónico degenerativas mas comunes (presión arterial, glucosa), en aspectos cognitivos, emocinales, nutricionales e higiene. De octubre del 2011 a finales del 2016 se han logrado 9,112 visitas. ​
                     </div>
                 </div>
-                <div data-editable="shapes:line" data-type="hline" id="edi-bdbdb" data-draggable="true" data-uid="edi-bdbdb" class="" style="height: auto;">
+                <div data-editable="shapes:line" data-type="hline" id="edi-bdbdb" data-draggable="true" data-uid="edi-bdbdb" style="height: auto;">
                     <div style="border-top: 1px solid rgba(236,236,236,1.00); height: 0px;"></div>
                 </div>
-                <div data-editable="shapes:line" data-type="hline" id="edi-7djjj" data-draggable="true" data-uid="edi-7djjj" class="" style="height: auto;">
+                <div data-editable="shapes:line" data-type="hline" id="edi-7djjj" data-draggable="true" data-uid="edi-7djjj" style="height: auto;">
                     <div style="border-top: 1px solid rgba(236,236,236,1.00); height: 0px;"></div>
                 </div>
                 <div data-editable="multimedia:image" id="edi-kd7k7" data-draggable="true" data-uid="edi-kd7k7" class="" style="background: none;">
@@ -476,11 +486,9 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
             <div class="component-marker">
             </div>
         </div>
-    </section>
-    <section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-bhjbt" data-draggable="true" data-uid="section-bhjbt" class="">
+    </section><section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-bhjbt" data-draggable="true" data-uid="section-bhjbt" class="">
         <div data-section="wrap" data-reverse="true">
-            <div class="component-backdrop">
-            </div>
+            <div class="component-backdrop"><span class="drop-info">Attach to Sección 5<span></span></span></div>
             <div class="component-marker">
             </div>
             <div data-editable="box" data-reverse="true" id="edi-5jjj5" data-draggable="true" data-uid="edi-5jjj5" class="">
@@ -491,19 +499,17 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
                 <div data-editable="multimedia:image" id="edi-hr8j8" data-draggable="true" data-uid="edi-hr8j8" class="" style="background: none;">
 
                 <img src="https://multimedia.getresponse.com/getresponse-h87Rp/photos/666716104.jpg?_ga=2.65597422.1367688246.1526356372-335864284.1526356372" alt="/" width="315" height="245" /></div>
-                <div data-editable="text" id="edi-mzzz0" data-draggable="true" data-uid="edi-mzzz0" class="">
-                    <div style="font-family: Open Sans, sans-serif;  font-weight: 700; color:#313131;" class="text-content">Talleres semanales, en los cuales se impartían platicas y dinámicas para los adultos, ademas de realizar monitoreos de presión arterial, glucosa, peso y talla, se realizaban dinámicas para calentamiento físico, se les realizaban terapias cognitivas(ejercicios didácticos,  etc.), al termino de  la terapia se realiza la convivencia(comida).
-                    </div>
-                </div>
-            </div>
-            <div data-editable="text" id="edi-l39jb" data-draggable="true" data-uid="edi-l39jb" class="">
+
+            <div data-editable="text" id="edi-l39jb" data-draggable="true" data-uid="edi-l39jb" class="selected-component hover resizing-mode">
                 <div style="font-family: 'Source Sans Pro', sans-serif; font-size: 34px; font-weight: 100; text-align: center; color:#313131;line-height: 1.1;" class="text-content">
                         Aprendiendo a vivir en la tercera edad
                 </div>
-            </div>
-        </div>
-    </section>
-    <section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-j0ccj" data-draggable="true" data-uid="section-j0ccj" class="">
+            </div></div>
+
+        <div data-editable="text" id="edi-mzzz0" data-draggable="true" data-uid="edi-mzzz0" class="">
+                    <div style="font-family: Open Sans, sans-serif;  font-weight: 700; color:#313131;" class="text-content">Consistía en talleres semanales impartidos por personal con la capacitación adecuada , en los cuales se impartían platicas y dinámicas para los adultos, ademas de realizar monitoreos de presión arterial, glucosa, peso y talla, se realizaban dinámicas para calentamiento físico, se les realizaban terapias cognitivas(ejercicios didácticos,  etc.), al termino de  la terapia se realiza la convivencia(comida). <span style="font-size: 16px;">De octubre de 2011 a finales del 2016 se han impartido 239 talleres. Logrando atención personalizada a 136 adultos mayores.</span></div>
+                </div></div>
+    </section><section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-j0ccj" data-draggable="true" data-uid="section-j0ccj" class="">
         <div data-section="wrap" data-reverse="true">
             <div data-editable="box" data-reverse="true" id="edi-jehzj" data-draggable="true" data-uid="edi-jehzj" class="">
                 <div data-editable="text" id="edi-ejje0" data-draggable="true" data-uid="edi-ejje0" class="">
@@ -530,8 +536,7 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
             <div class="component-marker">
             </div>
         </div>
-    </section>
-    <section data-section="section" id="section-hjjjj" data-uid="section-hjjjj" class="" data-draggable="true">
+    </section><section data-section="section" id="section-hjjjj" data-uid="section-hjjjj" class="" data-draggable="true">
         <div data-section="wrap" data-reverse="true">
             <div class="component-backdrop"></div>
             <div class="component-marker">
@@ -565,8 +570,7 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
                 <img src="https://multimedia.getresponse.com/getresponse-h87Rp/photos/666708104.jpg?_ga=2.97683679.1367688246.1526356372-335864284.1526356372" alt="/" width="463" height="261" /></div>
             </div>
         </div>
-    </section>
-    <section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-sssi7" data-draggable="true" data-uid="section-sssi7" class="">
+    </section><section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-sssi7" data-draggable="true" data-uid="section-sssi7" class="">
         <div data-section="wrap" data-reverse="true">
             <div data-editable="box" data-reverse="true" id="edi-iiu9u" data-draggable="true" data-uid="edi-iiu9u" class="">
                 <div data-editable="text" id="edi-v7v2v" data-draggable="true" data-uid="edi-v7v2v" class="">
@@ -596,8 +600,7 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
             <div class="component-marker">
             </div>
         </div>
-    </section>
-    <section data-section="section" id="section-jxjbj" data-uid="section-jxjbj" class="" data-draggable="true">
+    </section><section data-section="section" id="section-jxjbj" data-uid="section-jxjbj" class="" data-draggable="true">
         <div data-section="wrap" data-reverse="true">
             <div class="component-backdrop">
             </div>
@@ -613,13 +616,12 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
             </div>
         </div>
     </section>
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"ee0b9c04dc","applicationID":"57569376","transactionName":"NQQGNhBXV0BZVkJdDgxOJxcRQlZeF3hZUDITFAEHGFNpUl9QDA4yCg4TQk8IGVpWUVNMTwoVCQ4=","queueTime":0,"applicationTime":178,"atts":"GUMFQFhNRE4=","errorBeacon":"bam.nr-data.net","agent":""}
-</script>
 </body>
-<script src="https://us-as.gr-cdn.com/javascripts/core/lps/dist/manifest.9d4672b52ac1513b67cc.js">
-</script>
-<script src="https://us-as.gr-cdn.com/javascripts/core/lps/dist/vendor.c0a92e2fb8d5ae074033.js">
-</script>
-<script src="https://us-as.gr-cdn.com/javascripts/core/lps/dist/show.c1c6de56a5e47e9cf1a3.js">
-</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/jquery.scrollme.js"></script>
+<script src="js/jquery.scrollme.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/javascript.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </html>

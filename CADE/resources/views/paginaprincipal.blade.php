@@ -179,23 +179,11 @@
 						</div>
 				</div>
 		</section>
-
-
-
-
-
-
-
 		<section class="success1"   >
 					<div class="col-lg-12 hidden-xs text-center" id="galeria" style="margin-top:5%;" >
 							<h2>Galería</h2>
 						</div>
-
-
-
     </section>
-
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/jquery.scrollme.js"></script>

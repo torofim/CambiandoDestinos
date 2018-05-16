@@ -132,7 +132,7 @@
     QUE DESARROLLEN UN CAMBIO SUSTENTABLE EN LA INTEGRACION
     Y FORMACION DE NINOS, JOVENES, ADULTOS Y ANCIANOS, EN CULTURA
     EDUCACION Y SALUD.</p>
-  <p style="margin-left:65%;margin-top:10%;"><a class="btn btn-primary btn-lg boton" href="/informacion" role="button"  style="background-color:green;">Conoce Mas</a></p>
+  <p style="margin-left:65%;margin-top:10%;"><a class="btn btn-primary btn-lg boton" href="/informacion#section-7i1hi" role="button"  style="background-color:green;">Conoce Mas</a></p>
 </div>
 </div>
 </div>
@@ -151,31 +151,31 @@
   <div class="accordion" >
   <ul>
     <li>
-      <div> <a href="/informacion#">
+      <div> <a href="/informacion#section-be77e">
         <h2>Visita Domiciliaria</h2>
         <p id="conoce">Conoce Mas</p>
         </a> </div>
     </li>
     <li>
-      <div> <a href="/informacion#">
+      <div> <a href="/informacion#section-bhjbt">
         <h2>Aprendiendo a Vivir en la 3ra Edad</h2>
         <p id="conoce">Conoce Mas</p>
         </a> </div>
     </li>
     <li>
-      <div> <a href="/informacion#">
+      <div> <a href="/informacion#section-sssi7">
         <h2>Taller de Musica</h2>
         <p id="conoce">Conoce Mas</p>
         </a> </div>
     </li>
     <li>
-      <div> <a href="/informacion#">
+      <div> <a href="/informacion#section-hjjjj">
         <h2>Comida Caliente</h2>
         <p id="conoce">Conoce Mas</p>
         </a> </div>
     </li>
     <li>
-      <div> <a href="/informacion#">
+      <div> <a href="/informacion#section-j0ccj">
         <h2>Gestiones Hoy Por Ti</h2>
         <p id="conoce">Conoce Mas</p>
         </a> </div>
