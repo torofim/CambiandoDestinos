@@ -8,6 +8,7 @@ use Validator;
 use App\Inventario;
 use App\Entrega_inventario;
 
+
 class inventarioController extends Controller
 {
     //

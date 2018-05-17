@@ -324,7 +324,7 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
 </style>
 <!-- End Getresponse Analytics -->
 <nav class="navbar navbar-default navbar-fixed-top ">
-  <a class="navbar-brand nombre" href="/" >Fundación Cambiando Destinos, A.C.</a>
+  <a class="navbar-brand nombre" href="/"  >Fundación Cambiando Destinos, A.C.</a>
   <div class="containerarriba">
       <div class="navbar-header page-scroll">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -377,7 +377,7 @@ section#section-cc7cj [data-section="wrap"] { width: 400px; }
         <div data-section="wrap" data-reverse="true">
             <div data-editable="text" id="edi-575bh" data-uid="edi-575bh" class="" data-draggable="true">
                 <div style="font-family: 'Source Sans Pro', sans-serif;font-size:54px; font-weight:300; color:#fff;line-height:1.2;text-align: center;" class="text-content">
-                    <span style="font-weight: bold;">
+                    <span  style="font-weight: bold;font-size:50px;">
                     Fundacion Cambiando Destinos, A.C.</span>
                 </div>
             </div>

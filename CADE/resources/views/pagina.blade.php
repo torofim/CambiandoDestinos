@@ -9,7 +9,7 @@
 		<link href="./css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
 	<link rel="stylesheet" type="text/css" href="./css/estilos.css">
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link href="./css/main.css" type="text/css" rel="stylesheet">
 
   </head>
@@ -37,13 +37,7 @@
 <img src="./img/apoyo.jpg"  class="img-responsive2" alt="gestion" >
 <div class="carousel-caption d-none d-dm-block" style="top:0% ;">
   <h3 style="font-size:2.3em;margin-left:44%;margin-top:0.2%;">GESTIONES </h3>
-  <p class="col-md-12">185 pacientes en consulta con especialistas,
-      21 estudios de Tomografía,
-      46 estudios de Laboratorio,
-      7 Cirugías, (Labio leporino, discapacidad infantil)
-      104 entrega de medicamentos,
-      28 préstamos  de aparatos de apoyo funcional (silla de rueda, muletas, bastón, andador, silla para baño, camas tipo hospital, colchones entre otros.)
-  </p>
+  <p class="col-md-12"></p>
 </div>
 </div>
 
@@ -52,8 +46,7 @@
 <div class="carousel-caption" style="top:0%;">
   <h3 style="font-size:2.3em;margin-left:41%;margin-top:0.2%;">COMIDA CALIENTE</h3>
   <div>
-    <p class="col-md-12"  style="margin-left:35%;">De octubre del 2011 a finales del 2016
-        se han otorgado 3,032 platillos</p>
+    <p class="col-md-12"  style="margin-left:35%;"></p>
   </div>
   </div>
 
@@ -64,18 +57,14 @@
 <img src="./img/rehabilitation.jpg" alt="reha" >
 <div class="carousel-caption" >
   <h3 style="font-size:2.3em;margin-left:42%;margin-top:0.2%;">REHABILITACION</h3>
-  <p  style="margin-left:7%;">8 terapias de rehabilitación física al día
-    3 años y 2 semanas un total de 2,564 terapias físicas rehabilitatorias
-    70% fueron becas gratuitas
-    Este programa implico un gasto aproximado de $ 384,600.00 pesos</p>
+  <p  style="margin-left:7%;"></p>
 </div>
 </div>
 <div class="item">
 <img src="./img/visita1.jpg" alt="visita" >
 <div class="carousel-caption" >
   <h3 style="font-size:2.3em;margin-left:41%;margin-top:0.2%;">VISITA DOMICILIARIA</h3>
-  <p style="margin-left:37%;">De octubre del 2011 a finales del 2016
-      se han logrado 9,112 visitas</p>
+  <p style="margin-left:37%;"</p>
 </div>
 </div>
 
@@ -83,12 +72,7 @@
 <img src="./img/guitarra.jpg" alt="iccd" >
 <div class="carousel-caption" >
   <h3 style="font-size:2.3em;margin-left:27%;margin-top:0.2%;">INSTITUTO CULTURAL CAMBIANDO DESTINOS </h3>
-  <p  style="margin-left:2%;">Otorga  gratuitamente talleres de pintura artística y música
-     Nuestra institución facilita todos los materiales para pintura artística
-     y los instrumentos para el taller
-      Estos son impartidos en las instalaciones de nuestra institución
-      De octubre del 2011 al finales del  2015 se impartieron 1248 talleres de música
-      y 832 talleres de pintura beneficiando a un aproximado de 115 alumnos</p>
+  <p  style="margin-left:2%;"></p>
 </div>
 </div>
 

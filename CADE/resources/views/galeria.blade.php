@@ -2,13 +2,13 @@
 
     <div class="row">
       <div class="column">
-        <div class="input=-group col-md-12">
-          <label for="nombre">Imagen</label><br>
-          
-        </div>
+
+        <img src="./img/actividad.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" id="galim">
+
+      
       </div>
       <div class="column">
-        <img src="./img/abuelo.jpg" style="width:100%"  class="hover-shadow cursor " id="galim">
+        <img src="./img/actividad.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" id="galim">
       </div>
       <div class="column">
         <img src="./img/actividad.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor" id="galim">

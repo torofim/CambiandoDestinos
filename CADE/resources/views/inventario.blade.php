@@ -61,7 +61,7 @@
             </thead>
             <tbody id="tbody">
               <tr>
-                @forelse($inv as $usu)
+                @forelse($inv  as $usu)
                 <td >{{$usu->Id_inv}}</td>
                 <td>{{$usu->Nombre_producto}}</td>
                 <td>{{$usu->Cantidad}}</td>
@@ -169,7 +169,7 @@
       {!! Form::open(
         array('route'=>['admin.inventario.edit',$usu->Id_inv],'method'=>'GET' )) !!}
       <div class="modal-body">
-        <input type="hidden" name="idin" id="idini" value="">
+        <input type="hidden" name="idin" id="idin" value="">
           <div class="input-group">
             <label for="">Nombre</label>
             <input type="text" name="nombreedit" id="nombre" value="" class="form-control">
@@ -195,7 +195,7 @@
         <button type="submit" class="btn btn-primary">Aceptar</button>
         <!-- data-dismiss detiene el actualizado-->
       </div>
-      {{Form::close() }}
+      {!!Form::close() !!}
     </div>
 
   </div>

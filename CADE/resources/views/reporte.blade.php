@@ -457,7 +457,7 @@
       </div>
       <div class="estatura">
         @forelse($datosper1 as $usua)
-        <input value="  {{$usua->Estatura}}M">
+        <input value="  {{$usua->Estatura}}cm">
 
         </input>
         @empty
@@ -469,7 +469,7 @@
       </div>
       <div class="talla">
         @forelse($datosper1 as $usua)
-        <input value="  {{$usua->Talla}}Kg">
+        <input value="  {{$usua->Talla}}">
 
         </input>
         @empty
