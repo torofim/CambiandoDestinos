@@ -33,6 +33,11 @@
 
     <div id="benefi" class="tabcontent" >
 
+        @if(Auth::user()->privilegios=='admin')
+        <h3 style="margin-left:2%;">Buscar Beneficiario</h3>
+    <input type="search" name="" value="" id="txtBusqueda" style="margin-left:2%;width:20%;color:black;">
+    <button type="button" name="button" id="btnbuscar"style="background-color: green;decoration:none;">Buscar</button>
+    <input type="hidden" name="" value="{{csrf_token()}}" id="token">
       <div class="card-body" >
 
         @if($errors->any())
@@ -95,11 +100,52 @@
 
     </div>
     </div>
+    @else
+    <h3 style="margin-left:2%;">Buscar Beneficiario</h3>
+<input type="search" name="" value="" id="txtBusqueda" style="margin-left:2%;margin-bottom:5%;width:20%;color:black;">
+<button type="button" name="button" id="btnbuscar" style="background-color: green;">Buscar</button>
+<input type="hidden" name="" value="{{csrf_token()}}" id="token">
+
+<div class="card-body" >
+
+  @if($errors->any())
+    <div class="alert alert-warning alert-dismissable">
+      <ul>
+
+      @foreach($errors->all() as $error)
+        <li>{{$error}}</li>
+      @endforeach
+      </ul>
+    </div>
+  @endif
+  @if(session()->has('mensaje'))
+    <div class="alert alert-success">
+      {{session()->get('mensaje')}}
+    </div>
+  @endif
+  <!-- ESTA ES LA TABLA ORIGINAL PARA POSTERIORES USOS-->
+  <div class="row">
+    <h2 style="margin-left:1%;"></h2>
+    <table class="table table-condensed col-md-12" style="margin-left:0%; ">
+      <thead>
+        <tr>
+          <td>No. Folio</td>
+          <td>Nombre</td>
+          <td>Apellido</td>
+          <td>Apellido</td>
+          <td>Editar</td>
+          <td>Eliminar</td>
+        </tr>
+      </thead>
+      <tbody id="tbody">
+
+      </tbody>
+    </table>
+</div>
+
+    @endif
 
     </div>
-
-
-
 
     <div id="agregar" class="tabcontent">
       <div class="card-header" style="margin-bottom:5%; font-size:3rem; margin-left:1.5%;" >Datos Personales</div>
@@ -225,7 +271,7 @@ $(document).ready(function(){
     });
   });
   });
-  $('#btnbuscar').on('click',function(){
+  $(document).on('click','#btnbuscar',function(){
     $.ajax({
 
       method:'POST',
@@ -235,11 +281,13 @@ $(document).ready(function(){
         _token:$("#token").val()
       },
       beforeSend:function(){
+
         console.log("Cargando");
       }
 
     }).done(function(respuesta){
       var arreglo =JSON.parse(respuesta);
+
       $("#tbody").find('tr').remove();
 
     var todo="<tr><td>"+arreglo[0].Id_bene;
@@ -251,10 +299,12 @@ $(document).ready(function(){
     todo+='<input type="hidden" name ="_token" value="{{csrf_token()}}">';
     todo+='<input type="hidden" name ="_method" value="delete">';
     todo+='<i class="fa fa-trash></i></button></form></td></tr>"';
-    $("#tbody").append(todo);
-    //  console.log(arreglo[0].Id_bene);
 
+    $("#tbody").append(todo);
+
+    console.log(arreglo);
     });
+
 
   });
 
