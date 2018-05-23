@@ -35,7 +35,7 @@
 </style>
 <!-- End Getresponse Analytics -->
 <nav class="navbar navbar-default navbar-fixed-top ">
-  <a class="navbar-brand nombre" href="/"  >Fundación Cambiando Destinos, A.C.</a>
+  <a class="navbar-brand nombre" href="/" style="font-size:1.5rem;" >Fundación Cambiando Destinos, A.C.</a>
   <div class="containerarriba">
       <div class="navbar-header page-scroll">
           <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -50,22 +50,22 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
         <li class="page-scroll">
-            <a href="#section-7i1hi" style="font-size:1.5rem;">Cambiando Destinos<img src="./img/logonavi.png" alt=""></a>
+            <a href="#section-7i1hi" style="font-size:1rem;">Cambiando Destinos<img src="./img/logonavi.png" alt=""></a>
         </li>
         <li class="page-scroll">
-            <a href="#section-be77e" style="font-size:1.5rem;">Visitas<img src="./img/logonavi.png" alt=""></a>
+            <a href="#section-be77e" style="font-size:1rem;">Visitas<img src="./img/logonavi.png" alt=""></a>
         </li>
         <li class="page-scroll">
-            <a href="#section-hjjjj" style="font-size:1.5rem;">Comida caliente <img src="./img/logonavi.png" alt=""></a>
+            <a href="#section-hjjjj" style="font-size:1rem;">Comida caliente <img src="./img/logonavi.png" alt=""></a>
         </li>
         <li class="page-scroll">
-            <a href="#section-bhjbt" style="font-size:1.5rem;">Taller <img src="./img/logonavi.png" alt=""></a>
+            <a href="#section-bhjbt" style="font-size:1rem;">Taller <img src="./img/logonavi.png" alt=""></a>
         </li>
         <li class="page-scroll">
-            <a href="#section-sssi7" style="font-size:1.5rem;">Cultura <img src="./img/logonavi.png" alt=""></a>
+            <a href="#section-sssi7" style="font-size:1rem;">Cultura <img src="./img/logonavi.png" alt=""></a>
         </li>
         <li class="page-scroll">
-            <a href="#section-j0ccj" style="font-size:1.5rem;">Gestiones <img src="./img/logonavi.png" alt=""></a>
+            <a href="#section-j0ccj" style="font-size:1rem;">Gestiones <img src="./img/logonavi.png" alt=""></a>
         </li>
     </ul>
 
@@ -327,22 +327,30 @@
             <div class="component-marker">
             </div>
         </div>
-    </section><section data-section="section" id="section-jxjbj" data-uid="section-jxjbj" class="" data-draggable="true">
-        <div data-section="wrap" data-reverse="true">
-            <div class="component-backdrop">
-            </div>
-            <div class="component-marker">
-            </div>
-            <div data-editable="multimedia:image" id="edi-7mhmm" data-uid="edi-7mhmm" class="" data-draggable="true" style="background: none;">
-
-            <img src="https://multimedia.getresponse.com/getresponse-h87Rp/photos/666714604.jpg?_ga=2.95077468.1367688246.1526356372-335864284.1526356372" alt="" width="97" height="85" /></div>
-            <div data-editable="text" id="edi-7yh7c" data-uid="edi-7yh7c" class="" data-draggable="true">
-                <div class="text-content">
-        Fundación Cambiando Destinos, A. C.
-                </div>
-            </div>
-        </div>
     </section>
+    <section style="background-color:#194A4F;height:315px;margin-top:0%;width: 100%; padding-bottom:0;"id="quinto">
+    <div class="col-md-4 " style="width:60%; margin-top:5%;">
+      <p class=""style=" font-size:30px;font-family:monospace;color:#64E9EE;margin-left:25px;">contactanos</p>
+      <div class="col-md-3" style="margin-left:10%; padding:0;margin-top:1%;width:27%;">
+        <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Direccion:</p>
+        <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Telefono:</p>
+        <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Correo Electronico:</p>
+      </div>
+      <div class="col-md-4" style="padding:0;margin-top:1%;width:60%; ">
+        <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Francisco I. Madero y 21a, colonia chamizal</p>
+        <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">+52-636-121-2491 </p>
+        <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">fundacioncambiandodestinos@hotmail.com</p>
+
+      </div>
+      <div class="col-md-4" style=" margin-Left:120%; margin-top:-15%;" >
+        <h4 style=" font-size: 20px;font-family: fantasy;color:#64E9EE;">Redes Sociales</h4>
+        <a target="_blank" href="https://www.facebook.com/Fundacioncambiandodestinos/">
+        <img title="Facebook" alt="Facebook"  src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook1.png"  width="65" height="65" />
+        </a>
+      </div>
+    </div>
+    </section>
+
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/main.js"></script>
