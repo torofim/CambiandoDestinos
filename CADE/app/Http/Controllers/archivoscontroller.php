@@ -25,11 +25,11 @@ class archivoscontroller extends Controller
     public function store(Request $req){
 
       $validator =Validator::make($req->all(),[
-        'Foto_infantil'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        'Foto_cuerpo'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        'Certificado_discapacida'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        'Copia_curp'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
-        'Curp'=>'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048'
+        'Foto_infantil'=>'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        'Foto_cuerpo'=>'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        'Certificado_discapacida'=>'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        'Com_dom'=>'image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+        'Curp'=>'image|mimes:jpeg,png,jpg,gif,svg|max:2048'
 
       ]);
       if($validator->fails()){
@@ -51,7 +51,7 @@ class archivoscontroller extends Controller
         $nombreCertificado=time().'.'.$req->Certificado_discapacida->getClientOriginalExtension();
         $req->Certificado_discapacida->move(public_path('/img/archivos'),$nombreCertificado);
 
-        $nombreCopia=time().'.'.$req->Copia_curp->getClientOriginalExtension();
+        $nombreCopia=time().'.'.$req->Com_dom->getClientOriginalExtension();
         $req->Copia_curp->move(public_path('/img/archivos'),$nombreCopia);
 
         $nombreCurp=time().'.'.$req->Curp->getClientOriginalExtension();
@@ -61,7 +61,7 @@ class archivoscontroller extends Controller
           'Id_bene'=>$req->idbene,
           'Foto_infantil'=>$nombreInfantil,
           'Foto_cuerpo'=>$nombreCuerpo,
-          'Certificado_discapacida'=>$nombreCertificado,
+          'Com_dom'=>$nombreCertificado,
           'Copia_curp'=>$nombreCopia,
           'Curp'=>$nombreCurp
         ]);
@@ -78,8 +78,8 @@ class archivoscontroller extends Controller
         $nombreCertificado=time().'.'.$req->Certificado_discapacida->getClientOriginalExtension();
         $req->Certificado_discapacida->move(public_path('/img/archivos'),$nombreCertificado);
 
-        $nombreCopia=time().'.'.$req->Copia_curp->getClientOriginalExtension();
-        $req->Copia_curp->move(public_path('/img/archivos'),$nombreCopia);
+        $nombreCopia=time().'.'.$req->Com_dom->getClientOriginalExtension();
+        $req->Com_dom->move(public_path('/img/archivos'),$nombreCopia);
 
         $nombreCurp=time().'.'.$req->Curp->getClientOriginalExtension();
         $req->Curp->move(public_path('/img/archivos'),$nombreCurp);
@@ -87,7 +87,7 @@ class archivoscontroller extends Controller
         $archivo->Foto_infantil=$req->$nombreInfantil;
         $archivo->Foto_cuerpo=$req->$nombreCuerpo;
         $archivo->Certificado_discapacida=$req->$nombreCertificado;
-        $archivo->Copia_curp=$req->$nombreCopia;
+        $archivo->Com_dom=$req->$nombreCopia;
         $archivo->Curp=$req->$nombreCurp;
         return redirect()->to('/admin/Formubenefi/'.$req->idbene);
       }

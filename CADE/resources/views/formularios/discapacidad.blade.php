@@ -41,22 +41,6 @@
 
     </div>
     <div class="input=-group col-md-4">
-      <label for="nombre">Tipo de Discapacidad</label><br>
-      @if(count($discap)==0)
-        {{Form::text('tipodis','',array('class'=>'form-control','placeholder'=>'Causa de la Discapacidad','required'=>'true') )}}
-        @else
-        {{Form::text('tipodis',$discap[0]->Tipo_disca,array('class'=>'form-control','placeholder'=>'Tipo de Discapacidad','required'=>'true') )}}
-        @endif
-    </div>
-    <div class="input=-group col-md-4">
-      <label for="nombre">Causa de la Discapacidad</label><br>
-      @if(count($discap)==0)
-        {{Form::text('causa','',array('class'=>'form-control','placeholder'=>'Causa de la Discapacidad','required'=>'true') )}}
-        @else
-        {{Form::text('causa',$discap[0]->Causa_discapacidad,array('class'=>'form-control','placeholder'=>'Causa de la Discapacidad','required'=>'true') )}}
-        @endif
-    </div>
-    <div class="input=-group col-md-4">
       <label for="nombre">Tiene Hipertension</label><br>
       @if(count($discap)==0)
         <label >{{Form::radio('hiper','Si',array('class'=>'form-control','required'=>'true') )}} Si</label>
@@ -74,6 +58,23 @@
 
         @endif
     </div>
+    <div class="input=-group col-md-4">
+      <label for="nombre">Tipo de Discapacidad</label><br>
+      @if(count($discap)==0)
+        {{Form::text('tipodis','',array('class'=>'form-control','placeholder'=>'Causa de la Discapacidad','required'=>'true') )}}
+        @else
+        {{Form::text('tipodis',$discap[0]->Tipo_disca,array('class'=>'form-control','placeholder'=>'Tipo de Discapacidad','required'=>'true') )}}
+        @endif
+    </div>
+    <div class="input=-group col-md-4">
+      <label for="nombre">Causa de la Discapacidad</label><br>
+      @if(count($discap)==0)
+        {{Form::text('causa','',array('class'=>'form-control','placeholder'=>'Causa de la Discapacidad','required'=>'true') )}}
+        @else
+        {{Form::text('causa',$discap[0]->Causa_discapacidad,array('class'=>'form-control','placeholder'=>'Causa de la Discapacidad','required'=>'true') )}}
+        @endif
+    </div>
+
     <div class="input=-group col-md-4">
       <label for="nombre">Rehabilitación</label><br>
       @if(count($discap)==0)

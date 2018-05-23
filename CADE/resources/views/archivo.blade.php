@@ -1,5 +1,5 @@
 
-<div class="container">
+<div class="container col-md-12">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -24,26 +24,26 @@
                   {{Form::open(array('url'=>'/admin/archivos','files'=>true))}}
                     <div class="input=-group col-md-6">
                       <label for="nombre">Foto infantil</label><br>
-                        {{Form::file('Foto_infantil',array('class'=>'form-control','placeholder'=>'Imagen') )}}
+                        {{Form::file('Foto_infantil',array('class'=>'form-control','placeholder'=>'Imagen','required'=>'true') )}}
                     </div>
                     <div class="input=-group col-md-6">
                       <label for="nombre">Cuerpo completo</label><br>
-                      {{Form::file('Foto_cuerpo',array('class'=>'form-control','placeholder'=>'Imagen') )}}
+                      {{Form::file('Foto_cuerpo',array('class'=>'form-control','placeholder'=>'Imagen','required'=>'true') )}}
                     </div>
                     <div class="input=-group col-md-6">
                       <label for="nombre">Certificado</label><br>
-                      {{Form::file('Certificado_discapacida',array('class'=>'form-control','placeholder'=>'Imagen') )}}
+                      {{Form::file('Certificado_discapacida',array('class'=>'form-control','placeholder'=>'Imagen','required'=>'true') )}}
                     </div>
                     <div class="input=-group col-md-6">
-                      <label for="nombre"> Copia Curp</label><br>
-                        {{Form::file('Copia_curp',array('class'=>'form-control','placeholder'=>'Imagen') )}}
+                      <label for="nombre"> Comprobante Domicilio</label><br>
+                        {{Form::file('Com_dom',array('class'=>'form-control','placeholder'=>'Imagen','required'=>'true') )}}
                     </div>
 
-                    <div class="input=-group col-md-6">
+                    <div class="input=-group col-md-6" >
                       <label for="nombre">Curp</label><br>
-                      {{Form::file('Curp',array('class'=>'form-control','placeholder'=>'Imagen') )}}
+                      {{Form::file('Curp',array('class'=>'form-control','placeholder'=>'Imagen','required'=>'true') )}}
                     </div>
-                    <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
+                    <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;margin-bottom:3%;">
                       {{Form::submit('Subir',array('class'=>'btn btn-primary'))}}
                     </div>
                     <input type="hidden" name="idbene" value="{{$Id_bene}}">

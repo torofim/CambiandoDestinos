@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container col-md-12">
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
@@ -58,7 +58,7 @@
 
     </div>
 
-    <div class="input-group col-md-12" style="margin-left:1.5%; padding-top:2%;margin-bottom:3%;">
+    <div class="input-group col-md-12" style="margin-left:1%; padding-top:2%;margin-bottom:3%;">
       {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
     </div>
 

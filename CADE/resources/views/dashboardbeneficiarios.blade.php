@@ -9,7 +9,7 @@
   <body>
   @include('layouts.nav')
 
-  <div class="main" style="height:auto;">
+  <div class="main" style="height:100%;">
   <!--<div class="panel panel-default">
         <div class="panel-body cold-md-2" id="sepa">
         </div>
@@ -32,8 +32,7 @@
 
 
     <div id="benefi" class="tabcontent" >
-
-        @if(Auth::user()->privilegios=='admin')
+      @if(Auth::user()->privilegios=='admin')
         <h3 style="margin-left:2%;">Buscar Beneficiario</h3>
     <input type="search" name="" value="" id="txtBusqueda" style="margin-left:2%;width:20%;color:black;">
     <button type="button" name="button" id="btnbuscar"style="background-color: green;decoration:none;">Buscar</button>
@@ -70,8 +69,6 @@
               </tr>
             </thead>
             <tbody id="tbody">
-
-
               <tr>
                 @forelse($datosper as $usu )
 
@@ -100,7 +97,12 @@
 
     </div>
     </div>
+
     @else
+
+
+
+
     <h3 style="margin-left:2%;">Buscar Beneficiario</h3>
 <input type="search" name="" value="" id="txtBusqueda" style="margin-left:2%;width:20%;color:black;">
 <button type="button" name="button" id="btnbuscar" style="background-color: green;">Buscar</button>
@@ -134,7 +136,7 @@
           <td>Apellido</td>
           <td>Apellido</td>
           <td>Editar</td>
-          
+
         </tr>
       </thead>
       <tbody id="tbody">
@@ -143,12 +145,16 @@
     </table>
 </div>
 
-    @endif
+  </div>
+  @endif
+  </div>
 
-    </div>
+
+
 
     <div id="agregar" class="tabcontent">
-      <div class="card-header" style="margin-bottom:5%; font-size:3rem; margin-left:1.5%;" >Datos Personales</div>
+        @if(Auth::user()->privilegios=='admin')
+      <div class="card-header" style="margin-bottom:1%; font-size:2.5rem; margin-left:1.5%;"  >Datos Personales</div>
 
       <div class="card-body ">
         @if($errors->any())
@@ -172,7 +178,7 @@
             {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
           </div>
           <div class="input=-group col-md-4">
-            <label for="nombre">Apellido Paterno</label><br>
+            <label for="nombre" >Apellido Paterno</label><br>
             {{Form::text('ap_p','',array('class'=>'form-control','placeholder'=>'Apellido paterno') )}}
           </div>
           <div class="input=-group col-md-4">
@@ -191,17 +197,68 @@
             <label for="nombre">Domicilio </label><br>
             {{Form::text('domicilio','',array('class'=>'form-control','placeholder'=>'Domicilio') )}}
           </div>
-          <div class="input-group col-md-12" style="margin-left:2%; padding-top:2%;">
+          <div class="input-group col-md-12" style="margin-left:1%; padding-top:2%;">
             {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
           </div>
         {{Form::close()}}
       </div>
+      @else
+        <div class="card-header" style="margin-bottom:1%; font-size:2.5rem; margin-left:1.5%;"  >Datos Personales</div>
+
+      <div class="card-body ">
+        @if($errors->any())
+          <div class="alert alert-warning alert-dismissable">
+            <ul>
+
+            @foreach($errors->all() as $error)
+              <li>{{$error}}</li>
+            @endforeach
+            </ul>
+          </div>
+        @endif
+        @if(session()->has('mensaje'))
+          <div class="alert alert-success">
+            {{session()->get('mensaje')}}
+          </div>
+        @endif
+        {{Form::open(array('url'=>'/admin/datospersonales','files'=>true))}}
+          <div class="input=-group col-md-4">
+            <label for="nombre">Nombre</label><br>
+            {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+          </div>
+          <div class="input=-group col-md-4">
+            <label for="nombre" >Apellido Paterno</label><br>
+            {{Form::text('ap_p','',array('class'=>'form-control','placeholder'=>'Apellido paterno') )}}
+          </div>
+          <div class="input=-group col-md-4">
+            <label for="nombre">Apellido materno</label><br>
+            {{Form::text('ap_m','',array('class'=>'form-control','placeholder'=>'Apellido materno') )}}
+          </div>
+          <div class="input=-group col-md-4">
+            <label for="nombre">Fecha nacimiento </label><br>
+            {{Form::date('fecha_na','',array('class'=>'form-control','placeholder'=>'Fecha nacimiento') )}}
+          </div>
+          <div class="input=-group col-md-4">
+            <label for="nombre">Edad </label><br>
+            {{Form::number('edad','',array('class'=>'form-control','placeholder'=>'Edad') )}}
+          </div>
+          <div class="input=-group col-md-4">
+            <label for="nombre">Domicilio </label><br>
+            {{Form::text('domicilio','',array('class'=>'form-control','placeholder'=>'Domicilio') )}}
+          </div>
+          <div class="input-group col-md-12" style="margin-left:1%; padding-top:2%;">
+            {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
+          </div>
+        {{Form::close()}}
+      </div>
+      @endif
         </div>
 
 
 
     </div>
-  </div>
+    </div>
+
 
 
 
@@ -249,6 +306,27 @@
   <script type="text/javascript" src="{{ asset('js/side.js') }}"></script>
   <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
   <script type="text/javascript">
+  function openPage(pageName,elmnt,color) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].style.backgroundColor = "";
+  }
+  document.getElementById(pageName).style.display = "block";
+  elmnt.style.backgroundColor = color;
+
+}
+// Get the element with id="defaultOpen" and click on it
+document.getElementById("defaultOpen").click();
+
+
+$('.divfade').fadeOut(2000);
+
+
   var formulario;
   var tr;
 
@@ -308,25 +386,7 @@ $(document).ready(function(){
 
   });
 
-  function openPage(pageName,elmnt,color) {
-  var i, tabcontent, tablinks;
-  tabcontent = document.getElementsByClassName("tabcontent");
-  for (i = 0; i < tabcontent.length; i++) {
-      tabcontent[i].style.display = "none";
-  }
-  tablinks = document.getElementsByClassName("tablink");
-  for (i = 0; i < tablinks.length; i++) {
-      tablinks[i].style.backgroundColor = "";
-  }
-  document.getElementById(pageName).style.display = "block";
-  elmnt.style.backgroundColor = color;
 
-}
-// Get the element with id="defaultOpen" and click on it
-document.getElementById("defaultOpen").click();
-
-
-$('.divfade').fadeOut(2000);
   </script>
 
 

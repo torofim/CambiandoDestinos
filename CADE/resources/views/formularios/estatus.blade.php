@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container col-md-12">
     <div class="row justify-content-center">
         <div class="col-md-12">
             <div class="card">
@@ -21,7 +21,7 @@
   @endif
 
     {!!Form::open(array('route'=>['admin.estatus.store','0'],'method'=>'POST'))!!}
-    <div class="input=-group col-md-4">
+    <div class="input=-group col-md-2">
       <label for="nombre">Jubilado</label><br>
       @if(count($perros5)==0)
         <label >{{Form::radio('jubilado','Si',array('class'=>'form-control','required'=>'true') )}} Si</label>
@@ -40,7 +40,7 @@
         @endif
 
     </div>
-    <div class="input=-group col-md-4">
+    <div class="input=-group col-md-2">
       <label for="nombre">Servicio Medico</label><br>
 
       @if(count($perros5)==0)
@@ -60,7 +60,7 @@
         @endif
 
     </div>
-    <div class="input=-group col-md-4">
+    <div class="input=-group col-md-2">
       <label for="nombre">Baño Diario</label><br>
 
       @if(count($perros5)==0)
@@ -80,7 +80,7 @@
         @endif
 
     </div>
-    <div class="input=-group col-md-4">
+    <div class="input=-group col-md-2">
       <label for="nombre">Convivencia Animal </label><br>
 
       @if(count($perros5)==0)
@@ -101,7 +101,7 @@
 
     </div>
 
-    <div class="input-group col-md-12" style="margin-left:1.5%; padding-top:2%;margin-bottom:3%;">
+    <div class="input-group col-md-12" style="margin-left:1%; padding-top:2%;margin-bottom:3%;">
       {{Form::submit('Enviar',array('class'=>'btn btn-primary'))}}
     </div>
 
