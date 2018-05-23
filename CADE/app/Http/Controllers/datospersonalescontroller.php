@@ -120,7 +120,10 @@ class datospersonalescontroller extends Controller
       $registros=\DB::table('datos_personales')
       ->select('Id_bene','Nombre','Apellido_p',"Apellido_m")
       ->where('Id_bene','=',$req->id)
+      
             ->get();
+
       return json_encode($registros);
     }
+
 }
