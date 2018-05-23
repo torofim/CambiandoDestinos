@@ -11,6 +11,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/estilos.css">
   <link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link href="./css/main.css" type="text/css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Archivo+Narrow:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
 
   </head>
   <body id="page-top">
@@ -230,25 +231,26 @@
 
 
 
-<section style="background-color:white;height:315px;margin-top:0%;width: 100%;background-image:url(./img/libreta1.jpg);background-size:cover;padding:0;"id="quinto">
-
-
-
-<h3 style="margin-left:20%;margin-top:1%;Color:white;">Contacto</h3>
-<div class="col-md-4 divcon">
+<section style="background-color:#194A4F;height:315px;margin-top:0%;width: 100%; padding-bottom:0;"id="quinto">
+<div class="col-md-4 " style="width:60%; margin-top:5%;">
+  <p class=""style=" font-size:30px;font-family:monospace;color:#64E9EE;margin-left:25px;">contactanos</p>
   <div class="col-md-3" style="margin-left:10%; padding:0;margin-top:1%;width:27%;">
-    <p><img src="./img/logonavi.png" alt="">Direccion:</p>
-    <p><img src="./img/logonavi.png" alt="">Telefono:</p>
-    <p><img src="./img/logonavi.png" alt="">Correo Electronico:</p>
+    <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Direccion:</p>
+    <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Telefono:</p>
+    <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Correo Electronico:</p>
   </div>
-  <div class="col-md-3" style="padding:0;margin-top:2%;width:60%; ">
-    <p>Francisco I. Madero #503 Local #3 <img src="./img/logonavi.png" alt=""></p>
-    <p>+52-636-121-2491 <img src="./img/logonavi.png" alt=""> </p>
-    <p>fundacioncambiandodestinos@hotmail.com <img src="./img/logonavi.png" alt=""></p>
+  <div class="col-md-4" style="padding:0;margin-top:1%;width:60%; ">
+    <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Francisco I. Madero #503 Local #3</p>
+    <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">+52-636-121-2491 </p>
+    <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">fundacioncambiandodestinos@hotmail.com</p>
     <a class="col-md-12"href="/login">Iniciar Sesion</a>
   </div>
-
-
+  <div class="col-md-4" style=" margin-Left:120%; margin-top:-25%;" >
+    <h4 style=" font-size: 20px;font-family: fantasy;color:#64E9EE;">Redes Sociales</h4>
+    <a target="_blank" href="https://www.facebook.com/Fundacioncambiandodestinos/">
+    <img title="Facebook" alt="Facebook"  src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook1.png"  width="65" height="65" />
+    </a>
+  </div>
 </div>
 
 
