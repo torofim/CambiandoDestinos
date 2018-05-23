@@ -8,7 +8,7 @@
   </head>
   <body >
     @include('layouts.nav')
-    <div class="main" style="height:auto;">
+    <div class="main" style="height:100%;">
 
       <br>
       <br>
@@ -240,31 +240,31 @@
 
         <div class="input-group">
           <label for="">No. Folio</label>
-          <input type="number" name="idin" id="Id_bene" value="" class="form-control">
+          <input type="number" name="idin" id="Id_bene" value="" class="form-control" required="true">
         </div>
         <div class="input-group">
           <label for="">Nombre Beneficiario</label>
-          <input type="text" name="nombrebene" id="Nombre_bene" value="" class="form-control">
+          <input type="text" name="nombrebene" id="Nombre_bene" value="" class="form-control"  required="true">
         </div>
           <div class="input-group">
             <label for="">Nombre Articulo</label>
-            <input type="text" name="articulo" id="nombre" value="" class="form-control">
+            <input type="text" name="articulo" id="nombre" value="" class="form-control" required="true">
           </div>
           <div class="input-group">
             <label for="">Cantidad</label>
-            <input type="number" name="cant" id="cantidad"value="" class="form-control">
+            <input type="number" name="cant" id="cantidad"value="" class="form-control" required="true">
           </div>
           <div class="input-group">
             <label for="">Tipo</label>
-            <input type="text" name="tipo" id="tipo" value="" class="form-control">
+            <input type="text" name="tipo" id="tipo" value="" class="form-control" required="true">
           </div>
           <div class="input-group">
             <label for="">Fecha</label>
-            <input type="date" name="fecha" id="Fecha" value="" class="form-control">
+            <input type="date" name="fecha" id="Fecha" value="" class="form-control" required="true">
           </div>
           <div class="input-group">
             <label for="">Notas</label>
-            <input type="text" name="notas" id="Notas" value="" class="form-control">
+            <input type="text" name="notas" id="Notas" value="" class="form-control" required="true">
           </div>
 
 

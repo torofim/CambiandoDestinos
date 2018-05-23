@@ -132,6 +132,7 @@ height:auto;
 /*small/medium side display*/
 @media (min-width: 768px) {
 
+
 /*Allow main to be next to Nav*/
 .main{
   position: absolute;

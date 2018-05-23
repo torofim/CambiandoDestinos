@@ -1,5 +1,5 @@
 
-<div class="card-body" style="color:gray;">
+<div class="card-body" >
   @if($errors->any())
     <div class="alert alert-warning alert-dismissable">
       <ul>

@@ -8,7 +8,7 @@
   </head>
   <body>
   @include('layouts.nav')
-  <div class="main">
+  <div class="main" style="height:100%;">
     <div class="panel panel-default" style="background-color:transparent;">
         <div class="panel-body cold-md-2" id="sepa">
       </div>

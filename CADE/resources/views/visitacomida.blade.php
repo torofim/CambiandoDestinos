@@ -8,7 +8,7 @@
   </head>
   <body>
     @include('layouts.nav')
-    <div class="main" style="height:auto;">
+    <div class="main" style="height:100%;">
       <br>
       <br>
       <div class="panel2 panel-default col-xs-12 ">
@@ -16,7 +16,8 @@
           <label class="titula col-xs-12">Fundación Cambiando Destinos, A.C.</label>
         </div>
       </div>
-      <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:100%;">
+      <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:auto;">
+
         <button class="tablink" style="width:50%;" onclick="openPage('comida', this, '')" id="defaultOpen">Comida Caliente</button>
         <button class="tablink" style="width:50%;" onclick="openPage('visita', this, '')" >Visitas Domiciliarias</button>
 
@@ -129,10 +130,16 @@
   </div>
 </div>
 </div>
+
+
 </div>
 </div>
 
-
+<script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/chart.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/graficabarras.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/side.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
 <script type="text/javascript">
 function openPage(pageName,elmnt,color) {
 var i, tabcontent, tablinks;

@@ -8,7 +8,7 @@
   </head>
   <body>
       @include('layouts.nav')
-      <div class="main" style="height:750px;overflow-y:hidden;">
+      <div class="main" style="height:100%;">
 
         <br>
         <br>
