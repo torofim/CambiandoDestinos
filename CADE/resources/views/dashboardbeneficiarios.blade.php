@@ -102,7 +102,7 @@
     </div>
     @else
     <h3 style="margin-left:2%;">Buscar Beneficiario</h3>
-<input type="search" name="" value="" id="txtBusqueda" style="margin-left:2%;margin-bottom:5%;width:20%;color:black;">
+<input type="search" name="" value="" id="txtBusqueda" style="margin-left:2%;width:20%;color:black;">
 <button type="button" name="button" id="btnbuscar" style="background-color: green;">Buscar</button>
 <input type="hidden" name="" value="{{csrf_token()}}" id="token">
 
@@ -134,7 +134,7 @@
           <td>Apellido</td>
           <td>Apellido</td>
           <td>Editar</td>
-          <td>Eliminar</td>
+          
         </tr>
       </thead>
       <tbody id="tbody">
@@ -294,7 +294,7 @@ $(document).ready(function(){
     todo+="</td><td>"+arreglo[0].Nombre+"</td>";
     todo+="<td>"+arreglo[0].Apellido_p+"</td>";
     todo+="<td>"+arreglo[0].Apellido_m+"</td><td>";
-    //todo+='<button type="button" class="btn btn-info btn-lg" onclick="location.href='"/admin/Formubenefi/" + arreglo[0].Id_bene+ ' ">Editar </button></td>';
+    todo+='<a class="btn btn-info btn-lg" href="/admin/Formubenefi/' + arreglo[0].Id_bene+ ' ">Editar </a></td>';
     todo+='<td><form method="POST" action="/admin/datospersonales/'+arreglo[0].Id_bene+'">';
     todo+='<input type="hidden" name ="_token" value="{{csrf_token()}}">';
     todo+='<input type="hidden" name ="_method" value="delete">';
