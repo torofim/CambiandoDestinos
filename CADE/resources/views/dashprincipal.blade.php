@@ -94,6 +94,7 @@
              <table class="table table-condensed col-md-6 col-sm-8 col-xs-12" >
                <p style="font-size:3rem;">Presión arterial (Hipertensión)</p>
                <thead>
+                 <td>Id</td>
                  <td>Nombre</td>
                  <td>Apellido</td>
                  <td>Apellido</td>
@@ -102,6 +103,7 @@
                <tbody>
                  <tr>
                       @foreach($hipert as $y)
+                      <td>{{$y->Id_bene}}</td>
                    <td>{{$y->nombre}}</td>
                    <td>{{$y->apellido_p}}</td>
                    <td>{{$y->apellido_m}}</td>
@@ -126,7 +128,8 @@
                                </thead>
                                <tbody class="table" >
                                  <tr>
-                                      @foreach($Palta as $w)
+                                      @foreach($Palta as $w )
+                                      @if($w->Id_bene == $y->Id_bene)
                                    <td style="color:black;">{{$w->nombre}} </td>
                                    <td style="color:black;">{{$w->apellido_p}} </td>
                                    <td style="color:black;">{{$w->apellido_m}} </td>
@@ -135,6 +138,7 @@
                                    <td style="color:black;">{{$w->Pad}}</td>
                                    <tr>
                                    </tr>
+                                   @endif 
                                    @endforeach
                                  </tr>
                                </tbody>

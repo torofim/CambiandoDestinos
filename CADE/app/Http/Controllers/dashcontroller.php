@@ -97,10 +97,11 @@ class dashcontroller extends Controller
       on datos_personales.Id_bene = discapacidad.Id_bene where Discapacidad="si" and Requiere_apoyo_funcional="si" ');
 
 
-      $hipert=DB::select('select nombre, apellido_p, apellido_m, hipertension from datos_personales
+      $hipert=DB::select('select datos_personales.Id_bene,nombre, apellido_p, apellido_m, hipertension from datos_personales
       INNER JOIN discapacidad on datos_personales.Id_bene = discapacidad.Id_bene
       where hipertension="si"');
-      $Palta=DB::select('select nombre, apellido_p, apellido_m, Pas, Pad from datos_personales
+
+      $Palta=DB::select('select datos_personales.Id_bene, nombre, apellido_p, apellido_m, Pas, Pad from datos_personales
       INNER JOIN datos_centro_salud on datos_personales.Id_bene = datos_centro_salud.Id_bene
       where Pas>=130 and Pad<=85');
      return view('dashprincipal', ['benef' => $benef])
