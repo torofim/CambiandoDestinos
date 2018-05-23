@@ -8,7 +8,7 @@
   </head>
   <body>
   @include('layouts.nav')
-  <div class="main" style="height:100%;">
+  <div class="main">
     <div class="panel panel-default" style="background-color:transparent;">
         <div class="panel-body cold-md-2" id="sepa">
       </div>
@@ -72,7 +72,7 @@
                <td>Discapacidad</td>
                <td>Causa</td>
                <td>Requiere apoyo</td>
-               <td>tipo de apoyo</td>
+               <td>Tipo de apoyo</td>
              </thead>
              <tbody>
                <tr>
@@ -96,7 +96,6 @@
              <table class="table table-condensed col-md-6 col-sm-8 col-xs-12" >
                <p style="font-size:3rem;">Presión arterial (Hipertensión)</p>
                <thead>
-                 <td>Id</td>
                  <td>Nombre</td>
                  <td>Apellido</td>
                  <td>Apellido</td>
@@ -105,13 +104,12 @@
                <tbody>
                  <tr>
                       @foreach($hipert as $y)
-                      <td>{{$y->Id_bene}}</td>
                    <td>{{$y->nombre}}</td>
                    <td>{{$y->apellido_p}}</td>
                    <td>{{$y->apellido_m}}</td>
                    <td>{{$y->hipertension}}</td>
-                   <td><a data-toggle="modal" href="#myModal"  class="btn btn-primary btn-s">Historial</a>
-                     <div class="modal fade" id="myModal">
+                   <td>{{$y->Id_bene}}<a data-toggle="modal" href="#myModal{{$y->Id_bene}}"  class="btn btn-primary btn-s">Historial</a>
+                     <div class="modal fade" id="myModal{{$y->Id_bene}}">
                        <div class="modal-dialog">
                          <div class="modal-content">
                            <div class="modal-header">
@@ -121,6 +119,8 @@
                            <div class="modal-body">
                              <table class="table table-hover table-sm ">
                                <thead>
+                                 <td style="color:black;">Id bene</td>
+                                 <td style="color:black;">Id</td>
                                  <td style="color:black;">Nombre </td>
                                  <td style="color:black;">Apellido </td>
                                  <td style="color:black;">Apellido </td>
@@ -130,8 +130,11 @@
                                </thead>
                                <tbody class="table" >
                                  <tr>
-                                      @foreach($Palta as $w )
+
+                                      @foreach($Palta as $w)
                                       @if($w->Id_bene == $y->Id_bene)
+                                      <td style="color:black;">{{$y->Id_bene}}</td>
+                                      <td style="color:black;">{{$w->Id_bene}}</td>
                                    <td style="color:black;">{{$w->nombre}} </td>
                                    <td style="color:black;">{{$w->apellido_p}} </td>
                                    <td style="color:black;">{{$w->apellido_m}} </td>
@@ -141,7 +144,7 @@
                                    <tr>
                                    </tr>
                                    @endif
-                                   @endforeach
+                                   @endforeach <!--foreach modal-->
                                  </tr>
                                </tbody>
                              </table>
@@ -155,7 +158,7 @@
                   </td>
                    <tr>
                    </tr>
-                   @endforeach
+                   @endforeach <!--foreach tabla principal-->
                  </tr>
                </tbody>
              </table>

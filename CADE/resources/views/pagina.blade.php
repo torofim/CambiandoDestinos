@@ -231,7 +231,7 @@
 
 
 
-<section style="background-color:#194A4F;height:315px;margin-top:0%;width: 100%; padding-bottom:0;"id="quinto">
+<section style="background-color:#194A4F;height:285px;margin-top:0%;width: 100%; padding-bottom:0;"id="quinto">
 <div class="col-md-4 " style="width:60%; margin-top:5%;">
   <p class=""style=" font-size:30px;font-family:monospace;color:#64E9EE;margin-left:25px;">contactanos</p>
   <div class="col-md-3" style="margin-left:10%; padding:0;margin-top:1%;width:27%;">
