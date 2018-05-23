@@ -506,9 +506,7 @@
           <label for=""><input type="radio" name="sEditar" value="Si"> Si</label>
           <br>
           <label for=""><input type="radio" name="sEditar" value="No" checked> No</label>
-
            @endif
-
           @endif
       </div>
       <div class="tdonde">
@@ -530,7 +528,7 @@
         <input value="  {{$disca->Tipo_rehabilitacion}}">
         </input>
         @empty
-        <p>sin registro</p>
+        <input value="Sin registro">
         @endforelse
       </div>
 
@@ -548,54 +546,78 @@
             <br>
             <label for=""><input type="radio" name="sa" value="No">No</label>
 
+              @forelse($perros2 as $disca)
+              <input style="margin-left:20px;" value="{{$disca->Tipo_apoyo}}">
+              </input>
+              @empty
+              <p>sin registro</p>
+              @endforelse
+
           @elseif($perros2[0]->Apoyo_funcional=='No')
           <label for=""><input type="radio" name="sa" value="Si"> Si</label>
           <br>
           <label for=""><input type="radio" name="sa" value="No" checked> No</label>
+          <div class="apoyocual">
+            @forelse($perros2 as $disca)
+            <input value="">
+            </input>
+            @empty
+            <p>sin registro</p>
+            @endforelse
+          </div>
           @else
           <label for=""><input type="radio" name="sa" value="Si"> Si</label>
           <br>
           <label for=""><input type="radio" name="sa" value="No"> No</label>
-          <input type="text" name="" value="">
+          <div class="apoyocual">
+            @forelse($perros2 as $disca)
+            <input value="">
+            </input>
+            @empty
+            <p>sin registro</p>
+            @endforelse
+          </div>
            @endif
 
           @endif
       </div>
-      <div class="tcualapo">
+      <div class="tcualapo" style="margin-left:55px;">
         Cual
       </div>
-      <div class="apoyocual">
-        <input type="text" name="" value="">
-      </div>
+
 
       <div class="treq">
         Requiere apoyo funcional
       </div>
       <div class="req">
         @if(count($perros2)=='')
-        <label for=""><input type="radio" name="x" value="Si">Si</label>
+        <label for=""><input type="radio" name="reqapoyo" value="Si">Si</label>
         <br>
-        <label for=""><input type="radio" name="x" value="No">No</label>
+        <label for=""><input type="radio" name="reqapoyo" value="No">No</label>
           @else
-            @if($perros2[0]->Apoyo_funcional=='Si')
-            <label for=""><input type="radio" name="x" value="Si" checked>Si</label>
+            @if($perros2[0]->Requiere_apoyo_funcional=='Si')
+            <label for=""><input type="radio" name="reqapoyo" value="Si" checked>Si</label>
             <br>
-            <label for=""><input type="radio" name="x" value="No">No</label>
+            <label for=""><input type="radio" name="reqapoyo" value="No">No</label>
+            <input type="text" style="margin-left:20px;" name="" value="{{$perros2[0]->Tipo_apoyo}}">
 
-          @elseif($perros2[0]->Apoyo_funcional=='No')
-          <label for=""><input type="radio" name="x" value="Si"> Si</label>
+          @elseif($perros2[0]->Requiere_apoyo_funcional=='No')
+          <label for=""><input type="radio" name="reqapoyo" value="Si"> Si</label>
           <br>
-          <label for=""><input type="radio" name="x" value="No" checked> No</label>
-
+          <label for=""><input type="radio" name="reqapoyo" value="No" checked> No</label>
+          @else
+          <div class="tcualapoyo">
+            Cual
+          </div>
+            <div class="reqcual">
+              <input type="text" style="margin-left:30%" name="" value="{{$perros2[0]->Requiere_apoyo_funcional}}">
+            </div>
            @endif
 
           @endif
       </div>
-      <div class="tcualapoyo">
+      <div class="tcualapoyo" style="margin-left:50px;">
         Cual
-      </div>
-      <div class="reqcual">
-        <input type="text" name="" value="">
       </div>
       <!-- FALTA LOS RADIOS DE CUAL TIPO DE APOYO FUNCIONAL Y DATOS DE DOMICILIO Y TELEFONOS-->
       <div class="titulocual">
@@ -709,8 +731,24 @@
         Jubilado o Pensionado
       </div>
       <div class="jubilado">
-        <input type="radio" name="" value="">Si
-        <input type="radio" name="" value="">No
+        @if(count($perros5)=='')
+        <label for=""><input type="radio" name="jubi" value="Si">Si</label>
+
+        <label for=""><input type="radio" name="jubi" value="No">No</label>
+          @else
+            @if($perros5[0]->Jubilado=='Si')
+            <label for=""><input type="radio" name="jubi" value="Si" checked>Si</label>
+
+            <label for=""><input type="radio" name="jubi" value="No">No</label>
+
+          @elseif($perros5[0]->Jubilado=='No')
+          <label for=""><input type="radio" name="jubi" value="Si"> Si</label>
+
+          <label for=""><input type="radio" name="jubi" value="No" checked> No</label>
+
+           @endif
+
+          @endif
       </div>
       <div class="tsm">
         Servicio Médico
@@ -784,8 +822,8 @@
           @else
           <label for=""><input type="radio" name="wer" value="Si"> Padre</label>
 
-          <label for=""><input type="radio" name="wer" value="No" checked> Madre</label>
-          <input type="text" name="" value="{{$perros4->Encargado}}">
+          <label for=""><input type="radio" name="wer" value="No"> Madre</label>
+          <input type="text" name="" value="{{$perros4[0]->Encargado}}">
            @endif
           @endif
         </div>
