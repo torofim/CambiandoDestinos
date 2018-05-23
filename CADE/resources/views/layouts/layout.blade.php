@@ -15,7 +15,7 @@
 
 		</ul>
 	</div>
-	<div class="main">
+	<div class="main" style="height:100%;">
 		<!--<div class="panel panel-default">
 				<div class="panel-body cold-md-2" id="sepa">
 

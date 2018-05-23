@@ -8,9 +8,9 @@
   </div>
 </div>
 
-<div class=" col-md-12 container"style="height:100%;">
+<div class=" col-md-12 container"style="height:auto">
 
-  <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:100%;">
+  <div class="contenedora col-md-12" style="overflow-x:hidden;  margin-top:8%;height:auto;">
   <button class="tablink" style="width:50%;" onclick="openPage('benefi', this, '')" id="defaultOpen">Usuarios</button>
   <button class="tablink" style="width:50%;" onclick="openPage('agregar', this, '')" >Agregar Usuario</button>
 
