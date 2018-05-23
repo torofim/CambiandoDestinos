@@ -240,7 +240,7 @@
     <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Correo Electronico:</p>
   </div>
   <div class="col-md-4" style="padding:0;margin-top:1%;width:60%; ">
-    <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Francisco I. Madero #503 Local #3</p>
+    <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Francisco I. Madero y 21a, colonia chamizal</p>
     <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">+52-636-121-2491 </p>
     <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">fundacioncambiandodestinos@hotmail.com</p>
     <a class="col-md-12"href="/login">Iniciar Sesion</a>
