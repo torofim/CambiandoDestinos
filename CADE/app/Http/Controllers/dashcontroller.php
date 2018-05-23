@@ -93,11 +93,11 @@ class dashcontroller extends Controller
 
      //dd($valoresMes);
      $discap=DB::select('select nombre, apellido_p, apellido_m, discapacidad,
-     Causa_discapacidad, Requiere_apoyo_funcional from datos_personales INNER join discapacidad
+     Causa_discapacidad, Requiere_apoyo_funcional, Apoyo_funcional from datos_personales INNER join discapacidad
       on datos_personales.Id_bene = discapacidad.Id_bene where Discapacidad="si" and Requiere_apoyo_funcional="si" ');
 
 
-      $hipert=DB::select('select datos_personales.Id_bene,nombre, apellido_p, apellido_m, hipertension from datos_personales
+      $hipert=DB::select('select datos_personales.Id_bene,nombre, apellido_p, apellido_m, hipertension, Tipo_rehabilitacion from datos_personales
       INNER JOIN discapacidad on datos_personales.Id_bene = discapacidad.Id_bene
       where hipertension="si"');
 

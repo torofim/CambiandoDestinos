@@ -72,6 +72,7 @@
                <td>Discapacidad</td>
                <td>Causa</td>
                <td>Requiere apoyo</td>
+               <td>tipo de apoyo</td>
              </thead>
              <tbody>
                <tr>
@@ -82,6 +83,7 @@
                  <td>{{$x->discapacidad}}</td>
                  <td>{{$x->Causa_discapacidad}}</td>
                  <td>{{$x->Requiere_apoyo_funcional}}</td>
+                 <td>{{$x->Apoyo_funcional}}</td>
                  <tr>
 
                  </tr>
@@ -138,7 +140,7 @@
                                    <td style="color:black;">{{$w->Pad}}</td>
                                    <tr>
                                    </tr>
-                                   @endif 
+                                   @endif
                                    @endforeach
                                  </tr>
                                </tbody>
