@@ -36,16 +36,16 @@
 
 <div class="item active">
 <img src="./img/apoyo.jpg"  class="img-responsive2" alt="gestion" >
-<div class="carousel-caption d-none d-dm-block" style="top:0% ;">
-  <h3 style="font-size:2.3em;margin-left:44%;margin-top:0.2%;">GESTIONES </h3>
-  <p class="col-md-12"></p>
+<div class="carousel-caption" >
+  <h3 style="font-size:2.3em;margin-left:35%;margin-top:0.2%;">GESTIONES </h3>
+
 </div>
 </div>
 
 <div class="item">
 <img src="./img/comidacaliente1.jpg" class="img-responsive2" alt="comida" >
-<div class="carousel-caption" style="top:0%;">
-  <h3 style="font-size:2.3em;margin-left:41%;margin-top:0.2%;">COMIDA CALIENTE</h3>
+<div class="carousel-caption">
+  <h3 style="font-size:2.3em;margin-left:35%;margin-top:0.2%;">COMIDA CALIENTE</h3>
   <div>
     <p class="col-md-12"  style="margin-left:35%;"></p>
   </div>
@@ -57,23 +57,23 @@
 <div class="item">
 <img src="./img/rehabilitation.jpg" alt="reha" >
 <div class="carousel-caption" >
-  <h3 style="font-size:2.3em;margin-left:42%;margin-top:0.2%;">REHABILITACION</h3>
-  <p  style="margin-left:7%;"></p>
+  <h3 style="font-size:2.3em;margin-left:35%;margin-top:0.2%;">REHABILITACION</h3>
+
 </div>
 </div>
 <div class="item">
 <img src="./img/visita1.jpg" alt="visita" >
 <div class="carousel-caption" >
-  <h3 style="font-size:2.3em;margin-left:41%;margin-top:0.2%;">VISITA DOMICILIARIA</h3>
-  <p style="margin-left:37%;"</p>
+  <h3 >VISITA DOMICILIARIA</h3>
+
 </div>
 </div>
 
 <div class="item">
 <img src="./img/guitarra.jpg" alt="iccd" >
 <div class="carousel-caption" >
-  <h3 style="font-size:2.3em;margin-left:27%;margin-top:0.2%;">INSTITUTO CULTURAL CAMBIANDO DESTINOS </h3>
-  <p  style="margin-left:2%;"></p>
+  <h3 style="font-size:2.3em;margin-left:35%;margin-top:0.2%;">INSTITUTO CULTURAL CAMBIANDO DESTINOS </h3>
+
 </div>
 </div>
 
@@ -89,9 +89,7 @@
 <span class="sr-only" >Next</span>
 </a>
 </div>
-<div class="new-caption-area">
 
-</div>
 </section>
 
 
@@ -104,25 +102,25 @@
     <h2 style="color:black;">Sobre Nosotros</h2>
 </div>
 
-<div class="col-md-12" style="margin-top:3%;padding:0;">
-  <div class="col-md-4 divima">
+<div class="principio col-md-12 col-xs-12" style="margin-top:3%;padding:0;">
+  <div class="col-md-4 col-xs-2 divima">
     <img class="img-responsive2"  src="./img/fclogo1.png" >
   </div>
 
-  <div class="col-md-5 jumbotron" >
-  <h1 style="font-size:35px;margin-top:0;"></h1>
-  <p>SOMOS UNA INSTITUCION DE INICIATIVA PRIVADA SIN FIN DE
+  <div class="col-md-5 col-xs-2 jumbotron" >
+  <h1 ></h1>
+  <p class="jumbotit">SOMOS UNA INSTITUCION DE INICIATIVA PRIVADA SIN FIN DE
     LUCRO CON RESPONSABILIDADES CULTURALES Y SOCIALES ​
     EN DONDE DISENAMOS Y ENCAUSAMOS PROYECTOS DE UNIDAD
     QUE DESARROLLEN UN CAMBIO SUSTENTABLE EN LA INTEGRACION
     Y FORMACION DE NINOS, JOVENES, ADULTOS Y ANCIANOS, EN CULTURA
     EDUCACION Y SALUD.</p>
-  <p style="margin-left:65%;margin-top:10%;"><a class="btn btn-primary btn-lg boton" href="/informacion#section-7i1hi" role="button"  style="background-color:green;">Conoce Mas</a></p>
+  <p class="botona"><a class="btn btn-primary btn-md  boton" href="/informacion#section-7i1hi" role="button"  style="background-color:green;">Conoce Mas</a></p>
 </div>
 </div>
 </div>
 
-<section>
+
 
 </section>
 
@@ -178,18 +176,18 @@
   <div class="col-md-12 text-center" style="margin-top:3%;">
       <h2 style="color:black;">Historias de aliento</h2>
   </div>
-  <div class="cold-md-12 info" >
+  <div class="col-md-12 col-xs-12 info" >
     <h4 >Durante los años 2011 a 2015, la ciudad de Buenaventura no contaba con un centro de rehabilitación por lo que Fundacion
     Cambiando Destinos, A.C. presento el programa de centro de fisioterapia buenaventura (CEFIB). Una vez establecido un centro de rehabilitación por parte
   del municipio de Buenaventura, CEFIB cerro sus puertas.</h4>
   </div>
-  <div class="col-md-12"style="margin-top:5%;margin-left:5%;" >
+  <div class=" divhos col-md-12 col-xs-12" >
 
-  <div  class="col-md-5 divhis" >
-  <div class="col-md-8 divhim"  >
+  <div  class="col-md-5 col-xs-6 divhis" >
+  <div class="col-md-8 col-xs-8 divhim"  >
     <img class="img-responsive2  " src="./img/mario1.jpg" alt="responsive" >
   </div>
-  <div class="col-md-4 divhtex" ><p style="margin-top:20%;color:black;">Mario</p> <br>
+  <div class="col-md-4 col-xs-5 divhtex" ><p style="margin-top:20%;color:black;">Mario</p> <br>
     <p style="color:black;">Mario es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
     cuando Fundación Cambiando Destinos, A.C. abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
     juega futbol con sus companeros de la escuela</p> </div>
@@ -197,11 +195,11 @@
 </div>
 
 
-<div class="col-md-5 divhis" style="margin-left:6%;">
-<div class="col-md-8 divhim" >
+<div class="col-md-5 col-xs-6 divhis divhis" style="margin-left:6%;">
+<div class="col-md-8 col-xs-8 divhim" >
   <img class="img-responsive2" src="./img/chilito2.jpg" alt="responsive" >
 </div>
-<div class="col-md-4 divhtex" ><p style="margin-top:20%;color:black;">Chilito</p> <br><p style="color:black;">
+<div class="col-md-4 col-xs-5  divhtex" ><p style="margin-top:20%;color:black;">Chilito</p> <br><p style="color:black;">
   Chilito es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
   cuando Fundación Cambiando Destinos, A.C. abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
   juega futbol con sus companeros de la escuela</p> </div>
@@ -217,7 +215,7 @@
 
 
 
-<section style="background-color:white;height:950px;margin-top:0%;width: 100%;background-size:contain;background-repeat:no-repeat;background-position:center;" id="cuarto">
+<section class="galeria"style="background-color:white;height:950px;margin-top:0%;width: 100%;background-size:contain;background-repeat:no-repeat;background-position:center;" id="cuarto">
     <!--background-image:url(./img/loga1.png);!-->
 </div>
    <div class="col-md-12 titula">
@@ -231,21 +229,21 @@
 
 
 
-<section style="background-color:#194A4F;height:285px;margin-top:0%;width: 100%; padding-bottom:0;"id="quinto">
-<div class="col-md-4 " style="width:60%; margin-top:5%;">
+<section class="footerino"style="background-color:#194A4F;height:285px;margin-top:0%;width: 100%; padding-bottom:0;"id="quinto">
+<div class="col-md-4 col-xs-4 " style="width:60%; margin-top:5%;">
   <p class=""style=" font-size:30px;font-family:monospace;color:#64E9EE;margin-left:25px;">contactanos</p>
-  <div class="col-md-3" style="margin-left:10%; padding:0;margin-top:1%;width:27%;">
+  <div class="col-md-3 col-xs-4" style="margin-left:10%; padding:0;margin-top:1%;width:27%;">
     <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Direccion:</p>
     <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Telefono:</p>
     <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Correo Electronico:</p>
   </div>
-  <div class="col-md-4" style="padding:0;margin-top:1%;width:60%; ">
+  <div class="col-md-4 col-xs-4" style="padding:0;margin-top:1%;width:60%; ">
     <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Francisco I. Madero y 21a, colonia chamizal</p>
     <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">+52-636-121-2491 </p>
     <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">fundacioncambiandodestinos@hotmail.com</p>
     <a class="col-md-12"href="/login">Iniciar Sesion</a>
   </div>
-  <div class="col-md-4" style=" margin-Left:120%; margin-top:-25%;" >
+  <div class="margenfb col-md-4 col-xs-5"  >
     <h4 style=" font-size: 20px;font-family: fantasy;color:#64E9EE;">Redes Sociales</h4>
     <a target="_blank" href="https://www.facebook.com/Fundacioncambiandodestinos/">
     <img title="Facebook" alt="Facebook"  src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook1.png"  width="65" height="65" />
