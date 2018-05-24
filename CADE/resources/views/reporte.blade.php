@@ -191,10 +191,10 @@
             <div class="audvis">
               <label for=""><input class="" type="radio" name="1" value="Auditiva">Auditiva</label>
               <br>
-              <label for=""><input type="radio" name="2" value="Visual">Visual</label>
+              <label for=""><input type="radio" name="2" value="Visual" >Visual</label>
             </div>
             <div class="intmus">
-              <input class="" type="radio" name="3" value="Musculo Esqueletica">Musculo Esquelética
+              <input class="" type="radio" name="3" value="Musculo Esqueletica" >Musculo Esquelética
               <br>
               <input class="" type="radio" name="4" value="Intelectual">Intelectual
             </div>

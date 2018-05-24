@@ -64,7 +64,7 @@ class reportecontroller extends Controller
       ->orderby('Id_bene','desc')
       //->take(10)
       ->get();
-    //  dd($registros9);
+     //dd($registros9);
     $registros10=\DB::table('estatus')
     ->where('Id_bene','=',$Id)
     ->orderby('Id_bene','desc')
