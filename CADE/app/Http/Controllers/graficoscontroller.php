@@ -23,7 +23,7 @@ class graficoscontroller extends Controller
      $usuarios = DB::select('select COUNT(*) AS usu from users');
      $taller=DB::select('select COUNT(*) AS btaller from taller');
      $disc=DB::select('select Count(*) AS disca from discapacidad');
-     $localidades=DB::select('select Localidad, COUNT(*) as cantidad from datos_personales group by Localidad');
+     $localidades=DB::select('select Municipio, COUNT(*) as cantidad from datos_personales group by Municipio');
      $categorias='';
      $valores='';
      $valoresMes='';
@@ -188,7 +188,7 @@ class graficoscontroller extends Controller
 
      ///////////////////////////////////////////////////////////////////////////
      for($i=0;$i<count($localidades);$i++){
-       $categorias=$categorias.'"'.$localidades{$i}->Localidad.'",';
+       $categorias=$categorias.'"'.$localidades{$i}->Municipio.'",';
        $valores=$valores.$localidades{$i}->cantidad.',';
      }
 

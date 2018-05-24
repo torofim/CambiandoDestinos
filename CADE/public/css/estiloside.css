@@ -110,6 +110,7 @@ margin: 0px;
 nav.sidebar.navbar {
 border-radius: 0px;
 position: fixed;
+z-index:5000;
 }
 
 nav.sidebar, .main{
@@ -131,7 +132,9 @@ height:auto;
 
 /*small/medium side display*/
 @media (min-width: 768px) {
-
+  nav.sidebar.navbar {
+margin-bottom:200px;
+  }
 
 /*Allow main to be next to Nav*/
 .main{
@@ -155,6 +158,7 @@ nav.sidebar .navbar-brand, nav.sidebar .navbar-header{
   text-align: center;
   width: 100%;
   margin-left: 0px;
+
 }
 
 /*Center Icons*/
@@ -166,12 +170,10 @@ nav.sidebar a{
 nav.sidebar .navbar-nav > li:first-child{
   border-top: 1px #e5e5e5 solid;
 }
-
 /*adds border to bottom nav boxes*/
 nav.sidebar .navbar-nav > li{
   border-bottom: 1px #e5e5e5 solid;
 }
-
 /* Colors/style dropdown box*/
 nav.sidebar .navbar-nav .open .dropdown-menu {
   position: static;
@@ -183,17 +185,14 @@ nav.sidebar .navbar-nav .open .dropdown-menu {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-
 /*allows nav box to use 100% width*/
 nav.sidebar .navbar-collapse, nav.sidebar .container-fluid{
-  padding: 0 0px 0 0px;
+  padding: 0 0 0 0;
 }
-
 /*colors dropdown box text */
 .navbar-inverse .navbar-nav .open .dropdown-menu>li>a {
   color:white;
 }
-
 /*gives sidebar width/height*/
 nav.sidebar{
   width: 200px;
@@ -332,7 +331,7 @@ float:left;
   color:white;
 }
 .navbar-inverse .navbar-nav > li > a{
-  color:black;
+  color:green;
 }
 .navbar-inverse .navbar-nav > li > a:hover{
   color:green;

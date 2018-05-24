@@ -4,6 +4,7 @@
     <meta charset="utf-8">
         <link href="{{ asset('css/reporte.css') }}" rel="stylesheet" type="text/css" >
         <link href="{{ asset('css/bootstrap.css') }}" rel="stylesheet" type="text/css" >
+
     <title></title>
   </head>
   <body>
@@ -222,9 +223,9 @@
                 </div>
 
 
-              @elseif($perros9[0]->Discapacidad=='Visual')
+              @elseif($perros9[0]->Visual=='Si')
               <div class="audvis">
-              <label for=""><input class="" type="radio" name="1" value="Auditiva" >Auditiva</label>
+              <label for=""><input class="" type="radio" name="1" value="Auditiva">Auditiva</label>
               <br>
               <label for=""><input type="radio" name="2" value="Visual" checked>Visual</label>
             </div>
@@ -238,39 +239,39 @@
               <br>
               <input class="" type="text" name="6" value="">
             </div>
-            @elseif($perros9[0]->Discapacidad=='Musculo Esqueletica')
+            @elseif($perros9[0]->Intelectual=='Si')
             <div class="audvis">
             <label for=""><input class="" type="radio" name="1" value="Auditiva" >Auditiva</label>
             <br>
             <label for=""><input type="radio" name="2" value="Visual" >Visual</label>
           </div>
           <div class="intmus">
-            <input class="" type="radio" name="3" value="Musculo Esqueletica" checked>Musculo Esqueletica
+            <input class="" type="radio" name="3" value="Musculo Esqueletica" >Musculo Esqueletica
             <br>
-            <input class="" type="radio" name="4" value="Intelectual">Intelectual
+            <input class="" type="radio" name="4" value="Intelectual" checked>Intelectual
           </div>
           <div class="df">
             <input class="" type="radio" name="5" value="Neuromotora">Neuromotora
             <br>
             <input class="" type="text" name="6" value="">
           </div>
-          @elseif($perros9[0]->Discapacidad=='Intelectual')
+          @elseif($perros9[0]->MusculoEsqueletica=='Si')
           <div class="audvis">
           <label for=""><input class="" type="radio" name="1" value="Auditiva" >Auditiva</label>
           <br>
           <label for=""><input type="radio" name="2" value="Visual" >Visual</label>
         </div>
         <div class="intmus">
-          <input class="" type="radio" name="3" value="Musculo Esqueletica">Musculo Esqueletica
+          <input class="" type="radio" name="3" value="Musculo Esqueletica" checked>Musculo Esqueletica
           <br>
-          <input class="" type="radio" name="4" value="Intelectual" checked>Intelectual
+          <input class="" type="radio" name="4" value="Intelectual" >Intelectual
         </div>
         <div class="df">
           <input class="" type="radio" name="5" value="Neuromotora">Neuromotora
           <br>
           <input class="" type="text" name="6" value="">
         </div>
-        @elseif($perros9[0]->Discapacidad=='Neuromotora')
+        @elseif($perros9[0]->Neuromotora=='Si')
         <div class="audvis">
         <label for=""><input class="" type="radio" name="1" value="Auditiva" >Auditiva</label>
         <br>
@@ -304,7 +305,6 @@
     </div>
 
                @endif
-
               @endif
 
       <div class="causa">
@@ -437,7 +437,7 @@
 
         </input>
         @empty
-        <p>sin registro</p>
+        <input type="text" name="" value="">
         @endforelse
       </div>
       <div class="tpeso">
@@ -449,7 +449,7 @@
 
         </input>
         @empty
-        <p>sin registro</p>
+        <input type="text" name="" value="">
         @endforelse
       </div>
       <div class="testatura">
@@ -461,7 +461,7 @@
 
         </input>
         @empty
-        <p>sin registro</p>
+        <input type="text" name="" value="">
         @endforelse
       </div>
       <div class="ttalla">
@@ -473,7 +473,7 @@
 
         </input>
         @empty
-        <p>sin registro</p>
+        <input type="text" name="" value="">
         @endforelse
       </div>
       <div class="tcalzado">
@@ -485,7 +485,7 @@
 
         </input>
         @empty
-        <p>sin registro</p>
+        <input type="text" name="" value="">
         @endforelse
       </div>
       <div class="trehab">
@@ -517,7 +517,7 @@
         <input value="  {{$disca->Lugar_de_rehabilitacion}}">
         </input>
         @empty
-        <p>sin registro</p>
+        <input type="text" name="" value="">
         @endforelse
       </div>
       <div class="tcual">
@@ -528,7 +528,7 @@
         <input value="  {{$disca->Tipo_rehabilitacion}}">
         </input>
         @empty
-        <input value="Sin registro">
+        <input value="">
         @endforelse
       </div>
 
@@ -550,7 +550,9 @@
               <input style="margin-left:20px;" value="{{$disca->Tipo_apoyo}}">
               </input>
               @empty
-              <p>sin registro</p>
+              <label for=""><input type="radio" name="sa" value="Si">Si</label>
+              <br>
+              <label for=""><input type="radio" name="sa" value="No">No</label>
               @endforelse
 
           @elseif($perros2[0]->Apoyo_funcional=='No')
@@ -562,7 +564,9 @@
             <input value="">
             </input>
             @empty
-            <p>sin registro</p>
+            <label for=""><input type="radio" name="sa" value="Si">Si</label>
+            <br>
+            <label for=""><input type="radio" name="sa" value="No">No</label>
             @endforelse
           </div>
           @else
@@ -574,11 +578,12 @@
             <input value="">
             </input>
             @empty
-            <p>sin registro</p>
+            <label for=""><input type="radio" name="sa" value="Si">Si</label>
+            <br>
+            <label for=""><input type="radio" name="sa" value="No">No</label>
             @endforelse
           </div>
            @endif
-
           @endif
       </div>
       <div class="tcualapo" style="margin-left:55px;">
@@ -599,26 +604,35 @@
             <label for=""><input type="radio" name="reqapoyo" value="Si" checked>Si</label>
             <br>
             <label for=""><input type="radio" name="reqapoyo" value="No">No</label>
+            <div class="tcualapoyo">
+              Cual
+            </div>
             <input type="text" style="margin-left:20px;" name="" value="{{$perros2[0]->Tipo_apoyo}}">
 
           @elseif($perros2[0]->Requiere_apoyo_funcional=='No')
           <label for=""><input type="radio" name="reqapoyo" value="Si"> Si</label>
           <br>
           <label for=""><input type="radio" name="reqapoyo" value="No" checked> No</label>
-          @else
-          <div class="tcualapoyo">
+          <div class="tcualapoyo" style="margin-left:60px; margin-top:-55px;">
             Cual
           </div>
-            <div class="reqcual">
-              <input type="text" style="margin-left:30%" name="" value="{{$perros2[0]->Requiere_apoyo_funcional}}">
+          <div class="reqcual" style="margin-left:60px; margin-top:-30px;">
+            <input type="text" name=""  value="">
+          </div>
+          @else
+          <label for=""><input type="radio" name="reqapoyo" value="Si"> Si</label>
+          <br>
+          <label for=""><input type="radio" name="reqapoyo" value="No"> No</label>
+          <div class="tcualapoyo" style="margin-left:60px; margin-top:-55px;">
+            Cual
+          </div>
+            <div class="reqcual" style="margin-left:60px; margin-top:-30px;">
+              <input type="text" name=""  value="{{$perros2[0]->Requiere_apoyo_funcional}}">
             </div>
            @endif
-
           @endif
       </div>
-      <div class="tcualapoyo" style="margin-left:50px;">
-        Cual
-      </div>
+
       <!-- FALTA LOS RADIOS DE CUAL TIPO DE APOYO FUNCIONAL Y DATOS DE DOMICILIO Y TELEFONOS-->
       <div class="titulocual">
         Cual
@@ -646,7 +660,7 @@
         <br>
         <input type="radio" name="" value="">Silla soporte
         <br>
-        <input type="radio" name="" value="">Silla baño
+        <input type="radio" name="" value="">Silla de baño
         <br>
         <input type="text" name="" value="">Otro
       </div>
@@ -658,7 +672,7 @@
         <input value="  {{$usua->Domicilio}}">
         </input>
         @empty
-        <p>sin registro</p>
+        <input type="text" name="" value="">
         @endforelse
       </div>
       <div class="tcolonia">
@@ -669,7 +683,7 @@
         <input value="Chamizal">
         </input>
         @empty
-        <p>sin registro</p>
+        <input type="text" name="" value="">
         @endforelse
       </div>
       <div class="tmunicipio">
@@ -680,7 +694,7 @@
         <input value="{{$usua->Municipio}}">
         </input>
         @empty
-        <p>sin registro</p>
+        <input type="text" name="" value="">
         @endforelse
       </div>
       <div class="tcp">
@@ -688,10 +702,10 @@
       </div>
       <div class="cp">
         @forelse($datosper1 as $usua)
-        <input value="  {{$usua->Cp}}">
+        <input value="{{$usua->Cp}}">
         </input>
         @empty
-        <p>sin registro</p>
+        <input type="text" name="" value="">
         @endforelse
       </div>
       <div class="tlocal">
@@ -702,7 +716,7 @@
         <input value="{{$usua->Localidad}}">
         </input>
         @empty
-        <p>sin registro</p>
+        <input type="text" name="" value="">
         @endforelse
       </div>
       <div class="ttel">
@@ -713,7 +727,7 @@
         <input value="{{$usua->Tel}}">
         </input>
         @empty
-        <p>sin registro</p>
+        <input type="text" name="" value="">
         @endforelse
       </div>
       <div class="tcel">
@@ -723,7 +737,7 @@
         @forelse($datosper1 as $usua)
         <input value="{{$usua->Tel}}"></input>
         @empty
-
+        <input type="text" name="" value="">
         @endforelse
       </div>
 
@@ -784,7 +798,7 @@
         <input value="{{$usua->Nombre_tutor}}">
         </input>
         @empty
-        <p>sin registro</p>
+        <input type="text" name="" value="">
         @endforelse
       </div>
       <div class="tapellidos">
@@ -795,7 +809,7 @@
         <input value="{{$usua->Apellido_tutor}}">
         </input>
         @empty
-        <p>sin registro</p>
+        <input type="" name="" value="">
         @endforelse
       </div>
       <div class="ttutor">
@@ -904,12 +918,10 @@
       </div>
       <div class="antecedentes">
         @forelse($perros4 as $usuas)
-        <input value="  {{$usuas->Antecedentes}}">
-
+        <input value="{{$usuas->Antecedentes}}">
         </input>
         @empty
-        <input value="Sin registrar">
-
+        <input value="">
         </input>
         @endforelse
       </div>
