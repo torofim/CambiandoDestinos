@@ -12,5 +12,5 @@ class Datos_personales extends Model
   'Nombre','Apellido_p','Apellido_m','Fecha_nacimiento','Lugar_nacimiento','Edad',
   'Sexo','Curp','Edo_civil','Tipo_sangre','Peso','Estatura','Talla','Calzado','Domicilio','Cp','Localidad','Municipio','Tel'
   ];
-  public $timestamps=false;
+  
 }
