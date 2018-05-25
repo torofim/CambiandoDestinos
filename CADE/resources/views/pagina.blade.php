@@ -37,34 +37,31 @@
 <div class="item active">
 <img src="./img/apoyo.jpg"  class="img-responsive2" alt="gestion" >
 <div class="carousel-caption" >
-  <h3 style="font-size:2.3em;margin-left:35%;margin-top:0.2%;">GESTIONES </h3>
-
+  <h3 style="font-size:2.3em;margin-top:0.2%;">GESTIONES</h3>
 </div>
 </div>
 
 <div class="item">
 <img src="./img/comidacaliente1.jpg" class="img-responsive2" alt="comida" >
 <div class="carousel-caption">
-  <h3 style="font-size:2.3em;margin-left:35%;margin-top:0.2%;">COMIDA CALIENTE</h3>
+  <h3 style="font-size:2.3em;margin-top:0.2%;">COMIDA CALIENTE</h3>
   <div>
     <p class="col-md-12"  style="margin-left:35%;"></p>
   </div>
   </div>
 
-
-
 </div>
 <div class="item">
 <img src="./img/rehabilitation.jpg" alt="reha" >
 <div class="carousel-caption" >
-  <h3 style="font-size:2.3em;margin-left:35%;margin-top:0.2%;">REHABILITACION</h3>
+  <h3 style="font-size:2.3em;margin-top:0.2%;">REHABILITACION</h3>
+</div>
+</div>
 
-</div>
-</div>
 <div class="item">
 <img src="./img/visita1.jpg" alt="visita" >
 <div class="carousel-caption" >
-  <h3 style="font-size:2.3em;margin-left:35%;margin-top:0.2%;">VISITA DOMICILIARIA</h3>
+  <h3 style="font-size:2.3em;margin-top:0.2%;">VISITA DOMICILIARIA</h3>
 
 </div>
 </div>
@@ -72,7 +69,7 @@
 <div class="item">
 <img src="./img/guitarra.jpg" alt="iccd" >
 <div class="carousel-caption" >
-  <h3 style="font-size:2.3em;margin-left:35%;margin-top:0.2%;">INSTITUTO CULTURAL CAMBIANDO DESTINOS </h3>
+  <h3 style="font-size:2.3em;margin-top:0.2%;">INSTITUTO CULTURAL CAMBIANDO DESTINOS </h3>
 
 </div>
 </div>
@@ -177,7 +174,7 @@
       <h2 style="color:black;">Historias de aliento</h2>
   </div>
   <div class="col-md-12 col-xs-12 info" >
-    <h4 >Durante los años 2011 a 2015, la ciudad de Buenaventura no contaba con un centro de rehabilitación por lo que Fundacion
+    <h4 style="font-size:2rem;">Durante los años 2011 a 2015, la ciudad de Buenaventura no contaba con un centro de rehabilitación por lo que Fundacion
     Cambiando Destinos, A.C. presento el programa de centro de fisioterapia buenaventura (CEFIB). Una vez establecido un centro de rehabilitación por parte
   del municipio de Buenaventura, CEFIB cerro sus puertas.</h4>
   </div>
@@ -188,7 +185,7 @@
     <img class="img-responsive2  " src="./img/mario1.jpg" alt="responsive" >
   </div>
   <div class="col-md-4 col-xs-5 divhtex" ><p style="margin-top:20%;color:black;">Mario</p> <br>
-    <p style="color:black;">Mario es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
+    <p style="color:black;font-size:1.5rem; text-align:justify;">Mario es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
     cuando Fundación Cambiando Destinos, A.C. abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
     juega futbol con sus companeros de la escuela</p> </div>
 
@@ -199,7 +196,7 @@
 <div class="col-md-8 col-xs-8 divhim" >
   <img class="img-responsive2" src="./img/chilito2.jpg" alt="responsive" >
 </div>
-<div class="col-md-4 col-xs-5  divhtex" ><p style="margin-top:20%;color:black;">Chilito</p> <br><p style="color:black;">
+<div class="col-md-4 col-xs-5  divhtex" ><p style="margin-top:20%;color:black;">Chilito</p> <br><p style="color:black;font-size:1.5rem; text-align:justify;">
   Chilito es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
   cuando Fundación Cambiando Destinos, A.C. abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
   juega futbol con sus companeros de la escuela</p> </div>
