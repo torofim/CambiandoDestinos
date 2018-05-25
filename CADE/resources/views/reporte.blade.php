@@ -186,7 +186,21 @@
             Discapacidad
           </div>
 
-
+          <div class="audvis">
+            <label for=""><input class="" type="radio" name="1" value="Auditiva">Auditiva</label>
+            <br>
+            <label for=""><input type="radio" name="2" value="Visual" >Visual</label>
+          </div>
+          <div class="intmus">
+            <input class="" type="radio" name="3" value="Musculo Esqueletica" >Musculo Esquelética
+            <br>
+            <input class="" type="radio" name="4" value="Intelectual">Intelectual
+          </div>
+          <div class="df">
+            <input class="" type="radio" name="5" value="Neuromotora">Neuromotora
+            <br>
+            <input class="" type="text" name="6" value="">
+          </div>
             @if(count($perros9)=='')
             <div class="audvis">
               <label for=""><input class="" type="radio" name="1" value="Auditiva">Auditiva</label>
@@ -208,103 +222,54 @@
                 @if($perros9[0]->Auditiva=='Si')
                 <div class="audvis">
                   <label for=""><input class="" type="radio" name="1" value="Auditiva" checked>Auditiva</label>
-                  <br>
-                  <label for=""><input type="radio" name="2" value="Visual">Visual</label>
                 </div>
-                <div class="intmus">
-                  <input class="" type="radio" name="3" value="Musculo Esqueletica">Musculo Esqueletica
-                  <br>
-                  <input class="" type="radio" name="4" value="Intelectual">Intelectual
+                @else
+                <div class="audvis">
+                  <label for=""><input class="" type="radio" name="1" value="Auditiva">Auditiva</label>
                 </div>
-                <div class="df">
-                  <input class="" type="radio" name="5" value="Neuromotora">Neuromotora
-                  <br>
-                  <input class="" type="text" name="6" value="">
-                </div>
+                @endif
 
-
-              @elseif($perros9[0]->Visual=='Si')
+              @if($perros9[0]->Visual=='Si')
+                <div class="audvis">
+                    <label for=""><input type="radio" name="2" value="Visual" style="margin-top:32px;" checked>Visual</label>
+                </div>
+              @else
               <div class="audvis">
-              <label for=""><input class="" type="radio" name="1" value="Auditiva">Auditiva</label>
-              <br>
-              <label for=""><input type="radio" name="2" value="Visual" checked>Visual</label>
-            </div>
+                  <label for=""><input type="radio" name="2" value="Visual" style="margin-top:32px;" >Visual</label>
+              </div>
+              @endif
+            @if($perros9[0]->Intelectual=='Si')
+              <div class="intmus">
+                  <input class="" type="radio" name="4" value="Intelectual" style="margin-left:0px; margin-top:26px; " checked>Intelectual
+              </div>
+            @else
             <div class="intmus">
-              <input class="" type="radio" name="3" value="Musculo Esqueletica">Musculo Esqueletica
-              <br>
-              <input class="" type="radio" name="4" value="Intelectual">Intelectual
+                <input class="" type="radio" name="4" value="Intelectual" style="margin-left:222px; margin-top:26px;" >Intelectual
             </div>
-            <div class="df">
-              <input class="" type="radio" name="5" value="Neuromotora">Neuromotora
-              <br>
-              <input class="" type="text" name="6" value="">
-            </div>
-            @elseif($perros9[0]->Intelectual=='Si')
-            <div class="audvis">
-            <label for=""><input class="" type="radio" name="1" value="Auditiva" >Auditiva</label>
-            <br>
-            <label for=""><input type="radio" name="2" value="Visual" >Visual</label>
-          </div>
-          <div class="intmus">
-            <input class="" type="radio" name="3" value="Musculo Esqueletica" >Musculo Esqueletica
-            <br>
-            <input class="" type="radio" name="4" value="Intelectual" checked>Intelectual
-          </div>
-          <div class="df">
-            <input class="" type="radio" name="5" value="Neuromotora">Neuromotora
-            <br>
-            <input class="" type="text" name="6" value="">
-          </div>
-          @elseif($perros9[0]->MusculoEsqueletica=='Si')
-          <div class="audvis">
-          <label for=""><input class="" type="radio" name="1" value="Auditiva" >Auditiva</label>
-          <br>
-          <label for=""><input type="radio" name="2" value="Visual" >Visual</label>
-        </div>
+            @endif
+          @if($perros9[0]->MusculoEsqueletica=='Si')
         <div class="intmus">
-          <input class="" type="radio" name="3" value="Musculo Esqueletica" checked>Musculo Esqueletica
-          <br>
-          <input class="" type="radio" name="4" value="Intelectual" >Intelectual
+          <input class="" type="radio" name="3" value="Musculo Esqueletica" style="margin-left:0px; margin-top:0px;" checked>Musculo Esqueletica
         </div>
-        <div class="df">
-          <input class="" type="radio" name="5" value="Neuromotora">Neuromotora
-          <br>
-          <input class="" type="text" name="6" value="">
+        @else
+        <div class="intmus">
+          <input class="" type="radio" name="3" value="Musculo Esqueletica" style="margin-left:0px; margin-top:0px;">Musculo Esqueletica
         </div>
-        @elseif($perros9[0]->Neuromotora=='Si')
-        <div class="audvis">
-        <label for=""><input class="" type="radio" name="1" value="Auditiva" >Auditiva</label>
-        <br>
-        <label for=""><input type="radio" name="2" value="Visual" >Visual</label>
-      </div>
-      <div class="intmus">
-        <input class="" type="radio" name="3" value="Musculo Esqueletica">Musculo Esqueletica
-        <br>
-        <input class="" type="radio" name="4" value="Intelectual" >Intelectual
-      </div>
+        @endif
+        @if($perros9[0]->Neuromotora=='Si')
       <div class="df">
         <input class="" type="radio" name="5" value="Neuromotora" checked>Neuromotora
-        <br>
-        <input class="" type="text" name="6" value="">
       </div>
       @else
-      <div class="audvis">
-      <label for=""><input class="" type="radio" name="1" value="Auditiva" >Auditiva</label>
-      <br>
-      <label for=""><input type="radio" name="2" value="Visual" >Visual</label>
-    </div>
-    <div class="intmus">
-      <input class="" type="radio" name="3" value="Musculo Esqueletica">Musculo Esqueletica
-      <br>
-      <input class="" type="radio" name="4" value="Intelectual" >Intelectual
-    </div>
-    <div class="df">
-      <input class="" type="radio" name="5" value="Neuromotora">Neuromotora
-      <br>
-      <input class="" type="text" name="6" value="{{$perros2[0]->Rehabilitacion}}">
-    </div>
+      <div class="df">
+        <input class="" type="radio" name="5" value="Neuromotora" >Neuromotora
+      </div>
+      @endif
 
-               @endif
+              @endif
+              @if(count($perros9[0]->Auditiva=='No' and ->Visual=='No'))
+              
+              @else
               @endif
 
       <div class="causa">
