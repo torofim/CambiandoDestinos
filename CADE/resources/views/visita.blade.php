@@ -10,7 +10,6 @@
 	<link href="./css/main.css" type="text/css" rel="stylesheet">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <<<<<<< HEAD
-
   <title>Fundación Cambiando Destinos, A.C.</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
@@ -24,9 +23,9 @@
   <meta name="msapplication-TileColor" content="#ff0000">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="https://turntostone1996_81e2.gr8.com/images/lps/css/reset.css?timestamp=20092017">
-=======
+
   <title>FundaciónCambiandoDestinos</title>
->>>>>>> e8eda86c473b70ebd4eb8ed4238b12f9a9268e6a
+
   <link rel="stylesheet" href="https://turntostone1996_81e2.gr8.com/images/lps/css/core.css?timestamp=20092017">
   <link rel="stylesheet" href="https://turntostone1996_81e2.gr8.com/images/lps/css/webform.css?timestamp=20092017">
   <link rel="stylesheet" href="https://turntostone1996_81e2.gr8.com/images/common/templates/landing/254/1/css/style.css">
@@ -84,7 +83,8 @@
                 </select>
             </div>
         </form>
-    </div><section data-section="section" id="section-ibd57" data-uid="section-ibd57" class="" data-draggable="true">
+    </div>
+    <section data-section="section" id="section-ibd57" data-uid="section-ibd57" class="" data-draggable="true">
         <div data-section="wrap" data-reverse="true">
             <div data-editable="text" id="edi-575bh" data-uid="edi-575bh" class="" data-draggable="true">
                 <div style="font-family: 'Source Sans Pro', sans-serif;font-size:54px; font-weight:300; color:#fff;line-height:1.2;text-align: center;" class="text-content">
@@ -97,7 +97,8 @@
             <div class="component-marker">
             </div>
         </div>
-    </section><section data-section="section" id="section-7i1hi" data-uid="section-7i1hi" class="" data-draggable="true">
+    </section>
+    <section data-section="section" id="section-7i1hi" data-uid="section-7i1hi" class="" data-draggable="true">
         <div data-section="wrap" data-reverse="true">
             <div data-editable="box" data-reverse="true" id="edi-5wjww" data-uid="edi-5wjww" data-draggable="true" class="">
                 <div data-editable="text" id="edi-w1wbh" data-uid="edi-w1wbh" data-draggable="true" class="">
@@ -122,7 +123,8 @@
             <div class="component-marker">
             </div>
         </div>
-    </section><section data-section="section" id="section-75jj6" data-uid="section-75jj6" class="" data-draggable="true">
+    </section>
+    <section data-section="section" id="section-75jj6" data-uid="section-75jj6" class="" data-draggable="true">
         <div data-section="wrap" data-reverse="true">
             <div class="component-backdrop"></div>
             <div class="component-marker">
@@ -175,7 +177,8 @@
                 <div data-editable="text" id="edi-fhhjj" data-draggable="true" data-uid="edi-fhhjj" class="">
                     <div style="font-family: 'Source Sans Pro', sans-serif; font-size: 18px; font-weight: 700; text-align: center; color:#313131;line-height: 1.1;" class="text-content"><span style="color: rgb(0, 0, 0);">
                         Misión
-                    </span></div>
+                      </span>
+                    </div>
                 </div>
                 <div data-editable="multimedia:image" id="edi-x7ljx" data-draggable="true" data-uid="edi-x7ljx" class="" style="background: none;">
 
@@ -201,7 +204,6 @@
                     <div style="border-top: 1px solid rgba(236,236,236,1.00); height: 0px;"></div>
                 </div>
                 <div data-editable="multimedia:image" id="edi-kd7k7" data-draggable="true" data-uid="edi-kd7k7" class="" style="background: none;">
-
                 <img src="https://multimedia.getresponse.com/getresponse-h87Rp/photos/666708104.jpg?_ga=2.97683679.1367688246.1526356372-335864284.1526356372" alt="/" width="463" height="261" /></div>
                 <div data-editable="text" id="edi-m7m7d" data-draggable="true" data-uid="edi-m7m7d" class="">
                     <div style="font-family: 'Source Sans Pro', sans-serif; font-size: 34px; font-weight: 100; text-align: center; color:#313131;line-height: 1.1;" class="text-content">
@@ -224,15 +226,13 @@
                     </div>
                 </div>
                 <div data-editable="multimedia:image" id="edi-hr8j8" data-draggable="true" data-uid="edi-hr8j8" class="" style="background: none;">
-
-                <img src="https://multimedia.getresponse.com/getresponse-h87Rp/photos/666716104.jpg?_ga=2.65597422.1367688246.1526356372-335864284.1526356372" alt="/" width="315" height="245" /></div>
-
+                <img src="https://multimedia.getresponse.com/getresponse-h87Rp/photos/666716104.jpg?_ga=2.65597422.1367688246.1526356372-335864284.1526356372" alt="/" width="315" height="245" />
+              </div>
             <div data-editable="text" id="edi-l39jb" data-draggable="true" data-uid="edi-l39jb" class="selected-component hover resizing-mode">
                 <div style="font-family: 'Source Sans Pro', sans-serif; font-size: 34px; font-weight: 100; text-align: center; color:#313131;line-height: 1.1;" class="text-content">
                         Aprendiendo a vivir en la tercera edad
                 </div>
             </div></div>
-
         <div data-editable="text" id="edi-mzzz0" data-draggable="true" data-uid="edi-mzzz0" class="">
                     <div style="font-family: Open Sans, sans-serif;  font-weight: 700; color:#313131;" class="text-content">Consistía en talleres semanales impartidos por personal con la capacitación adecuada , en los cuales se impartían platicas y dinámicas para los adultos, ademas de realizar monitoreos de presión arterial, glucosa, peso y talla, se realizaban dinámicas para calentamiento físico, se les realizaban terapias cognitivas(ejercicios didácticos,  etc.), al termino de  la terapia se realiza la convivencia(comida). <span style="font-size: 16px;">De octubre de 2011 a finales del 2016 se han impartido 239 talleres. Logrando atención personalizada a 136 adultos mayores.</span></div>
                 </div></div>
@@ -255,7 +255,6 @@
                     </div>
                 </div>
                 <div data-editable="multimedia:image" id="edi-6jiiz" data-draggable="true" data-uid="edi-6jiiz" class="" style="background: none;">
-
                 <img src="https://multimedia.getresponse.com/getresponse-h87Rp/photos/666721404.jpg?_ga=2.98805982.1367688246.1526356372-335864284.1526356372" alt="/" width="457" height="343" /></div>
             </div>
             <div class="component-backdrop">
@@ -293,11 +292,11 @@
                     </div>
                 </div>
                 <div data-editable="multimedia:image" id="edi-77j99" data-draggable="true" data-uid="edi-77j99" class="" style="background: none;">
-
                 <img src="https://multimedia.getresponse.com/getresponse-h87Rp/photos/666708104.jpg?_ga=2.97683679.1367688246.1526356372-335864284.1526356372" alt="/" width="463" height="261" /></div>
             </div>
         </div>
-    </section><section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-sssi7" data-draggable="true" data-uid="section-sssi7" class="">
+    </section>
+    <section xmlns="http://www.w3.org/1999/xhtml" data-section="section" id="section-sssi7" data-draggable="true" data-uid="section-sssi7" class="">
         <div data-section="wrap" data-reverse="true">
             <div data-editable="box" data-reverse="true" id="edi-iiu9u" data-draggable="true" data-uid="edi-iiu9u" class="">
                 <div data-editable="text" id="edi-v7v2v" data-draggable="true" data-uid="edi-v7v2v" class="">

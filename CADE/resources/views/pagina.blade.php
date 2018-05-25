@@ -64,7 +64,7 @@
 <div class="item">
 <img src="./img/visita1.jpg" alt="visita" >
 <div class="carousel-caption" >
-  <h3 >VISITA DOMICILIARIA</h3>
+  <h3 style="font-size:2.3em;margin-left:35%;margin-top:0.2%;">VISITA DOMICILIARIA</h3>
 
 </div>
 </div>
@@ -231,7 +231,7 @@
 
 <section class="footerino"style="background-color:#194A4F;height:285px;margin-top:0%;width: 100%; padding-bottom:0;"id="quinto">
 <div class="col-md-4 col-xs-4 " style="width:60%; margin-top:5%;">
-  <p class=""style=" font-size:30px;font-family:monospace;color:#64E9EE;margin-left:25px;">contactanos</p>
+  <p class=""style=" font-size:30px;font-family:monospace;color:#64E9EE;margin-left:25px;">contáctanos</p>
   <div class="col-md-3 col-xs-4" style="margin-left:10%; padding:0;margin-top:1%;width:27%;">
     <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Direccion:</p>
     <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Telefono:</p>
