@@ -5,7 +5,7 @@
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header" style="font-size:55px;margin-left:25%;margin-bottom:10%;">Iniciar Sesión</div>
+                <div class="card-header" style="font-size:55px;margin-left:30%;margin-bottom:10%;">Iniciar Sesión</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">

@@ -20,11 +20,12 @@
                   <a href="#page-top"></a>
               </li>
               <li class="page-scroll">
-                  <a href="#primero">Sobre Nosotros <img src="./img/logonavi.png" alt=""></a>
-              </li>
-              <li class="page-scroll">
                   <a href="#segundo">Cambiando Destinos  <img src="./img/logonavi.png" alt=""></a>
               </li>
+              <li class="page-scroll">
+                  <a href="#primero">Sobre Nosotros <img src="./img/logonavi.png" alt=""></a>
+              </li>
+
               <li class="page-scroll">
                   <a href="#tercero">Historias <img src="./img/logonavi.png" alt=""></a>
               </li>
@@ -33,6 +34,9 @@
               </li>
               <li class="page-scroll">
                   <a href="#quinto">Contacto<img src="./img/logonavi.png" alt=""></a>
+              </li>
+              <li class="page-scroll">
+                  <a class="col-md-12"href="/login">Iniciar Sesion<img src="./img/logonavi.png" alt=""></a>
               </li>
           </ul>
       </div>

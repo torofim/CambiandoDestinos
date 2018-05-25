@@ -21,25 +21,37 @@ nav .nombre{
 
 h2{
   font-size: 70px;
-  color: white;
-
-}
-
-h3{
-  font-size: 70px;
   color: black;
+  font-family: "Cherry Swash";
+  text-shadow: 10px 10px 5px #65686d;
 }
+
+
+
 /*-----------------section ---------------------*/
-section{
-float: left;
+.fondoimg {
+    width: 100%;
+    height: 850px;
+    background-repeat: no-repeat;
+    background-image: url('/img/fondofcd.jpg');
+    background-size: 100% 100%;
+
+}
+.top-right {
+
+    position: absolute;
+    top: 20%;
+    right: 2%;
+    font-size: 65px;
+    color:white;
+    font-family: "Cherry Swash";
+    text-shadow: 10px 10px 5px #65686d;
+    border-radius: 15px;
+
 }
 
 /************************************************ */
-.item img{
-  width:100%;
-  max-height: 700px;
 
-}
 
 /******************   divs ****************************** */
 .divs{
@@ -163,9 +175,52 @@ margin-Left:120%; margin-top:-15%;
 /******************carusel caption****************************** */
 
 
+.thumbnail {margin-bottom:6px;}
 
-  .carousel-caption h3 {
+.carousel-control.left,.carousel-control.right{
+  background-image:none;
+  margin-top:10%;
+  width:5%;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-left: 2.5%;
+    width: 30%;
 
+
+
+}
+
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+
+
+}
+
+.centered p{
+  font-size: 50px;
+}
+body.modal-open {
+    overflow: visible;
+    position: absolute;
+    width: 100%;
+    height:100%;
+}
+div .centered{
+  font-size: 25px;
+  color:white;
+}
+.row h2{
+  margin-top: 5%;
+  margin-left: 40%;
+  font-size: 75px;
 }
 
 
@@ -212,159 +267,7 @@ margin-top:0;
 
 
 /****************GALERIA****************** */
-.titula{
-  float: left;
-  margin-left: 40%;
-  margin-bottom: 2%;
-  margin-top: 2%;
-}
 
-.row > .column {
-  padding: 0 6px;
-}
-.row{
-  margin-left: 8%;
-}
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.column {
-  float: left;
-  width: 20%;
-  padding: 0;
-  max-height: 180px;
-  max-width: 70%;
-
-
-}
-#galim{
-  max-height: 100px;
-  max-width: 90%;
-  padding: 10px;
-}
-
-/* The Modal (background) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  padding: 50px;
-  margin-top: 3.6%;
-  width: 100%;
-  max-height: 700px;
-  overflow: auto;
-  background-color: black;
-}
-
-/* Modal Content */
-.modal-content {
-  position: relative;
-  background-color: #fefefe;
-  margin: auto;
-  padding: 0;
-  width: 90%;
-  max-width: 80%;
-
-}
-
-/* The Close Button */
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.mySlides {
-  display: none;
-
-}
-.mySlides img{
-  max-height: 550px;
-}
-
-.cursor {
-  cursor: pointer
-}
-
-/* Next & previous buttons */
-.prev,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-
-
-
-
-.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-
-
-.hover-shadow:hover {
-
-
-}
-.column:hover{
-  transform:scale(1.5);
-}
-.botona{
-margin-left:65%;margin-top:10%;
-}
 
 /************************************************ */
 
@@ -386,9 +289,7 @@ margin-left:65%;margin-top:10%;
   nav .nombre{
     font-size: 1.2em;
   }
-  #caurto{
-    display:none !important;
-  }
+
 }
 @media(max-width:990px){
   nav a{
@@ -400,9 +301,7 @@ margin-left:65%;margin-top:10%;
   li a img{
     display: none;
   }
-  .carrusel{
-    display: none;
-  }
+
   .primera{
     margin-top: 25%;
   }
@@ -433,9 +332,7 @@ margin-left: 45%;
     height: 400px;
   }
 
-  .galeria{
-      display:none !important;
-  }
+
   .info h4{
     font-size: 14px;
     text-align: center;
@@ -464,9 +361,7 @@ margin-left: 45%;
   li a img{
     display: none;
   }
-  .carrusel{
-    display: none;
-  }
+
   .primera{
     margin-top: 15%;
   }
@@ -496,9 +391,7 @@ margin-left: 20%;
   .divima{
     height: 400px;
   }
-  .galeria{
-      display:none !important;
-  }
+
   #segundo{
       display:none !important;
   }
@@ -564,9 +457,7 @@ margin-left: 20%;
   .divima{
     height: 400px;
   }
-  .galeria{
-      display:none !important;
-  }
+
   #segundo{
       display:none !important;
   }
