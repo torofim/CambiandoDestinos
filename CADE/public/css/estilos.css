@@ -115,7 +115,7 @@ float: left;
   border-bottom-right-radius:25px;
 }
 .divhtex p{
-  font-size: 18px;
+  font-size: 16px;
 }
 .divhos{
 margin-top:5%;margin-left:5%;
@@ -131,9 +131,9 @@ margin-top:5%;margin-left:5%;
 
 }
 .info h4{
-  padding:18px;
+  padding:16px;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
 }
 /*****************************************************/
 
@@ -379,7 +379,7 @@ margin-left:65%;margin-top:10%;
 
 /************************************************ */
 
-@media(max-width:1300px){
+@media(max-width:1400px){
   nav a{
     font-size: 1em;
   }
@@ -388,6 +388,13 @@ margin-left:65%;margin-top:10%;
   }
   #caurto{
     display:none !important;
+  }
+  .divhtex p{
+    font-size: 13px;
+
+  }
+  .info h4{
+    font-size: 18px;
   }
 }
 @media(max-width:990px){
@@ -442,8 +449,8 @@ margin-left: 45%;
     padding: none;
     margin-left: -2%;
   }
-  .divhtex{
-    font-size: 13px;
+  .divhtex p{
+    font-size: 10px;
 
   }
   .divhis{
@@ -509,7 +516,7 @@ margin-left: 20%;
     margin-left: -5%;
   }
   .divhtex{
-    font-size: 9.5px;
+    font-size: 8px;
 
   }
   .divhis{
@@ -519,8 +526,21 @@ margin-left: 20%;
   .divhos{
     margin-left: 2%;
   }
+  .galeria{
+      display:none !important;
+  }
 }
-@media(max-width:400px){
+@media(max-width:500px){
+  .divhtex{
+    font-size: 6px;
+
+  }
+  .galeria{
+      display:none !important;
+  }
+}
+
+@media(max-width:450px){
   nav a{
     font-size: .8em;
   }
@@ -574,13 +594,13 @@ margin-left: 20%;
     font-size: 25px;
   }
   .info h4{
-    font-size: 10px;
+    font-size: 9px;
     text-align: center;
     padding: none;
     margin-left: -5%;
   }
   .divhtex p{
-    font-size: 5px;
+    font-size: 4px;
 
   }
   .divhos .divhis .divhim .divhtex{
