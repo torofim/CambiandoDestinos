@@ -20,7 +20,7 @@
     @include('navprincipal')
 
 
-<section style="height:850px;margin-top:3%;">
+<section class="imagenprinc">
 <div class="fondoimg">
   <div class="top-right">Fundación Cambiando Destinos, A.C.</div>
 </div>
@@ -74,12 +74,12 @@
 
 
 </section>
-<section class="primera" id="primero" style="height:850px;margin-top:0%;background-image:url(./img/folleto1.jpg);background-size: cover;">
+<section class="primera" id="primero" >
 
 <div class="" >
 
 
-<div class="col-md-12 text-center" style="margin-top:2%;">
+<div class="col-md-12 text-center conoce" style="margin-top:2%;">
     <h2>Conócenos</h2>
 </div>
 
@@ -105,14 +105,14 @@
 
 </section>
 
-<section class="segundo" id="tercero" style="height:950px;margin-top:0%;background-image:url(./img/fondochido.jpg);">
+<section class="segundo" id="tercero" >
   <div class="col-md-12" >
 
   <div class="col-md-12 text-center" style="margin-top:3%;">
       <h2 >Historias de aliento</h2>
   </div>
   <div class="col-md-12 col-xs-12 info" >
-    <h4 style="font-size:2rem;">Durante los años 2011 a 2015, la ciudad de Buenaventura no contaba con un centro de rehabilitación por lo que Fundacion
+    <h4 >Durante los años 2011 a 2015, la ciudad de Buenaventura no contaba con un centro de rehabilitación por lo que Fundacion
     Cambiando Destinos, A.C. presento el programa de centro de fisioterapia buenaventura (CEFIB). Una vez establecido un centro de rehabilitación por parte
   del municipio de Buenaventura, CEFIB cerro sus puertas.</h4>
   </div>
@@ -123,18 +123,18 @@
     <img class="img-responsive2  " src="./img/mario1.jpg" alt="responsive" >
   </div>
   <div class="col-md-4 col-xs-5 divhtex" ><p style="margin-top:20%;color:black;">Mario</p> <br>
-    <p style="color:black;font-size:1.5rem; text-align:justify;">Mario es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
+    <p style="color:black; text-align:justify;">Mario es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
     cuando Fundación Cambiando Destinos, A.C. abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
     juega futbol con sus companeros de la escuela</p> </div>
 
 </div>
 
 
-<div class="col-md-5 col-xs-6 divhis divhis" style="margin-left:6%;">
+<div class="col-md-5 col-xs-6 divhis " style="margin-left:6%;">
 <div class="col-md-8 col-xs-8 divhim" >
   <img class="img-responsive2" src="./img/chilito2.jpg" alt="responsive" >
 </div>
-<div class="col-md-4 col-xs-5  divhtex" ><p style="margin-top:20%;color:black;">Chilito</p> <br><p style="color:black;font-size:1.5rem; text-align:justify;">
+<div class="col-md-4 col-xs-5  divhtex" ><p style="margin-top:20%;color:black;">Chilito</p> <br><p style="color:black; text-align:justify;">
   Chilito es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
   cuando Fundación Cambiando Destinos, A.C. abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
   juega futbol con sus companeros de la escuela</p> </div>
@@ -150,7 +150,7 @@
 
 
 
-<section class="galeria"style="background-color:white;height:750px;margin-top:0%;width: 100%;background-size:contain;background-repeat:no-repeat;background-position:center;" id="cuarto">
+<section class="galeria" id="cuarto">
     <!--background-image:url(./img/loga1.png);!-->
 
     <div class="">
@@ -258,7 +258,7 @@
 
 <section class="footerino"style="background-color:#194A4F;height:300px;margin-top:0%;width: 100%; padding-bottom:0;"id="quinto">
 <div class="col-md-4 col-xs-4 " style="width:60%; margin-top:5%;">
-  <p class=""style=" font-size:30px;font-family:monospace;color:#64E9EE;margin-left:25px;">Contáctanos</p>
+  <p class="titu"style=" font-size:30px;font-family:monospace;color:#64E9EE;margin-left:25px;">Contáctanos</p>
   <div class="col-md-3 col-xs-4" style="margin-left:10%; padding:0;margin-top:1%;width:27%;">
     <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Dirección:</p>
     <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Teléfono:</p>
@@ -268,7 +268,7 @@
     <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Francisco I. Madero y 21a, Colonia Chamizal</p>
     <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">+52-636-121-2491 </p>
     <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">fundacioncambiandodestinos@hotmail.com</p>
-    
+
   </div>
   <div class="margenfb col-md-4 col-xs-5"  >
     <h4 style=" font-size: 20px;font-family: fantasy;color:#64E9EE;">Redes Sociales</h4>

@@ -9,7 +9,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/estilos.css">
 	<link href="./css/main.css" type="text/css" rel="stylesheet">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<<<<<<< HEAD
+
   <title>Fundación Cambiando Destinos, A.C.</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
