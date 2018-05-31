@@ -49,16 +49,9 @@
             <div class="requisitos">
               Requisitos
             </div>
-            @if($perros11[0]->Foto_cuerpo=='')
             <div class="uno">
               <label for=""><input class="" type="radio" name="v" value="" >Foto cuerpo</label>
             </div>
-            @else
-            <div class="uno">
-              <label for=""><input class="" type="radio" name="v" value="" checked>Foto cuerpo</label>
-            </div>
-            @endif
-            <br>
             <div class="dos">
               <input class="inp1" type="radio" name="" value="">Certificado/Credencial Discapacidad
             </div>
@@ -515,7 +508,7 @@
             <label for=""><input type="radio" name="sa" value="No">No</label>
 
               @forelse($perros2 as $disca)
-              <input style="margin-left:20px;" value="{{$disca->Tipo_apoyo}}">
+              <input class="txtcualapo" type="text" value="{{$disca->Tipo_apoyo}}">
               </input>
               @empty
               <label for=""><input type="radio" name="sa" value="Si">Si</label>
@@ -555,7 +548,7 @@
           @endif
       </div>
       <div class="tcualapo" style="margin-left:55px;">
-        Cual
+      
       </div>
 
 
@@ -648,7 +641,7 @@
       </div>
       <div class="colonia">
         @forelse($datosper1 as $usua)
-        <input value="Chamizal">
+        <input value="">
         </input>
         @empty
         <input type="text" name="" value="">
