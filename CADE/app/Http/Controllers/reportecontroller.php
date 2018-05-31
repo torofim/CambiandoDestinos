@@ -70,6 +70,13 @@ class reportecontroller extends Controller
     ->orderby('Id_bene','desc')
     //->take(10)
     ->get();
+
+    $registros11=\DB::table('archivos')
+    ->where('Id_bene','=',$Id)
+    ->orderby('Id_bene','desc')
+    ->get();
+
+
     return view('/reporte')
       ->with('Id_bene',$Id)
       ->with('datosper1',$registrosr1)
@@ -81,7 +88,8 @@ class reportecontroller extends Controller
       ->with('perros7',$registros7)
       ->with('perros8',$registros8)
       ->with('perros9',$registros9)
-      ->with('perros10',$registros10);
+      ->with('perros10',$registros10)
+      ->with('perros11',$registros11);
 
 
 
