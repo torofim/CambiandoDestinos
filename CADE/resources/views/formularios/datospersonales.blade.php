@@ -24,6 +24,14 @@
 
                   {!!Form::open(array('route'=>['admin.datospersonales.edit','0'],'method'=>'GET'))!!}
                   <div class="input=-group col-md-4">
+                    <label for="nombre">No. Folio</label><br>
+                    @if(count($datosper)==0)
+                      {{Form::number('idEditar','',array('class'=>'form-control','placeholder'=>'Folio') )}}
+                      @else
+                      {{Form::number('idEditar',$datosper[0]->Id_bene,array('class'=>'form-control','placeholder'=>'Folio') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
                     <label for="nombre">Nombre</label><br>
                     @if(count($datosper)==0)
                       {{Form::text('nameEditar','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
@@ -159,6 +167,14 @@
                       {{Form::number('cpEditar','',array('class'=>'form-control','placeholder'=>'Código') )}}
                       @else
                       {{Form::number('cpEditar',$datosper[0]->Cp,array('class'=>'form-control','placeholder'=>'Código') )}}
+                      @endif
+                  </div>
+                  <div class="input=-group col-md-4">
+                    <label for="nombre">Colonia </label><br>
+                    @if(count($datosper)==0)
+                      {{Form::text('colEditar','',array('class'=>'form-control','placeholder'=>'Colonia') )}}
+                      @else
+                        {{Form::text('colEditar',$datosper[0]->Colonia,array('class'=>'form-control','placeholder'=>'Colonia') )}}
                       @endif
                   </div>
                   <div class="input=-group col-md-4">

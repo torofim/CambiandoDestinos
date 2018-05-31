@@ -176,6 +176,30 @@ margin-top:5%;margin-left:5%;
 .margenfb{
 margin-Left:120%; margin-top:-15%;
 }
+.footerino{
+  background-color:#194A4F;
+  height:300px;
+  margin-top:2%;
+  width: 100%;
+  padding-bottom:0;
+}
+.infiz{
+margin-left:10%;
+padding:0;
+margin-top:1%;
+width:28%;
+}
+.infder{
+  padding:0;
+  margin-top:1%;
+  width:60%;
+}
+
+#imgfb{
+  width:65px;
+   height:65px;
+}
+
 
 
 
@@ -239,7 +263,7 @@ div .centered{
 }
 
 
-/*************** -------------  footer -------------    ********************************* */
+/*************** -------------   -------------    ********************************* */
 .jumbotronsito{
   margin-left:35%;
   border-radius:25px;
@@ -281,8 +305,15 @@ margin-top:0;
 
 
 
-/****************GALERIA****************** */
-
+/****************footer****************** */
+#pfoot{
+  font-size: 15px;
+  font-family: fantasy;color:#3CB3B7;
+}
+#hfoot{
+  font-size: 20px;
+  font-family: fantasy;color:#64E9EE;"
+}
 
 /************************************************ */
 
@@ -615,7 +646,7 @@ margin-left: 20%;
   }
   .galeria{
     background-color:white;
-    height:400px;
+    height:430px;
     margin-top:-6%;
     width: 100%;
     background-size:contain;
@@ -715,13 +746,54 @@ margin-left: 20%;
   .footerino div p{
     font-size: 10px;
   }
+  #pfoot{
+    font-size: 10px;
+    font-family: fantasy;color:#3CB3B7;
+  }
+  #hfoot{
+    font-size: 12px;
+    font-family: fantasy;color:#64E9EE;"
+  }
+  .margenfb{
+    margin-top: 5%;
+    margin-left: 60%;
+  }
+  #imgfb{
+    width:55px;
+     height:55px;
+     margin-left: 30%;
+
+  }
+  .infiz{
+  margin-left:5%;
+  padding:0;
+  margin-top:1%;
+  width:30%;
+  }
+  .infder{
+    padding:0;
+    margin-top:1%;
+    width:60%;
+  }
+  .infiz #pfoot{
+    font-size: 13px;
+  }
+  .infder #pfoot{
+    font-size: 12px;
+  }
+
+  .divfoot{
+     width:100%;
+     margin-top:5%;
+
+  }
 }
 @media(max-width:350px){
   nav a{
     font-size: .8em;
   }
   nav .nombre{
-    font-size: 1em;
+    font-size: .8em;
   }
   li a img{
     display: none;
@@ -752,13 +824,13 @@ margin-left: 20%;
   }
   .primera{
     height:400px;
-    margin-top:0%;
+    margin-top:-4%;
     background-image:url('/img/folleto1.jpg');
     background-size:  100% 100%;
   }
   .segundo{
     height:450px;
-    margin-top:0%;
+    margin-top:-4%;
     background-image:url('/img/fondochido.jpg');
   }
   .galeria{
@@ -823,6 +895,34 @@ margin-left: 20%;
     margin-left: 2%;
   }
   .margenfb{
-    margin-top: -35%;
+    margin-top: 5%;
+    margin-left: 70%;
+  }
+  #imgfb{
+    width:45px;
+     height:45px;
+     margin-left: 15%;
+    }
+  .infiz{
+  margin-left:5%;
+  padding:0;
+  margin-top:1%;
+  width:20%;
+
+  }
+  .infder{
+    padding:0;
+    margin-top:1%;
+    max-width: 100%;
+  }
+
+  .infiz #pfoot{
+    font-size: 10px;
+  }
+
+  .divfoot{
+     width:100%;
+     margin-top:5%;
+
   }
 }

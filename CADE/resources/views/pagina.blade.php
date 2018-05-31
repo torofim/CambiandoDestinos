@@ -256,24 +256,24 @@
 
 
 
-<section class="footerino"style="background-color:#194A4F;height:300px;margin-top:0%;width: 100%; padding-bottom:0;"id="quinto">
-<div class="col-md-4 col-xs-4 " style="width:60%; margin-top:5%;">
+<section class="footerino"id="quinto">
+<div class="col-md-4 col-xs-4 divfoot">
   <p class="titu"style=" font-size:30px;font-family:monospace;color:#64E9EE;margin-left:25px;">Contáctanos</p>
-  <div class="col-md-3 col-xs-4" style="margin-left:10%; padding:0;margin-top:1%;width:27%;">
-    <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Dirección:</p>
-    <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Teléfono:</p>
-    <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Correo Electronico:</p>
+  <div class="infiz col-md-3 col-xs-4" >
+    <p id="pfoot" >Dirección:</p>
+    <p id="pfoot">Teléfono:</p>
+    <p id="pfoot">Correo Electronico:</p>
   </div>
-  <div class="col-md-4 col-xs-4" style="padding:0;margin-top:1%;width:60%; ">
-    <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Francisco I. Madero y 21a, Colonia Chamizal</p>
-    <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">+52-636-121-2491 </p>
-    <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">fundacioncambiandodestinos@hotmail.com</p>
+  <div class="infder col-md-4 col-xs-6" >
+    <p id="pfoot">Francisco I. Madero y 21a, Colonia Chamizal</p>
+    <p id="pfoot">+52-636-121-2491 </p>
+    <p id="pfoot">fundacioncambiandodestinos@hotmail.com</p>
 
   </div>
   <div class="margenfb col-md-4 col-xs-5"  >
-    <h4 style=" font-size: 20px;font-family: fantasy;color:#64E9EE;">Redes Sociales</h4>
+    <h4 id="hfoot">Redes Sociales</h4>
     <a target="_blank" href="https://www.facebook.com/Fundacioncambiandodestinos/">
-    <img title="Facebook" alt="Facebook"  src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook1.png"  width="65" height="65" />
+    <img id="imgfb" title="Facebook" alt="Facebook"  src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook1.png"   />
     </a>
   </div>
 </div>

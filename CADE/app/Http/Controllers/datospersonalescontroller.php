@@ -27,6 +27,7 @@ class datospersonalescontroller extends Controller
     public function store(Request $req){
 
       $validator =Validator::make($req->all(),[
+        'id'=>'max:255',
         'nombre'=>'max:255',
         'ap_p'=>'max:255',
         'ap_m'=>'max:255',
@@ -43,6 +44,7 @@ class datospersonalescontroller extends Controller
         'domicilio'=>'max:255',
         'municipio'=>'max:255',
         'cp'=>'max:255',
+        'colonia'=>'max:255',
         'localidad'=>'max:255',
         'tel'=>'max:255',
 
@@ -56,6 +58,7 @@ class datospersonalescontroller extends Controller
           ->withErrors($validator);
       }else{
         Datos_personales::create([
+          'Id_bene'=>$req->id,
           'Nombre'=>$req->nombre,
           'Apellido_p'=>$req->ap_p,
           'Apellido_m'=>$req->ap_m,
@@ -72,6 +75,7 @@ class datospersonalescontroller extends Controller
           'Calzado'=>'',
           'Domicilio'=>$req->domicilio,
           'Cp'=>'',
+          'Colonia'=>'',
           'Localidad'=>'',
           'Municipio'=>'',
           'Tel'=>''
@@ -86,6 +90,7 @@ class datospersonalescontroller extends Controller
     //Editar
     public function edit(Request $req){
       $usuario=Datos_personales::find($req->id);
+      $usuario->Id_bene=$req->idEditar;
       $usuario->Nombre=$req->nameEditar;
       $usuario->Apellido_p=$req->appEditar;
       $usuario->Apellido_m=$req->apmEditar;
@@ -102,6 +107,7 @@ class datospersonalescontroller extends Controller
       $usuario->Calzado=$req->caEditar;
       $usuario->Domicilio=$req->doEditar;
       $usuario->Cp=$req->cpEditar;
+      $usuario->Colonia=$req->colEditar;
       $usuario->Localidad=$req->locEditar;
       $usuario->Municipio=$req->munEditar;
       $usuario->Tel=$req->telEditar;
@@ -120,7 +126,7 @@ class datospersonalescontroller extends Controller
       $registros=\DB::table('datos_personales')
       ->select('Id_bene','Nombre','Apellido_p',"Apellido_m")
       ->where('Id_bene','=',$req->id)
-      
+
             ->get();
 
       return json_encode($registros);

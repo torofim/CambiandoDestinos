@@ -173,6 +173,10 @@
           </div>
         @endif
         {{Form::open(array('url'=>'/admin/datospersonales','files'=>true))}}
+        <div class="input=-group col-md-4">
+          <label for="nombre">No. Folio</label><br>
+          {{Form::number('id','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+        </div>
           <div class="input=-group col-md-4">
             <label for="nombre">Nombre</label><br>
             {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
@@ -222,6 +226,10 @@
           </div>
         @endif
         {{Form::open(array('url'=>'/admin/datospersonales','files'=>true))}}
+        <div class="input=-group col-md-4">
+          <label for="nombre">No. Folio</label><br>
+          {{Form::number('id','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
+        </div>
           <div class="input=-group col-md-4">
             <label for="nombre">Nombre</label><br>
             {{Form::text('nombre','',array('class'=>'form-control','placeholder'=>'Nombre') )}}
