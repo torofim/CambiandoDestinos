@@ -200,6 +200,15 @@
     		<div class="item" id="image-1">
     			<img class="thumbnail img-responsive" title="De paseo en las ferias" src="/img/paseo1.jpg">
     		</div>
+        <div class="item" id="image-1">
+    			<img class="thumbnail img-responsive" title="Creando un altar" src="/img/actividad1.jpg">
+    		</div>
+    		<div class="item" id="image-1">
+    			<img class="thumbnail img-responsive" title="Altar terminado" src="/img/concursos.jpg">
+    		</div>
+    		<div class="item" id="image-1">
+    			<img class="thumbnail img-responsive" title="De paseo en las ferias" src="/img/diamadre.jpg">
+    		</div>
 
     		<!-- #image-2 -->
     		<div class="item" id="image-2">
@@ -210,6 +219,15 @@
     		</div>
     		<div class="item" id="image-2">
     			<img class="thumbnail img-responsive" title="Clase de pintura" src="/img/pintura2.jpg">
+    		</div>
+        <div class="item" id="image-2">
+    			<img class="thumbnail img-responsive" title="Clase de musica" src="/img/pintura.jpg">
+    		</div>
+    		<div class="item" id="image-2">
+    			<img class="thumbnail img-responsive" title="Clase de pintura" src="/img/musica2.jpg">
+    		</div>
+    		<div class="item" id="image-2">
+    			<img class="thumbnail img-responsive" title="Clase de pintura" src="/img/pinata.jpg">
     		</div>
 
     		<!-- #image-3-->
@@ -222,6 +240,15 @@
     		<div class="item" id="image-3">
     			<img class="thumbnail img-responsive" title="Visita al centro de salud" src="/img/cs.jpg">
     		</div>
+        <div class="item" id="image-3">
+          <img class="thumbnail img-responsive" title="Visita domiciliaria" src="/img/medico.jpg">
+        </div>
+        <div class="item" id="image-3">
+          <img class="thumbnail img-responsive" title="Terapia de manos" src="/img/revision.jpg">
+        </div>
+        <div class="item" id="image-3">
+          <img class="thumbnail img-responsive" title="Visita al centro de salud" src="/img/doc.jpg">
+        </div>
 
     	</div>
 

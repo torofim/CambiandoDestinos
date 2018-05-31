@@ -31,6 +31,12 @@ class BooleanosController extends Controller
       $validator =Validator::make($req->all(),[
         'Jubilado'=>'max:255',
         'Servicio_medico'=>'max:255',
+        'Imss'=>'max:255',
+        'Isste'=>'max:255',
+        'Seguro_popular'=>'max:255',
+        'Pensiones'=>'max:255',
+        'Ichisal'=>'max:255',
+        'Dispensario'=>'max:255',
         'Bano_diario'=>'max:255',
         'Convivencia_animal'=>'max:255',
       ]);
@@ -49,6 +55,12 @@ class BooleanosController extends Controller
             'Id_bene'=>$req->idbo,
             'Jubilado'=>$req->jubilado,
             'Servicio_medico'=>$req->servicio,
+            'Imss'=>$req->imss,
+            'Isste'=>$req->isste,
+            'Seguro_popular'=>$req->segpop,
+            'Pensiones'=>$req->pensiones,
+            'Ichisal'=>$req->ichisal,
+            'Dispensario'=>$req->dispensario,
             'Bano_diario'=>$req->bano,
             'Convivencia_animal'=>$req->convivencia,
 
@@ -59,6 +71,12 @@ class BooleanosController extends Controller
 
           $usuario->Jubilado=$req->jubilado;
           $usuario->Servicio_medico=$req->servicio;
+          $usuario->Imss=$req->imss;
+          $usuario->Isste=$req->isste;
+          $usuario->Seguro_popular=$req->segpop;
+          $usuario->Pensiones=$req->pensiones;
+          $usuario->Ichisal=$req->ichisal;
+          $usuario->Dispensario=$req->dispensario;
           $usuario->Bano_diario=$req->bano;
           $usuario->Convivencia_animal=$req->convivencia;
 

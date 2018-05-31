@@ -117,9 +117,10 @@
         <tr style="border:white solid;background-color:#4c4f54;">
           <td style="border-right:white solid;">Domicilio</td>
           <td style="border-right:white solid;">Codigo Postal</td>
+          <td style="border-right:white solid;">Colonia</td>
           <td style="border-right:white solid;">Localidad</td>
           <td style="border-right:white solid;">Municipio</td>
-          <td style="border-right:white solid;">Teléfono</td>
+
 
 
         </tr>
@@ -129,9 +130,40 @@
           @forelse($datosper as $usu)
           <td>{{$usu->Domicilio}}</td>
           <td>{{$usu->Cp}}</td>
+          <td>{{$usu->Colonia}}</td>
           <td>{{$usu->Localidad}}</td>
           <td>{{$usu->Municipio}}</td>
+
+
+
+
+        @empty
+        <p>Sin Registros</p>
+        @endforelse
+      </tbody>
+    </table>
+    <table class="table table-condensed col-md-12" style="margin-left:0%;">
+      <thead>
+        <tr style="border:white solid;background-color:#4c4f54;">
+
+          <td style="border-right:white solid;">Teléfono</td>
+          <td style="border-right:white solid;"></td>
+          <td style="border-right:white solid;"></td>
+          <td style="border-right:white solid;"></td>
+          <td style="border-right:white solid;"></td>
+
+
+
+        </tr>
+      </thead>
+      <tbody id="tbody">
+        <tr>
+          @forelse($datosper as $usu)
           <td>{{$usu->Tel}}</td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
 
 
 
@@ -236,9 +268,9 @@
         <tr style="border:white solid;background-color:#4c4f54;">
           <td style="border-right: white solid;">Jubilado</td>
           <td style="border-right:white solid;">Servicio Medico</td>
-          <td style="border-right:white solid;">Baño Diario</td>
-          <td style="border-right:white solid;">Convivencia Animal</td>
-          <td style="border-right:white solid;"></td>
+          <td style="border-right:white solid;">IMSS</td>
+          <td style="border-right:white solid;">ISSTE</td>
+          <td style="border-right:white solid;">Seguro Popular</td>
         </tr>
       </thead>
       <tbody id="tbody">
@@ -246,9 +278,10 @@
           @forelse($perros5 as $usu)
           <td>{{$usu->Jubilado}}</td>
           <td>{{$usu->Servicio_medico}}</td>
-          <td>{{$usu->Bano_diario}}</td>
-          <td>{{$usu->Convivencia_animal}}</td>
-          <td></td>
+          <td>{{$usu->Imss}}</td>
+          <td>{{$usu->Isste}}</td>
+          <td>{{$usu->Seguro_popular}}</td>
+
 
 
           </tr>
@@ -256,6 +289,34 @@
         <p>Sin Registros</p>
         @endforelse
       </tbody>
+      <table class="table table-condensed col-md-12" style="margin-left:0%;">
+        <p>Estatus</p>
+        <thead>
+          <tr style="border:white solid;background-color:#4c4f54;">
+            <td style="border-right: white solid;">Pensiones</td>
+            <td style="border-right:white solid;">ICHISAL</td>
+            <td style="border-right:white solid;">Dispensario</td>
+            <td style="border-right:white solid;">Baño Diario</td>
+            <td style="border-right:white solid;">Convivencia Animal</td>
+
+          </tr>
+        </thead>
+        <tbody id="tbody">
+          <tr>
+            @forelse($perros5 as $usu)
+            <td>{{$usu->Pensiones}}</td>
+            <td>{{$usu->Ichisal}}</td>
+            <td>{{$usu->Dispensario}}</td>
+            <td>{{$usu->Bano_diario}}</td>
+            <td>{{$usu->Convivencia_animal}}</td>
+
+
+
+            </tr>
+          @empty
+          <p>Sin Registros</p>
+          @endforelse
+        </tbody>
     </table>
     <table class="table table-condensed col-md-12" style="margin-left:0%;">
       <p>Tutor</p>

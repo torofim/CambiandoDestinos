@@ -61,6 +61,120 @@
 
     </div>
     <div class="input=-group col-md-2">
+      <label for="nombre">Imss</label><br>
+      @if(count($perros5)==0)
+        <label >{{Form::radio('imss','Si',array('class'=>'form-control','required'=>'true') )}} Si</label>
+        <label>{{Form::radio('imss','No',array('class'=>'form-control','required'=>'true') )}}No</label>
+        @else
+          @if($perros5[0]->Imss=='Si')
+          <label for=""><input type="radio" name="imss" value="Si" checked> Si</label>
+          <label for=""><input type="radio" name="imss" value="No"> No</label>
+
+        @else
+        <label for=""><input type="radio" name="imss" value="Si"> Si</label>
+        <label for=""><input type="radio" name="imss" value="No" checked> No</label>
+
+         @endif
+
+        @endif
+
+    </div>
+    <div class="input=-group col-md-2">
+      <label for="nombre">Isste</label><br>
+      @if(count($perros5)==0)
+        <label >{{Form::radio('isste','Si',array('class'=>'form-control','required'=>'true') )}} Si</label>
+        <label>{{Form::radio('isste','No',array('class'=>'form-control','required'=>'true') )}}No</label>
+        @else
+          @if($perros5[0]->Isste=='Si')
+          <label for=""><input type="radio" name="isste" value="Si" checked> Si</label>
+          <label for=""><input type="radio" name="isste" value="No"> No</label>
+
+        @else
+        <label for=""><input type="radio" name="isste" value="Si"> Si</label>
+        <label for=""><input type="radio" name="isste" value="No" checked> No</label>
+
+         @endif
+
+        @endif
+
+    </div>
+    <div class="input=-group col-md-2">
+      <label for="nombre">Seguro popular</label><br>
+      @if(count($perros5)==0)
+        <label >{{Form::radio('segpop','Si',array('class'=>'form-control','required'=>'true') )}} Si</label>
+        <label>{{Form::radio('segpop','No',array('class'=>'form-control','required'=>'true') )}}No</label>
+        @else
+          @if($perros5[0]->Seguro_popular=='Si')
+          <label for=""><input type="radio" name="segpop" value="Si" checked> Si</label>
+          <label for=""><input type="radio" name="segpop" value="No"> No</label>
+
+        @else
+        <label for=""><input type="radio" name="segpop" value="Si"> Si</label>
+        <label for=""><input type="radio" name="segpop" value="No" checked> No</label>
+
+         @endif
+
+        @endif
+
+    </div>
+    <div class="input=-group col-md-2">
+      <label for="nombre">Pensiones</label><br>
+      @if(count($perros5)==0)
+        <label >{{Form::radio('pensiones','Si',array('class'=>'form-control','required'=>'true') )}} Si</label>
+        <label>{{Form::radio('pensiones','No',array('class'=>'form-control','required'=>'true') )}}No</label>
+        @else
+          @if($perros5[0]->Pensiones=='Si')
+          <label for=""><input type="radio" name="pensiones" value="Si" checked> Si</label>
+          <label for=""><input type="radio" name="pensiones" value="No"> No</label>
+
+        @else
+        <label for=""><input type="radio" name="pensiones" value="Si"> Si</label>
+        <label for=""><input type="radio" name="pensiones" value="No" checked> No</label>
+
+         @endif
+
+        @endif
+
+    </div>
+    <div class="input=-group col-md-2">
+      <label for="nombre">Ichisal</label><br>
+      @if(count($perros5)==0)
+        <label >{{Form::radio('ichisal','Si',array('class'=>'form-control','required'=>'true') )}} Si</label>
+        <label>{{Form::radio('ichisal','No',array('class'=>'form-control','required'=>'true') )}}No</label>
+        @else
+          @if($perros5[0]->Ichisal=='Si')
+          <label for=""><input type="radio" name="ichisal" value="Si" checked> Si</label>
+          <label for=""><input type="radio" name="ichisal" value="No"> No</label>
+
+        @else
+        <label for=""><input type="radio" name="ichisal" value="Si"> Si</label>
+        <label for=""><input type="radio" name="ichisal" value="No" checked> No</label>
+
+         @endif
+
+        @endif
+
+    </div>
+    <div class="input=-group col-md-2">
+      <label for="nombre">Dispensario</label><br>
+      @if(count($perros5)==0)
+        <label >{{Form::radio('dispensario','Si',array('class'=>'form-control','required'=>'true') )}} Si</label>
+        <label>{{Form::radio('dispensario','No',array('class'=>'form-control','required'=>'true') )}}No</label>
+        @else
+          @if($perros5[0]->Dispensario=='Si')
+          <label for=""><input type="radio" name="dispensario" value="Si" checked> Si</label>
+          <label for=""><input type="radio" name="dispensario" value="No"> No</label>
+
+        @else
+        <label for=""><input type="radio" name="dispensario" value="Si"> Si</label>
+        <label for=""><input type="radio" name="dispensario" value="No" checked> No</label>
+
+         @endif
+
+        @endif
+
+    </div>
+    <div class="input=-group col-md-2">
       <label for="nombre">Baño Diario</label><br>
 
       @if(count($perros5)==0)

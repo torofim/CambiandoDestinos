@@ -23,7 +23,7 @@
 
     <button class="tablink" style="width:33.33%;" onclick="openPage('benefi', this, '')" id="defaultOpen">Inventario</button>
     <button class="tablink" style="width:33.33%;" onclick="openPage('agregar', this, '')" >Agregar Nuevo Medicamento/Dispositivo y Entregas</button>
-    <button class="tablink" style="width:33.33%;" onclick="openPage('entrega', this, '')" >Información de Entregas(Medicamentos/Dispositivos)</button>
+    <button class="tablink" style="width:33.33%;" onclick="openPage('entrega', this, '')" >Entregas (Medicamentos/Dispositivos)</button>
 
 
     <div id="benefi" class="tabcontent">
