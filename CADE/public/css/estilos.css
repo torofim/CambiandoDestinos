@@ -655,13 +655,14 @@ margin-left: 20%;
   }
 
   .jumbotron{
-    max-height: 350px;
+    max-height: 300px;
   }
   .jumbotron p {
-    font-size: 8px;
+    font-size: 7px;
+    text-align: justify;
   }
   .divima{
-    height: 350px;
+    height: 300px;
   }
 
   #segundo{
