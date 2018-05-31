@@ -11,7 +11,7 @@
       <span class="icon-bar"></span>
     </button>
 
-  
+
     <a class="navbar-brand"   >{{Auth::user()->name}}</a>
   </div>
   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -30,7 +30,6 @@
       <li><a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();" >
                   Cerrar sesión
               </a>
-
               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                   @csrf
               </form>
