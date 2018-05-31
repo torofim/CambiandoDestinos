@@ -108,7 +108,7 @@
                    <td>{{$y->apellido_p}}</td>
                    <td>{{$y->apellido_m}}</td>
                    <td>{{$y->hipertension}}</td>
-                   <td>{{$y->Id_bene}}<a data-toggle="modal" href="#myModal{{$y->Id_bene}}"  class="btn btn-primary btn-s">Historial</a>
+                   <td><a data-toggle="modal" href="#myModal{{$y->Id_bene}}"  class="btn btn-primary btn-s">Historial</a>
                      <div class="modal fade" id="myModal{{$y->Id_bene}}">
                        <div class="modal-dialog">
                          <div class="modal-content">
