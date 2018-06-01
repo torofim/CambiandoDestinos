@@ -38,6 +38,7 @@ class archivoscontroller extends Controller
           ->withInput()
           ->withErrors($validator);
       }else{
+
         $archivo=Archivo::find($req->idbene);
         //dd($archivo);
         if(($archivo)==null){
@@ -52,7 +53,7 @@ class archivoscontroller extends Controller
         $req->Certificado_discapacida->move(public_path('/img/archivos'),$nombreCertificado);
 
         $nombreCopia=time().'.'.$req->Com_dom->getClientOriginalExtension();
-        $req->Copia_curp->move(public_path('/img/archivos'),$nombreCopia);
+        $req->Com_dom->move(public_path('/img/archivos'),$nombreCopia);
 
         $nombreCurp=time().'.'.$req->Curp->getClientOriginalExtension();
         $req->Curp->move(public_path('/img/archivos'),$nombreCurp);
@@ -61,11 +62,10 @@ class archivoscontroller extends Controller
           'Id_bene'=>$req->idbene,
           'Foto_infantil'=>$nombreInfantil,
           'Foto_cuerpo'=>$nombreCuerpo,
+          'Certificado_discapacida'=>$nombreCertificado,
           'Com_dom'=>$nombreCertificado,
-          'Copia_curp'=>$nombreCopia,
           'Curp'=>$nombreCurp
         ]);
-
         return redirect()->to('/admin/Formubenefi/'.$req->idbene);
       }else{
 
@@ -84,11 +84,12 @@ class archivoscontroller extends Controller
         $nombreCurp=time().'.'.$req->Curp->getClientOriginalExtension();
         $req->Curp->move(public_path('/img/archivos'),$nombreCurp);
 
-        $archivo->Foto_infantil=$req->$nombreInfantil;
-        $archivo->Foto_cuerpo=$req->$nombreCuerpo;
-        $archivo->Certificado_discapacida=$req->$nombreCertificado;
-        $archivo->Com_dom=$req->$nombreCopia;
-        $archivo->Curp=$req->$nombreCurp;
+        $archivo->Foto_infantil=$nombreInfantil;
+        $archivo->Foto_cuerpo=$nombreCuerpo;
+        $archivo->Certificado_discapacida=$nombreCertificado;
+        $archivo->Com_dom=$nombreCopia;
+        $archivo->Curp=$nombreCurp;
+        $archivo->save();
         return redirect()->to('/admin/Formubenefi/'.$req->idbene);
       }
 

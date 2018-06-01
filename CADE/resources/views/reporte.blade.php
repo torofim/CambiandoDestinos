@@ -61,7 +61,7 @@
               <input class="" type="radio" name="v" value="" checked >Foto cuerpo
             </div>
           @endif
-////////////////////
+
           @if($perros11[0]->Certificado_discapacida=='')
           <div class="dos">
             <input class="inp1" type="radio" name="" value="">Certificado/Credencial Discapacidad
@@ -71,7 +71,7 @@
             <input class="inp1" type="radio" name="" value="" checked>Certificado/Credencial Discapacidad
           </div>
           @endif
-////////////////
+
           @if($perros11[0]->Curp=='')
           <div class="tres">
             <input class="inp1" type="radio" name="" value="">CURP/Comprobante Domicilio
@@ -81,7 +81,7 @@
             <input class="inp1" type="radio" name="" value="" checked>CURP/Comprobante Domicilio
           </div>
           @endif
-          \\\\\\\\\\\\\\
+
           @else
           <div class="uno">
             <input class="" type="radio" name="v" value="" >Foto cuerpo
@@ -93,13 +93,6 @@
             <input class="inp1" type="radio" name="" value="">CURP/Comprobante Domicilio
           </div>
         @endif
-
-
-
-
-            <div class="tres">
-              <input class="inp1" type="radio" name="" value="">CURP/Comprobante Domicilio
-            </div>
               <label class="tnom">Nombre</label>
             <div class="nombre">
               @forelse($datosper1 as $usua)
