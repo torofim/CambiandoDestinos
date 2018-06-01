@@ -36,7 +36,11 @@
                   <a href="#quinto">Contacto<img src="./img/logonavi.png" alt=""></a>
               </li>
               <li class="page-scroll">
+                @if(Auth::guard()->check())
+                  <a class="col-md-12"href="/admin/dash">{{Auth::user()->name}}<img src="./img/logonavi.png" alt=""></a>
+                  @else
                   <a class="col-md-12"href="/login">Iniciar Sesion<img src="./img/logonavi.png" alt=""></a>
+                  @endif
               </li>
           </ul>
       </div>
