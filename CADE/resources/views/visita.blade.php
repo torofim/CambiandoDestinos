@@ -19,6 +19,7 @@
   <link href="./css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="./css/paginas.css">
+  <link rel="stylesheet" type="text/css" href="./css/estilos.css">
   <link rel="stylesheet" type="text/css" href="./css/visita.css">
   <meta name="msapplication-TileColor" content="#ff0000">
   <meta name="theme-color" content="#ffffff">
@@ -49,22 +50,22 @@
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav navbar-right">
         <li class="page-scroll">
-            <a href="#section-7i1hi" style="font-size:1rem;">Cambiando Destinos<img src="./img/logonavi.png" alt=""></a>
+            <a href="#section-7i1hi" id="letraseccion">Cambiando Destinos<img src="./img/logonavi.png" alt=""></a>
         </li>
         <li class="page-scroll">
-            <a href="#section-be77e" style="font-size:1rem;">Visitas<img src="./img/logonavi.png" alt=""></a>
+            <a href="#section-be77e" id="letraseccion">Visitas<img src="./img/logonavi.png" alt=""></a>
         </li>
         <li class="page-scroll">
-            <a href="#section-hjjjj" style="font-size:1rem;">Comida caliente <img src="./img/logonavi.png" alt=""></a>
+            <a href="#section-hjjjj" id="letraseccion">Comida caliente <img src="./img/logonavi.png" alt=""></a>
         </li>
         <li class="page-scroll">
-            <a href="#section-bhjbt" style="font-size:1rem;">Taller <img src="./img/logonavi.png" alt=""></a>
+            <a href="#section-bhjbt" id="letraseccion">Taller <img src="./img/logonavi.png" alt=""></a>
         </li>
         <li class="page-scroll">
-            <a href="#section-sssi7" style="font-size:1rem;">Cultura <img src="./img/logonavi.png" alt=""></a>
+            <a href="#section-sssi7" id="letraseccion">Cultura <img src="./img/logonavi.png" alt=""></a>
         </li>
         <li class="page-scroll">
-            <a href="#section-j0ccj" style="font-size:1rem;">Gestiones <img src="./img/logonavi.png" alt=""></a>
+            <a href="#section-j0ccj" id="letraseccion">Gestiones <img src="./img/logonavi.png" alt=""></a>
         </li>
     </ul>
 
@@ -327,24 +328,24 @@
             </div>
         </div>
     </section>
-    <section style="background-color:#194A4F;height:285px;margin-top:0%;width: 100%; padding-bottom:0;"id="quinto">
-    <div class="col-md-4 " style="width:60%; margin-top:5%;">
-      <p class=""style=" font-size:30px;font-family:monospace;color:#64E9EE;margin-left:25px;">contactanos</p>
-      <div class="col-md-3" style="margin-left:10%; padding:0;margin-top:1%;width:27%;">
-        <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Direccion:</p>
-        <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Telefono:</p>
-        <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Correo Electronico:</p>
+    <section class="footerino"id="quinto">
+    <div class="col-md-4 col-xs-4 divfoot">
+      <p class="titu"style=" font-size:30px;font-family:monospace;color:#64E9EE;margin-left:25px;">Contáctanos</p>
+      <div class="infiz col-md-3 col-xs-4" >
+        <p id="pfoot" >Dirección:</p>
+        <p id="pfoot">Teléfono:</p>
+        <p id="pfoot">Correo Electronico:</p>
       </div>
-      <div class="col-md-4" style="padding:0;margin-top:1%;width:60%; ">
-        <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">Francisco I. Madero y 21a, colonia chamizal</p>
-        <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">+52-636-121-2491 </p>
-        <p style="font-size: 15px;font-family: fantasy;color:#3CB3B7;">fundacioncambiandodestinos@hotmail.com</p>
+      <div class="infder col-md-4 col-xs-6" >
+        <p id="pfoot">Francisco I. Madero y 21a, Colonia Chamizal</p>
+        <p id="pfoot">+52-636-121-2491 </p>
+        <p id="pfoot">fundacioncambiandodestinos@hotmail.com</p>
 
       </div>
-      <div class="col-md-4" style=" margin-Left:120%; margin-top:-15%;" >
-        <h4 style=" font-size: 20px;font-family: fantasy;color:#64E9EE;">Redes Sociales</h4>
+      <div class="margenfb col-md-4 col-xs-5"  >
+        <h4 id="hfoot">Redes Sociales</h4>
         <a target="_blank" href="https://www.facebook.com/Fundacioncambiandodestinos/">
-        <img title="Facebook" alt="Facebook"  src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook1.png"  width="65" height="65" />
+        <img id="imgfb" title="Facebook" alt="Facebook"  src="https://socialmediawidgets.files.wordpress.com/2014/03/02_facebook1.png"   />
         </a>
       </div>
     </div>

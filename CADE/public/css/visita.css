@@ -212,3 +212,11 @@ section#section-hthj7 { z-index: 2; }
 div#edi-575bh .text-content { text-shadow: rgb(106, 96, 96) 0px 3px 2px; }
 div#edi-19f1q .text-content { color: rgb(255, 255, 255); }
 div#edi-h6jj9 .text-content { text-shadow: rgb(174, 157, 157) 0px 3px 2px; }
+#letraseccion{
+  font-size:1rem;
+}
+#letrascontacto{
+  font-size: 15px;
+  font-family: fantasy;
+  color:#3CB3B7;
+}
