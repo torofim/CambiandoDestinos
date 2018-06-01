@@ -49,12 +49,53 @@
             <div class="requisitos">
               Requisitos
             </div>
+
+            @if(count($perros11)>0)
+
+            @if($perros11[0]->Foto_cuerpo=='null')
             <div class="uno">
-              <label for=""><input class="" type="radio" name="v" value="" >Foto cuerpo</label>
+            <input class="" type="radio" name="v" value="">Foto cuerpo
             </div>
-            <div class="dos">
-              <input class="inp1" type="radio" name="" value="">Certificado/Credencial Discapacidad
+            @else
+            <div class="uno">
+              <input class="" type="radio" name="v" value="" checked >Foto cuerpo
             </div>
+          @endif
+////////////////////
+          @if($perros11[0]->Certificado_discapacida=='')
+          <div class="dos">
+            <input class="inp1" type="radio" name="" value="">Certificado/Credencial Discapacidad
+          </div>
+          @else
+          <div class="dos">
+            <input class="inp1" type="radio" name="" value="" checked>Certificado/Credencial Discapacidad
+          </div>
+          @endif
+////////////////
+          @if($perros11[0]->Curp=='')
+          <div class="tres">
+            <input class="inp1" type="radio" name="" value="">CURP/Comprobante Domicilio
+          </div>
+          @else
+          <div class="tres">
+            <input class="inp1" type="radio" name="" value="" checked>CURP/Comprobante Domicilio
+          </div>
+          @endif
+          \\\\\\\\\\\\\\
+          @else
+          <div class="uno">
+            <input class="" type="radio" name="v" value="" >Foto cuerpo
+          </div>
+          <div class="dos">
+            <input class="inp1" type="radio" name="" value="">Certificado/Credencial Discapacidad
+          </div>
+          <div class="tres">
+            <input class="inp1" type="radio" name="" value="">CURP/Comprobante Domicilio
+          </div>
+        @endif
+
+
+
 
             <div class="tres">
               <input class="inp1" type="radio" name="" value="">CURP/Comprobante Domicilio
@@ -406,7 +447,7 @@
       </div>
       <div class="peso">
         @forelse($datosper1 as $usua)
-        <input value="  {{$usua->Peso}}Kg">
+        <input value="{{$usua->Peso}}Kg">
 
         </input>
         @empty
@@ -418,8 +459,7 @@
       </div>
       <div class="estatura">
         @forelse($datosper1 as $usua)
-        <input value="  {{$usua->Estatura}}cm">
-
+        <input value="{{$usua->Estatura}}cm">
         </input>
         @empty
         <input type="text" name="" value="">
@@ -520,35 +560,33 @@
           <label for=""><input type="radio" name="sa" value="Si"> Si</label>
           <br>
           <label for=""><input type="radio" name="sa" value="No" checked> No</label>
-          <div class="apoyocual">
+
             @forelse($perros2 as $disca)
-            <input value="">
-            </input>
+              <input class="txtdeapoyofuncional" type="text" name="" value="">
             @empty
             <label for=""><input type="radio" name="sa" value="Si">Si</label>
             <br>
             <label for=""><input type="radio" name="sa" value="No">No</label>
             @endforelse
-          </div>
+
           @else
           <label for=""><input type="radio" name="sa" value="Si"> Si</label>
           <br>
           <label for=""><input type="radio" name="sa" value="No"> No</label>
-          <div class="apoyocual">
+
             @forelse($perros2 as $disca)
-            <input value="">
-            </input>
+            <input class="txtdeapoyofuncional" type="text" name="" value="">
             @empty
             <label for=""><input type="radio" name="sa" value="Si">Si</label>
             <br>
             <label for=""><input type="radio" name="sa" value="No">No</label>
             @endforelse
-          </div>
+
            @endif
           @endif
       </div>
       <div class="tcualapo" style="margin-left:55px;">
-      
+        Cual
       </div>
 
 
@@ -565,10 +603,8 @@
             <label for=""><input type="radio" name="reqapoyo" value="Si" checked>Si</label>
             <br>
             <label for=""><input type="radio" name="reqapoyo" value="No">No</label>
-            <div class="tcualapoyo">
-              Cual
-            </div>
-            <input type="text" style="margin-left:20px;" name="" value="{{$perros2[0]->Tipo_apoyo}}">
+
+
 
           @elseif($perros2[0]->Requiere_apoyo_funcional=='No')
           <label for=""><input type="radio" name="reqapoyo" value="Si"> Si</label>
@@ -588,16 +624,14 @@
             Cual
           </div>
             <div class="reqcual" style="margin-left:60px; margin-top:-30px;">
-              <input type="text" name=""  value="{{$perros2[0]->Requiere_apoyo_funcional}}">
+
             </div>
            @endif
           @endif
       </div>
 
       <!-- FALTA LOS RADIOS DE CUAL TIPO DE APOYO FUNCIONAL Y DATOS DE DOMICILIO Y TELEFONOS-->
-      <div class="titulocual">
-        Cual
-      </div>
+
       <div class="tres1">
         <input type="radio" name="" value="">Andador
         <br>
@@ -630,7 +664,7 @@
       </div>
       <div class="direccion">
         @forelse($datosper1 as $usua)
-        <input value="  {{$usua->Domicilio}}">
+        <input value="{{$usua->Domicilio}}">
         </input>
         @empty
         <input type="text" name="" value="">

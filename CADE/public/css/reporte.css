@@ -317,8 +317,8 @@ margin-top:75%;
 }
 .apoyocual{
   position:absolute;
-    margin-top:96.5%;
-    margin-left:10%;
+    margin-top:94%;
+    margin-left:20%;
 }
 .treq{
   position:absolute;
@@ -365,67 +365,74 @@ margin-top:75%;
 }
 .tdireccion{
   position:absolute;
-    margin-top:135%;
+    margin-top:118%;
     margin-left:0%;
+    font-weight:bold;
   }
   .direccion{
     position:absolute;
-      margin-top:138%;
+      margin-top:122%;
       margin-left:0%;
   }
 
 .tcolonia{
   position:absolute;
-    margin-top:135%;
+    margin-top:118%;
     margin-left:30%;
+    font-weight: bold;
 }
   .colonia{
     position:absolute;
-      margin-top:138%;
+      margin-top:122%;
       margin-left:30%;
   }
 
 .tmunicipio{
   position:absolute;
-    margin-top:135%;
+    margin-top:118%;
     margin-left:60%;
+        font-weight: bold;
 }
   .municipio{
     position:absolute;
-      margin-top:138%;
+      margin-top:122%;
       margin-left:60%;
+
   }
 
 .tcp{
   position:absolute;
-    margin-top:143%;
+    margin-top:126%;
     margin-left:0%;
+        font-weight: bold;
 }
   .cp{
     position:absolute;
-      margin-top:146%;
+      margin-top:130%;
       margin-left:00%;
   }
 
 .tlocal{
   position:absolute;
-    margin-top:143%;
+    margin-top:126%;
     margin-left:30%;
+        font-weight: bold;
 }
   .localidad{
     position:absolute;
-      margin-top:146%;
+      margin-top:130%;
       margin-left:30%;
   }
 
 .ttel{
   position:absolute;
-    margin-top:143%;
+    margin-top:126%;
     margin-left:60%;
+        font-weight: bold;
 }
   .telefono{
     position:absolute;
-      margin-top:146%;
+      margin-top:130%;
       margin-left:60%;
   }
 
