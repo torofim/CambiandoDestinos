@@ -167,7 +167,7 @@
 
       </div>
       {!! Form::open(
-        array('route'=>['admin.inventario.edit',$usu->Id_inv],'method'=>'GET' )) !!}
+        array('route'=>['admin.inventario.edit','0'],'method'=>'GET' )) !!}
       <div class="modal-body">
         <input type="hidden" name="idin" id="idin" value="">
           <div class="input-group">

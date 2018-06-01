@@ -63,11 +63,11 @@ class archivoscontroller extends Controller
           'Foto_infantil'=>$nombreInfantil,
           'Foto_cuerpo'=>$nombreCuerpo,
           'Certificado_discapacida'=>$nombreCertificado,
-<<<<<<< HEAD
+
           'Com_dom'=>$nombreCertificado,
-=======
+
           'Com_dom'=>$nombreCopia,
->>>>>>> e3c35858f2a932814e798fdba83b00b0d6535a04
+
           'Curp'=>$nombreCurp
         ]);
         return redirect()->to('/admin/Formubenefi/'.$req->idbene);
@@ -88,21 +88,21 @@ class archivoscontroller extends Controller
         $nombreCurp=time().'.'.$req->Curp->getClientOriginalExtension();
         $req->Curp->move(public_path('/img/archivos'),$nombreCurp);
 
-<<<<<<< HEAD
+
         $archivo->Foto_infantil=$nombreInfantil;
         $archivo->Foto_cuerpo=$nombreCuerpo;
         $archivo->Certificado_discapacida=$nombreCertificado;
         $archivo->Com_dom=$nombreCopia;
         $archivo->Curp=$nombreCurp;
         $archivo->save();
-=======
+
         $archivo->Foto_infantil=$req->$nombreInfantil;
         $archivo->Foto_cuerpo=$req->$nombreCuerpo;
         $archivo->Certificado_discapacida=$req->$nombreCertificado;
         $archivo->Com_dom=$req->$nombreCopia;
         $archivo->Curp=$req->$nombreCurp;
-        
->>>>>>> e3c35858f2a932814e798fdba83b00b0d6535a04
+
+
         return redirect()->to('/admin/Formubenefi/'.$req->idbene);
       }
 
