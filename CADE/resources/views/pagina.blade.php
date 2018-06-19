@@ -90,12 +90,11 @@
 
   <div class="col-md-5 col-xs-2 jumbotron" >
   <h1 ></h1>
-  <p class="jumbotit">SOMOS UNA INSTITUCION DE INICIATIVA PRIVADA SIN FIN DE
-    LUCRO CON RESPONSABILIDADES CULTURALES Y SOCIALES ​
-    EN DONDE DISENAMOS Y ENCAUSAMOS PROYECTOS DE UNIDAD
-    QUE DESARROLLEN UN CAMBIO SUSTENTABLE EN LA INTEGRACION
-    Y FORMACION DE NINOS, JOVENES, ADULTOS Y ANCIANOS, EN CULTURA
-    EDUCACION Y SALUD.</p>
+  <p class="jumbotit">
+    Somos una Institución de iniciativa privada sin fines de lucro, con responsabilidades culturales y sociales
+    en donde diseñamos y encausamos proyectos de unidad que desarrollen un cambio sustentable en la integración y formacion de
+    niños, jovenes, adultos y ancianos, en cultura educación y salud.
+  </p>
   <p class="botona"><a class="btn btn-primary btn-md  boton" href="/informacion#section-7i1hi" role="button"  style="background-color:green;">Conoce Mas</a></p>
 </div>
 </div>
@@ -135,9 +134,9 @@
   <img class="img-responsive2" src="./img/chilito2.jpg" alt="responsive" >
 </div>
 <div class="col-md-4 col-xs-5  divhtex" ><p style="margin-top:20%;color:black;">Chilito</p> <br><p style="color:black; text-align:justify;">
-  Chilito es un niño de 10 años el cual entro a rehabilitación debido a que tenia deficiencia al caminar
-  cuando Fundación Cambiando Destinos, A.C. abrio su centro de rehabilitación el nunca falto a sus terapias y ahora
-  juega futbol con sus companeros de la escuela</p> </div>
+  Chilito es un niño el cual entro a rehabilitación debido a que tenia deficiencias motoras.
+  Cuando Fundación Cambiando Destinos, A.C. abrio su centro de rehabilitación sus padres lo llevaron para iniciar sus terapias las cuales
+fueron ayudandolo poco a poco, viendo un buen progreso en el.</p> </div>
 </div>
 
 
@@ -177,7 +176,7 @@
     				<div class="col-12 col-md-4 col-sm-6 container">
     					<a title="Image 3" >
                 <div class="centered"><p>Protección al Abuelo</p></div>
-    						<img class="thumbnail img-responsive" id="image-3"  src="/img/aseso.jpg">
+    						<img class="thumbnail img-responsive" id="image-3"  src="/img/aseso.JPG">
 
     					</a>
     				</div>
@@ -200,15 +199,8 @@
     		<div class="item" id="image-1">
     			<img class="thumbnail img-responsive" title="De paseo en las ferias" src="/img/paseo1.jpg">
     		</div>
-        <div class="item" id="image-1">
-    			<img class="thumbnail img-responsive" title="Actividad" src="/img/actividad1.jpg">
-    		</div>
-    		<div class="item" id="image-1">
-    			<img class="thumbnail img-responsive" title="Concursos" src="/img/concursos.jpg">
-    		</div>
-    		<div class="item" id="image-1">
-    			<img class="thumbnail img-responsive" title="Dia de las Madres" src="/img/diamadre.jpg">
-    		</div>
+
+
 
     		<!-- #image-2 -->
     		<div class="item" id="image-2">
@@ -218,17 +210,9 @@
     			<img class="thumbnail img-responsive" title="Clase de musica" src="/img/musica1.jpg">
     		</div>
     		<div class="item" id="image-2">
-    			<img class="thumbnail img-responsive" title="Clase de pintura" src="/img/pintura2.jpg">
+    			<img class="thumbnail img-responsive" title="Clase de pintura" src="/img/pintura2.JPG">
     		</div>
-        <div class="item" id="image-2">
-    			<img class="thumbnail img-responsive" title="Clase de pintura" src="/img/pintura.jpg">
-    		</div>
-    		<div class="item" id="image-2">
-    			<img class="thumbnail img-responsive" title="Clase de musica" src="/img/musica2.jpg">
-    		</div>
-    		<div class="item" id="image-2">
-    			<img class="thumbnail img-responsive" title="Clase de pintura" src="/img/pinata.jpg">
-    		</div>
+
 
     		<!-- #image-3-->
     		<div class="item" id="image-3">
@@ -240,15 +224,7 @@
     		<div class="item" id="image-3">
     			<img class="thumbnail img-responsive" title="Visita al centro de salud" src="/img/cs.jpg">
     		</div>
-        <div class="item" id="image-3">
-          <img class="thumbnail img-responsive" title="Visita domiciliaria" src="/img/medico.jpg">
-        </div>
-        <div class="item" id="image-3">
-          <img class="thumbnail img-responsive" title="Centro de Salud" src="/img/revision.jpg">
-        </div>
-        <div class="item" id="image-3">
-          <img class="thumbnail img-responsive" title="Visita al centro de salud" src="/img/doc.jpg">
-        </div>
+
 
     	</div>
 
